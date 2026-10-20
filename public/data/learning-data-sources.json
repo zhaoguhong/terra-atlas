@@ -1,0 +1,717 @@
+{
+  "sources": [
+    {
+      "id": "glottolog-5.3",
+      "title": "Glottolog 5.3语言地理参考点",
+      "url": "https://glottolog.org/meta/downloads",
+      "downloadUrls": [
+        "https://cdstar.eva.mpg.de//bitstreams/EAEA0-608B-9919-A962-0/glottolog_languoid.csv.zip",
+        "https://cdstar.eva.mpg.de//bitstreams/EAEA0-608B-9919-A962-0/languages_and_dialects_geo.csv"
+      ],
+      "version": "5.3",
+      "period": "Glottolog 5.3版本快照，语种并非同年人口调查",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Hammarström, Harald & Forkel, Robert & Haspelmath, Martin & Bank, Sebastian. Glottolog 5.3.",
+      "processing": "语言点是Glottolog所记录的地理参考位置，包含濒危或已消亡语言；不表示使用人口、官方地位、连续使用区或精确边界。仅language层级，未混入dialect或family。",
+      "coverage": {
+        "features": 8070,
+        "families": 246
+      },
+      "retrievedAt": "2026-10-09T02:54:16.243615+00:00",
+      "inputs": [
+        {
+          "path": "data/raw/learning/languages_and_dialects_geo.csv",
+          "bytes": 1072964,
+          "sha256": "e1b68f09acadda3610ecb6704ffe573fcf5b73411ad1ad1f6396a3ff9754e702"
+        },
+        {
+          "path": "data/raw/learning/glottolog_languoid.csv.zip",
+          "bytes": 589571,
+          "sha256": "47fcc04c18f3f6bff43198b5be14f1f6954600c90573373df9ecf6fc12622bfb"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "public/data/learning-languages.geojson",
+          "bytes": 3467420,
+          "sha256": "f6aa41589aeb30660dd19cd630a503cd73278ed6d68f14b675f1cfe928744083"
+        },
+        {
+          "path": "public/data/learning-language-families.json",
+          "bytes": 22080,
+          "sha256": "a3ba3bee89282090e33f0fe7797fda7e78e563c0c7df4c47d5d8186ac3b7de7a"
+        }
+      ]
+    },
+    {
+      "id": "natural-earth-10m-admin1-learning",
+      "title": "Natural Earth中国省级学习范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson"
+      ],
+      "version": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "period": "Natural Earth数据版本快照",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "processing": "Natural Earth 1:1000万概化行政范围；香港、澳门、台湾由原始真实Admin-1单元合并，西沙标签单元并入海南。中文省级名称及GB/T省级代码用于学习导航；沿用Natural Earth原始地理表达，不能作为法定边界或测绘依据。 简化0.006度，保拓扑，坐标保留4位小数。",
+      "coverage": {
+        "features": 34
+      },
+      "retrievedAt": "2026-10-09T02:54:17.031385+00:00",
+      "inputs": [
+        {
+          "path": "data/raw/learning/ne_10m_admin_1_states_provinces.geojson",
+          "bytes": 40726851,
+          "sha256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "public/data/learning-provinces.geojson",
+          "bytes": 363188,
+          "sha256": "923e61d294a774bdb7ded8c431e57f9797ed3dac03b9b15a89ecfd26891bd6d9"
+        }
+      ]
+    },
+    {
+      "id": "beck-v3-monthly-1991-2020",
+      "title": "Beck V3 1991–2020月气温与降水气候平均",
+      "url": "https://figshare.com/articles/dataset/High-resolution_1_km_K_ppen-Geiger_maps_for_1901_2099_based_on_constrained_CMIP6_projections/21789074",
+      "downloadUrls": [
+        "https://ndownloader.figshare.com/files/61012816"
+      ],
+      "version": "V3, January 2026 correction; file 61012816",
+      "archiveMd5": "55db93d0a71c9d22879f5efe3aaf8ff8",
+      "period": "1991–2020",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Beck et al. (2023), Scientific Data 10, 724; January 2026 correction. doi:10.1038/s41597-023-02549-6",
+      "processing": "1991–2020长期月平均气温与月降水；集合均值及集合标准差，非实时天气或站点观测。0.5°网格约56km（赤道），山地和海岸局地差异可能明显。取城市所在有效格网；海岸缺测时透明记录最近完整陆地格网位置及距离。未重新推导或更改Köppen–Geiger分类。",
+      "coverage": {
+        "places": 60,
+        "months": 12
+      },
+      "retrievedAt": "2026-10-09T02:54:17.743203+00:00",
+      "inputs": [
+        {
+          "path": "data/raw/learning/climate_data_0p5.zip",
+          "bytes": 94106426,
+          "sha256": "40e957d5085bb21ffdb3cbcda1f0fca4c75e2981a6a98ae48ea9fefc72e31c71"
+        },
+        {
+          "path": "data/raw/learning/climate/1991_2020/ensemble_mean_0p5.nc",
+          "bytes": 3481641,
+          "sha256": "2f9432df9678e3a6d0e49dda283bd2a5abb4bd69f01c5bd085722aa110c185be"
+        },
+        {
+          "path": "data/raw/learning/climate/1991_2020/ensemble_std_0p5.nc",
+          "bytes": 2701450,
+          "sha256": "f4f501e47d1c3254772ecbe64d59f770dbddfa052aea48e97c52bdcdf2a373b9"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "public/data/learning-climate.json",
+          "bytes": 40077,
+          "sha256": "207ab24ec3fe6ea580e33a7ef278be2d34d44dce68653fda61a3349e01fc2a2a"
+        }
+      ]
+    },
+    {
+      "id": "ghs-pop-2020",
+      "title": "JRC GHS-POP 2020局地人口密度",
+      "url": "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php",
+      "downloadUrls": [
+        "https://jrc-ghsl.s3.eu-central-1.amazonaws.com/ghs-pop/r2023a/4326/30asec/2020/GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif"
+      ],
+      "version": "GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0",
+      "period": 2020,
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "European Commission, Joint Research Centre (JRC), GHS-POP R2023A, 2020; Schiavina, Freire & MacManus.",
+      "processing": "JRC GHS-POP R2023A 2020居住人口估计，原始30角秒格网人口数按像元中心归入0.5°并逐格求和；源边缘像元经度按日期变更线回绕。密度=格网总人口/WGS84椭球完整0.5°格网面积（包含格网内水域），单位人/km²。原始人口分配模型不是逐户实测，海岸及城市有概化。无有效源数据及纯海洋格网为null；Natural Earth50m陆地掩膜内有效格网0人口保留为0，真实正人口格网无论掩膜均保留。不是国家平均密度。 从真实0.5°局地人口密度格网以nearest映射至Web Mercator显示瓦片；z0–3仅为显示重采样，不代表更高数据精度。0人口与缺测不着色，点查仍区分0与null。",
+      "coverage": {
+        "validGridCells": 93940,
+        "sourceResolutionArcSeconds": 30,
+        "outputResolutionDegrees": 0.5
+      },
+      "retrievedAt": "2026-10-09T03:08:41.703011+00:00",
+      "inputs": [
+        {
+          "path": "data/raw/learning/GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif",
+          "bytes": 424616290,
+          "sha256": "b6eec24c613d0787c14166214865a3e0578b419ceebbaff00e46904e6a61e708"
+        },
+        {
+          "path": "public/data/land.geojson",
+          "bytes": 821642,
+          "sha256": "578d334808a642121e3bbf4f4373d00acc266a02a16dd34b2aa853e54f8dd524"
+        }
+      ],
+      "outputs": [
+        {
+          "path": "data/research/learning-population.geojson",
+          "bytes": 28073917,
+          "sha256": "d56b40fde2e510bf964d71905f9d75b0d52b50d43c6deebc55bdcaaf401b7a1d",
+          "published": false
+        },
+        {
+          "path": "public/data/learning-population.json",
+          "bytes": 1323667,
+          "sha256": "b186c30382efc6a62bfb370a8c0e88dafd595b2355d02509e2f0273f8251a4d0"
+        },
+        {
+          "path": "public/population/0/0/0.png",
+          "bytes": 8824,
+          "sha256": "9d37ae6ada745316041a17f401651ad7340fcc00809395a43debdad5fa6bef70"
+        },
+        {
+          "path": "public/population/1/0/0.png",
+          "bytes": 6430,
+          "sha256": "b39993c4a3f9c2b8fba90328a8c27c26320735c166dd55902e7683c44f7fdd4d"
+        },
+        {
+          "path": "public/population/1/0/1.png",
+          "bytes": 2774,
+          "sha256": "00972ea5808fdd0ee2afd8ab66d846b274e8503a514d2e3f54ecbd61efe84572"
+        },
+        {
+          "path": "public/population/1/1/0.png",
+          "bytes": 13028,
+          "sha256": "23a8f5a344a51835a50c12e39508996e4220fa711c6ba13fdd2d99f6371e3f8d"
+        },
+        {
+          "path": "public/population/1/1/1.png",
+          "bytes": 4014,
+          "sha256": "4b1046a541f26784f3c8fabd643487284ff1fd6af2adaeedc55a3dcc050f2e01"
+        },
+        {
+          "path": "public/population/2/0/0.png",
+          "bytes": 628,
+          "sha256": "2547e7cf0d364c9c072deb9e844e149ed9935a99235cf4c5e2ce5a5bf1a3a44c"
+        },
+        {
+          "path": "public/population/2/0/1.png",
+          "bytes": 4524,
+          "sha256": "9d91711971a3e41ccd6309416e3cf241c62632dec278531e5957c9e02f05020d"
+        },
+        {
+          "path": "public/population/2/0/2.png",
+          "bytes": 774,
+          "sha256": "a5bbec1d607ff742fbe195c8015f6c3013a1a87261f71b1654f591c369f1b22a"
+        },
+        {
+          "path": "public/population/2/0/3.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/2/1/0.png",
+          "bytes": 614,
+          "sha256": "3892d76d719740a31a93c90c37eedae91df8f398002973ee06f0699983ca9035"
+        },
+        {
+          "path": "public/population/2/1/1.png",
+          "bytes": 6246,
+          "sha256": "cfb0a93d35cb3b9540555722b588635be418d8a9af8cb292b8969746e1f36008"
+        },
+        {
+          "path": "public/population/2/1/2.png",
+          "bytes": 4102,
+          "sha256": "ee7c5d4c630ee562d9590fba30816769cc1bfd65ac9495260ae060db2bc1ce37"
+        },
+        {
+          "path": "public/population/2/1/3.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/2/2/0.png",
+          "bytes": 1153,
+          "sha256": "5e0f86a0338827d77da3703a5d2f704ee73d69c91b087535e1e7499627af233d"
+        },
+        {
+          "path": "public/population/2/2/1.png",
+          "bytes": 12622,
+          "sha256": "aa96026e1478d2a091ce088a163bc5cae7bfb4ec8bbdf3f498d3dba962d831b1"
+        },
+        {
+          "path": "public/population/2/2/2.png",
+          "bytes": 3572,
+          "sha256": "6fd0e584f148c5c67a49aa6ba0a6b2415482ceda0be0d293dfd9534ba92ca62f"
+        },
+        {
+          "path": "public/population/2/2/3.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/2/3/0.png",
+          "bytes": 1031,
+          "sha256": "23deb2301aeae98157723235d0f91e036d7a97202d1adf433e198f13536f4dc7"
+        },
+        {
+          "path": "public/population/2/3/1.png",
+          "bytes": 8662,
+          "sha256": "fb0857f42cda555d281d4667f43c73041fe8f37af5e09dd6dd64cdd1de200faf"
+        },
+        {
+          "path": "public/population/2/3/2.png",
+          "bytes": 3917,
+          "sha256": "00d2d3a36f11a36cf284065392927c26d868b43b534edc3e10e0112dc65e756b"
+        },
+        {
+          "path": "public/population/2/3/3.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/0/0.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/0/1.png",
+          "bytes": 627,
+          "sha256": "9f612a85f2347bd5b049607570775c7c0e7e4dad81b83ca1b16449ff388d4f5d"
+        },
+        {
+          "path": "public/population/3/0/2.png",
+          "bytes": 1206,
+          "sha256": "efa920cc4c5128a5983a1ff4f6889ebefdf199edcf085e01892825ec3c6aa832"
+        },
+        {
+          "path": "public/population/3/0/3.png",
+          "bytes": 545,
+          "sha256": "2d913fbe837c13f239c3ce2a829f9a191b69c3f07173e203c92bb0afd7cee227"
+        },
+        {
+          "path": "public/population/3/0/4.png",
+          "bytes": 879,
+          "sha256": "ae6d2e8b48223cf53b70422064d7b587c482cebe06793adb6afe695c022f6f8b"
+        },
+        {
+          "path": "public/population/3/0/5.png",
+          "bytes": 372,
+          "sha256": "9f87f43cdb1bea023e93968a9fcae587c03fe5e85c902f972f798d5390559baa"
+        },
+        {
+          "path": "public/population/3/0/6.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/0/7.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/1/0.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/1/1.png",
+          "bytes": 539,
+          "sha256": "277561ccc48bacbee7e2ad813be193fd89a51e15b728514a28c1adaccf6985e5"
+        },
+        {
+          "path": "public/population/3/1/2.png",
+          "bytes": 2388,
+          "sha256": "5eef06c9a04849022d511488a5b0d8ccb6eecafe9bfc35742a58ab592d2e5503"
+        },
+        {
+          "path": "public/population/3/1/3.png",
+          "bytes": 2791,
+          "sha256": "84d95c7e54da1dd992b74290683f12920c75f20ad3beee517e4bafa0e8b18e80"
+        },
+        {
+          "path": "public/population/3/1/4.png",
+          "bytes": 421,
+          "sha256": "77586a0bd36b6a404e184ef4cab0cb5b5b21a544bacb93db28aa86f1fc5de2c0"
+        },
+        {
+          "path": "public/population/3/1/5.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/1/6.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/1/7.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/2/0.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/2/1.png",
+          "bytes": 794,
+          "sha256": "fe8c583c7fbcc9b2df6e7fe8802fabae3a0d44432ff152d86bef54a7462b6a3d"
+        },
+        {
+          "path": "public/population/3/2/2.png",
+          "bytes": 1949,
+          "sha256": "eeeb1f820085e0c9a7ef7f7cd13283f78daed0427336a909b9ada68c61171c9e"
+        },
+        {
+          "path": "public/population/3/2/3.png",
+          "bytes": 3445,
+          "sha256": "60939428f86d9767614705e4f5b9172a2e6ccf2e2617d8697bb402d34ba3d5f1"
+        },
+        {
+          "path": "public/population/3/2/4.png",
+          "bytes": 3632,
+          "sha256": "6238aec22447a8a5c7ef7bbae9aa8b4915a07989f064e08ae27361c235ef8888"
+        },
+        {
+          "path": "public/population/3/2/5.png",
+          "bytes": 904,
+          "sha256": "993fef8e2938e21d0a3c7fdf09b351eafa78e5b0e67d4c8c9a22777063b8d198"
+        },
+        {
+          "path": "public/population/3/2/6.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/2/7.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/3/0.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/3/1.png",
+          "bytes": 419,
+          "sha256": "fa0bdb859c0f80afea8ffc9a5b4f3c650bffc8d7652c769edaa90f0cf82ac7e6"
+        },
+        {
+          "path": "public/population/3/3/2.png",
+          "bytes": 1728,
+          "sha256": "6328f2d780432f3b70315c64e55073359cc835ade3589a2fb58c5a0d325841db"
+        },
+        {
+          "path": "public/population/3/3/3.png",
+          "bytes": 2730,
+          "sha256": "a24cea9e38456683b4e338712b30562f980110584b2f16ec5c002bd15cec6e80"
+        },
+        {
+          "path": "public/population/3/3/4.png",
+          "bytes": 1453,
+          "sha256": "8e3f201a1f97a37003f9856553c39d0ed8aae059f965f5165addf194d3ecc47a"
+        },
+        {
+          "path": "public/population/3/3/5.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/3/6.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/3/7.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/4/0.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/4/1.png",
+          "bytes": 898,
+          "sha256": "9350503db20e24db95621e83c54395cb4f89839caa35c42746dfa6eaf5454048"
+        },
+        {
+          "path": "public/population/3/4/2.png",
+          "bytes": 4126,
+          "sha256": "b9fac39b69ca9f76029cb69836d406830e13a88fcdc246e974369a340eaf7dd5"
+        },
+        {
+          "path": "public/population/3/4/3.png",
+          "bytes": 6080,
+          "sha256": "2aa71f4ef1724a839fd9a29600b07db513a1e7578742b45b01334ca9f3b69a5c"
+        },
+        {
+          "path": "public/population/3/4/4.png",
+          "bytes": 3692,
+          "sha256": "96b4d3ccf42ec686df5b27a21fe6c1ff06ff1d0d21f50e4d047c6167b766ce94"
+        },
+        {
+          "path": "public/population/3/4/5.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/4/6.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/4/7.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/5/0.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/5/1.png",
+          "bytes": 1079,
+          "sha256": "75ad8aec1af4dd93f2e4f71eb333b8989808e62f0efc1441bc529fa8d54d64f5"
+        },
+        {
+          "path": "public/population/3/5/2.png",
+          "bytes": 3388,
+          "sha256": "9b983f299fd53829d3294310584f430c4c1ac0d5eb2475eb46fe8705f51005bd"
+        },
+        {
+          "path": "public/population/3/5/3.png",
+          "bytes": 4918,
+          "sha256": "87678650ce7eb927e2b8ef65f7839dda3cf257f93d56329cfd6d9cb99749317f"
+        },
+        {
+          "path": "public/population/3/5/4.png",
+          "bytes": 1010,
+          "sha256": "19e1ff04e55754e12ae222df39e3b0f5e5f987f97af01e063dbb0e598f982f44"
+        },
+        {
+          "path": "public/population/3/5/5.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/5/6.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/5/7.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/6/0.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/6/1.png",
+          "bytes": 927,
+          "sha256": "f0e8259eb584b767fe064816cd3d276ab23526e58f699261ac078b3162083748"
+        },
+        {
+          "path": "public/population/3/6/2.png",
+          "bytes": 3157,
+          "sha256": "be728b4fc439a4ff6904f06b72a8a93f98f45349555fbbf14a375b6e5de4e00f"
+        },
+        {
+          "path": "public/population/3/6/3.png",
+          "bytes": 5715,
+          "sha256": "8e231340e97256ec1ca0c4f2de0d4777cfb0c78edad66ee0e787d0b0671cc914"
+        },
+        {
+          "path": "public/population/3/6/4.png",
+          "bytes": 2605,
+          "sha256": "5a3d2de0e607e05094966de524e3562bcbf0808a495dc63dcf17b128c3debc23"
+        },
+        {
+          "path": "public/population/3/6/5.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/6/6.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/6/7.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/7/0.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/7/1.png",
+          "bytes": 822,
+          "sha256": "ed88b54e08b8e3c06b6de34eaf4f4d0efb30e7a3fc2413246481bbfc097bc982"
+        },
+        {
+          "path": "public/population/3/7/2.png",
+          "bytes": 2063,
+          "sha256": "e2c1b2972696bcf3f11296d2c637b09ce73e761b34f00872e9b92f0ae0d45033"
+        },
+        {
+          "path": "public/population/3/7/3.png",
+          "bytes": 1288,
+          "sha256": "48a85242b1c5d58bfbf30f1693e1ecdfbc0dbdcf711f19e94693eca72432d3e9"
+        },
+        {
+          "path": "public/population/3/7/4.png",
+          "bytes": 2483,
+          "sha256": "83dd528bccc0a7eecd5e6ac31f973b088efcebac22c3ce9e5397d0162d849ba5"
+        },
+        {
+          "path": "public/population/3/7/5.png",
+          "bytes": 606,
+          "sha256": "e05ae3058ea2ff0591c31d79a4e95940585ffb9a26bae2d371844214db6a166b"
+        },
+        {
+          "path": "public/population/3/7/6.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/3/7/7.png",
+          "bytes": 334,
+          "sha256": "70a213096a8a3aa52d8b05ee5ff5f8d14305a01d51f9305d2555880a4a2b458c"
+        },
+        {
+          "path": "public/population/source.json",
+          "bytes": 838,
+          "sha256": "674dcbb3b372e1c0f2bde9cf64a6c0a329e5ebff794bfd0a13f34c654a8b4197"
+        }
+      ],
+      "maskSource": {
+        "id": "natural-earth-50m-land",
+        "url": "https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-land/",
+        "version": "ca96624a56bd078437bca8184e78163e5039ad19",
+        "license": "Public domain"
+      }
+    },
+    {
+      "id": "cia-factbook-religion-snapshot",
+      "title": "CIA World Factbook国家宗教构成历史资料",
+      "url": "https://github.com/factbook/factbook.json",
+      "downloadUrls": [
+        "https://codeload.github.com/factbook/factbook.json/zip/144d6977b2b01ac1cbd220de754c0a005616760b"
+      ],
+      "version": "144d6977b2b01ac1cbd220de754c0a005616760b",
+      "period": "逐国保留原始条目资料年份",
+      "license": "US government public domain; mirror CC0-1.0",
+      "licenseUrl": "https://github.com/factbook/factbook.json/blob/144d6977b2b01ac1cbd220de754c0a005616760b/LICENSE.md",
+      "processing": "CIA World Factbook历史国家资料，快照固定2026年前，资料年份及统计口径逐国不同；不是统一2020宗教调查。八类是学习展示归并，不改变来源估计。国家着色不能代表内部每位居民或局地分布；未报告类别为null，阈值与范围不取中点，不归一化到100%。民间/传统宗教含源列的神道、道教等；其他宗教含锡克教等；混合或未明确类别保留原项、不强行分配。",
+      "coverage": {
+        "countries": 228,
+        "countriesWithPercentages": 214
+      },
+      "alternativeToPew": "Pew 2020全表需账户且条款限制full/substantially full再发布，故未复制该全表。",
+      "alternativeSourceUrl": "https://www.pewresearch.org/about/terms-and-conditions/",
+      "inputs": [
+        {
+          "path": "data/raw/learning/factbook-json.zip",
+          "bytes": 2989349,
+          "sha256": "939e98689cb8afec5cf7dfcfdc75bcdfe5434335143d42ea3ca7bd5c3f03cd34"
+        }
+      ],
+      "retrievedAt": "2026-10-09T03:09:19.772750+00:00",
+      "outputs": [
+        {
+          "path": "public/data/learning-human.json",
+          "bytes": 249405,
+          "sha256": "20d2364b15bfa5f317db0cd8370533eee4666227f8b75121e33d593d8c60aa6f"
+        }
+      ]
+    },
+    {
+      "id": "glottography-asher2007-v2",
+      "title": "Glottography · 2007世界语言图集使用区（v2.0）",
+      "url": "https://doi.org/10.5281/zenodo.18613195",
+      "repository": "https://github.com/Glottography/asher2007world/tree/20102238acf12a2b82bd4d752356687ee2acfd6d",
+      "scientificDescriptor": "https://www.nature.com/articles/s41597-025-05828-6",
+      "citation": "The Glottography Consortium (2026). Glottography dataset derived from Asher and Moseley 2007 \"Atlas of the World's Languages\" (v2.0). Zenodo. Asher, R. E. & Christopher J. Moseley (eds.) (2007). Atlas of the World's Languages. 2nd edn. Routledge.",
+      "version": "v2.0",
+      "commit": "20102238acf12a2b82bd4d752356687ee2acfd6d",
+      "period": "2007年图集的contemporary使用区；并非2026实时分布",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "inputPath": "data/raw/language-areas/languages.geojson",
+      "inputSha256": "889365bc8c8ede1e4c291e54c036090b995e50b8cacac1e64eea7c9f552896f0",
+      "inputs": [
+        {
+          "path": "data/raw/language-areas/languages.geojson",
+          "url": "https://raw.githubusercontent.com/Glottography/asher2007world/20102238acf12a2b82bd4d752356687ee2acfd6d/cldf/contemporary/languages.geojson",
+          "sha256": "889365bc8c8ede1e4c291e54c036090b995e50b8cacac1e64eea7c9f552896f0",
+          "size": 92985498
+        },
+        {
+          "path": "data/raw/language-areas/languages.csv",
+          "url": "https://raw.githubusercontent.com/Glottography/asher2007world/20102238acf12a2b82bd4d752356687ee2acfd6d/cldf/contemporary/languages.csv",
+          "sha256": "da3132a01453621576dc4c17e2f7345e71d9f363f0ac5ae4f56b52e8001893d8",
+          "size": 879463
+        },
+        {
+          "path": "data/raw/language-areas/contributions.csv",
+          "url": "https://raw.githubusercontent.com/Glottography/asher2007world/20102238acf12a2b82bd4d752356687ee2acfd6d/cldf/contemporary/contributions.csv",
+          "sha256": "4d8e1383115fc662bb576f163fff7f9033aed768fe5588c06096f969ff5b9a77",
+          "size": 704973
+        },
+        {
+          "path": "data/raw/language-areas/contemporary-metadata.json",
+          "url": "https://raw.githubusercontent.com/Glottography/asher2007world/20102238acf12a2b82bd4d752356687ee2acfd6d/cldf/contemporary/contemporary-metadata.json",
+          "sha256": "37e04289c030af9fabbb69eb2f71afa6d36ad57c5f60ff9d0b4369bfa0f53948",
+          "size": 14513
+        },
+        {
+          "path": "data/raw/language-areas/LICENSE",
+          "url": "https://raw.githubusercontent.com/Glottography/asher2007world/20102238acf12a2b82bd4d752356687ee2acfd6d/LICENSE",
+          "sha256": "945fbcb37deca05bccd7c3ca0e261679f1f5373515504fdbad68f6f3cf6f49b9",
+          "size": 18652
+        },
+        {
+          "path": "data/raw/language-areas/VALIDATION.md",
+          "url": "https://raw.githubusercontent.com/Glottography/asher2007world/20102238acf12a2b82bd4d752356687ee2acfd6d/VALIDATION.md",
+          "sha256": "6a86765961995d85e2b2b5dc32436165eaa2ec53df58c44ff2787f2adbbe0335",
+          "size": 18977
+        }
+      ],
+      "processing": "只使用contemporary/languages.geojson已聚合的真实语言级面。按真实Glottocode连接本站Glottolog 5.3语言与语系名称；排除29条Bookkeeping记录。拓扑保留简化最大容差0.04°，小面积对象自适应减小容差；坐标舍入通过有效性及部件/洞数量检验后采用。各语言独立简化，不声称共边完全一致，不以点扩散、国家边界、人口或官方地位补面。",
+      "notes": [
+        "色面来自2007年《世界语言地图集》的使用区图，经Glottography数字化；不是2026年实时语言分布。",
+        "使用contemporary资料集，未混入欧洲殖民接触时的traditional范围；原图资料年份并不统一，未注明的图按出版年2007登记。",
+        "范围为地图集概括的语言使用区，不能据此判断人口、使用者比例或官方地位，也不表示区域内人人只使用这一种语言。",
+        "多语言交错与重叠在原图中表示不充分；无法精确分配给某一语言的语组区域未作为单一语言面展示。空白不表示没有语言使用者。",
+        "语言与方言的划分沿用源数据在Glottolog语言层级的聚合；名称与语系按本站Glottolog 5.3的真实Glottocode连接，排除bookkeeping条目。",
+        "边界为便于全球探索而简化的参考范围；不同语言可重叠，不能作为人口普查边界或精确行政界线。"
+      ],
+      "outputs": [
+        {
+          "path": "public/data/language-areas.geojson",
+          "bytes": 5028594,
+          "sha256": "45a17e32b60a7d30504e040d4591f27b975e87e10b7cba68d02b384d57a6ef61"
+        },
+        {
+          "path": "public/data/language-areas-meta.json",
+          "bytes": 943885,
+          "sha256": "a9728897f2da926dfa24bba8d482cab64afa1471e42e5dd0b286d6a8e4a0cdbb"
+        }
+      ],
+      "validationRecords": [
+        "data/research/language-area-validation.json",
+        "data/research/language-area-independent-validation.json"
+      ]
+    }
+  ],
+  "generatedAt": "2026-10-10T17:17:08.581600+00:00"
+}

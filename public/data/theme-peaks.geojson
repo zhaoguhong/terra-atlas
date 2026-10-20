@@ -1,0 +1,537 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q513",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.925,
+          27.988056
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q513",
+        "name": "珠穆朗玛峰",
+        "nameEn": "Mount Everest",
+        "aliases": [
+          "Mount Everest"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          86.925,
+          27.988056
+        ],
+        "bbox": [
+          86.925,
+          27.988056,
+          86.925,
+          27.988056
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q513",
+        "inputRevision": 2552942710,
+        "coordinatePrecisionDegrees": 0.0002777777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q43512",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.513333,
+          35.881111
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q43512",
+        "name": "乔戈里峰",
+        "nameEn": "K2",
+        "aliases": [
+          "K2"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          76.513333,
+          35.881111
+        ],
+        "bbox": [
+          76.513333,
+          35.881111,
+          76.513333,
+          35.881111
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q43512",
+        "inputRevision": 2544280847,
+        "coordinatePrecisionDegrees": 0.00027777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q82019",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          88.147353,
+          27.703003
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q82019",
+        "name": "干城章嘉峰",
+        "nameEn": "Kangchenjunga",
+        "aliases": [
+          "Kanchenjunga"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          88.147353,
+          27.703003
+        ],
+        "bbox": [
+          88.147353,
+          27.703003,
+          88.147353,
+          27.703003
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q82019",
+        "inputRevision": 2537796014,
+        "coordinatePrecisionDegrees": 2.7777777777777776e-7,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q168702",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.933333,
+          27.961667
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q168702",
+        "name": "洛子峰",
+        "nameEn": "Lhotse",
+        "aliases": [
+          "Lhotse"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          86.933333,
+          27.961667
+        ],
+        "bbox": [
+          86.933333,
+          27.961667,
+          86.933333,
+          27.961667
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q168702",
+        "inputRevision": 2541534590,
+        "coordinatePrecisionDegrees": 0.00027777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q169986",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          87.088611,
+          27.889167
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q169986",
+        "name": "马卡鲁峰",
+        "nameEn": "Makalu",
+        "aliases": [
+          "Makalu"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          87.088611,
+          27.889167
+        ],
+        "bbox": [
+          87.088611,
+          27.889167,
+          87.088611,
+          27.889167
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q169986",
+        "inputRevision": 2541473485,
+        "coordinatePrecisionDegrees": 0.00027777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q170089",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          86.660833,
+          28.094167
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q170089",
+        "name": "卓奥友峰",
+        "nameEn": "Cho Oyu",
+        "aliases": [
+          "Cho Oyu"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          86.660833,
+          28.094167
+        ],
+        "bbox": [
+          86.660833,
+          28.094167,
+          86.660833,
+          28.094167
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q170089",
+        "inputRevision": 2544888203,
+        "coordinatePrecisionDegrees": 0.00027777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q165440",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.49,
+          28.696667
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q165440",
+        "name": "道拉吉里峰",
+        "nameEn": "Dhaulagiri",
+        "aliases": [
+          "Dhaulagiri"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          83.49,
+          28.696667
+        ],
+        "bbox": [
+          83.49,
+          28.696667,
+          83.49,
+          28.696667
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q165440",
+        "inputRevision": 2549954123,
+        "coordinatePrecisionDegrees": 0.0002777777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q170070",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          84.559722,
+          28.55
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q170070",
+        "name": "马纳斯鲁峰",
+        "nameEn": "Manaslu",
+        "aliases": [
+          "Manaslu"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          84.559722,
+          28.55
+        ],
+        "bbox": [
+          84.559722,
+          28.55,
+          84.559722,
+          28.55
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q170070",
+        "inputRevision": 2536076941,
+        "coordinatePrecisionDegrees": 0.00027777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q130736",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          74.59,
+          35.239167
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q130736",
+        "name": "南迦帕尔巴特峰",
+        "nameEn": "Nanga Parbat",
+        "aliases": [
+          "Nanga Parbat"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          74.59,
+          35.239167
+        ],
+        "bbox": [
+          74.59,
+          35.239167,
+          74.59,
+          35.239167
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q130736",
+        "inputRevision": 2544887608,
+        "coordinatePrecisionDegrees": 0.00027777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q16466024",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          83.82,
+          28.5958
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q16466024",
+        "name": "安纳普尔纳一峰",
+        "nameEn": "Annapurna I",
+        "aliases": [
+          "Annapurna I"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          83.82,
+          28.5958
+        ],
+        "bbox": [
+          83.82,
+          28.5958,
+          83.82,
+          28.5958
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q16466024",
+        "inputRevision": 2543417182,
+        "coordinatePrecisionDegrees": 0.010231170883146,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q187138",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.696389,
+          35.724444
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q187138",
+        "name": "加舒尔布鲁木一峰",
+        "nameEn": "Gasherbrum I",
+        "aliases": [
+          "Gasherbrum"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          76.696389,
+          35.724444
+        ],
+        "bbox": [
+          76.696389,
+          35.724444,
+          76.696389,
+          35.724444
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q187138",
+        "inputRevision": 2544281066,
+        "coordinatePrecisionDegrees": 0.00027777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q180996",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.568056,
+          35.810556
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q180996",
+        "name": "布洛阿特峰",
+        "nameEn": "Broad Peak",
+        "aliases": [
+          "Broad Peak"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          76.568056,
+          35.810556
+        ],
+        "bbox": [
+          76.568056,
+          35.810556,
+          76.568056,
+          35.810556
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q180996",
+        "inputRevision": 2544196985,
+        "coordinatePrecisionDegrees": 0.00027777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q186853",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          76.652778,
+          35.7575
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q186853",
+        "name": "加舒尔布鲁木二峰",
+        "nameEn": "Gasherbrum II",
+        "aliases": [
+          "Gasherbrum II"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          76.652778,
+          35.7575
+        ],
+        "bbox": [
+          76.652778,
+          35.7575,
+          76.652778,
+          35.7575
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q186853",
+        "inputRevision": 2536078290,
+        "coordinatePrecisionDegrees": 0.00027777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    },
+    {
+      "type": "Feature",
+      "id": "peak-wikidata-q105124",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          85.779722,
+          28.352222
+        ]
+      },
+      "properties": {
+        "id": "peak-wikidata-q105124",
+        "name": "希夏邦马峰",
+        "nameEn": "Shishapangma",
+        "aliases": [
+          "Shishapangma"
+        ],
+        "kind": "peak",
+        "subkind": "summit",
+        "center": [
+          85.779722,
+          28.352222
+        ],
+        "bbox": [
+          85.779722,
+          28.352222,
+          85.779722,
+          28.352222
+        ],
+        "rank": 1,
+        "minZoom": 3,
+        "sourceId": "wikidata-classic-8000m-summits",
+        "wikidataId": "Q105124",
+        "inputRevision": 2536078495,
+        "coordinatePrecisionDegrees": 0.00027777777777778,
+        "geometryNote": "开放数据库峰顶参考点，不表示山体范围或正式测量精度。"
+      }
+    }
+  ]
+}

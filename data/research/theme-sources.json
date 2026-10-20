@@ -1,0 +1,150 @@
+{
+  "reviewedAt": "2026-10-10",
+  "version": "classic-8000m-entities-2026-10-10",
+  "license": "Wikidata structured data CC0; Natural Earth public domain; reference article copyrights retained by their publishers.",
+  "licenseUrl": "https://www.wikidata.org/wiki/Wikidata:Copyright",
+  "processing": "UIAA经典名录逐一对应14个明确实体；坐标读取非废弃、优先preferred的地球P625声明，保留精度和输入版本，以WGS84参考点生成独立GeoJSON。中国地形复用明确Natural Earth范围；长江中下游平原无匹配范围，使用代表点和空绑定。知识及主题解释为原创中文。",
+  "inputs": [
+    {
+      "name": "Mount Everest",
+      "entityId": "Q513",
+      "version": "Wikidata revision 2552942710",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q513.json",
+      "sha256": "2ae605fa6b2c04a0010e0af5d0d90d7e17c27752215c5bc146387079a83343d4",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.0002777777777777778
+    },
+    {
+      "name": "K2",
+      "entityId": "Q43512",
+      "version": "Wikidata revision 2544280847",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q43512.json",
+      "sha256": "775125514ed5adcac4b6cecf7c6de4f53b32bbc9bf43b7f25b52db554f538c09",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.00027777777777778
+    },
+    {
+      "name": "Kangchenjunga",
+      "entityId": "Q82019",
+      "version": "Wikidata revision 2537796014",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q82019.json",
+      "sha256": "4e7a40bdcaef28c25e714fb95353c8f2c80e91bb0eb6375e7c60e56b841d4b86",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 2.7777777777777776e-7
+    },
+    {
+      "name": "Lhotse",
+      "entityId": "Q168702",
+      "version": "Wikidata revision 2541534590",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q168702.json",
+      "sha256": "2172c11e18b413182839e3bb67f6cd5fe1964da199347702521406e677faf9c8",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.00027777777777778
+    },
+    {
+      "name": "Makalu",
+      "entityId": "Q169986",
+      "version": "Wikidata revision 2541473485",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q169986.json",
+      "sha256": "b456353c70f9c44a91be83bc1d973080ac382e574743454060fea8ba094b3288",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.00027777777777778
+    },
+    {
+      "name": "Cho Oyu",
+      "entityId": "Q170089",
+      "version": "Wikidata revision 2544888203",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q170089.json",
+      "sha256": "37459e4c2869504b4d6a043e362bfe0ff7861dfe773e212d209347740084f72e",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.00027777777777778
+    },
+    {
+      "name": "Dhaulagiri",
+      "entityId": "Q165440",
+      "version": "Wikidata revision 2549954123",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q165440.json",
+      "sha256": "20a1bc3d96b37920e8baa5a25c92d930ce64bb7c102eeed1f1615518ede72b4e",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.0002777777777777778
+    },
+    {
+      "name": "Manaslu",
+      "entityId": "Q170070",
+      "version": "Wikidata revision 2536076941",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q170070.json",
+      "sha256": "81892ceda63bc9e3c76535eafd647f958f5108dcdd3910909b52f977ae4a4e26",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.00027777777777778
+    },
+    {
+      "name": "Nanga Parbat",
+      "entityId": "Q130736",
+      "version": "Wikidata revision 2544887608",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q130736.json",
+      "sha256": "7e9da7d031fba53724fc4b517e3cfa2f2ed7821873e3f2982a59abda4dfe47b5",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.00027777777777778
+    },
+    {
+      "name": "Annapurna I",
+      "entityId": "Q16466024",
+      "version": "Wikidata revision 2543417182",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q16466024.json",
+      "sha256": "dfde4a90bdf46b925bce76555a1f8ab24d5d17079fcd97ba573b8d7915d17fae",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.010231170883146
+    },
+    {
+      "name": "Gasherbrum I",
+      "entityId": "Q187138",
+      "version": "Wikidata revision 2544281066",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q187138.json",
+      "sha256": "17d0c3b653af72e65deea8a20f551a26c265b9a0e9edc3a8b334a11d2215182c",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.00027777777777778
+    },
+    {
+      "name": "Broad Peak",
+      "entityId": "Q180996",
+      "version": "Wikidata revision 2544196985",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q180996.json",
+      "sha256": "f9e9ad84a7cd453ccc1b10895bb93afed73de6731f48a57ad8d5f85b86f030be",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.00027777777777778
+    },
+    {
+      "name": "Gasherbrum II",
+      "entityId": "Q186853",
+      "version": "Wikidata revision 2536078290",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q186853.json",
+      "sha256": "5718d1d99a04daa9bc738b7246677aa6a04fa880401492caa7bd7ba5deb845f8",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.00027777777777778
+    },
+    {
+      "name": "Shishapangma",
+      "entityId": "Q105124",
+      "version": "Wikidata revision 2536078495",
+      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q105124.json",
+      "sha256": "d693fbb1ec853c8c0c75e0f7d0b3f6fe5be8f77664d6bef2f32391f3dfa0cfe9",
+      "license": "CC0 1.0",
+      "coordinatePrecisionDegrees": 0.00027777777777778
+    }
+  ],
+  "outputs": [
+    {
+      "path": "public/data/theme-peaks.geojson",
+      "sha256": "6dd1d19eb45a1e1e4b458d56c1d8a2889b3c1af62e537529af49b54a98254cf2"
+    }
+  ],
+  "validation": {
+    "status": "passed",
+    "method": "显式14个实体ID与固定名录逐项比较，原始输入SHA-256核对；每个坐标数值有效、落在对应亚洲高山区域，各卡绑定到同一实体ID；不使用名称模糊匹配生成范围。",
+    "limitations": "峰顶参考坐标不代表正式测量精度；自然区域图形仍为制图标注参考范围。",
+    "classicSummits": 14,
+    "collectionTopics": 15,
+    "distributionTopics": 4,
+    "connectionTopics": 21
+  }
+}

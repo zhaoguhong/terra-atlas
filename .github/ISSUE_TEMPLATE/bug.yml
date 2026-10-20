@@ -1,0 +1,17 @@
+name: 程序问题
+description: 报告地图、界面或本地运行问题
+body:
+  - type: textarea
+    id: steps
+    attributes:
+      label: 复现步骤与实际表现
+      description: 请附页面链接、操作步骤和期望结果，不要上传个人收藏或敏感信息。
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: 浏览器与设备
+      description: 浏览器版本、操作系统、屏幕尺寸；本地运行问题请附 Node 版本及相关报错。
+    validations:
+      required: true

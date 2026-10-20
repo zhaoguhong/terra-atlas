@@ -1,0 +1,83 @@
+{
+  "verifiedAt": "2026-10-10T16:43:10.564012+00:00",
+  "checks": [
+    "All deployed GeoJSON geometries are valid, non-empty WGS84 features with globally unique IDs.",
+    "Every gazetteer entry resolves to a real deployed feature; no duplicate search IDs.",
+    "Country labels retain the original simplified Chinese names; the gazetteer and derived country learning tables use the same names.",
+    "The deployed climate lookup grid is byte-for-byte equal to the official 1991–2020 0.5° GeoTIFF values.",
+    "Rasterizing every deployed climate polygon reconstructs every original climate grid cell exactly.",
+    "Pearl in the USA, Xi/Pearl River in China, Han rivers in China/Korea, and Min rivers in Sichuan/Fujian remain separate objects.",
+    "The Caspian Sea lake polygon is exactly the topology-preserving simplified real shoreline from the original Natural Earth 50m land interior ring.",
+    "Every listed deployed artifact matches its recorded SHA-256; every input has URL, retrieval time, SHA-256, and a license."
+  ],
+  "layers": {
+    "climate": {
+      "features": 28,
+      "bytes": 466052,
+      "sha256": "3336962b3abbeaade8092ad204695c372dc51e64a7211a518f2c65877ad5c4c0"
+    },
+    "countries": {
+      "features": 242,
+      "bytes": 967335,
+      "sha256": "2a39cd564c4b0310c4305b9c174724c91a10ce3fd4c7dea01890f1bbbad12db6"
+    },
+    "lakes": {
+      "features": 1354,
+      "bytes": 2011623,
+      "sha256": "5dbfe4e4990cc0399292e56fcde661d32109bdec0fe4038e7547c488315a1009"
+    },
+    "land": {
+      "features": 1420,
+      "bytes": 821642,
+      "sha256": "578d334808a642121e3bbf4f4373d00acc266a02a16dd34b2aa853e54f8dd524"
+    },
+    "learning-languages": {
+      "features": 8070,
+      "bytes": 3467420,
+      "sha256": "f6aa41589aeb30660dd19cd630a503cd73278ed6d68f14b675f1cfe928744083"
+    },
+    "learning-population": {
+      "features": 93940,
+      "bytes": 28073917,
+      "sha256": "d56b40fde2e510bf964d71905f9d75b0d52b50d43c6deebc55bdcaaf401b7a1d"
+    },
+    "learning-provinces": {
+      "features": 34,
+      "bytes": 363188,
+      "sha256": "923e61d294a774bdb7ded8c431e57f9797ed3dac03b9b15a89ecfd26891bd6d9"
+    },
+    "peaks": {
+      "features": 633,
+      "bytes": 289117,
+      "sha256": "07884e83f69e49860f4e425ed4c8c641542b15b435a2431c65b2edecc2dc7dd0"
+    },
+    "regions": {
+      "features": 1040,
+      "bytes": 2244950,
+      "sha256": "13aafdba4e03aa2b27b2c185fc9ebfdd464e78df0e76933978e892aac60d1418"
+    },
+    "rivers": {
+      "features": 1209,
+      "bytes": 2528628,
+      "sha256": "04d97063110482f0f9f8023509be1e7c8854c90ff841e2e71f6c6031b6018324"
+    },
+    "theme-peaks": {
+      "features": 14,
+      "bytes": 13425,
+      "sha256": "6dd1d19eb45a1e1e4b458d56c1d8a2889b3c1af62e537529af49b54a98254cf2"
+    }
+  },
+  "namedSearchObjects": 3869,
+  "climate": {
+    "system": "Köppen–Geiger",
+    "period": "1991–2020",
+    "resolutionDegrees": 0.5,
+    "legendClasses": 30,
+    "representedClasses": 28,
+    "absentAtResolution": [
+      "Csc",
+      "Cwc"
+    ]
+  },
+  "status": "passed"
+}

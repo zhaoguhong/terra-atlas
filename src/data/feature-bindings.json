@@ -1,0 +1,433 @@
+{
+  "himalayas": [
+    "region-1159104307"
+  ],
+  "tian-shan": [
+    "region-1159104299"
+  ],
+  "kunlun": [
+    "region-1159104187"
+  ],
+  "qinling": [
+    "region-1159103573"
+  ],
+  "greater-khingan": [
+    "region-1159104171"
+  ],
+  "qilian": [
+    "region-1159103903"
+  ],
+  "andes": [
+    "region-1159104309"
+  ],
+  "rockies": [
+    "region-1159104311"
+  ],
+  "alps": [
+    "region-1159104297"
+  ],
+  "urals": [
+    "region-1159104301"
+  ],
+  "tibetan-plateau": [
+    "region-1159104345"
+  ],
+  "loess-plateau": [
+    "region-1159103717"
+  ],
+  "inner-mongolian-plateau": [],
+  "yunnan-guizhou-plateau": [
+    "region-1159104027"
+  ],
+  "north-china-plain": [
+    "region-1159104313"
+  ],
+  "northeast-china-plain": [
+    "region-1159104203"
+  ],
+  "sichuan-basin": [
+    "region-1159104091"
+  ],
+  "tarim-basin": [
+    "region-1159104093"
+  ],
+  "taklamakan": [
+    "region-1159103651"
+  ],
+  "sahara": [
+    "region-1159104337"
+  ],
+  "amazon-basin": [
+    "region-1159104325"
+  ],
+  "ganges-plain": [],
+  "east-african-rift": [
+    "region-1159103991"
+  ],
+  "yangtze": [
+    "river-yangtze"
+  ],
+  "yellow-river": [
+    "river-yellow-river"
+  ],
+  "pearl-river": [
+    "river-xi",
+    "river-bei",
+    "river-dong"
+  ],
+  "mekong": [
+    "river-mekong-40",
+    "river-mekong-46"
+  ],
+  "amur": [
+    "river-amur"
+  ],
+  "tarim-river": [
+    "river-tarim"
+  ],
+  "nile": [
+    "river-nile"
+  ],
+  "amazon-river": [
+    "river-amazon"
+  ],
+  "mississippi": [
+    "river-mississippi"
+  ],
+  "rhine": [
+    "river-rhein-105",
+    "river-rhein-140",
+    "river-rhine"
+  ],
+  "danube": [
+    "river-danube-25",
+    "river-danube-38"
+  ],
+  "ganges": [
+    "river-ganges"
+  ],
+  "qinghai-lake": [
+    "lake-1159126725"
+  ],
+  "poyang-lake": [
+    "lake-1159114015"
+  ],
+  "dongting-lake": [
+    "lake-1159116351"
+  ],
+  "taihu": [
+    "lake-1159113611"
+  ],
+  "baikal": [
+    "lake-1159113127"
+  ],
+  "great-lakes": [
+    "lake-1159112991",
+    "lake-1159113005",
+    "lake-1159113021",
+    "lake-1159106757",
+    "lake-1159106765"
+  ],
+  "victoria": [
+    "lake-1159113191"
+  ],
+  "tanganyika": [
+    "lake-1159113185"
+  ],
+  "caspian": [
+    "lake-caspian-sea"
+  ],
+  "dead-sea": [
+    "lake-1159126747",
+    "lake-1159126865"
+  ],
+  "china-country": [
+    "country-chn"
+  ],
+  "japan": [
+    "country-jpn"
+  ],
+  "india": [
+    "country-ind"
+  ],
+  "usa": [
+    "country-usa"
+  ],
+  "russia": [
+    "country-rus"
+  ],
+  "brazil": [
+    "country-bra"
+  ],
+  "australia": [
+    "country-aus"
+  ],
+  "egypt": [
+    "country-egy"
+  ],
+  "indonesia": [
+    "country-idn"
+  ],
+  "germany": [
+    "country-deu"
+  ],
+  "kenya": [
+    "country-ken"
+  ],
+  "southeast-asia": [],
+  "western-europe": [],
+  "middle-east": [],
+  "sub-saharan-africa": [],
+  "antarctica": [
+    "region-1159104367"
+  ],
+  "beijing": [
+    "province-cn-11"
+  ],
+  "shanghai": [
+    "province-cn-31"
+  ],
+  "guangdong": [
+    "province-cn-44"
+  ],
+  "sichuan": [
+    "province-cn-51"
+  ],
+  "xinjiang": [
+    "province-cn-65"
+  ],
+  "inner-mongolia": [
+    "province-cn-15"
+  ],
+  "heilongjiang": [
+    "province-cn-23"
+  ],
+  "hainan-province": [
+    "province-cn-46"
+  ],
+  "yunnan": [
+    "province-cn-53"
+  ],
+  "taiwan-region": [
+    "region-1159103793"
+  ],
+  "fujisan": [
+    "peak-1159105623"
+  ],
+  "pacific-ocean": [],
+  "atlantic-ocean": [],
+  "indian-ocean": [],
+  "arctic-ocean": [],
+  "malacca-strait": [],
+  "gibraltar-strait": [],
+  "bering-strait": [],
+  "suez-canal": [],
+  "panama-canal": [],
+  "mediterranean": [],
+  "world-population": [],
+  "population-density": [],
+  "china-population": [],
+  "china-urbanization": [],
+  "india-population": [],
+  "religious-diversity": [],
+  "christianity": [],
+  "islam": [],
+  "hinduism": [],
+  "buddhism": [],
+  "unaffiliated": [],
+  "language-diversity": [],
+  "official-vs-mother-tongue": [],
+  "mandarin-language": [],
+  "english-language": [],
+  "arabic-language": [],
+  "rice-farming": [],
+  "china-grain": [],
+  "ruhr-industry": [],
+  "yangtze-delta": [],
+  "pearl-delta": [],
+  "south-north-water": [],
+  "grand-canal": [],
+  "northern-china": [],
+  "southern-china": [],
+  "northwestern-china": [],
+  "qinghai-tibet-region": [],
+  "hong-kong": [
+    "province-cn-81"
+  ],
+  "macao": [
+    "province-cn-82"
+  ],
+  "asia-continent": [
+    "region-1159104597"
+  ],
+  "yangtze-middle-lower-plain": [],
+  "junggar-basin": [
+    "region-1730072989"
+  ],
+  "qaidam-basin": [
+    "region-1159103721"
+  ],
+  "summit-everest": [
+    "peak-wikidata-q513"
+  ],
+  "summit-k2": [
+    "peak-wikidata-q43512"
+  ],
+  "summit-kangchenjunga": [
+    "peak-wikidata-q82019"
+  ],
+  "summit-lhotse": [
+    "peak-wikidata-q168702"
+  ],
+  "summit-makalu": [
+    "peak-wikidata-q169986"
+  ],
+  "summit-cho-oyu": [
+    "peak-wikidata-q170089"
+  ],
+  "summit-dhaulagiri": [
+    "peak-wikidata-q165440"
+  ],
+  "summit-manaslu": [
+    "peak-wikidata-q170070"
+  ],
+  "summit-nanga-parbat": [
+    "peak-wikidata-q130736"
+  ],
+  "summit-annapurna-i": [
+    "peak-wikidata-q16466024"
+  ],
+  "summit-gasherbrum-i": [
+    "peak-wikidata-q187138"
+  ],
+  "summit-broad-peak": [
+    "peak-wikidata-q180996"
+  ],
+  "summit-gasherbrum-ii": [
+    "peak-wikidata-q186853"
+  ],
+  "summit-shishapangma": [
+    "peak-wikidata-q105124"
+  ],
+  "earth-rotation": [],
+  "earth-season-contrast": [],
+  "earth-longitude-time": [],
+  "earth-coordinates": [],
+  "earth-scale": [],
+  "earth-contours": [],
+  "tianjin": [
+    "province-cn-12"
+  ],
+  "hebei": [
+    "province-cn-13"
+  ],
+  "shanxi": [
+    "province-cn-14"
+  ],
+  "liaoning": [
+    "province-cn-21"
+  ],
+  "jilin": [
+    "province-cn-22"
+  ],
+  "jiangsu": [
+    "province-cn-32"
+  ],
+  "zhejiang": [
+    "province-cn-33"
+  ],
+  "anhui": [
+    "province-cn-34"
+  ],
+  "fujian": [
+    "province-cn-35"
+  ],
+  "jiangxi": [
+    "province-cn-36"
+  ],
+  "shandong": [
+    "province-cn-37"
+  ],
+  "henan": [
+    "province-cn-41"
+  ],
+  "hubei": [
+    "province-cn-42"
+  ],
+  "hunan": [
+    "province-cn-43"
+  ],
+  "guangxi": [
+    "province-cn-45"
+  ],
+  "chongqing": [
+    "province-cn-50"
+  ],
+  "guizhou": [
+    "province-cn-52"
+  ],
+  "xizang": [
+    "province-cn-54"
+  ],
+  "shaanxi": [
+    "province-cn-61"
+  ],
+  "gansu": [
+    "province-cn-62"
+  ],
+  "qinghai": [
+    "province-cn-63"
+  ],
+  "ningxia": [
+    "province-cn-64"
+  ],
+  "taiwan-province": [],
+  "northeast-blacksoil": [],
+  "hetao-irrigation": [],
+  "xilingol-pasture": [],
+  "qinshui-coal": [],
+  "qarhan-resources": [],
+  "hexi-renewables": [],
+  "three-gorges-project": [],
+  "ningbo-zhoushan-port": [],
+  "zhengzhou-transport": [],
+  "qinghai-tibet-railway": [],
+  "liaodong-hills": [],
+  "shandong-hills": [],
+  "southeast-hills": [],
+  "africa-continent": [],
+  "europe-continent": [],
+  "north-america-continent": [],
+  "south-america-continent": [],
+  "oceania-region": [],
+  "brazilian-highlands": [],
+  "deccan-plateau": [],
+  "ethiopian-highlands": [],
+  "great-plains": [],
+  "pampas": [],
+  "atacama-desert": [],
+  "namib-sand-sea": [],
+  "gobi-desert": [],
+  "iceland-rift": [],
+  "san-andreas-fault": [],
+  "hawaii-hotspot": [],
+  "amazon-rainforest": [],
+  "serengeti-savanna": [],
+  "okavango-delta": [],
+  "sundarbans-mangroves": [],
+  "canadian-boreal-forest": [],
+  "gulf-stream": [],
+  "peru-upwelling": [],
+  "indian-monsoon": [],
+  "persian-gulf-energy": [],
+  "atacama-copper": [],
+  "north-sea-energy": [],
+  "great-plains-wheat": [],
+  "kafa-coffee": [],
+  "mekong-delta-farming": [],
+  "rotterdam-port": [],
+  "singapore-port": [],
+  "gotthard-rail": [],
+  "arctic-region": [],
+  "southern-ocean": []
+}

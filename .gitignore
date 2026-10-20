@@ -1,0 +1,41 @@
+# Dependencies, build output and local environments
+node_modules/
+dist/
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+*.tsbuildinfo
+coverage/
+.cache/
+
+# Private deployment, raw source caches and review evidence
+.local/
+data/raw/
+
+# Credentials and local settings (never part of a source release)
+.env*
+.npmrc
+.pypirc
+.netrc
+.ssh/
+*.pem
+*.key
+*.p12
+*.pfx
+id_rsa*
+id_ed25519*
+
+# Test output, logs and editor/OS files
+test-results/
+playwright-report/
+*.log
+*.bak
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+.DS_Store
+._*
+Thumbs.db

@@ -1,0 +1,186 @@
+{
+  "title": "山河图 / Terra Atlas 技术选型记录",
+  "researchedAt": "2026-10-09",
+  "decision": {
+    "frontend": "React + TypeScript + Vite",
+    "mapEngine": "MapLibre GL JS",
+    "mapEngineStableReleaseObserved": "6.13.0",
+    "styling": "自定义 CSS；优先明确地图层级、面板排版和响应式布局",
+    "content": "随静态站点部署的 GeoJSON、中文知识 JSON、图例元数据和来源信息",
+    "persistence": "浏览器 localStorage 保存收藏、图层偏好和浏览位置",
+    "hosting": "Vite 生产构建产物由静态 Web 服务器托管；无常驻 Node.js、SSR、数据库或自建 API",
+    "reasons": [
+      "MapLibre 提供 GPU 地图渲染、矢量线面、标签碰撞处理、要素命中查询和选中样式，适合同时表达山脉、河流、湖泊与气候区域。",
+      "颜色、线宽、透明度和可见级别可按缩放及对象属性控制；相较采用完整地理数据平台，可以用更少的产品功能和依赖做出地图优先的中文学习界面。",
+      "成熟 React 界面与命令式 MapLibre 实例分开维护，不在每次地图移动时重建地图或更新全部 React 状态。",
+      "本地内容索引可以搜索中文名、别名和英文名，不依赖外部地理编码服务或密钥。",
+      "已有真实地理数据应直接复用并简化；项目主要新增中文知识组织与探索交互，不重新实现地图引擎。"
+    ],
+    "tradeoffs": [
+      "MapLibre 需要 WebGL；初始化失败时应提供明确错误及仍可使用的搜索/知识内容，不声称所有老旧设备均支持。",
+      "二维地图为默认。三维地形或地球视图可作为增强，不能牺牲手机可读性或增加核心数据的远程依赖。",
+      "核心地形底图、知识和要素应尽可能本地部署；可选在线 DEM/卫星瓦片有单独加载与失败状态。小尺度本地地形影像只能用于概览，不能暗示具有街道级细节。",
+      "采用缩放分级、数据简化和少量 GeoJSON source，避免复制完整高精度全球数据到多个 source。性能结论是基于架构的判断，实际帧率和手机体验须在成品浏览器中验证。",
+      "MapLibre 本身不提供中国地理知识与地名翻译。应使用核对过的中文属性、系统中文字体及本地字形支持。"
+    ]
+  },
+  "candidates": [
+    {
+      "name": "PhysicalEarth",
+      "repository": "https://github.com/jorgemelis/physicalearth",
+      "live": "https://jorgemelis.github.io/physicalearth/",
+      "license": "MIT（源码）；地图数据保留各自许可",
+      "latestCommitObserved": {"sha": "aca758aaf6a5cce69939c41bc523bde524dc0680", "date": "2026-03-09T19:13:41Z"},
+      "sourceVerified": [
+        "单 HTML 应用通过 CDN 加载 MapLibre 5.19.0 与 maplibre-contour。",
+        "实际 addLayer 实现 color-relief 高程设色、hillshade、Natural Earth 河流线条，以及 atlas-mountains、marine-labels、atlas-peaks、atlas-lake-labels。",
+        "实际 setTerrain 实现三维地形开关；各图层有透明度和显示控制。",
+        "实际存在保存/恢复视图及搜索实现；搜索调用公开 Nominatim。",
+        "源码检索未发现气候分区 layer 或气候数据 source。README 把山脉/山峰仍列为 planned，已与源码不一致。"
+      ],
+      "fit": "最接近自由探索自然地理图的视觉参考，直接适配静态部署；小型项目，不应以其维护规模承担整站长期依赖。",
+      "chinese": "界面与示例标注偏英文，未提供本需求的中文知识卡片；需自建中文名称、知识及搜索索引。",
+      "borrow": "地形设色与阴影叠加思路、自然地理标签层级、图层透明度与探索面板设计。",
+      "doNotCopy": "CDN/远程 GeoJSON 作为核心资源依赖、缺少气候层的功能承诺，以及违反公共 Nominatim autocomplete 限制的即时搜索方式。",
+      "sources": [
+        "https://raw.githubusercontent.com/jorgemelis/physicalearth/main/index.html",
+        "https://raw.githubusercontent.com/jorgemelis/physicalearth/main/LICENSE",
+        "https://github.com/jorgemelis/physicalearth/commits/main.atom"
+      ]
+    },
+    {
+      "name": "TerriaJS / TerriaMap",
+      "repository": "https://github.com/TerriaJS/terriajs",
+      "templateRepository": "https://github.com/TerriaJS/TerriaMap",
+      "license": "Apache-2.0",
+      "versionObserved": "TerriaJS 8.13.0",
+      "latestCommitObserved": {"sha": "7cf3fbaa6323e18421151176a15e0064703cad24", "date": "2026-10-08T11:16:01Z"},
+      "sourceVerified": [
+        "WorkbenchList.tsx 实际实现当前图层列表与排序；FeatureInfoPanel.tsx 根据工作区数据展示拾取的要素信息。",
+        "package.json 同时依赖 terriajs-cesium、Leaflet、MobX、React、i18next 和大量数据连接/转换包。",
+        "TerriaMap 含静态资源目录与构建流程；默认 start 使用 terriajs-server。官方明确支持静态部署，但无 CORS/需鉴权的源需要代理。",
+        "2026 年已把 TerriaMap 合并进 TerriaJS monorepo；旧 TerriaMap 继续镜像，维护 fork 时要关注迁移。"
+      ],
+      "fit": "适合多格式、大型数据目录及专业二维/三维 GIS 平台；能静态部署，不能错误地称其必须依赖服务器。对个人地理学习首版而言，目录/连接器/双引擎维护成本过高。",
+      "chinese": "框架有 i18next 国际化能力；完整中文界面与中文学习内容未被本次检查证实，仍需独立提供内容。",
+      "borrow": "可叠加图层的工作区、图层次序、点击对象后的信息面板和保存地图视图。",
+      "sources": [
+        "https://raw.githubusercontent.com/TerriaJS/terriajs/main/packages/terriajs/package.json",
+        "https://raw.githubusercontent.com/TerriaJS/terriajs/main/packages/terriajs/lib/ReactViews/Workbench/WorkbenchList.tsx",
+        "https://raw.githubusercontent.com/TerriaJS/terriajs/main/packages/terriajs/lib/ReactViews/FeatureInfo/FeatureInfoPanel.tsx",
+        "https://raw.githubusercontent.com/TerriaJS/TerriaMap/main/package.json",
+        "https://github.com/TerriaJS/terriajs",
+        "https://github.com/TerriaJS/TerriaMap",
+        "https://github.com/TerriaJS/terriajs/commits/main.atom"
+      ]
+    },
+    {
+      "name": "Earth (cambecc/earth)",
+      "repository": "https://github.com/cambecc/earth",
+      "live": "https://earth.nullschool.net/",
+      "license": "MIT",
+      "latestCommitObserved": {"sha": "5f091f0c3b60aa38a996a886985bacb3673d16c3", "date": "2016-09-03T01:59:06Z"},
+      "sourceVerified": [
+        "earth.js 使用 Canvas/D3、风矢量插值和粒子动画；有天气模式、标量叠加及当前位置值展示。",
+        "package.json 为 0.0.1，依赖 Express 3.4.4、Swig 1.2.2 等旧版本。",
+        "开发服务器主要托管 public 静态目录；公开代码不必使用常驻服务器部署。",
+        "仓库的公开代码和目前商业/定制在线实例不能视为完全一致。"
+      ],
+      "fit": "可参考风场动画与大气流动表达，不适合作山脉、河湖、地形与长期气候知识的通用地图框架。",
+      "chinese": "公开源码含多语言入口，但没有本需求的中文自然地理知识体系。",
+      "borrow": "后续表达风的方向与速度时参考其粒子思想；本版气候用长期分区与知识解释，避免把实时天气等同气候。",
+      "sources": [
+        "https://raw.githubusercontent.com/cambecc/earth/master/public/libs/earth/1.0.0/earth.js",
+        "https://raw.githubusercontent.com/cambecc/earth/master/package.json",
+        "https://raw.githubusercontent.com/cambecc/earth/master/LICENSE.md",
+        "https://github.com/cambecc/earth/commits/master.atom"
+      ]
+    },
+    {
+      "name": "NASA Worldview",
+      "repository": "https://github.com/nasa-gibs/worldview",
+      "live": "https://worldview.earthdata.nasa.gov/",
+      "license": "NASA-1.3",
+      "versionObserved": "5.6.0",
+      "latestCommitObserved": {"sha": "f8f2a3ae6c7fcc35b8472516dd2f834a393a54d8", "date": "2026-09-29T19:25:53Z"},
+      "sourceVerified": [
+        "当前 package.json 使用 OpenLayers 10.x、React、Redux、proj4 及大量卫星影像相关组件。",
+        "layers/vectors 配置文档提供图层、时间、矢量样式和图例定义。",
+        "tasks/util/dist.js 确实拷贝 web 静态产物并生成发行包；核心浏览器影像浏览不要求应用服务器。",
+        "完整构建还抓取 GIBS capabilities/配置；下载、快照等附加服务不能一并假定纯静态可用。"
+      ],
+      "fit": "成熟且活跃，适合卫星影像、时间对比与观测数据；其产品范围和依赖量远超个人自然地理探索需求。",
+      "chinese": "可自定义界面和资料，但本次未证实完整中文学习内容。",
+      "borrow": "图层/图例联动、数据来源说明和错误反馈；卫星观察可作为未来独立专题。",
+      "sources": [
+        "https://raw.githubusercontent.com/nasa-gibs/worldview/main/package.json",
+        "https://raw.githubusercontent.com/nasa-gibs/worldview/main/tasks/util/dist.js",
+        "https://github.com/nasa-gibs/worldview/blob/main/doc/config/layers.md",
+        "https://github.com/nasa-gibs/worldview/blob/main/doc/config/vectors.md",
+        "https://github.com/nasa-gibs/worldview/releases",
+        "https://github.com/nasa-gibs/worldview/commits/main.atom"
+      ]
+    },
+    {
+      "name": "MapLibre GL JS",
+      "repository": "https://github.com/maplibre/maplibre-gl-js",
+      "license": "BSD-3-Clause",
+      "stableReleaseObserved": "6.13.0（2026-10-06）",
+      "latestCommitObserved": {"sha": "812e3700e578121d2129d7976d21702203b7d10e", "date": "2026-10-08T14:42:27Z"},
+      "fit": "本任务推荐引擎；支持 GeoJSON、矢量/影像瓦片、DEM、地形阴影、高程设色、地球视图和命中查询。引擎自身不需要地图 API key，但各外部数据服务可能需要。",
+      "chinese": "localIdeographFontFamily 支持本地生成 CJK 字形；界面 controls 可配置中文 locale，名称来自我们自己的数据。",
+      "performance": "GPU 渲染及 worker 处理地图数据；合理简化与分层有利于复杂图层。须测试 WebGL 初始化、手机设备像素比和高程层开销。",
+      "static": "库、worker、CSS 与数据均可随网站部署；在锁文件固定实际使用版本，并检查 Vite 生产 worker 路径。",
+      "sources": [
+        "https://raw.githubusercontent.com/maplibre/maplibre-gl-js/main/package.json",
+        "https://github.com/maplibre/maplibre-gl-js/releases/tag/v6.13.0",
+        "https://maplibre.org/maplibre-gl-js/docs/examples/add-a-color-relief-layer/",
+        "https://maplibre.org/maplibre-gl-js/docs/examples/use-locally-generated-ideographs/",
+        "https://maplibre.org/maplibre-gl-js/docs/API/type-aliases/MapOptions/"
+      ]
+    },
+    {
+      "name": "Leaflet",
+      "repository": "https://github.com/Leaflet/Leaflet",
+      "license": "BSD-2-Clause",
+      "latestCommitObserved": {"sha": "125bda1e24d74d6f06f4075b0dab7ac10f3b5c10", "date": "2026-09-19T14:58:56Z"},
+      "fit": "活跃、轻量、静态友好，SVG/Canvas GeoJSON 及移动端交互适合简单二维地图；不原生提供本任务需要的 GPU 高程设色、地形与丰富矢量标注布局。",
+      "tradeoff": "若地图只需少量标记和影像底图很合适；为了自然地理层次再添加多个插件会降低其简单优势。main package 是 2.0.0-alpha.1，不能把 main 的 alpha 当稳定版本。",
+      "chinese": "HTML 标签及系统中文字体可直接使用；中文知识内容仍由站点数据提供。",
+      "sources": [
+        "https://leafletjs.com/",
+        "https://raw.githubusercontent.com/Leaflet/Leaflet/main/package.json",
+        "https://github.com/Leaflet/Leaflet/commits/main.atom"
+      ]
+    },
+    {
+      "name": "OpenLayers",
+      "repository": "https://github.com/openlayers/openlayers",
+      "license": "BSD-2-Clause",
+      "latestCommitObserved": {"sha": "93e4d43242da31b7a7740768c21a45edb1b95ad1", "date": "2026-10-08T17:34:43Z"},
+      "fit": "活跃、静态友好，支持多投影、WMS/WMTS、GeoJSON 和 raster/vector，适合专业二维 GIS；本需求不需要其大量投影/服务接入能力。",
+      "tradeoff": "可实现目标，但地图风格、地形与标签的重点更贴近 MapLibre 的现有实现；因此不再引入第二个地图引擎。",
+      "chinese": "Canvas/HTML 中文标签可用，内容与界面需自行配置。",
+      "sources": [
+        "https://openlayers.org/",
+        "https://raw.githubusercontent.com/openlayers/openlayers/main/package.json",
+        "https://github.com/openlayers/openlayers/commits/main.atom"
+      ]
+    }
+  ],
+  "implementationGuidance": [
+    "核心地理对象保持真实 geometry，并用源标识关联知识；教学概括区域必须在图例与卡片注明性质，不能画简单几何形状冒充气候实测区。",
+    "气候采用单一明确的分类体系；图层来源、时期和简化方法必须可见，色彩和图例对应同一分类编码。",
+    "中文地图名称与英文地名可同时索引，中文、别名和英文都能命中；空结果给出相关主题入口。",
+    "主地图线面以 MapLibre layer 绘制，避免每个对象创建一个 DOM marker。点击使用 queryRenderedFeatures，并将过细河流/山脉的命中范围扩大到可触摸尺寸。",
+    "给层级设置 minzoom 和缩放相关线宽；气候填色调低透明度，避免同时遮住高程、河流和标签。",
+    "知识卡片、收藏、来源和图例无需依赖地图加载；数据失败应有重试和清晰状态。",
+    "公共 Nominatim 不可用于自动补全。本站使用本地学习数据索引即可满足地理对象搜索，不引入通用地址查询。"
+  ],
+  "verificationScope": {
+    "completed": "浏览器工具以外的官网、仓库、实际 raw 源码、package/build 文件、许可证与 GitHub commits Atom 的核对。",
+    "notCompleted": "研究阶段没有得到在线项目的成功浏览器截图：cua createBrowserTab 和 getState 均在 30 秒超时。未安装或运行这些候选项目；没有量化性能基准。成品必须单独执行真实浏览器验证。",
+    "networkNote": "GitHub REST API 返回共享限流 403；维护日期改从官方 commits Atom 获取，不把请求失败解读为停更。",
+    "policySource": "https://operations.osmfoundation.org/policies/nominatim/"
+  }
+}

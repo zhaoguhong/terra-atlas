@@ -1,0 +1,172 @@
+{
+  "generatedAt": "2026-10-10T16:42:50.040663+00:00",
+  "sources": [
+    {
+      "id": "natural-earth-50m-land",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_50m_land.geojson",
+      "path": "data/raw/ne_50m_land.geojson",
+      "size": 1636166,
+      "sha256": "e874b27a51d146452be360cafb3cc50c86001074a67d534113e6534682f9826b",
+      "retrievedAt": "2026-10-08T17:33:58.678638+00:00",
+      "originalUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_land.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "title": "ne 50m land",
+      "homepage": "https://www.naturalearthdata.com/",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "processing": "WGS84；去除无关属性；保拓扑简化并用GEOS安全量化至0.0001°，移除退化的极短线与极小面。中文名基于原数据Wikidata译名转简体；国家沿用原始中文名，自然要素另校正主要通用译名，避免同名国家被替换为河流名称。自然区域为标注范围与概化表达，非精确地貌边界。国家/陆地1:5000万，其他1:1000万；河流按rivernum合并同一流域河段及湖泊中心线，已核实的大河合并不同名称河段；同名跨流域河流保留独立ID。峰点仅保留原始mountain类型。另从原始陆地要素1380的第一个内环提取里海湖面（lake-caspian-sea）；采用同一0.025°保拓扑简化与0.0001°量化，岸线来自原数据。"
+    },
+    {
+      "id": "natural-earth-50m-countries",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_50m_admin_0_countries.geojson",
+      "path": "data/raw/ne_50m_admin_0_countries.geojson",
+      "size": 3083490,
+      "sha256": "3e458fc036ad0a66411f2c1e6cac49c5d7bfb81cb1123bc513b22511a2b7fdeb",
+      "retrievedAt": "2026-10-08T17:34:00.719385+00:00",
+      "originalUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_50m_admin_0_countries.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "title": "ne 50m admin 0 countries",
+      "homepage": "https://www.naturalearthdata.com/",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "processing": "WGS84；去除无关属性；保拓扑简化并用GEOS安全量化至0.0001°，移除退化的极短线与极小面。中文名基于原数据Wikidata译名转简体；国家沿用原始中文名，自然要素另校正主要通用译名，避免同名国家被替换为河流名称。自然区域为标注范围与概化表达，非精确地貌边界。国家/陆地1:5000万，其他1:1000万；河流按rivernum合并同一流域河段及湖泊中心线，已核实的大河合并不同名称河段；同名跨流域河流保留独立ID。峰点仅保留原始mountain类型。"
+    },
+    {
+      "id": "natural-earth-10m-rivers",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_rivers_lake_centerlines.geojson",
+      "path": "data/raw/ne_10m_rivers_lake_centerlines.geojson",
+      "size": 7307743,
+      "sha256": "bb854a900ecbd3b408df46d5e16e3e0f974ba55993f9d8b5c26e855273c0905a",
+      "retrievedAt": "2026-10-08T17:34:01.853446+00:00",
+      "originalUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_rivers_lake_centerlines.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "title": "ne 10m rivers lake centerlines",
+      "homepage": "https://www.naturalearthdata.com/",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "processing": "WGS84；去除无关属性；保拓扑简化并用GEOS安全量化至0.0001°，移除退化的极短线与极小面。中文名基于原数据Wikidata译名转简体；国家沿用原始中文名，自然要素另校正主要通用译名，避免同名国家被替换为河流名称。自然区域为标注范围与概化表达，非精确地貌边界。国家/陆地1:5000万，其他1:1000万；河流按rivernum合并同一流域河段及湖泊中心线，已核实的大河合并不同名称河段；同名跨流域河流保留独立ID。峰点仅保留原始mountain类型。"
+    },
+    {
+      "id": "natural-earth-10m-lakes",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_lakes.geojson",
+      "path": "data/raw/ne_10m_lakes.geojson",
+      "size": 5043554,
+      "sha256": "2d036f53dedec578001c5c30c2959ee7d4eebc1306900fa4367c49929ec8f2d9",
+      "retrievedAt": "2026-10-08T17:34:01.468815+00:00",
+      "originalUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_lakes.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "title": "ne 10m lakes",
+      "homepage": "https://www.naturalearthdata.com/",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "processing": "WGS84；去除无关属性；保拓扑简化并用GEOS安全量化至0.0001°，移除退化的极短线与极小面。中文名基于原数据Wikidata译名转简体；国家沿用原始中文名，自然要素另校正主要通用译名，避免同名国家被替换为河流名称。自然区域为标注范围与概化表达，非精确地貌边界。国家/陆地1:5000万，其他1:1000万；河流按rivernum合并同一流域河段及湖泊中心线，已核实的大河合并不同名称河段；同名跨流域河流保留独立ID。峰点仅保留原始mountain类型。"
+    },
+    {
+      "id": "natural-earth-10m-regions",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_geography_regions_polys.geojson",
+      "path": "data/raw/ne_10m_geography_regions_polys.geojson",
+      "size": 5583870,
+      "sha256": "b7b26e50ea917d3696aec87f932def2bf5f890f5770e441d59c162c6f4c92a77",
+      "retrievedAt": "2026-10-08T17:34:03.324610+00:00",
+      "originalUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_geography_regions_polys.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "title": "ne 10m geography regions polys",
+      "homepage": "https://www.naturalearthdata.com/",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "processing": "WGS84；去除无关属性；保拓扑简化并用GEOS安全量化至0.0001°，移除退化的极短线与极小面。中文名基于原数据Wikidata译名转简体；国家沿用原始中文名，自然要素另校正主要通用译名，避免同名国家被替换为河流名称。自然区域为标注范围与概化表达，非精确地貌边界。国家/陆地1:5000万，其他1:1000万；河流按rivernum合并同一流域河段及湖泊中心线，已核实的大河合并不同名称河段；同名跨流域河流保留独立ID。峰点仅保留原始mountain类型。"
+    },
+    {
+      "id": "natural-earth-10m-peaks",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_geography_regions_elevation_points.geojson",
+      "path": "data/raw/ne_10m_geography_regions_elevation_points.geojson",
+      "size": 862686,
+      "sha256": "f98a16867867146ec4146d6d4b18c823eeedb2825947de666116cf9a4e3f43cb",
+      "retrievedAt": "2026-10-08T17:34:02.756413+00:00",
+      "originalUrl": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/master/geojson/ne_10m_geography_regions_elevation_points.geojson",
+      "repositoryCommit": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "title": "ne 10m geography regions elevation points",
+      "homepage": "https://www.naturalearthdata.com/",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "processing": "WGS84；去除无关属性；保拓扑简化并用GEOS安全量化至0.0001°，移除退化的极短线与极小面。中文名基于原数据Wikidata译名转简体；国家沿用原始中文名，自然要素另校正主要通用译名，避免同名国家被替换为河流名称。自然区域为标注范围与概化表达，非精确地貌边界。国家/陆地1:5000万，其他1:1000万；河流按rivernum合并同一流域河段及湖泊中心线，已核实的大河合并不同名称河段；同名跨流域河流保留独立ID。峰点仅保留原始mountain类型。"
+    },
+    {
+      "id": "koppen-geiger-1991-2020",
+      "url": "https://api.figshare.com/v2/file/download/61012822",
+      "path": "data/raw/koppen_geiger_tif.zip",
+      "size": 130618411,
+      "sha256": "bb84453d4541f1a0bc5a804ead83f483c19ce70f16a5197f6d3a7b6a63e65562",
+      "retrievedAt": "2026-10-08T17:34:49.701060+00:00",
+      "title": "Beck等（2023）Köppen–Geiger全球气候分类 V3",
+      "homepage": "https://www.gloh2o.org/koppen/",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "citation": "Beck, H.E. et al. (2023). High-resolution (1 km) Köppen-Geiger maps for 1901–2099 based on constrained CMIP6 projections. Scientific Data 10, 724. DOI:10.1038/s41597-023-02549-6.",
+      "citationUrl": "https://doi.org/10.1038/s41597-023-02549-6",
+      "period": "1991–2020",
+      "version": "V3",
+      "processing": "采用官方归档内1991_2020/koppen_geiger_0p5.tif（原生0.5°WGS84网格，赤道约55公里）。按分类值矢量化、合并相同分类，去除共线顶点；分类网格随站点发布供本地点查。中文分类名为译文，颜色保留官方legend.txt。该分辨率存在28类，Csc/Cwc未在概化网格出现；图例保留完整30类。",
+      "selectedFileSha256": "d48c432dd4556963b25bda2405885d70eae899096c62e46b5e3ce8833e09c6f0"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/data/climate.geojson",
+      "size": 466052,
+      "sha256": "3336962b3abbeaade8092ad204695c372dc51e64a7211a518f2c65877ad5c4c0"
+    },
+    {
+      "path": "/data/countries.geojson",
+      "size": 967335,
+      "sha256": "2a39cd564c4b0310c4305b9c174724c91a10ce3fd4c7dea01890f1bbbad12db6"
+    },
+    {
+      "path": "/data/lakes.geojson",
+      "size": 2011623,
+      "sha256": "5dbfe4e4990cc0399292e56fcde661d32109bdec0fe4038e7547c488315a1009"
+    },
+    {
+      "path": "/data/land.geojson",
+      "size": 821642,
+      "sha256": "578d334808a642121e3bbf4f4373d00acc266a02a16dd34b2aa853e54f8dd524"
+    },
+    {
+      "path": "/data/peaks.geojson",
+      "size": 289117,
+      "sha256": "07884e83f69e49860f4e425ed4c8c641542b15b435a2431c65b2edecc2dc7dd0"
+    },
+    {
+      "path": "/data/regions.geojson",
+      "size": 2244950,
+      "sha256": "13aafdba4e03aa2b27b2c185fc9ebfdd464e78df0e76933978e892aac60d1418"
+    },
+    {
+      "path": "/data/rivers.geojson",
+      "size": 2528628,
+      "sha256": "04d97063110482f0f9f8023509be1e7c8854c90ff841e2e71f6c6031b6018324"
+    },
+    {
+      "path": "/data/climate-grid.json",
+      "size": 583278,
+      "sha256": "1a15b8d3ac09635e52ddb509dd0ae84fab6081f6f942a164986225039177a7ab"
+    },
+    {
+      "path": "/data/climate-legend.json",
+      "size": 5312,
+      "sha256": "ffab4ab811dbe88a35f8afe3d6f627fd9953c7c744f3dfedf9e7a35452523079"
+    },
+    {
+      "path": "/data/gazetteer.json",
+      "size": 928976,
+      "sha256": "b804a0d41b9d78e4752cd117c7da9979002d3e04982f6cb131ca043bbdfa85ce"
+    }
+  ],
+  "downloadAttempts": [
+    {
+      "url": "https://figshare.com/ndownloader/files/61012822",
+      "status": "web-fetch-403",
+      "resolvedBy": "下载改用官方api.figshare.com/v2/file/download/61012822，成功。"
+    }
+  ]
+}

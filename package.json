@@ -1,0 +1,39 @@
+{
+  "name": "terra-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "山河图 · Terra Atlas — 自由探索山脉、河流、地形与气候",
+  "license": "MIT AND CC-BY-4.0",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "node scripts/build.mjs",
+    "size:check": "node scripts/check-size.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "data:check": "node scripts/check-data.mjs",
+    "test": "node --experimental-strip-types --test scripts/core.test.mjs",
+    "test:e2e": "playwright test",
+    "test:e2e:smoke": "playwright test --config playwright.smoke.config.ts"
+  },
+  "dependencies": {
+    "lucide-react": "1.52.0",
+    "maplibre-gl": "6.13.0",
+    "react": "19.3.0",
+    "react-dom": "19.3.0"
+  },
+  "devDependencies": {
+    "@maplibre/geojson-vt": "6.1.2",
+    "@maplibre/vt-pbf": "4.3.2",
+    "@playwright/test": "1.64.0",
+    "@types/geojson": "7946.0.16",
+    "@types/node": "26.6.4",
+    "@types/react": "19.3.0",
+    "@types/react-dom": "19.3.0",
+    "@vitejs/plugin-react": "6.1.2",
+    "typescript": "7.0.2",
+    "vite": "8.3.4"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  }
+}

@@ -1,0 +1,26 @@
+/* Map settings belong to the map toolbar, independently of the reading panel. */
+.layer-panel{--layer-panel-right:76px;position:absolute;right:var(--layer-panel-right);max-width:calc(100% - var(--layer-panel-right) - 24px);bottom:86px;width:300px;max-height:calc(100% - 110px);z-index:26;display:flex;flex-direction:column;overflow:hidden}
+.layer-panel-heading{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:10px 13px 10px 18px;border-bottom:1px solid #e3e5d9;flex-shrink:0}
+.layer-panel-heading>div{display:flex;align-items:center;gap:9px;color:#557859}
+.layer-panel-heading h2{font-size:14px;font-weight:600;margin:0;line-height:1.6}
+.layer-panel-scroll{padding:16px 18px;overflow:auto;overscroll-behavior:contain;scrollbar-width:thin;scrollbar-color:#cfd5c7 transparent;min-height:0}
+.layer-panel .map-display{margin-bottom:17px}
+.layer-panel .layer-rule{font-size:10px;line-height:1.8;margin-bottom:0}
+.map-tools button[aria-expanded=true]{background:#e3ebdb;color:#3d6348}
+.knowledge-panel~.layer-panel,.probe-panel~.layer-panel,.compare-panel~.layer-panel{--layer-panel-right:472px}
+@media(min-width:760px) and (max-width:1150px){
+  .knowledge-panel~.layer-panel,.probe-panel~.layer-panel{--layer-panel-right:417px}
+}
+@media(max-width:759px), (max-width:1000px) and (max-height:540px){
+  .layer-panel,.knowledge-panel~.layer-panel,.probe-panel~.layer-panel,.compare-panel~.layer-panel{left:max(var(--sheet-side-gap),env(safe-area-inset-left,0px));right:max(var(--sheet-side-gap),env(safe-area-inset-right,0px));top:auto;bottom:var(--sheet-bottom-gap);width:auto;max-width:none;height:var(--map-settings-height);max-height:calc(100% - 80px);border-radius:15px;z-index:36}
+  .layer-panel-heading{padding:4px 8px 4px 17px;min-height:52px}
+  .layer-panel-heading .icon-button{width:44px;height:44px}
+  .layer-panel-scroll{padding:12px 17px 14px}
+  .layer-panel .map-display{margin-bottom:12px}
+  .layer-panel .section-label{font-size:12px}
+  .layer-panel .layer-rule{font-size:11px}
+  .map-stage[data-map-settings]>.explorer,.map-stage[data-map-settings]>.knowledge-panel,.map-stage[data-map-settings]>.compare-panel,.map-stage[data-map-settings]>.probe-panel,.map-stage[data-map-settings]>.practice-panel,.map-stage[data-map-settings]>.measurement-panel,.map-stage[data-map-settings]>.reopen-card{display:none!important}
+}
+@media(min-width:560px) and (max-width:1000px) and (max-height:540px) and (orientation:landscape){
+  .layer-panel,.knowledge-panel~.layer-panel,.probe-panel~.layer-panel,.compare-panel~.layer-panel{left:auto;right:max(var(--sheet-side-gap),env(safe-area-inset-right,0px));top:var(--sheet-top-gap);bottom:var(--sheet-bottom-gap);width:var(--reader-side-width);height:auto;max-height:none}
+}

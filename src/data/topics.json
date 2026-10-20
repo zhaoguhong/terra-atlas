@@ -1,0 +1,6122 @@
+[
+  {
+    "id": "china-plateaus",
+    "title": "中国四大高原",
+    "region": "china",
+    "group": "landforms",
+    "kind": "collection",
+    "overlay": null,
+    "description": "四大高原各有不同的模样：青藏高、黄土沟壑多、内蒙古较开阔、云贵多岩溶。差别来自海拔、岩石和风水作用。",
+    "question": "同为高原，为什么地表差别这么大？",
+    "stops": [
+      "tibetan-plateau",
+      "loess-plateau",
+      "inner-mongolian-plateau",
+      "yunnan-guizhou-plateau"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "mountains"
+    ],
+    "takeaway": "高原表示总体高地，不能由名称推断地表平坦或气候一致；位置、成因和水土条件要一起比较。",
+    "sections": [
+      {
+        "title": "先看位置",
+        "body": "青藏高原在中国西南，黄土高原在其东北，内蒙古高原沿北部展开，云贵高原在西南东部。高原是大片高地，内部也有山脉、河谷和盆地。"
+      },
+      {
+        "title": "地表怎样形成",
+        "body": "青藏高原的隆升与大陆碰撞有关；黄土区的风尘堆积后来被流水切成沟壑；内蒙古高原的景观随水分条件变化；云贵的石灰岩受溶蚀，形成岩溶和山间坝子。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "qinghai-tibet",
+        "title": "青藏高原",
+        "description": "青藏高原海拔高，内部有湖盆，边缘有深切河谷。",
+        "stops": [
+          "tibetan-plateau"
+        ],
+        "detail": "比较内流湖与向外流出的河源，再看高寒环境怎样影响草地和谷地生活。高原定位点只提供一个观察起点。"
+      },
+      {
+        "id": "loess",
+        "title": "黄土高原",
+        "description": "黄土堆积形成厚土层，流水把地表切成沟壑。",
+        "stops": [
+          "loess-plateau"
+        ],
+        "detail": "风负责搬运和堆积，水负责后来的侵蚀与切割。坡面利用、植被与降雨共同影响水土流失。"
+      },
+      {
+        "id": "inner-mongolia",
+        "title": "内蒙古高原",
+        "description": "内蒙古高原较开阔，景观由草原向荒漠变化。",
+        "stops": [
+          "inner-mongolian-plateau"
+        ],
+        "detail": "向较干地区观察植被和水源差异，再看牧业与农田如何选择位置。平缓地表也可能有山地和低洼地。"
+      },
+      {
+        "id": "yunnan-guizhou",
+        "title": "云贵高原",
+        "description": "云贵高原多岩溶、山间盆地和坝子。",
+        "stops": [
+          "yunnan-guizhou-plateau"
+        ],
+        "detail": "石灰岩溶蚀使地表水与地下水联系紧密。低平坝子便于聚落和耕作，周围山地又形成不同条件。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国政府网资料 · 地形分布",
+        "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      },
+      {
+        "title": "UNESCO · South China Karst",
+        "url": "https://whc.unesco.org/en/list/1248/"
+      },
+      {
+        "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+        "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+      },
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      },
+      {
+        "title": "中国科学院地质地球所 · 黄土形成与物源",
+        "url": "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html"
+      },
+      {
+        "title": "中国科学院地球环境所 · 河谷砂黄土风—水过程",
+        "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
+      },
+      {
+        "title": "内蒙古自治区人民政府 · 自然地理",
+        "url": "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/"
+      },
+      {
+        "title": "国家民委 · 内蒙古概况",
+        "url": "https://www.neac.gov.cn/seac/ztzl/mgz/gk.shtml"
+      },
+      {
+        "title": "中国科学院地理资源所 · 内蒙古高原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692371.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 云南高原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 云贵高原气候",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "四大高原，看什么差别",
+        "columns": [
+          "高原",
+          "地表特点",
+          "理解线索"
+        ],
+        "rows": [
+          [
+            "青藏",
+            "高海拔、湖盆与深谷",
+            "构造隆升与高寒"
+          ],
+          [
+            "黄土",
+            "沟壑切割",
+            "风尘堆积与流水侵蚀"
+          ],
+          [
+            "内蒙古",
+            "较开阔，草原与荒漠",
+            "干湿梯度"
+          ],
+          [
+            "云贵",
+            "岩溶、山间坝子",
+            "岩石溶蚀与水流"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china-plains",
+    "title": "中国主要平原",
+    "region": "china",
+    "group": "landforms",
+    "kind": "collection",
+    "overlay": null,
+    "description": "东北、华北、长江中下游平原都较低平，水热条件却不同。沿着纬度和河流看，能理解农田、河湖与城市的位置。",
+    "question": "三大平原的农田为什么需要不同的用水和土地管理？",
+    "stops": [
+      "northeast-china-plain",
+      "north-china-plain",
+      "yangtze-middle-lower-plain"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "rivers",
+      "lakes"
+    ],
+    "takeaway": "平原利于耕作和联系，但农业与聚落还受水热、土壤、洪水和管理影响。",
+    "sections": [
+      {
+        "title": "平原在哪里",
+        "body": "东北平原位于东北山地之间，华北平原在太行山以东，长江中下游平原沿江和湖区展开。大平原内部仍有岗丘、河漫滩和低洼地。"
+      },
+      {
+        "title": "平坦带来的条件",
+        "body": "河流长期搬运和沉积物质，形成许多低平地区。平地有利于连片耕作和交通，低洼处也容易积水。东北重视生长季与黑土保护，华北关注季节用水，长江中下游需要兼顾供水和排涝。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "northeast",
+        "title": "东北平原",
+        "description": "东北平原被山地环绕，黑土和暖季支持粮食生产。",
+        "stops": [
+          "northeast-china-plain"
+        ],
+        "detail": "冬季寒冷、作物生长季较短，保护黑土和安排作物季节都很重要。平原内部的水土条件仍有差别。"
+      },
+      {
+        "id": "north",
+        "title": "华北平原",
+        "description": "华北平原从山前延伸到海岸，农业与城市共享水源。",
+        "stops": [
+          "north-china-plain"
+        ],
+        "detail": "比较作物需水季节和降雨季节，再看灌溉、地下水与城市用水怎样协调。地势低处还要关注排水。"
+      },
+      {
+        "id": "yangtze",
+        "title": "长江中下游平原",
+        "description": "长江中下游平原河湖密集，稻作与防洪排涝相连。",
+        "stops": [
+          "yangtze-middle-lower-plain"
+        ],
+        "detail": "供水并非唯一任务：雨季高水位与低洼地积水也影响农田和城镇，湖泊、河道与排灌设施需要一起看。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国政府网资料 · 中国地形的分布（高原、平原与盆地）",
+        "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      },
+      {
+        "title": "农业农村部 · 粮食作物区域大配方与施肥建议",
+        "url": "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm"
+      },
+      {
+        "title": "中国科学院地理资源所 · 东北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 华北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 长江中下游平原",
+        "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692359.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "三大平原的农业条件",
+        "columns": [
+          "平原",
+          "主要条件",
+          "管理重点"
+        ],
+        "rows": [
+          [
+            "东北",
+            "黑土、较短暖季",
+            "土壤保护"
+          ],
+          [
+            "华北",
+            "季节降雨与农田用水",
+            "供水与节水"
+          ],
+          [
+            "长江中下游",
+            "暖湿、河湖密集",
+            "灌溉与排涝"
+          ]
+        ],
+        "note": "区域概括；具体作物与农田条件还受品种、技术和管理影响。"
+      }
+    ]
+  },
+  {
+    "id": "china-basins",
+    "title": "中国四大盆地",
+    "region": "china",
+    "group": "landforms",
+    "kind": "collection",
+    "overlay": null,
+    "description": "盆地是四周较高、中间较低的地形。塔里木、准噶尔、柴达木、四川盆地的海拔、干湿和河流出口并不相同。",
+    "question": "盆地里的水一定流不出去吗？",
+    "stops": [
+      "tarim-basin",
+      "junggar-basin",
+      "qaidam-basin",
+      "sichuan-basin"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "mountains",
+      "rivers"
+    ],
+    "takeaway": "盆地表示围合地形；海拔、干湿与内外流性质必须分别核对。",
+    "sections": [
+      {
+        "title": "盆地不一定低海拔",
+        "body": "塔里木和准噶尔分居天山南北，柴达木位于青藏高原内部，四川盆地位于高原东侧。柴达木相对四周较低，绝对海拔却很高。"
+      },
+      {
+        "title": "水的出口很关键",
+        "body": "塔里木、柴达木的许多河流在内陆消耗或汇入湖泊；四川盆地通过长江水系通向海洋；准噶尔不同部分的排水方向也有差别。干旱盆地的绿洲常依靠周围山地来水。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "tarim",
+        "title": "塔里木盆地",
+        "description": "塔里木盆地的绿洲沿山地来水分布，内部有大片沙漠。",
+        "stops": [
+          "tarim-basin"
+        ],
+        "detail": "先找天山、昆仑和出山河流，再看水怎样支持绿洲并流向更低的内陆地区。盆地与沙漠范围并不相同。"
+      },
+      {
+        "id": "junggar",
+        "title": "准噶尔盆地",
+        "description": "准噶尔在天山以北，不同部分的水流出口有差别。",
+        "stops": [
+          "junggar-basin"
+        ],
+        "detail": "盆地的开口、邻近山地和水汽条件共同影响环境。先看具体水系，再判断一个地区是否属于内流区。"
+      },
+      {
+        "id": "qaidam",
+        "title": "柴达木盆地",
+        "description": "柴达木是高原上的盆地，内部多封闭水系和盐湖。",
+        "stops": [
+          "qaidam-basin"
+        ],
+        "detail": "相对周围山地低，并不代表接近海平面。高寒、干旱、水量收支与盐分积累共同塑造盆地环境。"
+      },
+      {
+        "id": "sichuan",
+        "title": "四川盆地",
+        "description": "四川盆地较湿润，河流通过长江水系通向海洋。",
+        "stops": [
+          "sichuan-basin"
+        ],
+        "detail": "盆地内部包含丘陵和平地，河流切穿外围山地建立出口。将它与西北内流盆地比较，能看清围合地形与排水方式的区别。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国政府网资料 · 中国地形的分布（高原、平原与盆地）",
+        "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      },
+      {
+        "title": "中国科学院地理资源所 · 塔里木盆地",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html"
+      },
+      {
+        "title": "NASA · A Wall of Dust in the Tarim Basin",
+        "url": "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/"
+      },
+      {
+        "title": "中国科学院地球环境所 · 塔里木盆地的前生今世",
+        "url": "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 准噶尔盆地",
+        "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692365.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 柴达木盆地",
+        "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 四川盆地",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html"
+      },
+      {
+        "title": "中国科学院青海盐湖研究所 · 柴达木盆地盐湖锂矿床成因研究",
+        "url": "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html"
+      },
+      {
+        "title": "青海省人民政府 · 十四五规划资源利用与生态保护",
+        "url": "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "四大盆地的水往哪里去",
+        "columns": [
+          "盆地",
+          "位置",
+          "排水特点"
+        ],
+        "rows": [
+          [
+            "塔里木",
+            "天山以南",
+            "主要流向内陆"
+          ],
+          [
+            "准噶尔",
+            "天山以北",
+            "不同部分出口有差别"
+          ],
+          [
+            "柴达木",
+            "青藏高原内部",
+            "多封闭水系和盐湖"
+          ],
+          [
+            "四川",
+            "高原东侧",
+            "长江水系通海"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china-mountain-ranges",
+    "title": "中国主要山脉",
+    "region": "china",
+    "group": "landforms",
+    "kind": "collection",
+    "overlay": null,
+    "description": "山脉勾勒中国地形的骨架：高原边缘、西北山盆相间、东部高低地相接。它们影响水流、水汽和交通通道。",
+    "question": "山脉两侧有哪些地形，河流从哪一侧流出？",
+    "stops": [
+      "himalayas",
+      "kunlun",
+      "tian-shan",
+      "qilian",
+      "qinling",
+      "greater-khingan"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "mountains",
+      "rivers"
+    ],
+    "takeaway": "先辨山脉走向与邻接关系，再追问成因、分水与交通；地理过渡带通常不是一条绝对界线。",
+    "sections": [
+      {
+        "title": "山脉与邻近地形",
+        "body": "喜马拉雅和昆仑分处青藏高原南北，天山把塔里木和准噶尔隔开，祁连山邻近河西走廊。秦岭、大兴安岭则有助于辨认东部的自然过渡带。"
+      },
+      {
+        "title": "山地怎样联系两侧",
+        "body": "山脉会阻挡部分水汽，也常构成分水地带。山地降水和冰雪给低地供水，河谷和山口提供交通通道。山脉影响各有差别，地图中的标注范围不能直接当作精确分水岭。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "plateau-edge",
+        "title": "青藏高原边缘",
+        "description": "喜马拉雅和昆仑分处青藏高原南侧与北侧。",
+        "stops": [
+          "himalayas",
+          "kunlun"
+        ],
+        "detail": "沿山系看高原与邻近低地，再看河流怎样离开高地。两侧山系共同提供位置参照，具体构造历史各有特点。"
+      },
+      {
+        "id": "inland",
+        "title": "西北山地与盆地",
+        "description": "天山南北邻不同盆地，祁连山向河西低地供水。",
+        "stops": [
+          "tian-shan",
+          "qilian"
+        ],
+        "detail": "山地降水和冰雪通过河流连接低地。比较山体、出山河流和绿洲，比单独看沙漠更容易理解水源。"
+      },
+      {
+        "id": "transition",
+        "title": "东部自然过渡带",
+        "description": "秦岭与大兴安岭邻接不同地形和水热环境。",
+        "stops": [
+          "qinling",
+          "greater-khingan"
+        ],
+        "detail": "秦岭附近适合看南北自然过渡，大兴安岭适合看高原与平原关系。过渡带有宽度，山脉也有河谷和山口。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国政府网资料 · 地形分布",
+        "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      },
+      {
+        "title": "USGS · The Himalayas: Two continents collide",
+        "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html"
+      },
+      {
+        "title": "USGS · Himalaya and vicinity tectonics",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+      },
+      {
+        "title": "中国科学院地理资源所 · 昆仑山脉",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692380.html"
+      },
+      {
+        "title": "UNESCO · Xinjiang Tianshan",
+        "url": "https://whc.unesco.org/en/list/1414/"
+      },
+      {
+        "title": "NASA · Red Rocks and Rainbow Ridges",
+        "url": "https://science.nasa.gov/earth/earth-observatory/red-rocks-and-rainbow-ridges-148234/"
+      },
+      {
+        "title": "中国科学院青藏高原所 · 第三极",
+        "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+      },
+      {
+        "title": "中国科学院西北研究院 · 祁连山冰冻圈水文",
+        "url": "https://nieer.cas.cn/xwdt/kydt/202609/t20260922_8286022.html"
+      },
+      {
+        "title": "中国科学院地质地球所 · 北秦岭造山带野外研讨",
+        "url": "https://www.igg.cas.cn/hejl/hzxm/202405/t20240528_7174019.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 中国南北过渡带研究",
+        "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202504/t20250409_7591749.html"
+      },
+      {
+        "title": "国家林草局 · 大兴安岭的绿色林海",
+        "url": "https://www.forestry.gov.cn/c/www/tsxa/540017.jhtml"
+      },
+      {
+        "title": "内蒙古自治区 · 国土空间规划",
+        "url": "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "山脉与相邻地形",
+        "columns": [
+          "山系",
+          "位置关系"
+        ],
+        "rows": [
+          [
+            "喜马拉雅／昆仑",
+            "青藏高原南北边缘"
+          ],
+          [
+            "天山",
+            "塔里木与准噶尔之间"
+          ],
+          [
+            "祁连山",
+            "高原与河西低地联系"
+          ],
+          [
+            "秦岭／大兴安岭",
+            "东部自然过渡与高低地联系"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china-rivers",
+    "title": "中国主要河流",
+    "region": "china",
+    "group": "water",
+    "kind": "collection",
+    "overlay": null,
+    "description": "长江、黄河、珠江等河流连接不同地形。有的入海，有的流向内陆；来水、季节变化和下游环境也各不相同。",
+    "question": "沿一条河往上找，水主要从哪些地区汇来？",
+    "stops": [
+      "yangtze",
+      "yellow-river",
+      "pearl-river",
+      "mekong",
+      "amur",
+      "tarim-river"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "rivers",
+      "lakes"
+    ],
+    "takeaway": "读河流先分清干流、水系与流域，再比较补给、季节和去向；河道不能冒充流域边界。",
+    "sections": [
+      {
+        "title": "河道、水系、流域",
+        "body": "河道是水经过的通道；干流和支流组成水系；流域是向同一出口汇水的地表范围。珠江采用水系口径，地图上的一条河线不能代表全部支流和流域。"
+      },
+      {
+        "title": "从上游读到下游",
+        "body": "长江、黄河从西部高地流向东部海岸，澜沧江—湄公河跨越多个国家，黑龙江通向海洋，塔里木河流向内陆。降雨、融雪和地下水的作用随河段变化，上下游还通过水量、泥沙和用水相联系。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "large-rivers",
+        "title": "长江与黄河",
+        "description": "长江与黄河都联系西部高地和东部低地，沿程环境不同。",
+        "stops": [
+          "yangtze",
+          "yellow-river"
+        ],
+        "detail": "从源区沿干支流向下看，比较地形、来水与下游问题。河道显示路径，汇水范围应另看流域资料。"
+      },
+      {
+        "id": "southern",
+        "title": "南部与跨境水系",
+        "description": "珠江是一组水系，澜沧江—湄公河突出跨境干流联系。",
+        "stops": [
+          "pearl-river",
+          "mekong"
+        ],
+        "detail": "珠江需要把多条干支流一起读；澜沧江—湄公河则能沿主河道观察不同国家和河段的相互影响。"
+      },
+      {
+        "id": "northeast-inland",
+        "title": "东北边境河与内陆河",
+        "description": "黑龙江最终入海，塔里木河流向内陆。",
+        "stops": [
+          "amur",
+          "tarim-river"
+        ],
+        "detail": "河水去向影响下游环境，也影响用水协调。塔里木下游生态依赖上游来水，黑龙江则有跨境和入海联系。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "宁夏水利厅 · 亚洲第一长河——长江",
+        "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html"
+      },
+      {
+        "title": "重庆市水利局 · 长江",
+        "url": "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html"
+      },
+      {
+        "title": "生态环境部 · 黄河流域生态保护规划",
+        "url": "https://www.mee.gov.cn/zcwj/zyygwj/202110/t20211009_955779.shtml"
+      },
+      {
+        "title": "黄河水利委员会 · 黄河防汛辨析",
+        "url": "https://www.yrcc.gov.cn/zwzc/zcjd/202403/t20240312_426969.html"
+      },
+      {
+        "title": "交通运输部珠江航务管理局 · 珠江水系航运简介",
+        "url": "https://zjhy.mot.gov.cn/zhuhanggk/shuixijj/201909/t20190916_3266853.html"
+      },
+      {
+        "title": "宁夏水利厅 · 珠江与沿海河流",
+        "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2718481.html"
+      },
+      {
+        "title": "湄公河委员会 · Geography",
+        "url": "https://www.mrcmekong.org/geography/"
+      },
+      {
+        "title": "湄公河委员会 · Climate",
+        "url": "https://www.mrcmekong.org/basin-climate/"
+      },
+      {
+        "title": "NASA · Strait of Tartary in Autumn",
+        "url": "https://science.nasa.gov/earth/earth-observatory/strait-of-tartary-in-autumn-150619/"
+      },
+      {
+        "title": "中国科学院 · 第三次新疆科考水资源调查",
+        "url": "https://www.cas.cn/cm/202308/t20230817_4964150.shtml"
+      },
+      {
+        "title": "中国科学院地质地球所 · 塔河生态恢复",
+        "url": "https://igg.cas.cn/hejl/jldt/201510/t20151029_4450452.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "读河流的三个尺度",
+        "columns": [
+          "对象",
+          "表示什么",
+          "地图上怎么看"
+        ],
+        "rows": [
+          [
+            "河道",
+            "水流经过的通道",
+            "线"
+          ],
+          [
+            "水系",
+            "相连的干流和支流",
+            "连接的河网"
+          ],
+          [
+            "流域",
+            "向同一出口汇水的区域",
+            "面与汇水边界"
+          ]
+        ],
+        "note": "辅助流域图层采用第3级汇水分区，包含沿海分组；单元未必等于命名大河的完整流域。"
+      }
+    ]
+  },
+  {
+    "id": "world-high-peaks",
+    "title": "世界十四座8000米高峰",
+    "region": "world",
+    "group": "landforms",
+    "kind": "collection",
+    "overlay": null,
+    "stops": [
+      "summit-everest",
+      "summit-k2",
+      "summit-kangchenjunga",
+      "summit-lhotse",
+      "summit-makalu",
+      "summit-cho-oyu",
+      "summit-dhaulagiri",
+      "summit-manaslu",
+      "summit-nanga-parbat",
+      "summit-annapurna-i",
+      "summit-gasherbrum-i",
+      "summit-broad-peak",
+      "summit-gasherbrum-ii",
+      "summit-shishapangma"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "mountains"
+    ],
+    "description": "经典十四座8000米主峰全部位于亚洲：10座在喜马拉雅，4座在喀喇昆仑。先看聚集位置，再认识各座山峰。",
+    "question": "为什么十四座主峰集中在这两组山地？",
+    "takeaway": "十四座主峰集中在两组亚洲山地，峰顶、山体与山系属于不同尺度。",
+    "sections": [
+      {
+        "title": "两组高峰的位置",
+        "body": "喀喇昆仑的四座主峰包括乔戈里峰、布洛阿特峰和加舒尔布鲁木两峰。喜马拉雅的十座从南迦帕尔巴特附近延伸到干城章嘉所在的东部高山。"
+      },
+      {
+        "title": "主峰、山体与山系",
+        "body": "峰顶是局部高点，山体包含坡面与山脊，山系则是更大的延伸系统。本主题沿用UIAA经典十四座主峰名录；地图高程格网的像元值与正式峰顶测量用途不同。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "UIAA · 经典十四座8000米主峰的名录口径",
+        "url": "https://www.theuiaa.org/8000m-peaks/"
+      },
+      {
+        "title": "Wikidata · Mount Everest（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q513"
+      },
+      {
+        "title": "Wikidata · K2（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q43512"
+      },
+      {
+        "title": "Wikidata · Kangchenjunga（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q82019"
+      },
+      {
+        "title": "Wikidata · Lhotse（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q168702"
+      },
+      {
+        "title": "Wikidata · Makalu（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q169986"
+      },
+      {
+        "title": "Wikidata · Cho Oyu（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q170089"
+      },
+      {
+        "title": "Wikidata · Dhaulagiri（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q165440"
+      },
+      {
+        "title": "Wikidata · Manaslu（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q170070"
+      },
+      {
+        "title": "Wikidata · Nanga Parbat（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q130736"
+      },
+      {
+        "title": "Wikidata · Annapurna I（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q16466024"
+      },
+      {
+        "title": "Wikidata · Gasherbrum I（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q187138"
+      },
+      {
+        "title": "Wikidata · Broad Peak（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q180996"
+      },
+      {
+        "title": "Wikidata · Gasherbrum II（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q186853"
+      },
+      {
+        "title": "Wikidata · Shishapangma（峰顶参考坐标）",
+        "url": "https://www.wikidata.org/wiki/Q105124"
+      }
+    ],
+    "geometryNote": "全部山峰使用版本固定的峰顶参考坐标；点位不表示山体边界。",
+    "modules": [
+      {
+        "id": "karakoram",
+        "title": "喀喇昆仑高峰群",
+        "description": "喀喇昆仑有4座经典8000米主峰，位置相对集中。",
+        "stops": [
+          "summit-k2",
+          "summit-broad-peak",
+          "summit-gasherbrum-i",
+          "summit-gasherbrum-ii"
+        ],
+        "detail": "以乔戈里峰为参照，找布洛阿特和加舒尔布鲁木两峰，比较相邻峰顶位置和整组山地范围。"
+      },
+      {
+        "id": "himalaya",
+        "title": "喜马拉雅高峰群",
+        "description": "喜马拉雅有10座经典8000米主峰，分布在不同高峰簇。",
+        "stops": [
+          "summit-everest",
+          "summit-kangchenjunga",
+          "summit-lhotse",
+          "summit-makalu",
+          "summit-cho-oyu",
+          "summit-dhaulagiri",
+          "summit-manaslu",
+          "summit-nanga-parbat",
+          "summit-annapurna-i",
+          "summit-shishapangma"
+        ],
+        "detail": "先找珠峰、洛子峰和马卡鲁所在一带，再向东西展开。参考点表示峰顶位置，山体与山脉属于更大尺度。"
+      }
+    ],
+    "visuals": [
+      {
+        "kind": "bars",
+        "title": "十四座主峰分布在哪组山地",
+        "unit": "座",
+        "rows": [
+          {
+            "label": "喜马拉雅",
+            "value": 10
+          },
+          {
+            "label": "喀喇昆仑",
+            "value": 4
+          }
+        ],
+        "note": "按UIAA经典十四座8000米主峰名录及本站逐峰归属计数。",
+        "sources": [
+          {
+            "title": "UIAA · 经典十四座8000米主峰的名录口径",
+            "url": "https://www.theuiaa.org/8000m-peaks/"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "world-mountain-ranges",
+    "title": "世界主要山系",
+    "region": "world",
+    "group": "landforms",
+    "kind": "collection",
+    "overlay": null,
+    "stops": [
+      "himalayas",
+      "andes",
+      "rockies",
+      "alps",
+      "urals",
+      "fujisan"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "mountains"
+    ],
+    "description": "喜马拉雅、安第斯、落基山、阿尔卑斯、乌拉尔分布在不同大陆。它们的走向相似或不同，形成历史也各有特点。",
+    "question": "喜马拉雅与安第斯，形成山地的板块运动有什么不同？",
+    "takeaway": "山脉的位置、板块背景与侵蚀历史共同影响今天的形态。",
+    "sections": [
+      {
+        "title": "先看大陆上的位置",
+        "body": "亚洲高山、欧洲内部山系和美洲西部山地提供不同的地形骨架。沿山系看相邻平原、高原与海岸，可以理解它们对水流和交通的影响。"
+      },
+      {
+        "title": "形成过程有差别",
+        "body": "喜马拉雅突出大陆碰撞，安第斯突出海洋板块俯冲背景；乌拉尔记录更久远的造山历史。富士山是单座火山案例，其形态与连续山系不同。抬升以后，流水、冰川和风化仍在改变山地。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "USGS · The Himalayas: Two continents collide",
+        "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html"
+      },
+      {
+        "title": "USGS · Seismicity of the Earth: Himalaya and vicinity",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+      },
+      {
+        "title": "USGS · South America seismotectonics",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region"
+      },
+      {
+        "title": "NASA · Mud from the Andes Carried by the Amazon",
+        "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+      },
+      {
+        "title": "美国国家公园局 · Rocky Mountain System Provinces",
+        "url": "https://home.nps.gov/articles/rockies.htm"
+      },
+      {
+        "title": "美国国家公园局 · Geology of Grand Canyon",
+        "url": "https://home.nps.gov/grca/learn/nature/grca-geology.htm"
+      },
+      {
+        "title": "苏黎世联邦理工地震研究所 · Switzerland tectonics",
+        "url": "https://www.seismo.ethz.ch/en/knowledge/causes-of-earthquakes/Switzerland/"
+      },
+      {
+        "title": "UNESCO · Toratau Global Geopark",
+        "url": "https://www.unesco.org/en/iggp/toratau-unesco-global-geopark"
+      },
+      {
+        "title": "UNESCO · Northern Urals nomination geology",
+        "url": "https://whc.unesco.org/document/167636"
+      },
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      },
+      {
+        "title": "USGS · What is a hotspot and how do you know it is there?",
+        "url": "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there"
+      },
+      {
+        "title": "UNESCO · Fujisan, sacred place and source of artistic inspiration",
+        "url": "https://whc.unesco.org/en/list/1418/"
+      },
+      {
+        "title": "日本气象厅 · 富士山火山资料",
+        "url": "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html"
+      }
+    ],
+    "geometryNote": "自然区域图形是概化标注参考范围；缺少范围一致图形的成员使用定位点，不以省区或更大的自然区替代。",
+    "modules": [
+      {
+        "id": "asia",
+        "title": "亚洲高山",
+        "description": "喜马拉雅展示碰撞山系，富士山展示单座火山。",
+        "stops": [
+          "himalayas",
+          "fujisan"
+        ],
+        "detail": "喜马拉雅的地壳增厚与大陆碰撞相连，富士山则有火山锥形态和岩浆活动。山系与火山要按不同尺度理解。"
+      },
+      {
+        "id": "americas",
+        "title": "美洲山系",
+        "description": "安第斯与落基山都在美洲西部，形成历史并不相同。",
+        "stops": [
+          "andes",
+          "rockies"
+        ],
+        "detail": "沿大陆西缘看山地与海岸、内陆平原的关系，再比较俯冲背景和长期隆升。相似的位置不能代替地质证据。"
+      },
+      {
+        "id": "europe",
+        "title": "欧洲及欧亚内部",
+        "description": "阿尔卑斯与乌拉尔记录不同阶段的造山历史。",
+        "stops": [
+          "alps",
+          "urals"
+        ],
+        "detail": "比较山系的位置和邻近地区，再读碰撞与后期侵蚀。今天的外貌是地质历史与持续外力共同作用的结果。"
+      }
+    ],
+    "shared": false,
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "两种造山背景",
+        "columns": [
+          "案例",
+          "相对运动",
+          "地表结果"
+        ],
+        "rows": [
+          [
+            "喜马拉雅",
+            "大陆碰撞",
+            "地壳增厚与高山"
+          ],
+          [
+            "安第斯",
+            "海洋板块俯冲",
+            "山地、海沟与火山"
+          ],
+          [
+            "富士山",
+            "俯冲背景下的岩浆活动",
+            "单座火山锥"
+          ]
+        ],
+        "note": "山系还持续受到隆升、侵蚀和冰川等作用。"
+      }
+    ]
+  },
+  {
+    "id": "world-lakes",
+    "title": "世界代表湖泊与湖群",
+    "region": "world",
+    "group": "water",
+    "kind": "collection",
+    "overlay": null,
+    "stops": [
+      "caspian",
+      "baikal",
+      "tanganyika",
+      "victoria",
+      "great-lakes",
+      "dead-sea"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "rivers",
+      "lakes"
+    ],
+    "description": "湖泊可以很深、很浅，也可以形成相连的湖群。比较湖盆成因、出口和盐度，比只看面积更能理解它们。",
+    "question": "没有外流出口的湖泊，水和盐会怎样变化？",
+    "takeaway": "湖盆成因、排水出口与水盐收支，需要分别比较。",
+    "sections": [
+      {
+        "title": "湖盆从哪里来",
+        "body": "贝加尔湖和坦噶尼喀湖与裂谷活动有关，北美五大湖受到冰川改造，维多利亚湖位于较宽浅的湖盆。相似的水面外观，可以对应不同的地质历史。"
+      },
+      {
+        "title": "出口改变水量与盐分",
+        "body": "降水、径流、蒸发和流出共同决定湖水收支。里海和死海没有通海的地表出口，盐分容易累积；实际盐度还取决于长期收支。五大湖则要把多片水面及连通水道一起读。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA · Caspian Sea",
+        "url": "https://science.nasa.gov/earth/earth-observatory/caspian-sea-44253/"
+      },
+      {
+        "title": "NASA · The Caspian Sea’s Shrinking Coastline",
+        "url": "https://science.nasa.gov/earth/earth-observatory/the-caspian-seas-shrinking-coastline/"
+      },
+      {
+        "title": "UNESCO · Lake Baikal",
+        "url": "https://whc.unesco.org/en/list/754/"
+      },
+      {
+        "title": "UNESCO · Baikal periodic report",
+        "url": "https://whc.unesco.org/document/163201"
+      },
+      {
+        "title": "NASA · A Tale of Contrasting Rift Valley Lakes",
+        "url": "https://science.nasa.gov/earth/earth-observatory/a-tale-of-contrasting-rift-valley-lakes-145194/"
+      },
+      {
+        "title": "NASA · Earthquake in Eastern Africa",
+        "url": "https://science.nasa.gov/earth/earth-observatory/earthquake-in-eastern-africa-15855/"
+      },
+      {
+        "title": "Scientific Data · White Nile basin lakes",
+        "url": "https://www.nature.com/articles/s41597-022-01742-3"
+      },
+      {
+        "title": "NASA · Nalubaale Dam, Uganda",
+        "url": "https://science.nasa.gov/earth/earth-observatory/nalubaale-dam-uganda-6371/"
+      },
+      {
+        "title": "NOAA · Great Lakes ecoregion",
+        "url": "https://www.noaa.gov/education/resource-collections/freshwater/great-lakes-ecoregion"
+      },
+      {
+        "title": "US EPA · Great Lakes environmental atlas",
+        "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004ICU.TXT"
+      },
+      {
+        "title": "NASA · Getting Saltier",
+        "url": "https://science.nasa.gov/earth/earth-observatory/getting-saltier-145373/"
+      },
+      {
+        "title": "NASA · Dead Sea",
+        "url": "https://science.nasa.gov/earth/earth-observatory/dead-sea-6136/"
+      },
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      }
+    ],
+    "geometryNote": "水域和河道来自真实源数据并经过概化；河道不等同整个流域，湖泊连通水道与主体水域分别表达。",
+    "modules": [
+      {
+        "id": "rift",
+        "title": "构造深湖",
+        "description": "贝加尔与坦噶尼喀的狭长深湖盆都与裂谷有关。",
+        "stops": [
+          "baikal",
+          "tanganyika"
+        ],
+        "detail": "地壳拉伸、断裂与下陷给湖水提供容纳空间。湖的深度、储水量和面积分别描述不同性质。"
+      },
+      {
+        "id": "glacial",
+        "title": "湖群与高地湖",
+        "description": "北美五大湖是相连湖群，维多利亚湖是较宽浅的单湖。",
+        "stops": [
+          "great-lakes",
+          "victoria"
+        ],
+        "detail": "五大湖受到冰川改造，维多利亚有不同湖盆背景。比较成因时要看地质资料，比较水系时要找连接水道和出口。"
+      },
+      {
+        "id": "closed",
+        "title": "封闭水域",
+        "description": "里海与死海都没有通向海洋的地表出口。",
+        "stops": [
+          "caspian",
+          "dead-sea"
+        ],
+        "detail": "蒸发带走水而留下盐，长期水量和盐分收支改变湖水性质。盐度不能只从湖面大小或名称判断。"
+      }
+    ],
+    "shared": false,
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "湖泊怎样比较",
+        "columns": [
+          "案例",
+          "湖盆／范围",
+          "排水线索"
+        ],
+        "rows": [
+          [
+            "贝加尔／坦噶尼喀",
+            "裂谷深湖",
+            "成因与深度分别读"
+          ],
+          [
+            "北美五大湖",
+            "相连湖群，冰川改造",
+            "看湖间连通水道"
+          ],
+          [
+            "维多利亚",
+            "较宽浅湖盆",
+            "联系白尼罗河水系"
+          ],
+          [
+            "里海／死海",
+            "封闭水域",
+            "无通海地表出口"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "map-climate",
+    "title": "长期气候分布",
+    "group": "climate",
+    "overlay": "climate",
+    "stops": [
+      "climate-a",
+      "climate-b",
+      "climate-c",
+      "climate-d",
+      "climate-e"
+    ],
+    "description": "气候图概括多年温度和降水。A–E五大类先看冷热与干湿，详细类型再区分雨季、旱季和冷暖程度。",
+    "question": "沿海、内陆和高山，即使纬度相近，气候也会一样吗？",
+    "sections": [
+      {
+        "title": "字母怎样读",
+        "body": "A表示热带，B表示干旱，C表示温和，D表示寒冷，E表示极地及高寒环境。细分字母补充降水季节性和温度特征。高山按同一套A–E规则归类。"
+      },
+      {
+        "title": "地图与月曲线一起看",
+        "body": "本站采用Beck V3、1991–2020、0.5°资料。分类表示长期水热组合；月气温和降水参考能进一步显示季节。一个格网覆盖很大范围，山顶、谷地和沿海小区域可能有不同条件。"
+      }
+    ],
+    "geometryNote": "0.5°格网约为区域尺度；气候类型边界为概化表达，不能看作实地突变界线。",
+    "kind": "distribution",
+    "region": "world",
+    "shared": true,
+    "layers": [
+      "terrain",
+      "borders"
+    ],
+    "takeaway": "结合位置、季节与地形解释气候差异，并分清格网分类与局地天气。",
+    "sources": [
+      {
+        "title": "Beck 等（2023）· Köppen–Geiger 气候分类与全球数据",
+        "url": "https://www.nature.com/articles/s41597-023-02549-6"
+      },
+      {
+        "title": "NOAA · Köppen–Geiger Climate Subdivisions",
+        "url": "https://www.noaa.gov/jetstream/global/climate-zones/jetstream-max-addition-k-ppen-geiger-climate-subdivisions"
+      },
+      {
+        "title": "Beck 等（2023）：Köppen–Geiger 分类判据，表 1",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10593765/"
+      },
+      {
+        "title": "Beck 数据项目：V3 分类实现（tools.py）",
+        "url": "https://github.com/hylken/Koppen-Geiger_maps/blob/V3/tools.py"
+      },
+      {
+        "title": "GloH2O：V3 气候地图、时期与数据说明",
+        "url": "https://www.gloh2o.org/koppen/"
+      },
+      {
+        "title": "NOAA · Climate Zones",
+        "url": "https://www.noaa.gov/jetstream/global/climate-zones"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module-1",
+        "title": "热量与水分的五种组合",
+        "description": "五大类概括热量与水分，再细分降水和温度的季节性。",
+        "stops": [
+          "climate-a",
+          "climate-b",
+          "climate-c",
+          "climate-d",
+          "climate-e"
+        ],
+        "detail": "先比较A的全年温暖、B的干旱、C与D的冷暖季和E的寒冷环境，再切换详细类型看干湿季差别。地图统一使用1991–2020的Beck V3资料。"
+      }
+    ],
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "A–E先看什么",
+        "columns": [
+          "大类",
+          "主要特点"
+        ],
+        "rows": [
+          [
+            "A 热带",
+            "全年温暖，再分降水季节"
+          ],
+          [
+            "B 干旱",
+            "按降水与热量组合判别干旱"
+          ],
+          [
+            "C 温和",
+            "冷月较温和，有冷暖季"
+          ],
+          [
+            "D 寒冷",
+            "冷月寒冷，有暖季"
+          ],
+          [
+            "E 极地及高寒",
+            "暖月也冷"
+          ]
+        ],
+        "note": "采用Beck V3：B优先判别；C／D以最冷月0°C区分；E最暖月≤10°C。无独立H类。"
+      }
+    ]
+  },
+  {
+    "id": "map-population",
+    "title": "人口密度分布",
+    "group": "people",
+    "overlay": "population",
+    "stops": [
+      "population-density",
+      "world-population",
+      "china-population",
+      "india-population",
+      "china-urbanization",
+      "beijing",
+      "shanghai"
+    ],
+    "description": "总人口回答“有多少人”，人口密度回答“每单位面积有多少人”。密度图更适合观察人口在一个国家内部怎样聚集。",
+    "question": "人口很多的国家，哪些地方仍然稀疏？",
+    "sections": [
+      {
+        "title": "同一张图怎样比较",
+        "body": "图中颜色来自GHS-POP的2020居住人口估计，聚合到0.5°后除以完整格网面积，水域也计入面积。颜色较深表示格网平均密度较高。"
+      },
+      {
+        "title": "聚集需要多种条件",
+        "body": "平原、河谷、水源和气候影响居住条件，交通、产业和历史也影响人口聚集。城市行政范围、连续城区和人口格网各有用途；国家概览中的其他年份统计需要分别阅读。"
+      }
+    ],
+    "geometryNote": "格网估计不是街区实测，也不是国家平均；2020地图不能直接当作2024国家人口统计。",
+    "kind": "distribution",
+    "region": "world",
+    "shared": true,
+    "layers": [
+      "terrain",
+      "borders"
+    ],
+    "takeaway": "区分人口总数、密度、城镇比例，并在相同时期与范围下提出比较问题。",
+    "sources": [
+      {
+        "title": "European Commission JRC · GHS-POP R2023A方法与数据",
+        "url": "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php"
+      },
+      {
+        "title": "World Bank · What does urban mean?（国家定义差异）",
+        "url": "https://blogs.worldbank.org/en/sustainablecities/what-does-urban-mean"
+      },
+      {
+        "title": "联合国 · World Population Prospects 2024主要结果",
+        "url": "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_wpp_2024_advance_unedited_0.pdf"
+      },
+      {
+        "title": "国家统计局 · 第七次全国人口普查与人口数据口径",
+        "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901091.html"
+      },
+      {
+        "title": "国家统计局 · 第七次人口普查城乡与流动人口公报",
+        "url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/html/fu03g.pdf"
+      },
+      {
+        "title": "UN Statistics Division · World Statistics Pocketbook 2024（印度）",
+        "url": "https://unstats.un.org/unsd/publications/pocketbook/files/world-stats-pocketbook-2024.pdf"
+      },
+      {
+        "title": "北京市人民政府 · 北京概况与地理自然",
+        "url": "https://www.beijing.gov.cn/renwen/bjgk/"
+      },
+      {
+        "title": "上海市人民政府 · Geography（2024年末面积）",
+        "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+      },
+      {
+        "title": "中国政府网资料 · 中华人民共和国行政区划",
+        "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module-1",
+        "title": "先看统计口径",
+        "description": "总人口、密度和城镇人口比例使用不同分母。",
+        "stops": [
+          "population-density",
+          "world-population"
+        ],
+        "detail": "总人口是人数，密度把人数除以面积，城镇比例则把城镇人口与总人口比较。选择相同年份和范围，数字才有可比性。"
+      },
+      {
+        "id": "module-2",
+        "title": "国家与内部差异",
+        "description": "中国和印度人口多，内部聚集位置仍有差别。",
+        "stops": [
+          "china-population",
+          "india-population"
+        ],
+        "detail": "在相同密度图上找平原、河谷、高地和干旱地区，再结合交通与产业讨论聚集。国家总数无法描述所有地方。"
+      },
+      {
+        "id": "module-3",
+        "title": "城乡与城市尺度",
+        "description": "行政城市、连续城区和人口格网属于不同尺度。",
+        "stops": [
+          "china-urbanization",
+          "beijing",
+          "shanghai"
+        ],
+        "detail": "北京与上海的行政辖区都包含城区以外的地区。城镇化比例另依赖城乡定义，需要与地图格网分别阅读。"
+      }
+    ],
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "三种人口指标",
+        "columns": [
+          "指标",
+          "计算／含义",
+          "适合回答"
+        ],
+        "rows": [
+          [
+            "总人口",
+            "范围内的人数",
+            "一共有多少人"
+          ],
+          [
+            "人口密度",
+            "人数 ÷ 面积",
+            "平均有多密集"
+          ],
+          [
+            "城镇人口比例",
+            "城镇人口 ÷ 总人口",
+            "按当地城乡定义的构成"
+          ]
+        ],
+        "note": "密度地图为2020年；国家概览另有年份。跨资料比较需统一范围和时期。"
+      }
+    ]
+  },
+  {
+    "id": "map-religion",
+    "title": "国家宗教构成",
+    "group": "people",
+    "overlay": "religion",
+    "stops": [
+      "religious-diversity",
+      "christianity",
+      "islam",
+      "hinduism",
+      "buddhism",
+      "unaffiliated"
+    ],
+    "description": "这张图按国家展示来源报告中的宗教构成。读比例前先看年份、调查对象和分母，再了解不同宗教传统及其内部差异。",
+    "question": "同一国家的一种颜色，能说明哪些信息？",
+    "sections": [
+      {
+        "title": "比例是怎样得到的",
+        "body": "不同资料可能调查全体人口、公民、特定年龄或有宗教归属的人。本站只让适合全体人口口径的已报告比例参与比例着色，未报告的类别保留未知。"
+      },
+      {
+        "title": "国家概览之后还有差异",
+        "body": "一个国家内部可以有多种宗教和实践方式，同一宗教也可以跨语言、跨国界传播。国家颜色是统计概览，具体地区和个人的情况需要更细的资料。"
+      }
+    ],
+    "geometryNote": "国家统计代理不表示局地人群分界或个人身份。未报告不能视为零。",
+    "kind": "distribution",
+    "region": "world",
+    "shared": true,
+    "layers": [
+      "terrain",
+      "borders"
+    ],
+    "takeaway": "先核对年份、分母与资料覆盖，再理解国家概览中的多样性。",
+    "sources": [
+      {
+        "title": "Pew Research Center · 全球宗教归属2020估计（2025报告）",
+        "url": "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/"
+      },
+      {
+        "title": "Pew Research Center · Global religious change methodology",
+        "url": "https://www.pewresearch.org/religion/2025/06/09/global-religious-change-methodology/"
+      },
+      {
+        "title": "Pew Research Center · Christian population change, 2010–2020",
+        "url": "https://www.pewresearch.org/religion/2025/06/09/christian-population-change/"
+      },
+      {
+        "title": "Pew Research Center · Muslim population change, 2010–2020",
+        "url": "https://www.pewresearch.org/religion/2025/06/09/muslim-population-change/"
+      },
+      {
+        "title": "Pew Research Center · Hindu population change, 2010–2020",
+        "url": "https://www.pewresearch.org/religion/2025/06/09/hindu-population-change/"
+      },
+      {
+        "title": "Pew Research Center · Buddhist population change, 2010–2020",
+        "url": "https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/"
+      },
+      {
+        "title": "Pew Research Center · Religiously unaffiliated population change",
+        "url": "https://www.pewresearch.org/religion/2025/06/09/religiously-unaffiliated-population-change/"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module-1",
+        "title": "怎样读宗教资料",
+        "description": "宗教资料先看年份、调查对象与分母。",
+        "stops": [
+          "religious-diversity"
+        ],
+        "detail": "全体人口、公民、特定年龄和有归属者的比例不能直接混排。来源没有报告的类别保留未知，不自动补成零。"
+      },
+      {
+        "id": "module-2",
+        "title": "宗教传统与内部多样",
+        "description": "四种宗教传统各有历史传播、分支和地方实践。",
+        "stops": [
+          "christianity",
+          "islam",
+          "hinduism",
+          "buddhism"
+        ],
+        "detail": "分别阅读基督宗教、伊斯兰教、印度教和佛教的介绍，再看国家统计。相同宗教标签之下仍有多种语言和生活方式。"
+      },
+      {
+        "id": "module-3",
+        "title": "归属测量的另一面",
+        "description": "无宗教归属描述调查中的归属回答。",
+        "stops": [
+          "unaffiliated"
+        ],
+        "detail": "没有宗教归属与没有任何信念或实践并非同一概念，具体含义取决于问题设计。比例仍需说明年份和覆盖人口。"
+      }
+    ],
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "比例前先核对什么",
+        "columns": [
+          "来源项目",
+          "为什么要看"
+        ],
+        "rows": [
+          [
+            "年份",
+            "不同年份不能当作同步普查"
+          ],
+          [
+            "调查对象",
+            "公民、年龄组和全体人口不同"
+          ],
+          [
+            "分母",
+            "有归属者占比不等于全体人口占比"
+          ],
+          [
+            "未报告",
+            "未知不能补成零"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "map-language",
+    "title": "语言分布",
+    "group": "people",
+    "overlay": "language",
+    "stops": [
+      "language-diversity",
+      "official-vs-mother-tongue",
+      "mandarin-language",
+      "english-language",
+      "arabic-language"
+    ],
+    "description": "语言区域显示图集记录的使用范围，语系视图显示语言之间的亲缘分类，参考点显示语种记录的位置。三种方式回答不同问题。",
+    "question": "语系、母语和官方语言分别是什么意思？",
+    "sections": [
+      {
+        "title": "范围与参考点",
+        "body": "语言区域依据2007年图集，经Glottography数字化；部分地区和多语言重叠表示不足。Glottolog 5.3参考点包含濒危和已消亡语种，点多不意味着使用者多。"
+      },
+      {
+        "title": "语言与语言地位",
+        "body": "语系讨论语言的亲缘关系；母语与第二语言描述人的语言经历；官方语言是制度规定的地位。总览颜色只区分类别，使用人数和居民语言比例需要另外的统计资料。"
+      }
+    ],
+    "geometryNote": "语言区域采用Glottography数字化的2007图集contemporary参考范围，仅真实语言级面；语系按这些语言面归类。未覆盖处留白，多语言重叠在原图中欠表示。参考点视图采用Glottolog 5.3，不以点位、国界或人口补绘范围。",
+    "kind": "distribution",
+    "region": "world",
+    "shared": true,
+    "layers": [
+      "terrain",
+      "borders"
+    ],
+    "takeaway": "颜色说明语种或语系类别；语言范围可以重叠，参考点和使用人数需要分开理解。",
+    "sources": [
+      {
+        "title": "UNESCO · Multilingual education（2025语言口径）",
+        "url": "https://www.unesco.org/en/languages-education/need-know?hub=66703"
+      },
+      {
+        "title": "Glottolog 5.3 · 数据目录与分类说明",
+        "url": "https://glottolog.org/glottolog/glottologinformation"
+      },
+      {
+        "title": "United Nations · 多语与六种正式语言",
+        "url": "https://www.un.org/en/observances/english-language-day/multilingualism-and-the-un"
+      },
+      {
+        "title": "教育部 · 国家通用语言文字概念（2025修订法律文本）",
+        "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202606/t20260605_1438880.html"
+      },
+      {
+        "title": "United Nations · English Language Day",
+        "url": "https://www.un.org/en/observances/english-language-day"
+      },
+      {
+        "title": "UNESCO · World Arabic Language Day",
+        "url": "https://www.unesco.org/en/world-arabic-language-day?hub=68184"
+      },
+      {
+        "title": "Glottography · 2007世界语言图集使用区（v2.0）",
+        "url": "https://doi.org/10.5281/zenodo.18613195"
+      },
+      {
+        "title": "Scientific Data · 世界语言使用区数字化与验证",
+        "url": "https://www.nature.com/articles/s41597-025-05828-6"
+      }
+    ],
+    "modules": [
+      {
+        "id": "module-1",
+        "title": "语言与统计口径",
+        "description": "语系讲亲缘，母语讲语言经历，官方语言讲制度地位。",
+        "stops": [
+          "language-diversity",
+          "official-vs-mother-tongue"
+        ],
+        "detail": "一个人可以使用多种语言，一种语言也可以跨越国界。语系分类、人口比例与官方地位需要采用各自的资料。"
+      },
+      {
+        "id": "module-2",
+        "title": "跨地区的语言案例",
+        "description": "汉语、英语与阿拉伯语都有内部多样和跨地区使用。",
+        "stops": [
+          "mandarin-language",
+          "english-language",
+          "arabic-language"
+        ],
+        "detail": "比较标准语、地方变体与交流语言的用途。使用范围、母语人数和第二语言人数各回答不同问题。"
+      }
+    ],
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "三种语言视图",
+        "columns": [
+          "视图",
+          "显示内容",
+          "资料"
+        ],
+        "rows": [
+          [
+            "语言区域",
+            "图集记录的使用参考范围",
+            "2007图集／Glottography"
+          ],
+          [
+            "语系概览",
+            "语言的亲缘分类",
+            "按Glottocode连接目录"
+          ],
+          [
+            "语种参考点",
+            "记录位置，非人数",
+            "Glottolog 5.3"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china-water-journey",
+    "title": "从雪山到江湖",
+    "region": "china",
+    "group": "water",
+    "kind": "connections",
+    "overlay": null,
+    "description": "长江把高原源区、四川盆地、中游湖泊和河口连接起来。沿途地形变了，上下游的水、泥沙和用水却相互影响。",
+    "question": "洞庭湖和鄱阳湖的涨落，为什么也受长江水位影响？",
+    "stops": [
+      "tibetan-plateau",
+      "yangtze",
+      "sichuan-basin",
+      "dongting-lake",
+      "poyang-lake",
+      "shanghai"
+    ],
+    "layers": [
+      "terrain",
+      "rivers",
+      "lakes"
+    ],
+    "takeaway": "河流连接不同地形，湖泊变化也受到整个上下游系统影响。",
+    "sections": [
+      {
+        "title": "上游怎样来水",
+        "body": "长江源区的降雨、积雪、冰川和地下水共同参与补给。向下游走，支流不断汇入，河流穿过高地与低地，水量和坡降随之变化。"
+      },
+      {
+        "title": "湖泊与河口的联系",
+        "body": "洞庭湖、鄱阳湖既接收本流域来水，也与长江交换水。上游水沙变化、中下游降雨和工程调度一起影响沿江环境；上海河口还要兼顾航道、供水与海岸生态。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "headwaters",
+        "title": "高原源区",
+        "description": "长江源区位于高原，来水包含降雨、融雪和地下水。",
+        "stops": [
+          "tibetan-plateau",
+          "yangtze"
+        ],
+        "detail": "沿源流向下看，支流增加，地形与水量改变。冰雪重要，但整条长江的水量不能只由源区冰川解释。"
+      },
+      {
+        "id": "basin-lakes",
+        "title": "盆地与中游湖泊",
+        "description": "四川盆地与中游两湖通过长江相连。",
+        "stops": [
+          "sichuan-basin",
+          "dongting-lake",
+          "poyang-lake"
+        ],
+        "detail": "洞庭、鄱阳各有自己的入湖河流，出流还受长江水位影响。盆地、干流与湖泊要放回同一个上下游系统理解。"
+      },
+      {
+        "id": "estuary",
+        "title": "河口城市",
+        "description": "上海位于河口，淡水、潮汐、航道与城市相互联系。",
+        "stops": [
+          "shanghai"
+        ],
+        "detail": "上游水沙与河口当地条件共同影响环境。城市供水、港口运输和海岸生态需要同时考虑。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+        "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+      },
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      },
+      {
+        "title": "宁夏水利厅 · 亚洲第一长河——长江",
+        "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html"
+      },
+      {
+        "title": "重庆市水利局 · 长江",
+        "url": "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 四川盆地",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html"
+      },
+      {
+        "title": "湖南省人民政府 · 岁月留痕 大地印记：洞庭湖",
+        "url": "https://www.hunan.gov.cn/hnyw/zwdt/201908/t20190812_9483347.html"
+      },
+      {
+        "title": "岳阳市水利局 · 河湖水系概况",
+        "url": "https://swj.yueyang.gov.cn/6855/6879/30424/30429/content_1746597.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 鄱阳湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692506.html"
+      },
+      {
+        "title": "中国科学院南京地湖所 · SWOT揭示江湖交互",
+        "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202512/t20251218_8029602.html"
+      },
+      {
+        "title": "上海市人民政府 · Geography（2024年末面积）",
+        "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+      },
+      {
+        "title": "中国政府网资料 · 中华人民共和国行政区划",
+        "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "从源区到河口",
+        "columns": [
+          "位置",
+          "水文联系"
+        ],
+        "rows": [
+          [
+            "高原源区",
+            "降雨、冰雪、地下水参与补给"
+          ],
+          [
+            "四川盆地",
+            "干支流连接盆地与山地"
+          ],
+          [
+            "中游两湖",
+            "入湖支流与长江水位共同作用"
+          ],
+          [
+            "上海河口",
+            "淡水、潮汐、航道与海岸生态"
+          ]
+        ],
+        "note": "沿河的地理联系示意，地图岸线不表示实时水位。"
+      }
+    ]
+  },
+  {
+    "id": "china-dry-water",
+    "title": "干旱地区的水从哪里来",
+    "region": "china",
+    "group": "climate",
+    "kind": "connections",
+    "overlay": "climate",
+    "description": "西北低地降雨少，许多河流却从周围高山流来。山地水源支撑绿洲，也关系到下游河岸林和内流湖。",
+    "question": "同一条河上游多取一些水，下游会发生什么？",
+    "stops": [
+      "tian-shan",
+      "kunlun",
+      "tarim-basin",
+      "taklamakan",
+      "tarim-river",
+      "qinghai-lake",
+      "xinjiang"
+    ],
+    "layers": [
+      "terrain",
+      "mountains",
+      "rivers",
+      "lakes"
+    ],
+    "takeaway": "山地来水与蒸发、渗漏和取水共同决定内流区的水量。",
+    "sections": [
+      {
+        "title": "水从高处来",
+        "body": "天山、昆仑等山地的降水、融雪、冰川和地下水补给盆地河流。低地虽干旱，仍能依靠山地出流形成绿洲。"
+      },
+      {
+        "title": "水在内陆怎样收支",
+        "body": "河水经过灌溉、渗漏和蒸发，剩余水量继续流向低处。封闭湖的涨落取决于降水、径流与蒸发；青海湖和塔里木河分别属于不同水文系统，适合比较各自收支。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "mountain-water",
+        "title": "山地水源",
+        "description": "天山和昆仑的降水与冰雪给低地输送水。",
+        "stops": [
+          "tian-shan",
+          "kunlun"
+        ],
+        "detail": "先找出山河流，再沿河观察绿洲与下游。山地和盆地的降雨环境不同，本地少雨不等于上游没有来水。"
+      },
+      {
+        "id": "basin-river",
+        "title": "盆地、沙漠与内陆河",
+        "description": "盆地、沙漠、河流分别表示地形、地表和水流。",
+        "stops": [
+          "tarim-basin",
+          "taklamakan",
+          "tarim-river"
+        ],
+        "detail": "塔克拉玛干位于塔里木盆地内部，塔里木河又连接多个来水区和用水地区。这三个范围不能互相替代。"
+      },
+      {
+        "id": "regional-comparison",
+        "title": "封闭湖与省区联系",
+        "description": "青海湖展示封闭湖的收支，新疆展示多种绿洲联系。",
+        "stops": [
+          "qinghai-lake",
+          "xinjiang"
+        ],
+        "detail": "两处属于不同水文系统。比较降水、入流与蒸发，再从省域尺度看山地、绿洲和荒漠的内部差异。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "UNESCO · Xinjiang Tianshan",
+        "url": "https://whc.unesco.org/en/list/1414/"
+      },
+      {
+        "title": "USGS · Himalaya and vicinity tectonics",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+      },
+      {
+        "title": "中国科学院地理资源所 · 昆仑山脉",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692380.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 塔里木盆地",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html"
+      },
+      {
+        "title": "NASA · A Wall of Dust in the Tarim Basin",
+        "url": "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/"
+      },
+      {
+        "title": "中国科学院地球环境所 · 塔里木盆地的前生今世",
+        "url": "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 塔克拉玛干沙漠",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692338.html"
+      },
+      {
+        "title": "NASA · The Taklimakan Desert: A Factory for Dust Storms",
+        "url": "https://science.nasa.gov/earth/earth-observatory/the-taklimakan-desert-a-factory-for-dust-storms-87969/"
+      },
+      {
+        "title": "中国科学院 · 第三次新疆科考水资源调查",
+        "url": "https://www.cas.cn/cm/202308/t20230817_4964150.shtml"
+      },
+      {
+        "title": "中国科学院地质地球所 · 塔河生态恢复",
+        "url": "https://igg.cas.cn/hejl/jldt/201510/t20151029_4450452.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 青海湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 中国最大的咸水湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+      },
+      {
+        "title": "新疆交通运输厅 · 三山两盆与新疆地理",
+        "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/zxdt/202407/a0284b35255f42b49c4531b0dbbd81d9.shtml"
+      },
+      {
+        "title": "中国政府网资料 · 中华人民共和国行政区划",
+        "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "内陆水量怎样收支",
+        "columns": [
+          "环节",
+          "发生什么"
+        ],
+        "rows": [
+          [
+            "山地水源",
+            "降水、融雪和地下水补给"
+          ],
+          [
+            "河流经过绿洲",
+            "灌溉、渗漏与蒸发"
+          ],
+          [
+            "下游与尾闾",
+            "剩余来水支持湿地和生态"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china-north-south",
+    "title": "跨过秦岭再比较",
+    "region": "china",
+    "group": "climate",
+    "kind": "connections",
+    "overlay": "climate",
+    "description": "秦岭—淮河一带是认识中国东部南北差异的参照。温度、雨季和农业渐渐变化，南北各自内部也有很大差别。",
+    "question": "东北与华北都在北方，农田条件有哪些不同？",
+    "stops": [
+      "qinling",
+      "north-china-plain",
+      "northeast-china-plain",
+      "sichuan",
+      "guangdong",
+      "yunnan"
+    ],
+    "layers": [
+      "terrain",
+      "rivers",
+      "provinces"
+    ],
+    "takeaway": "自然条件连续变化，农业与人口还受到历史、技术和交通影响。",
+    "sections": [
+      {
+        "title": "分界附近有过渡",
+        "body": "秦岭影响水汽、热量和水流方向，附近自然条件有连续过渡，也有山地和谷地差异。省界与自然分界采用不同定义。"
+      },
+      {
+        "title": "选择具体地区比较",
+        "body": "东北和华北的冬季、生长季与用水条件不同；四川盆地、广东沿海和云南高原也各有特点。纬度之外，海拔、海陆位置、地形和灌溉都值得一起看。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "mountain",
+        "title": "秦岭参照",
+        "description": "秦岭影响两侧水汽、热量与河流方向。",
+        "stops": [
+          "qinling"
+        ],
+        "detail": "山脉提供位置参照，谷地与高度又产生局地差别。南北变化需要看具体地点，不能在地图上画成所有现象共用的一条硬界线。"
+      },
+      {
+        "id": "north",
+        "title": "北方内部比较",
+        "description": "东北与华北的冬季、生长季和用水条件不同。",
+        "stops": [
+          "north-china-plain",
+          "northeast-china-plain"
+        ],
+        "detail": "对照作物季节与降雨季节，再看土壤、灌溉和冬季环境。北方这个大范围概括仍包含明显差异。"
+      },
+      {
+        "id": "south",
+        "title": "南方内部比较",
+        "description": "四川、广东、云南分别突出盆地、沿海和高原环境。",
+        "stops": [
+          "sichuan",
+          "guangdong",
+          "yunnan"
+        ],
+        "detail": "比较海拔、距海与山地影响，再读省区内部的不同景观。南方湿润的总体特点不能代替各地解释。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国科学院地质地球所 · 北秦岭造山带野外研讨",
+        "url": "https://www.igg.cas.cn/hejl/hzxm/202405/t20240528_7174019.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 中国南北过渡带研究",
+        "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202504/t20250409_7591749.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 华北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 东北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html"
+      },
+      {
+        "title": "四川省人民政府 · 国土空间生态修复规划",
+        "url": "https://www.sc.gov.cn/10462/10778/10876/2022/7/8/57f745e2c9f74c66a606f4c88cbe96db/files/484782a06c0144d39954782ac50d7696.pdf"
+      },
+      {
+        "title": "中国政府网资料 · 中华人民共和国行政区划",
+        "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      },
+      {
+        "title": "广东省人民政府 · 主体功能区规划自然状况",
+        "url": "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html"
+      },
+      {
+        "title": "云南宣传网 · 云南省基本情况（2024）",
+        "url": "https://www.ynxc.gov.cn/html/2024/yns_0418/11831.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。"
+  },
+  {
+    "id": "china-city-environment",
+    "title": "城市与自然环境",
+    "region": "china",
+    "group": "people",
+    "kind": "connections",
+    "overlay": "population",
+    "description": "山前、河口、湖滨给城市不同的水土条件。北京、上海和太湖地区适合比较供水、交通、洪水与城市范围。",
+    "question": "城市行政范围和连续建成区，为什么会差很多？",
+    "stops": [
+      "beijing",
+      "shanghai",
+      "guangdong",
+      "sichuan",
+      "taihu"
+    ],
+    "layers": [
+      "terrain",
+      "rivers",
+      "lakes",
+      "provinces"
+    ],
+    "takeaway": "城市建成区、行政范围和自然区域是三种不同尺度。",
+    "sections": [
+      {
+        "title": "地形影响城市的位置",
+        "body": "北京靠近山前平原，上海位于长江河口，太湖周边是低平水网。平地、水源和交通提供条件，城市发展也受历史、产业和治理影响。"
+      },
+      {
+        "title": "同一个名字有不同范围",
+        "body": "直辖市行政辖区包括城区之外的地区，省域背景也不能等同其中一座城市。读人口和用水资料时，先确认讨论的是行政区、建成区还是格网，再判断山前、湖滨和河口各自的环境问题。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "municipalities",
+        "title": "山前与河口城市",
+        "description": "北京在山前平原，上海在长江河口。",
+        "stops": [
+          "beijing",
+          "shanghai"
+        ],
+        "detail": "两座城市的水源、地形与交通条件不同。行政辖区都比连续建成区更广，人口和土地统计需要先说明范围。"
+      },
+      {
+        "id": "province-background",
+        "title": "城市所在的省域背景",
+        "description": "广东和四川为城市提供不同的省域背景。",
+        "stops": [
+          "guangdong",
+          "sichuan"
+        ],
+        "detail": "广东有沿海与三角洲，四川跨盆地和高原。代表城市不能替代全省，城市与周围农田、山地和河流仍有联系。"
+      },
+      {
+        "id": "lake-region",
+        "title": "城市与湖泊",
+        "description": "太湖周边城市和农田共享低平水网与湖泊水源。",
+        "stops": [
+          "taihu"
+        ],
+        "detail": "供水、排水和水质管理相互影响，浅湖也容易受风浪与营养物质输入影响。周边地区需要共同治理水环境。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "北京市人民政府 · 北京概况与地理自然",
+        "url": "https://www.beijing.gov.cn/renwen/bjgk/"
+      },
+      {
+        "title": "中国政府网资料 · 中华人民共和国行政区划",
+        "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      },
+      {
+        "title": "上海市人民政府 · Geography（2024年末面积）",
+        "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+      },
+      {
+        "title": "广东省人民政府 · 主体功能区规划自然状况",
+        "url": "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html"
+      },
+      {
+        "title": "四川省人民政府 · 国土空间生态修复规划",
+        "url": "https://www.sc.gov.cn/10462/10778/10876/2022/7/8/57f745e2c9f74c66a606f4c88cbe96db/files/484782a06c0144d39954782ac50d7696.pdf"
+      },
+      {
+        "title": "中国科学院地理资源所 · 太湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html"
+      },
+      {
+        "title": "中国科学院南京地湖所 · 浅水湖泊水动力",
+        "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "三种城市范围",
+        "columns": [
+          "范围",
+          "包括什么"
+        ],
+        "rows": [
+          [
+            "行政辖区",
+            "城市政府的管辖区域"
+          ],
+          [
+            "连续建成区",
+            "道路、建筑等连续城市地表"
+          ],
+          [
+            "人口格网",
+            "固定空间单元内的居住人口估计"
+          ]
+        ],
+        "note": "三者边界不同；人口和面积相除前要确认采用的范围。"
+      }
+    ]
+  },
+  {
+    "id": "world-river-contrast",
+    "title": "四条大河，四种联系",
+    "description": "尼罗河穿过荒漠，亚马孙汇集湿润地区来水，恒河联系季风平原，密西西比连接大陆内部。四条河的来水和利用各有特点。",
+    "question": "河流流经的地方少雨，为什么仍可能有充足来水？",
+    "stops": [
+      "nile",
+      "egypt",
+      "amazon-river",
+      "amazon-basin",
+      "ganges",
+      "ganges-plain",
+      "mississippi",
+      "usa"
+    ],
+    "layers": [
+      "terrain",
+      "rivers",
+      "borders"
+    ],
+    "region": "world",
+    "takeaway": "河流来水来自整个流域，本地气候无法独自解释流量。",
+    "group": "water",
+    "overlay": null,
+    "kind": "connections",
+    "sections": [
+      {
+        "title": "沿河向上找水源",
+        "body": "河流汇集整个流域的来水。尼罗河下游的本地降雨较少，上游湿润和高地地区的来水仍能支撑河谷；亚马孙则连接广阔湿润地区。"
+      },
+      {
+        "title": "用同一问题比较",
+        "body": "先看源区和入海方向，再看雨季、支流、平原与土地利用。恒河适合讨论季风和农田，密西西比适合讨论大陆河网与运输。这里比较水文联系，不排列有争议的河长名次。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA · Nile River Fluctuations near Khartoum",
+        "url": "https://science.nasa.gov/photojournal/nile-river-fluctuations-near-khartoum-sudan/"
+      },
+      {
+        "title": "NASA · Khartoum, Sudan",
+        "url": "https://science.nasa.gov/earth/earth-observatory/khartoum-sudan-5514/"
+      },
+      {
+        "title": "联合国统计司 · Egypt国别概览（2025）",
+        "url": "https://data.un.org/legacy/en/iso/eg.html"
+      },
+      {
+        "title": "NASA · Amazon Meanders in Sunglint",
+        "url": "https://science.nasa.gov/earth/earth-observatory/amazon-meanders-in-sunglint-92370/"
+      },
+      {
+        "title": "NASA · Mud from the Andes Carried by the Amazon",
+        "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+      },
+      {
+        "title": "NASA · Topography of South America",
+        "url": "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/"
+      },
+      {
+        "title": "NASA · Ganges River Delta",
+        "url": "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/"
+      },
+      {
+        "title": "NASA · Ganges River Delta: Landsat view",
+        "url": "https://science.nasa.gov/resource/ganges-river-delta/"
+      },
+      {
+        "title": "NASA · Monsoon Floods Inundate Eastern India",
+        "url": "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/"
+      },
+      {
+        "title": "Nature · Himalayan gravel flux and Ganga Plain",
+        "url": "https://www.nature.com/articles/nature22039"
+      },
+      {
+        "title": "USGS · The Mississippi River: A place for fish",
+        "url": "https://www.usgs.gov/publications/mississippi-river-a-place-fish"
+      },
+      {
+        "title": "美国国家公园局 · Mississippi River Facts",
+        "url": "https://home.nps.gov/miss/riverfacts.htm"
+      },
+      {
+        "title": "US Census Bureau · Geography definitions",
+        "url": "https://www.census.gov/data/data-tools/survey-explorer/geo.html"
+      },
+      {
+        "title": "美国国家公园局 · Rocky Mountain System Provinces",
+        "url": "https://home.nps.gov/articles/rockies.htm"
+      },
+      {
+        "title": "美国国家公园局 · Geology of Grand Canyon",
+        "url": "https://home.nps.gov/grca/learn/nature/grca-geology.htm"
+      },
+      {
+        "title": "NOAA · Great Lakes ecoregion",
+        "url": "https://www.noaa.gov/education/resource-collections/freshwater/great-lakes-ecoregion"
+      },
+      {
+        "title": "US EPA · Great Lakes environmental atlas",
+        "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004ICU.TXT"
+      },
+      {
+        "title": "联合国统计司 · United States国别概览（2025）",
+        "url": "https://data.un.org/legacy/en/iso/us.html"
+      }
+    ],
+    "geometryNote": "地图突出有明确地理位置的观察对象。概念卡提供阅读入口；自然区域为概化标注参考范围，缺少可靠范围的对象保留定位点。",
+    "modules": [
+      {
+        "id": "module-1",
+        "title": "尼罗河与荒漠河谷",
+        "description": "尼罗河下游穿过荒漠，上游来水支撑河谷。",
+        "stops": [
+          "nile",
+          "egypt"
+        ],
+        "detail": "把埃及本地气候和尼罗河上游环境分开看，再理解农田与聚落为什么沿河集中。来水还具有季节变化。"
+      },
+      {
+        "id": "module-2",
+        "title": "亚马孙与湿润低地",
+        "description": "亚马孙河汇集湿润地区的大量支流。",
+        "stops": [
+          "amazon-river",
+          "amazon-basin"
+        ],
+        "detail": "河道是一条线，流域包含汇水低地和周围高地。森林、水循环与河网有联系，但森林和流域范围也并不相同。"
+      },
+      {
+        "id": "module-3",
+        "title": "恒河与农业平原",
+        "description": "恒河与季风平原相连，农田受季节来水影响。",
+        "stops": [
+          "ganges",
+          "ganges-plain"
+        ],
+        "detail": "找源区、支流和低平农田，再看雨季、灌溉与洪水。河道、冲积平原和流域应采用不同范围。"
+      },
+      {
+        "id": "module-4",
+        "title": "密西西比与大陆联系",
+        "description": "密西西比河网连接北美大陆内部与海岸。",
+        "stops": [
+          "mississippi",
+          "usa"
+        ],
+        "detail": "从干支流交汇看大范围来水，再读农田、洪水和运输联系。美国是国家尺度背景，不能当作整条流域边界。"
+      }
+    ],
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "四条河的联系线索",
+        "columns": [
+          "河流",
+          "突出特点"
+        ],
+        "rows": [
+          [
+            "尼罗河",
+            "上游来水与下游荒漠河谷"
+          ],
+          [
+            "亚马孙",
+            "湿润地区与众多支流"
+          ],
+          [
+            "恒河",
+            "季风、农田和低平地区"
+          ],
+          [
+            "密西西比",
+            "大陆河网、农业与运输"
+          ]
+        ],
+        "note": "对照水源和区域联系，不作河长或流量排行榜。"
+      }
+    ]
+  },
+  {
+    "id": "world-latitude-height",
+    "title": "低纬度也有高寒环境",
+    "description": "纬度影响太阳辐射，海拔也影响温度。赤道附近的高山可以寒冷，热带内陆也可能干旱，位置需要结合地形一起看。",
+    "question": "低纬高山和南极都冷，它们的季节变化一样吗？",
+    "stops": [
+      "kenya",
+      "east-african-rift",
+      "brazil",
+      "australia",
+      "tibetan-plateau",
+      "antarctica",
+      "climate-a",
+      "climate-e"
+    ],
+    "layers": [
+      "terrain",
+      "grid",
+      "borders"
+    ],
+    "region": "world",
+    "takeaway": "纬度、海拔、海陆位置与环流共同影响气候；图层代表多年平均。",
+    "group": "climate",
+    "overlay": "climate",
+    "kind": "connections",
+    "sections": [
+      {
+        "title": "纬度与海拔分别看",
+        "body": "东非高地与附近低地可有不同温度，青藏高原的高海拔也造成明显高寒环境。巴西和澳大利亚内部同样存在多种气候，国家定位点只代表一处位置。"
+      },
+      {
+        "title": "寒冷的背景不同",
+        "body": "低纬高山和高纬极地都可能寒冷，但日照季节变化和海陆条件不同。长期分类图概括水热条件，解释具体地区时仍要看高度、环流和海陆位置。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "UNESCO · Mount Kenya National Park/Natural Forest",
+        "url": "https://whc.unesco.org/en/list/800/"
+      },
+      {
+        "title": "USGS · East African Rift seismotectonics",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift"
+      },
+      {
+        "title": "Scientific Data · White Nile basin lakes",
+        "url": "https://www.nature.com/articles/s41597-022-01742-3"
+      },
+      {
+        "title": "联合国统计司 · Kenya国别概览（2025）",
+        "url": "https://data.un.org/legacy/en/iso/ke.html"
+      },
+      {
+        "title": "IBGE · 巴西六大生物群系地图（2019）",
+        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/25812-ibge-lanca-mapa-inedito-de-biomas-e-sistema-costeiro-marinho-2"
+      },
+      {
+        "title": "NASA · Topography of South America",
+        "url": "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/"
+      },
+      {
+        "title": "NASA · Mud from the Andes Carried by the Amazon",
+        "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+      },
+      {
+        "title": "联合国统计司 · Brazil国别概览（2025）",
+        "url": "https://data.un.org/legacy/en/iso/br.html"
+      },
+      {
+        "title": "Geoscience Australia · Australia’s size compared（2025）",
+        "url": "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared"
+      },
+      {
+        "title": "Geoscience Australia · Australian mainland deserts",
+        "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts"
+      },
+      {
+        "title": "联合国统计司 · Australia国别概览（2025）",
+        "url": "https://data.un.org/legacy/en/iso/au.html"
+      },
+      {
+        "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+        "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+      },
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      },
+      {
+        "title": "British Antarctic Survey · Antarctica",
+        "url": "https://www.bas.ac.uk/about/where-we-work/antarctica/"
+      },
+      {
+        "title": "Beck 等（2023）· Köppen–Geiger 气候分类与全球数据",
+        "url": "https://www.nature.com/articles/s41597-023-02549-6"
+      },
+      {
+        "title": "NOAA · Köppen–Geiger Climate Subdivisions",
+        "url": "https://www.noaa.gov/jetstream/global/climate-zones/jetstream-max-addition-k-ppen-geiger-climate-subdivisions"
+      },
+      {
+        "title": "Beck 等（2023）：Köppen–Geiger 分类判据，表 1",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10593765/"
+      },
+      {
+        "title": "Beck 数据项目：V3 分类实现（tools.py）",
+        "url": "https://github.com/hylken/Koppen-Geiger_maps/blob/V3/tools.py"
+      },
+      {
+        "title": "GloH2O：V3 气候地图、时期与数据说明",
+        "url": "https://www.gloh2o.org/koppen/"
+      }
+    ],
+    "geometryNote": "地图突出有明确地理位置的观察对象。概念卡提供阅读入口；自然区域为概化标注参考范围，缺少可靠范围的对象保留定位点。",
+    "modules": [
+      {
+        "id": "module-1",
+        "title": "赤道高地与低地",
+        "description": "东非高地与热带低地可有不同温度。",
+        "stops": [
+          "kenya",
+          "east-african-rift",
+          "brazil"
+        ],
+        "detail": "肯尼亚、东非裂谷和巴西都有内部起伏。选择具体高地和低地比较，才能把纬度作用与海拔作用分开。"
+      },
+      {
+        "id": "module-2",
+        "title": "干旱内陆与寒冷地区",
+        "description": "干旱内陆、高原高寒和极地寒冷有不同背景。",
+        "stops": [
+          "australia",
+          "tibetan-plateau",
+          "antarctica"
+        ],
+        "detail": "澳大利亚、青藏高原与南极洲分别突出水分、海拔和高纬条件。寒冷或干旱的标签仍需要地理过程解释。"
+      },
+      {
+        "id": "module-3",
+        "title": "回到分类理解差异",
+        "description": "A与E分别概括全年温暖和长期寒冷的水热条件。",
+        "stops": [
+          "climate-a",
+          "climate-e"
+        ],
+        "detail": "同一分类可能出现在不同纬度和海拔。回到地点、格网与月资料，理解分类概括了什么、又省略了什么。"
+      }
+    ],
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "温度和水分受什么影响",
+        "columns": [
+          "因素",
+          "观察线索"
+        ],
+        "rows": [
+          [
+            "纬度",
+            "太阳辐射与季节"
+          ],
+          [
+            "海拔",
+            "高地与附近低地的温度"
+          ],
+          [
+            "海陆位置",
+            "水汽和温度变化"
+          ],
+          [
+            "环流与地形",
+            "雨区、雨影与季节来风"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china-food-water-cities",
+    "title": "粮食、水与城市一起看",
+    "region": "china",
+    "group": "resources",
+    "kind": "connections",
+    "overlay": "population",
+    "description": "粮食产地与大城市不总在一起。农田需要水，城市需要食物和供水，调水与运输把不同地区连接起来。",
+    "question": "生产地与消费地怎样通过水利和交通联系？",
+    "stops": [
+      "china-grain",
+      "rice-farming",
+      "northeast-china-plain",
+      "north-china-plain",
+      "south-north-water",
+      "yangtze-delta",
+      "pearl-delta",
+      "hong-kong",
+      "macao"
+    ],
+    "layers": [
+      "terrain",
+      "rivers",
+      "provinces"
+    ],
+    "takeaway": "水热、土壤和地形提供条件，灌溉、品种、交通、市场与治理改变实际结果；统计需区分播种面积与耕地面积。",
+    "sections": [
+      {
+        "title": "生产与消费的位置",
+        "body": "东北、华北平原和南方稻作提供不同生产条件；长三角、珠三角则有密集城市和市场。水热、土壤、灌排和运输一起影响这些联系。"
+      },
+      {
+        "title": "看懂面积和供水",
+        "body": "播种面积可以重复计入同一块地的不同季节作物，因此与耕地面积不同。南水北调建立跨流域供水联系，受水地区仍需节水、保护水源；三角洲也需协调城市、农业和生态用水。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "food",
+        "title": "粮食与生产空间",
+        "description": "粮食生产要同时看土地、水与作物季节。",
+        "stops": [
+          "china-grain",
+          "rice-farming",
+          "northeast-china-plain",
+          "north-china-plain"
+        ],
+        "detail": "东北、华北和南方稻作有不同约束。粮食统计中的播种面积会重复计入不同季节，不能直接当作唯一耕地面积。"
+      },
+      {
+        "id": "water",
+        "title": "跨流域水资源联系",
+        "description": "南水北调把不同流域的供水联系起来。",
+        "stops": [
+          "south-north-water"
+        ],
+        "detail": "工程需要运行、水质与生态管理。受水地区仍需节水，并保护本地河湖和地下水。"
+      },
+      {
+        "id": "markets",
+        "title": "三角洲与城市联系",
+        "description": "两大三角洲与港澳通过市场和交通联系外部地区。",
+        "stops": [
+          "yangtze-delta",
+          "pearl-delta",
+          "hong-kong",
+          "macao"
+        ],
+        "detail": "城市需要从其他地方获得食物与部分资源，也通过港口和产业形成对外联系。规划区域与自然三角洲范围要分别读。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "国家统计局 · 2024年粮食产量数据公告",
+        "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202412/t20241213_1957744.html"
+      },
+      {
+        "title": "国家统计局 · National Grain Production in 2024",
+        "url": "https://www.stats.gov.cn/english/PressRelease/202412/t20241219_1957784.html"
+      },
+      {
+        "title": "World Bank · India: Managing Floods and Droughts（2023）",
+        "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+      },
+      {
+        "title": "中国科学院地理资源所 · 东北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 华北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
+      },
+      {
+        "title": "中国政府网 · 南水北调中线一期通水与供水口径",
+        "url": "https://www.gov.cn/xinwen/2015-12/08/content_5021383.htm"
+      },
+      {
+        "title": "中国政府网 · 长江三角洲区域一体化发展规划纲要（2019）",
+        "url": "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html"
+      },
+      {
+        "title": "上海市人民政府 · Geography（2024年末面积）",
+        "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 太湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html"
+      },
+      {
+        "title": "中国科学院南京地湖所 · 浅水湖泊水动力",
+        "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+      },
+      {
+        "title": "中国政府网 · 粤港澳大湾区发展规划纲要（2019）",
+        "url": "https://app.www.gov.cn/govdata/gov/201902/18/435204/article.html"
+      },
+      {
+        "title": "广东省人民政府 · 主体功能区规划自然状况",
+        "url": "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html"
+      },
+      {
+        "title": "交通运输部珠江航务管理局 · 珠江水系航运简介",
+        "url": "https://zjhy.mot.gov.cn/zhuhanggk/shuixijj/201909/t20190916_3266853.html"
+      },
+      {
+        "title": "宁夏水利厅 · 珠江与沿海河流",
+        "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2718481.html"
+      },
+      {
+        "title": "香港天文台 · 地形雨与1981—2010降雨分布",
+        "url": "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html"
+      },
+      {
+        "title": "香港海事处 · Hong Kong Fact Sheet — the Port",
+        "url": "https://www.mardep.gov.hk/en/materials-and-publications/publications/hk-fact-sheet/index.html"
+      },
+      {
+        "title": "中国政府网资料 · 中华人民共和国行政区划",
+        "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      },
+      {
+        "title": "澳门旅游局 · 地理位置及时间",
+        "url": "https://www.macaotourism.gov.mo/zh-hant/article/about-macao/location-and-time"
+      },
+      {
+        "title": "农业农村部 · 粮食作物区域大配方与施肥建议",
+        "url": "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "农业统计的面积不同",
+        "columns": [
+          "指标",
+          "含义"
+        ],
+        "rows": [
+          [
+            "耕地面积",
+            "土地的面积"
+          ],
+          [
+            "播种面积",
+            "各季作物播种面积累计"
+          ],
+          [
+            "单产",
+            "每单位收获或播种面积的产量"
+          ],
+          [
+            "总产量",
+            "对应范围和时期的产出"
+          ]
+        ],
+        "note": "同一块地一年多季种植，播种面积可以重复计入。具体统计按来源定义。"
+      }
+    ]
+  },
+  {
+    "id": "world-sea-connections",
+    "title": "海洋、海峡与人工运河",
+    "description": "海峡是天然水道，运河是人工通道。把两侧陆地和相连海域放在一起看，就能理解它们为什么影响航程。",
+    "question": "苏伊士和巴拿马运河的通行方式有什么不同？",
+    "stops": [
+      "pacific-ocean",
+      "atlantic-ocean",
+      "indian-ocean",
+      "arctic-ocean",
+      "malacca-strait",
+      "gibraltar-strait",
+      "bering-strait",
+      "mediterranean",
+      "suez-canal",
+      "panama-canal"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "grid"
+    ],
+    "region": "world",
+    "takeaway": "天然海峡由地理位置与地貌形成，人工运河需要工程和管理；代表点不等于实际航线、海域边界或实时通航状态。",
+    "group": "water",
+    "overlay": null,
+    "kind": "connections",
+    "sections": [
+      {
+        "title": "先认海洋与水道",
+        "body": "太平洋、大西洋、印度洋、北冰洋提供海洋位置背景；南大洋在极地主题中另作说明。马六甲、直布罗陀、白令海峡分别连接不同海域。"
+      },
+      {
+        "title": "工程怎样改变路线",
+        "body": "苏伊士运河连接地中海与红海，巴拿马运河跨越美洲陆桥并使用船闸。水道的位置、工程、尺度和运行条件共同影响通行；地图参考点用于定位，实际航路要另看交通资料。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NOAA · The Ocean（五大洋划分口径）",
+        "url": "https://www.noaa.gov/jetstream/ocean"
+      },
+      {
+        "title": "NOAA · How many oceans are there?",
+        "url": "https://oceanservice.noaa.gov/facts/howmanyoceans.html"
+      },
+      {
+        "title": "NOAA · Atlantic Meridional Overturning Circulation",
+        "url": "https://oceanservice.noaa.gov/facts/amoc.html"
+      },
+      {
+        "title": "NASA · 航线与多年平均资料尺度",
+        "url": "https://science.nasa.gov/blogs/earth-matters/2013/03/25/matters-of-scale-and-why-they-matter/"
+      },
+      {
+        "title": "World Bank · India: Managing Floods and Droughts（2023）",
+        "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+      },
+      {
+        "title": "NOAA · 世界最小的海洋（2026更新页面）",
+        "url": "https://oceanservice.noaa.gov/facts/smallestocean.html"
+      },
+      {
+        "title": "NASA · Ice and Clouds in the Bering Strait",
+        "url": "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/"
+      },
+      {
+        "title": "新加坡海事及港务管理局 · 马六甲与新加坡海峡航路资料",
+        "url": "https://www.mpa.gov.sg/who-we-are/newsroom-resources/publications/singapore-port-information"
+      },
+      {
+        "title": "NASA · The Strait of Gibraltar",
+        "url": "https://science.nasa.gov/earth/earth-observatory/the-strait-of-gibraltar-151478/"
+      },
+      {
+        "title": "NASA · The Strait of Gibraltar in 3D",
+        "url": "https://science.nasa.gov/earth/earth-observatory/the-strait-of-gibraltar-in-3d-3926/"
+      },
+      {
+        "title": "Suez Canal Authority · Canal Characteristics",
+        "url": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalCharacteristics.aspx"
+      },
+      {
+        "title": "Panama Canal Authority · History and how the canal works",
+        "url": "https://pancanal.com/en/history-of-the-panama-canal/"
+      },
+      {
+        "title": "Panama Canal Authority · 运河淡水与气候事件",
+        "url": "https://pancanal.com/en/panama-canal-prepares-for-the-impact-of-climate-events/"
+      },
+      {
+        "title": "Met Office · 欧洲区域气候与海洋影响",
+        "url": "https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/applied-science/precis/dissy1808.pdf"
+      }
+    ],
+    "geometryNote": "地图突出有明确地理位置的观察对象。概念卡提供阅读入口；自然区域为概化标注参考范围，缺少可靠范围的对象保留定位点。",
+    "modules": [
+      {
+        "id": "module-1",
+        "title": "海洋背景",
+        "description": "四大洋提供海陆位置的基础参照。",
+        "stops": [
+          "pacific-ocean",
+          "atlantic-ocean",
+          "indian-ocean",
+          "arctic-ocean"
+        ],
+        "detail": "先看大陆如何围合或分隔海洋，再找海域之间的通道。南大洋的命名与范围在极地主题另作说明。"
+      },
+      {
+        "id": "module-2",
+        "title": "天然水道与内海",
+        "description": "海峡连接海域，地中海则是一片被陆地围绕的海。",
+        "stops": [
+          "malacca-strait",
+          "gibraltar-strait",
+          "bering-strait",
+          "mediterranean"
+        ],
+        "detail": "比较马六甲、直布罗陀与白令两侧的陆地和相连海域。不同海峡的气候、宽度和运输功能需要各自理解。"
+      },
+      {
+        "id": "module-3",
+        "title": "人工运河",
+        "description": "苏伊士是海平面运河，巴拿马依靠船闸跨越陆桥。",
+        "stops": [
+          "suez-canal",
+          "panama-canal"
+        ],
+        "detail": "两条运河都缩短部分航程，工程结构和用水需求不同。实际通行还受水道尺度、运行和维护条件影响。"
+      }
+    ],
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "海峡与两种运河",
+        "columns": [
+          "通道",
+          "形成／结构",
+          "案例"
+        ],
+        "rows": [
+          [
+            "海峡",
+            "天然水道",
+            "马六甲、直布罗陀、白令"
+          ],
+          [
+            "海平面运河",
+            "人工开挖通海",
+            "苏伊士"
+          ],
+          [
+            "船闸运河",
+            "船闸调节水位",
+            "巴拿马"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "earth-seasons",
+    "title": "地球自转、季节与地方时",
+    "description": "自转造成昼夜交替，地轴倾斜与公转造成季节变化。经度影响地方时，日常钟表则按民用时区计时。",
+    "question": "同一天，北京和悉尼的昼长为什么不同？",
+    "stops": [
+      "earth-rotation",
+      "earth-season-contrast",
+      "earth-longitude-time"
+    ],
+    "sections": [
+      {
+        "title": "一天和一年",
+        "body": "地球自转使大多数地点轮流进入受光与背光半球。地轴倾斜使太阳直射纬度随公转变化，进而改变昼长和太阳高度；南北半球的季节相反。"
+      },
+      {
+        "title": "用实验分开比较",
+        "body": "先固定纬度改变季节，再固定日期比较纬度。昼长实验只计算简化的日照关系，气温还受海洋和大气影响。经度每差15°对应约1小时地方时差，民用时区则按社会约定划分。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "rotation",
+        "title": "昼夜与自转",
+        "description": "地球自转使北京轮流进入受光和背光区域。",
+        "stops": [
+          "earth-rotation"
+        ],
+        "detail": "从固定地点观察一天内太阳位置变化，再理解昼夜交替。极地部分季节的极昼极夜需要结合地轴倾斜解释。"
+      },
+      {
+        "id": "seasons",
+        "title": "季节与半球",
+        "description": "北京与悉尼分处两半球，季节相反。",
+        "stops": [
+          "earth-season-contrast"
+        ],
+        "detail": "在昼长实验中固定日期比较纬度，或固定纬度改变季节。模型解释日照关系，实际气温还有海洋和大气的影响。"
+      },
+      {
+        "id": "time",
+        "title": "经度与时间",
+        "description": "经度差对应地方时差，民用时区按约定使用。",
+        "stops": [
+          "earth-longitude-time"
+        ],
+        "detail": "以格林尼治为参照理解每15°约1小时。国家采用的钟表时间与地点的太阳地方时可能不同。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA · Earth facts：自转、公转与地轴倾斜",
+        "url": "https://science.nasa.gov/earth/facts/"
+      },
+      {
+        "title": "NASA Space Place · What Causes the Seasons?",
+        "url": "https://spaceplace.nasa.gov/seasons/en/"
+      },
+      {
+        "title": "NOAA · What is longitude?",
+        "url": "https://oceanservice.noaa.gov/facts/longitude.html"
+      },
+      {
+        "title": "NOAA · Solar Calculation Details：太阳位置与折射",
+        "url": "https://gml.noaa.gov/grad/solcalc/calcdetails.html"
+      }
+    ],
+    "takeaway": "分别解释昼夜、季节与地方时差，并说明每个简化模型没有包含哪些实际条件。",
+    "region": "world",
+    "shared": true,
+    "group": "earth",
+    "kind": "connections",
+    "overlay": null,
+    "layers": [
+      "terrain",
+      "borders",
+      "grid"
+    ],
+    "geometryNote": "地图只定位学习案例，不绘制假设的现象范围。实验是明确参数的简化教学模型，不是实测地图或实时预报。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "三种时间变化",
+        "columns": [
+          "现象",
+          "主要关系",
+          "时间尺度"
+        ],
+        "rows": [
+          [
+            "昼夜",
+            "地球自转",
+            "一天"
+          ],
+          [
+            "季节",
+            "地轴倾斜与公转",
+            "一年"
+          ],
+          [
+            "地方时差",
+            "经度差15°约1小时",
+            "不同地点的太阳时"
+          ]
+        ],
+        "note": "民用钟表时间按时区约定；昼长实验采用简化球面模型。"
+      }
+    ]
+  },
+  {
+    "id": "earth-map-reading",
+    "title": "经纬网、比例尺与地形阅读",
+    "description": "经纬度确定位置，比例尺说明距离，图例说明点线面的含义。读地形时，还要分清海拔、坡度和数据精度。",
+    "question": "地图放大后，原来的概化线条会变成更精确的数据吗？",
+    "stops": [
+      "earth-coordinates",
+      "earth-scale",
+      "earth-contours"
+    ],
+    "sections": [
+      {
+        "title": "先看图例和尺度",
+        "body": "国家轮廓、自然区域、人口格网和语言参考点表达不同对象。资料时期与分辨率决定它们适合回答什么问题；屏幕放大只扩大已有细节。"
+      },
+      {
+        "title": "位置与起伏怎样读",
+        "body": "经纬度有角度和方向，纸图比例尺把图上距离换算成实地距离。海拔表示相对基准面的高度，等高线连接同一高度；比较疏密时，需要相同等高距和比例尺。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "coordinates",
+        "title": "读位置",
+        "description": "经纬度用角度和方向表示地球上的位置。",
+        "stops": [
+          "earth-coordinates"
+        ],
+        "detail": "先区分东西经与南北纬，再留意输入坐标时的经度、纬度顺序。经纬网还能帮助比较海陆与纬度位置。"
+      },
+      {
+        "id": "scale",
+        "title": "读尺度",
+        "description": "比例尺换算图上距离，数据分辨率决定原有细节。",
+        "stops": [
+          "earth-scale"
+        ],
+        "detail": "在富士山附近缩放观察，区分屏幕上放大与资料精度提高。纸图比例尺实验与数字地图的显示缩放用途不同。"
+      },
+      {
+        "id": "relief",
+        "title": "读地形",
+        "description": "海拔、坡度与峰顶测量是不同的地形信息。",
+        "stops": [
+          "earth-contours"
+        ],
+        "detail": "珠峰附近的高程格网表示像元高度，不能当作正式峰顶测量。等高线疏密比较还需统一比例尺和等高距。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NOAA · What is latitude?",
+        "url": "https://oceanservice.noaa.gov/facts/latitude.html"
+      },
+      {
+        "title": "NOAA · What is longitude?",
+        "url": "https://oceanservice.noaa.gov/facts/longitude.html"
+      },
+      {
+        "title": "USGS · Topographic Mapping：等高线与比例尺",
+        "url": "https://www.usgs.gov/educational-resources/topographic-mapping"
+      }
+    ],
+    "takeaway": "先核对图例、时期和尺度，再提出地图能回答的地理问题。",
+    "region": "world",
+    "shared": true,
+    "group": "earth",
+    "kind": "connections",
+    "overlay": null,
+    "layers": [
+      "terrain",
+      "borders",
+      "grid"
+    ],
+    "geometryNote": "地图只定位学习案例，不绘制假设的现象范围。实验是明确参数的简化教学模型，不是实测地图或实时预报。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "地图信息各有什么用途",
+        "columns": [
+          "信息",
+          "能说明什么"
+        ],
+        "rows": [
+          [
+            "经纬度",
+            "位置与方向"
+          ],
+          [
+            "比例尺",
+            "图上与实地距离的比例"
+          ],
+          [
+            "图例",
+            "颜色和符号含义"
+          ],
+          [
+            "分辨率与时期",
+            "原始细节和资料时间"
+          ]
+        ],
+        "note": "放大屏幕上的地图不会自动提高原始数据精度。"
+      }
+    ]
+  },
+  {
+    "id": "china-regions",
+    "title": "中国四大地理区",
+    "region": "china",
+    "group": "regions",
+    "kind": "collection",
+    "overlay": null,
+    "description": "北方、南方、西北、青藏四区概括中国的大尺度自然差异：东部看水热，西北看干旱，青藏看高海拔。",
+    "question": "四大地理区为什么不能直接按省界划分？",
+    "stops": [
+      "northern-china",
+      "southern-china",
+      "northwestern-china",
+      "qinghai-tibet-region"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "provinces",
+      "rivers"
+    ],
+    "takeaway": "四大地理区用于比较自然与人地差异，既不等于行政区，也不应遮盖区内变化。",
+    "sections": [
+      {
+        "title": "四区怎样区分",
+        "body": "北方和南方主要帮助认识东部水热差异，西北突出内陆干旱条件，青藏突出高海拔。分区综合地形、水分、热量和生产特点。"
+      },
+      {
+        "title": "区内仍有多种景观",
+        "body": "南北过渡、山地谷地和高原边缘都存在局地差异。东部平原种植业、西北绿洲与牧业、青藏高寒农牧活动各有条件，同一区内也有不同城市与乡村。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "north",
+        "title": "北方地区",
+        "description": "北方有平原与山地，冬季和季节水分影响农业。",
+        "stops": [
+          "northern-china"
+        ],
+        "detail": "比较东北与华北的生长季和用水，再看山地、城市与农田。北方内部有明显差异，旱作也仍可能需要灌溉。"
+      },
+      {
+        "id": "south",
+        "title": "南方地区",
+        "description": "南方总体较湿润，河网、丘陵和稻作联系紧密。",
+        "stops": [
+          "southern-china"
+        ],
+        "detail": "沿海、盆地和高原有不同水热条件，农田需要供水也需要排涝。城市与乡村都依赖周围水土和交通。"
+      },
+      {
+        "id": "northwest",
+        "title": "西北地区",
+        "description": "西北干旱，绿洲常依靠山地来水。",
+        "stops": [
+          "northwestern-china"
+        ],
+        "detail": "内陆低地与周围山地环境不同。比较绿洲农田、草原牧业和荒漠，把水源与土地利用放在一起。"
+      },
+      {
+        "id": "plateau",
+        "title": "青藏地区",
+        "description": "青藏突出高海拔，谷地、草地和河源各有条件。",
+        "stops": [
+          "qinghai-tibet-region"
+        ],
+        "detail": "高寒环境限制热量，局地谷地仍提供不同生活与生产空间。内流湖和外流水系还要分别看水文出口。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国政府网资料 · 地形分布",
+        "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      },
+      {
+        "title": "内蒙古自治区人民政府 · 国土空间规划",
+        "url": "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html"
+      },
+      {
+        "title": "西藏自治区人民政府 · 自然地理",
+        "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 华北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 东北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html"
+      },
+      {
+        "title": "中国科学院地质地球所 · 北秦岭造山带野外研讨",
+        "url": "https://www.igg.cas.cn/hejl/hzxm/202405/t20240528_7174019.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 中国南北过渡带研究",
+        "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202504/t20250409_7591749.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 四川盆地",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 云南高原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 云贵高原气候",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html"
+      },
+      {
+        "title": "UNESCO · South China Karst",
+        "url": "https://whc.unesco.org/en/list/1248/"
+      },
+      {
+        "title": "交通运输部珠江航务管理局 · 珠江水系航运简介",
+        "url": "https://zjhy.mot.gov.cn/zhuhanggk/shuixijj/201909/t20190916_3266853.html"
+      },
+      {
+        "title": "宁夏水利厅 · 珠江与沿海河流",
+        "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2718481.html"
+      },
+      {
+        "title": "NASA · Red Rocks and Rainbow Ridges",
+        "url": "https://science.nasa.gov/earth/earth-observatory/red-rocks-and-rainbow-ridges-148234/"
+      },
+      {
+        "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+        "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+      },
+      {
+        "title": "中国科学院西北研究院 · 祁连山冰冻圈水文",
+        "url": "https://nieer.cas.cn/xwdt/kydt/202609/t20260922_8286022.html"
+      },
+      {
+        "title": "UNESCO · Xinjiang Tianshan",
+        "url": "https://whc.unesco.org/en/list/1414/"
+      },
+      {
+        "title": "USGS · Himalaya and vicinity tectonics",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+      },
+      {
+        "title": "中国科学院地理资源所 · 塔里木盆地",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html"
+      },
+      {
+        "title": "NASA · A Wall of Dust in the Tarim Basin",
+        "url": "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/"
+      },
+      {
+        "title": "中国科学院地球环境所 · 塔里木盆地的前生今世",
+        "url": "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html"
+      },
+      {
+        "title": "内蒙古自治区人民政府 · 自然地理",
+        "url": "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/"
+      },
+      {
+        "title": "国家民委 · 内蒙古概况",
+        "url": "https://www.neac.gov.cn/seac/ztzl/mgz/gk.shtml"
+      },
+      {
+        "title": "中国科学院地理资源所 · 内蒙古高原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692371.html"
+      },
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 青海湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 中国最大的咸水湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "四区的主要观察线索",
+        "columns": [
+          "地区",
+          "自然条件",
+          "代表联系"
+        ],
+        "rows": [
+          [
+            "北方",
+            "冬季与季节水分",
+            "旱作、生长季"
+          ],
+          [
+            "南方",
+            "总体较湿润",
+            "稻作、河网、排涝"
+          ],
+          [
+            "西北",
+            "内陆干旱",
+            "山地来水、绿洲与牧业"
+          ],
+          [
+            "青藏",
+            "高海拔与高寒",
+            "草地、谷地与河源"
+          ]
+        ],
+        "note": "大尺度概括；各区内部仍有多种景观，边界附近有过渡。"
+      }
+    ]
+  },
+  {
+    "id": "china-provinces",
+    "title": "中国34个省级行政区",
+    "region": "china",
+    "group": "regions",
+    "kind": "collection",
+    "overlay": null,
+    "description": "中国有34个省级行政区：23个省、5个自治区、4个直辖市、2个特别行政区。按相邻位置查找，再看各省区的地形与水系。",
+    "question": "哪些省区同时包含高原、山地和平原？",
+    "stops": [
+      "beijing",
+      "tianjin",
+      "hebei",
+      "shanxi",
+      "inner-mongolia",
+      "liaoning",
+      "jilin",
+      "heilongjiang",
+      "shanghai",
+      "jiangsu",
+      "zhejiang",
+      "anhui",
+      "fujian",
+      "jiangxi",
+      "shandong",
+      "henan",
+      "hubei",
+      "hunan",
+      "guangdong",
+      "guangxi",
+      "hainan-province",
+      "chongqing",
+      "sichuan",
+      "guizhou",
+      "yunnan",
+      "xizang",
+      "shaanxi",
+      "gansu",
+      "qinghai",
+      "ningxia",
+      "xinjiang",
+      "taiwan-province",
+      "hong-kong",
+      "macao"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "provinces",
+      "rivers"
+    ],
+    "takeaway": "行政区帮助定位和组织资料，自然区域帮助解释环境；同一张地图上应分清两种范围。",
+    "sections": [
+      {
+        "title": "行政区是位置索引",
+        "body": "本主题采用中国政府网的省级行政区名录，按相邻位置分为六组便于浏览。这六组是目录分组，省级行政范围与自然地区、流域的范围各有定义。"
+      },
+      {
+        "title": "省内差异值得细看",
+        "body": "河北跨高原、山地与平原，四川跨高原和盆地，甘肃串联不同干湿环境。台湾省学习卡与台湾岛自然卡分别设置，港澳采用特别行政区口径；参考图形的局限在地点卡中说明。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "north-northeast",
+        "title": "华北与东北",
+        "description": "京津冀晋蒙与东北三省相邻，地形仍有很大差异。",
+        "stops": [
+          "beijing",
+          "tianjin",
+          "hebei",
+          "shanxi",
+          "inner-mongolia",
+          "liaoning",
+          "jilin",
+          "heilongjiang"
+        ],
+        "detail": "从山前平原向高原、山地和东北平原展开，逐个认识省区位置。这个目录分组与四大自然地理区采用不同口径。"
+      },
+      {
+        "id": "east",
+        "title": "华东",
+        "description": "沪苏浙皖闽赣鲁联系长江下游与东南海岸。",
+        "stops": [
+          "shanghai",
+          "jiangsu",
+          "zhejiang",
+          "anhui",
+          "fujian",
+          "jiangxi",
+          "shandong"
+        ],
+        "detail": "沿河网、丘陵和海岸看各省位置，留意山东、安徽等省内的地形差别。行政中心可作参照，但不能代表全省环境。"
+      },
+      {
+        "id": "central-south",
+        "title": "中南",
+        "description": "中南连接中原、江汉、洞庭、华南与海南。",
+        "stops": [
+          "henan",
+          "hubei",
+          "hunan",
+          "guangdong",
+          "guangxi",
+          "hainan-province"
+        ],
+        "detail": "从河南向南比较平原、湖区、山地和海岛，认识不同省区如何通过河流与交通联系。"
+      },
+      {
+        "id": "southwest",
+        "title": "西南",
+        "description": "川渝盆地与云贵、西藏高地并列，海拔差异明显。",
+        "stops": [
+          "chongqing",
+          "sichuan",
+          "guizhou",
+          "yunnan",
+          "xizang"
+        ],
+        "detail": "四川内部跨越盆地与高原，云南、贵州也有山间坝子和谷地。读省名后继续看省内地形与水系。"
+      },
+      {
+        "id": "northwest",
+        "title": "西北",
+        "description": "陕甘青宁新串联内陆平原、高原、盆地和绿洲。",
+        "stops": [
+          "shaanxi",
+          "gansu",
+          "qinghai",
+          "ningxia",
+          "xinjiang"
+        ],
+        "detail": "先找秦岭、河西、黄河与天山等参照，再看省区跨越哪些干湿和高度条件。西北目录中并非处处都是荒漠。"
+      },
+      {
+        "id": "islands-sars",
+        "title": "台湾与港澳",
+        "description": "台湾采用省级学习口径，香港、澳门是特别行政区。",
+        "stops": [
+          "taiwan-province",
+          "hong-kong",
+          "macao"
+        ],
+        "detail": "台湾省与台湾主岛自然卡分别设置。岛屿、行政范围与连续城市各有定义，地图参考范围的限制在卡片中说明。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国政府网资料 · 中华人民共和国行政区划",
+        "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      },
+      {
+        "title": "中国政府网 · 台湾基本情况（地理范围口径）",
+        "url": "https://www.gov.cn/guoqing/2020-07/28/content_5530577.htm"
+      },
+      {
+        "title": "北京市人民政府 · 北京概况与地理自然",
+        "url": "https://www.beijing.gov.cn/renwen/bjgk/"
+      },
+      {
+        "title": "天津市人民政府 · 海洋主体功能区规划自然条件",
+        "url": "https://www.tj.gov.cn/zwgk/szfwj/tjsrmzf/202005/t20200519_2365827.html"
+      },
+      {
+        "title": "河北省文化和旅游厅 · 河北自然地理解读",
+        "url": "https://whly.hebei.gov.cn/c/2019-05-09/557248.html"
+      },
+      {
+        "title": "山西省自然资源厅 · 自然资源统一确权登记总体工作方案",
+        "url": "https://zrzyt.shanxi.gov.cn/zwgk/zwgkjbml/zcfg/gfzhl/202109/t20210903_1845788.shtml"
+      },
+      {
+        "title": "内蒙古自治区人民政府 · 自然地理",
+        "url": "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/"
+      },
+      {
+        "title": "辽宁省人民政府 · 主体功能区规划自然条件",
+        "url": "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml"
+      },
+      {
+        "title": "吉林省人民政府 · 地理地貌",
+        "url": "https://www.jl.gov.cn/shengqing/jlgk/dldm/"
+      },
+      {
+        "title": "黑龙江省人民政府 · 地形地貌",
+        "url": "https://www.hlj.gov.cn/hlj/c108480/list_left_tt.shtml"
+      },
+      {
+        "title": "上海市人民政府 · Geography（2024年末面积）",
+        "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+      },
+      {
+        "title": "江苏省人民政府 · Overview of Jiangsu",
+        "url": "https://en.jiangsu.gov.cn/col/col88905/index.html"
+      },
+      {
+        "title": "浙江省人民政府新闻办公室 · Geography",
+        "url": "https://www.ezhejiang.gov.cn/2019-08/02/c_420288.htm"
+      },
+      {
+        "title": "安徽省人民政府 · 安徽省国土空间规划自然禀赋",
+        "url": "https://www.ahhuoshan.gov.cn/group3/M00/68/E4/wKgSG2Yg2gOAT2avAGMA_l-tT1w196.pdf"
+      },
+      {
+        "title": "福建省人民政府 · 主体功能区规划",
+        "url": "https://zfgb.fujian.gov.cn/3456"
+      },
+      {
+        "title": "江西省自然资源厅 · 十四五国土空间生态修复规划",
+        "url": "https://www.dingnan.gov.cn/dnxxxgk/gmjjhshfzgh/202203/ab6ad65d2e0a45ce80c01e42b999df2d.shtml"
+      },
+      {
+        "title": "山东省情资料库 · 自然地理",
+        "url": "https://shandong-chorography.org/database/f063/section/19/article/2/?reflow=original"
+      },
+      {
+        "title": "河南省涉台公共资料 · 地理概况",
+        "url": "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hngk/article491327f391ce412d8f70c2fb2e6eee0d.html"
+      },
+      {
+        "title": "湖北省自然资源厅 · 第一次地理国情普查地形地貌",
+        "url": "https://zrzyt.hubei.gov.cn/bmdt/ztzl/hbsdycqgdlgqpcgb/gbfb/201910/t20191031_209613.shtml"
+      },
+      {
+        "title": "湖南省民政厅 · 湖南行政区划概况（自然地理段）",
+        "url": "https://mzt.hunan.gov.cn/yw/qhdm/200812/t20081226_3722479.html"
+      },
+      {
+        "title": "广东省人民政府 · 主体功能区规划自然状况",
+        "url": "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html"
+      },
+      {
+        "title": "广西壮族自治区人民政府 · 国土空间规划（科协转载）",
+        "url": "https://www.kczg.org.cn/article/detail?id=6319786"
+      },
+      {
+        "title": "海南省林业局 · 热带生态系统与湿地",
+        "url": "https://lyj.hainan.gov.cn/xxgk/0100/0101/201202/t20120220_1388558.html"
+      },
+      {
+        "title": "重庆市人民政府 · 重庆概况地理",
+        "url": "https://wap.cq.gov.cn/zjcq/sqgk/cqsq/202412/t20241231_14378525.html"
+      },
+      {
+        "title": "四川省人民政府 · 国土空间生态修复规划",
+        "url": "https://www.sc.gov.cn/10462/10778/10876/2022/7/8/57f745e2c9f74c66a606f4c88cbe96db/files/484782a06c0144d39954782ac50d7696.pdf"
+      },
+      {
+        "title": "贵州省自然资源厅 · 2021年自然资源公报",
+        "url": "https://zrzy.guizhou.gov.cn/wzgb/zwgk/zdlyxxgk/tjsj/202301/P020230109380185262566.pdf"
+      },
+      {
+        "title": "云南宣传网 · 云南省基本情况（2024）",
+        "url": "https://www.ynxc.gov.cn/html/2024/yns_0418/11831.html"
+      },
+      {
+        "title": "西藏自治区人民政府 · 自然地理",
+        "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html"
+      },
+      {
+        "title": "陕西省人民政府 · 国土空间规划",
+        "url": "https://www.shaanxi.gov.cn/zfxxgk/fdzdgknr/ghxx/gtzygh/202406/P020240622343901996974.pdf"
+      },
+      {
+        "title": "甘肃省人民政府 · 国土空间规划",
+        "url": "https://www.lzxq.gov.cn/system/2024/07/26/031038275.shtml"
+      },
+      {
+        "title": "青海省人民政府 · 十四五规划自然区域与生态保护",
+        "url": "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+      },
+      {
+        "title": "宁夏回族自治区人民政府 · 自然资源保护和利用规划",
+        "url": "https://www.nx.gov.cn/zwgk/qzfwj/202109/t20210924_3045970_wap.html"
+      },
+      {
+        "title": "新疆交通运输厅 · 三山两盆与新疆地理",
+        "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/zxdt/202407/a0284b35255f42b49c4531b0dbbd81d9.shtml"
+      },
+      {
+        "title": "中国科学院地理资源所 · 塔里木盆地",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html"
+      },
+      {
+        "title": "NASA · A Wall of Dust in the Tarim Basin",
+        "url": "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/"
+      },
+      {
+        "title": "中国科学院地球环境所 · 塔里木盆地的前生今世",
+        "url": "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html"
+      },
+      {
+        "title": "台湾行政院 · 土地（自然地形段）",
+        "url": "https://www.ey.gov.tw/state/4447F4A951A1EC45/094b1d53-de8d-4393-bde6-ab092969cce4"
+      },
+      {
+        "title": "香港天文台 · 地形雨与1981—2010降雨分布",
+        "url": "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html"
+      },
+      {
+        "title": "香港海事处 · Hong Kong Fact Sheet — the Port",
+        "url": "https://www.mardep.gov.hk/en/materials-and-publications/publications/hk-fact-sheet/index.html"
+      },
+      {
+        "title": "中国政府网 · 粤港澳大湾区发展规划纲要（2019）",
+        "url": "https://app.www.gov.cn/govdata/gov/201902/18/435204/article.html"
+      },
+      {
+        "title": "澳门旅游局 · 地理位置及时间",
+        "url": "https://www.macaotourism.gov.mo/zh-hant/article/about-macao/location-and-time"
+      },
+      {
+        "title": "中国科学院地理资源所 · 柴达木盆地",
+        "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html"
+      },
+      {
+        "title": "中国政府网资料 · 中国地形的分布（高原、平原与盆地）",
+        "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      },
+      {
+        "title": "中国科学院地理资源所 · 青海湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 中国最大的咸水湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "bars",
+        "title": "34个省级行政区的构成",
+        "unit": "个",
+        "rows": [
+          {
+            "label": "省",
+            "value": 23
+          },
+          {
+            "label": "自治区",
+            "value": 5
+          },
+          {
+            "label": "直辖市",
+            "value": 4
+          },
+          {
+            "label": "特别行政区",
+            "value": 2
+          }
+        ],
+        "note": "按中国政府网名录计数，表示行政类别。",
+        "sources": [
+          {
+            "title": "中国政府网资料 · 中华人民共和国行政区划",
+            "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china-relief-steps",
+    "title": "中国地势三级阶梯与丘陵",
+    "region": "china",
+    "group": "landforms",
+    "kind": "collection",
+    "overlay": null,
+    "description": "中国地势总体西高东低，常用三级阶梯概括。每级内部仍有山地、谷地和盆地，东部低地也有丘陵。",
+    "question": "柴达木叫盆地，为什么仍属于高原上的第一阶梯？",
+    "stops": [
+      "tibetan-plateau",
+      "qaidam-basin",
+      "loess-plateau",
+      "inner-mongolian-plateau",
+      "yunnan-guizhou-plateau",
+      "sichuan-basin",
+      "northeast-china-plain",
+      "north-china-plain",
+      "yangtze-middle-lower-plain",
+      "liaodong-hills",
+      "shandong-hills",
+      "southeast-hills"
+    ],
+    "layers": [
+      "terrain",
+      "mountains",
+      "rivers",
+      "borders"
+    ],
+    "takeaway": "三级阶梯说明总体地势，五类地形说明局地形态；两套概念可以在同一地点同时成立。",
+    "sections": [
+      {
+        "title": "从西部高地向东",
+        "body": "青藏高原构成第一阶梯的主体，东侧和北侧的高原与盆地构成第二阶梯的重要部分，东部平原和丘陵属于较低的第三阶梯。阶梯表示大尺度趋势。"
+      },
+      {
+        "title": "地势与地形",
+        "body": "地势讲总体高低，地形讲具体形态。高原里可以有相对低的盆地，东部平原旁也有丘陵。总体坡向影响许多河流流向，山脉和盆地出口又改变具体路径。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "high-plateau",
+        "title": "第一阶梯：高原与高原盆地",
+        "description": "第一阶梯以青藏高原为主体，也包含高原盆地。",
+        "stops": [
+          "tibetan-plateau",
+          "qaidam-basin"
+        ],
+        "detail": "柴达木相对周缘较低，仍处在高海拔背景中。比较绝对海拔与相对高低，能理解高原里为什么也有盆地。"
+      },
+      {
+        "id": "plateaus-basins",
+        "title": "第二阶梯：高原和盆地交错",
+        "description": "第二阶梯中高原和盆地交错，地表外貌各不相同。",
+        "stops": [
+          "loess-plateau",
+          "inner-mongolian-plateau",
+          "yunnan-guizhou-plateau",
+          "sichuan-basin"
+        ],
+        "detail": "黄土、内蒙古、云贵高原与四川盆地展示不同岩石、水分和侵蚀过程。相似高度等级并不意味着相同气候。"
+      },
+      {
+        "id": "eastern-lowlands",
+        "title": "第三阶梯：平原与丘陵并存",
+        "description": "第三阶梯有三大平原，也有辽东、山东与东南丘陵。",
+        "stops": [
+          "northeast-china-plain",
+          "north-china-plain",
+          "yangtze-middle-lower-plain",
+          "liaodong-hills",
+          "shandong-hills",
+          "southeast-hills"
+        ],
+        "detail": "较低的总体地势中仍有局地山地和河谷。比较河流、平原与丘陵，理解水流路径和土地利用怎样随地形变化。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国政府网资料 · 地形分布",
+        "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      },
+      {
+        "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+        "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+      },
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 柴达木盆地",
+        "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html"
+      },
+      {
+        "title": "中国科学院地质地球所 · 黄土形成与物源",
+        "url": "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html"
+      },
+      {
+        "title": "中国科学院地球环境所 · 河谷砂黄土风—水过程",
+        "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
+      },
+      {
+        "title": "内蒙古自治区人民政府 · 自然地理",
+        "url": "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/"
+      },
+      {
+        "title": "国家民委 · 内蒙古概况",
+        "url": "https://www.neac.gov.cn/seac/ztzl/mgz/gk.shtml"
+      },
+      {
+        "title": "中国科学院地理资源所 · 内蒙古高原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692371.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 云南高原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 云贵高原气候",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html"
+      },
+      {
+        "title": "UNESCO · South China Karst",
+        "url": "https://whc.unesco.org/en/list/1248/"
+      },
+      {
+        "title": "中国科学院地理资源所 · 四川盆地",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 东北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 华北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 长江中下游平原",
+        "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692359.html"
+      },
+      {
+        "title": "辽宁省人民政府 · 主体功能区规划自然条件",
+        "url": "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml"
+      },
+      {
+        "title": "山东省情资料库 · 自然地理",
+        "url": "https://shandong-chorography.org/database/f063/section/19/article/2/?reflow=original"
+      },
+      {
+        "title": "福建省人民政府 · 主体功能区规划",
+        "url": "https://zfgb.fujian.gov.cn/3456"
+      },
+      {
+        "title": "浙江省人民政府新闻办公室 · Geography",
+        "url": "https://www.ezhejiang.gov.cn/2019-08/02/c_420288.htm"
+      },
+      {
+        "title": "中国科学院青海盐湖研究所 · 柴达木盆地盐湖锂矿床成因研究",
+        "url": "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html"
+      },
+      {
+        "title": "青海省人民政府 · 十四五规划资源利用与生态保护",
+        "url": "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "从高地到东部低地",
+        "columns": [
+          "阶梯",
+          "代表地形",
+          "仍有哪些起伏"
+        ],
+        "rows": [
+          [
+            "第一",
+            "青藏高原",
+            "盆地、深谷与高峰"
+          ],
+          [
+            "第二",
+            "高原与盆地交错",
+            "山脉与河谷"
+          ],
+          [
+            "第三",
+            "东部平原和丘陵",
+            "局地山地与低洼地"
+          ]
+        ],
+        "note": "这是总体地势概括，图中不补画未经核定的阶梯边线。"
+      }
+    ]
+  },
+  {
+    "id": "china-lakes",
+    "title": "中国主要湖泊",
+    "region": "china",
+    "group": "water",
+    "kind": "collection",
+    "overlay": null,
+    "description": "青海湖、鄱阳湖、洞庭湖、太湖代表不同水文环境。先看水从哪里来、从哪里出去，再看盐度、季节涨落与周边用水。",
+    "question": "通江湖泊为什么会随江水位变化？",
+    "stops": [
+      "qinghai-lake",
+      "poyang-lake",
+      "dongting-lake",
+      "taihu"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "rivers",
+      "lakes"
+    ],
+    "takeaway": "判断湖泊先看湖盆、进出水和时间变化；地图面积不能代替水位、盐度或生态状态。",
+    "sections": [
+      {
+        "title": "四个湖放回水系",
+        "body": "青海湖位于高原封闭盆地，鄱阳湖和洞庭湖与长江相连，太湖位于长江三角洲水网。湖盆成因、深浅与今天的排水方式需要分别理解。"
+      },
+      {
+        "title": "湖面是会变化的",
+        "body": "降雨、入湖河流、出流与蒸发共同改变水量；通江湖还受长江水位影响。浅湖容易受风浪和营养物质输入影响，湖岸湿地、城市供水和农田排水都与流域有关。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "closed",
+        "title": "高原内流湖",
+        "description": "青海湖没有自然通海出口，水与盐在盆地内收支。",
+        "stops": [
+          "qinghai-lake"
+        ],
+        "detail": "入湖河流、湖面降水和蒸发共同影响水量。盐分积累及湖岸生态，需要结合长期水文过程理解。"
+      },
+      {
+        "id": "river-connected",
+        "title": "与长江相连的湖泊",
+        "description": "鄱阳湖、洞庭湖接收支流来水，并与长江相连。",
+        "stops": [
+          "poyang-lake",
+          "dongting-lake"
+        ],
+        "detail": "湖水涨落既受本地流域降雨，也受长江水位影响。出口、入湖河流和低平湿地共同构成水文联系。"
+      },
+      {
+        "id": "shallow-network",
+        "title": "平原浅湖与水网",
+        "description": "太湖是平原浅湖，湖面与周围河网紧密相连。",
+        "stops": [
+          "taihu"
+        ],
+        "detail": "浅水容易受风浪扰动，周边城市和农田又影响营养物质输入。供水、排水与水质需要按流域共同管理。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "中国科学院地理资源所 · 青海湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 中国最大的咸水湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 鄱阳湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692506.html"
+      },
+      {
+        "title": "中国科学院南京地湖所 · SWOT揭示江湖交互",
+        "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202512/t20251218_8029602.html"
+      },
+      {
+        "title": "湖南省人民政府 · 岁月留痕 大地印记：洞庭湖",
+        "url": "https://www.hunan.gov.cn/hnyw/zwdt/201908/t20190812_9483347.html"
+      },
+      {
+        "title": "岳阳市水利局 · 河湖水系概况",
+        "url": "https://swj.yueyang.gov.cn/6855/6879/30424/30429/content_1746597.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 太湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html"
+      },
+      {
+        "title": "中国科学院南京地湖所 · 浅水湖泊水动力",
+        "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "四个湖的水文联系",
+        "columns": [
+          "湖泊",
+          "来水与出口",
+          "关注点"
+        ],
+        "rows": [
+          [
+            "青海湖",
+            "封闭内流",
+            "水量与盐分"
+          ],
+          [
+            "鄱阳湖／洞庭湖",
+            "入湖支流、通长江",
+            "季节涨落"
+          ],
+          [
+            "太湖",
+            "平原浅湖与河网",
+            "供排水、水质"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china-agriculture",
+    "title": "中国农业与牧业",
+    "region": "china",
+    "group": "resources",
+    "kind": "connections",
+    "overlay": null,
+    "description": "东北粮田、华北农田、南方稻作、河套灌区和草原牧业，需要不同的水土管理。自然条件之外，品种、灌排和经营同样重要。",
+    "question": "供水充足、排水顺畅和土壤保护，分别在哪些地区更值得关注？",
+    "stops": [
+      "northeast-blacksoil",
+      "north-china-plain",
+      "rice-farming",
+      "yangtze-middle-lower-plain",
+      "hetao-irrigation",
+      "xilingol-pasture"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "provinces",
+      "rivers"
+    ],
+    "takeaway": "自然条件决定适宜性的重要部分，生产方式与管理改变结果；水土保护和草畜平衡决定长期可持续性。",
+    "sections": [
+      {
+        "title": "各地的关键条件",
+        "body": "东北需要利用暖季并保护黑土，华北关注作物季节用水，南方稻作兼顾供水与排涝。河套依靠引黄灌溉，锡林郭勒牧业依靠牧草和合理载畜。"
+      },
+      {
+        "title": "生产与长期土地质量",
+        "body": "产量、单产、耕地面积和播种面积各有含义。增加灌溉或复种需要核对水资源条件；盐分管理、黑土保护和草畜平衡关系到土地能否持续生产。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "northern-fields",
+        "title": "北方粮田：土壤与生长季",
+        "description": "东北与华北的粮田需要不同生长季和用水安排。",
+        "stops": [
+          "northeast-blacksoil",
+          "north-china-plain"
+        ],
+        "detail": "东北重视黑土保护与暖季，华北重视作物需水和降雨错配。灌溉、品种和耕作会改变实际生产。"
+      },
+      {
+        "id": "rice-water",
+        "title": "南方稻作：水田与排灌",
+        "description": "水稻需要合适的热量、供水与排灌管理。",
+        "stops": [
+          "rice-farming",
+          "yangtze-middle-lower-plain"
+        ],
+        "detail": "长江中下游平原河湖多，农田既要获得水，也要防止雨季积涝。水田生产仍需兼顾水质和生态。"
+      },
+      {
+        "id": "oasis-pasture",
+        "title": "灌区与牧区：两种用地方式",
+        "description": "河套灌区引黄灌溉，锡林郭勒牧业依靠牧草。",
+        "stops": [
+          "hetao-irrigation",
+          "xilingol-pasture"
+        ],
+        "detail": "灌区要协调供水、排水和盐分，牧区要协调牧草生长与载畜。两种利用方式都有水分和长期土地质量约束。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "农业农村部 · 黑土同耕 稳粮兴邦",
+        "url": "https://qys.moa.gov.cn/gdxw/202604/t20260427_6483675.htm"
+      },
+      {
+        "title": "农业农村部 · 粮食作物区域大配方与施肥建议",
+        "url": "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm"
+      },
+      {
+        "title": "内蒙古自治区人民政府 · 国土空间规划",
+        "url": "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 华北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
+      },
+      {
+        "title": "国家统计局 · National Grain Production in 2024",
+        "url": "https://www.stats.gov.cn/english/PressRelease/202412/t20241219_1957784.html"
+      },
+      {
+        "title": "World Bank · India: Managing Floods and Droughts（2023）",
+        "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+      },
+      {
+        "title": "中国科学院地理资源所 · 长江中下游平原",
+        "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692359.html"
+      },
+      {
+        "title": "中国政府网资料 · 中国地形的分布（高原、平原与盆地）",
+        "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      },
+      {
+        "title": "内蒙古自治区农牧厅 · 河套灌区农业节水与盐碱地治理（2025）",
+        "url": "https://nmt.nmg.gov.cn/gk/zfxxgk/fdzdgknr/rdjy/202510/t20251030_2810626.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "生产方式与管理重点",
+        "columns": [
+          "案例",
+          "利用条件",
+          "管理重点"
+        ],
+        "rows": [
+          [
+            "东北粮田",
+            "黑土与暖季",
+            "保护土壤"
+          ],
+          [
+            "华北农田",
+            "作物季节需水",
+            "灌溉与节水"
+          ],
+          [
+            "南方稻作",
+            "热量、水源与低地",
+            "供水与排涝"
+          ],
+          [
+            "河套灌区",
+            "引黄灌溉",
+            "水盐管理"
+          ],
+          [
+            "锡林郭勒",
+            "牧草与季节水分",
+            "草畜平衡"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "china-energy-resources",
+    "title": "中国能源与矿产",
+    "region": "china",
+    "group": "resources",
+    "kind": "connections",
+    "overlay": null,
+    "description": "煤与煤层气、风光、水能、盐湖矿产有不同来源。资源地还需要工程、输送和水土条件，才能与消费地区联系。",
+    "question": "风光发电的装机容量，为什么不等于实际发电量？",
+    "stops": [
+      "qinshui-coal",
+      "hexi-renewables",
+      "three-gorges-project",
+      "qarhan-resources",
+      "qaidam-basin"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "provinces",
+      "rivers"
+    ],
+    "takeaway": "资源形成、开采发电、运输和消费构成完整联系；区分指标，也关注水与生态约束。",
+    "sections": [
+      {
+        "title": "资源从哪里来",
+        "body": "沁水煤与煤层气来自地质演化；河西风光依靠风和太阳辐射；三峡水能依靠流量与落差；察尔汗矿产与卤水、物质来源和长期演化有关。"
+      },
+      {
+        "title": "开发还需要什么",
+        "body": "地下开采要考虑工程与地表影响，风光发电需要电网和调节，水电兼有防洪航运任务，盐湖开采也依赖淡水与环境管理。储量、年度产量、装机和发电量适合分别比较。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "fossil",
+        "title": "地下能源：煤炭与煤层气",
+        "description": "沁水盆地的煤与煤层气同属地下能源。",
+        "stops": [
+          "qinshui-coal"
+        ],
+        "detail": "成煤历史提供资源条件，抽采与开采还需要工程、安全和环境管理。资源储量与年度开采量描述不同信息。"
+      },
+      {
+        "id": "renewables",
+        "title": "可再生发电：风光与水能",
+        "description": "河西风光与三峡水电利用不同的自然过程。",
+        "stops": [
+          "hexi-renewables",
+          "three-gorges-project"
+        ],
+        "detail": "风光出力随天气变化，水电受流量和调度影响。装机容量、发电量与调节能力要分开比较，电网把产地接到消费地。"
+      },
+      {
+        "id": "minerals",
+        "title": "盐湖矿产：卤水与物质循环",
+        "description": "察尔汗矿产与盐湖卤水和长期物质收支有关。",
+        "stops": [
+          "qarhan-resources",
+          "qaidam-basin"
+        ],
+        "detail": "把盐湖放回柴达木盆地，看水分、盐分与地质来源。开发也需要淡水、设施和环境管理。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "国家能源局 · 煤层气开发利用规划地质条件",
+        "url": "https://www.nea.gov.cn/2006-06/28/c_131215308.htm"
+      },
+      {
+        "title": "国家发展改革委 · 全国矿产资源规划",
+        "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html"
+      },
+      {
+        "title": "中国科学院青海盐湖研究所 · 柴达木盆地盐湖锂矿床成因研究",
+        "url": "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html"
+      },
+      {
+        "title": "国家能源局 · 河西新能源与酒泉湖南输电联系",
+        "url": "https://zfxxgk.nea.gov.cn/2020-09/10/c_139420038.htm"
+      },
+      {
+        "title": "中国长江三峡集团 · 三峡工程综合功能",
+        "url": "https://www.ctg.com.cn/sxjt/sxgc4/bwsx/2024081104052483367/index.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 柴达木盆地",
+        "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html"
+      },
+      {
+        "title": "中国政府网资料 · 中国地形的分布（高原、平原与盆地）",
+        "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      },
+      {
+        "title": "国家能源局 · 酒泉风光资源与新能源消纳",
+        "url": "https://zfxxgk.nea.gov.cn/auto87/201812/t20181211_3448.htm"
+      },
+      {
+        "title": "青海省人民政府 · 十四五规划资源利用与生态保护",
+        "url": "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "资源指标各指什么",
+        "columns": [
+          "指标",
+          "含义"
+        ],
+        "rows": [
+          [
+            "储量",
+            "按一定条件估计的资源存量"
+          ],
+          [
+            "年度产量",
+            "一段时期的开采或生产量"
+          ],
+          [
+            "装机容量",
+            "发电设备的额定能力"
+          ],
+          [
+            "发电量",
+            "一段时期实际产生的电能"
+          ]
+        ],
+        "note": "单位不同，不能放入同一排名。"
+      }
+    ]
+  },
+  {
+    "id": "china-transport",
+    "title": "中国交通与港口",
+    "region": "china",
+    "group": "resources",
+    "kind": "connections",
+    "overlay": null,
+    "description": "交通靠通道和节点共同运转。平原枢纽、高原铁路、内河水运和海港各有条件，桥隧、船闸和联运改善地区联系。",
+    "question": "河港与海港怎样把货物送到内陆？",
+    "stops": [
+      "zhengzhou-transport",
+      "qinghai-tibet-railway",
+      "chongqing",
+      "grand-canal",
+      "ningbo-zhoushan-port",
+      "tianjin"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "provinces",
+      "rivers"
+    ],
+    "takeaway": "交通是自然条件、工程和组织共同建立的网络；地图上的距离与实际通行成本并不相同。",
+    "sections": [
+      {
+        "title": "通道与节点",
+        "body": "郑州提供陆路枢纽案例，青藏铁路展示高原工程，重庆和大运河展示内河联系，宁波舟山与天津展示海港。站场、码头和转运设施决定节点怎样接入网络。"
+      },
+      {
+        "title": "地形与运输成本",
+        "body": "山地桥隧、高原冻土地基、河道水深和港口航道都有不同工程要求。距离之外，货源、换装、班次与维护也影响运输；主题定位案例点，完整线路需要单独资料。"
+      }
+    ],
+    "modules": [
+      {
+        "id": "land",
+        "title": "陆路：平原枢纽与高原工程",
+        "description": "郑州突出线路交会，青藏铁路突出高原工程。",
+        "stops": [
+          "zhengzhou-transport",
+          "qinghai-tibet-railway"
+        ],
+        "detail": "枢纽需要站场和网络组织，高原铁路还需应对冻土、坡度与维护。地图节点用于定位，不代替完整线路资料。"
+      },
+      {
+        "id": "inland-water",
+        "title": "内河：天然河流与人工运河",
+        "description": "重庆连接长江水运，大运河提供人工水道联系。",
+        "stops": [
+          "chongqing",
+          "grand-canal"
+        ],
+        "detail": "天然河流航运依赖水深与季节水量，人工运河还需要工程和调度。港口、船闸与转运共同影响通行。"
+      },
+      {
+        "id": "ports",
+        "title": "海港：海侧条件与内陆腹地",
+        "description": "宁波舟山与天津都要兼顾航道和内陆集疏运。",
+        "stops": [
+          "ningbo-zhoushan-port",
+          "tianjin"
+        ],
+        "detail": "海侧水深、岸线和码头提供条件，陆侧铁路、公路与货源决定腹地联系。靠海的位置之外，还需要有效转运。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "郑州市人民政府 · 交通枢纽与物流联系",
+        "url": "https://www.zhengzhou.gov.cn/2026lh01/9888984.jhtml"
+      },
+      {
+        "title": "中国科学院 · 青藏铁路冻土研究团队",
+        "url": "https://www.cas.cn/spx/202210/t20221008_4849995.shtml"
+      },
+      {
+        "title": "交通运输部、浙江省人民政府 · 宁波舟山港总体规划批复",
+        "url": "https://xxgk.mot.gov.cn/jigou/zhghs/202006/t20200630_3319765.html"
+      },
+      {
+        "title": "天津市人民政府 · 海洋主体功能区规划自然条件",
+        "url": "https://www.tj.gov.cn/zwgk/szfwj/tjsrmzf/202005/t20200519_2365827.html"
+      },
+      {
+        "title": "中国科学院 · 青藏铁路冻土路基技术纪实",
+        "url": "https://www.cas.cn/cm/202403/t20240304_5007246.shtml"
+      },
+      {
+        "title": "重庆市人民政府 · 重庆概况地理",
+        "url": "https://wap.cq.gov.cn/zjcq/sqgk/cqsq/202412/t20241231_14378525.html"
+      },
+      {
+        "title": "中国政府网资料 · 中华人民共和国行政区划",
+        "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      },
+      {
+        "title": "UNESCO · The Grand Canal",
+        "url": "https://whc.unesco.org/en/list/1443"
+      },
+      {
+        "title": "河南省涉台公共资料 · 地理概况",
+        "url": "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hngk/article491327f391ce412d8f70c2fb2e6eee0d.html"
+      }
+    ],
+    "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "运输需要哪些条件",
+        "columns": [
+          "类型",
+          "自然条件",
+          "设施联系"
+        ],
+        "rows": [
+          [
+            "陆路",
+            "坡度、地基和通道",
+            "枢纽、桥隧与维护"
+          ],
+          [
+            "内河",
+            "水深和季节水量",
+            "航道、船闸、河港"
+          ],
+          [
+            "海港",
+            "岸线与航道",
+            "码头与陆侧集疏运"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "world-continents",
+    "title": "世界七大洲",
+    "region": "world",
+    "group": "regions",
+    "kind": "collection",
+    "shared": false,
+    "overlay": null,
+    "stops": [
+      "asia-continent",
+      "europe-continent",
+      "africa-continent",
+      "north-america-continent",
+      "south-america-continent",
+      "oceania-region",
+      "antarctica"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "mountains",
+      "rivers"
+    ],
+    "description": "亚洲最大，非洲其次，大洋洲陆地面积最小。七大洲的面积和海陆位置不同，每洲内部又有多种地形与气候。",
+    "question": "亚洲和欧洲相连，为什么仍分为两个洲？",
+    "takeaway": "洲际比较先看范围和尺度，再选择具体地区；同一洲不对应唯一气候、景观或生活方式。",
+    "sections": [
+      {
+        "title": "大洲与大陆",
+        "body": "亚洲和欧洲同处欧亚大陆；大洋洲包括澳大利亚大陆和众多岛屿。大洲是常用地理划分，一个国家的范围或景观无法代表整个洲。"
+      },
+      {
+        "title": "从海陆位置看内部",
+        "body": "先找赤道、周围海洋和相邻大陆，再看主要山系与河流。非洲既有沙漠也有雨林，美洲西部山地与内部平原不同，亚洲沿海与高原的水热条件也差别很大。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "National Geographic Society · Africa: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/"
+      },
+      {
+        "title": "National Geographic Society · Europe: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/europe-physical-geography/"
+      },
+      {
+        "title": "National Geographic Society · North America: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/north-america-physical-geography/"
+      },
+      {
+        "title": "National Geographic Society · South America: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+      },
+      {
+        "title": "National Geographic Society · Australia and Oceania: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/oceania-physical-geography/"
+      },
+      {
+        "title": "NASA · 亚洲第三极的水资源联系",
+        "url": "https://science.nasa.gov/earth/water-on-earth/the-water-future-of-earths-third-pole/"
+      },
+      {
+        "title": "UN Statistics Division · M49区域分类与使用口径",
+        "url": "https://unstats.un.org/unsd/methodology/M49"
+      },
+      {
+        "title": "USGS · The Himalayas: Two continents collide",
+        "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html"
+      },
+      {
+        "title": "USGS · Seismicity of the Earth: Himalaya and vicinity",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+      },
+      {
+        "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+        "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+      },
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      },
+      {
+        "title": "UNESCO · Toratau Global Geopark",
+        "url": "https://www.unesco.org/en/iggp/toratau-unesco-global-geopark"
+      },
+      {
+        "title": "UNESCO · Northern Urals nomination geology",
+        "url": "https://whc.unesco.org/document/167636"
+      },
+      {
+        "title": "Port of Rotterdam Authority · Connections",
+        "url": "https://www.portofrotterdam.com/en/logistics/connections"
+      },
+      {
+        "title": "Swiss Federal Office of Transport · New Rail Link through the Alps",
+        "url": "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps"
+      },
+      {
+        "title": "NASA Earth Observatory · East Africa",
+        "url": "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/"
+      },
+      {
+        "title": "UNESCO · Okavango Delta",
+        "url": "https://whc.unesco.org/en/list/1432/"
+      },
+      {
+        "title": "USDA ERS · Wheat Sector at a Glance",
+        "url": "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance"
+      },
+      {
+        "title": "NASA Earth Observatory · Mapping the Amazon",
+        "url": "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/"
+      },
+      {
+        "title": "NASA Astrobiology · The Driest Place on Earth",
+        "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
+      },
+      {
+        "title": "USGS · What is a hotspot and how do you know it is there?",
+        "url": "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there"
+      },
+      {
+        "title": "British Antarctic Survey · Antarctica",
+        "url": "https://www.bas.ac.uk/about/where-we-work/antarctica/"
+      },
+      {
+        "title": "中国科学院地理资源所 · 全球海陆岸线面积研究（2019）",
+        "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html"
+      }
+    ],
+    "modules": [
+      {
+        "id": "eurasia",
+        "title": "相连的欧亚大陆",
+        "description": "亚洲和欧洲相连，共同组成欧亚大陆。",
+        "stops": [
+          "asia-continent",
+          "europe-continent"
+        ],
+        "detail": "以乌拉尔、邻近海域与内部山系作位置参照，理解大洲划分和连续陆地的关系。两洲内部都跨越多种环境。"
+      },
+      {
+        "id": "africa",
+        "title": "赤道两侧的非洲",
+        "description": "赤道穿过非洲，雨林、草原、沙漠与高地并存。",
+        "stops": [
+          "africa-continent"
+        ],
+        "detail": "从赤道两侧向南北展开，再看东部高地。纬度之外，海拔、海流和水汽输送也影响具体地区。"
+      },
+      {
+        "id": "americas",
+        "title": "南北美洲",
+        "description": "南北美洲西部有长山系，内部有大平原和流域。",
+        "stops": [
+          "north-america-continent",
+          "south-america-continent"
+        ],
+        "detail": "先沿落基山、安第斯看西部骨架，再转向密西西比和亚马孙等河流。山地、低地与海岸有不同联系。"
+      },
+      {
+        "id": "ocean-polar",
+        "title": "大洋洲与南极洲",
+        "description": "大洋洲由大陆和岛群组成，南极洲是极地大陆。",
+        "stops": [
+          "oceania-region",
+          "antarctica"
+        ],
+        "detail": "大洋洲要同时看陆地面积与广阔海洋联系；南极要区分大陆、冰盖与周缘海冰。一个国家无法代替整个大洋洲。"
+      }
+    ],
+    "geometryNote": "主题用已有真实要素和明确的案例参考点定位。未核验到范围一致的图形时保留点位，不由点位连线或国家范围推画自然区、板块、生态、产业或交通边界。",
+    "visuals": [
+      {
+        "kind": "bars",
+        "title": "七大洲陆地面积对比",
+        "unit": "百万 km²",
+        "rows": [
+          {
+            "label": "亚洲",
+            "value": 44.13,
+            "place": "asia-continent"
+          },
+          {
+            "label": "非洲",
+            "value": 29.83,
+            "place": "africa-continent"
+          },
+          {
+            "label": "北美洲",
+            "value": 24.24,
+            "place": "north-america-continent"
+          },
+          {
+            "label": "南美洲",
+            "value": 17.74,
+            "place": "south-america-continent"
+          },
+          {
+            "label": "南极洲",
+            "value": 12.61,
+            "place": "antarctica"
+          },
+          {
+            "label": "欧洲",
+            "value": 10.0,
+            "place": "europe-continent"
+          },
+          {
+            "label": "大洋洲",
+            "value": 8.94,
+            "place": "oceania-region"
+          }
+        ],
+        "note": "同一研究的2015±2年遥感岸线统计，含各洲所属岛礁。与教材常见约数的范围和岸线口径不同，南极洲差异尤其明显。条长按实际面积比例；点击洲名可阅读。",
+        "sources": [
+          {
+            "title": "中国科学院地理资源所 · 全球海陆岸线面积研究（2019）",
+            "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "world-plateaus-plains",
+    "title": "世界高原与平原",
+    "region": "world",
+    "group": "landforms",
+    "kind": "collection",
+    "shared": false,
+    "overlay": null,
+    "stops": [
+      "tibetan-plateau",
+      "deccan-plateau",
+      "ethiopian-highlands",
+      "brazilian-highlands",
+      "great-plains",
+      "ganges-plain",
+      "pampas",
+      "amazon-basin"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "mountains",
+      "rivers"
+    ],
+    "description": "高原的海拔、纬度和岩石不同，平原的来水与土地利用也不同。青藏、德干、巴西高原与恒河、大平原、潘帕斯适合对照。",
+    "question": "高原一定冷吗？平原一定接近海平面吗？",
+    "takeaway": "地形名称说明相对形态；气候、岩石、来水与人类利用需要分别找证据。",
+    "sections": [
+      {
+        "title": "地形名称说明什么",
+        "body": "高原是相对周边较高的大片地区，内部也有深谷和盆地；平原较平缓，但绝对海拔可以不同。青藏的高寒、德干的季节水分和巴西的地表条件分别需要解释。"
+      },
+      {
+        "title": "河流与土地利用",
+        "body": "恒河平原、大平原和潘帕斯有不同沉积、排水与生产条件。亚马孙流域还包括周围高地来水区，范围大于低地平原。农业要结合水、土壤、技术和市场一起理解。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA Earth Observatory · Lonar Crater, India",
+        "url": "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/"
+      },
+      {
+        "title": "NASA Earth Observatory · East Africa",
+        "url": "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/"
+      },
+      {
+        "title": "National Geographic Society · South America: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+      },
+      {
+        "title": "NASA Earth Observatory · Agriculture Patterns in the Great Plains",
+        "url": "https://science.nasa.gov/earth/earth-observatory/agriculture-patterns-in-the-great-plains-145932/"
+      },
+      {
+        "title": "USDA ERS · Wheat Sector at a Glance",
+        "url": "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance"
+      },
+      {
+        "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+        "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+      },
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      },
+      {
+        "title": "NOAA NESDIS · What Is a Monsoon?",
+        "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+      },
+      {
+        "title": "National Geographic Society · Africa: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/"
+      },
+      {
+        "title": "UNESCO MAB · Kafa",
+        "url": "https://www.unesco.org/en/mab/kafa"
+      },
+      {
+        "title": "NASA Earth Observatory · Mapping the Amazon",
+        "url": "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/"
+      },
+      {
+        "title": "NASA Earth Observatory · Brasília at Night",
+        "url": "https://science.nasa.gov/earth/earth-observatory/brasilia-at-night-48963/"
+      },
+      {
+        "title": "National Geographic Society · North America: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/north-america-physical-geography/"
+      },
+      {
+        "title": "NASA · Monsoon Floods Inundate Eastern India",
+        "url": "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/"
+      },
+      {
+        "title": "NASA · Ganges River Delta",
+        "url": "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/"
+      },
+      {
+        "title": "Nature · Himalayan gravel flux and Ganga Plain",
+        "url": "https://www.nature.com/articles/nature22039"
+      },
+      {
+        "title": "NASA JPL/MISR · The Pampas of Argentina",
+        "url": "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/"
+      },
+      {
+        "title": "NASA · Topography of South America",
+        "url": "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/"
+      },
+      {
+        "title": "NASA · Mud from the Andes Carried by the Amazon",
+        "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+      }
+    ],
+    "modules": [
+      {
+        "id": "highlands",
+        "title": "比较四组高地",
+        "description": "四组高地的纬度、海拔和地表历史各有特点。",
+        "stops": [
+          "tibetan-plateau",
+          "deccan-plateau",
+          "ethiopian-highlands",
+          "brazilian-highlands"
+        ],
+        "detail": "青藏、德干、埃塞俄比亚和巴西高地提供对照。高原内部仍有山地和深谷，温度与水分不能从地形名称直接推断。"
+      },
+      {
+        "id": "plains",
+        "title": "平原上的生产联系",
+        "description": "大平原、恒河平原与潘帕斯有不同来水和农牧利用。",
+        "stops": [
+          "great-plains",
+          "ganges-plain",
+          "pampas"
+        ],
+        "detail": "比较河流、雨季、土壤和生产安排。平缓地表便于部分耕作，实际农业还依赖灌排、技术与市场。"
+      },
+      {
+        "id": "basin",
+        "title": "补看流域尺度",
+        "description": "亚马孙流域包括低地，也包括周围高地来水区。",
+        "stops": [
+          "amazon-basin"
+        ],
+        "detail": "把平原与流域分开：一个描述地形，一个描述汇水关系。两者可以相交，却不会自动具有同一条边界。"
+      }
+    ],
+    "geometryNote": "主题用已有真实要素和明确的案例参考点定位。未核验到范围一致的图形时保留点位，不由点位连线或国家范围推画自然区、板块、生态、产业或交通边界。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "平原与流域不是同一范围",
+        "columns": [
+          "概念",
+          "划分依据",
+          "可能包括"
+        ],
+        "rows": [
+          [
+            "高原",
+            "大尺度相对高地",
+            "山地、盆地、深谷"
+          ],
+          [
+            "平原",
+            "较平缓地表",
+            "岗丘、河漫滩与低洼地"
+          ],
+          [
+            "流域",
+            "向同一出口汇水",
+            "高地与低地"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "world-deserts",
+    "title": "世界沙漠与干旱景观",
+    "region": "world",
+    "group": "landforms",
+    "kind": "collection",
+    "shared": false,
+    "overlay": "climate",
+    "stops": [
+      "sahara",
+      "taklamakan",
+      "gobi-desert",
+      "atacama-desert",
+      "namib-sand-sea",
+      "australia"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "mountains"
+    ],
+    "description": "沙漠不全是沙丘，临海也可能干旱。撒哈拉、戈壁、塔克拉玛干与阿塔卡马、纳米布展示不同地表和水源条件。",
+    "question": "靠海的沙漠为什么少雨，却可能有雾？",
+    "takeaway": "干旱描述水分条件，沙丘与戈壁描述地表；河流、地下水和雾仍能构成局地水源。",
+    "sections": [
+      {
+        "title": "干旱与地表分开看",
+        "body": "干旱讲水分条件，沙丘、砾石和裸岩讲地表形态。一片荒漠可以同时包含多种地表，浅色底图也不能直接用来判断沙地或荒漠化。"
+      },
+      {
+        "title": "水分受什么影响",
+        "body": "塔克拉玛干与内陆位置和周围高山有关；阿塔卡马、纳米布还受冷海水、稳定空气和地形影响。山地来水可以支撑绿洲，沿海雾也能成为局地生命的水源。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NASA Earth Observatory · Dust Storm over the Gobi Desert",
+        "url": "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-gobi-desert-79746/"
+      },
+      {
+        "title": "UNESCO · Namib Sand Sea",
+        "url": "https://whc.unesco.org/en/list/1430/"
+      },
+      {
+        "title": "NASA Astrobiology · The Driest Place on Earth",
+        "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
+      },
+      {
+        "title": "NOAA · What is upwelling?",
+        "url": "https://oceanservice.noaa.gov/facts/upwelling.html"
+      },
+      {
+        "title": "NOAA · Climate Zones",
+        "url": "https://www.noaa.gov/jetstream/global/climate-zones"
+      },
+      {
+        "title": "NOAA · Saharan Air Layer",
+        "url": "https://www.aoml.noaa.gov/saharan-air-layer/"
+      },
+      {
+        "title": "中国科学院地理资源所 · 塔克拉玛干沙漠",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692338.html"
+      },
+      {
+        "title": "NASA · The Taklimakan Desert: A Factory for Dust Storms",
+        "url": "https://science.nasa.gov/earth/earth-observatory/the-taklimakan-desert-a-factory-for-dust-storms-87969/"
+      },
+      {
+        "title": "National Geographic Society · South America: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+      },
+      {
+        "title": "Geoscience Australia · Australia’s size compared（2025）",
+        "url": "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared"
+      },
+      {
+        "title": "Geoscience Australia · Australian mainland deserts",
+        "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts"
+      },
+      {
+        "title": "联合国统计司 · Australia国别概览（2025）",
+        "url": "https://data.un.org/legacy/en/iso/au.html"
+      }
+    ],
+    "modules": [
+      {
+        "id": "interior",
+        "title": "大陆内部",
+        "description": "撒哈拉、塔克拉玛干和戈壁都有多种荒漠地表。",
+        "stops": [
+          "sahara",
+          "taklamakan",
+          "gobi-desert"
+        ],
+        "detail": "沙丘、砾石、裸岩和山地可以并存。解释水分条件时，再分别看大范围环流、内陆位置和地形影响。"
+      },
+      {
+        "id": "coastal",
+        "title": "沿海干旱",
+        "description": "阿塔卡马和纳米布临海，却仍然少雨。",
+        "stops": [
+          "atacama-desert",
+          "namib-sand-sea"
+        ],
+        "detail": "冷海水和稳定空气等条件会抑制降雨，雾又能提供局地水分。海岸干旱与沙丘物质来源属于不同问题。"
+      },
+      {
+        "id": "regional",
+        "title": "放回区域背景",
+        "description": "澳大利亚内部与沿海的水分条件不同。",
+        "stops": [
+          "australia"
+        ],
+        "detail": "把干旱地表放回大陆位置，比较海岸、高地和内陆。一个代表点或一种景观无法描述全国。"
+      }
+    ],
+    "geometryNote": "主题用已有真实要素和明确的案例参考点定位。未核验到范围一致的图形时保留点位，不由点位连线或国家范围推画自然区、板块、生态、产业或交通边界。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "干旱与地表分开读",
+        "columns": [
+          "说的是什么",
+          "概念",
+          "例子"
+        ],
+        "rows": [
+          [
+            "水分条件",
+            "干旱",
+            "内陆或沿海少雨地区"
+          ],
+          [
+            "沙质地表",
+            "沙丘",
+            "风搬运与堆积"
+          ],
+          [
+            "砾石地表",
+            "戈壁",
+            "裸露砾石与稀疏植被"
+          ],
+          [
+            "局地水源",
+            "绿洲／海雾",
+            "山地来水或凝结水分"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "world-tectonics",
+    "title": "板块、地震与火山",
+    "region": "world",
+    "group": "earth",
+    "kind": "connections",
+    "shared": false,
+    "overlay": null,
+    "stops": [
+      "iceland-rift",
+      "east-african-rift",
+      "himalayas",
+      "andes",
+      "san-andreas-fault",
+      "fujisan",
+      "hawaii-hotspot"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "mountains",
+      "plates"
+    ],
+    "description": "板块有三种基本相对运动：分离、汇聚、水平错动。汇聚又可分大陆碰撞与俯冲，形成的山地和火山组合不同。",
+    "question": "喜马拉雅和安第斯都高，为什么安第斯有成带火山？",
+    "takeaway": "先判断相对运动，再比较地表证据；火山不只在板块边界，案例点也不等于边界线。",
+    "sections": [
+      {
+        "title": "运动怎样留下地表痕迹",
+        "body": "分离使地壳拉伸，形成裂谷或洋中脊；大陆碰撞使地壳增厚；俯冲使一侧板块下沉，常伴随海沟和火山；水平错动则形成断层与地震带。"
+      },
+      {
+        "title": "边界之外也有火山",
+        "body": "夏威夷展示板块内部热点火山，岛链与年龄变化可帮助讨论板块运动。辅助图层采用USGS提供的概化边界，具体断层与活动还需更细资料；本主题解释长期过程。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      },
+      {
+        "title": "UNESCO · Þingvellir National Park",
+        "url": "https://whc.unesco.org/en/list/1152/"
+      },
+      {
+        "title": "USGS · Parkfield: Tectonic Setting",
+        "url": "https://earthquake.usgs.gov/learn/parkfield/geology.php"
+      },
+      {
+        "title": "USGS · What is a hotspot and how do you know it is there?",
+        "url": "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there"
+      },
+      {
+        "title": "USGS · East African Rift seismotectonics",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift"
+      },
+      {
+        "title": "Scientific Data · White Nile basin lakes",
+        "url": "https://www.nature.com/articles/s41597-022-01742-3"
+      },
+      {
+        "title": "USGS · The Himalayas: Two continents collide",
+        "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html"
+      },
+      {
+        "title": "USGS · Seismicity of the Earth: Himalaya and vicinity",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+      },
+      {
+        "title": "USGS · South America seismotectonics",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region"
+      },
+      {
+        "title": "NASA · Mud from the Andes Carried by the Amazon",
+        "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+      },
+      {
+        "title": "UNESCO · Fujisan, sacred place and source of artistic inspiration",
+        "url": "https://whc.unesco.org/en/list/1418/"
+      },
+      {
+        "title": "日本气象厅 · 富士山火山资料",
+        "url": "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html"
+      },
+      {
+        "title": "USGS · 板块边界数据与原始归属",
+        "url": "https://earthquake.usgs.gov/arcgis/rest/services/eq/map_plateboundaries/MapServer"
+      }
+    ],
+    "modules": [
+      {
+        "id": "opening",
+        "title": "张开的地表",
+        "description": "冰岛展示洋中脊出露，东非展示大陆裂谷。",
+        "stops": [
+          "iceland-rift",
+          "east-african-rift"
+        ],
+        "detail": "两处都与拉伸有关，但地壳和海陆背景不同。看裂谷形态与火山活动，再联系板块分离过程。"
+      },
+      {
+        "id": "convergence",
+        "title": "汇聚与火山",
+        "description": "喜马拉雅是碰撞案例，安第斯与日本突出俯冲背景。",
+        "stops": [
+          "himalayas",
+          "andes",
+          "fujisan"
+        ],
+        "detail": "大陆碰撞与海洋板块俯冲都属于汇聚，却有不同地壳变形和岩浆过程。富士山可作为单座火山继续阅读。"
+      },
+      {
+        "id": "other-motion",
+        "title": "水平错动与板内热点",
+        "description": "圣安德烈亚斯是水平错动，夏威夷是板内热点案例。",
+        "stops": [
+          "san-andreas-fault",
+          "hawaii-hotspot"
+        ],
+        "detail": "一处突出沿断层错动与地震，一处突出板块内部火山和岛链。火山、地震与边界类型需要分别看地质证据。"
+      }
+    ],
+    "geometryNote": "案例采用真实参考点与已核对范围；板块辅助层来自USGS公开概化边界。边界不是局地精确断层，也不表示当前地震活动。",
+    "visuals": [
+      {
+        "kind": "plates",
+        "title": "几种运动，留下不同地表线索",
+        "note": "箭头只表示相对运动概念，不表示实测速率或当前地图上的运动方向。汇聚包括碰撞和俯冲；地图源类别仅标为汇聚。热点另见夏威夷模块。"
+      }
+    ]
+  },
+  {
+    "id": "world-ecosystems",
+    "title": "森林、草原与湿地",
+    "region": "world",
+    "group": "climate",
+    "kind": "connections",
+    "shared": false,
+    "overlay": null,
+    "stops": [
+      "amazon-rainforest",
+      "canadian-boreal-forest",
+      "serengeti-savanna",
+      "pampas",
+      "okavango-delta",
+      "sundarbans-mangroves",
+      "namib-sand-sea"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "rivers",
+      "lakes"
+    ],
+    "description": "森林、草原和湿地依靠不同的水源、季节和干扰过程。相似的绿色地表，也可能是自然森林、草地或农田。",
+    "question": "奥卡万戈和孙德尔本斯的水分别从哪里来？",
+    "takeaway": "水文、季节、干扰与经营共同塑造生态；案例地图不冒充全球植被或土地覆盖分布图。",
+    "sections": [
+      {
+        "title": "覆盖类型与形成条件",
+        "body": "树木、草地、农田、湿地描述地表覆盖；气候概括多年水热。亚马孙森林参与水循环，北方森林有不同季节与火干扰；草原既有自然生态，也有农牧业改造。"
+      },
+      {
+        "title": "湿地的水源",
+        "body": "奥卡万戈接收远处河流来水，孙德尔本斯受河流淡水与海岸潮汐共同影响。研究覆盖变化需要相容的时期和分类；WorldCover不同年份的算法差异也会影响图面比较。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "ESA WorldCover · Data access",
+        "url": "https://esa-worldcover.org/en/data-access"
+      },
+      {
+        "title": "NASA Earth Observatory · Mapping the Amazon",
+        "url": "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/"
+      },
+      {
+        "title": "Natural Resources Canada · Fire ecology",
+        "url": "https://natural-resources.canada.ca/forests-forestry/wildland-fires/fire-ecology"
+      },
+      {
+        "title": "UNESCO · Serengeti National Park",
+        "url": "https://whc.unesco.org/en/list/156/"
+      },
+      {
+        "title": "UNESCO · Okavango Delta",
+        "url": "https://whc.unesco.org/en/list/1432/"
+      },
+      {
+        "title": "UNESCO · The Sundarbans",
+        "url": "https://whc.unesco.org/en/list/798/"
+      },
+      {
+        "title": "UNESCO · Namib Sand Sea",
+        "url": "https://whc.unesco.org/en/list/1430/"
+      },
+      {
+        "title": "National Geographic Society · Africa: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/"
+      },
+      {
+        "title": "NASA JPL/MISR · The Pampas of Argentina",
+        "url": "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/"
+      },
+      {
+        "title": "National Geographic Society · South America: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+      },
+      {
+        "title": "NOAA · What is upwelling?",
+        "url": "https://oceanservice.noaa.gov/facts/upwelling.html"
+      }
+    ],
+    "modules": [
+      {
+        "id": "forests",
+        "title": "两种森林",
+        "description": "亚马孙与加拿大北方森林有不同水热和干扰过程。",
+        "stops": [
+          "amazon-rainforest",
+          "canadian-boreal-forest"
+        ],
+        "detail": "一处适合看蒸腾与水循环，一处适合看季节和火干扰。树木覆盖相似，森林结构和生态过程仍会不同。"
+      },
+      {
+        "id": "grasslands",
+        "title": "两种草原案例",
+        "description": "塞伦盖蒂突出季节生态，潘帕斯突出农牧业利用。",
+        "stops": [
+          "serengeti-savanna",
+          "pampas"
+        ],
+        "detail": "水草季节影响动物活动，人类土地利用又会改变草地。自然草原与当前农田、牧场需要分别识别。"
+      },
+      {
+        "id": "wetlands",
+        "title": "湿地从何处得到水",
+        "description": "奥卡万戈靠上游来水，孙德尔本斯受河流与潮汐影响。",
+        "stops": [
+          "okavango-delta",
+          "sundarbans-mangroves"
+        ],
+        "detail": "两处湿地的水源、盐分和涨落节律不同。解释湿地时，要把来水范围延伸到河流上游或海岸。"
+      },
+      {
+        "id": "dry-life",
+        "title": "干旱中的生命",
+        "description": "纳米布的海雾为部分生命提供局地水分。",
+        "stops": [
+          "namib-sand-sea"
+        ],
+        "detail": "在少雨背景下，微地形和雾形成特殊微生境。局地生存条件需要具体观察，不能用整个沙漠的平均值替代。"
+      }
+    ],
+    "geometryNote": "主题用已有真实要素和明确的案例参考点定位。未核验到范围一致的图形时保留点位，不由点位连线或国家范围推画自然区、板块、生态、产业或交通边界。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "两类湿地的水源",
+        "columns": [
+          "湿地",
+          "水源",
+          "主要变化"
+        ],
+        "rows": [
+          [
+            "奥卡万戈",
+            "上游河流来水",
+            "洪水季与内陆水量"
+          ],
+          [
+            "孙德尔本斯",
+            "河流淡水与海潮",
+            "潮汐与盐分"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "world-ocean-monsoon",
+    "title": "洋流、季风与海陆联系",
+    "region": "world",
+    "group": "climate",
+    "kind": "connections",
+    "shared": false,
+    "overlay": "climate",
+    "stops": [
+      "gulf-stream",
+      "peru-upwelling",
+      "atacama-desert",
+      "indian-monsoon",
+      "deccan-plateau",
+      "southern-ocean"
+    ],
+    "layers": [
+      "terrain",
+      "borders"
+    ],
+    "description": "洋流输送热量和物质，上升流把深层营养盐带到表层；季风随季节改变来风和雨季。海陆联系有明显时间变化。",
+    "question": "冷水上升为什么有利于部分海区的生物生产？",
+    "takeaway": "把海水移动、空气移动与降水分别理解，再观察它们如何相互作用。",
+    "sections": [
+      {
+        "title": "不同的海水运动",
+        "body": "墨西哥湾流突出热量输送，秘鲁沿岸上升流突出营养盐供应。风、自转、海盆形状和海水密度共同影响环流，海流还会摆动并出现涡旋。"
+      },
+      {
+        "title": "季节改变来风与水汽",
+        "body": "印度季风与海陆季节差异和大气环流有关，山地又改变雨区。比较时要同时看全年水量与季节分配。地图使用海区和地区案例点，实际风场与洋流需另看观测资料。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NOAA · Ocean currents",
+        "url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents"
+      },
+      {
+        "title": "NOAA · What is upwelling?",
+        "url": "https://oceanservice.noaa.gov/facts/upwelling.html"
+      },
+      {
+        "title": "NOAA · What are El Niño and La Niña?",
+        "url": "https://oceanservice.noaa.gov/facts/ninonina.html"
+      },
+      {
+        "title": "NOAA NESDIS · What Is a Monsoon?",
+        "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+      },
+      {
+        "title": "NOAA AOML · Antarctic Circumpolar Current",
+        "url": "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/index.php"
+      },
+      {
+        "title": "NASA Astrobiology · The Driest Place on Earth",
+        "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
+      },
+      {
+        "title": "National Geographic Society · South America: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+      },
+      {
+        "title": "World Bank · For Mekong Delta Farmers, Diversification is the Key to Climate Resilience",
+        "url": "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience"
+      },
+      {
+        "title": "NASA Earth Observatory · Lonar Crater, India",
+        "url": "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/"
+      },
+      {
+        "title": "NSIDC · How does Antarctic sea ice differ from Arctic sea ice?",
+        "url": "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice"
+      }
+    ],
+    "modules": [
+      {
+        "id": "currents",
+        "title": "海水移动",
+        "description": "墨西哥湾流输送热量，秘鲁上升流供应表层营养盐。",
+        "stops": [
+          "gulf-stream",
+          "peru-upwelling"
+        ],
+        "detail": "暖流与上升流的机制不同。海水移动影响生态和气候，但海岸环境还需要结合空气运动和地形。"
+      },
+      {
+        "id": "coast-land",
+        "title": "海洋与陆地",
+        "description": "阿塔卡马海岸与印度季风地区有不同雨季和水源。",
+        "stops": [
+          "atacama-desert",
+          "indian-monsoon",
+          "deccan-plateau"
+        ],
+        "detail": "从海温、来风和地形看干旱海岸，再看印度季节来风与德干高地。年总量相似也可能有不同季节分配。"
+      },
+      {
+        "id": "circumpolar",
+        "title": "连接海盆",
+        "description": "南大洋的环绕联系连接多个海盆。",
+        "stops": [
+          "southern-ocean"
+        ],
+        "detail": "从南极周缘海洋位置理解大尺度海水交换。实际海流有变化，地图案例点不能替代某一天的海况。"
+      }
+    ],
+    "geometryNote": "主题用已有真实要素和明确的案例参考点定位。未核验到范围一致的图形时保留点位，不由点位连线或国家范围推画自然区、板块、生态、产业或交通边界。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "三种海陆过程",
+        "columns": [
+          "过程",
+          "主要输送",
+          "案例"
+        ],
+        "rows": [
+          [
+            "暖流",
+            "海水与热量",
+            "墨西哥湾流"
+          ],
+          [
+            "上升流",
+            "深层水与营养盐",
+            "秘鲁沿岸"
+          ],
+          [
+            "季风",
+            "季节来风与水汽",
+            "印度季风"
+          ]
+        ],
+        "note": "概念比较；本图未加载实时海流、风场或海温。"
+      }
+    ]
+  },
+  {
+    "id": "world-energy-industry",
+    "title": "世界能源、矿产与产业",
+    "region": "world",
+    "group": "resources",
+    "kind": "connections",
+    "shared": false,
+    "overlay": null,
+    "stops": [
+      "persian-gulf-energy",
+      "atacama-copper",
+      "north-sea-energy",
+      "ruhr-industry",
+      "rotterdam-port"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "rivers",
+      "lakes"
+    ],
+    "description": "资源地、加工地和消费地常常分开。油气、铜矿、海上风电与工业区，通过设施、港口和市场形成生产联系。",
+    "question": "有矿产的地方，为什么不一定成为工业中心？",
+    "takeaway": "资源赋存提供条件，技术、设施、市场与环境管理共同决定产业组织。",
+    "sections": [
+      {
+        "title": "从资源到产品",
+        "body": "波斯湾油气需要处理与输送，阿塔卡马铜矿需要选矿与运输，北海海上风电需要接入电网。水、技术、人员和基础设施一起影响资源利用。"
+      },
+      {
+        "title": "生产链与转型",
+        "body": "鹿特丹联系港口与欧洲腹地，鲁尔提供传统工业区调整的案例。储量、年产量、装机与发电量分别描述不同环节；转型还关系到就业、环境和既有设施。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "EIA · About one-fifth of global LNG trade flows through the Strait of Hormuz",
+        "url": "https://www.eia.gov/todayinenergy/detail.php?id=65584"
+      },
+      {
+        "title": "NASA Earth Observatory · Escondida Copper Mine, Atacama Desert, Chile",
+        "url": "https://science.nasa.gov/earth/earth-observatory/escondida-copper-mine-atacama-desert-chile-43394/"
+      },
+      {
+        "title": "IEA · Offshore Energy Outlook 2018",
+        "url": "https://www.iea.org/reports/offshore-energy-outlook-2018"
+      },
+      {
+        "title": "Port of Rotterdam Authority · Connections",
+        "url": "https://www.portofrotterdam.com/en/logistics/connections"
+      },
+      {
+        "title": "NASA Astrobiology · The Driest Place on Earth",
+        "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
+      },
+      {
+        "title": "UNESCO · Zollverein Coal Mine Industrial Complex in Essen",
+        "url": "https://whc.unesco.org/en/list/975/"
+      },
+      {
+        "title": "莱茵河保护委员会 · 流域管理计划 2022–2027",
+        "url": "https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf"
+      },
+      {
+        "title": "Port of Rotterdam Authority · Inland shipping",
+        "url": "https://www.portofrotterdam.com/en/logistics/connections/intermodal-transportation/inland-shipping"
+      }
+    ],
+    "modules": [
+      {
+        "id": "resources",
+        "title": "资源与开发",
+        "description": "波斯湾油气与阿塔卡马铜矿需要不同开采和加工。",
+        "stops": [
+          "persian-gulf-energy",
+          "atacama-copper"
+        ],
+        "detail": "油气需要处理和输送，矿石需要采选和运输。水、设施、技术和环境条件一起影响开发。"
+      },
+      {
+        "id": "transition",
+        "title": "生产方式变化",
+        "description": "北海与鲁尔展示不同能源和工业调整。",
+        "stops": [
+          "north-sea-energy",
+          "ruhr-industry"
+        ],
+        "detail": "北海有海上油气与风电，鲁尔有传统工业基础。转型涉及既有设施、就业和环境，不能只由资源存量解释。"
+      },
+      {
+        "id": "networks",
+        "title": "产业如何连出去",
+        "description": "鹿特丹把海上货物接入欧洲腹地。",
+        "stops": [
+          "rotterdam-port"
+        ],
+        "detail": "港口通过内河、铁路和公路联系生产与消费。资源地和加工地可以分开，运输节点帮助生产链跨地区组织。"
+      }
+    ],
+    "geometryNote": "主题用已有真实要素和明确的案例参考点定位。未核验到范围一致的图形时保留点位，不由点位连线或国家范围推画自然区、板块、生态、产业或交通边界。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "资源怎样进入生产链",
+        "columns": [
+          "环节",
+          "需要什么"
+        ],
+        "rows": [
+          [
+            "开发",
+            "资源、工程、技术与水"
+          ],
+          [
+            "加工",
+            "设施、能源和人员"
+          ],
+          [
+            "运输",
+            "港口、铁路、管线与电网"
+          ],
+          [
+            "消费与转型",
+            "市场、组织与环境管理"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "world-agriculture-food",
+    "title": "世界农业与粮食联系",
+    "region": "world",
+    "group": "resources",
+    "kind": "connections",
+    "shared": false,
+    "overlay": null,
+    "stops": [
+      "great-plains-wheat",
+      "mekong-delta-farming",
+      "rice-farming",
+      "pampas",
+      "kafa-coffee",
+      "china-grain"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "rivers",
+      "lakes"
+    ],
+    "description": "小麦、稻作、草原农牧业和咖啡有不同生长季与用途。水热给出条件，灌排、品种、劳动和市场决定具体生产方式。",
+    "question": "同一种小麦，为什么有春播和秋播？",
+    "takeaway": "农业由自然条件和人的选择共同塑造；面积、产量、单产、贸易与收益必须分开读。",
+    "sections": [
+      {
+        "title": "先看生长季",
+        "body": "大平原的小麦有不同播种季节，湄公河三角洲稻作与河网和盐分相连。温度、雨季、供水与排水共同影响作物安排，同一地区也会随技术和收益改变选择。"
+      },
+      {
+        "title": "产量与用途",
+        "body": "潘帕斯展示农牧业土地利用，卡法展示森林与咖啡联系。收获面积、单产、总产量、贸易收入与营养状况各有含义，需要分别阅读；节水或增产也不一定同时改善其他指标。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "USDA ERS · Wheat Sector at a Glance",
+        "url": "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance"
+      },
+      {
+        "title": "World Bank · Greening Viet Nam’s Rice Bowl: A Mekong Delta Success Story",
+        "url": "https://www.worldbank.org/en/news/feature/2024/05/14/greening-viet-nam-s-rice-bowl-a-mekong-delta-success-story"
+      },
+      {
+        "title": "World Bank · For Mekong Delta Farmers, Diversification is the Key to Climate Resilience",
+        "url": "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience"
+      },
+      {
+        "title": "UNESCO MAB · Kafa",
+        "url": "https://www.unesco.org/en/mab/kafa"
+      },
+      {
+        "title": "National Geographic Society · South America: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+      },
+      {
+        "title": "NASA Earth Observatory · Agriculture Patterns in the Great Plains",
+        "url": "https://science.nasa.gov/earth/earth-observatory/agriculture-patterns-in-the-great-plains-145932/"
+      },
+      {
+        "title": "农业农村部 · 粮食作物区域大配方与施肥建议",
+        "url": "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm"
+      },
+      {
+        "title": "国家统计局 · National Grain Production in 2024",
+        "url": "https://www.stats.gov.cn/english/PressRelease/202412/t20241219_1957784.html"
+      },
+      {
+        "title": "World Bank · India: Managing Floods and Droughts（2023）",
+        "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+      },
+      {
+        "title": "NASA JPL/MISR · The Pampas of Argentina",
+        "url": "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/"
+      },
+      {
+        "title": "NASA Earth Observatory · East Africa",
+        "url": "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/"
+      },
+      {
+        "title": "国家统计局 · 2024年粮食产量数据公告",
+        "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202412/t20241213_1957744.html"
+      }
+    ],
+    "modules": [
+      {
+        "id": "staples",
+        "title": "粮食与季节",
+        "description": "小麦与稻作有不同生长季和供排水条件。",
+        "stops": [
+          "great-plains-wheat",
+          "mekong-delta-farming",
+          "rice-farming",
+          "china-grain"
+        ],
+        "detail": "比较大平原播种季节、湄公河三角洲水盐和中国粮食统计。收获面积、单产与总产量要分别读。"
+      },
+      {
+        "id": "land-use",
+        "title": "土地利用与商品",
+        "description": "潘帕斯农牧业与卡法咖啡联系不同土地和商品。",
+        "stops": [
+          "pampas",
+          "kafa-coffee"
+        ],
+        "detail": "草原改造与森林利用有不同生态条件。作物用途、劳动、加工和市场共同影响生产选择。"
+      }
+    ],
+    "geometryNote": "主题用已有真实要素和明确的案例参考点定位。未核验到范围一致的图形时保留点位，不由点位连线或国家范围推画自然区、板块、生态、产业或交通边界。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "农业结果要分开读",
+        "columns": [
+          "指标",
+          "说明什么"
+        ],
+        "rows": [
+          [
+            "收获面积",
+            "当期实际收获的面积"
+          ],
+          [
+            "单产",
+            "单位面积产出"
+          ],
+          [
+            "总产量",
+            "该范围的总体产出"
+          ],
+          [
+            "贸易收入／营养",
+            "还受价格、分配等因素影响"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "world-transport-trade",
+    "title": "交通、港口与世界贸易",
+    "region": "world",
+    "group": "resources",
+    "kind": "connections",
+    "shared": false,
+    "overlay": null,
+    "stops": [
+      "rotterdam-port",
+      "singapore-port",
+      "gotthard-rail",
+      "malacca-strait",
+      "suez-canal",
+      "panama-canal"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "rivers",
+      "lakes"
+    ],
+    "description": "天然海峡、人工运河、穿山铁路与港口共同连接生产和市场。最短直线之外，还要看工程通道、转运和腹地联系。",
+    "question": "大港的吞吐量为什么不等于所在城市的贸易额？",
+    "takeaway": "地理位置、工程通道和运输网络共同决定联系；港口吞吐、贸易价值与本地生产不能互相替代。",
+    "sections": [
+      {
+        "title": "通道怎样跨过障碍",
+        "body": "马六甲是天然海峡，苏伊士和巴拿马是人工运河，圣哥达铁路隧道穿越山地。每种通道改变不同的通行条件，也需要不同的工程和管理。"
+      },
+      {
+        "title": "港口前后都有网络",
+        "body": "新加坡联系海上干线与区域航运，鹿特丹连接内河和陆路腹地。吞吐吨数、标准箱和贸易金额回答不同问题，中转货物还可能在别处生产或消费。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "Port of Rotterdam Authority · Connections",
+        "url": "https://www.portofrotterdam.com/en/logistics/connections"
+      },
+      {
+        "title": "Port of Rotterdam Authority · Inland shipping",
+        "url": "https://www.portofrotterdam.com/en/logistics/connections/intermodal-transportation/inland-shipping"
+      },
+      {
+        "title": "Maritime and Port Authority of Singapore · Strong growth momentum for Maritime Singapore",
+        "url": "https://www.mpa.gov.sg/media-centre/details/strong-growth-momentum-for-maritime-singapore"
+      },
+      {
+        "title": "Swiss Federal Office of Transport · New Rail Link through the Alps",
+        "url": "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps"
+      },
+      {
+        "title": "新加坡海事及港务管理局 · 马六甲与新加坡海峡航路资料",
+        "url": "https://www.mpa.gov.sg/who-we-are/newsroom-resources/publications/singapore-port-information"
+      },
+      {
+        "title": "NASA · 航线与多年平均资料尺度",
+        "url": "https://science.nasa.gov/blogs/earth-matters/2013/03/25/matters-of-scale-and-why-they-matter/"
+      },
+      {
+        "title": "Suez Canal Authority · Canal Characteristics",
+        "url": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalCharacteristics.aspx"
+      },
+      {
+        "title": "Panama Canal Authority · History and how the canal works",
+        "url": "https://pancanal.com/en/history-of-the-panama-canal/"
+      },
+      {
+        "title": "Panama Canal Authority · 运河淡水与气候事件",
+        "url": "https://pancanal.com/en/panama-canal-prepares-for-the-impact-of-climate-events/"
+      }
+    ],
+    "modules": [
+      {
+        "id": "ports",
+        "title": "两个港口案例",
+        "description": "鹿特丹突出内陆腹地，新加坡突出海上中转。",
+        "stops": [
+          "rotterdam-port",
+          "singapore-port"
+        ],
+        "detail": "两者都需要码头与陆海运输组织。港口吞吐包含不同来源和目的地的货物，不能直接当作当地生产量。"
+      },
+      {
+        "id": "barriers",
+        "title": "工程跨越地形",
+        "description": "圣哥达穿山，苏伊士与巴拿马穿越陆地障碍。",
+        "stops": [
+          "gotthard-rail",
+          "suez-canal",
+          "panama-canal"
+        ],
+        "detail": "铁路隧道、海平面运河和船闸运河采用不同工程。比较它们改变了什么通行条件，再读维护与运行需求。"
+      },
+      {
+        "id": "strait",
+        "title": "天然海上通道",
+        "description": "马六甲是天然海峡，港口是运输节点。",
+        "stops": [
+          "malacca-strait"
+        ],
+        "detail": "海峡给出通道位置，港口提供停靠、装卸和转运。两者相互联系，但作用和统计指标不同。"
+      }
+    ],
+    "geometryNote": "主题用已有真实要素和明确的案例参考点定位。未核验到范围一致的图形时保留点位，不由点位连线或国家范围推画自然区、板块、生态、产业或交通边界。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "港口与贸易指标",
+        "columns": [
+          "指标",
+          "含义"
+        ],
+        "rows": [
+          [
+            "吞吐吨数",
+            "港口装卸货物质量"
+          ],
+          [
+            "标准箱 TEU",
+            "集装箱数量折算"
+          ],
+          [
+            "贸易金额",
+            "货物交易价值"
+          ],
+          [
+            "中转",
+            "货物经此换装，目的地可在别处"
+          ]
+        ]
+      }
+    ]
+  },
+  {
+    "id": "world-polar-comparison",
+    "title": "北极与南极比较",
+    "region": "world",
+    "group": "regions",
+    "kind": "connections",
+    "shared": false,
+    "overlay": null,
+    "stops": [
+      "arctic-region",
+      "arctic-ocean",
+      "antarctica",
+      "southern-ocean",
+      "canadian-boreal-forest"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "rivers",
+      "lakes"
+    ],
+    "description": "北极以海洋为中心，南极以大陆为中心。海陆结构、冰的类型和相反的季节，让两极形成不同环境。",
+    "question": "海冰融化和陆地冰盖融化，为什么要分开讨论？",
+    "takeaway": "两极比较先分海陆、冰的类型与季节，再讨论环境变化和生活联系。",
+    "sections": [
+      {
+        "title": "海冰与陆冰",
+        "body": "北冰洋被大陆围绕，南极大陆被海洋环绕。海冰由海水冻结形成，陆地冰盖由积雪长期累积形成；冻土则是另一种地表状态。"
+      },
+      {
+        "title": "季节与生活",
+        "body": "南北半球季节相反，比较海冰要采用对应季节和一致指标。北极有多样的居民社区与城市，南极主要是科学考察活动；两极也有不同的陆地和海洋生态联系。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "NSIDC · How does Antarctic sea ice differ from Arctic sea ice?",
+        "url": "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice"
+      },
+      {
+        "title": "NSIDC · Arctic",
+        "url": "https://nsidc.org/learn/cryosphere-glossary/arctic"
+      },
+      {
+        "title": "Arctic Council · Arctic Peoples",
+        "url": "https://arctic-council.org/explore/topics/arctic-peoples/"
+      },
+      {
+        "title": "NOAA AOML · Antarctic Circumpolar Current",
+        "url": "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/index.php"
+      },
+      {
+        "title": "Natural Resources Canada · Fire ecology",
+        "url": "https://natural-resources.canada.ca/forests-forestry/wildland-fires/fire-ecology"
+      },
+      {
+        "title": "NOAA · 世界最小的海洋（2026更新页面）",
+        "url": "https://oceanservice.noaa.gov/facts/smallestocean.html"
+      },
+      {
+        "title": "NASA · Ice and Clouds in the Bering Strait",
+        "url": "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/"
+      },
+      {
+        "title": "British Antarctic Survey · Antarctica",
+        "url": "https://www.bas.ac.uk/about/where-we-work/antarctica/"
+      },
+      {
+        "title": "ESA WorldCover · Data access",
+        "url": "https://esa-worldcover.org/en/data-access"
+      }
+    ],
+    "modules": [
+      {
+        "id": "north",
+        "title": "北极海洋及周缘",
+        "description": "北极中心是海洋，周缘有陆地、森林和居民社区。",
+        "stops": [
+          "arctic-region",
+          "arctic-ocean",
+          "canadian-boreal-forest"
+        ],
+        "detail": "分别认识北极区域、北冰洋与森林北缘。海冰、陆冰和冻土有不同形成过程与变化指标。"
+      },
+      {
+        "id": "south",
+        "title": "南极大陆及周缘",
+        "description": "南极中心是大陆冰盖，外围是相连的南大洋。",
+        "stops": [
+          "antarctica",
+          "southern-ocean"
+        ],
+        "detail": "对照大陆冰、海冰和海洋季节。南北半球季节相反，比较变化需要选择对应季节和一致资料。"
+      }
+    ],
+    "geometryNote": "主题用已有真实要素和明确的案例参考点定位。未核验到范围一致的图形时保留点位，不由点位连线或国家范围推画自然区、板块、生态、产业或交通边界。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "南北极放在一起看",
+        "columns": [
+          "特点",
+          "北极",
+          "南极"
+        ],
+        "rows": [
+          [
+            "中心",
+            "北冰洋",
+            "南极大陆"
+          ],
+          [
+            "周围",
+            "大陆环绕",
+            "海洋环绕"
+          ],
+          [
+            "冰环境",
+            "海冰与周缘陆冰",
+            "大陆冰盖与周缘海冰"
+          ],
+          [
+            "人类活动",
+            "居民社区与城市",
+            "以科学考察为主"
+          ]
+        ],
+        "note": "两半球季节相反；当前地图不表示实时冰情。"
+      }
+    ]
+  },
+  {
+    "id": "world-regional-comparison",
+    "title": "世界区域怎样比较",
+    "region": "world",
+    "group": "regions",
+    "kind": "connections",
+    "shared": false,
+    "overlay": null,
+    "stops": [
+      "southeast-asia",
+      "middle-east",
+      "western-europe",
+      "sub-saharan-africa",
+      "japan",
+      "india",
+      "brazil",
+      "australia"
+    ],
+    "layers": [
+      "terrain",
+      "borders",
+      "rivers",
+      "lakes"
+    ],
+    "description": "比较地区时，先确定范围，再用相同问题看位置、地形、水源、人口和交通。区域名称之内，常有很大的内部差异。",
+    "question": "怎样避免用一个地点概括整个国家或区域？",
+    "takeaway": "先说明所指范围和比较问题，再选地点与证据；自然区、国家和统计区不能随意互换。",
+    "sections": [
+      {
+        "title": "把比较对象说清楚",
+        "body": "东南亚、中东、欧洲西部等名称的常用范围与统计分组未必相同。国家、自然地区和代表城市也有不同尺度，比较数字前需要确认范围和年份。"
+      },
+      {
+        "title": "用相同问题展开",
+        "body": "日本、印度、巴西、澳大利亚都可以从海陆位置、地形、来水和生产联系读起。自然条件影响活动条件，历史、技术、制度和贸易也参与塑造生活；选择案例后还要留意区域内部差别。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "National Geographic Society · Africa: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/"
+      },
+      {
+        "title": "National Geographic Society · Europe: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/europe-physical-geography/"
+      },
+      {
+        "title": "National Geographic Society · South America: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+      },
+      {
+        "title": "National Geographic Society · Australia and Oceania: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/oceania-physical-geography/"
+      },
+      {
+        "title": "NOAA NESDIS · What Is a Monsoon?",
+        "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+      },
+      {
+        "title": "Port of Rotterdam Authority · Connections",
+        "url": "https://www.portofrotterdam.com/en/logistics/connections"
+      },
+      {
+        "title": "湄公河委员会 · Geography",
+        "url": "https://www.mrcmekong.org/geography/"
+      },
+      {
+        "title": "湄公河委员会 · Climate",
+        "url": "https://www.mrcmekong.org/basin-climate/"
+      },
+      {
+        "title": "NASA · East Indonesia Island Chain",
+        "url": "https://science.nasa.gov/earth/earth-observatory/east-indonesia-island-chain-87707/"
+      },
+      {
+        "title": "UN Statistics Division · M49区域分类与使用口径",
+        "url": "https://unstats.un.org/unsd/methodology/M49"
+      },
+      {
+        "title": "Beck 等（2023）· Köppen–Geiger 气候分类与全球数据",
+        "url": "https://www.nature.com/articles/s41597-023-02549-6"
+      },
+      {
+        "title": "NOAA · Climate Zones",
+        "url": "https://www.noaa.gov/jetstream/global/climate-zones"
+      },
+      {
+        "title": "Met Office · 欧洲区域气候与海洋影响",
+        "url": "https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/applied-science/precis/dissy1808.pdf"
+      },
+      {
+        "title": "USGS · East African Rift seismotectonics",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift"
+      },
+      {
+        "title": "Scientific Data · White Nile basin lakes",
+        "url": "https://www.nature.com/articles/s41597-022-01742-3"
+      },
+      {
+        "title": "UNESCO · Mount Kenya National Park/Natural Forest",
+        "url": "https://whc.unesco.org/en/list/800/"
+      },
+      {
+        "title": "日本统计局 · Statistical Handbook of Japan 2025",
+        "url": "https://www.stat.go.jp/english/data/handbook/pdf/2025all.pdf"
+      },
+      {
+        "title": "日本气象厅 · 富士山火山资料",
+        "url": "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html"
+      },
+      {
+        "title": "联合国统计司 · Japan国别概览（2025）",
+        "url": "https://data.un.org/legacy/en/iso/jp.html"
+      },
+      {
+        "title": "World Bank · India: Managing Floods and Droughts（2023）",
+        "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+      },
+      {
+        "title": "NASA · Monsoon Floods Inundate Eastern India",
+        "url": "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/"
+      },
+      {
+        "title": "NASA · Ganges River Delta",
+        "url": "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/"
+      },
+      {
+        "title": "Nature · Himalayan gravel flux and Ganga Plain",
+        "url": "https://www.nature.com/articles/nature22039"
+      },
+      {
+        "title": "联合国统计司 · India国别概览（2025）",
+        "url": "https://data.un.org/legacy/en/iso/in.html"
+      },
+      {
+        "title": "IBGE · 巴西六大生物群系地图（2019）",
+        "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/25812-ibge-lanca-mapa-inedito-de-biomas-e-sistema-costeiro-marinho-2"
+      },
+      {
+        "title": "NASA · Topography of South America",
+        "url": "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/"
+      },
+      {
+        "title": "NASA · Mud from the Andes Carried by the Amazon",
+        "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+      },
+      {
+        "title": "联合国统计司 · Brazil国别概览（2025）",
+        "url": "https://data.un.org/legacy/en/iso/br.html"
+      },
+      {
+        "title": "Geoscience Australia · Australia’s size compared（2025）",
+        "url": "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared"
+      },
+      {
+        "title": "Geoscience Australia · Australian mainland deserts",
+        "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts"
+      },
+      {
+        "title": "联合国统计司 · Australia国别概览（2025）",
+        "url": "https://data.un.org/legacy/en/iso/au.html"
+      }
+    ],
+    "modules": [
+      {
+        "id": "broad-regions",
+        "title": "四组宽泛区域",
+        "description": "四组宽泛区域有不同名称口径和内部差异。",
+        "stops": [
+          "southeast-asia",
+          "middle-east",
+          "western-europe",
+          "sub-saharan-africa"
+        ],
+        "detail": "东南亚、中东、欧洲西部与撒哈拉以南非洲不一定采用同一统计划分。先确定范围，再比较相同指标。"
+      },
+      {
+        "id": "countries",
+        "title": "代表国家对照",
+        "description": "日本、印度、巴西、澳大利亚各有不同海陆与生产联系。",
+        "stops": [
+          "japan",
+          "india",
+          "brazil",
+          "australia"
+        ],
+        "detail": "使用同一组问题看位置、地形、水源、人口和交通，再补看国内差异。自然条件与历史、技术、贸易都值得阅读。"
+      }
+    ],
+    "geometryNote": "主题用已有真实要素和明确的案例参考点定位。未核验到范围一致的图形时保留点位，不由点位连线或国家范围推画自然区、板块、生态、产业或交通边界。",
+    "visuals": [
+      {
+        "kind": "comparison",
+        "title": "比较地区的顺序",
+        "columns": [
+          "先问什么",
+          "接着看什么"
+        ],
+        "rows": [
+          [
+            "范围一致吗",
+            "区域、国家、城市的定义"
+          ],
+          [
+            "位置在哪里",
+            "纬度、海陆与邻接关系"
+          ],
+          [
+            "水土条件怎样",
+            "地形、水源与季节"
+          ],
+          [
+            "人怎样联系",
+            "人口、交通、产业与历史"
+          ]
+        ]
+      }
+    ]
+  }
+]

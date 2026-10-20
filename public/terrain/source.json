@@ -1,0 +1,13 @@
+{
+  "id": "natural-earth-relief",
+  "title": "Natural Earth I · 50m shaded relief",
+  "url": "https://www.naturalearthdata.com/downloads/50m-raster-data/50m-natural-earth-1/",
+  "downloadUrl": "https://naciscdn.org/naturalearth/50m/raster/NE1_50M_SR.zip",
+  "license": "Public domain",
+  "sourceSha256": "3047f49b6bc40900d6c2106905d2ac94b9a7326a437dfe05e11a882e87176b89",
+  "processedAt": "2026-10-08T17:39:20.386021+00:00",
+  "minzoom": 0,
+  "maxzoom": 4,
+  "tileSize": 512,
+  "note": "土地覆盖配色和地形阴影，不是精确高程色标。EPSG:3857静态瓦片，最高原生缩放级别4；更高缩放为放大显示。"
+}

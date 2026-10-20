@@ -1,0 +1,3963 @@
+{
+  "reviewedAt": "2026-10-11",
+  "onlineMapSourceManifest": "/data/online-map-sources.json",
+  "contentCount": 211,
+  "scope": "个人自由探索：中国与世界211张精选自然及人文地理卡片、30种气候笔记、40个单选主题；按区域、地形、水系、气候、人口文化、资源交通及地球地图七类组织。",
+  "authoring": "根据公开一手及权威资料原创中文概括、解释与观察问题，未整篇转载文章或复制其他项目代码；每卡与笔记保留可核对来源。代表点不构成范围，量化事实标注年份、单位和统计口径。",
+  "climateClassification": {
+    "scheme": "Köppen–Geiger",
+    "reference": "Beck et al. 2023",
+    "version": "V3",
+    "period": "1991–2020",
+    "resolutionDegrees": 0.5,
+    "groups": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "coldTemperateThresholdCelsius": 0,
+    "highlandGroupAdded": false,
+    "notes": [
+      "大组保持5卡，30细分代码另写笔记；本站0.5°产品出现28类，Csc/Cwc保留解释但该产品未出现。",
+      "B干旱判别优先于A/C/D/E；冷热干旱h/k以年均18°C为界。",
+      "C冷月>0°C且<18°C，D冷月≤0°C；两组均需最暖月>10°C。E最暖月≤10°C，ET为0<T≤10°C，EF为T≤0°C。",
+      "D组d细分最冷月<−38°C；等于−38°C不满足d。具体冬夏降水重叠处理按V3实际代码保留。",
+      "多年平均气候分区与月表不是实时天气，也不是中国教材季风气候区名称的直接替代。",
+      "Beck V3官方代码是数值边界依据；NOAA科普只用于背景说明，未把其他版本的−3°C或H组带入地图。"
+    ]
+  },
+  "editorialCautions": [
+    "国家中文名沿用Natural Earth原始译名转简体；自然要素的通用译名覆盖不用于国家，避免约旦、尼日尔、塞内加尔和刚果共和国被同名河流覆盖。地名索引与国家学习表同步名称。",
+    "代表坐标用于导航，不是几何中心；山系、平原和盆地边界通常是过渡地带。",
+    "地图采用的河流与湖岸为按比例尺概化的真实制图数据，并非实时水文边界。",
+    "亚马孙与尼罗河不使用有争议的长度排名；塔里木河不混用干流和含源流的长度口径。",
+    "太湖湖盆成因保留多种解释；维多利亚湖与狭长深裂谷湖分别解释。",
+    "秦岭—淮河是概括分界，环境实际上存在具有宽度的过渡带。",
+    "气温、海拔和湖面积等数值仅保留稳定且对学习有用的概括，湖面积不冒充实时观测。",
+    "人口、宗教、语言资料各有时期、抽样/估计与定义，不将国家多数或位置推断到个人。",
+    "台湾专属自然卡绑定台湾主岛，不以岛面冒充完整省域；香港、澳门专属卡使用真实概化省级单元。",
+    "海洋、海峡、运河、人工工程、文化概念和宽泛学习区没有核实精确geometry时保留空绑定与代表点。",
+    "长三角与大湾区明确区分规划行政范围和自然三角洲；面积或人口不能跨口径互换。",
+    "播种面积可按季重复计入，不等于全年唯一耕地面积；稻谷不等于加工大米。",
+    "资料中所列首都标注UN2025，迁都与行政机构转移不由历史条目断言当前法律状态。"
+  ],
+  "sources": [
+    {
+      "title": "USGS · The Himalayas: Two continents collide",
+      "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
+      "usedBy": [
+        "himalayas",
+        "asia-continent",
+        "topic:china-mountain-ranges",
+        "topic:world-mountain-ranges",
+        "topic:world-continents",
+        "topic:world-tectonics"
+      ]
+    },
+    {
+      "title": "USGS · Seismicity of the Earth: Himalaya and vicinity",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
+      "usedBy": [
+        "himalayas",
+        "tian-shan",
+        "kunlun",
+        "northwestern-china",
+        "asia-continent",
+        "topic:china-mountain-ranges",
+        "topic:world-mountain-ranges",
+        "topic:china-dry-water",
+        "topic:china-regions",
+        "topic:world-continents",
+        "topic:world-tectonics"
+      ]
+    },
+    {
+      "title": "UNESCO · Xinjiang Tianshan",
+      "url": "https://whc.unesco.org/en/list/1414/",
+      "usedBy": [
+        "tian-shan",
+        "northwestern-china",
+        "topic:china-mountain-ranges",
+        "topic:china-dry-water",
+        "topic:china-regions"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 昆仑山脉",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692380.html",
+      "usedBy": [
+        "kunlun",
+        "topic:china-mountain-ranges",
+        "topic:china-dry-water"
+      ]
+    },
+    {
+      "title": "中国科学院地质地球所 · 北秦岭造山带野外研讨",
+      "url": "https://www.igg.cas.cn/hejl/hzxm/202405/t20240528_7174019.html",
+      "usedBy": [
+        "qinling",
+        "northern-china",
+        "southern-china",
+        "topic:china-mountain-ranges",
+        "topic:china-north-south",
+        "topic:china-regions"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 中国南北过渡带研究",
+      "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202504/t20250409_7591749.html",
+      "usedBy": [
+        "qinling",
+        "northern-china",
+        "southern-china",
+        "topic:china-mountain-ranges",
+        "topic:china-north-south",
+        "topic:china-regions"
+      ]
+    },
+    {
+      "title": "国家林草局 · 大兴安岭的绿色林海",
+      "url": "https://www.forestry.gov.cn/c/www/tsxa/540017.jhtml",
+      "usedBy": [
+        "greater-khingan",
+        "topic:china-mountain-ranges"
+      ]
+    },
+    {
+      "title": "内蒙古自治区 · 国土空间规划",
+      "url": "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html",
+      "usedBy": [
+        "greater-khingan",
+        "hetao-irrigation",
+        "xilingol-pasture",
+        "topic:china-mountain-ranges",
+        "topic:china-regions",
+        "topic:china-agriculture"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "南粮北牧、六牧四农；沿黄平原、西辽河平原等粮食基地；以水定地与草原生态承载"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "NASA · Red Rocks and Rainbow Ridges",
+      "url": "https://science.nasa.gov/earth/earth-observatory/red-rocks-and-rainbow-ridges-148234/",
+      "usedBy": [
+        "qilian",
+        "northwestern-china",
+        "topic:china-mountain-ranges",
+        "topic:china-regions"
+      ]
+    },
+    {
+      "title": "中国科学院青藏高原所 · 第三极",
+      "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
+      "usedBy": [
+        "qilian",
+        "tibetan-plateau",
+        "northwestern-china",
+        "qinghai-tibet-region",
+        "asia-continent",
+        "topic:china-plateaus",
+        "topic:china-mountain-ranges",
+        "topic:china-water-journey",
+        "topic:world-latitude-height",
+        "topic:china-regions",
+        "topic:china-relief-steps",
+        "topic:world-continents",
+        "topic:world-plateaus-plains"
+      ]
+    },
+    {
+      "title": "中国科学院西北研究院 · 祁连山冰冻圈水文",
+      "url": "https://nieer.cas.cn/xwdt/kydt/202609/t20260922_8286022.html",
+      "usedBy": [
+        "qilian",
+        "northwestern-china",
+        "topic:china-mountain-ranges",
+        "topic:china-regions"
+      ]
+    },
+    {
+      "title": "USGS · South America seismotectonics",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region",
+      "usedBy": [
+        "andes",
+        "topic:world-mountain-ranges",
+        "topic:world-tectonics"
+      ]
+    },
+    {
+      "title": "NASA · Mud from the Andes Carried by the Amazon",
+      "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/",
+      "usedBy": [
+        "andes",
+        "amazon-basin",
+        "amazon-river",
+        "brazil",
+        "topic:world-mountain-ranges",
+        "topic:world-river-contrast",
+        "topic:world-latitude-height",
+        "topic:world-plateaus-plains",
+        "topic:world-tectonics",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "美国国家公园局 · Rocky Mountain System Provinces",
+      "url": "https://home.nps.gov/articles/rockies.htm",
+      "usedBy": [
+        "rockies",
+        "usa",
+        "topic:world-mountain-ranges",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "美国国家公园局 · Geology of Grand Canyon",
+      "url": "https://home.nps.gov/grca/learn/nature/grca-geology.htm",
+      "usedBy": [
+        "rockies",
+        "usa",
+        "topic:world-mountain-ranges",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "苏黎世联邦理工地震研究所 · Switzerland tectonics",
+      "url": "https://www.seismo.ethz.ch/en/knowledge/causes-of-earthquakes/Switzerland/",
+      "usedBy": [
+        "alps",
+        "topic:world-mountain-ranges"
+      ]
+    },
+    {
+      "title": "UNESCO · Toratau Global Geopark",
+      "url": "https://www.unesco.org/en/iggp/toratau-unesco-global-geopark",
+      "usedBy": [
+        "urals",
+        "russia",
+        "asia-continent",
+        "topic:world-mountain-ranges",
+        "topic:world-continents"
+      ]
+    },
+    {
+      "title": "UNESCO · Northern Urals nomination geology",
+      "url": "https://whc.unesco.org/document/167636",
+      "usedBy": [
+        "urals",
+        "russia",
+        "asia-continent",
+        "topic:world-mountain-ranges",
+        "topic:world-continents"
+      ]
+    },
+    {
+      "title": "USGS · Understanding plate motions",
+      "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+      "usedBy": [
+        "tibetan-plateau",
+        "qinghai-tibet-region",
+        "asia-continent",
+        "iceland-rift",
+        "san-andreas-fault",
+        "topic:china-plateaus",
+        "topic:world-mountain-ranges",
+        "topic:world-lakes",
+        "topic:china-water-journey",
+        "topic:world-latitude-height",
+        "topic:china-regions",
+        "topic:china-relief-steps",
+        "topic:world-continents",
+        "topic:world-plateaus-plains",
+        "topic:world-tectonics"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "离散、汇聚、转换三种主要边界及宽变形带；碰撞和俯冲区别"
+        ],
+        "version": "This Dynamic Earth官方教育资料；全文在搜索索引可核读，直接页面本轮间歇403",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "中国科学院地质地球所 · 黄土形成与物源",
+      "url": "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html",
+      "usedBy": [
+        "loess-plateau",
+        "topic:china-plateaus",
+        "topic:china-relief-steps"
+      ]
+    },
+    {
+      "title": "中国科学院地球环境所 · 河谷砂黄土风—水过程",
+      "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html",
+      "usedBy": [
+        "loess-plateau",
+        "topic:china-plateaus",
+        "topic:china-relief-steps"
+      ]
+    },
+    {
+      "title": "内蒙古自治区人民政府 · 自然地理",
+      "url": "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/",
+      "usedBy": [
+        "inner-mongolian-plateau",
+        "inner-mongolia",
+        "northwestern-china",
+        "topic:china-plateaus",
+        "topic:china-regions",
+        "topic:china-provinces",
+        "topic:china-relief-steps"
+      ]
+    },
+    {
+      "title": "国家民委 · 内蒙古概况",
+      "url": "https://www.neac.gov.cn/seac/ztzl/mgz/gk.shtml",
+      "usedBy": [
+        "inner-mongolian-plateau",
+        "northwestern-china",
+        "topic:china-plateaus",
+        "topic:china-regions",
+        "topic:china-relief-steps"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 内蒙古高原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692371.html",
+      "usedBy": [
+        "inner-mongolian-plateau",
+        "northwestern-china",
+        "topic:china-plateaus",
+        "topic:china-regions",
+        "topic:china-relief-steps"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 云南高原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html",
+      "usedBy": [
+        "yunnan-guizhou-plateau",
+        "southern-china",
+        "topic:china-plateaus",
+        "topic:china-regions",
+        "topic:china-relief-steps"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 云贵高原气候",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html",
+      "usedBy": [
+        "yunnan-guizhou-plateau",
+        "southern-china",
+        "topic:china-plateaus",
+        "topic:china-regions",
+        "topic:china-relief-steps"
+      ]
+    },
+    {
+      "title": "UNESCO · South China Karst",
+      "url": "https://whc.unesco.org/en/list/1248/",
+      "usedBy": [
+        "yunnan-guizhou-plateau",
+        "southern-china",
+        "topic:china-plateaus",
+        "topic:china-regions",
+        "topic:china-relief-steps"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "云南贵州广西重庆的湿润喀斯特；峰林、峰丛、地下河与岩溶高原"
+        ],
+        "version": "世界遗产名录1248，含2014扩展；2026-10-11核验",
+        "license": "UNESCO描述标注CC BY-SA IGO 3.0；本项目使用原创事实概述，未复用图片或图形。",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "中国科学院地理资源所 · 华北平原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html",
+      "usedBy": [
+        "north-china-plain",
+        "northern-china",
+        "topic:china-plains",
+        "topic:china-north-south",
+        "topic:china-food-water-cities",
+        "topic:china-regions",
+        "topic:china-relief-steps",
+        "topic:china-agriculture"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 东北平原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html",
+      "usedBy": [
+        "northeast-china-plain",
+        "northern-china",
+        "topic:china-plains",
+        "topic:china-north-south",
+        "topic:china-food-water-cities",
+        "topic:china-regions",
+        "topic:china-relief-steps"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 四川盆地",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html",
+      "usedBy": [
+        "sichuan-basin",
+        "southern-china",
+        "topic:china-basins",
+        "topic:china-water-journey",
+        "topic:china-regions",
+        "topic:china-relief-steps"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 塔里木盆地",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html",
+      "usedBy": [
+        "tarim-basin",
+        "xinjiang",
+        "northwestern-china",
+        "topic:china-basins",
+        "topic:china-dry-water",
+        "topic:china-regions",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "NASA · A Wall of Dust in the Tarim Basin",
+      "url": "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/",
+      "usedBy": [
+        "tarim-basin",
+        "xinjiang",
+        "northwestern-china",
+        "topic:china-basins",
+        "topic:china-dry-water",
+        "topic:china-regions",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "中国科学院地球环境所 · 塔里木盆地的前生今世",
+      "url": "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html",
+      "usedBy": [
+        "tarim-basin",
+        "xinjiang",
+        "northwestern-china",
+        "topic:china-basins",
+        "topic:china-dry-water",
+        "topic:china-regions",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 塔克拉玛干沙漠",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692338.html",
+      "usedBy": [
+        "taklamakan",
+        "topic:china-dry-water",
+        "topic:world-deserts"
+      ]
+    },
+    {
+      "title": "NASA · The Taklimakan Desert: A Factory for Dust Storms",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-taklimakan-desert-a-factory-for-dust-storms-87969/",
+      "usedBy": [
+        "taklamakan",
+        "topic:china-dry-water",
+        "topic:world-deserts"
+      ]
+    },
+    {
+      "title": "NOAA · Climate Zones",
+      "url": "https://www.noaa.gov/jetstream/global/climate-zones",
+      "usedBy": [
+        "sahara",
+        "climate-b",
+        "middle-east",
+        "topic:map-climate",
+        "topic:world-deserts",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "NOAA · Saharan Air Layer",
+      "url": "https://www.aoml.noaa.gov/saharan-air-layer/",
+      "usedBy": [
+        "sahara",
+        "topic:world-deserts"
+      ]
+    },
+    {
+      "title": "NASA · Topography of South America",
+      "url": "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/",
+      "usedBy": [
+        "amazon-basin",
+        "brazil",
+        "topic:world-river-contrast",
+        "topic:world-latitude-height",
+        "topic:world-plateaus-plains",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "NASA · Monsoon Floods Inundate Eastern India",
+      "url": "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/",
+      "usedBy": [
+        "ganges-plain",
+        "india",
+        "topic:world-river-contrast",
+        "topic:world-plateaus-plains",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "NASA · Ganges River Delta",
+      "url": "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/",
+      "usedBy": [
+        "ganges-plain",
+        "ganges",
+        "india",
+        "topic:world-river-contrast",
+        "topic:world-plateaus-plains",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "Nature · Himalayan gravel flux and Ganga Plain",
+      "url": "https://www.nature.com/articles/nature22039",
+      "usedBy": [
+        "ganges-plain",
+        "india",
+        "topic:world-river-contrast",
+        "topic:world-plateaus-plains",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "USGS · East African Rift seismotectonics",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift",
+      "usedBy": [
+        "east-african-rift",
+        "kenya",
+        "sub-saharan-africa",
+        "topic:world-latitude-height",
+        "topic:world-tectonics",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "Scientific Data · White Nile basin lakes",
+      "url": "https://www.nature.com/articles/s41597-022-01742-3",
+      "usedBy": [
+        "east-african-rift",
+        "victoria",
+        "kenya",
+        "sub-saharan-africa",
+        "topic:world-lakes",
+        "topic:world-latitude-height",
+        "topic:world-tectonics",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "宁夏水利厅 · 亚洲第一长河——长江",
+      "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
+      "usedBy": [
+        "yangtze",
+        "topic:china-rivers",
+        "topic:china-water-journey"
+      ]
+    },
+    {
+      "title": "重庆市水利局 · 长江",
+      "url": "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
+      "usedBy": [
+        "yangtze",
+        "topic:china-rivers",
+        "topic:china-water-journey"
+      ]
+    },
+    {
+      "title": "生态环境部 · 黄河流域生态保护规划",
+      "url": "https://www.mee.gov.cn/zcwj/zyygwj/202110/t20211009_955779.shtml",
+      "usedBy": [
+        "yellow-river",
+        "topic:china-rivers"
+      ]
+    },
+    {
+      "title": "黄河水利委员会 · 黄河防汛辨析",
+      "url": "https://www.yrcc.gov.cn/zwzc/zcjd/202403/t20240312_426969.html",
+      "usedBy": [
+        "yellow-river",
+        "topic:china-rivers"
+      ]
+    },
+    {
+      "title": "交通运输部珠江航务管理局 · 珠江水系航运简介",
+      "url": "https://zjhy.mot.gov.cn/zhuhanggk/shuixijj/201909/t20190916_3266853.html",
+      "usedBy": [
+        "pearl-river",
+        "pearl-delta",
+        "southern-china",
+        "topic:china-rivers",
+        "topic:china-food-water-cities",
+        "topic:china-regions"
+      ]
+    },
+    {
+      "title": "宁夏水利厅 · 珠江与沿海河流",
+      "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2718481.html",
+      "usedBy": [
+        "pearl-river",
+        "pearl-delta",
+        "southern-china",
+        "topic:china-rivers",
+        "topic:china-food-water-cities",
+        "topic:china-regions"
+      ]
+    },
+    {
+      "title": "湄公河委员会 · Geography",
+      "url": "https://www.mrcmekong.org/geography/",
+      "usedBy": [
+        "mekong",
+        "southeast-asia",
+        "topic:china-rivers",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "湄公河委员会 · Climate",
+      "url": "https://www.mrcmekong.org/basin-climate/",
+      "usedBy": [
+        "mekong",
+        "southeast-asia",
+        "topic:china-rivers",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "NASA · Strait of Tartary in Autumn",
+      "url": "https://science.nasa.gov/earth/earth-observatory/strait-of-tartary-in-autumn-150619/",
+      "usedBy": [
+        "amur",
+        "topic:china-rivers"
+      ]
+    },
+    {
+      "title": "中国科学院 · 第三次新疆科考水资源调查",
+      "url": "https://www.cas.cn/cm/202308/t20230817_4964150.shtml",
+      "usedBy": [
+        "tarim-river",
+        "topic:china-rivers",
+        "topic:china-dry-water"
+      ]
+    },
+    {
+      "title": "中国科学院地质地球所 · 塔河生态恢复",
+      "url": "https://igg.cas.cn/hejl/jldt/201510/t20151029_4450452.html",
+      "usedBy": [
+        "tarim-river",
+        "topic:china-rivers",
+        "topic:china-dry-water"
+      ]
+    },
+    {
+      "title": "NASA · Nile River Fluctuations near Khartoum",
+      "url": "https://science.nasa.gov/photojournal/nile-river-fluctuations-near-khartoum-sudan/",
+      "usedBy": [
+        "nile",
+        "egypt",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "NASA · Khartoum, Sudan",
+      "url": "https://science.nasa.gov/earth/earth-observatory/khartoum-sudan-5514/",
+      "usedBy": [
+        "nile",
+        "egypt",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "NASA · Amazon Meanders in Sunglint",
+      "url": "https://science.nasa.gov/earth/earth-observatory/amazon-meanders-in-sunglint-92370/",
+      "usedBy": [
+        "amazon-river",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "USGS · The Mississippi River: A place for fish",
+      "url": "https://www.usgs.gov/publications/mississippi-river-a-place-fish",
+      "usedBy": [
+        "mississippi",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "美国国家公园局 · Mississippi River Facts",
+      "url": "https://home.nps.gov/miss/riverfacts.htm",
+      "usedBy": [
+        "mississippi",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "莱茵河保护委员会 · 流域管理计划 2022–2027",
+      "url": "https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf",
+      "usedBy": [
+        "rhine",
+        "germany",
+        "ruhr-industry",
+        "topic:world-energy-industry"
+      ]
+    },
+    {
+      "title": "多瑙河保护委员会 · Historical patterns along the Danube",
+      "url": "https://www.icpdr.org/publications/historical-patterns-along-danubes-course",
+      "usedBy": [
+        "danube"
+      ]
+    },
+    {
+      "title": "多瑙河保护委员会 · Danube Basin Analysis",
+      "url": "https://www.icpdr.org/sites/default/files/nodes/documents/dba_2013_-_report_0.pdf",
+      "usedBy": [
+        "danube"
+      ]
+    },
+    {
+      "title": "NASA · Ganges River Delta: Landsat view",
+      "url": "https://science.nasa.gov/resource/ganges-river-delta/",
+      "usedBy": [
+        "ganges",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 青海湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html",
+      "usedBy": [
+        "qinghai-lake",
+        "qinghai-tibet-region",
+        "qinghai",
+        "topic:china-dry-water",
+        "topic:china-regions",
+        "topic:china-provinces",
+        "topic:china-lakes"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 中国最大的咸水湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html",
+      "usedBy": [
+        "qinghai-lake",
+        "qinghai-tibet-region",
+        "qinghai",
+        "topic:china-dry-water",
+        "topic:china-regions",
+        "topic:china-provinces",
+        "topic:china-lakes"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 鄱阳湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692506.html",
+      "usedBy": [
+        "poyang-lake",
+        "topic:china-water-journey",
+        "topic:china-lakes"
+      ]
+    },
+    {
+      "title": "中国科学院南京地湖所 · SWOT揭示江湖交互",
+      "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202512/t20251218_8029602.html",
+      "usedBy": [
+        "poyang-lake",
+        "topic:china-water-journey",
+        "topic:china-lakes"
+      ]
+    },
+    {
+      "title": "湖南省人民政府 · 岁月留痕 大地印记：洞庭湖",
+      "url": "https://www.hunan.gov.cn/hnyw/zwdt/201908/t20190812_9483347.html",
+      "usedBy": [
+        "dongting-lake",
+        "topic:china-water-journey",
+        "topic:china-lakes"
+      ]
+    },
+    {
+      "title": "岳阳市水利局 · 河湖水系概况",
+      "url": "https://swj.yueyang.gov.cn/6855/6879/30424/30429/content_1746597.html",
+      "usedBy": [
+        "dongting-lake",
+        "topic:china-water-journey",
+        "topic:china-lakes"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 太湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html",
+      "usedBy": [
+        "taihu",
+        "yangtze-delta",
+        "topic:china-city-environment",
+        "topic:china-food-water-cities",
+        "topic:china-lakes"
+      ]
+    },
+    {
+      "title": "中国科学院南京地湖所 · 浅水湖泊水动力",
+      "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html",
+      "usedBy": [
+        "taihu",
+        "yangtze-delta",
+        "topic:china-city-environment",
+        "topic:china-food-water-cities",
+        "topic:china-lakes"
+      ]
+    },
+    {
+      "title": "UNESCO · Lake Baikal",
+      "url": "https://whc.unesco.org/en/list/754/",
+      "usedBy": [
+        "baikal",
+        "russia",
+        "topic:world-lakes"
+      ]
+    },
+    {
+      "title": "UNESCO · Baikal periodic report",
+      "url": "https://whc.unesco.org/document/163201",
+      "usedBy": [
+        "baikal",
+        "russia",
+        "topic:world-lakes"
+      ]
+    },
+    {
+      "title": "NOAA · Great Lakes ecoregion",
+      "url": "https://www.noaa.gov/education/resource-collections/freshwater/great-lakes-ecoregion",
+      "usedBy": [
+        "great-lakes",
+        "usa",
+        "topic:world-lakes",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "US EPA · Great Lakes environmental atlas",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004ICU.TXT",
+      "usedBy": [
+        "great-lakes",
+        "usa",
+        "topic:world-lakes",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "NASA · Nalubaale Dam, Uganda",
+      "url": "https://science.nasa.gov/earth/earth-observatory/nalubaale-dam-uganda-6371/",
+      "usedBy": [
+        "victoria",
+        "topic:world-lakes"
+      ]
+    },
+    {
+      "title": "NASA · A Tale of Contrasting Rift Valley Lakes",
+      "url": "https://science.nasa.gov/earth/earth-observatory/a-tale-of-contrasting-rift-valley-lakes-145194/",
+      "usedBy": [
+        "tanganyika",
+        "topic:world-lakes"
+      ]
+    },
+    {
+      "title": "NASA · Earthquake in Eastern Africa",
+      "url": "https://science.nasa.gov/earth/earth-observatory/earthquake-in-eastern-africa-15855/",
+      "usedBy": [
+        "tanganyika",
+        "topic:world-lakes"
+      ]
+    },
+    {
+      "title": "NASA · Caspian Sea",
+      "url": "https://science.nasa.gov/earth/earth-observatory/caspian-sea-44253/",
+      "usedBy": [
+        "caspian",
+        "topic:world-lakes"
+      ]
+    },
+    {
+      "title": "NASA · The Caspian Sea’s Shrinking Coastline",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-caspian-seas-shrinking-coastline/",
+      "usedBy": [
+        "caspian",
+        "topic:world-lakes"
+      ]
+    },
+    {
+      "title": "NASA · Getting Saltier",
+      "url": "https://science.nasa.gov/earth/earth-observatory/getting-saltier-145373/",
+      "usedBy": [
+        "dead-sea",
+        "topic:world-lakes"
+      ]
+    },
+    {
+      "title": "NASA · Dead Sea",
+      "url": "https://science.nasa.gov/earth/earth-observatory/dead-sea-6136/",
+      "usedBy": [
+        "dead-sea",
+        "topic:world-lakes"
+      ]
+    },
+    {
+      "title": "Beck 等（2023）· Köppen–Geiger 气候分类与全球数据",
+      "url": "https://www.nature.com/articles/s41597-023-02549-6",
+      "usedBy": [
+        "climate-a",
+        "climate-b",
+        "climate-c",
+        "climate-d",
+        "climate-e",
+        "middle-east",
+        "topic:map-climate",
+        "topic:world-latitude-height",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "NOAA · Köppen–Geiger Climate Subdivisions",
+      "url": "https://www.noaa.gov/jetstream/global/climate-zones/jetstream-max-addition-k-ppen-geiger-climate-subdivisions",
+      "usedBy": [
+        "climate-a",
+        "climate-c",
+        "climate-d",
+        "climate-e",
+        "topic:map-climate",
+        "topic:world-latitude-height"
+      ]
+    },
+    {
+      "title": "Beck 等（2023）：Köppen–Geiger 分类判据，表 1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10593765/",
+      "usedBy": [
+        "climate-a",
+        "climate-b",
+        "climate-c",
+        "climate-d",
+        "climate-e",
+        "topic:map-climate",
+        "topic:world-latitude-height",
+        "climate-note:Af",
+        "climate-note:Am",
+        "climate-note:Aw",
+        "climate-note:BWh",
+        "climate-note:BWk",
+        "climate-note:BSh",
+        "climate-note:BSk",
+        "climate-note:Csa",
+        "climate-note:Csb",
+        "climate-note:Csc",
+        "climate-note:Cwa",
+        "climate-note:Cwb",
+        "climate-note:Cwc",
+        "climate-note:Cfa",
+        "climate-note:Cfb",
+        "climate-note:Cfc",
+        "climate-note:Dsa",
+        "climate-note:Dsb",
+        "climate-note:Dsc",
+        "climate-note:Dsd",
+        "climate-note:Dwa",
+        "climate-note:Dwb",
+        "climate-note:Dwc",
+        "climate-note:Dwd",
+        "climate-note:Dfa",
+        "climate-note:Dfb",
+        "climate-note:Dfc",
+        "climate-note:Dfd",
+        "climate-note:ET",
+        "climate-note:EF"
+      ],
+      "usedByClimateCodes": [
+        "Af",
+        "Am",
+        "Aw",
+        "BWh",
+        "BWk",
+        "BSh",
+        "BSk",
+        "Csa",
+        "Csb",
+        "Csc",
+        "Cwa",
+        "Cwb",
+        "Cwc",
+        "Cfa",
+        "Cfb",
+        "Cfc",
+        "Dsa",
+        "Dsb",
+        "Dsc",
+        "Dsd",
+        "Dwa",
+        "Dwb",
+        "Dwc",
+        "Dwd",
+        "Dfa",
+        "Dfb",
+        "Dfc",
+        "Dfd",
+        "ET",
+        "EF"
+      ]
+    },
+    {
+      "title": "Beck 数据项目：V3 分类实现（tools.py）",
+      "url": "https://github.com/hylken/Koppen-Geiger_maps/blob/V3/tools.py",
+      "usedBy": [
+        "climate-a",
+        "climate-b",
+        "climate-c",
+        "climate-d",
+        "climate-e",
+        "topic:map-climate",
+        "topic:world-latitude-height",
+        "climate-note:Af",
+        "climate-note:Am",
+        "climate-note:Aw",
+        "climate-note:BWh",
+        "climate-note:BWk",
+        "climate-note:BSh",
+        "climate-note:BSk",
+        "climate-note:Csa",
+        "climate-note:Csb",
+        "climate-note:Csc",
+        "climate-note:Cwa",
+        "climate-note:Cwb",
+        "climate-note:Cwc",
+        "climate-note:Cfa",
+        "climate-note:Cfb",
+        "climate-note:Cfc",
+        "climate-note:Dsa",
+        "climate-note:Dsb",
+        "climate-note:Dsc",
+        "climate-note:Dsd",
+        "climate-note:Dwa",
+        "climate-note:Dwb",
+        "climate-note:Dwc",
+        "climate-note:Dwd",
+        "climate-note:Dfa",
+        "climate-note:Dfb",
+        "climate-note:Dfc",
+        "climate-note:Dfd",
+        "climate-note:ET",
+        "climate-note:EF"
+      ],
+      "usedByClimateCodes": [
+        "Af",
+        "Am",
+        "Aw",
+        "BWh",
+        "BWk",
+        "BSh",
+        "BSk",
+        "Csa",
+        "Csb",
+        "Csc",
+        "Cwa",
+        "Cwb",
+        "Cwc",
+        "Cfa",
+        "Cfb",
+        "Cfc",
+        "Dsa",
+        "Dsb",
+        "Dsc",
+        "Dsd",
+        "Dwa",
+        "Dwb",
+        "Dwc",
+        "Dwd",
+        "Dfa",
+        "Dfb",
+        "Dfc",
+        "Dfd",
+        "ET",
+        "EF"
+      ]
+    },
+    {
+      "title": "GloH2O：V3 气候地图、时期与数据说明",
+      "url": "https://www.gloh2o.org/koppen/",
+      "usedBy": [
+        "climate-a",
+        "climate-b",
+        "climate-c",
+        "climate-d",
+        "climate-e",
+        "topic:map-climate",
+        "topic:world-latitude-height",
+        "climate-note:Af",
+        "climate-note:Am",
+        "climate-note:Aw",
+        "climate-note:BWh",
+        "climate-note:BWk",
+        "climate-note:BSh",
+        "climate-note:BSk",
+        "climate-note:Csa",
+        "climate-note:Csb",
+        "climate-note:Csc",
+        "climate-note:Cwa",
+        "climate-note:Cwb",
+        "climate-note:Cwc",
+        "climate-note:Cfa",
+        "climate-note:Cfb",
+        "climate-note:Cfc",
+        "climate-note:Dsa",
+        "climate-note:Dsb",
+        "climate-note:Dsc",
+        "climate-note:Dsd",
+        "climate-note:Dwa",
+        "climate-note:Dwb",
+        "climate-note:Dwc",
+        "climate-note:Dwd",
+        "climate-note:Dfa",
+        "climate-note:Dfb",
+        "climate-note:Dfc",
+        "climate-note:Dfd",
+        "climate-note:ET",
+        "climate-note:EF"
+      ],
+      "usedByClimateCodes": [
+        "Af",
+        "Am",
+        "Aw",
+        "BWh",
+        "BWk",
+        "BSh",
+        "BSk",
+        "Csa",
+        "Csb",
+        "Csc",
+        "Cwa",
+        "Cwb",
+        "Cwc",
+        "Cfa",
+        "Cfb",
+        "Cfc",
+        "Dsa",
+        "Dsb",
+        "Dsc",
+        "Dsd",
+        "Dwa",
+        "Dwb",
+        "Dwc",
+        "Dwd",
+        "Dfa",
+        "Dfb",
+        "Dfc",
+        "Dfd",
+        "ET",
+        "EF"
+      ]
+    },
+    {
+      "title": "中国省级行政区划概览 · 中央政府驻港联络办",
+      "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+      "usedBy": [
+        "china-country",
+        "beijing",
+        "shanghai",
+        "guangdong",
+        "sichuan",
+        "xinjiang",
+        "inner-mongolia",
+        "heilongjiang",
+        "hainan-province",
+        "yunnan",
+        "hong-kong",
+        "macao",
+        "tianjin",
+        "hebei",
+        "shanxi",
+        "liaoning",
+        "jilin",
+        "jiangsu",
+        "zhejiang",
+        "anhui",
+        "fujian",
+        "jiangxi",
+        "shandong",
+        "henan",
+        "hubei",
+        "hunan",
+        "guangxi",
+        "chongqing",
+        "guizhou",
+        "xizang",
+        "shaanxi",
+        "gansu",
+        "qinghai",
+        "ningxia",
+        "taiwan-province",
+        "topic:map-population",
+        "topic:china-water-journey",
+        "topic:china-dry-water",
+        "topic:china-north-south",
+        "topic:china-city-environment",
+        "topic:china-food-water-cities",
+        "topic:china-provinces",
+        "topic:china-transport"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "34个省级行政区的类别口径：23省、5自治区、4直辖市、2特别行政区；省级与自然区的区别"
+        ],
+        "version": "2022-06-07发布；2026-10-11核验",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "国家统计局 · 第七次全国人口普查与人口数据口径",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901091.html",
+      "usedBy": [
+        "china-country",
+        "china-population",
+        "topic:map-population"
+      ]
+    },
+    {
+      "title": "联合国统计司 · China国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/cn.html",
+      "usedBy": [
+        "china-country"
+      ]
+    },
+    {
+      "title": "日本统计局 · Statistical Handbook of Japan 2025",
+      "url": "https://www.stat.go.jp/english/data/handbook/pdf/2025all.pdf",
+      "usedBy": [
+        "japan",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "日本气象厅 · 富士山火山资料",
+      "url": "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html",
+      "usedBy": [
+        "japan",
+        "fujisan",
+        "topic:world-mountain-ranges",
+        "topic:world-tectonics",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "联合国统计司 · Japan国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/jp.html",
+      "usedBy": [
+        "japan",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "World Bank · India: Managing Floods and Droughts（2023）",
+      "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts",
+      "usedBy": [
+        "india",
+        "indian-ocean",
+        "rice-farming",
+        "topic:china-food-water-cities",
+        "topic:world-sea-connections",
+        "topic:china-agriculture",
+        "topic:world-agriculture-food",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "联合国统计司 · India国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/in.html",
+      "usedBy": [
+        "india",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "US Census Bureau · Geography definitions",
+      "url": "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+      "usedBy": [
+        "usa",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "联合国统计司 · United States国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/us.html",
+      "usedBy": [
+        "usa",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "联合国统计司 · Russia国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/ru.html",
+      "usedBy": [
+        "russia"
+      ]
+    },
+    {
+      "title": "IBGE · 巴西六大生物群系地图（2019）",
+      "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/25812-ibge-lanca-mapa-inedito-de-biomas-e-sistema-costeiro-marinho-2",
+      "usedBy": [
+        "brazil",
+        "topic:world-latitude-height",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "联合国统计司 · Brazil国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/br.html",
+      "usedBy": [
+        "brazil",
+        "topic:world-latitude-height",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "Geoscience Australia · Australia’s size compared（2025）",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared",
+      "usedBy": [
+        "australia",
+        "topic:world-latitude-height",
+        "topic:world-deserts",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "Geoscience Australia · Australian mainland deserts",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts",
+      "usedBy": [
+        "australia",
+        "topic:world-latitude-height",
+        "topic:world-deserts",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "联合国统计司 · Australia国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/au.html",
+      "usedBy": [
+        "australia",
+        "topic:world-latitude-height",
+        "topic:world-deserts",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "联合国统计司 · Egypt国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/eg.html",
+      "usedBy": [
+        "egypt",
+        "topic:world-river-contrast"
+      ]
+    },
+    {
+      "title": "NASA · East Indonesia Island Chain",
+      "url": "https://science.nasa.gov/earth/earth-observatory/east-indonesia-island-chain-87707/",
+      "usedBy": [
+        "indonesia",
+        "southeast-asia",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "联合国统计司 · Indonesia国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/id.html",
+      "usedBy": [
+        "indonesia"
+      ]
+    },
+    {
+      "title": "UNESCO · Zollverein Coal Mine Industrial Complex in Essen",
+      "url": "https://whc.unesco.org/en/list/975/",
+      "usedBy": [
+        "germany",
+        "ruhr-industry",
+        "topic:world-energy-industry"
+      ]
+    },
+    {
+      "title": "联合国统计司 · Germany国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/de.html",
+      "usedBy": [
+        "germany"
+      ]
+    },
+    {
+      "title": "UNESCO · Mount Kenya National Park/Natural Forest",
+      "url": "https://whc.unesco.org/en/list/800/",
+      "usedBy": [
+        "kenya",
+        "sub-saharan-africa",
+        "topic:world-latitude-height",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "联合国统计司 · Kenya国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/ke.html",
+      "usedBy": [
+        "kenya",
+        "topic:world-latitude-height"
+      ]
+    },
+    {
+      "title": "UN Statistics Division · M49区域分类与使用口径",
+      "url": "https://unstats.un.org/unsd/methodology/M49",
+      "usedBy": [
+        "southeast-asia",
+        "western-europe",
+        "middle-east",
+        "sub-saharan-africa",
+        "asia-continent",
+        "topic:world-continents",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "Met Office · 欧洲区域气候与海洋影响",
+      "url": "https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/applied-science/precis/dissy1808.pdf",
+      "usedBy": [
+        "western-europe",
+        "mediterranean",
+        "topic:world-sea-connections",
+        "topic:world-regional-comparison"
+      ]
+    },
+    {
+      "title": "British Antarctic Survey · Antarctica",
+      "url": "https://www.bas.ac.uk/about/where-we-work/antarctica/",
+      "usedBy": [
+        "antarctica",
+        "topic:world-latitude-height",
+        "topic:world-continents",
+        "topic:world-polar-comparison"
+      ]
+    },
+    {
+      "title": "北京市人民政府 · 北京概况与地理自然",
+      "url": "https://www.beijing.gov.cn/renwen/bjgk/",
+      "usedBy": [
+        "beijing",
+        "topic:map-population",
+        "topic:china-city-environment",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "上海市人民政府 · Geography（2024年末面积）",
+      "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html",
+      "usedBy": [
+        "shanghai",
+        "yangtze-delta",
+        "topic:map-population",
+        "topic:china-water-journey",
+        "topic:china-city-environment",
+        "topic:china-food-water-cities",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "广东省人民政府 · 主体功能区规划自然状况",
+      "url": "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html",
+      "usedBy": [
+        "guangdong",
+        "pearl-delta",
+        "topic:china-north-south",
+        "topic:china-city-environment",
+        "topic:china-food-water-cities",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "四川省人民政府 · 国土空间生态修复规划",
+      "url": "https://www.sc.gov.cn/10462/10778/10876/2022/7/8/57f745e2c9f74c66a606f4c88cbe96db/files/484782a06c0144d39954782ac50d7696.pdf",
+      "usedBy": [
+        "sichuan",
+        "topic:china-north-south",
+        "topic:china-city-environment",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "新疆交通运输厅 · 三山两盆与新疆地理",
+      "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/zxdt/202407/a0284b35255f42b49c4531b0dbbd81d9.shtml",
+      "usedBy": [
+        "xinjiang",
+        "topic:china-dry-water",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "黑龙江省人民政府 · 地形地貌",
+      "url": "https://www.hlj.gov.cn/hlj/c108480/list_left_tt.shtml",
+      "usedBy": [
+        "heilongjiang",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "海南省林业局 · 热带生态系统与湿地",
+      "url": "https://lyj.hainan.gov.cn/xxgk/0100/0101/201202/t20120220_1388558.html",
+      "usedBy": [
+        "hainan-province",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "海南省林业局2022年发布，湿地面积按国土三调口径；不是2026年动态值",
+        "license": "原网页保留权利；仅事实核对与原创概述",
+        "processing": "本次经官方网页搜索索引核对12.1万公顷和三调口径；直接获取受站点访问校验限制。URL中的2012年路径不能用作发布日期。",
+        "claims": [
+          "海南热带岛屿生态系统多样",
+          "湿地面积约12.1万公顷，基于国土三调结果"
+        ]
+      }
+    },
+    {
+      "title": "云南宣传网 · 云南省基本情况（2024）",
+      "url": "https://www.ynxc.gov.cn/html/2024/yns_0418/11831.html",
+      "usedBy": [
+        "yunnan",
+        "topic:china-north-south",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "台湾交通部观光署 · General Information",
+      "url": "https://eng.taiwan.net.tw/m1.aspx?sno=0002004",
+      "usedBy": [
+        "taiwan-region"
+      ]
+    },
+    {
+      "title": "UNESCO · Fujisan, sacred place and source of artistic inspiration",
+      "url": "https://whc.unesco.org/en/list/1418/",
+      "usedBy": [
+        "fujisan",
+        "topic:world-mountain-ranges",
+        "topic:world-tectonics"
+      ]
+    },
+    {
+      "title": "NOAA · The Ocean（五大洋划分口径）",
+      "url": "https://www.noaa.gov/jetstream/ocean",
+      "usedBy": [
+        "pacific-ocean",
+        "atlantic-ocean",
+        "indian-ocean",
+        "topic:world-sea-connections"
+      ]
+    },
+    {
+      "title": "NOAA · How many oceans are there?",
+      "url": "https://oceanservice.noaa.gov/facts/howmanyoceans.html",
+      "usedBy": [
+        "pacific-ocean",
+        "topic:world-sea-connections"
+      ]
+    },
+    {
+      "title": "NOAA · Atlantic Meridional Overturning Circulation",
+      "url": "https://oceanservice.noaa.gov/facts/amoc.html",
+      "usedBy": [
+        "atlantic-ocean",
+        "topic:world-sea-connections"
+      ]
+    },
+    {
+      "title": "NASA · 航线与多年平均资料尺度",
+      "url": "https://science.nasa.gov/blogs/earth-matters/2013/03/25/matters-of-scale-and-why-they-matter/",
+      "usedBy": [
+        "indian-ocean",
+        "malacca-strait",
+        "topic:world-sea-connections",
+        "topic:world-transport-trade"
+      ]
+    },
+    {
+      "title": "NOAA · 世界最小的海洋（2026更新页面）",
+      "url": "https://oceanservice.noaa.gov/facts/smallestocean.html",
+      "usedBy": [
+        "arctic-ocean",
+        "topic:world-sea-connections",
+        "topic:world-polar-comparison"
+      ]
+    },
+    {
+      "title": "NASA · Ice and Clouds in the Bering Strait",
+      "url": "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/",
+      "usedBy": [
+        "arctic-ocean",
+        "bering-strait",
+        "topic:world-sea-connections",
+        "topic:world-polar-comparison"
+      ]
+    },
+    {
+      "title": "新加坡海事及港务管理局 · 马六甲与新加坡海峡航路资料",
+      "url": "https://www.mpa.gov.sg/who-we-are/newsroom-resources/publications/singapore-port-information",
+      "usedBy": [
+        "malacca-strait",
+        "topic:world-sea-connections",
+        "topic:world-transport-trade"
+      ]
+    },
+    {
+      "title": "NASA · The Strait of Gibraltar",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-strait-of-gibraltar-151478/",
+      "usedBy": [
+        "gibraltar-strait",
+        "topic:world-sea-connections"
+      ]
+    },
+    {
+      "title": "NASA · The Strait of Gibraltar in 3D",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-strait-of-gibraltar-in-3d-3926/",
+      "usedBy": [
+        "gibraltar-strait",
+        "mediterranean",
+        "topic:world-sea-connections"
+      ]
+    },
+    {
+      "title": "Suez Canal Authority · Canal Characteristics",
+      "url": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalCharacteristics.aspx",
+      "usedBy": [
+        "suez-canal",
+        "topic:world-sea-connections",
+        "topic:world-transport-trade"
+      ]
+    },
+    {
+      "title": "Panama Canal Authority · History and how the canal works",
+      "url": "https://pancanal.com/en/history-of-the-panama-canal/",
+      "usedBy": [
+        "panama-canal",
+        "topic:world-sea-connections",
+        "topic:world-transport-trade"
+      ]
+    },
+    {
+      "title": "Panama Canal Authority · 运河淡水与气候事件",
+      "url": "https://pancanal.com/en/panama-canal-prepares-for-the-impact-of-climate-events/",
+      "usedBy": [
+        "panama-canal",
+        "topic:world-sea-connections",
+        "topic:world-transport-trade"
+      ]
+    },
+    {
+      "title": "联合国 · World Population Prospects 2024主要结果",
+      "url": "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_wpp_2024_advance_unedited_0.pdf",
+      "usedBy": [
+        "world-population",
+        "india-population",
+        "topic:map-population"
+      ]
+    },
+    {
+      "title": "European Commission JRC · GHS-POP R2023A方法与数据",
+      "url": "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php",
+      "usedBy": [
+        "world-population",
+        "population-density",
+        "china-population",
+        "india-population",
+        "topic:map-population"
+      ]
+    },
+    {
+      "title": "World Bank · What does urban mean?（国家定义差异）",
+      "url": "https://blogs.worldbank.org/en/sustainablecities/what-does-urban-mean",
+      "usedBy": [
+        "population-density",
+        "china-urbanization",
+        "topic:map-population"
+      ]
+    },
+    {
+      "title": "国家统计局 · 第七次人口普查城乡与流动人口公报",
+      "url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/html/fu03g.pdf",
+      "usedBy": [
+        "china-population",
+        "china-urbanization",
+        "topic:map-population"
+      ]
+    },
+    {
+      "title": "UN Statistics Division · World Statistics Pocketbook 2024（印度）",
+      "url": "https://unstats.un.org/unsd/publications/pocketbook/files/world-stats-pocketbook-2024.pdf",
+      "usedBy": [
+        "india-population",
+        "topic:map-population"
+      ]
+    },
+    {
+      "title": "Pew Research Center · 全球宗教归属2020估计（2025报告）",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/",
+      "usedBy": [
+        "religious-diversity",
+        "christianity",
+        "islam",
+        "hinduism",
+        "buddhism",
+        "unaffiliated",
+        "topic:map-religion"
+      ]
+    },
+    {
+      "title": "Pew Research Center · Global religious change methodology",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/global-religious-change-methodology/",
+      "usedBy": [
+        "religious-diversity",
+        "buddhism",
+        "unaffiliated",
+        "topic:map-religion"
+      ]
+    },
+    {
+      "title": "Pew Research Center · Christian population change, 2010–2020",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/christian-population-change/",
+      "usedBy": [
+        "christianity",
+        "topic:map-religion"
+      ]
+    },
+    {
+      "title": "Pew Research Center · Muslim population change, 2010–2020",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/muslim-population-change/",
+      "usedBy": [
+        "islam",
+        "topic:map-religion"
+      ]
+    },
+    {
+      "title": "Pew Research Center · Hindu population change, 2010–2020",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/hindu-population-change/",
+      "usedBy": [
+        "hinduism",
+        "topic:map-religion"
+      ]
+    },
+    {
+      "title": "Pew Research Center · Buddhist population change, 2010–2020",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/",
+      "usedBy": [
+        "buddhism",
+        "topic:map-religion"
+      ]
+    },
+    {
+      "title": "Pew Research Center · Religiously unaffiliated population change",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/religiously-unaffiliated-population-change/",
+      "usedBy": [
+        "unaffiliated",
+        "topic:map-religion"
+      ]
+    },
+    {
+      "title": "UNESCO · Multilingual education（2025语言口径）",
+      "url": "https://www.unesco.org/en/languages-education/need-know?hub=66703",
+      "usedBy": [
+        "language-diversity",
+        "official-vs-mother-tongue",
+        "topic:map-language"
+      ]
+    },
+    {
+      "title": "Glottolog 5.3 · 数据目录与分类说明",
+      "url": "https://glottolog.org/glottolog/glottologinformation",
+      "usedBy": [
+        "language-diversity",
+        "mandarin-language",
+        "arabic-language",
+        "topic:map-language"
+      ]
+    },
+    {
+      "title": "United Nations · 多语与六种正式语言",
+      "url": "https://www.un.org/en/observances/english-language-day/multilingualism-and-the-un",
+      "usedBy": [
+        "official-vs-mother-tongue",
+        "english-language",
+        "arabic-language",
+        "topic:map-language"
+      ]
+    },
+    {
+      "title": "教育部 · 国家通用语言文字概念（2025修订法律文本）",
+      "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202606/t20260605_1438880.html",
+      "usedBy": [
+        "mandarin-language",
+        "topic:map-language"
+      ]
+    },
+    {
+      "title": "United Nations · English Language Day",
+      "url": "https://www.un.org/en/observances/english-language-day",
+      "usedBy": [
+        "english-language",
+        "topic:map-language"
+      ]
+    },
+    {
+      "title": "UNESCO · World Arabic Language Day",
+      "url": "https://www.unesco.org/en/world-arabic-language-day?hub=68184",
+      "usedBy": [
+        "arabic-language",
+        "topic:map-language"
+      ]
+    },
+    {
+      "title": "农业农村部 · 粮食作物区域大配方与施肥建议",
+      "url": "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm",
+      "usedBy": [
+        "rice-farming",
+        "northeast-blacksoil",
+        "topic:china-plains",
+        "topic:china-food-water-cities",
+        "topic:china-agriculture",
+        "topic:world-agriculture-food"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "东北春玉米、华北夏玉米、西北绿洲灌溉春玉米的区域差异；不把施肥建议用于农事指导"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "国家统计局 · National Grain Production in 2024",
+      "url": "https://www.stats.gov.cn/english/PressRelease/202412/t20241219_1957784.html",
+      "usedBy": [
+        "rice-farming",
+        "china-grain",
+        "topic:china-food-water-cities",
+        "topic:china-agriculture",
+        "topic:world-agriculture-food"
+      ]
+    },
+    {
+      "title": "国家统计局 · 2024年粮食产量数据公告",
+      "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202412/t20241213_1957744.html",
+      "usedBy": [
+        "china-grain",
+        "topic:china-food-water-cities",
+        "topic:world-agriculture-food"
+      ]
+    },
+    {
+      "title": "中国政府网 · 长江三角洲区域一体化发展规划纲要（2019）",
+      "url": "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html",
+      "usedBy": [
+        "yangtze-delta",
+        "topic:china-food-water-cities"
+      ]
+    },
+    {
+      "title": "中国政府网 · 粤港澳大湾区发展规划纲要（2019）",
+      "url": "https://app.www.gov.cn/govdata/gov/201902/18/435204/article.html",
+      "usedBy": [
+        "pearl-delta",
+        "hong-kong",
+        "macao",
+        "topic:china-food-water-cities",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "中国政府网 · 南水北调中线一期通水与供水口径",
+      "url": "https://www.gov.cn/xinwen/2015-12/08/content_5021383.htm",
+      "usedBy": [
+        "south-north-water",
+        "topic:china-food-water-cities"
+      ]
+    },
+    {
+      "title": "UNESCO · The Grand Canal",
+      "url": "https://whc.unesco.org/en/list/1443",
+      "usedBy": [
+        "grand-canal",
+        "topic:china-transport"
+      ]
+    },
+    {
+      "title": "香港天文台 · 地形雨与1981—2010降雨分布",
+      "url": "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html",
+      "usedBy": [
+        "hong-kong",
+        "topic:china-food-water-cities",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "香港海事处 · Hong Kong Fact Sheet — the Port",
+      "url": "https://www.mardep.gov.hk/en/materials-and-publications/publications/hk-fact-sheet/index.html",
+      "usedBy": [
+        "hong-kong",
+        "topic:china-food-water-cities",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "澳门旅游局 · 地理位置及时间",
+      "url": "https://www.macaotourism.gov.mo/zh-hant/article/about-macao/location-and-time",
+      "usedBy": [
+        "macao",
+        "topic:china-food-water-cities",
+        "topic:china-provinces"
+      ]
+    },
+    {
+      "title": "NASA · 亚洲第三极的水资源联系",
+      "url": "https://science.nasa.gov/earth/water-on-earth/the-water-future-of-earths-third-pole/",
+      "usedBy": [
+        "asia-continent",
+        "topic:world-continents"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 长江中下游平原",
+      "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692359.html",
+      "usedBy": [
+        "yangtze-middle-lower-plain",
+        "topic:china-plains",
+        "topic:china-relief-steps",
+        "topic:china-agriculture"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "沿江平原组成、构造低地贯通及冲积过程、河湖与农业联系"
+        ],
+        "version": "2020-09-10网页路径，摘编自《中国大百科全书·中国地理》；仅使用稳定自然地理解释，不沿用年代不明的统计和开发现状",
+        "license": "原站版权；以原创中文概述事实，不复制正文或图片",
+        "processing": "联网读取原文核对，未采用原文旧气候均值、资源储量、动植物现状和生产数字；地图保留原有精确绑定或空数组。"
+      }
+    },
+    {
+      "title": "中国政府网资料 · 中国地形的分布（高原、平原与盆地）",
+      "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+      "usedBy": [
+        "yangtze-middle-lower-plain",
+        "junggar-basin",
+        "qaidam-basin",
+        "qinghai",
+        "liaodong-hills",
+        "shandong-hills",
+        "southeast-hills",
+        "topic:china-plateaus",
+        "topic:china-plains",
+        "topic:china-basins",
+        "topic:china-mountain-ranges",
+        "topic:china-regions",
+        "topic:china-provinces",
+        "topic:china-relief-steps",
+        "topic:china-agriculture",
+        "topic:china-energy-resources"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "高原、盆地、平原与山脉格局；辽东、山东、东南丘陵；只采用稳定地形概述，不采用旧峰顶高度"
+        ],
+        "version": "2014-01-04发布；2026-10-11核验",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "中国科学院地理资源所 · 准噶尔盆地",
+      "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692365.html",
+      "usedBy": [
+        "junggar-basin",
+        "topic:china-basins"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "西侧山口与西风水汽、固定半固定沙丘与积雪、山前农业及额尔齐斯外流"
+        ],
+        "version": "2020-09-10网页路径，摘编自《中国大百科全书·中国地理》；仅使用稳定自然地理解释，不沿用年代不明的统计和开发现状",
+        "license": "原站版权；以原创中文概述事实，不复制正文或图片",
+        "processing": "联网读取原文核对，未采用原文旧气候均值、资源储量、动植物现状和生产数字；地图保留原有精确绑定或空数组。"
+      }
+    },
+    {
+      "title": "中国科学院地理资源所 · 柴达木盆地",
+      "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html",
+      "usedBy": [
+        "qaidam-basin",
+        "qinghai",
+        "topic:china-basins",
+        "topic:china-provinces",
+        "topic:china-relief-steps",
+        "topic:china-energy-resources"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "高原内部断陷盆地、山前至湖盆沉积递变、内流蒸发与盐湖资源"
+        ],
+        "version": "2020-09-10网页路径，摘编自《中国大百科全书·中国地理》；仅使用稳定自然地理解释，不沿用年代不明的统计和开发现状",
+        "license": "原站版权；以原创中文概述事实，不复制正文或图片",
+        "processing": "联网读取原文核对，未采用原文旧气候均值、资源储量、动植物现状和生产数字；地图保留原有精确绑定或空数组。"
+      }
+    },
+    {
+      "title": "中国科学院青海盐湖研究所 · 柴达木盆地盐湖锂矿床成因研究",
+      "url": "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html",
+      "usedBy": [
+        "qaidam-basin",
+        "qarhan-resources",
+        "topic:china-basins",
+        "topic:china-relief-steps",
+        "topic:china-energy-resources"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "察尔汗别勒滩矿床与深部卤水、外来物质补给；成矿不能只归因于蒸发"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "青海省人民政府 · 十四五规划资源利用与生态保护",
+      "url": "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228",
+      "usedBy": [
+        "qaidam-basin",
+        "qinghai",
+        "topic:china-basins",
+        "topic:china-provinces",
+        "topic:china-relief-steps",
+        "topic:china-energy-resources"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "三江源、青海湖流域、祁连山地、柴达木盆地等地理区域；河源保护"
+        ],
+        "version": "十四五规划（2021—2025）；只使用所述自然区域和生态机制，不使用目标或历史统计为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "UIAA · 经典十四座8000米主峰的名录口径",
+      "url": "https://www.theuiaa.org/8000m-peaks/",
+      "usedBy": [
+        "summit-everest",
+        "summit-k2",
+        "summit-kangchenjunga",
+        "summit-lhotse",
+        "summit-makalu",
+        "summit-cho-oyu",
+        "summit-dhaulagiri",
+        "summit-manaslu",
+        "summit-nanga-parbat",
+        "summit-annapurna-i",
+        "summit-gasherbrum-i",
+        "summit-broad-peak",
+        "summit-gasherbrum-ii",
+        "summit-shishapangma",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Mount Everest（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q513",
+      "usedBy": [
+        "summit-everest",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · K2（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q43512",
+      "usedBy": [
+        "summit-k2",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Kangchenjunga（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q82019",
+      "usedBy": [
+        "summit-kangchenjunga",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Lhotse（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q168702",
+      "usedBy": [
+        "summit-lhotse",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Makalu（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q169986",
+      "usedBy": [
+        "summit-makalu",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Cho Oyu（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q170089",
+      "usedBy": [
+        "summit-cho-oyu",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Dhaulagiri（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q165440",
+      "usedBy": [
+        "summit-dhaulagiri",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Manaslu（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q170070",
+      "usedBy": [
+        "summit-manaslu",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Nanga Parbat（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q130736",
+      "usedBy": [
+        "summit-nanga-parbat",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Annapurna I（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q16466024",
+      "usedBy": [
+        "summit-annapurna-i",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Gasherbrum I（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q187138",
+      "usedBy": [
+        "summit-gasherbrum-i",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Broad Peak（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q180996",
+      "usedBy": [
+        "summit-broad-peak",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Gasherbrum II（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q186853",
+      "usedBy": [
+        "summit-gasherbrum-ii",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "Wikidata · Shishapangma（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q105124",
+      "usedBy": [
+        "summit-shishapangma",
+        "topic:world-high-peaks"
+      ]
+    },
+    {
+      "title": "NASA · Earth facts：自转、公转与地轴倾斜",
+      "url": "https://science.nasa.gov/earth/facts/",
+      "usedBy": [
+        "earth-rotation",
+        "earth-season-contrast",
+        "topic:earth-seasons"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "Web page reviewed 2026-10-11",
+        "license": "原始文章版权归来源机构；本站仅原创中文概括与引用链接，未复制图像或全文。",
+        "processing": "读取官方说明后按位置/尺度/过程拆解为教学卡；公式为几何与比例关系推导。",
+        "claims": [
+          "earth-rotation",
+          "earth-season-contrast"
+        ]
+      }
+    },
+    {
+      "title": "NOAA · Solar Calculation Details：太阳位置与折射",
+      "url": "https://gml.noaa.gov/grad/solcalc/calcdetails.html",
+      "usedBy": [
+        "earth-rotation",
+        "topic:earth-seasons"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "Web page reviewed 2026-10-11",
+        "license": "原始文章版权归来源机构；本站仅原创中文概括与引用链接，未复制图像或全文。",
+        "processing": "读取官方说明后按位置/尺度/过程拆解为教学卡；公式为几何与比例关系推导。 页面所关联的太阳计算器已停止维护；本项目只参考方法说明，使用自己的理想几何教学公式，不调用其服务。",
+        "claims": [
+          "earth-rotation"
+        ]
+      }
+    },
+    {
+      "title": "NASA Space Place · What Causes the Seasons?",
+      "url": "https://spaceplace.nasa.gov/seasons/en/",
+      "usedBy": [
+        "earth-season-contrast",
+        "topic:earth-seasons"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "Web page reviewed 2026-10-11",
+        "license": "原始文章版权归来源机构；本站仅原创中文概括与引用链接，未复制图像或全文。",
+        "processing": "读取官方说明后按位置/尺度/过程拆解为教学卡；公式为几何与比例关系推导。",
+        "claims": [
+          "earth-season-contrast"
+        ]
+      }
+    },
+    {
+      "title": "NOAA · What is longitude?",
+      "url": "https://oceanservice.noaa.gov/facts/longitude.html",
+      "usedBy": [
+        "earth-longitude-time",
+        "earth-coordinates",
+        "topic:earth-seasons",
+        "topic:earth-map-reading"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "Web page reviewed 2026-10-11",
+        "license": "原始文章版权归来源机构；本站仅原创中文概括与引用链接，未复制图像或全文。",
+        "processing": "读取官方说明后按位置/尺度/过程拆解为教学卡；公式为几何与比例关系推导。",
+        "claims": [
+          "earth-longitude-time",
+          "earth-coordinates"
+        ]
+      }
+    },
+    {
+      "title": "NOAA · What is latitude?",
+      "url": "https://oceanservice.noaa.gov/facts/latitude.html",
+      "usedBy": [
+        "earth-coordinates",
+        "topic:earth-map-reading"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "Web page reviewed 2026-10-11",
+        "license": "原始文章版权归来源机构；本站仅原创中文概括与引用链接，未复制图像或全文。",
+        "processing": "读取官方说明后按位置/尺度/过程拆解为教学卡；公式为几何与比例关系推导。",
+        "claims": [
+          "earth-coordinates"
+        ]
+      }
+    },
+    {
+      "title": "USGS · Topographic Mapping：等高线与比例尺",
+      "url": "https://www.usgs.gov/educational-resources/topographic-mapping",
+      "usedBy": [
+        "earth-scale",
+        "earth-contours",
+        "topic:earth-map-reading"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "Web page reviewed 2026-10-11",
+        "license": "原始文章版权归来源机构；本站仅原创中文概括与引用链接，未复制图像或全文。",
+        "processing": "读取官方说明后按位置/尺度/过程拆解为教学卡；公式为几何与比例关系推导。",
+        "claims": [
+          "earth-scale",
+          "earth-contours"
+        ]
+      }
+    },
+    {
+      "title": "天津市人民政府 · 海洋主体功能区规划自然条件",
+      "url": "https://www.tj.gov.cn/zwgk/szfwj/tjsrmzf/202005/t20200519_2365827.html",
+      "usedBy": [
+        "tianjin",
+        "topic:china-provinces",
+        "topic:china-transport"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "海河下游、渤海湾、冲积海积平原；港口与海岸沉积环境"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "河北省文化和旅游厅 · 河北自然地理解读",
+      "url": "https://whly.hebei.gov.cn/c/2019-05-09/557248.html",
+      "usedBy": [
+        "hebei",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "坝上高原、燕山太行山地、河北平原三大地貌单元"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "山西省自然资源厅 · 自然资源统一确权登记总体工作方案",
+      "url": "https://zrzyt.shanxi.gov.cn/zwgk/zwgkjbml/zcfg/gfzhl/202109/t20210903_1845788.shtml",
+      "usedBy": [
+        "shanxi",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "山西位于黄土高原东翼，太行山与黄河之间；高原、山地、盆地组合"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "辽宁省人民政府 · 主体功能区规划自然条件",
+      "url": "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml",
+      "usedBy": [
+        "liaoning",
+        "liaodong-hills",
+        "topic:china-provinces",
+        "topic:china-relief-steps"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "辽宁南临黄海渤海，东西山地丘陵夹中部平原"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "吉林省人民政府 · 地理地貌",
+      "url": "https://www.jl.gov.cn/shengqing/jlgk/dldm/",
+      "usedBy": [
+        "jilin",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "东部长白山地、中西部平原；东南向西北的水分差异"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "江苏省人民政府 · Overview of Jiangsu",
+      "url": "https://en.jiangsu.gov.cn/col/col88905/index.html",
+      "usedBy": [
+        "jiangsu",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "长江、淮河下游；长江横贯和大运河南北联系；河湖平原"
+        ],
+        "version": "2026-06-17页面；2026-10-11核验",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "浙江省人民政府新闻办公室 · Geography",
+      "url": "https://www.ezhejiang.gov.cn/2019-08/02/c_420288.htm",
+      "usedBy": [
+        "zhejiang",
+        "southeast-hills",
+        "topic:china-provinces",
+        "topic:china-relief-steps"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "西南山地、中部丘陵与盆地、东北冲积平原；东海岸与岛屿"
+        ],
+        "version": "2019-08-02地理概述；2026-10-11原文核验",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "安徽省人民政府 · 安徽省国土空间规划自然禀赋",
+      "url": "https://www.ahhuoshan.gov.cn/group3/M00/68/E4/wKgSG2Yg2gOAT2avAGMA_l-tT1w196.pdf",
+      "usedBy": [
+        "anhui",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "淮北平原、江淮丘陵、沿江平原、大别山区、皖南山区五大自然区域"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "福建省人民政府 · 主体功能区规划",
+      "url": "https://zfgb.fujian.gov.cn/3456",
+      "usedBy": [
+        "fujian",
+        "southeast-hills",
+        "topic:china-provinces",
+        "topic:china-relief-steps"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "内陆山地河谷与东南海岸平原，曲折海岸和港湾"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "江西省自然资源厅 · 十四五国土空间生态修复规划",
+      "url": "https://www.dingnan.gov.cn/dnxxxgk/gmjjhshfzgh/202203/ab6ad65d2e0a45ce80c01e42b999df2d.shtml",
+      "usedBy": [
+        "jiangxi",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "江西东南西三面环山，河流向北汇入鄱阳湖与长江；流域整体治理"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "山东省情资料库 · 自然地理",
+      "url": "https://shandong-chorography.org/database/f063/section/19/article/2/?reflow=original",
+      "usedBy": [
+        "shandong",
+        "shandong-hills",
+        "topic:china-provinces",
+        "topic:china-relief-steps"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "鲁中山地、半岛丘陵与西部平原地形；黄河入海"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "河南省涉台公共资料 · 地理概况",
+      "url": "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hngk/article491327f391ce412d8f70c2fb2e6eee0d.html",
+      "usedBy": [
+        "henan",
+        "zhengzhou-transport",
+        "topic:china-provinces",
+        "topic:china-transport"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "河南西高东低，黄淮海平原与南阳盆地，周缘山地"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "湖北省自然资源厅 · 第一次地理国情普查地形地貌",
+      "url": "https://zrzyt.hubei.gov.cn/bmdt/ztzl/hbsdycqgdlgqpcgb/gbfb/201910/t20191031_209613.shtml",
+      "usedBy": [
+        "hubei",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "西部山地与中东部低海拔区域分布"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "湖南省民政厅 · 湖南行政区划概况（自然地理段）",
+      "url": "https://mzt.hunan.gov.cn/yw/qhdm/200812/t20081226_3722479.html",
+      "usedBy": [
+        "hunan",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "湖南三面环山、湘中丘陵和洞庭湖平原；湘江与长沙；仅采用稳定位置事实"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "广西壮族自治区人民政府 · 国土空间规划（科协转载）",
+      "url": "https://www.kczg.org.cn/article/detail?id=6319786",
+      "usedBy": [
+        "guangxi",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "山地丘陵与喀斯特；西江水系和北部湾出海联系"
+        ],
+        "version": "桂政发〔2024〕4号（2021—2035规划），中国科协科创中国平台转载；2026-10-11核验自然条件原文",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。 原政府域名在当前网络出现TLS错误，因此提供科协转载的同一政府文件；未采用规划目标为现状。"
+      }
+    },
+    {
+      "title": "重庆市人民政府 · 重庆概况地理",
+      "url": "https://wap.cq.gov.cn/zjcq/sqgk/cqsq/202412/t20241231_14378525.html",
+      "usedBy": [
+        "chongqing",
+        "topic:china-provinces",
+        "topic:china-transport"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "重庆在长江上游，嘉陵江等支流汇入；山地峡谷与大城市大农村并存"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "贵州省自然资源厅 · 2021年自然资源公报",
+      "url": "https://zrzy.guizhou.gov.cn/wzgb/zwgk/zdlyxxgk/tjsj/202301/P020230109380185262566.pdf",
+      "usedBy": [
+        "guizhou",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "高原山地、强烈流水切割与广泛岩溶；不采用2021统计作当前值"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "西藏自治区人民政府 · 自然地理",
+      "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+      "usedBy": [
+        "xizang",
+        "topic:china-regions",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "藏北高原、藏南谷地、藏东高山峡谷、喜马拉雅山地；高寒及干湿差异"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "陕西省人民政府 · 国土空间规划",
+      "url": "https://www.shaanxi.gov.cn/zfxxgk/fdzdgknr/ghxx/gtzygh/202406/P020240622343901996974.pdf",
+      "usedBy": [
+        "shaanxi",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "陕北、关中、陕南自然分异；秦岭与流域联系"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "甘肃省人民政府 · 国土空间规划",
+      "url": "https://www.lzxq.gov.cn/system/2024/07/26/031038275.shtml",
+      "usedBy": [
+        "gansu",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "陇南山地、陇中黄土高原、甘南高原、河西走廊、祁连山及走廊以北地带"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "宁夏回族自治区人民政府 · 自然资源保护和利用规划",
+      "url": "https://www.nx.gov.cn/zwgk/qzfwj/202109/t20210924_3045970_wap.html",
+      "usedBy": [
+        "ningxia",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "北部引黄灌区、中部干旱带、南部山区；黄河与贺兰山六盘山的联系"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "中国政府网 · 台湾基本情况（地理范围口径）",
+      "url": "https://www.gov.cn/guoqing/2020-07/28/content_5530577.htm",
+      "usedBy": [
+        "taiwan-province",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "台湾省包含主岛及附属岛屿和澎湖；省级口径与台湾地区口径不同，后者还列福建金门马祖"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "台湾行政院 · 土地（自然地形段）",
+      "url": "https://www.ey.gov.tw/state/4447F4A951A1EC45/094b1d53-de8d-4393-bde6-ab092969cce4",
+      "usedBy": [
+        "taiwan-province",
+        "topic:china-provinces"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "台湾造山、褶皱与断层、侵蚀地貌；澎湖玄武岩源自古火山活动"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "农业农村部 · 黑土同耕 稳粮兴邦",
+      "url": "https://qys.moa.gov.cn/gdxw/202604/t20260427_6483675.htm",
+      "usedBy": [
+        "northeast-blacksoil",
+        "topic:china-agriculture"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "东北黑土区玉米大豆水稻生产，保护性耕作与黑土粮仓研究"
+        ],
+        "version": "2026-04-27；仅采用作物和保护性耕作机制，不引用产量排名",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "内蒙古自治区农牧厅 · 河套灌区农业节水与盐碱地治理（2025）",
+      "url": "https://nmt.nmg.gov.cn/gk/zfxxgk/fdzdgknr/rdjy/202510/t20251030_2810626.html",
+      "usedBy": [
+        "hetao-irrigation",
+        "topic:china-agriculture"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "原文发布2025-09-15；本次只用灌排与水盐管理机制，不引用产量和规划目标作为当前现状",
+        "license": "原网页保留权利；仅核对事实并原创概述",
+        "processing": "已打开并读取内蒙古农牧厅原文；用匹配巴彦淖尔河套灌区的来源替换宁夏区域规划。",
+        "claims": [
+          "河套引黄灌排、农业节水、盐碱化和排水降盐之间的联系"
+        ]
+      }
+    },
+    {
+      "title": "国家能源局 · 煤层气开发利用规划地质条件",
+      "url": "https://www.nea.gov.cn/2006-06/28/c_131215308.htm",
+      "usedBy": [
+        "qinshui-coal",
+        "topic:china-energy-resources"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "沁水盆地含煤地层与煤层气赋存，煤矿瓦斯抽采利用；不采用旧储量和建设目标"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "国家发展改革委 · 全国矿产资源规划",
+      "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+      "usedBy": [
+        "qinshui-coal",
+        "qarhan-resources",
+        "topic:china-energy-resources"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "山西煤层气、四川攀西铁矿和青海钾盐等矿产基地；规划名单用于区位例子不代表实时生产"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "国家能源局 · 河西新能源与酒泉湖南输电联系",
+      "url": "https://zfxxgk.nea.gov.cn/2020-09/10/c_139420038.htm",
+      "usedBy": [
+        "hexi-renewables",
+        "topic:china-energy-resources"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "河西风能太阳能集中，酒泉至湖南输电与新能源消纳；只说明已有通道与区位"
+        ],
+        "version": "2020-09-10答复，核对2017年投运的酒泉湖南通道及区位，不引用后续建设目标",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "国家能源局 · 酒泉风光资源与新能源消纳",
+      "url": "https://zfxxgk.nea.gov.cn/auto87/201812/t20181211_3448.htm",
+      "usedBy": [
+        "hexi-renewables",
+        "topic:china-energy-resources"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "酒泉所在河西地区的风能太阳能资源、发电与电网调度联系"
+        ],
+        "version": "2018-08-08答复，仅采用稳定资源和消纳机制，不将2017年统计或2020年目标作为现状",
+        "license": "原站版权；原创中文事实概述，不复用图表",
+        "processing": "已通过联网原文读取核对河西区位和资源类型；项目产物不复制全文。"
+      }
+    },
+    {
+      "title": "中国长江三峡集团 · 三峡工程综合功能",
+      "url": "https://www.ctg.com.cn/sxjt/sxgc4/bwsx/2024081104052483367/index.html",
+      "usedBy": [
+        "three-gorges-project",
+        "topic:china-energy-resources"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "防洪、发电、航运、供水及生态等多目标调度；不采用旧发电量"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "交通运输部、浙江省人民政府 · 宁波舟山港总体规划批复",
+      "url": "https://xxgk.mot.gov.cn/jigou/zhghs/202006/t20200630_3319765.html",
+      "usedBy": [
+        "ningbo-zhoushan-port",
+        "topic:china-transport"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "宁波舟山港服务长江经济带、江海联运与综合运输；不同港区货种功能"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "郑州市人民政府 · 交通枢纽与物流联系",
+      "url": "https://www.zhengzhou.gov.cn/2026lh01/9888984.jhtml",
+      "usedBy": [
+        "zhengzhou-transport",
+        "topic:china-transport"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "郑州嵩山东麓、黄河之滨与南北东西交通枢纽；不复用人口面积数值"
+        ],
+        "version": "2026-02-09原文；仅用既有枢纽与联运机制，不引用尚在规划的工程",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "中国科学院 · 青藏铁路冻土研究团队",
+      "url": "https://www.cas.cn/spx/202210/t20221008_4849995.shtml",
+      "usedBy": [
+        "qinghai-tibet-railway",
+        "topic:china-transport"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "高寒缺氧、多年冻土、生态脆弱；冷却路基和持续监测的工程思路"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "中国科学院 · 青藏铁路冻土路基技术纪实",
+      "url": "https://www.cas.cn/cm/202403/t20240304_5007246.shtml",
+      "usedBy": [
+        "qinghai-tibet-railway",
+        "topic:china-transport"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "青藏铁路连接西宁拉萨并经格尔木、唐古拉；道路选线与高原环境"
+        ],
+        "version": "页面于2026-10-11核验；仅采用稳定自然地理事实，不沿用旧人口、产量或规划目标作为现状",
+        "license": "原站版权；仅核对事实并原创中文概述，不复制图表、影像或大段原文",
+        "processing": "核对自然地理位置、地形、水系或工程机制；将历史统计与规划目标排除；参考坐标仅作导航，不据介绍绘制线面。"
+      }
+    },
+    {
+      "title": "National Geographic Society · Africa: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/",
+      "usedBy": [
+        "africa-continent",
+        "ethiopian-highlands",
+        "serengeti-savanna",
+        "topic:world-continents",
+        "topic:world-plateaus-plains",
+        "topic:world-ecosystems",
+        "topic:world-regional-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "非洲跨赤道；撒哈拉、萨赫勒、东非高地、热带草原和雨林构成多样自然区域"
+        ],
+        "version": "2026-09-15页面更新版",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NASA Earth Observatory · East Africa",
+      "url": "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/",
+      "usedBy": [
+        "africa-continent",
+        "ethiopian-highlands",
+        "kafa-coffee",
+        "topic:world-continents",
+        "topic:world-plateaus-plains",
+        "topic:world-agriculture-food"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "埃塞俄比亚高地与周围低地的植被和海拔对照"
+        ],
+        "version": "2001影像解读",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "UNESCO · Okavango Delta",
+      "url": "https://whc.unesco.org/en/list/1432/",
+      "usedBy": [
+        "africa-continent",
+        "okavango-delta",
+        "topic:world-continents",
+        "topic:world-ecosystems"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "内陆三角洲不流入海；上游洪水在当地干季到来；常年沼泽与季节淹水地"
+        ],
+        "version": "世界遗产1432，2014列入；2026-10-11核读",
+        "license": "页面摘要标注CC BY-SA IGO 3.0；本次仅事实核对与原创概述",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "National Geographic Society · Europe: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/europe-physical-geography/",
+      "usedBy": [
+        "europe-continent",
+        "topic:world-continents",
+        "topic:world-regional-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "欧洲是欧亚大陆西部；多半岛；北部平原、中部高地与南部山系"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "Port of Rotterdam Authority · Connections",
+      "url": "https://www.portofrotterdam.com/en/logistics/connections",
+      "usedBy": [
+        "europe-continent",
+        "north-sea-energy",
+        "rotterdam-port",
+        "topic:world-continents",
+        "topic:world-energy-industry",
+        "topic:world-transport-trade",
+        "topic:world-regional-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "海港通过铁路、内河、公路、管道连接腹地；不同货物需要不同转运链"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "Swiss Federal Office of Transport · New Rail Link through the Alps",
+      "url": "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps",
+      "usedBy": [
+        "europe-continent",
+        "gotthard-rail",
+        "topic:world-continents",
+        "topic:world-transport-trade"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "基础隧道降低越岭坡度；圣哥达基础隧道连接乌里与提契诺，穿越阿尔卑斯"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "National Geographic Society · North America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/north-america-physical-geography/",
+      "usedBy": [
+        "north-america-continent",
+        "great-plains",
+        "topic:world-continents",
+        "topic:world-plateaus-plains"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "北美包括中美洲与加勒比；西部山地、内陆平原、加拿大地盾和东部地形的基本位置"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "USDA ERS · Wheat Sector at a Glance",
+      "url": "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance",
+      "usedBy": [
+        "north-america-continent",
+        "great-plains",
+        "great-plains-wheat",
+        "topic:world-continents",
+        "topic:world-plateaus-plains",
+        "topic:world-agriculture-food"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "大平原冬小麦与北部春小麦；播种收获季节；种植结构还受价格政策和竞争影响"
+        ],
+        "version": "2026-04-08更新；本文不引用产量预测",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "National Geographic Society · South America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/",
+      "usedBy": [
+        "south-america-continent",
+        "brazilian-highlands",
+        "pampas",
+        "atacama-desert",
+        "topic:world-continents",
+        "topic:world-plateaus-plains",
+        "topic:world-deserts",
+        "topic:world-ecosystems",
+        "topic:world-ocean-monsoon",
+        "topic:world-agriculture-food",
+        "topic:world-regional-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "安第斯在西部；亚马孙流域、高原与潘帕斯；巴西高原位于亚马孙以南；低纬高地存在温度差异"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NASA Earth Observatory · Mapping the Amazon",
+      "url": "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/",
+      "usedBy": [
+        "south-america-continent",
+        "brazilian-highlands",
+        "amazon-rainforest",
+        "topic:world-continents",
+        "topic:world-plateaus-plains",
+        "topic:world-ecosystems"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "森林与蒸腾；亚马孙流域、雨林、法定亚马孙范围不同；森林和农牧业覆盖交错"
+        ],
+        "version": "2019-09-27研究报道",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NASA Astrobiology · The Driest Place on Earth",
+      "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/",
+      "usedBy": [
+        "south-america-continent",
+        "atacama-desert",
+        "atacama-copper",
+        "topic:world-continents",
+        "topic:world-deserts",
+        "topic:world-ocean-monsoon",
+        "topic:world-energy-industry"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "阿塔卡马极干旱环境及生命研究；不把新闻中的局地极值概括全沙漠"
+        ],
+        "version": "2002研究现场报道",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "National Geographic Society · Australia and Oceania: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/oceania-physical-geography/",
+      "usedBy": [
+        "oceania-region",
+        "topic:world-continents",
+        "topic:world-regional-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "大洋洲包括澳大利亚、新西兰及太平洋岛群；大陆岛、火山高岛和珊瑚低岛的差异"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "USGS · What is a hotspot and how do you know it is there?",
+      "url": "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there",
+      "usedBy": [
+        "oceania-region",
+        "iceland-rift",
+        "hawaii-hotspot",
+        "topic:world-mountain-ranges",
+        "topic:world-continents",
+        "topic:world-tectonics"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "夏威夷板内热点；岛链向西北总体变老；热点成因研究仍有不确定性"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NASA Earth Observatory · Brasília at Night",
+      "url": "https://science.nasa.gov/earth/earth-observatory/brasilia-at-night-48963/",
+      "usedBy": [
+        "brazilian-highlands",
+        "topic:world-plateaus-plains"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "巴西利亚位于巴西中央高原；高原点位与城市景观的联系"
+        ],
+        "version": "2011影像解读",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NASA Earth Observatory · Lonar Crater, India",
+      "url": "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/",
+      "usedBy": [
+        "deccan-plateau",
+        "topic:world-plateaus-plains",
+        "topic:world-ocean-monsoon"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "洛纳尔撞击坑位于德干高原玄武岩地区；火山岩基底与后来撞击成因区分"
+        ],
+        "version": "2008影像解读",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NOAA NESDIS · What Is a Monsoon?",
+      "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon",
+      "usedBy": [
+        "deccan-plateau",
+        "indian-monsoon",
+        "topic:world-plateaus-plains",
+        "topic:world-ocean-monsoon",
+        "topic:world-regional-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "季风是季节性风向变化；印度洋夏季湿气输送、冬季差异；并非只在亚洲存在"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "UNESCO MAB · Kafa",
+      "url": "https://www.unesco.org/en/mab/kafa",
+      "usedBy": [
+        "ethiopian-highlands",
+        "kafa-coffee",
+        "topic:world-plateaus-plains",
+        "topic:world-agriculture-food"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "埃塞俄比亚西南卡法为野生阿拉比卡咖啡重要起源地；森林、生物多样性与咖啡文化"
+        ],
+        "version": "2010设立生物圈保护区；2026-10-11核读",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NASA Earth Observatory · Agriculture Patterns in the Great Plains",
+      "url": "https://science.nasa.gov/earth/earth-observatory/agriculture-patterns-in-the-great-plains-145932/",
+      "usedBy": [
+        "great-plains",
+        "great-plains-wheat",
+        "topic:world-plateaus-plains",
+        "topic:world-agriculture-food"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "美国大平原农牧地块、奥加拉拉含水层与普拉特河补给联系"
+        ],
+        "version": "2019-11-29影像解读；2026-01-31网页更新",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NASA JPL/MISR · The Pampas of Argentina",
+      "url": "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/",
+      "usedBy": [
+        "pampas",
+        "topic:world-plateaus-plains",
+        "topic:world-ecosystems",
+        "topic:world-agriculture-food"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "潘帕斯天然草地与少树环境；大量改为现代农业和牧场；降雨有年际差异"
+        ],
+        "version": "2004卫星影像教育解读",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NOAA · What is upwelling?",
+      "url": "https://oceanservice.noaa.gov/facts/upwelling.html",
+      "usedBy": [
+        "atacama-desert",
+        "namib-sand-sea",
+        "peru-upwelling",
+        "topic:world-deserts",
+        "topic:world-ecosystems",
+        "topic:world-ocean-monsoon"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "风推动表水离开后深部冷水上升；营养盐和高生产力联系"
+        ],
+        "version": "2026-09-23网页更新",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "UNESCO · Namib Sand Sea",
+      "url": "https://whc.unesco.org/en/list/1430/",
+      "usedBy": [
+        "namib-sand-sea",
+        "topic:world-deserts",
+        "topic:world-ecosystems"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "沿海雾漠；砂源经河流、洋流和风搬运；雾是生态水源；遗产范围不等于整个纳米布"
+        ],
+        "version": "世界遗产1430，2013列入；2026-10-11核读",
+        "license": "页面摘要标注CC BY-SA IGO 3.0；本次仅事实核对与原创概述",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NASA Earth Observatory · Dust Storm over the Gobi Desert",
+      "url": "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-gobi-desert-79746/",
+      "usedBy": [
+        "gobi-desert",
+        "topic:world-deserts"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "戈壁跨蒙古南部和中国北部；草地、裸岩、沙地及干涸湖盆；细颗粒尘源"
+        ],
+        "version": "2012-11-27卫星案例",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "UNESCO · Þingvellir National Park",
+      "url": "https://whc.unesco.org/en/list/1152/",
+      "usedBy": [
+        "iceland-rift",
+        "topic:world-tectonics"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "冰岛辛格维利尔裂谷、断崖和活跃构造环境"
+        ],
+        "version": "世界遗产1152，2004列入；2026-10-11核读",
+        "license": "页面摘要标注CC BY-SA IGO 3.0；本次仅事实核对与原创概述",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "USGS · Parkfield: Tectonic Setting",
+      "url": "https://earthquake.usgs.gov/learn/parkfield/geology.php",
+      "usedBy": [
+        "san-andreas-fault",
+        "topic:world-tectonics"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "圣安德烈亚斯是太平洋与北美板块边界的一部分；走滑位移与复杂边界系统"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "ESA WorldCover · Data access",
+      "url": "https://esa-worldcover.org/en/data-access",
+      "usedBy": [
+        "amazon-rainforest",
+        "sundarbans-mangroves",
+        "canadian-boreal-forest",
+        "topic:world-ecosystems",
+        "topic:world-polar-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "2021 v200与2020 v100算法不同；10m土地覆盖、11类；土地覆盖变化不可由两版直接相减断言"
+        ],
+        "version": "WorldCover 2021 v200/2020 v100产品说明",
+        "license": "WorldCover数据CC BY 4.0；此处仅解释方法，未加载产品或复用地图",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "UNESCO · Serengeti National Park",
+      "url": "https://whc.unesco.org/en/list/156/",
+      "usedBy": [
+        "serengeti-savanna",
+        "topic:world-ecosystems"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "热带草原、林地和河流镶嵌；食草动物追随水草迁徙；公园界与生态过程不同"
+        ],
+        "version": "世界遗产156，1981列入；2026-10-11核读",
+        "license": "页面摘要标注CC BY-SA IGO 3.0；本次仅事实核对与原创概述",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "UNESCO · The Sundarbans",
+      "url": "https://whc.unesco.org/en/list/798/",
+      "usedBy": [
+        "sundarbans-mangroves",
+        "topic:world-ecosystems"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "恒河—布拉马普特拉—梅克纳三角洲潮汐河道、泥滩和耐盐红树林；孟加拉与印度跨境自然区"
+        ],
+        "version": "世界遗产798，1997列入；2026-10-11核读",
+        "license": "页面摘要标注CC BY-SA IGO 3.0；本次仅事实核对与原创概述",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "Natural Resources Canada · Fire ecology",
+      "url": "https://natural-resources.canada.ca/forests-forestry/wildland-fires/fire-ecology",
+      "usedBy": [
+        "canadian-boreal-forest",
+        "topic:world-ecosystems",
+        "topic:world-polar-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "加拿大北方森林含针叶、阔叶和混交林；火影响林龄、结构和更新"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NOAA · Ocean currents",
+      "url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents",
+      "usedBy": [
+        "gulf-stream",
+        "topic:world-ocean-monsoon"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "风、密度、地球自转影响海流；墨西哥湾流沿美国东岸输送热量"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NOAA · What are El Niño and La Niña?",
+      "url": "https://oceanservice.noaa.gov/facts/ninonina.html",
+      "usedBy": [
+        "peru-upwelling",
+        "topic:world-ocean-monsoon"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "厄尔尼诺时信风与东太平洋上升流变化；营养盐和渔业联系"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "World Bank · For Mekong Delta Farmers, Diversification is the Key to Climate Resilience",
+      "url": "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience",
+      "usedBy": [
+        "indian-monsoon",
+        "mekong-delta-farming",
+        "topic:world-ocean-monsoon",
+        "topic:world-agriculture-food"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "三角洲淡咸水分区；种养多样化；高堤、洪水和生计调整"
+        ],
+        "version": "2021-10-21世行项目报道",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "EIA · About one-fifth of global LNG trade flows through the Strait of Hormuz",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=65584",
+      "usedBy": [
+        "persian-gulf-energy",
+        "topic:world-energy-industry"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "2024年约20%全球LNG贸易通过霍尔木兹；该统计只描述2024年，不代表2026年通航情况"
+        ],
+        "version": "2025-06-24发布，采用2024历史贸易口径",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NASA Earth Observatory · Escondida Copper Mine, Atacama Desert, Chile",
+      "url": "https://science.nasa.gov/earth/earth-observatory/escondida-copper-mine-atacama-desert-chile-43394/",
+      "usedBy": [
+        "atacama-copper",
+        "topic:world-energy-industry"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "露天铜矿、选矿与尾矿；矿区位于阿塔卡马；精矿经管道联系海港"
+        ],
+        "version": "2009-12-09影像，2010解读；设施流程按当时记录",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "IEA · Offshore Energy Outlook 2018",
+      "url": "https://www.iea.org/reports/offshore-energy-outlook-2018",
+      "usedBy": [
+        "north-sea-energy",
+        "topic:world-energy-industry"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "北海成熟油气产区与海上风电并存；海上能源需要港口、电网、市场和环境协调"
+        ],
+        "version": "2018报告，仅用结构性地理案例；不引用预测或当前份额",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "World Bank · Greening Viet Nam’s Rice Bowl: A Mekong Delta Success Story",
+      "url": "https://www.worldbank.org/en/news/feature/2024/05/14/greening-viet-nam-s-rice-bowl-a-mekong-delta-success-story",
+      "usedBy": [
+        "mekong-delta-farming",
+        "topic:world-agriculture-food"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "湄公河三角洲稻作项目；节水、降甲烷、管理与收益的关系"
+        ],
+        "version": "2024-05-14世行项目报道",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "Port of Rotterdam Authority · Inland shipping",
+      "url": "https://www.portofrotterdam.com/en/logistics/connections/intermodal-transportation/inland-shipping",
+      "usedBy": [
+        "rotterdam-port",
+        "topic:world-energy-industry",
+        "topic:world-transport-trade"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "莱茵河、马斯河与运河提供港口腹地水运联系"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "Maritime and Port Authority of Singapore · Strong growth momentum for Maritime Singapore",
+      "url": "https://www.mpa.gov.sg/media-centre/details/strong-growth-momentum-for-maritime-singapore",
+      "usedBy": [
+        "singapore-port",
+        "topic:world-transport-trade"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "2024年新加坡集装箱吞吐约90%为中转；码头、航线与补给构成枢纽"
+        ],
+        "version": "2025年官方2024年度回顾；不表示实时港口拥堵或航线",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NSIDC · How does Antarctic sea ice differ from Arctic sea ice?",
+      "url": "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice",
+      "usedBy": [
+        "arctic-region",
+        "southern-ocean",
+        "topic:world-ocean-monsoon",
+        "topic:world-polar-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "北极海洋被大陆围绕，南极大陆被海洋围绕；海冰季节周期相反"
+        ],
+        "version": "2022-01-07解释页；只采用稳定物理机制，不采用旧版南极趋势判断",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NSIDC · Arctic",
+      "url": "https://nsidc.org/learn/cryosphere-glossary/arctic",
+      "usedBy": [
+        "arctic-region",
+        "topic:world-polar-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "北极区域包括北冰洋及欧亚、北美相邻陆地"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "Arctic Council · Arctic Peoples",
+      "url": "https://arctic-council.org/explore/topics/arctic-peoples/",
+      "usedBy": [
+        "arctic-region",
+        "topic:world-polar-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "北极是包含原住民、城市居民等群体的有人居住地区；自然变化影响生活与文化"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "title": "NOAA AOML · Antarctic Circumpolar Current",
+      "url": "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/index.php",
+      "usedBy": [
+        "southern-ocean",
+        "topic:world-ocean-monsoon",
+        "topic:world-polar-comparison"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "claims": [
+          "南极绕极流绕地球一周，是南大洋的重要环流"
+        ],
+        "version": "2026-10-11核读网页；未使用实时数据",
+        "license": "原网页保留权利；仅核对事实并原创中文概述，未复制图文或下载地理数据",
+        "processing": "通过联网检索/打开原发布机构页面核对列出事实。正文为原创中文概述；点位为依据地区位置选取的约略观察中心，不用作精确边界、设施测量或导航。未制作连续分布数据。"
+      }
+    },
+    {
+      "url": "https://doi.org/10.5281/zenodo.18613195",
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "Glottography v2.0; original atlas 2007",
+        "license": "CC BY 4.0",
+        "processing": "仅contemporary真实语言级面；按Glottocode连接Glottolog 5.3，简化与ID校验见language-area-sources及验证记录。",
+        "claims": [
+          "使用区数据来源为2007图集的数字化区域，不是最新人口普查",
+          "多语言区域欠表示，未覆盖处不代表没有语言使用者",
+          "真实语言级面与语系可以分别表达，不能用参考点扩散推画范围"
+        ]
+      },
+      "title": "Glottography · 2007世界语言图集使用区（v2.0）",
+      "usedBy": [
+        "topic:map-language"
+      ]
+    },
+    {
+      "url": "https://www.nature.com/articles/s41597-025-05828-6",
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "Glottography v2.0; original atlas 2007",
+        "license": "CC BY 4.0",
+        "processing": "仅contemporary真实语言级面；按Glottocode连接Glottolog 5.3，简化与ID校验见language-area-sources及验证记录。",
+        "claims": [
+          "使用区数据来源为2007图集的数字化区域，不是最新人口普查",
+          "多语言区域欠表示，未覆盖处不代表没有语言使用者",
+          "真实语言级面与语系可以分别表达，不能用参考点扩散推画范围"
+        ]
+      },
+      "title": "Scientific Data · 世界语言使用区数字化与验证",
+      "usedBy": [
+        "topic:map-language"
+      ]
+    },
+    {
+      "title": "中国科学院地理资源所 · 全球海陆岸线面积研究（2019）",
+      "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html",
+      "usedBy": [
+        "topic:world-continents"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "2019论文摘要，2015±2年遥感海陆岸线数据；网页快照SHA-256 cca4da43eac3d9f3c73f29e08ed1106f846b50746d0e3beb501aa317d45efbac",
+        "license": "原文章版权归原作者与机构；仅使用并标注面积事实，图表与解释原创",
+        "processing": "同一研究的七洲面积转换为百万平方千米，四舍五入2位；从零基线绘制条形；不混入其他来源的人口或面积。",
+        "claims": [
+          "七大洲面积原始值与同一套海陆岸线口径",
+          "大洋洲包含所归属岛礁，非澳大利亚国家面积"
+        ]
+      }
+    },
+    {
+      "title": "USGS · 板块边界数据与原始归属",
+      "url": "https://earthquake.usgs.gov/arcgis/rest/services/eq/map_plateboundaries/MapServer",
+      "usedBy": [
+        "topic:world-tectonics"
+      ],
+      "review": {
+        "accessedAt": "2026-10-11",
+        "version": "USGS MapServer第1层完整ID快照，Bird (2003) PB2002",
+        "license": "USGS公开服务；保留Bird原始归属与USGS使用条件，详见auxiliary-sources.json",
+        "processing": "按OBJECTID完整目录分批读取，不连接案例点生成边界；保持源LABEL分类",
+        "claims": [
+          "全球概化汇聚、分离与转换边界类别"
+        ]
+      }
+    }
+  ],
+  "featureBindingReview": {
+    "reviewedAt": "2026-10-11",
+    "method": "每个非气候卡采用明确真实要素ID或空数组；逐卡比对名称、尺度、坐标与对象归属，独立审查全部绑定和人文量化来源，不采用模糊别名或邻近点替代身份。",
+    "naturalCards": 77,
+    "boundCards": 107,
+    "bindingsFile": "src/data/feature-bindings.json",
+    "pointOnlyCards": [
+      "inner-mongolian-plateau",
+      "ganges-plain",
+      "southeast-asia",
+      "western-europe",
+      "middle-east",
+      "sub-saharan-africa",
+      "pacific-ocean",
+      "atlantic-ocean",
+      "indian-ocean",
+      "arctic-ocean",
+      "malacca-strait",
+      "gibraltar-strait",
+      "bering-strait",
+      "suez-canal",
+      "panama-canal",
+      "mediterranean",
+      "world-population",
+      "population-density",
+      "china-population",
+      "china-urbanization",
+      "india-population",
+      "religious-diversity",
+      "christianity",
+      "islam",
+      "hinduism",
+      "buddhism",
+      "unaffiliated",
+      "language-diversity",
+      "official-vs-mother-tongue",
+      "mandarin-language",
+      "english-language",
+      "arabic-language",
+      "rice-farming",
+      "china-grain",
+      "ruhr-industry",
+      "yangtze-delta",
+      "pearl-delta",
+      "south-north-water",
+      "grand-canal",
+      "northern-china",
+      "southern-china",
+      "northwestern-china",
+      "qinghai-tibet-region",
+      "yangtze-middle-lower-plain",
+      "earth-rotation",
+      "earth-season-contrast",
+      "earth-longitude-time",
+      "earth-coordinates",
+      "earth-scale",
+      "earth-contours",
+      "taiwan-province",
+      "northeast-blacksoil",
+      "hetao-irrigation",
+      "xilingol-pasture",
+      "qinshui-coal",
+      "qarhan-resources",
+      "hexi-renewables",
+      "three-gorges-project",
+      "ningbo-zhoushan-port",
+      "zhengzhou-transport",
+      "qinghai-tibet-railway",
+      "liaodong-hills",
+      "shandong-hills",
+      "southeast-hills",
+      "africa-continent",
+      "europe-continent",
+      "north-america-continent",
+      "south-america-continent",
+      "oceania-region",
+      "brazilian-highlands",
+      "deccan-plateau",
+      "ethiopian-highlands",
+      "great-plains",
+      "pampas",
+      "atacama-desert",
+      "namib-sand-sea",
+      "gobi-desert",
+      "iceland-rift",
+      "san-andreas-fault",
+      "hawaii-hotspot",
+      "amazon-rainforest",
+      "serengeti-savanna",
+      "okavango-delta",
+      "sundarbans-mangroves",
+      "canadian-boreal-forest",
+      "gulf-stream",
+      "peru-upwelling",
+      "indian-monsoon",
+      "persian-gulf-energy",
+      "atacama-copper",
+      "north-sea-energy",
+      "great-plains-wheat",
+      "kafa-coffee",
+      "mekong-delta-farming",
+      "rotterdam-port",
+      "singapore-port",
+      "gotthard-rail",
+      "arctic-region",
+      "southern-ocean"
+    ],
+    "notes": [
+      "鄱阳湖仅绑定lake-1159114015；安徽鄱湖lake-1159114699是不同对象。",
+      "内蒙古高原与整个蒙古高原不是同义；恒河平原与印度河—恒河平原不是等同范围。",
+      "长江经核对合并沱沱河、通天河、金沙江和下游干流；珠江水系对应西江、北江、东江主要河道。",
+      "五大湖只绑定五个主体湖泊，圣克莱尔湖、独立湖湾与连接水道作为其他地图对象。",
+      "里海使用Natural Earth 50m陆地内环导出的真实湖面，应保留独立来源/比例尺说明。",
+      "洞庭湖图形不能当作完整丰水期湖区；死海南部水域需要区分人工蒸发池。",
+      "新增国家、11省级单位、台湾主岛、富士山与亚洲参考面均核对真实对象ID；纯概念卡与未核对范围使用定位点。",
+      "自然地理标注面仅是Natural Earth概化参考范围，不等同精确地貌边界；行政面不等同连续建成区。",
+      "新增准噶尔、柴达木使用明确 Natural Earth 要素 ID；长江中下游平原保留空绑定与代表点。",
+      "十四座主峰逐一核对经典名录与 Wikidata 实体 ID，记录坐标快照版本；全部为真实参考点，未生成山体范围。"
+    ],
+    "nonClimateCards": 206
+  },
+  "climateNoteCount": 30,
+  "topicCount": 40,
+  "curriculumCoverage": {
+    "path": "data/research/curriculum-coverage.json",
+    "referenceTitle": "教育部 · 义务教育地理课程标准（2022年版）",
+    "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582354066450.pdf",
+    "note": "2022教育部公开PDF逐页主题对照、2025日常修订版本证据及全文待核限制分别记录；精选覆盖与后续缺口区分，未声明最新全文、全教材或全课标完备。",
+    "latestIdentifiedRevision": "2022年版2025年修订（日常修订版）",
+    "revisionEvidence": [
+      {
+        "title": "高等教育出版社 · 2022年版2025年修订地理课标权威解读（2026）",
+        "url": "https://www.hep.com.cn/book/show/fd1addc8-ed06-497e-8c95-c81b83bd8d25"
+      },
+      {
+        "title": "乐山市教育局 · 2026初中学业考试命题依据及2027届地理课标版本",
+        "url": "https://www.leshan.gov.cn/lsswszf/jyxxzcwj/92337828/787189626822725.html"
+      }
+    ]
+  },
+  "humanDataPeriods": {
+    "populationMap": {
+      "source": "JRC GHS-POP E2020 R2023A",
+      "period": "2020",
+      "nativeResolution": "1km",
+      "displayAggregation": "0.5°",
+      "note": "居住人口空间模型估计；格网聚合人口/球面格网面积计算密度，不是当前普查、实时人数或2024 WDI全国统计。"
+    },
+    "countryOverview": {
+      "source": "World Bank WDI SP.POP.TOTL / SP.URB.TOTL.IN.ZS",
+      "period": "2024",
+      "note": "各指标单独显示年份；缺失null不当零，城镇定义因国别不同。"
+    },
+    "religionKnowledge": {
+      "source": "Pew Research Center 2025报告",
+      "period": "2020估计，报告与部分2010基线方法有修订",
+      "note": "全球归属和地区比例用于知识解释，与地图CIA历史国别资料不是同套同年数据。"
+    },
+    "religionMap": {
+      "source": "CIA World Factbook固定历史快照",
+      "version": "144d6977b2b01ac1cbd220de754c0a005616760b",
+      "period": "各条目年份独立，未注明保留未知",
+      "note": "国别统计代理不是局地或个人边界；population、affiliated、practicing、mixed等不同分母不可混成全国人口比例，重叠归属可能导致合计超过100%。"
+    },
+    "languageMap": {
+      "source": "Glottolog 5.3",
+      "period": "5.3目录快照，不是同年人口调查",
+      "note": "language级语言参考点，包含濒危和消亡语言；不表示使用人口、连续范围、官方地位或每个居民母语。"
+    },
+    "countryLanguageOverview": {
+      "source": "CIA World Factbook固定历史快照",
+      "version": "144d6977b2b01ac1cbd220de754c0a005616760b",
+      "note": "原文列举与独立语言标签，不视为法定完整清单、百分比排名或局地边界；括号词源中的语言不自动算使用语言。"
+    }
+  },
+  "inputManifests": [
+    "public/data/sources.json",
+    "public/data/learning-data-sources.json",
+    "public/data/country-context-sources.json"
+  ],
+  "sourceCount": 270,
+  "themeSourceManifest": "/data/theme-sources.json",
+  "editorialRevision": {
+    "version": "topic-intros-2026-10-11-v2",
+    "processing": "逐一重读40个主题与122个模块，手工重写全部摘要、观察问题、80段主题解释及模块简介/展开说明；按内容选择数量条形图、运动示意与对照表。量化图表保留同源数值、单位、时期与处理说明，比较表根据各主题已附来源原创概括。",
+    "license": "知识介绍为原创；参考文章版权归原发布机构。地图及输入数据沿用各自来源清单许可。",
+    "reviewedSourceCount": 93,
+    "mergedTopicIds": [
+      "world-mountains",
+      "world-lake-origins",
+      "world-population-scales",
+      "world-culture-evidence"
+    ],
+    "topicReviewManifest": "/data/topic-intro-review.json"
+  },
+  "languageAreaSourceManifest": "/data/language-area-sources.json",
+  "auxiliarySourceManifest": "/data/auxiliary-sources.json",
+  "auxiliarySourcesReviewedAt": "2026-10-20",
+  "basinDataSource": {
+    "id": "basinatlas-l3",
+    "dataset": "BasinATLAS v1.0, level 03",
+    "doi": "10.6084/m9.figshare.9890531.v1",
+    "license": "CC BY 4.0",
+    "review": "由官方新输入重新生成，不重用旧HydroBASINS几何缓存；五个核心字段和输入校验见辅助图层来源清单。"
+  }
+}

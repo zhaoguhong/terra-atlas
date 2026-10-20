@@ -1,0 +1,43 @@
+{
+  "reviewedAt": "2026-10-09",
+  "scope": "用户主动开启的在线详细地图与三维地形；核心地图、精选知识与本地高程点查仍随静态站点提供。",
+  "delivery": "浏览器按当前视窗直接请求 HTTPS 瓦片；不开启时不请求对应服务，关闭时中止元数据请求并移除该源及其瓦片缓存。服务器不保存或代理全球地图、DEM 档案。",
+  "versionPolicy": "在线服务为持续更新输入，运行时读取服务 TileJSON 中的实际瓦片地址，不把访问日期当作数据版本，不为动态远程输入声明固定 SHA-256。已打包的本地数据仍由各自来源清单记录版本与校验值。",
+  "services": [
+    {
+      "id": "openfreemap-detail",
+      "name": "OpenFreeMap / OpenMapTiles / OpenStreetMap",
+      "metadataUrl": "https://tiles.openfreemap.org/planet",
+      "documentationUrl": "https://openfreemap.org/quick_start/",
+      "attributionUrl": "https://www.openstreetmap.org/copyright",
+      "version": "OpenFreeMap 持续更新的 planet 服务；数据日期以本次 TileJSON 提供的 tiles 路径为准。",
+      "license": "OpenStreetMap 数据遵循 ODbL；OpenMapTiles 须保留署名；OpenFreeMap 服务及项目许可与地图数据许可分开。本站使用自编图层样式。",
+      "processing": "使用 TileJSON 广告的 XYZ 向量瓦片，限制源 maxzoom ≤ 14；仅绘制土地覆盖、水域、河道、道路与城镇文字。本地国家/省区轮廓、对象 ID、知识卡与精选标注不替换。名称依次使用非空 name:zh-Hans、name:zh、name:en、name；本地字体，不打包全球字形或雪碧图。",
+      "maximumSourceZoom": 14,
+      "quality": "OSM 社区地图随地区和更新时间存在详略差异；在线细节用于自由观察，不把远程名称自动绑定到本站知识卡。"
+    },
+    {
+      "id": "mapterhorn-terrain",
+      "name": "Mapterhorn",
+      "metadataUrl": "https://tiles.mapterhorn.com/tilejson.json",
+      "documentationUrl": "https://mapterhorn.com/data-access/",
+      "attributionUrl": "https://mapterhorn.com/attribution/",
+      "sourceCatalogUrl": "https://github.com/mapterhorn/mapterhorn/blob/main/source-catalog/glo30/metadata.json",
+      "version": "Mapterhorn 持续更新的全球 DEM 瓦片服务；输入地区与版本以服务来源目录为准，包括 Copernicus GLO-30 等多种高程来源。",
+      "license": "Mapterhorn 软件代码许可不代表 DEM 数据许可；不同来源遵循各自条款，统一署名 Mapterhorn 并链接完整来源/许可页。",
+      "processing": "TileJSON 广告的 Terrarium 栅格 DEM，512 像素，限制源 maxzoom ≤ 12；MapLibre setTerrain 真实地形，垂直夸张系数 1，并增加地形阴影。首次主动开启采用 45° 视角，保存/分享的明确视角优先；关闭或失败恢复二维。本地 Mapzen/Tilezen 局部高程点查保持独立。",
+      "encoding": "terrarium",
+      "tileSize": 512,
+      "maximumSourceZoom": 12,
+      "exaggeration": 1,
+      "quality": "GLO-30 为约 30 米 DSM，其他地区可能使用不同来源与分辨率，包含地表对象及模型误差；瓦片缩放等级不等于原始精度，不用作权威峰顶海拔或测绘结果。"
+    }
+  ],
+  "validation": {
+    "method": "来源文档与 TileJSON 格式核对；运行时校验 HTTPS 同源瓦片地址、XYZ 方案、缩放范围及 DEM 编码/尺寸。浏览器回归使用内存生成的有效 MVT 与 Terrarium PNG，验证真实解码/绘制、懒加载、关闭取消、失败回退、重试及视图恢复。",
+    "limitations": "测试夹具不代表服务当前在线率；未声明中国大陆网络可达性或可用性保障。正式服务加载结果取决于访问者网络与供应方。",
+    "timeoutsMilliseconds": { "metadata": 8000, "initialViewportTiles": 15000 },
+    "tileCache": { "maximumTilesPerSource": 64, "maximumZoomLevels": 3 },
+    "packageLimitBytes": 100000000
+  }
+}

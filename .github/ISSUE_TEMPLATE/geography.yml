@@ -1,0 +1,17 @@
+name: 地理内容纠错
+description: 提供可靠来源，纠正文字、范围或数据口径
+body:
+  - type: textarea
+    id: content
+    attributes:
+      label: 地点、主题与建议修改
+      description: 请附分享链接，引用有问题的短句或说明具体地图范围。
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: 可核对的来源与资料时期
+      description: 请提供官方数据、原始研究或科研教育机构来源，注明版本、日期与适用范围。
+    validations:
+      required: true

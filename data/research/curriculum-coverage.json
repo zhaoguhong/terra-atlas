@@ -1,0 +1,869 @@
+{
+  "reviewedAt": "2026-10-11",
+  "reference": {
+    "title": "教育部 · 义务教育地理课程标准（2022年版）",
+    "version": "2022年版",
+    "publishedBy": "中华人民共和国教育部",
+    "noticeSignedAt": "2022-03-25",
+    "effectiveFrom": "2022年秋季学期",
+    "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582354066450.pdf",
+    "noticeUrl": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html",
+    "directoryUrl": "https://www.moe.gov.cn/jyb_xxgk/xxgk/neirong/fenlei/kcjc/kcjc_js/jcjs_kcbz/",
+    "reviewMethod": "下载教育部官方PDF原件，读取主要课程内容页；扫描页使用本地Vision OCR，结合官方通知与课程标准目录核对。页码为书内印刷页码，不是PDF阅读器页序。",
+    "latestIdentifiedRevision": {
+      "title": "义务教育地理课程标准日常修订版（2022年版2025年修订）",
+      "evidence": "高等教育出版社2026-05-12出版的课程教材研究所/地理课标修订组解读明确确认版本；乐山市教育局2026-03通知将2027届地理命题依据列为2022年版2025年修订。",
+      "sources": [
+        {
+          "title": "高等教育出版社 · 2022年版2025年修订地理课标权威解读（2026）",
+          "url": "https://www.hep.com.cn/book/show/fd1addc8-ed06-497e-8c95-c81b83bd8d25"
+        },
+        {
+          "title": "乐山市教育局 · 2026初中学业考试命题依据及2027届地理课标版本",
+          "url": "https://www.leshan.gov.cn/lsswszf/jyxxzcwj/92337828/787189626822725.html"
+        }
+      ],
+      "fullTextRead": false,
+      "limitation": "本次未从教育部公开资料检索到可逐页读取的2025修订原件。2022原版不是被宣称为最新全文；下面印刷页码只属于已核查的2022官方PDF。2025修订逐条变化的全文比对列为后续核查，不能以出版简介代替原文认证。"
+    }
+  },
+  "purpose": "参考中国与世界地理公开课标主题检查知识缺口，继续服务个人自由探索，不强制教材章节或固定学习顺序；逐页主题对照基于已读取的2022官方PDF，2025日常修订另记录版本证据与待核限制。",
+  "scopeNote": "211张精选卡片、30种气候笔记与40个自由主题；只记录实际实现的精选内容，不声称全部教材或课标已覆盖。",
+  "contentCount": 211,
+  "climateNoteCount": 30,
+  "topicCount": 40,
+  "statusDefinitions": {
+    "selected": "该主题有精选内容，仍不表示标准全部要求覆盖",
+    "partial": "已有内容只覆盖主题的一部分，明确列出待补项",
+    "future": "本次没有形成完整专题交付，保留后续缺口"
+  },
+  "coverage": [
+    {
+      "id": "map-skills",
+      "title": "地图、尺度与空间观察",
+      "standardPrintedPages": "7、11—19",
+      "status": "selected",
+      "cardIds": [
+        "asia-continent",
+        "population-density",
+        "china-country",
+        "taiwan-region",
+        "world-population",
+        "china-population",
+        "india-population",
+        "china-urbanization",
+        "beijing",
+        "shanghai",
+        "guangdong",
+        "sichuan",
+        "taihu",
+        "earth-coordinates",
+        "earth-scale",
+        "earth-contours"
+      ],
+      "topicIds": [
+        "map-population",
+        "china-city-environment",
+        "earth-map-reading"
+      ],
+      "implemented": [
+        "地图缩放、经纬网、真实要素点击与代表坐标导航；专门解释经纬定位、比例尺与等高线，并提供纸图比例尺换算实验。",
+        "主题介绍—学习模块—成员解读逐层阅读；返回主题、上一地点及浏览器历史恢复地图与分布筛选。"
+      ],
+      "remaining": [
+        "地球仪、完整等高线交互练习、遥感影像判读及实地调查任务仍可补充。"
+      ]
+    },
+    {
+      "id": "earth-space-motion",
+      "title": "地球的宇宙环境与运动",
+      "standardPrintedPages": "7—11",
+      "status": "selected",
+      "cardIds": [
+        "earth-rotation",
+        "earth-season-contrast",
+        "earth-longitude-time"
+      ],
+      "topicIds": [
+        "earth-seasons"
+      ],
+      "implemented": [
+        "自转、昼夜、轴倾斜与季节、地方时和民用时区的区别；可调纬度/季节的理想昼长实验及经度地方时实验。"
+      ],
+      "remaining": [
+        "没有完整太阳系专题、太阳高度角连续模拟或各国实时民用时区数据库。模型明确忽略折射、太阳视半径与地形。"
+      ]
+    },
+    {
+      "id": "land-sea-continent",
+      "title": "海陆、大洲、大洋与板块",
+      "standardPrintedPages": "11—12",
+      "status": "selected",
+      "cardIds": [
+        "asia-continent",
+        "antarctica",
+        "pacific-ocean",
+        "atlantic-ocean",
+        "indian-ocean",
+        "arctic-ocean",
+        "fujisan",
+        "himalayas",
+        "andes",
+        "east-african-rift",
+        "rockies",
+        "alps",
+        "urals",
+        "malacca-strait",
+        "gibraltar-strait",
+        "bering-strait",
+        "mediterranean",
+        "suez-canal",
+        "panama-canal",
+        "europe-continent",
+        "africa-continent",
+        "north-america-continent",
+        "south-america-continent",
+        "oceania-region",
+        "iceland-rift",
+        "san-andreas-fault",
+        "hawaii-hotspot"
+      ],
+      "topicIds": [
+        "world-mountain-ranges",
+        "world-sea-connections",
+        "world-continents",
+        "world-tectonics"
+      ],
+      "implemented": [
+        "七大洲精选综合卡、四大洋入口与南大洋约定说明；碰撞、俯冲、离散、转换和热点案例，区分地震火山机制与实时灾害预报。"
+      ],
+      "remaining": [
+        "未绘制完整板块边界、全球地震点和海底地形专用数据层；案例点不是板块范围。"
+      ]
+    },
+    {
+      "id": "landforms-water",
+      "title": "地形、河流与湖泊联系",
+      "standardPrintedPages": "11—12、16—18",
+      "status": "selected",
+      "cardIds": [
+        "himalayas",
+        "tian-shan",
+        "kunlun",
+        "qinling",
+        "greater-khingan",
+        "qilian",
+        "andes",
+        "rockies",
+        "alps",
+        "urals",
+        "tibetan-plateau",
+        "loess-plateau",
+        "inner-mongolian-plateau",
+        "yunnan-guizhou-plateau",
+        "north-china-plain",
+        "northeast-china-plain",
+        "sichuan-basin",
+        "tarim-basin",
+        "taklamakan",
+        "sahara",
+        "amazon-basin",
+        "ganges-plain",
+        "east-african-rift",
+        "yangtze",
+        "yellow-river",
+        "pearl-river",
+        "mekong",
+        "amur",
+        "tarim-river",
+        "nile",
+        "amazon-river",
+        "mississippi",
+        "rhine",
+        "danube",
+        "ganges",
+        "qinghai-lake",
+        "poyang-lake",
+        "dongting-lake",
+        "taihu",
+        "baikal",
+        "great-lakes",
+        "victoria",
+        "tanganyika",
+        "caspian",
+        "dead-sea",
+        "fujisan",
+        "yangtze-middle-lower-plain",
+        "junggar-basin",
+        "qaidam-basin",
+        "summit-everest",
+        "summit-k2",
+        "summit-kangchenjunga",
+        "summit-lhotse",
+        "summit-makalu",
+        "summit-cho-oyu",
+        "summit-dhaulagiri",
+        "summit-manaslu",
+        "summit-nanga-parbat",
+        "summit-annapurna-i",
+        "summit-gasherbrum-i",
+        "summit-broad-peak",
+        "summit-gasherbrum-ii",
+        "summit-shishapangma",
+        "shanghai",
+        "xinjiang",
+        "egypt",
+        "usa",
+        "liaodong-hills",
+        "shandong-hills",
+        "southeast-hills",
+        "deccan-plateau",
+        "ethiopian-highlands",
+        "brazilian-highlands",
+        "great-plains",
+        "pampas",
+        "gobi-desert",
+        "atacama-desert",
+        "namib-sand-sea",
+        "australia"
+      ],
+      "topicIds": [
+        "china-water-journey",
+        "china-dry-water",
+        "world-river-contrast",
+        "world-lakes",
+        "china-plateaus",
+        "china-plains",
+        "china-basins",
+        "china-mountain-ranges",
+        "china-rivers",
+        "world-high-peaks",
+        "world-mountain-ranges",
+        "china-relief-steps",
+        "china-lakes",
+        "world-plateaus-plains",
+        "world-deserts"
+      ],
+      "implemented": [
+        "中国四大高原、三大平原、四大盆地、主要山系与丘陵，以及世界山系、高原平原、沙漠、河湖和十四座8000米主峰；主题与成员分别说明位置、成因和联系。"
+      ],
+      "remaining": [
+        "典型海岸、冰川和河流地貌可继续精选；对象与参考点不等于所有地貌或精确范围。"
+      ]
+    },
+    {
+      "id": "weather-climate",
+      "title": "天气、气候与成因判读",
+      "standardPrintedPages": "11—12、16—18",
+      "status": "selected",
+      "cardIds": [
+        "climate-a",
+        "climate-b",
+        "climate-c",
+        "climate-d",
+        "climate-e",
+        "hong-kong",
+        "japan",
+        "australia",
+        "qinghai-tibet-region",
+        "kenya",
+        "east-african-rift",
+        "brazil",
+        "tibetan-plateau",
+        "antarctica",
+        "qinling",
+        "north-china-plain",
+        "northeast-china-plain",
+        "sichuan",
+        "guangdong",
+        "yunnan",
+        "gulf-stream",
+        "peru-upwelling",
+        "atacama-desert",
+        "indian-monsoon",
+        "deccan-plateau",
+        "southern-ocean",
+        "amazon-rainforest",
+        "canadian-boreal-forest",
+        "serengeti-savanna",
+        "pampas",
+        "okavango-delta",
+        "sundarbans-mangroves",
+        "namib-sand-sea"
+      ],
+      "topicIds": [
+        "world-latitude-height",
+        "china-north-south",
+        "world-ocean-monsoon",
+        "world-ecosystems"
+      ],
+      "implemented": [
+        "5大组与30细分笔记统一Beck V3；分类格网及1991—2020月温月雨资料支持比较。",
+        "洋流、上升流、季风与厄尔尼诺机制，以及森林、草原、湿地、红树林案例；区分气候分类、生态系统与土地覆盖产品。"
+      ],
+      "remaining": [
+        "天气预报符号、实际天气、独立连续温度降水图仍不完整；没有用Köppen或生态案例点冒充其他完整分布体系。"
+      ]
+    },
+    {
+      "id": "population-settlement",
+      "title": "人口、城乡聚落与文化多样性",
+      "standardPrintedPages": "11—12、16—18",
+      "status": "partial",
+      "cardIds": [
+        "world-population",
+        "population-density",
+        "china-population",
+        "china-urbanization",
+        "india-population",
+        "beijing",
+        "shanghai",
+        "hong-kong",
+        "macao"
+      ],
+      "topicIds": [
+        "map-population",
+        "china-city-environment"
+      ],
+      "implemented": [
+        "总数/密度/城镇比例与行政城区区别；UN 2024、2020普查、GHS2020模型与WDI2024资料分别解释。"
+      ],
+      "remaining": [
+        "人口迁移、年龄结构与城乡景观的完整专题尚缺；未用人种外貌或地图统计推断个人身份。"
+      ]
+    },
+    {
+      "id": "religion-language",
+      "title": "语言、宗教与尊重文化差异",
+      "standardPrintedPages": "11—12",
+      "status": "selected",
+      "cardIds": [
+        "religious-diversity",
+        "christianity",
+        "islam",
+        "hinduism",
+        "buddhism",
+        "unaffiliated",
+        "language-diversity",
+        "official-vs-mother-tongue",
+        "mandarin-language",
+        "english-language",
+        "arabic-language"
+      ],
+      "topicIds": [
+        "map-religion",
+        "map-language"
+      ],
+      "implemented": [
+        "宗教与语言分布分别介绍资料口径、国别与语言点尺度、尊重个体差异；文化资料口径已合并到相应主题。"
+      ],
+      "remaining": [
+        "更多城市多语、文化景观和少数语言案例可续补；国家统计不能代表每个局地或个人。"
+      ]
+    },
+    {
+      "id": "development-cooperation",
+      "title": "发展差异、区域合作与全球联系",
+      "standardPrintedPages": "12—15",
+      "status": "selected",
+      "cardIds": [
+        "western-europe",
+        "sub-saharan-africa",
+        "middle-east",
+        "ruhr-industry",
+        "yangtze-delta",
+        "pearl-delta",
+        "suez-canal",
+        "panama-canal",
+        "pacific-ocean",
+        "atlantic-ocean",
+        "indian-ocean",
+        "arctic-ocean",
+        "malacca-strait",
+        "gibraltar-strait",
+        "bering-strait",
+        "mediterranean",
+        "persian-gulf-energy",
+        "atacama-copper",
+        "north-sea-energy",
+        "rotterdam-port",
+        "great-plains-wheat",
+        "mekong-delta-farming",
+        "rice-farming",
+        "pampas",
+        "kafa-coffee",
+        "china-grain",
+        "singapore-port",
+        "gotthard-rail"
+      ],
+      "topicIds": [
+        "world-sea-connections",
+        "world-energy-industry",
+        "world-agriculture-food",
+        "world-transport-trade"
+      ],
+      "implemented": [
+        "资源开采、能源结构与产业转型、农业生产和粮食系统、港口腹地及越岭交通案例；历史统计标明年份，不视为实时产量或通航情况。"
+      ],
+      "remaining": [
+        "统一年份的GDP与发展指标、国际组织、实时贸易及完整交通网络尚未提供。"
+      ]
+    },
+    {
+      "id": "world-regions-countries",
+      "title": "世界区域、国家与极地",
+      "standardPrintedPages": "13—15",
+      "status": "selected",
+      "cardIds": [
+        "asia-continent",
+        "southeast-asia",
+        "western-europe",
+        "middle-east",
+        "sub-saharan-africa",
+        "japan",
+        "india",
+        "usa",
+        "russia",
+        "brazil",
+        "australia",
+        "egypt",
+        "indonesia",
+        "germany",
+        "kenya",
+        "antarctica",
+        "east-african-rift",
+        "tibetan-plateau",
+        "climate-a",
+        "climate-e",
+        "nile",
+        "amazon-river",
+        "amazon-basin",
+        "ganges",
+        "ganges-plain",
+        "mississippi",
+        "europe-continent",
+        "africa-continent",
+        "north-america-continent",
+        "south-america-continent",
+        "oceania-region",
+        "arctic-region",
+        "arctic-ocean",
+        "southern-ocean",
+        "canadian-boreal-forest"
+      ],
+      "topicIds": [
+        "world-latitude-height",
+        "world-river-contrast",
+        "world-continents",
+        "world-polar-comparison",
+        "world-regional-comparison"
+      ],
+      "implemented": [
+        "七大洲综合入口，代表国家、宽泛区域的自然—生产—联系比较，以及南北极海陆格局、冰冻圈与居民活动的区别。"
+      ],
+      "remaining": [
+        "不是所有国家与地区百科；首都和行政机构资料保留原条目时期，不视为实时法律状态。"
+      ]
+    },
+    {
+      "id": "china-territory-provinces",
+      "title": "中国疆域与省级行政区",
+      "standardPrintedPages": "16—18",
+      "status": "selected",
+      "cardIds": [
+        "china-country",
+        "beijing",
+        "shanghai",
+        "guangdong",
+        "sichuan",
+        "xinjiang",
+        "inner-mongolia",
+        "heilongjiang",
+        "hainan-province",
+        "yunnan",
+        "hong-kong",
+        "macao",
+        "taiwan-region",
+        "tianjin",
+        "hebei",
+        "shanxi",
+        "liaoning",
+        "jilin",
+        "jiangsu",
+        "zhejiang",
+        "anhui",
+        "fujian",
+        "jiangxi",
+        "shandong",
+        "henan",
+        "hubei",
+        "hunan",
+        "guangxi",
+        "chongqing",
+        "guizhou",
+        "xizang",
+        "shaanxi",
+        "gansu",
+        "qinghai",
+        "ningxia",
+        "taiwan-province"
+      ],
+      "topicIds": [
+        "china-provinces"
+      ],
+      "implemented": [
+        "34个省级行政单位均有独立入口及地形、水系、生产与区域联系解读；模块按地区组织，地图只绑定范围一致的真实参考图形。",
+        "台湾省、台湾主岛和不同资料中的统计范围明确区分；未与范围不一致的概化面强行绑定。"
+      ],
+      "remaining": [
+        "省区详卡不等于完整行政区划名录；市县级内容、地方历史与实时行政变化未全面覆盖。"
+      ]
+    },
+    {
+      "id": "china-natural-patterns",
+      "title": "中国自然环境与水资源",
+      "standardPrintedPages": "16—18",
+      "status": "selected",
+      "cardIds": [
+        "tibetan-plateau",
+        "loess-plateau",
+        "north-china-plain",
+        "northeast-china-plain",
+        "sichuan-basin",
+        "tarim-basin",
+        "yangtze",
+        "yellow-river",
+        "pearl-river",
+        "qinghai-lake",
+        "poyang-lake",
+        "dongting-lake",
+        "south-north-water",
+        "yangtze-middle-lower-plain",
+        "junggar-basin",
+        "qaidam-basin",
+        "shanghai",
+        "tian-shan",
+        "kunlun",
+        "taklamakan",
+        "tarim-river",
+        "xinjiang",
+        "qinling",
+        "sichuan",
+        "guangdong",
+        "yunnan",
+        "inner-mongolian-plateau",
+        "yunnan-guizhou-plateau",
+        "himalayas",
+        "qilian",
+        "greater-khingan",
+        "mekong",
+        "amur",
+        "northern-china",
+        "southern-china",
+        "northwestern-china",
+        "qinghai-tibet-region",
+        "liaodong-hills",
+        "shandong-hills",
+        "southeast-hills",
+        "taihu",
+        "qinshui-coal",
+        "hexi-renewables",
+        "three-gorges-project",
+        "qarhan-resources"
+      ],
+      "topicIds": [
+        "china-water-journey",
+        "china-dry-water",
+        "china-north-south",
+        "china-plateaus",
+        "china-plains",
+        "china-basins",
+        "china-mountain-ranges",
+        "china-rivers",
+        "china-regions",
+        "china-relief-steps",
+        "china-lakes",
+        "china-energy-resources"
+      ],
+      "implemented": [
+        "四大地理区、地势阶梯、丘陵与主要河湖，结合季风、干旱区水源、水资源联系解释；新增能源与矿产具体案例。"
+      ],
+      "remaining": [
+        "没有土地、矿产、能源储量和海洋资源的完整连续分布或统一时期统计图；案例点不表示资源储量和分布边界。"
+      ]
+    },
+    {
+      "id": "china-human-economy",
+      "title": "中国人口、农业、工业、交通",
+      "standardPrintedPages": "16—18",
+      "status": "selected",
+      "cardIds": [
+        "china-population",
+        "china-urbanization",
+        "china-grain",
+        "rice-farming",
+        "yangtze-delta",
+        "pearl-delta",
+        "grand-canal",
+        "south-north-water",
+        "northeast-china-plain",
+        "north-china-plain",
+        "hong-kong",
+        "macao",
+        "northeast-blacksoil",
+        "yangtze-middle-lower-plain",
+        "hetao-irrigation",
+        "xilingol-pasture",
+        "qinshui-coal",
+        "hexi-renewables",
+        "three-gorges-project",
+        "qarhan-resources",
+        "qaidam-basin",
+        "zhengzhou-transport",
+        "qinghai-tibet-railway",
+        "chongqing",
+        "ningbo-zhoushan-port",
+        "tianjin"
+      ],
+      "topicIds": [
+        "china-food-water-cities",
+        "china-agriculture",
+        "china-energy-resources",
+        "china-transport"
+      ],
+      "implemented": [
+        "粮食与稻作之外补入东北黑土、灌溉农业和草原牧业；煤气、盐湖、风光水电案例，以及港口、铁路与交通枢纽。"
+      ],
+      "remaining": [
+        "中国民族、科技产业带、全部铁路公路与经济作物分布仍可补充；未把代表点绘制为虚构的线网或生产带。"
+      ]
+    },
+    {
+      "id": "china-regional-models",
+      "title": "中国区域比较与指定案例",
+      "standardPrintedPages": "18—19",
+      "status": "selected",
+      "cardIds": [
+        "northern-china",
+        "southern-china",
+        "northwestern-china",
+        "qinghai-tibet-region",
+        "qinling",
+        "beijing",
+        "hong-kong",
+        "macao",
+        "taiwan-region",
+        "yunnan",
+        "guangdong",
+        "north-china-plain",
+        "northeast-china-plain",
+        "sichuan",
+        "china-grain",
+        "rice-farming",
+        "south-north-water",
+        "yangtze-delta",
+        "pearl-delta",
+        "tianjin",
+        "hebei",
+        "shanxi",
+        "inner-mongolia",
+        "liaoning",
+        "jilin",
+        "heilongjiang",
+        "shanghai",
+        "jiangsu",
+        "zhejiang",
+        "anhui",
+        "fujian",
+        "jiangxi",
+        "shandong",
+        "henan",
+        "hubei",
+        "hunan",
+        "guangxi",
+        "hainan-province",
+        "chongqing",
+        "guizhou",
+        "xizang",
+        "shaanxi",
+        "gansu",
+        "qinghai",
+        "ningxia",
+        "xinjiang",
+        "taiwan-province"
+      ],
+      "topicIds": [
+        "china-north-south",
+        "china-food-water-cities",
+        "china-regions",
+        "china-provinces"
+      ],
+      "implemented": [
+        "四大地理区与省级单位分别组织，解释自然区和行政区的尺度区别；34个省级入口和既有跨区联系主题可自由比较。"
+      ],
+      "remaining": [
+        "自然区边界没有未经核实的精确面；更多跨区协作、文化与城乡变迁案例仍可续补。"
+      ]
+    },
+    {
+      "id": "environment-disasters",
+      "title": "资源环境、人地协调与灾害",
+      "standardPrintedPages": "12—19",
+      "status": "selected",
+      "cardIds": [
+        "loess-plateau",
+        "yellow-river",
+        "india",
+        "sichuan",
+        "taihu",
+        "south-north-water",
+        "ruhr-industry",
+        "grand-canal",
+        "tibetan-plateau",
+        "yangtze",
+        "sichuan-basin",
+        "dongting-lake",
+        "poyang-lake",
+        "shanghai",
+        "tian-shan",
+        "kunlun",
+        "tarim-basin",
+        "taklamakan",
+        "tarim-river",
+        "qinghai-lake",
+        "xinjiang",
+        "iceland-rift",
+        "east-african-rift",
+        "himalayas",
+        "andes",
+        "san-andreas-fault",
+        "fujisan",
+        "hawaii-hotspot",
+        "amazon-rainforest",
+        "canadian-boreal-forest",
+        "serengeti-savanna",
+        "pampas",
+        "okavango-delta",
+        "sundarbans-mangroves",
+        "namib-sand-sea",
+        "persian-gulf-energy",
+        "atacama-copper",
+        "north-sea-energy",
+        "rotterdam-port"
+      ],
+      "topicIds": [
+        "china-water-journey",
+        "china-dry-water",
+        "world-tectonics",
+        "world-ecosystems",
+        "world-energy-industry"
+      ],
+      "implemented": [
+        "水土保持、生态来水、产业转型与资源利用；新增板块地震火山机制、湿地与森林生态、矿区用水与能源生产的环境联系。"
+      ],
+      "remaining": [
+        "不提供实时预警或应急避险操作指南；未交付完整循环经济、灾害风险与环境监测数据层。"
+      ]
+    },
+    {
+      "id": "hometown-practice",
+      "title": "家乡地理与实地实践",
+      "standardPrintedPages": "19",
+      "status": "future",
+      "cardIds": [],
+      "topicIds": [],
+      "implemented": [
+        "自由选点和比较为观察起点，知识卡提供可带入现实观察的问题。"
+      ],
+      "remaining": [
+        "县级家乡案例、实地调查记录、用户个人笔记与上传资料未作为本次知识内容交付；需用户选定家乡与研究问题。"
+      ]
+    },
+    {
+      "id": "curriculum-revision",
+      "title": "2025日常修订版本核查",
+      "standardPrintedPages": "版本核对；无2025全文页码",
+      "status": "partial",
+      "cardIds": [],
+      "topicIds": [],
+      "implemented": [
+        "确认2025日常修订的权威出版与地方官方使用证据；保留2022公开原文的主题对照基线。"
+      ],
+      "remaining": [
+        "2025日常修订原件、具体内容要求与新版教材逐项差异尚未全文核对。"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "title": "教育部 · 义务教育地理课程标准（2022年版）",
+      "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/W020220420582354066450.pdf"
+    },
+    {
+      "title": "教育部 · 义务教育课程方案和课程标准（2022年版）通知",
+      "url": "https://www.moe.gov.cn/srcsite/A26/s8001/202204/t20220420_619921.html"
+    },
+    {
+      "title": "教育部 · 国家课程标准资料目录",
+      "url": "https://www.moe.gov.cn/jyb_xxgk/xxgk/neirong/fenlei/kcjc/kcjc_js/jcjs_kcbz/"
+    },
+    {
+      "title": "高等教育出版社 · 2022年版2025年修订地理课标权威解读（2026）",
+      "url": "https://www.hep.com.cn/book/show/fd1addc8-ed06-497e-8c95-c81b83bd8d25"
+    },
+    {
+      "title": "乐山市教育局 · 2026初中学业考试命题依据及2027届地理课标版本",
+      "url": "https://www.leshan.gov.cn/lsswszf/jyxxzcwj/92337828/787189626822725.html"
+    }
+  ],
+  "contentValidation": {
+    "reviewedAt": "2026-10-09T03:35:25.527551+00:00",
+    "contentCount": 117,
+    "categoryCounts": {
+      "mountains": 11,
+      "terrain": 13,
+      "rivers": 12,
+      "lakes": 10,
+      "climate": 5,
+      "regions": 41,
+      "human": 9,
+      "population": 5,
+      "religion": 6,
+      "language": 5
+    },
+    "climateNoteCount": 30,
+    "topicCount": 12,
+    "sourceCount": 168,
+    "bindingCounts": {
+      "nonClimate": 112,
+      "bound": 69,
+      "pointOnly": 43
+    },
+    "checks": [
+      "117卡ID、分类、坐标、关联卡、事实、2解释段、2观察问题、标签和HTTPS来源字段逐项检查通过。",
+      "112个非气候绑定全部为真实要素ID或空数组；69卡真实绑定、43卡代表点；富士山、台湾主岛、鄱阳湖、五湖、港澳、亚洲和宽泛区域特别核查通过。",
+      "12自由专题的站点、图层、问题与结论全部存在，含人口、文化、粮食城市、海运四组新增人文主题。",
+      "A—E仅5大组卡；30细分代码顺序、解释、季节、景观、例子、问题与来源完整；独立data agent对V3实际函数8个0/10/−38边界例验证通过。",
+      "168条独立来源URL逐项覆盖全部卡与气候笔记，16个课程/版本主题引用及存在ID正确，研究/公开来源清单逐字节一致。",
+      "独立data agent抽核UN WPP全球人口、Pew2020全球宗教比例/分母、UNESCO语言数量与现有自然卡，无必须修正的事实问题；新增3卡一手资料与尺度单独核查。"
+    ],
+    "projectValidation": "npm run data:check 通过；117 sourced cards、14030 geometries、10基础artifact hashes、341地形瓦片、95学习artifact hashes、60月表、228宗教记录、30气候笔记、87高程artifact。",
+    "limitations": "内容抽核与结构检查不等于逐句认证全部文献；本记录不宣称浏览器回归或部署完成，后续由集成流程确认。2025日常课标修订已由权威出版与地方官方证据确认，逐页主题对照基于2022教育部公开PDF，未声称2025全文验证。"
+  },
+  "themeExpansion": {
+    "version": "theme-learning-2026-10-11",
+    "contentCount": 211,
+    "topicCount": 40,
+    "groups": [
+      "landforms",
+      "water",
+      "climate",
+      "people",
+      "resources",
+      "earth",
+      "regions"
+    ],
+    "moduleCount": 122,
+    "method": "根据本轮实际精选卡片与主题逐条更新实现范围；此记录描述实现范围，不构成对课标全文逐项达标的认证。"
+  }
+}

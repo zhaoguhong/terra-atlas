@@ -1,0 +1,281 @@
+import {chooseTheme} from './theme-controls'
+import {clickHeaderAction} from './header-actions'
+import { test, expect } from '@playwright/test'
+import type { Page } from '@playwright/test'
+import {baseReady,mapSettled,selectedGeometry,sourceLoaded} from './map-readiness'
+
+let errors:string[]=[]
+let failed:string[]=[]
+test.beforeEach(async({page})=>{
+  errors=[];failed=[]
+  page.on('pageerror',e=>errors.push(e.message))
+  page.on('console',m=>{if(m.type()==='error')errors.push(m.text())})
+  page.on('requestfailed',r=>{if(!r.failure()?.errorText.includes('ERR_ABORTED'))failed.push(`${r.url()} ${r.failure()?.errorText}`)})
+  await page.goto('/')
+  await baseReady(page)
+  await mapSettled(page)
+})
+test.afterEach(async()=>{expect(errors,'browser application errors').toEqual([]);expect(failed,'failed resources').toEqual([])})
+test.setTimeout(90000)
+async function layers(page:Page){if(await page.getByRole('button',{name:'打开图层面板'}).isVisible())await page.getByRole('button',{name:'打开图层面板'}).click()}
+async function closeLayers(page:Page){
+  const settings=page.getByRole('button',{name:'关闭图层面板',exact:true});if(await settings.isVisible())await settings.click()
+  const close=page.getByRole('button',{name:'关闭探索面板',exact:true})
+  if(await close.isVisible())await close.click()
+  const handle=page.getByRole('button',{name:'调整阅读面板大小',exact:true})
+  if(await handle.isVisible()&&await page.locator('.explorer.topic-active').count())await handle.press('Home')
+}
+async function select(page:Page,name:string){await page.getByRole('textbox',{name:'搜索地理对象'}).fill(name);await page.locator('.search-results>button').first().click();await expect(page.locator('.knowledge-panel')).toBeVisible();await selectedGeometry(page)}
+
+test('local map, terrain and Chinese labels render',async({page},info)=>{
+  await page.waitForFunction(()=>window.__terraAtlas?.map.queryRenderedFeatures({layers:['place-labels']}).some(feature=>/[\u3400-\u9fff]/.test(String(feature.properties?.name||''))),undefined,{timeout:45000})
+  const state=await page.evaluate(()=>{
+    const m=window.__terraAtlas!.map
+    return {sources:Object.keys(m.getStyle().sources),labels:m.queryRenderedFeatures({layers:['place-labels']}).map(f=>f.properties?.name),canvas:m.getCanvas().width}
+  })
+  expect(state.sources).toEqual(expect.arrayContaining(['land','rivers','lakes','regions','peaks','climate','relief','places']))
+  expect(state.labels.some((n:string)=>/[\u3400-\u9fff]/.test(n))).toBe(true)
+  expect(state.canvas).toBeGreaterThan(300)
+  await page.screenshot({path:`${test.info().outputDir}/initial-${info.project.name}.png`})
+})
+test('Chinese and English search locate sourced knowledge',async({page},info)=>{
+  await select(page,'长江')
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('长江')
+  const geom=await page.evaluate(()=>window.__terraAtlas!.map.getSource('selection')!.serialize())
+  expect(JSON.stringify(geom)).toContain('MultiLineString')
+  await expect(page.locator('.sources a').first()).toHaveAttribute('href',/^https:/)
+  await page.screenshot({path:`${test.info().outputDir}/yangtze-${info.project.name}.png`})
+  await select(page,'Alps')
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('阿尔卑斯山脉')
+})
+test('country searches keep country labels and geometry separate from same-name rivers',async({page})=>{
+  const input=page.getByRole('textbox',{name:'搜索地理对象'})
+  for(const [query,name,id] of [['Jordan','约旦','country-jor'],['Niger','尼日尔','country-ner'],['Senegal','塞内加尔','country-sen'],['Republic of the Congo','刚果共和国','country-cog']]){
+    await input.fill(query)
+    const result=page.locator('.search-results>button').filter({has:page.getByText(name,{exact:true})})
+    await expect(result).toHaveCount(1)
+    await result.click()
+    await expect(page.locator('.knowledge-panel h2')).toHaveText(name)
+    await selectedGeometry(page)
+    const selection=await page.evaluate(()=>window.__terraAtlas!.map.getSource('selection')!.serialize() as {data:{features:{properties:{id:string};geometry:{type:string}}[]}})
+    expect(selection.data.features.map(f=>f.properties.id)).toEqual([id])
+    expect(selection.data.features[0].geometry.type).toMatch(/Polygon/)
+  }
+  await input.fill('约旦河')
+  await expect(page.locator('.search-results>button strong')).toHaveText('约旦河')
+  await input.press('Enter')
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('约旦河')
+  await selectedGeometry(page)
+  const selection=await page.evaluate(()=>window.__terraAtlas!.map.getSource('selection')!.serialize() as {data:{features:{properties:{id:string};geometry:{type:string}}[]}})
+  expect(selection.data.features[0].properties.id).toBe('river-jordan')
+  expect(selection.data.features[0].geometry.type).toMatch(/LineString/)
+})
+test('search updates an existing query when delayed language data arrives and preserves keyboard selection',async({page})=>{
+  let release!:()=>void
+  const gate=new Promise<void>(resolve=>{release=resolve})
+  await page.route('**/data/learning-languages.geojson',async route=>{await gate;await route.continue()})
+  try{
+    await chooseTheme(page,'语言分布');await page.getByRole('combobox',{name:'语言展示方式'}).selectOption('points');await closeLayers(page)
+    const input=page.getByRole('textbox',{name:'搜索地理对象'})
+    await input.fill('Mandarin Chinese')
+    await expect(page.locator('.search-results>button strong')).toHaveText('普通话与汉语内部多样性')
+    release()
+    await sourceLoaded(page,'languages')
+    await expect(page.locator('.search-results>button strong')).toHaveText(['普通话与汉语内部多样性','官话'])
+    await input.press('ArrowDown');await input.press('Enter')
+    await expect(page.locator('.knowledge-panel h2')).toHaveText('官话')
+    await input.fill('青海湖')
+    await expect(page.locator('.search-results>button strong')).toHaveText('青海湖')
+    await input.press('Enter')
+    await expect(page.locator('.knowledge-panel h2')).toHaveText('青海湖')
+    await input.fill('a')
+    await expect(page.locator('.search-results>button')).toHaveCount(10)
+    const second=await page.locator('.search-results>button strong').nth(1).innerText()
+    await input.press('ArrowDown');await input.press('Enter')
+    await expect(page.locator('.knowledge-panel h2')).toHaveText(second)
+    await input.fill('zzzzzz不存在')
+    await expect(page.locator('.empty-result')).toBeVisible()
+    await page.getByRole('button',{name:'清空搜索'}).click()
+    await expect(input).toHaveValue('')
+    await expect(page.locator('.search-results')).not.toBeVisible()
+  }finally{release()}
+})
+test('native lake geometry click opens the correct card',async({page})=>{
+  await page.evaluate(()=>window.__terraAtlas!.map.jumpTo({center:[100.2,36.9],zoom:5.5,padding:{top:0,bottom:0,left:0,right:0}}))
+  await sourceLoaded(page,'lakes')
+  await mapSettled(page)
+  await page.waitForFunction(()=>{const map=window.__terraAtlas!.map;return map.queryRenderedFeatures(map.project([100.18,36.85]),{layers:['lake-fill']}).length>0},undefined,{timeout:45000})
+  const p=await page.evaluate(()=>{
+    const m=window.__terraAtlas!.map;const p=m.project([100.18,36.85]);return {x:p.x,y:p.y,features:m.queryRenderedFeatures(p,{layers:['lake-fill']}).map(f=>f.properties?.name)}
+  })
+  expect(p.features.join(' ')).toContain('青海')
+  const box=await page.locator('.atlas-map').boundingBox();await page.mouse.click(box!.x+p.x,box!.y+p.y)
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('青海湖')
+})
+test('climate layer, transparency, subtype click and full legend work',async({page},info)=>{
+  await layers(page)
+  await chooseTheme(page,'长期气候分布')
+  await expect(page.locator('#climate-opacity')).toBeVisible()
+  await page.locator('#climate-opacity').fill('0.65')
+  await closeLayers(page)
+  await page.evaluate(()=>window.__terraAtlas!.map.jumpTo({center:[114,32],zoom:4.8,padding:{top:0,bottom:0,left:0,right:0}}))
+  await sourceLoaded(page,'climate')
+  await mapSettled(page)
+  await page.waitForFunction(()=>{const map=window.__terraAtlas!.map;return map.queryRenderedFeatures(map.project([113.8,32.1]),{layers:['climate-fill']}).length>0},undefined,{timeout:45000})
+  const p=await page.evaluate(()=>{const m=window.__terraAtlas!.map;const p=m.project([113.8,32.1]);return {x:p.x,y:p.y}})
+  const box=await page.locator('.atlas-map').boundingBox();await page.mouse.click(box!.x+p.x,box!.y+p.y)
+  await expect(page.locator('.climate-subtype')).toBeVisible()
+  await expect(page.locator('.knowledge-panel')).toHaveCSS('opacity','1')
+  await page.screenshot({path:`${test.info().outputDir}/climate-${info.project.name}.png`})
+  const closeCard=page.getByRole('button',{name:'关闭知识卡片',exact:true})
+  if(await closeCard.isVisible())await closeCard.click()
+  else await page.getByRole('button',{name:'主题全览',exact:true}).click()
+  // Thematic controls live in the topic reader; mobile readers may be collapsed.
+  const readerHandle=page.getByRole('button',{name:'调整阅读面板大小',exact:true})
+  if(await readerHandle.isVisible())await readerHandle.press('End')
+  await page.getByRole('button',{name:'查看 30 类气候图例'}).click()
+  await expect(page.getByRole('dialog')).toBeVisible()
+  await expect(page.locator('.full-climate-legend section>button')).toHaveCount(30)
+  await page.keyboard.press('Escape');await expect(page.getByRole('dialog')).not.toBeVisible()
+})
+test('favorites persist and saved map views restore layers and camera',async({page},info)=>{
+  if(info.project.name==='mobile')await page.setViewportSize({width:390,height:667})
+  await select(page,'青海湖')
+  await page.getByRole('button',{name:'收藏地点',exact:true}).click()
+  await clickHeaderAction(page,'打开收藏')
+  await page.getByRole('button',{name:'保存命名地图视图',exact:true}).click()
+  await page.reload();await expect(page.locator('.app')).toHaveAttribute('data-map-status','ready',{timeout:35000})
+  await clickHeaderAction(page,'打开收藏')
+  await expect(page.locator('.saved-list').first()).toContainText('青海湖')
+  await page.locator('.saved-list').first().getByRole('button',{name:/青海湖/}).first().click()
+  await expect(page.getByRole('button',{name:'已收藏',exact:true})).toHaveAttribute('aria-pressed','true')
+  await page.getByRole('button',{name:'全球视野',exact:true}).click()
+  await clickHeaderAction(page,'打开收藏')
+  await page.locator('.saved-list').nth(1).getByRole('button',{name:/^中国/}).click()
+  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).view)).toBe('china')
+})
+test('layer visibility, empty search and sources dialog behave correctly',async({page})=>{
+  await layers(page)
+  await page.getByRole('checkbox',{name:'河流图层',exact:true}).uncheck()
+  expect(await page.evaluate(()=>window.__terraAtlas!.map.getLayoutProperty('river-lines','visibility'))).toBe('none')
+  await closeLayers(page)
+  await page.getByRole('textbox',{name:'搜索地理对象'}).fill('不存在的地理名字ZZZ')
+  await expect(page.locator('.empty-result')).toBeVisible()
+  await page.getByRole('button',{name:'清空搜索'}).click()
+  await clickHeaderAction(page,'资料与关于')
+  await expect(page.getByRole('dialog')).toContainText('1:1000 万')
+  await page.keyboard.press('Escape');await expect(page.getByRole('dialog')).not.toBeVisible()
+})
+test('core explorer makes no third party requests and can search source objects',async({page})=>{
+  const thirdParty:string[]=[]
+  const origin=new URL(page.url()).origin
+  await page.route('**/*',route=>{if(new URL(route.request().url()).origin!==origin){thirdParty.push(route.request().url());return route.abort()}return route.continue()})
+  await page.reload();await expect(page.locator('.app')).toHaveAttribute('data-map-status','ready',{timeout:35000})
+  await page.getByRole('textbox',{name:'搜索地理对象'}).fill('日本')
+  await page.locator('.search-results>button').first().click()
+  await expect(page.locator('.knowledge-panel h2')).toContainText('日本')
+  expect(thirdParty).toEqual([])
+})
+test('responsive layouts have no overflow',async({page},info)=>{
+  for(const size of [{width:375,height:812},{width:768,height:1024},{width:1024,height:768},{width:844,height:390}]){
+    await page.setViewportSize(size);await page.waitForTimeout(120)
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
+    expect(await page.evaluate(()=>document.documentElement.scrollHeight<=innerHeight)).toBe(true)
+    await expect(page.getByRole('textbox',{name:'搜索地理对象'})).toBeVisible()
+  }
+  await page.screenshot({path:`${test.info().outputDir}/landscape-${info.project.name}.png`})
+})
+
+test('failed core data shows an actionable retry and recovers',async({page})=>{
+  await page.route('**/data/lakes.geojson',r=>r.fulfill({status:503,contentType:'application/json',body:'{}'}))
+  await page.reload()
+  await expect(page.locator('.map-status.error')).toContainText('加载失败')
+  await page.unroute('**/data/lakes.geojson')
+  errors=errors.filter(e=>!e.includes('503'))
+  await page.getByRole('button',{name:'重试',exact:true}).click()
+  await expect(page.locator('.app')).toHaveAttribute('data-map-status','ready',{timeout:35000})
+  await sourceLoaded(page,'lakes')
+  await select(page,'里海')
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('里海')
+  expect(JSON.stringify(await page.evaluate(()=>window.__terraAtlas!.map.getSource('selection')!.serialize()))).toContain('lake-caspian-sea')
+})
+test('keyboard search, map pan/zoom and share link restore work',async({page})=>{
+  await page.getByRole('textbox',{name:'搜索地理对象'}).fill('昆仑')
+  await page.keyboard.press('Enter')
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('昆仑山脉')
+  await selectedGeometry(page)
+  await page.getByRole('button',{name:'关闭知识卡片'}).click()
+  const before=await page.evaluate(()=>window.__terraAtlas!.map.getCenter().toArray())
+  const box=await page.locator('.atlas-map').boundingBox()
+  const x=box!.x+box!.width*0.55,y=box!.y+box!.height*0.4
+  await page.mouse.move(x,y);await page.mouse.down();await page.mouse.move(x-90,y+40,{steps:12});await page.mouse.up()
+  await mapSettled(page)
+  const after=await page.evaluate(()=>window.__terraAtlas!.map.getCenter().toArray())
+  expect(after).not.toEqual(before)
+  const zoom=await page.evaluate(()=>window.__terraAtlas!.map.getZoom())
+  await page.getByRole('button',{name:'放大地图'}).click();await mapSettled(page)
+  expect(await page.evaluate(()=>window.__terraAtlas!.map.getZoom())).toBeGreaterThan(zoom)
+  // A hash link uses only static hosting; no route or API is required.
+  await page.goto('/#lng=9.1&lat=46.5&z=4.5&view=world&place=alps')
+  await expect(page.locator('.app')).toHaveAttribute('data-map-status','ready',{timeout:35000})
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('阿尔卑斯山脉')
+  await selectedGeometry(page)
+  await expect.poll(()=>page.evaluate(()=>{const map=window.__terraAtlas!.map;return !map.isMoving()&&Math.abs(map.getZoom()-4.5)<.005}),{timeout:45000,message:'shared zoom settles after source loading and panel reframing'}).toBe(true)
+  expect(await page.evaluate(()=>window.__terraAtlas!.map.getZoom())).toBeCloseTo(4.5)
+  await expect.poll(()=>page.evaluate(()=>{
+    const map=window.__terraAtlas!.map,point=map.project([9.1,46.5]),box=map.getContainer().getBoundingClientRect(),x=point.x+box.left,y=point.y+box.top
+    const panels=[...document.querySelectorAll('.explorer,.knowledge-panel')].filter(panel=>getComputedStyle(panel).visibility!=='hidden'&&getComputedStyle(panel).display!=='none')
+    return x>=box.left&&x<=box.right&&y>=box.top&&y<=box.bottom&&panels.every(panel=>{const r=panel.getBoundingClientRect();return x<r.left||x>r.right||y<r.top||y>r.bottom})
+  }),{timeout:45000,message:'the shared location remains inside the visible map outside the explorer and knowledge card'}).toBe(true)
+})
+test('world view fits the continents and returns to China',async({page},info)=>{
+  await page.getByRole('button',{name:'全球视野',exact:true}).click()
+  await mapSettled(page)
+  const continents=await page.evaluate(()=>{const b=window.__terraAtlas!.map.getBounds();return [[-100,40],[135,-25],[10,45],[-60,-10]].map(c=>b.contains(c as [number,number]))})
+  expect(continents).toEqual([true,true,true,true])
+  await page.screenshot({path:`${test.info().outputDir}/world-${info.project.name}.png`})
+  await page.getByRole('button',{name:'定位中国',exact:true}).click()
+  await mapSettled(page)
+  expect(await page.evaluate(()=>window.__terraAtlas!.map.getBounds().contains([104,35]))).toBe(true)
+})
+test('a real mountain peak can be searched, bookmarked and shared',async({page,context})=>{
+  await context.grantPermissions(['clipboard-read','clipboard-write'])
+  await select(page,'富士山')
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('富士山')
+  await expect(page.locator('.knowledge-panel')).toContainText('火山')
+  await expect(page.locator('.reading-section')).not.toHaveCount(0)
+  const geom=JSON.stringify(await page.evaluate(()=>window.__terraAtlas!.map.getSource('selection')!.serialize()))
+  expect(geom).toContain('peak-1159105623')
+  await page.getByRole('button',{name:'收藏地点',exact:true}).click()
+  await page.getByRole('button',{name:'分享这个地点'}).click()
+  await expect(page.locator('.toast')).toContainText('已复制')
+  const link=await page.evaluate(()=>navigator.clipboard.readText())
+  expect(link).toContain('place=')
+  expect(link).toContain('layers=')
+  await page.getByRole('button',{name:'关闭知识卡片'}).click()
+  await page.goto(link)
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('富士山')
+  await selectedGeometry(page)
+  await page.reload()
+  await expect(page.locator('.app')).toHaveAttribute('data-map-status','ready',{timeout:35000})
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('富士山')
+  await selectedGeometry(page)
+  await expect(page.getByRole('button',{name:'已收藏',exact:true})).toHaveAttribute('aria-pressed','true')
+})
+test('without WebGL the error is clear and knowledge remains readable',async({page})=>{
+  await page.addInitScript(()=>{
+    const native=HTMLCanvasElement.prototype.getContext
+    HTMLCanvasElement.prototype.getContext=function(type:string,...args:unknown[]){
+      if(type.includes('webgl'))return null
+      return Reflect.apply(native,this,[type,...args])
+    } as typeof native
+  })
+  await page.reload()
+  await expect(page.locator('.map-status.error')).toContainText('图形加速')
+  await page.getByRole('textbox',{name:'搜索地理对象'}).fill('长江')
+  await page.locator('.search-results>button').first().click()
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('长江')
+  await expect(page.locator('.sources a').first()).toHaveAttribute('href',/^https:/)
+  await clickHeaderAction(page,'资料与关于')
+  await expect(page.getByRole('dialog')).toBeVisible()
+})

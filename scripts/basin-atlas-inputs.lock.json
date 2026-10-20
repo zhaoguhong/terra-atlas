@@ -1,0 +1,65 @@
+{
+  "dataset": "BasinATLAS",
+  "version": "1.0",
+  "doi": "10.6084/m9.figshare.9890531.v1",
+  "expectedFeatures": 292,
+  "selectedFields": [
+    "HYBAS_ID",
+    "PFAF_ID",
+    "NEXT_DOWN",
+    "SUB_AREA",
+    "ENDO"
+  ],
+  "archive": {
+    "url": "https://api.figshare.com/v2/file/download/20087237",
+    "fileId": 20087237,
+    "name": "BasinATLAS_Data_v10_shp.zip",
+    "bytes": 4276492333,
+    "expectedMd5": "ce5013294bdcb6f884ff6cdf1a1acae0",
+    "checksumVerification": "完整归档未下载，未计算归档MD5；仅提取第3级四个成员，并分别验证原ZIP CRC32、长度和固定SHA-256。"
+  },
+  "members": [
+    {
+      "path": "data/raw/basin-atlas/BasinATLAS_v10_lev03.shp",
+      "archiveMember": "BasinATLAS_v10_shp/BasinATLAS_v10_lev03.shp",
+      "bytes": 45838964,
+      "sha256": "11af7e15d2d17f2bba0ac7d46e2856902cd79a67e6b0e7b7cd518422703f7b81",
+      "crc32": "b88e7380"
+    },
+    {
+      "path": "data/raw/basin-atlas/BasinATLAS_v10_lev03.shx",
+      "archiveMember": "BasinATLAS_v10_shp/BasinATLAS_v10_lev03.shx",
+      "bytes": 2436,
+      "sha256": "8ae94a87bd9f72ae0321473726d0719311df64368bc547e7a6667297eaf0971b",
+      "crc32": "b0715925"
+    },
+    {
+      "path": "data/raw/basin-atlas/BasinATLAS_v10_lev03.dbf",
+      "archiveMember": "BasinATLAS_v10_shp/BasinATLAS_v10_lev03.dbf",
+      "bytes": 415322,
+      "sha256": "4968e908f84ecf7fc541d606c3acca4663a70cab13aa565be11d5eef56747fa5",
+      "crc32": "dc040b99"
+    },
+    {
+      "path": "data/raw/basin-atlas/BasinATLAS_v10_lev03.prj",
+      "archiveMember": "BasinATLAS_v10_shp/BasinATLAS_v10_lev03.prj",
+      "bytes": 145,
+      "sha256": "a02a27b1d1982c8516d83398e85a3c8b1aef1713c13ef4d84d7bde17430c07c4",
+      "crc32": "af437f55"
+    }
+  ],
+  "licenseReview": {
+    "reviewedAt": "2026-10-20",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "datasetUrl": "https://doi.org/10.6084/m9.figshare.9890531.v1",
+    "metadataUrl": "https://api.figshare.com/v2/articles/9890531/versions/1",
+    "technicalDocumentationUrl": "https://ndownloader.figshare.com/files/20082110",
+    "technicalDocumentationSha256": "c9abc3ae7436a858dc55168201ed3637e53046570029a252f286aa9e29b710af",
+    "catalogUrl": "https://ndownloader.figshare.com/files/20082113",
+    "scope": "仅官方BasinATLAS v1.0文件中的第3级几何和五个核心标识/拓扑/面积字段。HydroATLAS为汇编数据库，各环境属性仍分别授权；本层不导入281列环境属性，也不改变原HydroBASINS独立产品的许可。",
+    "sourceAttribution": "Linke et al. (2019), doi:10.1038/s41597-019-0300-6; underlying delineations Lehner & Grill (2013), doi:10.1002/hyp.9740.",
+    "catalogSha256": "c512796abee4cca0b41ee4b8700de5c95bbbbe32a66456189596e51c63ed5e47",
+    "basis": "固定版本Figshare元数据及官方产品页标明CC BY 4.0；技术说明第3(c)节区分既有核心字段与新增环境属性，第4.1节说明整体许可及属性例外。实读输入包含13个核心字段及281个新增属性；核对57页目录的许可条目，目录只列281个环境属性，不单列本层所选5个核心字段。本层许可依据官方发布的BasinATLAS地图及数据库许可，不声称目录逐项给这5个字段另发许可。"
+  }
+}

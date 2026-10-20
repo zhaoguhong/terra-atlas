@@ -1,0 +1,12 @@
+# Optional geodata rebuilding only; not needed for npm development or CI.
+# Python 3.12 is the documented environment. These bounds are not an input lock;
+# fixed dataset versions and checksums remain in the source manifests.
+numpy>=1.26,<3
+rasterio>=1.3,<2
+shapely>=2,<3
+opencc-python-reimplemented>=0.1,<1
+Pillow>=10,<13
+pyproj>=3.6,<4
+pyshp>=2.3,<4
+remotezip>=0.12,<1
+requests>=2.31,<3

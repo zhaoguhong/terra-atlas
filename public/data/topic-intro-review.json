@@ -1,0 +1,1212 @@
+{
+  "reviewedAt": "2026-10-11",
+  "version": "topic-intros-2026-10-11-v2",
+  "inputSha256": "cf3fcfbcbf4489046a08cccbee1f8013e9ceba7d6f5bba8917cd241bfc2f1b91",
+  "outputSha256": "94d54c30cc3abe62f70098bffb83953fadd2641a22fb94221284320a4efbda76",
+  "license": "说明与图表代码原创；参考文章和源数据分别保留原许可。",
+  "processing": "按主题逐项审查摘要、正文、模块和图表，删除操作套话与重复地点列表；详细解释由用户展开，地图阅读保持自由顺序。",
+  "topics": [
+    {
+      "id": "china-plateaus",
+      "title": "中国四大高原",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "qinghai-tibet",
+        "loess",
+        "inner-mongolia",
+        "yunnan-guizhou"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+        "https://whc.unesco.org/en/list/1248/",
+        "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html",
+        "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html",
+        "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/",
+        "https://www.neac.gov.cn/seac/ztzl/mgz/gk.shtml",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692371.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html"
+      ]
+    },
+    {
+      "id": "china-plains",
+      "title": "中国主要平原",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "northeast",
+        "north",
+        "yangtze"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+        "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html",
+        "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692359.html"
+      ]
+    },
+    {
+      "id": "china-basins",
+      "title": "中国四大盆地",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "tarim",
+        "junggar",
+        "qaidam",
+        "sichuan"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html",
+        "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/",
+        "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html",
+        "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692365.html",
+        "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html",
+        "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html",
+        "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+      ]
+    },
+    {
+      "id": "china-mountain-ranges",
+      "title": "中国主要山脉",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "plateau-edge",
+        "inland",
+        "transition"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+        "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692380.html",
+        "https://whc.unesco.org/en/list/1414/",
+        "https://science.nasa.gov/earth/earth-observatory/red-rocks-and-rainbow-ridges-148234/",
+        "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
+        "https://nieer.cas.cn/xwdt/kydt/202609/t20260922_8286022.html",
+        "https://www.igg.cas.cn/hejl/hzxm/202405/t20240528_7174019.html",
+        "https://igsnrr.cas.cn/sourcedb/zw/lw/202504/t20250409_7591749.html",
+        "https://www.forestry.gov.cn/c/www/tsxa/540017.jhtml",
+        "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html"
+      ]
+    },
+    {
+      "id": "china-rivers",
+      "title": "中国主要河流",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "large-rivers",
+        "southern",
+        "northeast-inland"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
+        "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
+        "https://www.mee.gov.cn/zcwj/zyygwj/202110/t20211009_955779.shtml",
+        "https://www.yrcc.gov.cn/zwzc/zcjd/202403/t20240312_426969.html",
+        "https://zjhy.mot.gov.cn/zhuhanggk/shuixijj/201909/t20190916_3266853.html",
+        "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2718481.html",
+        "https://www.mrcmekong.org/geography/",
+        "https://www.mrcmekong.org/basin-climate/",
+        "https://science.nasa.gov/earth/earth-observatory/strait-of-tartary-in-autumn-150619/",
+        "https://www.cas.cn/cm/202308/t20230817_4964150.shtml",
+        "https://igg.cas.cn/hejl/jldt/201510/t20151029_4450452.html"
+      ]
+    },
+    {
+      "id": "world-high-peaks",
+      "title": "世界十四座8000米高峰",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "karakoram",
+        "himalaya"
+      ],
+      "visuals": [
+        "bars"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.theuiaa.org/8000m-peaks/",
+        "https://www.wikidata.org/wiki/Q513",
+        "https://www.wikidata.org/wiki/Q43512",
+        "https://www.wikidata.org/wiki/Q82019",
+        "https://www.wikidata.org/wiki/Q168702",
+        "https://www.wikidata.org/wiki/Q169986",
+        "https://www.wikidata.org/wiki/Q170089",
+        "https://www.wikidata.org/wiki/Q165440",
+        "https://www.wikidata.org/wiki/Q170070",
+        "https://www.wikidata.org/wiki/Q130736",
+        "https://www.wikidata.org/wiki/Q16466024",
+        "https://www.wikidata.org/wiki/Q187138",
+        "https://www.wikidata.org/wiki/Q180996",
+        "https://www.wikidata.org/wiki/Q186853",
+        "https://www.wikidata.org/wiki/Q105124"
+      ]
+    },
+    {
+      "id": "world-mountain-ranges",
+      "title": "世界主要山系",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "asia",
+        "americas",
+        "europe"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region",
+        "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/",
+        "https://home.nps.gov/articles/rockies.htm",
+        "https://home.nps.gov/grca/learn/nature/grca-geology.htm",
+        "https://www.seismo.ethz.ch/en/knowledge/causes-of-earthquakes/Switzerland/",
+        "https://www.unesco.org/en/iggp/toratau-unesco-global-geopark",
+        "https://whc.unesco.org/document/167636",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there",
+        "https://whc.unesco.org/en/list/1418/",
+        "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html"
+      ]
+    },
+    {
+      "id": "world-lakes",
+      "title": "世界代表湖泊与湖群",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "rift",
+        "glacial",
+        "closed"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://science.nasa.gov/earth/earth-observatory/caspian-sea-44253/",
+        "https://science.nasa.gov/earth/earth-observatory/the-caspian-seas-shrinking-coastline/",
+        "https://whc.unesco.org/en/list/754/",
+        "https://whc.unesco.org/document/163201",
+        "https://science.nasa.gov/earth/earth-observatory/a-tale-of-contrasting-rift-valley-lakes-145194/",
+        "https://science.nasa.gov/earth/earth-observatory/earthquake-in-eastern-africa-15855/",
+        "https://www.nature.com/articles/s41597-022-01742-3",
+        "https://science.nasa.gov/earth/earth-observatory/nalubaale-dam-uganda-6371/",
+        "https://www.noaa.gov/education/resource-collections/freshwater/great-lakes-ecoregion",
+        "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004ICU.TXT",
+        "https://science.nasa.gov/earth/earth-observatory/getting-saltier-145373/",
+        "https://science.nasa.gov/earth/earth-observatory/dead-sea-6136/",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      ]
+    },
+    {
+      "id": "map-climate",
+      "title": "长期气候分布",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "module-1"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.nature.com/articles/s41597-023-02549-6",
+        "https://www.noaa.gov/jetstream/global/climate-zones/jetstream-max-addition-k-ppen-geiger-climate-subdivisions",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10593765/",
+        "https://github.com/hylken/Koppen-Geiger_maps/blob/V3/tools.py",
+        "https://www.gloh2o.org/koppen/",
+        "https://www.noaa.gov/jetstream/global/climate-zones"
+      ]
+    },
+    {
+      "id": "map-population",
+      "title": "人口密度分布",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "module-1",
+        "module-2",
+        "module-3"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php",
+        "https://blogs.worldbank.org/en/sustainablecities/what-does-urban-mean",
+        "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_wpp_2024_advance_unedited_0.pdf",
+        "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901091.html",
+        "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/html/fu03g.pdf",
+        "https://unstats.un.org/unsd/publications/pocketbook/files/world-stats-pocketbook-2024.pdf",
+        "https://www.beijing.gov.cn/renwen/bjgk/",
+        "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html",
+        "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      ]
+    },
+    {
+      "id": "map-religion",
+      "title": "国家宗教构成",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "module-1",
+        "module-2",
+        "module-3"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/",
+        "https://www.pewresearch.org/religion/2025/06/09/global-religious-change-methodology/",
+        "https://www.pewresearch.org/religion/2025/06/09/christian-population-change/",
+        "https://www.pewresearch.org/religion/2025/06/09/muslim-population-change/",
+        "https://www.pewresearch.org/religion/2025/06/09/hindu-population-change/",
+        "https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/",
+        "https://www.pewresearch.org/religion/2025/06/09/religiously-unaffiliated-population-change/"
+      ]
+    },
+    {
+      "id": "map-language",
+      "title": "语言分布",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "module-1",
+        "module-2"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.unesco.org/en/languages-education/need-know?hub=66703",
+        "https://glottolog.org/glottolog/glottologinformation",
+        "https://www.un.org/en/observances/english-language-day/multilingualism-and-the-un",
+        "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202606/t20260605_1438880.html",
+        "https://www.un.org/en/observances/english-language-day",
+        "https://www.unesco.org/en/world-arabic-language-day?hub=68184",
+        "https://doi.org/10.5281/zenodo.18613195",
+        "https://www.nature.com/articles/s41597-025-05828-6"
+      ]
+    },
+    {
+      "id": "china-water-journey",
+      "title": "从雪山到江湖",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "headwaters",
+        "basin-lakes",
+        "estuary"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
+        "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html",
+        "https://www.hunan.gov.cn/hnyw/zwdt/201908/t20190812_9483347.html",
+        "https://swj.yueyang.gov.cn/6855/6879/30424/30429/content_1746597.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692506.html",
+        "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202512/t20251218_8029602.html",
+        "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html",
+        "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      ]
+    },
+    {
+      "id": "china-dry-water",
+      "title": "干旱地区的水从哪里来",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "mountain-water",
+        "basin-river",
+        "regional-comparison"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://whc.unesco.org/en/list/1414/",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692380.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html",
+        "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/",
+        "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692338.html",
+        "https://science.nasa.gov/earth/earth-observatory/the-taklimakan-desert-a-factory-for-dust-storms-87969/",
+        "https://www.cas.cn/cm/202308/t20230817_4964150.shtml",
+        "https://igg.cas.cn/hejl/jldt/201510/t20151029_4450452.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html",
+        "https://jtyst.xinjiang.gov.cn/xjjtysj/zxdt/202407/a0284b35255f42b49c4531b0dbbd81d9.shtml",
+        "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+      ]
+    },
+    {
+      "id": "china-north-south",
+      "title": "跨过秦岭再比较",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "mountain",
+        "north",
+        "south"
+      ],
+      "visuals": [],
+      "decision": "自然过渡由具体南北案例展开，模块对照已足够，不加重复表格。",
+      "sourceUrls": [
+        "https://www.igg.cas.cn/hejl/hzxm/202405/t20240528_7174019.html",
+        "https://igsnrr.cas.cn/sourcedb/zw/lw/202504/t20250409_7591749.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html",
+        "https://www.sc.gov.cn/10462/10778/10876/2022/7/8/57f745e2c9f74c66a606f4c88cbe96db/files/484782a06c0144d39954782ac50d7696.pdf",
+        "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+        "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html",
+        "https://www.ynxc.gov.cn/html/2024/yns_0418/11831.html"
+      ]
+    },
+    {
+      "id": "china-city-environment",
+      "title": "城市与自然环境",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "municipalities",
+        "province-background",
+        "lake-region"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.beijing.gov.cn/renwen/bjgk/",
+        "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+        "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html",
+        "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html",
+        "https://www.sc.gov.cn/10462/10778/10876/2022/7/8/57f745e2c9f74c66a606f4c88cbe96db/files/484782a06c0144d39954782ac50d7696.pdf",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html",
+        "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+      ]
+    },
+    {
+      "id": "world-river-contrast",
+      "title": "四条大河，四种联系",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "module-1",
+        "module-2",
+        "module-3",
+        "module-4"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://science.nasa.gov/photojournal/nile-river-fluctuations-near-khartoum-sudan/",
+        "https://science.nasa.gov/earth/earth-observatory/khartoum-sudan-5514/",
+        "https://data.un.org/legacy/en/iso/eg.html",
+        "https://science.nasa.gov/earth/earth-observatory/amazon-meanders-in-sunglint-92370/",
+        "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/",
+        "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/",
+        "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/",
+        "https://science.nasa.gov/resource/ganges-river-delta/",
+        "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/",
+        "https://www.nature.com/articles/nature22039",
+        "https://www.usgs.gov/publications/mississippi-river-a-place-fish",
+        "https://home.nps.gov/miss/riverfacts.htm",
+        "https://www.census.gov/data/data-tools/survey-explorer/geo.html",
+        "https://home.nps.gov/articles/rockies.htm",
+        "https://home.nps.gov/grca/learn/nature/grca-geology.htm",
+        "https://www.noaa.gov/education/resource-collections/freshwater/great-lakes-ecoregion",
+        "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004ICU.TXT",
+        "https://data.un.org/legacy/en/iso/us.html"
+      ]
+    },
+    {
+      "id": "world-latitude-height",
+      "title": "低纬度也有高寒环境",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "module-1",
+        "module-2",
+        "module-3"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://whc.unesco.org/en/list/800/",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift",
+        "https://www.nature.com/articles/s41597-022-01742-3",
+        "https://data.un.org/legacy/en/iso/ke.html",
+        "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/25812-ibge-lanca-mapa-inedito-de-biomas-e-sistema-costeiro-marinho-2",
+        "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/",
+        "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/",
+        "https://data.un.org/legacy/en/iso/br.html",
+        "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared",
+        "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts",
+        "https://data.un.org/legacy/en/iso/au.html",
+        "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://www.bas.ac.uk/about/where-we-work/antarctica/",
+        "https://www.nature.com/articles/s41597-023-02549-6",
+        "https://www.noaa.gov/jetstream/global/climate-zones/jetstream-max-addition-k-ppen-geiger-climate-subdivisions",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10593765/",
+        "https://github.com/hylken/Koppen-Geiger_maps/blob/V3/tools.py",
+        "https://www.gloh2o.org/koppen/"
+      ]
+    },
+    {
+      "id": "china-food-water-cities",
+      "title": "粮食、水与城市一起看",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "food",
+        "water",
+        "markets"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202412/t20241213_1957744.html",
+        "https://www.stats.gov.cn/english/PressRelease/202412/t20241219_1957784.html",
+        "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html",
+        "https://www.gov.cn/xinwen/2015-12/08/content_5021383.htm",
+        "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html",
+        "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html",
+        "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html",
+        "https://app.www.gov.cn/govdata/gov/201902/18/435204/article.html",
+        "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html",
+        "https://zjhy.mot.gov.cn/zhuhanggk/shuixijj/201909/t20190916_3266853.html",
+        "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2718481.html",
+        "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html",
+        "https://www.mardep.gov.hk/en/materials-and-publications/publications/hk-fact-sheet/index.html",
+        "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+        "https://www.macaotourism.gov.mo/zh-hant/article/about-macao/location-and-time",
+        "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm"
+      ]
+    },
+    {
+      "id": "world-sea-connections",
+      "title": "海洋、海峡与人工运河",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "module-1",
+        "module-2",
+        "module-3"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.noaa.gov/jetstream/ocean",
+        "https://oceanservice.noaa.gov/facts/howmanyoceans.html",
+        "https://oceanservice.noaa.gov/facts/amoc.html",
+        "https://science.nasa.gov/blogs/earth-matters/2013/03/25/matters-of-scale-and-why-they-matter/",
+        "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts",
+        "https://oceanservice.noaa.gov/facts/smallestocean.html",
+        "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/",
+        "https://www.mpa.gov.sg/who-we-are/newsroom-resources/publications/singapore-port-information",
+        "https://science.nasa.gov/earth/earth-observatory/the-strait-of-gibraltar-151478/",
+        "https://science.nasa.gov/earth/earth-observatory/the-strait-of-gibraltar-in-3d-3926/",
+        "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalCharacteristics.aspx",
+        "https://pancanal.com/en/history-of-the-panama-canal/",
+        "https://pancanal.com/en/panama-canal-prepares-for-the-impact-of-climate-events/",
+        "https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/applied-science/precis/dissy1808.pdf"
+      ]
+    },
+    {
+      "id": "earth-seasons",
+      "title": "地球自转、季节与地方时",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "rotation",
+        "seasons",
+        "time"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://science.nasa.gov/earth/facts/",
+        "https://spaceplace.nasa.gov/seasons/en/",
+        "https://oceanservice.noaa.gov/facts/longitude.html",
+        "https://gml.noaa.gov/grad/solcalc/calcdetails.html"
+      ]
+    },
+    {
+      "id": "earth-map-reading",
+      "title": "经纬网、比例尺与地形阅读",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "coordinates",
+        "scale",
+        "relief"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://oceanservice.noaa.gov/facts/latitude.html",
+        "https://oceanservice.noaa.gov/facts/longitude.html",
+        "https://www.usgs.gov/educational-resources/topographic-mapping"
+      ]
+    },
+    {
+      "id": "china-regions",
+      "title": "中国四大地理区",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "north",
+        "south",
+        "northwest",
+        "plateau"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+        "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html",
+        "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html",
+        "https://www.igg.cas.cn/hejl/hzxm/202405/t20240528_7174019.html",
+        "https://igsnrr.cas.cn/sourcedb/zw/lw/202504/t20250409_7591749.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html",
+        "https://whc.unesco.org/en/list/1248/",
+        "https://zjhy.mot.gov.cn/zhuhanggk/shuixijj/201909/t20190916_3266853.html",
+        "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2718481.html",
+        "https://science.nasa.gov/earth/earth-observatory/red-rocks-and-rainbow-ridges-148234/",
+        "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
+        "https://nieer.cas.cn/xwdt/kydt/202609/t20260922_8286022.html",
+        "https://whc.unesco.org/en/list/1414/",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html",
+        "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/",
+        "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html",
+        "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/",
+        "https://www.neac.gov.cn/seac/ztzl/mgz/gk.shtml",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692371.html",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+      ]
+    },
+    {
+      "id": "china-provinces",
+      "title": "中国34个省级行政区",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "north-northeast",
+        "east",
+        "central-south",
+        "southwest",
+        "northwest",
+        "islands-sars"
+      ],
+      "visuals": [
+        "bars"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+        "https://www.gov.cn/guoqing/2020-07/28/content_5530577.htm",
+        "https://www.beijing.gov.cn/renwen/bjgk/",
+        "https://www.tj.gov.cn/zwgk/szfwj/tjsrmzf/202005/t20200519_2365827.html",
+        "https://whly.hebei.gov.cn/c/2019-05-09/557248.html",
+        "https://zrzyt.shanxi.gov.cn/zwgk/zwgkjbml/zcfg/gfzhl/202109/t20210903_1845788.shtml",
+        "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/",
+        "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml",
+        "https://www.jl.gov.cn/shengqing/jlgk/dldm/",
+        "https://www.hlj.gov.cn/hlj/c108480/list_left_tt.shtml",
+        "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html",
+        "https://en.jiangsu.gov.cn/col/col88905/index.html",
+        "https://www.ezhejiang.gov.cn/2019-08/02/c_420288.htm",
+        "https://www.ahhuoshan.gov.cn/group3/M00/68/E4/wKgSG2Yg2gOAT2avAGMA_l-tT1w196.pdf",
+        "https://zfgb.fujian.gov.cn/3456",
+        "https://www.dingnan.gov.cn/dnxxxgk/gmjjhshfzgh/202203/ab6ad65d2e0a45ce80c01e42b999df2d.shtml",
+        "https://shandong-chorography.org/database/f063/section/19/article/2/?reflow=original",
+        "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hngk/article491327f391ce412d8f70c2fb2e6eee0d.html",
+        "https://zrzyt.hubei.gov.cn/bmdt/ztzl/hbsdycqgdlgqpcgb/gbfb/201910/t20191031_209613.shtml",
+        "https://mzt.hunan.gov.cn/yw/qhdm/200812/t20081226_3722479.html",
+        "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html",
+        "https://www.kczg.org.cn/article/detail?id=6319786",
+        "https://lyj.hainan.gov.cn/xxgk/0100/0101/201202/t20120220_1388558.html",
+        "https://wap.cq.gov.cn/zjcq/sqgk/cqsq/202412/t20241231_14378525.html",
+        "https://www.sc.gov.cn/10462/10778/10876/2022/7/8/57f745e2c9f74c66a606f4c88cbe96db/files/484782a06c0144d39954782ac50d7696.pdf",
+        "https://zrzy.guizhou.gov.cn/wzgb/zwgk/zdlyxxgk/tjsj/202301/P020230109380185262566.pdf",
+        "https://www.ynxc.gov.cn/html/2024/yns_0418/11831.html",
+        "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html",
+        "https://www.shaanxi.gov.cn/zfxxgk/fdzdgknr/ghxx/gtzygh/202406/P020240622343901996974.pdf",
+        "https://www.lzxq.gov.cn/system/2024/07/26/031038275.shtml",
+        "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228",
+        "https://www.nx.gov.cn/zwgk/qzfwj/202109/t20210924_3045970_wap.html",
+        "https://jtyst.xinjiang.gov.cn/xjjtysj/zxdt/202407/a0284b35255f42b49c4531b0dbbd81d9.shtml",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html",
+        "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/",
+        "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html",
+        "https://www.ey.gov.tw/state/4447F4A951A1EC45/094b1d53-de8d-4393-bde6-ab092969cce4",
+        "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html",
+        "https://www.mardep.gov.hk/en/materials-and-publications/publications/hk-fact-sheet/index.html",
+        "https://app.www.gov.cn/govdata/gov/201902/18/435204/article.html",
+        "https://www.macaotourism.gov.mo/zh-hant/article/about-macao/location-and-time",
+        "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html",
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+      ]
+    },
+    {
+      "id": "china-relief-steps",
+      "title": "中国地势三级阶梯与丘陵",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "high-plateau",
+        "plateaus-basins",
+        "eastern-lowlands"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+        "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html",
+        "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html",
+        "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html",
+        "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/",
+        "https://www.neac.gov.cn/seac/ztzl/mgz/gk.shtml",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692371.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html",
+        "https://whc.unesco.org/en/list/1248/",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html",
+        "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692359.html",
+        "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml",
+        "https://shandong-chorography.org/database/f063/section/19/article/2/?reflow=original",
+        "https://zfgb.fujian.gov.cn/3456",
+        "https://www.ezhejiang.gov.cn/2019-08/02/c_420288.htm",
+        "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html",
+        "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+      ]
+    },
+    {
+      "id": "china-lakes",
+      "title": "中国主要湖泊",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "closed",
+        "river-connected",
+        "shallow-network"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692506.html",
+        "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202512/t20251218_8029602.html",
+        "https://www.hunan.gov.cn/hnyw/zwdt/201908/t20190812_9483347.html",
+        "https://swj.yueyang.gov.cn/6855/6879/30424/30429/content_1746597.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html",
+        "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+      ]
+    },
+    {
+      "id": "china-agriculture",
+      "title": "中国农业与牧业",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "northern-fields",
+        "rice-water",
+        "oasis-pasture"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://qys.moa.gov.cn/gdxw/202604/t20260427_6483675.htm",
+        "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm",
+        "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html",
+        "https://www.stats.gov.cn/english/PressRelease/202412/t20241219_1957784.html",
+        "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts",
+        "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692359.html",
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+        "https://nmt.nmg.gov.cn/gk/zfxxgk/fdzdgknr/rdjy/202510/t20251030_2810626.html"
+      ]
+    },
+    {
+      "id": "china-energy-resources",
+      "title": "中国能源与矿产",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "fossil",
+        "renewables",
+        "minerals"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.nea.gov.cn/2006-06/28/c_131215308.htm",
+        "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
+        "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html",
+        "https://zfxxgk.nea.gov.cn/2020-09/10/c_139420038.htm",
+        "https://www.ctg.com.cn/sxjt/sxgc4/bwsx/2024081104052483367/index.html",
+        "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html",
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+        "https://zfxxgk.nea.gov.cn/auto87/201812/t20181211_3448.htm",
+        "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+      ]
+    },
+    {
+      "id": "china-transport",
+      "title": "中国交通与港口",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "land",
+        "inland-water",
+        "ports"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.zhengzhou.gov.cn/2026lh01/9888984.jhtml",
+        "https://www.cas.cn/spx/202210/t20221008_4849995.shtml",
+        "https://xxgk.mot.gov.cn/jigou/zhghs/202006/t20200630_3319765.html",
+        "https://www.tj.gov.cn/zwgk/szfwj/tjsrmzf/202005/t20200519_2365827.html",
+        "https://www.cas.cn/cm/202403/t20240304_5007246.shtml",
+        "https://wap.cq.gov.cn/zjcq/sqgk/cqsq/202412/t20241231_14378525.html",
+        "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
+        "https://whc.unesco.org/en/list/1443",
+        "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hngk/article491327f391ce412d8f70c2fb2e6eee0d.html"
+      ]
+    },
+    {
+      "id": "world-continents",
+      "title": "世界七大洲",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "eurasia",
+        "africa",
+        "americas",
+        "ocean-polar"
+      ],
+      "visuals": [
+        "bars"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://education.nationalgeographic.org/resource/africa-physical-geography/",
+        "https://education.nationalgeographic.org/resource/europe-physical-geography/",
+        "https://education.nationalgeographic.org/resource/north-america-physical-geography/",
+        "https://education.nationalgeographic.org/resource/south-america-physical-geography/",
+        "https://education.nationalgeographic.org/resource/oceania-physical-geography/",
+        "https://science.nasa.gov/earth/water-on-earth/the-water-future-of-earths-third-pole/",
+        "https://unstats.un.org/unsd/methodology/M49",
+        "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
+        "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://www.unesco.org/en/iggp/toratau-unesco-global-geopark",
+        "https://whc.unesco.org/document/167636",
+        "https://www.portofrotterdam.com/en/logistics/connections",
+        "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps",
+        "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/",
+        "https://whc.unesco.org/en/list/1432/",
+        "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance",
+        "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/",
+        "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/",
+        "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there",
+        "https://www.bas.ac.uk/about/where-we-work/antarctica/",
+        "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html"
+      ]
+    },
+    {
+      "id": "world-plateaus-plains",
+      "title": "世界高原与平原",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "highlands",
+        "plains",
+        "basin"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/",
+        "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/",
+        "https://education.nationalgeographic.org/resource/south-america-physical-geography/",
+        "https://science.nasa.gov/earth/earth-observatory/agriculture-patterns-in-the-great-plains-145932/",
+        "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance",
+        "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon",
+        "https://education.nationalgeographic.org/resource/africa-physical-geography/",
+        "https://www.unesco.org/en/mab/kafa",
+        "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/",
+        "https://science.nasa.gov/earth/earth-observatory/brasilia-at-night-48963/",
+        "https://education.nationalgeographic.org/resource/north-america-physical-geography/",
+        "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/",
+        "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/",
+        "https://www.nature.com/articles/nature22039",
+        "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/",
+        "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/",
+        "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+      ]
+    },
+    {
+      "id": "world-deserts",
+      "title": "世界沙漠与干旱景观",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "interior",
+        "coastal",
+        "regional"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-gobi-desert-79746/",
+        "https://whc.unesco.org/en/list/1430/",
+        "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/",
+        "https://oceanservice.noaa.gov/facts/upwelling.html",
+        "https://www.noaa.gov/jetstream/global/climate-zones",
+        "https://www.aoml.noaa.gov/saharan-air-layer/",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692338.html",
+        "https://science.nasa.gov/earth/earth-observatory/the-taklimakan-desert-a-factory-for-dust-storms-87969/",
+        "https://education.nationalgeographic.org/resource/south-america-physical-geography/",
+        "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared",
+        "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts",
+        "https://data.un.org/legacy/en/iso/au.html"
+      ]
+    },
+    {
+      "id": "world-tectonics",
+      "title": "板块、地震与火山",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "opening",
+        "convergence",
+        "other-motion"
+      ],
+      "visuals": [
+        "plates"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://whc.unesco.org/en/list/1152/",
+        "https://earthquake.usgs.gov/learn/parkfield/geology.php",
+        "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift",
+        "https://www.nature.com/articles/s41597-022-01742-3",
+        "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region",
+        "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/",
+        "https://whc.unesco.org/en/list/1418/",
+        "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html",
+        "https://earthquake.usgs.gov/arcgis/rest/services/eq/map_plateboundaries/MapServer"
+      ]
+    },
+    {
+      "id": "world-ecosystems",
+      "title": "森林、草原与湿地",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "forests",
+        "grasslands",
+        "wetlands",
+        "dry-life"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://esa-worldcover.org/en/data-access",
+        "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/",
+        "https://natural-resources.canada.ca/forests-forestry/wildland-fires/fire-ecology",
+        "https://whc.unesco.org/en/list/156/",
+        "https://whc.unesco.org/en/list/1432/",
+        "https://whc.unesco.org/en/list/798/",
+        "https://whc.unesco.org/en/list/1430/",
+        "https://education.nationalgeographic.org/resource/africa-physical-geography/",
+        "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/",
+        "https://education.nationalgeographic.org/resource/south-america-physical-geography/",
+        "https://oceanservice.noaa.gov/facts/upwelling.html"
+      ]
+    },
+    {
+      "id": "world-ocean-monsoon",
+      "title": "洋流、季风与海陆联系",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "currents",
+        "coast-land",
+        "circumpolar"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents",
+        "https://oceanservice.noaa.gov/facts/upwelling.html",
+        "https://oceanservice.noaa.gov/facts/ninonina.html",
+        "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon",
+        "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/index.php",
+        "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/",
+        "https://education.nationalgeographic.org/resource/south-america-physical-geography/",
+        "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience",
+        "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/",
+        "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice"
+      ]
+    },
+    {
+      "id": "world-energy-industry",
+      "title": "世界能源、矿产与产业",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "resources",
+        "transition",
+        "networks"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.eia.gov/todayinenergy/detail.php?id=65584",
+        "https://science.nasa.gov/earth/earth-observatory/escondida-copper-mine-atacama-desert-chile-43394/",
+        "https://www.iea.org/reports/offshore-energy-outlook-2018",
+        "https://www.portofrotterdam.com/en/logistics/connections",
+        "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/",
+        "https://whc.unesco.org/en/list/975/",
+        "https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf",
+        "https://www.portofrotterdam.com/en/logistics/connections/intermodal-transportation/inland-shipping"
+      ]
+    },
+    {
+      "id": "world-agriculture-food",
+      "title": "世界农业与粮食联系",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "staples",
+        "land-use"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance",
+        "https://www.worldbank.org/en/news/feature/2024/05/14/greening-viet-nam-s-rice-bowl-a-mekong-delta-success-story",
+        "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience",
+        "https://www.unesco.org/en/mab/kafa",
+        "https://education.nationalgeographic.org/resource/south-america-physical-geography/",
+        "https://science.nasa.gov/earth/earth-observatory/agriculture-patterns-in-the-great-plains-145932/",
+        "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm",
+        "https://www.stats.gov.cn/english/PressRelease/202412/t20241219_1957784.html",
+        "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts",
+        "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/",
+        "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/",
+        "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202412/t20241213_1957744.html"
+      ]
+    },
+    {
+      "id": "world-transport-trade",
+      "title": "交通、港口与世界贸易",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "ports",
+        "barriers",
+        "strait"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://www.portofrotterdam.com/en/logistics/connections",
+        "https://www.portofrotterdam.com/en/logistics/connections/intermodal-transportation/inland-shipping",
+        "https://www.mpa.gov.sg/media-centre/details/strong-growth-momentum-for-maritime-singapore",
+        "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps",
+        "https://www.mpa.gov.sg/who-we-are/newsroom-resources/publications/singapore-port-information",
+        "https://science.nasa.gov/blogs/earth-matters/2013/03/25/matters-of-scale-and-why-they-matter/",
+        "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalCharacteristics.aspx",
+        "https://pancanal.com/en/history-of-the-panama-canal/",
+        "https://pancanal.com/en/panama-canal-prepares-for-the-impact-of-climate-events/"
+      ]
+    },
+    {
+      "id": "world-polar-comparison",
+      "title": "北极与南极比较",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "north",
+        "south"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice",
+        "https://nsidc.org/learn/cryosphere-glossary/arctic",
+        "https://arctic-council.org/explore/topics/arctic-peoples/",
+        "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/index.php",
+        "https://natural-resources.canada.ca/forests-forestry/wildland-fires/fire-ecology",
+        "https://oceanservice.noaa.gov/facts/smallestocean.html",
+        "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/",
+        "https://www.bas.ac.uk/about/where-we-work/antarctica/",
+        "https://esa-worldcover.org/en/data-access"
+      ]
+    },
+    {
+      "id": "world-regional-comparison",
+      "title": "世界区域怎样比较",
+      "summaryReviewed": true,
+      "sectionsReviewed": 2,
+      "modulesReviewed": [
+        "broad-regions",
+        "countries"
+      ],
+      "visuals": [
+        "comparison"
+      ],
+      "decision": "用并列指标或机制对照呈现核心差别。",
+      "sourceUrls": [
+        "https://education.nationalgeographic.org/resource/africa-physical-geography/",
+        "https://education.nationalgeographic.org/resource/europe-physical-geography/",
+        "https://education.nationalgeographic.org/resource/south-america-physical-geography/",
+        "https://education.nationalgeographic.org/resource/oceania-physical-geography/",
+        "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon",
+        "https://www.portofrotterdam.com/en/logistics/connections",
+        "https://www.mrcmekong.org/geography/",
+        "https://www.mrcmekong.org/basin-climate/",
+        "https://science.nasa.gov/earth/earth-observatory/east-indonesia-island-chain-87707/",
+        "https://unstats.un.org/unsd/methodology/M49",
+        "https://www.nature.com/articles/s41597-023-02549-6",
+        "https://www.noaa.gov/jetstream/global/climate-zones",
+        "https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/applied-science/precis/dissy1808.pdf",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift",
+        "https://www.nature.com/articles/s41597-022-01742-3",
+        "https://whc.unesco.org/en/list/800/",
+        "https://www.stat.go.jp/english/data/handbook/pdf/2025all.pdf",
+        "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html",
+        "https://data.un.org/legacy/en/iso/jp.html",
+        "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts",
+        "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/",
+        "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/",
+        "https://www.nature.com/articles/nature22039",
+        "https://data.un.org/legacy/en/iso/in.html",
+        "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/25812-ibge-lanca-mapa-inedito-de-biomas-e-sistema-costeiro-marinho-2",
+        "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/",
+        "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/",
+        "https://data.un.org/legacy/en/iso/br.html",
+        "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared",
+        "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts",
+        "https://data.un.org/legacy/en/iso/au.html"
+      ]
+    }
+  ]
+}
