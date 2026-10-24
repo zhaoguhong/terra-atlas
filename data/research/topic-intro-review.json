@@ -2,7 +2,7 @@
   "reviewedAt": "2026-10-11",
   "version": "topic-intros-2026-10-11-v2",
   "inputSha256": "cf3fcfbcbf4489046a08cccbee1f8013e9ceba7d6f5bba8917cd241bfc2f1b91",
-  "outputSha256": "94d54c30cc3abe62f70098bffb83953fadd2641a22fb94221284320a4efbda76",
+  "outputSha256": "e4db9f1b13a73f861e42afd923a84c45a303f17da9cb74a398fb16b013bf1626",
   "license": "说明与图表代码原创；参考文章和源数据分别保留原许可。",
   "processing": "按主题逐项审查摘要、正文、模块和图表，删除操作套话与重复地点列表；详细解释由用户展开，地图阅读保持自由顺序。",
   "topics": [
@@ -324,7 +324,9 @@
         "https://www.un.org/en/observances/english-language-day",
         "https://www.unesco.org/en/world-arabic-language-day?hub=68184",
         "https://doi.org/10.5281/zenodo.18613195",
-        "https://www.nature.com/articles/s41597-025-05828-6"
+        "https://www.nature.com/articles/s41597-025-05828-6",
+        "https://www.unicode.org/cldr/charts/48/supplemental/territory_language_information.html",
+        "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
       ]
     },
     {
@@ -1208,5 +1210,21 @@
         "https://data.un.org/legacy/en/iso/au.html"
       ]
     }
-  ]
+  ],
+  "amendments": [
+    {
+      "reviewedAt": "2026-10-24",
+      "topicId": "map-language",
+      "previousOutputSha256": "94d54c30cc3abe62f70098bffb83953fadd2641a22fb94221284320a4efbda76",
+      "scope": "仅修订语言主题摘要、国家／地方视图解释、视图对照表与来源；原学习模块保持不变。核对CLDR 48全国官方语言优先规则和IANA宏语言归属，明确国家色面并非地方母语边界。",
+      "sourceManifest": "/data/language-overview-sources.json"
+    }
+  ],
+  "areaReferenceRevision": {
+    "reviewedAt": "2026-10-24",
+    "topics": [
+      "china-regions"
+    ],
+    "change": "补充分区图来源、数字化参考范围口径及过渡说明。"
+  }
 }

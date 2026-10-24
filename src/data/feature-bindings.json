@@ -247,10 +247,18 @@
   "pearl-delta": [],
   "south-north-water": [],
   "grand-canal": [],
-  "northern-china": [],
-  "southern-china": [],
-  "northwestern-china": [],
-  "qinghai-tibet-region": [],
+  "northern-china": [
+    "region-cn-jiang2023-ii"
+  ],
+  "southern-china": [
+    "region-cn-jiang2023-i"
+  ],
+  "northwestern-china": [
+    "region-cn-jiang2023-iii"
+  ],
+  "qinghai-tibet-region": [
+    "region-cn-jiang2023-iv"
+  ],
   "hong-kong": [
     "province-cn-81"
   ],
@@ -395,19 +403,41 @@
   "liaodong-hills": [],
   "shandong-hills": [],
   "southeast-hills": [],
-  "africa-continent": [],
-  "europe-continent": [],
-  "north-america-continent": [],
-  "south-america-continent": [],
+  "africa-continent": [
+    "region-1159104365"
+  ],
+  "europe-continent": [
+    "region-1159104603"
+  ],
+  "north-america-continent": [
+    "region-1159104607"
+  ],
+  "south-america-continent": [
+    "region-1159104361"
+  ],
   "oceania-region": [],
-  "brazilian-highlands": [],
-  "deccan-plateau": [],
-  "ethiopian-highlands": [],
-  "great-plains": [],
-  "pampas": [],
-  "atacama-desert": [],
+  "brazilian-highlands": [
+    "region-1159104225"
+  ],
+  "deccan-plateau": [
+    "region-1159104233"
+  ],
+  "ethiopian-highlands": [
+    "region-1159104165"
+  ],
+  "great-plains": [
+    "region-1159104319"
+  ],
+  "pampas": [
+    "region-1159104221"
+  ],
+  "atacama-desert": [
+    "region-1159104081"
+  ],
   "namib-sand-sea": [],
-  "gobi-desert": [],
+  "gobi-desert": [
+    "region-1159104335"
+  ],
   "iceland-rift": [],
   "san-andreas-fault": [],
   "hawaii-hotspot": [],

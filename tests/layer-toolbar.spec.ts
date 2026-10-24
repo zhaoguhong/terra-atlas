@@ -37,7 +37,7 @@ test('layer toolbar independently previews settings and preserves the desktop re
   await entry.click();await entry.click()
   await expect(entry).toHaveAttribute('aria-expanded','false')
   // Place cards move the toolbar inward; its panel must remain reachable too.
-  await page.getByRole('textbox',{name:'搜索地理对象'}).fill('长江')
+  await page.getByRole('combobox',{name:'搜索地理对象'}).fill('长江')
   await page.locator('.search-results>button').first().click()
   await entry.click()
   await expect(panel).toBeInViewport({ratio:1})

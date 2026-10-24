@@ -5,4 +5,6 @@ import './styles.css'
 import './components/MapLegend.css'
 import './components/MobileSheet.css'
 import './components/LayerPanel.css'
+import './components/Exploration.css'
+import './appearance.css'
 createRoot(document.getElementById('root')!).render(<App />)

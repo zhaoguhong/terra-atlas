@@ -9,8 +9,8 @@ import TopicVisuals from './TopicVisuals'
 const cardsById=new Map(knowledge.map(card=>[card.id,card]))
 const scopeOptions=[{id:'all',name:'全部主题'},{id:'china',name:'中国地理'},{id:'world',name:'世界地理'}] as const
 
-export default function TopicPanel({scope,query,topic,library,group,selection,controls,discoveries,learningTools,detail,onScope,onQuery,onGroup,onStart,onLibrary,onExit,onPick,onOverview,onSave,onShare,sheet,onSheet,onBack,canGoBack=false,onShowMap}:{
-  scope:TopicScope;query:string;topic:Topic|null;library:boolean;group:TopicGroup|'all';selection:Selection|null;controls:ReactNode;discoveries?:ReactNode;learningTools?:ReactNode;detail:ReactNode;
+export default function TopicPanel({scope,query,topic,library,group,selection,controls,learningTools,detail,onScope,onQuery,onGroup,onStart,onLibrary,onExit,onPick,onOverview,onSave,onShare,sheet,onSheet,onBack,canGoBack=false,onShowMap}:{
+  scope:TopicScope;query:string;topic:Topic|null;library:boolean;group:TopicGroup|'all';selection:Selection|null;controls:ReactNode;learningTools?:ReactNode;detail:ReactNode;
   onScope:(scope:TopicScope)=>void;onQuery:(query:string)=>void;onGroup:(group:TopicGroup|'all')=>void;onStart:(topic:Topic)=>void;onLibrary:()=>void;onExit:()=>void;
   onPick:(id:string)=>void;onOverview:()=>void;onSave:()=>void;onShare:()=>void;sheet:'peek'|'half'|'full';onSheet:(sheet:'peek'|'half'|'full')=>void;
   onBack?:()=>void;canGoBack?:boolean;onShowMap?:()=>void;
@@ -32,12 +32,14 @@ export default function TopicPanel({scope,query,topic,library,group,selection,co
     requestAnimationFrame(()=>membersRef.current?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}))
   }
   if(library||!topic)return <div className="topic-library" ref={panelRef}>
-    <div className="explorer-intro"><h1>选一个主题看地图</h1><p>按地域、分类或地点找主题。</p></div>
+    <div className="explorer-intro theme-catalogue-heading"><h1>按主题看地图</h1><p>从地域、地貌或人文线索出发，自由跳着看。</p></div>
     {topic&&<button className="topic-resume" onClick={onOverview}><Layers size={15}/><span>继续看 · {topic.title}</span><ArrowRight size={14}/></button>}
     <div className="topic-scope"><span className="topic-filter-label" id="topic-scope-label"><Globe2 size={13}/>主题范围</span><div className="topic-scope-options" role="group" aria-labelledby="topic-scope-label">{scopeOptions.map(item=><button key={item.id} aria-label={item.name} aria-pressed={scope===item.id} onClick={()=>onScope(item.id)}><span>{item.name}</span><small aria-hidden="true">{topicsForScope(item.id).length}</small></button>)}</div></div>
     <label className="topic-search"><Search size={15}/><input type="search" aria-label="搜索主题和主题成员" placeholder="搜索主题或地点，如高原、黄河" value={query} onChange={event=>onQuery(event.target.value)}/>{query&&<button type="button" onClick={()=>onQuery('')} aria-label="清空主题搜索"><X size={14}/></button>}</label>
-    <span className="topic-filter-label">内容分类</span>
+    <details className="topic-category-filters" open={group!=='all'||undefined}><summary>内容分类 · {group==='all'?'全部':topicGroups.find(item=>item.id===group)?.name}</summary>
     <div className="topic-categories" aria-label="主题分类"><button aria-label="全部分类" aria-pressed={group==='all'} onClick={()=>onGroup('all')}>全部分类 <span aria-hidden="true">{matchingTopics.length}</span></button>{topicGroups.map(item=><button key={item.id} aria-label={item.name} aria-pressed={group===item.id} onClick={()=>onGroup(item.id)}>{item.name} <span aria-hidden="true">{matchingTopics.filter(entry=>entry.group===item.id).length}</span></button>)}</div>
+    </details>
+    {(scope!=='all'||group!=='all'||query)&&<button className="text-button" onClick={()=>{onScope('all');onQuery('');onGroup('all')}}>重置主题筛选</button>}
     <p className="topic-result-count" role="status">{scopeOptions.find(item=>item.id===scope)?.name}{group!=='all'&&` · ${topicGroups.find(item=>item.id===group)?.name}`} · {search?'找到 ':''}{available.length} 个主题{search&&` · “${query.trim()}”`}</p>
     {topicGroups.filter(item=>group==='all'||group===item.id).map(item=>{
       const entries=available.filter(entry=>entry.group===item.id)
@@ -45,14 +47,13 @@ export default function TopicPanel({scope,query,topic,library,group,selection,co
     })}
     {!available.length&&<div className="topic-empty"><BookOpen size={22}/><p>没有找到匹配的主题。</p><span>可以换一个地名，或调整主题范围和分类。</span><button onClick={()=>{onQuery('');onScope('all');onGroup('all')}}>查看全部主题</button></div>}
     <p className="topic-library-note"><Globe2 size={13}/>气候、人口等共用主题在中国与世界范围均可阅读。</p>
-    {discoveries}
   </div>
   const memberIndex=selection?topic.stops.indexOf(selection.card.id):-1
   const member=memberIndex!==-1
   const selectedModule=selection?topic.modules?.find(module=>module.stops.includes(selection.card.id)):undefined
   const modules=topic.modules?.length?topic.modules:[{id:'members',title:topic.kind==='distribution'?'分布中的阅读入口':'认识主题中的地方',description:topic.kind==='distribution'?'结合地图分布，打开具体解读继续观察。':'选择任一地点，阅读介绍并在地图上定位；不必按顺序阅读。',stops:topic.stops}]
   const showDetail=!!(selection&&detail)
-  const cardSheetControls=<div className="topic-reader-sizes mobile-only" aria-label="知识卡片布局">{([['peek','卡片摘要','摘要'],['half','卡片半屏','半屏'],['full','卡片全屏','阅读']] as const).map(([value,label,text])=><button key={value} aria-label={landscape&&value!=='full'?value==='peek'?'收起知识卡片':'卡片并排':label} aria-pressed={sheet===value} onClick={()=>onSheet(value)}>{landscape&&value!=='full'?value==='peek'?'收起':'并排':text}</button>)}<button className="topic-close-card" aria-label="关闭知识卡片" title="关闭地点，返回主题全览" onClick={onOverview}><X size={13}/></button></div>
+  const cardSheetControls=<div className="topic-reader-sizes mobile-only" aria-label="知识卡片布局"><button aria-label={sheet==='full'?'返回地图与卡片':'卡片全屏'} onClick={()=>onSheet(sheet==='full'?'half':'full')}>{sheet==='full'?(landscape?'并排':'半屏'):'展开阅读'}</button><button className="topic-close-card" aria-label="关闭知识卡片" title="关闭地点，返回主题全览" onClick={onOverview}><X size={13}/></button></div>
   return <div className="topic-reader" data-topic-id={topic.id} ref={panelRef}>
     <div className="topic-sticky-nav">
       <div className="topic-reader-nav"><button onClick={onLibrary}><ArrowLeft size={14}/>主题库</button><div className="topic-actions">{onShowMap&&<button className="topic-show-map" onClick={onShowMap} aria-label="查看主题地图" title="查看地图"><LocateFixed size={14}/><span>看地图</span></button>}<button onClick={onSave} aria-label="保存主题视图" title="保存主题视图"><Bookmark size={14}/></button><button onClick={onShare} aria-label="分享主题" title="分享主题"><Share2 size={14}/></button><button onClick={onExit} aria-label="退出主题" title="退出主题，回到自由探索"><X size={15}/><span>自由探索</span></button></div></div>
@@ -63,20 +64,20 @@ export default function TopicPanel({scope,query,topic,library,group,selection,co
       </>}
     </div>
     <div className="topic-heading"><span className="eyebrow">{topicGroups.find(item=>item.id===topic.group)?.name} · {topicKindNames[topic.kind]}</span><h1>{topic.title}</h1></div>
-    {!showDetail&&<div className="topic-sheet-controls mobile-only" aria-label="主题介绍布局">{([['peek',landscape?'收起':'摘要'],['half',landscape?'并排':'半屏'],['full','阅读']] as const).map(([value,label])=><button key={value} aria-label={'主题'+label} aria-pressed={sheet===value} onClick={()=>onSheet(value)}>{label}</button>)}</div>}
+    {!showDetail&&<div className="topic-sheet-controls mobile-only" aria-label="主题介绍布局"><button aria-label={sheet==='full'?'返回主题与地图':'主题阅读'} onClick={()=>onSheet(sheet==='full'?'half':'full')}>{sheet==='full'?'返回地图':'展开阅读'}</button></div>}
     {showDetail?<>
       {selectedModule&&<p className="topic-member-context"><Layers size={13}/><span>所属模块 · {selectedModule.title}</span></p>}
       {!member&&<div className="topic-related-notice"><BookOpen size={15}/><p>这是从当前主题延伸探索的地点。主题仍保留，可返回主题全览继续选择成员。</p></div>}
       <div className="topic-detail">{detail}</div>
       <div className="topic-reading-footer"><button onClick={onOverview}><ArrowLeft size={14}/>返回主题全览</button>{member&&memberIndex<topic.stops.length-1&&<button onClick={()=>onPick(topic.stops[memberIndex+1])}>继续看 · {cardsById.get(topic.stops[memberIndex+1])?.name}<ArrowRight size={14}/></button>}</div>
     </>:<>
+      {controls}
       <p className="topic-summary">{topic.description}</p>
       <TopicVisuals visuals={topic.visuals} onPick={onPick}/>
       <button className="topic-module-jump" onClick={showModules}><span><Layers size={14}/>{modules.length} 个学习模块 · {topic.stops.length} 个阅读入口</span><span>选择模块<ChevronDown size={13}/></span></button>
       <div className="topic-observation"><BookOpen size={15}/><div><strong>看地图时想一想</strong><p>{topic.question}</p></div></div>
       <details className="topic-expanded-intro topic-explanation" key={'intro-'+topic.id} aria-label="主题介绍"><summary>展开主题介绍<ChevronDown size={13}/></summary>{topic.sections.map((section,index)=><section className="reading-section" key={index}><h3>{section.title}</h3><p>{section.body}</p></section>)}<p className="topic-takeaway">{topic.takeaway}</p></details>
       {learningTools}
-      {controls}
       <section className="topic-members-section" ref={membersRef} aria-label="学习模块"><div className="section-label"><Layers size={14}/><span>学习模块</span><small>{modules.length} 个模块 · {topic.stops.length} 个入口</small></div><p className="topic-module-hint">打开一个地点，地图会移到对应位置，并显示它的介绍。</p>{modules.map((module,moduleIndex)=><section className="topic-module" key={module.id} aria-label={module.title}>
         <div className="topic-module-heading"><span>{String(moduleIndex+1).padStart(2,'0')}</span><h2>{module.title}</h2><small>{module.stops.length} 个入口</small></div><p className="topic-module-description">{module.description}</p>
         {'detail' in module&&module.detail&&<details className="module-detail" key={topic.id+module.id}><summary>展开说明<ChevronDown size={12}/></summary><p>{module.detail}</p></details>}

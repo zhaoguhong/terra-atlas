@@ -1,3 +1,5 @@
+export type Appearance = 'system' | 'light' | 'dark'
+export type ResolvedAppearance = Exclude<Appearance, 'system'>
 export type Category = 'mountains' | 'terrain' | 'rivers' | 'lakes' | 'climate' | 'population' | 'religion' | 'language' | 'regions' | 'human'
 export type View = 'china' | 'world'
 export type TopicScope = View | 'all'
@@ -13,9 +15,9 @@ export interface LayerState { terrain: boolean; mountains: boolean; rivers: bool
 export interface MapDisplay { basemap: 'natural' | 'detail'; terrain3d: boolean }
 export interface OnlineMapStatus { detail: 'off' | 'loading' | 'ready' | 'error'; terrain: 'off' | 'loading' | 'ready' | 'error' }
 export interface Camera { center: [number, number]; zoom: number; bearing?: number; pitch?: number }
-export interface SavedView { id: string; name: string; camera: Camera; layers: LayerState; view: View; opacity?: number; thematic?: ThematicState; place?: string; display?: MapDisplay; topicId?: string | null }
+export interface SavedView { id: string; name: string; camera: Camera; layers: LayerState; view: View; opacity?: number; thematic?: ThematicState; place?: string; featureId?: string; subtype?: string; placeCoordinates?: [number,number]; display?: MapDisplay; topicId?: string | null }
 export interface Selection { card: Knowledge; featureId?: string; source?: string; subtype?: string; geographic?: boolean }
-export interface ThematicState { religion: string; language: string; opacity: number; climateMode?: 'groups'|'types'; languageMode?: 'areas'|'families'|'points'; languageId?: string }
+export interface ThematicState { religion: string; language: string; opacity: number; climateMode?: 'groups'|'types'; languageMode?: 'overview'|'areas'|'families'|'points'; languageId?: string }
 export type TopicGroup = 'regions' | 'landforms' | 'water' | 'climate' | 'people' | 'resources' | 'earth'
 export type TopicKind = 'collection' | 'distribution' | 'connections'
 export type TopicOverlay = 'climate' | 'population' | 'religion' | 'language'

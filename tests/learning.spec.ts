@@ -32,7 +32,7 @@ async function closeLayers(page:Page){
   if(await handle.isVisible())await handle.press('Home')
 }
 async function select(page:Page,name:string){
-  await page.getByRole('textbox',{name:'搜索地理对象'}).fill(name)
+  await page.getByRole('combobox',{name:'搜索地理对象'}).fill(name)
   await page.locator('.search-results>button').first().click()
   await expect(page.locator('.knowledge-panel')).toBeVisible()
   await selectedGeometry(page)
@@ -127,7 +127,7 @@ test('learning: a delayed previous location cannot move the camera away from the
     await request
     // Deliberately make a second real UI choice while the first locate is
     // pending. Ordinary select() still waits for a complete bound geometry.
-    await page.getByRole('textbox',{name:'搜索地理对象'}).fill('长江')
+    await page.getByRole('combobox',{name:'搜索地理对象'}).fill('长江')
     await page.locator('.search-results>button').first().click()
     await expect(page.locator('.knowledge-panel h2')).toHaveText('长江')
     await renderFrames(page)
@@ -151,7 +151,7 @@ test('learning: a shared camera survives a same-document hash while the previous
   try{
     await page.reload();await baseReady(page);await request
     await page.evaluate(()=>{const atlas=window.__terraAtlas!,locate=atlas.locate;atlas.locate=selection=>{atlas.map.getContainer().dataset.lastLocateId=selection.card.id;locate(selection)}})
-    await page.getByRole('textbox',{name:'搜索地理对象'}).fill('喜马拉雅')
+    await page.getByRole('combobox',{name:'搜索地理对象'}).fill('喜马拉雅')
     await page.locator('.search-results>button').first().click()
     await expect(page.locator('.knowledge-panel h2')).toHaveText('喜马拉雅山脉')
     await renderFrames(page)

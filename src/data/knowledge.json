@@ -7828,9 +7828,13 @@
       {
         "title": "中国科学院地理资源所 · 中国南北过渡带研究",
         "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202504/t20250409_7591749.html"
+      },
+      {
+        "title": "Jiang等（2023）· 图2中国四大地理区分区图（CC BY 4.0）",
+        "url": "https://nhess.copernicus.org/articles/23/3747/2023/"
       }
     ],
-    "geometryNote": "本卡为宽泛的自然与人文比较区域，使用代表点，不以省界或父地形面冒充精确区域边界；内部存在连续过渡。",
+    "geometryNote": "依据Jiang等（2023）图2数字化的四大地理区概化分区，适合全国尺度学习；分界为过渡带参考，不是行政区界、精确气候线或实测边界。外围轮廓沿用本站Natural Earth数据。",
     "sections": [
       {
         "title": "冬温与作物安排",
@@ -7914,9 +7918,13 @@
       {
         "title": "宁夏水利厅 · 珠江与沿海河流",
         "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2718481.html"
+      },
+      {
+        "title": "Jiang等（2023）· 图2中国四大地理区分区图（CC BY 4.0）",
+        "url": "https://nhess.copernicus.org/articles/23/3747/2023/"
       }
     ],
-    "geometryNote": "本卡为宽泛的自然与人文比较区域，使用代表点，不以省界或父地形面冒充精确区域边界；内部存在连续过渡。",
+    "geometryNote": "依据Jiang等（2023）图2数字化的四大地理区概化分区，适合全国尺度学习；分界为过渡带参考，不是行政区界、精确气候线或实测边界。外围轮廓沿用本站Natural Earth数据。",
     "sections": [
       {
         "title": "水热优势有条件",
@@ -8012,9 +8020,13 @@
       {
         "title": "中国科学院地理资源所 · 内蒙古高原",
         "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692371.html"
+      },
+      {
+        "title": "Jiang等（2023）· 图2中国四大地理区分区图（CC BY 4.0）",
+        "url": "https://nhess.copernicus.org/articles/23/3747/2023/"
       }
     ],
-    "geometryNote": "本卡为宽泛的自然与人文比较区域，使用代表点，不以省界或父地形面冒充精确区域边界；内部存在连续过渡。",
+    "geometryNote": "依据Jiang等（2023）图2数字化的四大地理区概化分区，适合全国尺度学习；分界为过渡带参考，不是行政区界、精确气候线或实测边界。外围轮廓沿用本站Natural Earth数据。",
     "sections": [
       {
         "title": "水源不只来自一类补给",
@@ -8082,9 +8094,13 @@
       {
         "title": "中国科学院地理资源所 · 中国最大的咸水湖",
         "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+      },
+      {
+        "title": "Jiang等（2023）· 图2中国四大地理区分区图（CC BY 4.0）",
+        "url": "https://nhess.copernicus.org/articles/23/3747/2023/"
       }
     ],
-    "geometryNote": "本卡为宽泛的自然与人文比较区域，使用代表点，不以省界或父地形面冒充精确区域边界；内部存在连续过渡。",
+    "geometryNote": "依据Jiang等（2023）图2数字化的四大地理区概化分区，适合全国尺度学习；分界为过渡带参考，不是行政区界、精确气候线或实测边界。外围轮廓沿用本站Natural Earth数据。",
     "sections": [
       {
         "title": "海拔比纬度多一层解释",
@@ -12414,7 +12430,7 @@
       3
     ],
     "summary": "赤道穿过非洲中部。由撒哈拉向萨赫勒、热带草原和刚果盆地观察，能看到水分与植被的变化；再转向东非高地，会发现纬度相近也不等于环境相同。",
-    "location": "位于大西洋与印度洋之间，北临地中海；参考点仅帮助回到大陆视野。",
+    "location": "位于大西洋与印度洋之间，北临地中海；地图显示大洲概化参考范围。",
     "formation": "大陆尺度的热量条件受纬度影响，雨季长度和来水条件又受大气环流与地形调节。东非裂谷、高地和湖泊说明构造活动也参与塑造地区差异。",
     "connections": [
       "尼罗河将低纬高地来水带入干旱地区，不能只凭下游降水判断河流是否存在。",
@@ -12460,6 +12476,10 @@
       {
         "title": "UNESCO · Okavango Delta",
         "url": "https://whc.unesco.org/en/list/1432/"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -12470,7 +12490,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 1.7,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。大洲参考范围主要概括大陆，不用于统计岛屿归属或洲界面积。"
   },
   {
     "id": "europe-continent",
@@ -12532,6 +12552,10 @@
       {
         "title": "Swiss Federal Office of Transport · New Rail Link through the Alps",
         "url": "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -12542,7 +12566,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 2,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。大洲参考范围主要概括大陆，不用于统计岛屿归属或洲界面积。"
   },
   {
     "id": "north-america-continent",
@@ -12600,6 +12624,10 @@
       {
         "title": "USDA ERS · Wheat Sector at a Glance",
         "url": "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -12610,7 +12638,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 1.5,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。大洲参考范围主要概括大陆，不用于统计岛屿归属或洲界面积。"
   },
   {
     "id": "south-america-continent",
@@ -12672,6 +12700,10 @@
       {
         "title": "NASA Astrobiology · The Driest Place on Earth",
         "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -12682,7 +12714,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 1.8,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。大洲参考范围主要概括大陆，不用于统计岛屿归属或洲界面积。"
   },
   {
     "id": "oceania-region",
@@ -12811,6 +12843,10 @@
       {
         "title": "NASA Earth Observatory · Brasília at Night",
         "url": "https://science.nasa.gov/earth/earth-observatory/brasilia-at-night-48963/"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -12819,7 +12855,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 3,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。"
   },
   {
     "id": "deccan-plateau",
@@ -12835,7 +12871,7 @@
       17
     ],
     "summary": "德干高原是印度半岛的重要高地，北西部广泛分布古老火山喷发留下的玄武岩。山地、河谷与季风共同影响高原内部的水分和土地利用。",
-    "location": "印度半岛中南部，介于东西两侧沿海低地之间；参考点表示区域位置。",
+    "location": "印度半岛中南部，介于东西两侧沿海低地之间；地图显示高原的概化参考范围。",
     "formation": "德干地区包含大面积古代玄武岩熔岩覆盖地表，后经风化和河流切割形成多样景观。洛纳尔陨石坑提醒我们：岩石基底的火山成因与后来形成的局地撞击坑是两件事。",
     "connections": [
       "印度夏季季风提供水汽，地形又让沿岸与内陆的降水条件出现差异。",
@@ -12877,6 +12913,10 @@
       {
         "title": "NOAA NESDIS · What Is a Monsoon?",
         "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -12886,7 +12926,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 3.5,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。"
   },
   {
     "id": "ethiopian-highlands",
@@ -12948,6 +12988,10 @@
       {
         "title": "UNESCO MAB · Kafa",
         "url": "https://www.unesco.org/en/mab/kafa"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -12957,7 +13001,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 4,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。"
   },
   {
     "id": "great-plains",
@@ -13019,6 +13063,10 @@
       {
         "title": "USDA ERS · Wheat Sector at a Glance",
         "url": "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -13028,7 +13076,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 3,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。"
   },
   {
     "id": "pampas",
@@ -13086,6 +13134,10 @@
       {
         "title": "National Geographic Society · South America: Physical Geography",
         "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -13094,7 +13146,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 3.5,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。"
   },
   {
     "id": "atacama-desert",
@@ -13156,6 +13208,10 @@
       {
         "title": "NOAA · What is upwelling?",
         "url": "https://oceanservice.noaa.gov/facts/upwelling.html"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -13165,7 +13221,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 4,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。"
   },
   {
     "id": "namib-sand-sea",
@@ -13247,7 +13303,7 @@
       43
     ],
     "summary": "戈壁跨越蒙古南部和中国北部，既有裸岩与砾石地表，也有草地、沙地和暂时性湖盆。它说明荒漠景观不必都是连绵沙丘，尘源也常来自细颗粒沉积。",
-    "location": "亚洲内陆，位于蒙古南部与中国北部一带；参考点不界定跨境自然区。",
+    "location": "亚洲内陆，位于蒙古南部与中国北部一带；地图显示戈壁的概化参考范围。",
     "formation": "水分有限的环境中，植被、风和地表物质共同影响景观。强风可扬起干涸湖盆等处的细沉积物，形成远距离输送的尘，而粗砂和岩石不会以同样方式被搬运。",
     "connections": [
       "戈壁与塔克拉玛干可以比较：荒漠、沙漠和戈壁地表描述的侧重点不同。",
@@ -13285,6 +13341,10 @@
       {
         "title": "NASA Earth Observatory · Dust Storm over the Gobi Desert",
         "url": "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-gobi-desert-79746/"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
       }
     ],
     "relatedIds": [
@@ -13293,7 +13353,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 3.5,
-    "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。"
   },
   {
     "id": "iceland-rift",

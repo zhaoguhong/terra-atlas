@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#f7f6ef" />
+    <script>
+      // Apply the saved appearance before the first frame, including slow/offline starts.
+      try {
+        const preference = JSON.parse(localStorage.getItem('terra-atlas-v1') || 'null')?.appearance;
+        const theme = preference === 'dark' || (preference !== 'light' && matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+        document.querySelector('meta[name="theme-color"]').content = theme === 'dark' ? '#111a17' : '#f7f6ef';
+      } catch {
+        const theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      }
+    </script>
     <meta name="description" content="山河图 Terra Atlas：在地图上自由探索中国与世界的山脉、河流、湖泊、地形与气候，发现山河之间的联系。" />
     <link rel="canonical" href="https://terraatlas.zhaoguhong.com/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />

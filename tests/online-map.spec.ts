@@ -64,7 +64,7 @@ async function enableDetail(page: Page) {
 }
 async function select(page: Page, name: string) {
   await closeLayers(page)
-  await page.getByRole('textbox', { name: '搜索地理对象', exact: true }).fill(name)
+  await page.getByRole('combobox', { name: '搜索地理对象', exact: true }).fill(name)
   await page.locator('.search-results>button').first().click()
   await selectedGeometry(page)
 }

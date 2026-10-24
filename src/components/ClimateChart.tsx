@@ -12,7 +12,7 @@ export default function ClimateChart({place,compact=false,scale}:{place:ClimateP
   return <figure className={`climate-chart ${compact?'compact':''}`}>
     <figcaption><strong>{place.name}</strong><span><i className="temperature-key"/>月均温 °C <i className="rain-key"/>月降水 mm</span></figcaption>
     <svg viewBox={`0 0 ${w} ${h}`} role="img" aria-label={`${place.name}十二个月平均气温与降水图`}>
-      {[0,1,2,3,4].map(i=>{const yy=top+ph*i/4;return <g key={i}><line x1={left} x2={w-right} y1={yy} y2={yy} stroke="#d9ded3"/><text x={left-6} y={yy+4} textAnchor="end">{Math.round(hi-(hi-lo)*i/4)}</text><text x={w-right+6} y={yy+4}>{Math.round(maxP*(1-i/4))}</text></g>})}
+      {[0,1,2,3,4].map(i=>{const yy=top+ph*i/4;return <g key={i}><line x1={left} x2={w-right} y1={yy} y2={yy} stroke="var(--line,#d9ded3)"/><text x={left-6} y={yy+4} textAnchor="end">{Math.round(hi-(hi-lo)*i/4)}</text><text x={w-right+6} y={yy+4}>{Math.round(maxP*(1-i/4))}</text></g>})}
       {p.map((v,i)=><rect key={i} x={x(i)-6} y={top+ph-v/maxP*ph} width={12} height={v/maxP*ph} rx={2} fill="#7caabb"><title>{i+1}月降水 {v.toFixed(1)} 毫米</title></rect>)}
       <path d={line} fill="none" stroke="#b36d4c" strokeWidth={2.5}/>
       {t.map((v,i)=><g key={i}><circle cx={x(i)} cy={y(v)} r={2.5} fill="#b36d4c"><title>{i+1}月气温 {v.toFixed(1)} °C</title></circle><text x={x(i)} y={h-10} textAnchor="middle">{i+1}</text></g>)}

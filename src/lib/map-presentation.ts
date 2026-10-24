@@ -1,3 +1,4 @@
+import overview from '../../public/data/language-overview.json' with {type:'json'}
 import type {ThematicState} from '../types'
 
 export const climateGroups = [
@@ -23,20 +24,16 @@ export const languageFamilies = [
 export const otherLanguageColor = '#8c9692'
 export const otherLanguageLabel = '其他语系与分类（可筛选）'
 
-// Colours encode a small, named set of categories. Unlisted categories share
-// the explicit “other” category instead of silently recycling the palette.
-export const majorLanguages = [
-  {id:'mand1415',name:'官话（汉语）',color:'#5878b5'},
-  {id:'stan1293',name:'英语',color:'#c18a31'},
-  {id:'stan1288',name:'西班牙语',color:'#cb7042'},
-  {id:'stan1290',name:'法语',color:'#258b80'},
-  {id:'port1283',name:'葡萄牙语',color:'#8c69af'},
-  {id:'russ1263',name:'俄语',color:'#aa5354'},
-  {id:'stan1295',name:'德语',color:'#79923e'},
-  {id:'hind1269',name:'印地语',color:'#ca8590'},
-  {id:'beng1280',name:'孟加拉语',color:'#479fb4'},
-  {id:'nucl1643',name:'日语',color:'#a35e99'},
-] as const
+// Country overview and area colours share the same explicitly sourced groups.
+export const languageOverview = overview
+export const majorLanguages = overview.categories
+export const areaLanguageColors = majorLanguages.flatMap(category=>category.members.map(id=>({id,color:category.color})))
+export function languageMembers(id:string):string[] {
+  return majorLanguages.find(category=>category.id===id)?.members||[id]
+}
+export function languageCategory(id:string) {
+  return majorLanguages.find(category=>category.id===id||category.members.includes(id))
+}
 
 export interface LanguageAreaMeta {
   note:string; period:string; sourceId:string;
@@ -49,12 +46,12 @@ export function familyColor(id:string):string {
   return languageFamilies.find(family=>family.id===id)?.color||otherLanguageColor
 }
 export function languageColor(id:string):string {
-  return majorLanguages.find(language=>language.id===id)?.color||otherLanguageColor
+  return languageCategory(id)?.color||otherLanguageColor
 }
 export function thematicModes(value:Partial<ThematicState>|undefined) {
   return {
     climateMode:value?.climateMode==='types'?'types' as const:'groups' as const,
-    languageMode:value?.languageMode==='points'?'points' as const:value?.languageMode==='families'?'families' as const:'areas' as const,
+    languageMode:value?.languageMode==='points'?'points' as const:value?.languageMode==='families'?'families' as const:value?.languageMode==='areas'?'areas' as const:'overview' as const,
     languageId:typeof value?.languageId==='string'?value.languageId:'all',
   }
 }

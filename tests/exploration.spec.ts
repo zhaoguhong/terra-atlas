@@ -25,7 +25,7 @@ async function closeLayers(page:Page){
   const handle=page.getByRole('button',{name:'调整阅读面板大小',exact:true})
   if(await handle.isVisible()&&await page.locator('.explorer.topic-active').count())await handle.press('Home')
 }
-async function select(page:Page,name:string){await page.getByRole('textbox',{name:'搜索地理对象'}).fill(name);await page.locator('.search-results>button').first().click();await expect(page.locator('.knowledge-panel')).toBeVisible();await selectedGeometry(page)}
+async function select(page:Page,name:string){await page.getByRole('combobox',{name:'搜索地理对象'}).fill(name);await page.locator('.search-results>button').first().click();await expect(page.locator('.knowledge-panel')).toBeVisible();await selectedGeometry(page)}
 
 test('local map, terrain and Chinese labels render',async({page},info)=>{
   await page.waitForFunction(()=>window.__terraAtlas?.map.queryRenderedFeatures({layers:['place-labels']}).some(feature=>/[\u3400-\u9fff]/.test(String(feature.properties?.name||''))),undefined,{timeout:45000})
@@ -49,7 +49,7 @@ test('Chinese and English search locate sourced knowledge',async({page},info)=>{
   await expect(page.locator('.knowledge-panel h2')).toHaveText('阿尔卑斯山脉')
 })
 test('country searches keep country labels and geometry separate from same-name rivers',async({page})=>{
-  const input=page.getByRole('textbox',{name:'搜索地理对象'})
+  const input=page.getByRole('combobox',{name:'搜索地理对象'})
   for(const [query,name,id] of [['Jordan','约旦','country-jor'],['Niger','尼日尔','country-ner'],['Senegal','塞内加尔','country-sen'],['Republic of the Congo','刚果共和国','country-cog']]){
     await input.fill(query)
     const result=page.locator('.search-results>button').filter({has:page.getByText(name,{exact:true})})
@@ -76,7 +76,7 @@ test('search updates an existing query when delayed language data arrives and pr
   await page.route('**/data/learning-languages.geojson',async route=>{await gate;await route.continue()})
   try{
     await chooseTheme(page,'语言分布');await page.getByRole('combobox',{name:'语言展示方式'}).selectOption('points');await closeLayers(page)
-    const input=page.getByRole('textbox',{name:'搜索地理对象'})
+    const input=page.getByRole('combobox',{name:'搜索地理对象'})
     await input.fill('Mandarin Chinese')
     await expect(page.locator('.search-results>button strong')).toHaveText('普通话与汉语内部多样性')
     release()
@@ -159,7 +159,7 @@ test('layer visibility, empty search and sources dialog behave correctly',async(
   await page.getByRole('checkbox',{name:'河流图层',exact:true}).uncheck()
   expect(await page.evaluate(()=>window.__terraAtlas!.map.getLayoutProperty('river-lines','visibility'))).toBe('none')
   await closeLayers(page)
-  await page.getByRole('textbox',{name:'搜索地理对象'}).fill('不存在的地理名字ZZZ')
+  await page.getByRole('combobox',{name:'搜索地理对象'}).fill('不存在的地理名字ZZZ')
   await expect(page.locator('.empty-result')).toBeVisible()
   await page.getByRole('button',{name:'清空搜索'}).click()
   await clickHeaderAction(page,'资料与关于')
@@ -171,7 +171,7 @@ test('core explorer makes no third party requests and can search source objects'
   const origin=new URL(page.url()).origin
   await page.route('**/*',route=>{if(new URL(route.request().url()).origin!==origin){thirdParty.push(route.request().url());return route.abort()}return route.continue()})
   await page.reload();await expect(page.locator('.app')).toHaveAttribute('data-map-status','ready',{timeout:35000})
-  await page.getByRole('textbox',{name:'搜索地理对象'}).fill('日本')
+  await page.getByRole('combobox',{name:'搜索地理对象'}).fill('日本')
   await page.locator('.search-results>button').first().click()
   await expect(page.locator('.knowledge-panel h2')).toContainText('日本')
   expect(thirdParty).toEqual([])
@@ -181,7 +181,7 @@ test('responsive layouts have no overflow',async({page},info)=>{
     await page.setViewportSize(size);await page.waitForTimeout(120)
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
     expect(await page.evaluate(()=>document.documentElement.scrollHeight<=innerHeight)).toBe(true)
-    await expect(page.getByRole('textbox',{name:'搜索地理对象'})).toBeVisible()
+    await expect(page.getByRole('combobox',{name:'搜索地理对象'})).toBeVisible()
   }
   await page.screenshot({path:`${test.info().outputDir}/landscape-${info.project.name}.png`})
 })
@@ -200,7 +200,7 @@ test('failed core data shows an actionable retry and recovers',async({page})=>{
   expect(JSON.stringify(await page.evaluate(()=>window.__terraAtlas!.map.getSource('selection')!.serialize()))).toContain('lake-caspian-sea')
 })
 test('keyboard search, map pan/zoom and share link restore work',async({page})=>{
-  await page.getByRole('textbox',{name:'搜索地理对象'}).fill('昆仑')
+  await page.getByRole('combobox',{name:'搜索地理对象'}).fill('昆仑')
   await page.keyboard.press('Enter')
   await expect(page.locator('.knowledge-panel h2')).toHaveText('昆仑山脉')
   await selectedGeometry(page)
@@ -272,7 +272,7 @@ test('without WebGL the error is clear and knowledge remains readable',async({pa
   })
   await page.reload()
   await expect(page.locator('.map-status.error')).toContainText('图形加速')
-  await page.getByRole('textbox',{name:'搜索地理对象'}).fill('长江')
+  await page.getByRole('combobox',{name:'搜索地理对象'}).fill('长江')
   await page.locator('.search-results>button').first().click()
   await expect(page.locator('.knowledge-panel h2')).toHaveText('长江')
   await expect(page.locator('.sources a').first()).toHaveAttribute('href',/^https:/)

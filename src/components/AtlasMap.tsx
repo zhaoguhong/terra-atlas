@@ -8,8 +8,9 @@ import { categoryInfo, dataCard, knowledge, matchCard } from '../lib/catalog'
 import { geometryBounds, mapPadding, wrapLongitude, type Bounds } from '../lib/geo'
 import { greatCircleRoute, routeDistance, type Coordinate } from '../lib/measure'
 import {landscapeLayoutQuery} from '../lib/mobile-layout'
+import {applyMapAppearance} from '../lib/map-appearance'
 import { createOnlineMap } from '../lib/online-map'
-import {climateGroups,languageFamilies,majorLanguages,otherLanguageColor,thematicModes} from '../lib/map-presentation'
+import {climateGroups,languageFamilies,languageOverview,areaLanguageColors,languageMembers,languageColor,otherLanguageColor,thematicModes} from '../lib/map-presentation'
 import {presentationForMember,TOPIC_MEMBER_COLOR,TOPIC_SELECTED_COLOR} from '../lib/topic-presentation'
 import {memberLegendSymbol} from '../lib/map-legend'
 import type { Camera, GeoProperties, LayerState, MapDisplay, MapProbe, OnlineMapStatus, Selection, ThematicState, Topic, View } from '../types'
@@ -40,6 +41,7 @@ export interface ElevationRegion {
 export interface ElevationManifest { id: string; note: string; attribution: string; regions: ElevationRegion[] }
 declare global { interface Window { __terraAtlas?: AtlasHandle } }
 interface Props {
+  appearance: 'light' | 'dark';
   layers: LayerState; opacity: number; selection: Selection | null; camera: Camera;
   display: MapDisplay; onOnlineStatus: (status: OnlineMapStatus) => void;
   mode?: 'explore' | 'probe' | 'measure'; thematic?: ThematicState;
@@ -58,6 +60,7 @@ const files: Record<string, string> = {
   provinces: 'learning-provinces.geojson', languages: 'learning-languages.geojson', 'language-areas':'language-areas.geojson',
   human: 'learning-human.json', gazetteer: 'gazetteer.json',
   cities:'auxiliary-cities.geojson',basins:'auxiliary-basins.geojson',plates:'auxiliary-plates.geojson',
+  'study-regions':'china-reference-regions.geojson',
 }
 const point = (coordinates: Coordinate, properties: GeoProperties): Feature<Geometry, GeoProperties> => ({type: 'Feature', geometry: {type: 'Point', coordinates}, properties})
 const featureBindings = bindings as Record<string, string[]>
@@ -65,6 +68,7 @@ const elevationCoverage: Bounds[] = [[86.65, 27.75, 87.2, 28.35], [138.45, 35.1,
 const inside = (coordinates: Coordinate, bounds: Bounds) => coordinates[0] >= bounds[0] && coordinates[0] <= bounds[2] && coordinates[1] >= bounds[1] && coordinates[1] <= bounds[3]
 const categoryColor=(property:string,categories:readonly {id:string;color:string}[],fallback:string):ExpressionSpecification=>categories.length?['match',['get',property],categories[0].id,categories[0].color,...categories.slice(1).flatMap(category=>[category.id,category.color]),fallback]:['literal',fallback]
 export function sourceForId(id: string): string | undefined {
+  if(id.startsWith('region-cn-jiang2023-'))return 'study-regions'
   if(id.startsWith('city-ne-'))return 'cities'
   if(id.startsWith('basin-hybas-'))return 'basins'
   if(id.startsWith('plate-usgs-'))return 'plates'
@@ -88,7 +92,7 @@ function featuresForSelection(data: Data, selection: Selection): Feature<Geometr
   const ids = selection.featureId ? [selection.featureId] : featureBindings[selection.card.id] || []
   return Object.entries(data).filter(([name]) => name !== 'religion').flatMap(([name, collection]) => collection.features
     .filter(feature => ids.includes(feature.properties.id) && (!selection.source || selection.source === name))
-    .map(feature => ({...feature, properties: {...feature.properties, referenceExtent: name === 'regions'}})))
+    .map(feature => ({...feature, properties: {...feature.properties, referenceExtent: name === 'regions' || name === 'study-regions'}})))
 }
 function labels(data: Data, members: string[] = []): Collection {
   const curated = knowledge.filter(k => !members.includes(k.id) && !['climate', 'religion', 'population', 'language', 'human'].includes(k.category)).map(k => point(k.coordinates, {
@@ -109,7 +113,7 @@ function applyLayers(map: GLMap, layers: LayerState, opacity: number, thematic?:
     'river-lines': layers.rivers, 'river-hit': layers.rivers, 'lake-fill': layers.lakes, 'lake-lines': layers.lakes,
     'climate-fill': layers.climate, 'population-raster': layers.population, 'religion-fill': layers.religion,
     'province-fill': layers.provinces, 'province-lines': layers.provinces, 'province-labels': layers.provinces,
-    'language-dots': languagePoints, 'language-labels': languagePoints, 'language-area-fill':layers.language&&!languagePoints, 'language-area-lines':layers.language&&!languagePoints, 'grid-lines': layers.grid, 'grid-labels': layers.grid,
+    'language-dots': languagePoints, 'language-labels': languagePoints, 'language-overview-fill':layers.language&&modes.languageMode==='overview', 'language-area-fill':layers.language&&!languagePoints&&modes.languageMode!=='overview', 'language-area-lines':layers.language&&!languagePoints&&modes.languageMode!=='overview', 'grid-lines': layers.grid, 'grid-labels': layers.grid,
     'city-dots':layers.cities,'city-labels':layers.cities,'city-hit':layers.cities,
     'basin-fill':layers.basins,'basin-lines':layers.basins,'plate-lines':layers.plates,'plate-hit':layers.plates,
   }
@@ -126,15 +130,21 @@ function applyLayers(map: GLMap, layers: LayerState, opacity: number, thematic?:
   const selectedFamily=thematic?.language&&thematic.language!=='all'?thematic.language:null
   const selectedLanguage=modes.languageId!=='all'?modes.languageId:null
   const familyColor:ExpressionSpecification=selectedFamily?['literal',languageFamilies.find(family=>family.id===selectedFamily)?.color||'#5878b5']:categoryColor('familyId',languageFamilies,otherLanguageColor)
-  const areaColor:ExpressionSpecification=selectedLanguage?['literal',majorLanguages.find(language=>language.id===selectedLanguage)?.color||'#5878b5']:modes.languageMode==='families'?familyColor:categoryColor('glottocode',majorLanguages,otherLanguageColor)
+  const areaColor:ExpressionSpecification=selectedLanguage?['literal',languageColor(selectedLanguage)===otherLanguageColor?'#5878b5':languageColor(selectedLanguage)]:modes.languageMode==='families'?familyColor:categoryColor('glottocode',areaLanguageColors,otherLanguageColor)
   for (const id of ['language-dots','language-labels','language-area-fill','language-area-lines']) if(map.getLayer(id)) {
     const filters:ExpressionSpecification[]=[]
     if(selectedFamily)filters.push(['==',['get','familyId'],selectedFamily])
-    if(selectedLanguage)filters.push(['==',['get','glottocode'],selectedLanguage])
+    if(selectedLanguage)filters.push(['in',['get','glottocode'],['literal',languageMembers(selectedLanguage)]])
     map.setFilter(id,filters.length?['all',...filters]:null)
   }
-  if(map.getLayer('language-dots'))map.setPaintProperty('language-dots','circle-color',selectedLanguage?['literal',majorLanguages.find(language=>language.id===selectedLanguage)?.color||'#5878b5']:familyColor)
+  if(map.getLayer('language-dots'))map.setPaintProperty('language-dots','circle-color',selectedLanguage?['literal',languageColor(selectedLanguage)===otherLanguageColor?'#5878b5':languageColor(selectedLanguage)]:familyColor)
   if(map.getLayer('language-area-fill')){map.setPaintProperty('language-area-fill','fill-color',areaColor);map.setPaintProperty('language-area-fill','fill-opacity',humanOpacity)}
+  if(map.getLayer('language-overview-fill')) {
+    const countries=languageOverview.countries.filter(country=>country.displayId&&(selectedLanguage===null||country.displayId===selectedLanguage))
+    map.setFilter('language-overview-fill',['in',['get','id'],['literal',countries.map(country=>country.countryId)]])
+    map.setPaintProperty('language-overview-fill','fill-color',categoryColor('id',countries.map(country=>({id:country.countryId,color:languageColor(country.displayId!)})),otherLanguageColor))
+    map.setPaintProperty('language-overview-fill','fill-opacity',humanOpacity)
+  }
   const enabled = layers.language?[]:Object.keys(categoryInfo).filter(k => k === 'regions' ? layers.provinces || layers.borders : layers[k as keyof LayerState])
   const shownAtZoom: ExpressionSpecification = ['<=', ['coalesce', ['get', 'minZoom'], 4], map.getZoom()]
   for (const id of ['place-dots', 'place-labels', 'place-hit']) if (map.getLayer(id)) {
@@ -177,6 +187,7 @@ export default function AtlasMap(props: Props) {
     let frameRequest = 0, cameraRequestEpoch = 0, catalogDirty = true
     let pendingLocateEpoch: number | undefined
     let pendingReframeCamera: Camera | undefined
+    let preserveCameraOnResize=false
     let elevationManifestPromise: Promise<ElevationManifest | null> | null = null
     const elevationGrids = new Map<string, DataView>(), elevationPending = new Map<string, Promise<void>>()
     const abort = new AbortController(), pending = new Map<string, Promise<void>>(), failed = new Set<string>(), loaded = new Set<string>()
@@ -193,7 +204,7 @@ export default function AtlasMap(props: Props) {
         transformConstrain: (center, zoom) => ({center: new maplibre.LngLat(wrapLongitude(center.lng), Math.max(-85, Math.min(85, center.lat))), zoom: Math.max(-1.2, Math.min(11.5, zoom))}),
         dragRotate: false, touchPitch: false, attributionControl: false,
         localIdeographFontFamily: 'PingFang SC, Microsoft YaHei, sans-serif',
-        style: {version: 8, sources: {}, layers: [{id: 'ocean', type: 'background', paint: {'background-color': '#eff4f4'}}]},
+        style: {version: 8, sources: {}, layers: [{id: 'ocean', type: 'background', paint: {'background-color': props.appearance==='dark'?'#111f2a':'#eff4f4'}}]},
       })
     } catch (error) {
       const message = error instanceof Error ? error.message : String(error)
@@ -204,7 +215,7 @@ export default function AtlasMap(props: Props) {
     map.addControl(new maplibre.ScaleControl({maxWidth: 100, unit: 'metric'}), 'bottom-right')
     const status = () => {
       if (disposed || !readyReported) return
-      const names: Record<string, string> = {cities:'城市与首都',basins:'流域分区',plates:'板块边界',land: '陆地', countries: '国家轮廓', regions: '自然区域', rivers: '河流', lakes: '湖泊', peaks: '山峰', summits: '主题山峰', climate: '气候', provinces: '中国省区', languages: '语言参考点', 'language-areas':'语言区域', human: '宗教', gazetteer: '地名搜索', elevation: '局部高程', 'elevation-everest-samples': '珠峰高程', 'elevation-fuji-samples': '富士山高程'}
+      const names: Record<string, string> = {'study-regions':'四大地理区参考范围',cities:'城市与首都',basins:'流域分区',plates:'板块边界',land: '陆地', countries: '国家轮廓', regions: '自然区域', rivers: '河流', lakes: '湖泊', peaks: '山峰', summits: '主题山峰', climate: '气候', provinces: '中国省区', languages: '语言参考点', 'language-areas':'语言区域', human: '宗教', gazetteer: '地名搜索', elevation: '局部高程', 'elevation-everest-samples': '珠峰高程', 'elevation-fuji-samples': '富士山高程'}
       current.current.onStatus(failed.size ? `部分图层加载失败（${[...failed].map(name => names[name] || name).join('、')}）。其他图层仍可探索，可点击重试。` : 'ready')
     }
     map.on('error', event => {
@@ -227,7 +238,7 @@ export default function AtlasMap(props: Props) {
       if (!catalogDirty) return
       const entries = new Map<string, GeoProperties>()
       gazetteer.forEach(properties => entries.set(properties.id, properties))
-      Object.entries(data).filter(([name]) => !['land', 'climate', 'religion', 'population'].includes(name)).forEach(([name, collection]) => collection.features.forEach(feature => entries.set(feature.properties.id, {...feature.properties, geoSource: name})))
+      Object.entries(data).filter(([name]) => !['land', 'climate', 'religion', 'population'].includes(name)).forEach(([name, collection]) => collection.features.forEach(feature => entries.set(feature.properties.id, {...feature.properties, geoSource: name, geometryType: feature.geometry.type})))
       current.current.onCatalog([...entries.values()])
       catalogDirty = false
     }
@@ -268,7 +279,7 @@ export default function AtlasMap(props: Props) {
           const found = featuresForSelection(data, {card})
           features.push(...(found.length ? found : [point(card.coordinates, {id: card.id, name: card.name, nameEn: card.englishName})]).map(feature => ({...feature, properties: {...feature.properties, ...appearance}})))
           memberLabels.push(point(card.coordinates, {id: card.id, name: card.name, nameEn: card.englishName, ...appearance}))
-        } else Object.entries(data).filter(([name]) => name !== 'religion').forEach(([name, collection]) => features.push(...collection.features.filter(feature => feature.properties.id === id).map(feature => ({...feature, properties: {...feature.properties, referenceExtent: name === 'regions'}}))))
+        } else Object.entries(data).filter(([name]) => name !== 'religion').forEach(([name, collection]) => features.push(...collection.features.filter(feature => feature.properties.id === id).map(feature => ({...feature, properties: {...feature.properties, referenceExtent: name === 'regions' || name === 'study-regions'}}))))
       }
       const unique = [...new Map(features.map(feature => [feature.properties.id, feature])).values()]
       ;(map.getSource('relations') as GeoJSONSource | undefined)?.setData({type: 'FeatureCollection', features: unique})
@@ -283,6 +294,8 @@ export default function AtlasMap(props: Props) {
       onlineRef.current?.update(current.current.display)
       catalog()
     }
+    let refreshFrame=0
+    const scheduleRefresh=()=>{if(!refreshFrame)refreshFrame=requestAnimationFrame(()=>{refreshFrame=0;refresh()})}
     relationRef.current=refresh
     religionRef.current = updateReligion
     const load = (name: string): Promise<void> => {
@@ -313,7 +326,7 @@ export default function AtlasMap(props: Props) {
             if (!['land', 'climate', 'religion', 'population'].includes(name)) catalogDirty = true
             ;(map.getSource(name) as GeoJSONSource | undefined)?.setData(data[name])
           }
-          loaded.add(name); failed.delete(name); refresh(); status()
+          loaded.add(name); failed.delete(name); scheduleRefresh(); status()
         } catch (error) {
           if (!disposed && (error as Error).name !== 'AbortError') { failed.add(name); status() }
         } finally { pending.delete(name) }
@@ -333,7 +346,7 @@ export default function AtlasMap(props: Props) {
       if(layers.cities)names.push('cities')
       if(layers.basins)names.push('basins')
       if(layers.plates)names.push('plates')
-      if (layers.language) names.push(thematicModes(current.current.thematic).languageMode==='points'?'languages':'language-areas')
+      if (layers.language) names.push(thematicModes(current.current.thematic).languageMode==='overview'?'countries':thematicModes(current.current.thematic).languageMode==='points'?'languages':'language-areas')
       if (layers.religion) names.push('human')
       if (current.current.selection) names.push(...sourcesForSelection(current.current.selection))
       return names
@@ -421,6 +434,7 @@ export default function AtlasMap(props: Props) {
         return feature ? {properties: feature.properties, source} : null
       },
       locate: selection => {
+        preserveCameraOnResize=false
         const epoch = ++cameraRequestEpoch
         cancelAnimationFrame(frameRequest)
         pendingLocateEpoch = epoch
@@ -450,6 +464,7 @@ export default function AtlasMap(props: Props) {
       },
       reframe: (selection, camera, display) => {
         if (camera) {
+          preserveCameraOnResize=true
           ++cameraRequestEpoch; pendingLocateEpoch = undefined
           pendingReframeCamera = camera
           if ((display ?? current.current.display).terrain3d) onlineRef.current?.setRequestedPitch(camera.pitch ?? 0)
@@ -464,12 +479,13 @@ export default function AtlasMap(props: Props) {
         const requested = camera || pendingReframeCamera
         scheduleFrame(() => {
           if (epoch !== cameraRequestEpoch) return
-          const target = requested?.center || selection?.card.coordinates || [map.getCenter().lng, map.getCenter().lat] as Coordinate
+          const target = requested?.center || (!preserveCameraOnResize?selection?.card.coordinates:undefined) || [map.getCenter().lng, map.getCenter().lat] as Coordinate
           map.jumpTo({center: target, zoom: requested?.zoom ?? map.getZoom(), bearing: requested?.bearing ?? map.getBearing(), pitch: (display ?? current.current.display).terrain3d ? requested?.pitch ?? map.getPitch() : 0, padding: mapPadding(map.getContainer())})
           if (pendingReframeCamera === requested) pendingReframeCamera = undefined
         })
       },
       focusView: view => {
+        preserveCameraOnResize=false
         ++cameraRequestEpoch
         cancelAnimationFrame(frameRequest);pendingLocateEpoch=undefined;pendingReframeCamera=undefined
         map.stop()
@@ -554,6 +570,7 @@ export default function AtlasMap(props: Props) {
       map.addLayer({id: 'province-labels', type: 'symbol', source: 'provinces', minzoom: 3, layout: {'text-field': ['get', 'name'], 'text-font': ['sans-serif'], 'text-size': 11, 'text-padding': 8}, paint: {'text-color': '#526d5a', 'text-halo-color': '#faf8ed', 'text-halo-width': 1.5}})
       map.addLayer({id: 'language-dots', type: 'circle', source: 'languages', minzoom: 2, paint: {'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 2.5, 5, 4, 7, 6], 'circle-color': ['coalesce', ['get', 'color'], '#688ca7'], 'circle-stroke-color': '#fcfaf2', 'circle-stroke-width': .8, 'circle-opacity': .85}})
       map.addLayer({id: 'language-labels', type: 'symbol', source: 'languages', minzoom: 5.5, layout: {'text-field': ['get', 'name'], 'text-font': ['sans-serif'], 'text-size': 11, 'text-anchor': 'top', 'text-offset': [0, .6], 'text-padding': 8}, paint: {'text-color': '#435f73', 'text-halo-color': '#faf8ed', 'text-halo-width': 1.5}})
+      map.addLayer({id:'language-overview-fill',type:'fill',source:'countries',paint:{'fill-color':otherLanguageColor,'fill-opacity':.72}},'country-borders')
       map.addLayer({id:'language-area-fill',type:'fill',source:'language-areas',paint:{'fill-color':otherLanguageColor,'fill-opacity':.72}},'country-borders')
       map.addLayer({id:'language-area-lines',type:'line',source:'language-areas',paint:{'line-color':'#f8f7f0','line-width':['interpolate',['linear'],['zoom'],1,.15,5,.65],'line-opacity':.55}},'country-borders')
       map.addLayer({id: 'place-dots', type: 'circle', source: 'places', paint: {'circle-radius': ['case', ['==', ['get', 'curated'], true], ['interpolate', ['linear'], ['zoom'], 1, 2.6, 4, 3.8, 7, 5], 2.4], 'circle-color': ['get', 'color'], 'circle-stroke-color': '#fcfaf2', 'circle-stroke-width': 1.3}})
@@ -576,8 +593,9 @@ export default function AtlasMap(props: Props) {
       map.addLayer({id: 'measurement-line', type: 'line', source: 'measurement', filter: ['!=', ['geometry-type'], 'Point'], paint: {'line-color': '#704d7d', 'line-width': 2.5, 'line-dasharray': [2, 1]}})
       map.addLayer({id: 'measurement-point', type: 'circle', source: 'measurement', filter: ['==', ['geometry-type'], 'Point'], paint: {'circle-color': '#704d7d', 'circle-radius': 6, 'circle-stroke-width': 2, 'circle-stroke-color': '#fffaf0'}})
       map.addLayer({id: 'measurement-label', type: 'symbol', source: 'measurement', filter: ['==', ['geometry-type'], 'Point'], layout: {'text-field': ['get', 'label'], 'text-font': ['sans-serif'], 'text-size': 10, 'text-offset': [0, -1.3]}, paint: {'text-color': '#704d7d', 'text-halo-color': '#fffaf0', 'text-halo-width': 2}})
-      onlineRef.current = createOnlineMap(map, state => current.current.onOnlineStatus(state))
+      onlineRef.current = createOnlineMap(map, state => current.current.onOnlineStatus(state), current.current.appearance)
       if (props.display.terrain3d) onlineRef.current.setRequestedPitch(props.camera.pitch ?? 0)
+      applyMapAppearance(map,current.current.appearance)
       initialized = true; window.__terraAtlas = handle; refresh()
       const pickLayers = ['relation-member-labels', 'relation-member-hit', 'relations-area', 'relations-line', 'relations-reference', 'relations-dot', 'relations-symbols','city-hit','city-labels','plate-hit','basin-fill','place-labels', 'place-hit', 'river-hit', 'lake-fill', 'province-fill', 'language-dots', 'language-labels', 'language-area-fill','country-hit', 'climate-fill']
       map.on('click', event => {
@@ -623,6 +641,7 @@ export default function AtlasMap(props: Props) {
       void ensure(wanted())
     }
     void setup().catch(error => { if (!disposed && (error as Error).name !== 'AbortError') current.current.onStatus('地图初始化失败。已保留知识内容，请重试。') })
+    let resizeDeferred=false
     function resizeMap(){
       const element=map.getContainer(),style=getComputedStyle(element)
       // Full reading hides the left map; keep its camera and last usable size.
@@ -630,7 +649,14 @@ export default function AtlasMap(props: Props) {
       map.resize()
       if(!initialized)return
       const selection=current.current.selection
+      if(preserveCameraOnResize){handle.reframe(null);return}
       if(!matchMedia(landscapeLayoutQuery).matches){if(selection)handle.reframe(selection);return}
+      // Updating padding with jumpTo interrupts the current camera animation.
+      // Let terrain tilt / navigation finish before reframing a resized sidebar.
+      if(map.isMoving()){
+        if(!resizeDeferred){resizeDeferred=true;map.once('moveend',()=>{resizeDeferred=false;resizeMap()})}
+        return
+      }
       const padding=mapPadding(element)
       map.jumpTo({padding})
       if(selection){
@@ -641,7 +667,7 @@ export default function AtlasMap(props: Props) {
     const resize = new ResizeObserver(resizeMap)
     resize.observe(container.current!)
     return () => {
-      disposed = true; abort.abort(); cancelAnimationFrame(frameRequest); resize.disconnect(); onlineRef.current?.destroy(); onlineRef.current = null; map.remove(); mapRef.current = null; ensureRef.current = null; religionRef.current = null
+      disposed = true; cancelAnimationFrame(refreshFrame); abort.abort(); cancelAnimationFrame(frameRequest); resize.disconnect(); onlineRef.current?.destroy(); onlineRef.current = null; map.remove(); mapRef.current = null; ensureRef.current = null; religionRef.current = null
       if (window.__terraAtlas === handle) delete window.__terraAtlas
     }
   }, [])
@@ -662,13 +688,14 @@ export default function AtlasMap(props: Props) {
     if(props.layers.cities)names.push('cities')
     if(props.layers.basins)names.push('basins')
     if(props.layers.plates)names.push('plates')
-    if (props.layers.language) names.push(thematicModes(props.thematic).languageMode==='points'?'languages':'language-areas')
+    if (props.layers.language) names.push(thematicModes(props.thematic).languageMode==='overview'?'countries':thematicModes(props.thematic).languageMode==='points'?'languages':'language-areas')
     if (props.layers.religion) names.push('human')
     void ensureRef.current?.(names)
   }, [props.layers,props.thematic?.languageMode])
   useEffect(()=>{relationRef.current?.()},[props.topic])
   useEffect(() => { religionRef.current?.() }, [props.thematic?.religion])
   useEffect(() => { onlineRef.current?.update(props.display) }, [props.display])
+  useEffect(()=>{const map=mapRef.current;if(map?.getLayer('relief'))applyMapAppearance(map,props.appearance);onlineRef.current?.setAppearance(props.appearance)},[props.appearance])
   useEffect(() => {
     const map = mapRef.current
     if (!map?.getSource('selection')) return

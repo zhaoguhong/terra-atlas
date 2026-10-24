@@ -1,0 +1,1982 @@
+{
+  "reviewedAt": "2026-10-24",
+  "policy": "按对象的地理含义优先显示已核验区域，河流显示河道线，山峰和地点案例显示点；缺少范围一致的数据时保留点，不使用父区域或行政区替代。",
+  "changedCards": 15,
+  "decisions": [
+    {
+      "cardId": "himalayas",
+      "name": "喜马拉雅山脉",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104307"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "tian-shan",
+      "name": "天山",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104299"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "kunlun",
+      "name": "昆仑山脉",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104187"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "qinling",
+      "name": "秦岭",
+      "decision": "area",
+      "featureIds": [
+        "region-1159103573"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "greater-khingan",
+      "name": "大兴安岭",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104171"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "qilian",
+      "name": "祁连山",
+      "decision": "area",
+      "featureIds": [
+        "region-1159103903"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "andes",
+      "name": "安第斯山脉",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104309"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "rockies",
+      "name": "落基山脉",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104311"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "alps",
+      "name": "阿尔卑斯山脉",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104297"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "urals",
+      "name": "乌拉尔山脉",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104301"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "tibetan-plateau",
+      "name": "青藏高原",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104345"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "loess-plateau",
+      "name": "黄土高原",
+      "decision": "area",
+      "featureIds": [
+        "region-1159103717"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "inner-mongolian-plateau",
+      "name": "内蒙古高原",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "内蒙古高原是蒙古高原的一部分，两者范围不同。本卡使用中国境内代表点定位，不将整个蒙古高原的标注范围当作内蒙古高原边界。"
+    },
+    {
+      "cardId": "yunnan-guizhou-plateau",
+      "name": "云贵高原",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104027"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "north-china-plain",
+      "name": "华北平原",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104313"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "northeast-china-plain",
+      "name": "东北平原",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104203"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "sichuan-basin",
+      "name": "四川盆地",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104091"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "tarim-basin",
+      "name": "塔里木盆地",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104093"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "taklamakan",
+      "name": "塔克拉玛干沙漠",
+      "decision": "area",
+      "featureIds": [
+        "region-1159103651"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "sahara",
+      "name": "撒哈拉沙漠",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104337"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "amazon-basin",
+      "name": "亚马孙流域",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104325"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "ganges-plain",
+      "name": "恒河平原",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "恒河平原是更广泛的印度河—恒河平原的一部分。本卡用恒河流域内的代表点定位，不将更宽的南亚平原图形当作恒河平原边界。"
+    },
+    {
+      "cardId": "east-african-rift",
+      "name": "东非裂谷",
+      "decision": "area",
+      "featureIds": [
+        "region-1159103991"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "yangtze",
+      "name": "长江",
+      "decision": "line",
+      "featureIds": [
+        "river-yangtze"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "yellow-river",
+      "name": "黄河",
+      "decision": "line",
+      "featureIds": [
+        "river-yellow-river"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "pearl-river",
+      "name": "珠江水系",
+      "decision": "line",
+      "featureIds": [
+        "river-xi",
+        "river-bei",
+        "river-dong"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "mekong",
+      "name": "澜沧江—湄公河",
+      "decision": "line",
+      "featureIds": [
+        "river-mekong-40",
+        "river-mekong-46"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "amur",
+      "name": "黑龙江",
+      "decision": "line",
+      "featureIds": [
+        "river-amur"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "tarim-river",
+      "name": "塔里木河",
+      "decision": "line",
+      "featureIds": [
+        "river-tarim"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "nile",
+      "name": "尼罗河",
+      "decision": "line",
+      "featureIds": [
+        "river-nile"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "amazon-river",
+      "name": "亚马孙河",
+      "decision": "line",
+      "featureIds": [
+        "river-amazon"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "mississippi",
+      "name": "密西西比河",
+      "decision": "line",
+      "featureIds": [
+        "river-mississippi"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "rhine",
+      "name": "莱茵河",
+      "decision": "line",
+      "featureIds": [
+        "river-rhein-105",
+        "river-rhein-140",
+        "river-rhine"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "danube",
+      "name": "多瑙河",
+      "decision": "line",
+      "featureIds": [
+        "river-danube-25",
+        "river-danube-38"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "ganges",
+      "name": "恒河",
+      "decision": "line",
+      "featureIds": [
+        "river-ganges"
+      ],
+      "changed": false,
+      "reason": "沿真实河道显示，河流线不冒充流域。"
+    },
+    {
+      "cardId": "qinghai-lake",
+      "name": "青海湖",
+      "decision": "area",
+      "featureIds": [
+        "lake-1159126725"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "poyang-lake",
+      "name": "鄱阳湖",
+      "decision": "area",
+      "featureIds": [
+        "lake-1159114015"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "dongting-lake",
+      "name": "洞庭湖",
+      "decision": "area",
+      "featureIds": [
+        "lake-1159116351"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "taihu",
+      "name": "太湖",
+      "decision": "area",
+      "featureIds": [
+        "lake-1159113611"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "baikal",
+      "name": "贝加尔湖",
+      "decision": "area",
+      "featureIds": [
+        "lake-1159113127"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "great-lakes",
+      "name": "北美五大湖",
+      "decision": "area",
+      "featureIds": [
+        "lake-1159112991",
+        "lake-1159113005",
+        "lake-1159113021",
+        "lake-1159106757",
+        "lake-1159106765"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "victoria",
+      "name": "维多利亚湖",
+      "decision": "area",
+      "featureIds": [
+        "lake-1159113191"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "tanganyika",
+      "name": "坦噶尼喀湖",
+      "decision": "area",
+      "featureIds": [
+        "lake-1159113185"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "caspian",
+      "name": "里海",
+      "decision": "area",
+      "featureIds": [
+        "lake-caspian-sea"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "dead-sea",
+      "name": "死海",
+      "decision": "area",
+      "featureIds": [
+        "lake-1159126747",
+        "lake-1159126865"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "climate-a",
+      "name": "A · 热带气候",
+      "decision": "distribution",
+      "featureIds": [],
+      "changed": false,
+      "reason": "采用独立气候分布图层，不为概念卡创建边界。"
+    },
+    {
+      "cardId": "climate-b",
+      "name": "B · 干旱气候",
+      "decision": "distribution",
+      "featureIds": [],
+      "changed": false,
+      "reason": "采用独立气候分布图层，不为概念卡创建边界。"
+    },
+    {
+      "cardId": "climate-c",
+      "name": "C · 温和气候",
+      "decision": "distribution",
+      "featureIds": [],
+      "changed": false,
+      "reason": "采用独立气候分布图层，不为概念卡创建边界。"
+    },
+    {
+      "cardId": "climate-d",
+      "name": "D · 寒冷气候",
+      "decision": "distribution",
+      "featureIds": [],
+      "changed": false,
+      "reason": "采用独立气候分布图层，不为概念卡创建边界。"
+    },
+    {
+      "cardId": "climate-e",
+      "name": "E · 极地及高寒气候",
+      "decision": "distribution",
+      "featureIds": [],
+      "changed": false,
+      "reason": "采用独立气候分布图层，不为概念卡创建边界。"
+    },
+    {
+      "cardId": "china-country",
+      "name": "中国：从地势到区域差异",
+      "decision": "area",
+      "featureIds": [
+        "country-chn"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "japan",
+      "name": "日本：山地岛国与海洋联系",
+      "decision": "area",
+      "featureIds": [
+        "country-jpn"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "india",
+      "name": "印度：季风、平原与高原",
+      "decision": "area",
+      "featureIds": [
+        "country-ind"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "usa",
+      "name": "美国：跨区域的大陆国家",
+      "decision": "area",
+      "featureIds": [
+        "country-usa"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "russia",
+      "name": "俄罗斯：欧亚跨度与寒冷内陆",
+      "decision": "area",
+      "featureIds": [
+        "country-rus"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "brazil",
+      "name": "巴西：雨林之外的多种景观",
+      "decision": "area",
+      "featureIds": [
+        "country-bra"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "australia",
+      "name": "澳大利亚：干旱内陆与沿海联系",
+      "decision": "area",
+      "featureIds": [
+        "country-aus"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "egypt",
+      "name": "埃及：荒漠中的河谷与通道",
+      "decision": "area",
+      "featureIds": [
+        "country-egy"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "indonesia",
+      "name": "印度尼西亚：岛链、火山与海峡",
+      "decision": "area",
+      "featureIds": [
+        "country-idn"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "germany",
+      "name": "德国：河流交通与工业转型",
+      "decision": "area",
+      "featureIds": [
+        "country-deu"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "kenya",
+      "name": "肯尼亚：赤道与高山的对照",
+      "decision": "area",
+      "featureIds": [
+        "country-ken"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "southeast-asia",
+      "name": "东南亚：中南半岛与海洋群岛",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡用代表性定位点帮助探索；未提供可准确对应的面状或线状范围，定位点不代表完整边界。"
+    },
+    {
+      "cardId": "western-europe",
+      "name": "欧洲西部：海洋影响与城市网络",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡用代表性定位点帮助探索；未提供可准确对应的面状或线状范围，定位点不代表完整边界。"
+    },
+    {
+      "cardId": "middle-east",
+      "name": "中东：干旱、水源与多元区域",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡用代表性定位点帮助探索；未提供可准确对应的面状或线状范围，定位点不代表完整边界。"
+    },
+    {
+      "cardId": "sub-saharan-africa",
+      "name": "撒哈拉以南非洲：跨纬度与高地的差异",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡用代表性定位点帮助探索；未提供可准确对应的面状或线状范围，定位点不代表完整边界。"
+    },
+    {
+      "cardId": "antarctica",
+      "name": "南极洲：冰盖、寒冷与观测",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104367"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "beijing",
+      "name": "北京：山前平原与首都城市",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-11"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "shanghai",
+      "name": "上海：河口、低平地形与港口城市",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-31"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "guangdong",
+      "name": "广东：山地丘陵与珠江三角洲",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-44"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "sichuan",
+      "name": "四川：高原与盆地同在一省",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-51"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "xinjiang",
+      "name": "新疆：三山两盆与绿洲",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-65"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "inner-mongolia",
+      "name": "内蒙古：森林、草原与荒漠梯度",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-15"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "heilongjiang",
+      "name": "黑龙江省：山地、平原与黑土",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-23"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "hainan-province",
+      "name": "海南：热带岛屿与海岸生态",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-46"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "yunnan",
+      "name": "云南：高原坝子与高山峡谷",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-53"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "taiwan-region",
+      "name": "台湾岛：山地与西部平原",
+      "decision": "area",
+      "featureIds": [
+        "region-1159103793"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "fujisan",
+      "name": "富士山",
+      "decision": "point",
+      "featureIds": [
+        "peak-1159105623"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "pacific-ocean",
+      "name": "太平洋：最大洋盆与海陆联系",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+    },
+    {
+      "cardId": "atlantic-ocean",
+      "name": "大西洋：河口与热量输送",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+    },
+    {
+      "cardId": "indian-ocean",
+      "name": "印度洋：季风与海上通道",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+    },
+    {
+      "cardId": "arctic-ocean",
+      "name": "北冰洋：海冰与大陆环绕",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+    },
+    {
+      "cardId": "malacca-strait",
+      "name": "马六甲海峡：狭窄水道与国际航运",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+    },
+    {
+      "cardId": "gibraltar-strait",
+      "name": "直布罗陀海峡：地中海的自然入口",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+    },
+    {
+      "cardId": "bering-strait",
+      "name": "白令海峡：连接两洋与两洲",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+    },
+    {
+      "cardId": "suez-canal",
+      "name": "苏伊士运河：人工连接地中海与红海",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+    },
+    {
+      "cardId": "panama-canal",
+      "name": "巴拿马运河：船闸与淡水资源",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+    },
+    {
+      "cardId": "mediterranean",
+      "name": "地中海：半封闭海域与干夏气候",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+    },
+    {
+      "cardId": "world-population",
+      "name": "世界人口：数量、变化与分布",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
+    },
+    {
+      "cardId": "population-density",
+      "name": "人口密度：把人数放回面积",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
+    },
+    {
+      "cardId": "china-population",
+      "name": "中国人口分布：东西差异与局地集聚",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
+    },
+    {
+      "cardId": "china-urbanization",
+      "name": "中国城镇化：居住地、户籍与城市范围",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
+    },
+    {
+      "cardId": "india-population",
+      "name": "印度人口：大总量与地区差异",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
+    },
+    {
+      "cardId": "religious-diversity",
+      "name": "宗教地理：多元性与统计口径",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
+    },
+    {
+      "cardId": "christianity",
+      "name": "基督宗教：全球分布与内部多样",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
+    },
+    {
+      "cardId": "islam",
+      "name": "伊斯兰教：亚洲与世界多地分布",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
+    },
+    {
+      "cardId": "hinduism",
+      "name": "印度教：集中分布与文化差异",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
+    },
+    {
+      "cardId": "buddhism",
+      "name": "佛教：亚洲传统与归属测量",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
+    },
+    {
+      "cardId": "unaffiliated",
+      "name": "无宗教归属：不是一种统一信仰",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
+    },
+    {
+      "cardId": "language-diversity",
+      "name": "语言多样性：点、语系与人群",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍语言概念，定位点仅为探索起点。Glottolog语言点为参考位置，含濒危或已消亡语言，不代表使用人口、连续分布区、法定地位或个人母语；CIA国别列举也不是局地边界。"
+    },
+    {
+      "cardId": "official-vs-mother-tongue",
+      "name": "官方语言、母语与交流语言",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍语言概念，定位点仅为探索起点。Glottolog语言点为参考位置，含濒危或已消亡语言，不代表使用人口、连续分布区、法定地位或个人母语；CIA国别列举也不是局地边界。"
+    },
+    {
+      "cardId": "mandarin-language",
+      "name": "普通话与汉语内部多样性",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍语言概念，定位点仅为探索起点。Glottolog语言点为参考位置，含濒危或已消亡语言，不代表使用人口、连续分布区、法定地位或个人母语；CIA国别列举也不是局地边界。"
+    },
+    {
+      "cardId": "english-language",
+      "name": "英语：母语与跨地区交流",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍语言概念，定位点仅为探索起点。Glottolog语言点为参考位置，含濒危或已消亡语言，不代表使用人口、连续分布区、法定地位或个人母语；CIA国别列举也不是局地边界。"
+    },
+    {
+      "cardId": "arabic-language",
+      "name": "阿拉伯语：多种变体与跨区交流",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "此卡介绍语言概念，定位点仅为探索起点。Glottolog语言点为参考位置，含濒危或已消亡语言，不代表使用人口、连续分布区、法定地位或个人母语；CIA国别列举也不是局地边界。"
+    },
+    {
+      "cardId": "rice-farming",
+      "name": "稻作：水热、平地与管理",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
+    },
+    {
+      "cardId": "china-grain",
+      "name": "中国粮食：产量、面积与单产",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
+    },
+    {
+      "cardId": "ruhr-industry",
+      "name": "鲁尔区：资源交通与产业转型",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "定位点选埃森关税同盟工业遗产；未绘制未经核对的鲁尔区经济范围或遗产边界。"
+    },
+    {
+      "cardId": "yangtze-delta",
+      "name": "长三角：自然三角洲与城市区域",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "定位点帮助探索长江下游；未将自然三角洲、三省一市规划区或城市群伪画为同一边界。"
+    },
+    {
+      "cardId": "pearl-delta",
+      "name": "珠三角与大湾区：河网、海港和城市",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "代表点位于珠江口区域；未用广东省或珠江主干冒充珠三角自然面与大湾区规划边界。"
+    },
+    {
+      "cardId": "south-north-water",
+      "name": "南水北调：跨流域供水与节水",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "代表点仅选丹江口附近；没有将自然河线当作东中西线工程图，也不展示未核对的规划线路。"
+    },
+    {
+      "cardId": "grand-canal",
+      "name": "大运河：连接流域与历史城市",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "定位点选扬州附近；没有绘制未经核对的历史水道或全部遗产边界。"
+    },
+    {
+      "cardId": "northern-china",
+      "name": "北方地区：平原农业与季节水分",
+      "decision": "area",
+      "featureIds": [
+        "region-cn-jiang2023-ii"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "southern-china",
+      "name": "南方地区：湿润、山地与河网",
+      "decision": "area",
+      "featureIds": [
+        "region-cn-jiang2023-i"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "northwestern-china",
+      "name": "西北地区：山地来水与绿洲联系",
+      "decision": "area",
+      "featureIds": [
+        "region-cn-jiang2023-iii"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "qinghai-tibet-region",
+      "name": "青藏地区：高寒环境与多种水系",
+      "decision": "area",
+      "featureIds": [
+        "region-cn-jiang2023-iv"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "hong-kong",
+      "name": "香港：山地、港湾与城市",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-81"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "macao",
+      "name": "澳门：半岛、岛屿与填海",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-82"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "asia-continent",
+      "name": "亚洲：大陆尺度与内部差异",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104597"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "yangtze-middle-lower-plain",
+      "name": "长江中下游平原",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "本站没有范围一致的整片平原图形，使用长江沿岸代表点定位；未把长江三角洲或沿江省区当作全部平原边界。"
+    },
+    {
+      "cardId": "junggar-basin",
+      "name": "准噶尔盆地",
+      "decision": "area",
+      "featureIds": [
+        "region-1730072989"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "qaidam-basin",
+      "name": "柴达木盆地",
+      "decision": "area",
+      "featureIds": [
+        "region-1159103721"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "summit-everest",
+      "name": "珠穆朗玛峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q513"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-k2",
+      "name": "乔戈里峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q43512"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-kangchenjunga",
+      "name": "干城章嘉峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q82019"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-lhotse",
+      "name": "洛子峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q168702"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-makalu",
+      "name": "马卡鲁峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q169986"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-cho-oyu",
+      "name": "卓奥友峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q170089"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-dhaulagiri",
+      "name": "道拉吉里峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q165440"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-manaslu",
+      "name": "马纳斯鲁峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q170070"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-nanga-parbat",
+      "name": "南迦帕尔巴特峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q130736"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-annapurna-i",
+      "name": "安纳普尔纳一峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q16466024"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-gasherbrum-i",
+      "name": "加舒尔布鲁木一峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q187138"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-broad-peak",
+      "name": "布洛阿特峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q180996"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-gasherbrum-ii",
+      "name": "加舒尔布鲁木二峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q186853"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "summit-shishapangma",
+      "name": "希夏邦马峰",
+      "decision": "point",
+      "featureIds": [
+        "peak-wikidata-q105124"
+      ],
+      "changed": false,
+      "reason": "山峰表达峰顶位置，使用明确峰点。"
+    },
+    {
+      "cardId": "earth-rotation",
+      "name": "昼夜：在北京观察地球自转",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "点位是帮助理解本节概念的观察位置，不是现象的分布边界；有关关系为教学解释，不是当地实时观测。"
+    },
+    {
+      "cardId": "earth-season-contrast",
+      "name": "季节：比较南北半球",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "点位是帮助理解本节概念的观察位置，不是现象的分布边界；有关关系为教学解释，不是当地实时观测。"
+    },
+    {
+      "cardId": "earth-longitude-time",
+      "name": "经度与地方时：从格林尼治出发",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "点位是帮助理解本节概念的观察位置，不是现象的分布边界；有关关系为教学解释，不是当地实时观测。"
+    },
+    {
+      "cardId": "earth-coordinates",
+      "name": "经纬定位：先读方向，再读角度",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "点位是帮助理解本节概念的观察位置，不是现象的分布边界；有关关系为教学解释，不是当地实时观测。"
+    },
+    {
+      "cardId": "earth-scale",
+      "name": "比例尺：从富士山看范围与细节",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "点位是帮助理解本节概念的观察位置，不是现象的分布边界；有关关系为教学解释，不是当地实时观测。"
+    },
+    {
+      "cardId": "earth-contours",
+      "name": "等高线：从高程理解坡面",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "点位是帮助理解本节概念的观察位置，不是现象的分布边界；有关关系为教学解释，不是当地实时观测。"
+    },
+    {
+      "cardId": "tianjin",
+      "name": "天津：海河下游与渤海门户",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-12"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "hebei",
+      "name": "河北：从坝上高原到渤海平原",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-13"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "shanxi",
+      "name": "山西：黄土高地与山间盆地",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-14"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "liaoning",
+      "name": "辽宁：东北平原的出海通道",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-21"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "jilin",
+      "name": "吉林：长白山地与松辽平原",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-22"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "jiangsu",
+      "name": "江苏：长江淮河与南北水网",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-32"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "zhejiang",
+      "name": "浙江：西南山地与东北平原",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-33"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "anhui",
+      "name": "安徽：长江淮河之间的地形过渡",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-34"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "fujian",
+      "name": "福建：山地河谷与曲折海岸",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-35"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "jiangxi",
+      "name": "江西：群山汇水到鄱阳湖",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-36"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "shandong",
+      "name": "山东：丘陵半岛与黄河平原",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-37"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "henan",
+      "name": "河南：西部山地与中原平原",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-41"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "hubei",
+      "name": "湖北：西部山地与江汉水网",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-42"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "hunan",
+      "name": "湖南：四水入湖的山地与平原",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-43"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "guangxi",
+      "name": "广西：喀斯特山地与北部湾",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-45"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "chongqing",
+      "name": "重庆：长江上游的山城与岭谷",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-50"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "guizhou",
+      "name": "贵州：岩溶高原与深切河谷",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-52"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "xizang",
+      "name": "西藏：高原、谷地与高山峡谷",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-54"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "shaanxi",
+      "name": "陕西：陕北、关中与陕南",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-61"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "gansu",
+      "name": "甘肃：狭长省域中的多种环境",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-62"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "qinghai",
+      "name": "青海：大河源区与封闭盆地",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-63"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "ningxia",
+      "name": "宁夏：黄河灌区与南部山地",
+      "decision": "area",
+      "featureIds": [
+        "province-cn-64"
+      ],
+      "changed": false,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "taiwan-province",
+      "name": "台湾省：岛群与行政区划口径",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "仅用台湾主岛中部参考点导航；未绑定province-cn-71，因为其概化集合包含金门，不能冒充本卡台湾省口径的完整范围。"
+    },
+    {
+      "cardId": "northeast-blacksoil",
+      "name": "东北黑土农业：土壤与生长季",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "hetao-irrigation",
+      "name": "河套灌区：黄河水与干旱区农业",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "xilingol-pasture",
+      "name": "锡林郭勒牧业：草场与承载能力",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "qinshui-coal",
+      "name": "沁水盆地：煤炭与煤层气",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "qarhan-resources",
+      "name": "察尔汗盐湖：卤水与矿产",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "hexi-renewables",
+      "name": "河西风光能源：资源与电网",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "three-gorges-project",
+      "name": "三峡工程：水能与多目标调度",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "ningbo-zhoushan-port",
+      "name": "宁波舟山港：海港与内陆腹地",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "zhengzhou-transport",
+      "name": "郑州枢纽：陆路交会与腹地",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "qinghai-tibet-railway",
+      "name": "青藏铁路：高原上的线路选择",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "liaodong-hills",
+      "name": "辽东丘陵",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "shandong-hills",
+      "name": "山东丘陵",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "southeast-hills",
+      "name": "东南丘陵",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "地图显示地理学习参考点，帮助观察周边地形；点位不表示对象完整范围、工程线路或矿区边界。"
+    },
+    {
+      "cardId": "africa-continent",
+      "name": "非洲：跨赤道的高地与水分梯度",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104365"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "europe-continent",
+      "name": "欧洲：半岛、平原与山地的联系",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104603"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "north-america-continent",
+      "name": "北美洲：从北极到加勒比",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104607"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "south-america-continent",
+      "name": "南美洲：安第斯与大流域的对照",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104361"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "oceania-region",
+      "name": "大洋洲：大陆、群岛与海洋生活",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    },
+    {
+      "cardId": "brazilian-highlands",
+      "name": "巴西高原：高地、河谷与草木景观",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104225"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "deccan-plateau",
+      "name": "德干高原：玄武岩与季风之间",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104233"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "ethiopian-highlands",
+      "name": "埃塞俄比亚高原：低纬高地与河流源区",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104165"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "great-plains",
+      "name": "北美大平原：草地、农田与地下水",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104319"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "pampas",
+      "name": "潘帕斯：草原与农牧业平原",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104221"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "atacama-desert",
+      "name": "阿塔卡马：临海却极干旱",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104081"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "namib-sand-sea",
+      "name": "纳米布砂海：雾与沙丘的相遇",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "UNESCO世界遗产1430参考坐标，仅作点位；未导入遗产地边界，也不表示整个纳米布沙漠。"
+    },
+    {
+      "cardId": "gobi-desert",
+      "name": "戈壁：裸岩、草地与风尘",
+      "decision": "area",
+      "featureIds": [
+        "region-1159104335"
+      ],
+      "changed": true,
+      "reason": "明确绑定对应地理对象；概化标注与实际水面、行政范围保持原说明。"
+    },
+    {
+      "cardId": "iceland-rift",
+      "name": "冰岛裂谷：板块张开的地表线索",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "UNESCO世界遗产1152参考坐标；展示裂谷案例点，不绘制未经导入和核验的板块边界或断层线。"
+    },
+    {
+      "cardId": "san-andreas-fault",
+      "name": "圣安德烈亚斯：水平错动的边界",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "约略定位帕克菲尔德研究区；不绘制断层精确轨迹、地震概率面或危险区。"
+    },
+    {
+      "cardId": "hawaii-hotspot",
+      "name": "夏威夷热点：板块内部也有火山",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    },
+    {
+      "cardId": "amazon-rainforest",
+      "name": "亚马孙雨林：树木也参与水循环",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    },
+    {
+      "cardId": "serengeti-savanna",
+      "name": "塞伦盖蒂：草原随水草变化",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    },
+    {
+      "cardId": "okavango-delta",
+      "name": "奥卡万戈：干季到来的内陆洪水",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    },
+    {
+      "cardId": "sundarbans-mangroves",
+      "name": "孙德尔本斯：潮水中的红树林",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    },
+    {
+      "cardId": "canadian-boreal-forest",
+      "name": "加拿大北方森林：火、林龄与更新",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    },
+    {
+      "cardId": "gulf-stream",
+      "name": "墨西哥湾流：海水搬运热量",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "北卡罗来纳近海观察参考点；未加载流轴、流速或时间序列，不绘制固定海流路径。"
+    },
+    {
+      "cardId": "peru-upwelling",
+      "name": "秘鲁沿岸：冷水上升与海洋食物网",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "秘鲁中部近海参考点；不是流速场、渔场范围或当前厄尔尼诺监测图。"
+    },
+    {
+      "cardId": "indian-monsoon",
+      "name": "印度季风：风向、雨季与地形",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "孟买附近的观察案例点；不绘制风向箭头、季风界线或实时天气图，气候分类继续采用本站Beck V3。"
+    },
+    {
+      "cardId": "persian-gulf-energy",
+      "name": "波斯湾能源：产地、港口与海峡",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "波斯湾能源联系观察点；不表示油气田范围、海上设施坐标、管道轨迹或当前航路。"
+    },
+    {
+      "cardId": "atacama-copper",
+      "name": "阿塔卡马铜矿：矿石到海港",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "矿区约略观察点；不绘制采矿权范围、尾矿坝边界或输送管线。"
+    },
+    {
+      "cardId": "north-sea-energy",
+      "name": "北海能源：油气与海上风电",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "北海案例参考点；不代表油气田、风电场、电缆或专属开发区范围。"
+    },
+    {
+      "cardId": "great-plains-wheat",
+      "name": "大平原小麦：春播与秋播的选择",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "堪萨斯州附近的农业观察参考点，不表示地块、全美小麦带或最新种植面积。"
+    },
+    {
+      "cardId": "kafa-coffee",
+      "name": "卡法咖啡：森林、作物与地方生活",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "UNESCO卡法生物圈保护区参考坐标；不绘制保护区、森林或咖啡种植地范围。"
+    },
+    {
+      "cardId": "mekong-delta-farming",
+      "name": "湄公河三角洲：稻作与淡咸水变化",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。"
+    },
+    {
+      "cardId": "rotterdam-port",
+      "name": "鹿特丹：海港怎样连接腹地",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "港区约略参考点；不绘制港界、码头范围或实时航线，未提供导航信息。"
+    },
+    {
+      "cardId": "singapore-port",
+      "name": "新加坡：中转港的网络位置",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "新加坡西南港区附近参考点；不表示港口法定范围、单一码头或实时航线。"
+    },
+    {
+      "cardId": "gotthard-rail",
+      "name": "圣哥达：从翻山到穿山的铁路",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "阿尔卑斯山中约略案例点；没有导入隧道线路，不绘制直线代替真实轨迹。"
+    },
+    {
+      "cardId": "arctic-region",
+      "name": "北极地区：被陆地环绕的海洋",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "斯瓦尔巴附近的观察参考点，避免极点投影奇异；不表示北极中心、研究边界或海冰范围。"
+    },
+    {
+      "cardId": "southern-ocean",
+      "name": "南大洋：环绕南极的海洋联系",
+      "decision": "point",
+      "featureIds": [],
+      "changed": false,
+      "reason": "德雷克海峡附近海区参考点；不绘制南大洋法定界线、海流路径或当前海冰范围。"
+    }
+  ],
+  "rejectedCandidates": [
+    {
+      "cardId": "inner-mongolian-plateau",
+      "source": "https://www.geodata.cn/main/face_science_detail?guid=188695698267466&typeName=face_science",
+      "reason": "元数据为整个蒙古高原范围与地貌区划；本次未获得、核验可公开复用的内蒙古高原独立矢量。"
+    },
+    {
+      "cardId": "inner-mongolian-plateau",
+      "source": "https://www.mdpi.com/2072-4292/16/12/2210",
+      "reason": "湖区研究范围达196万平方公里、跨5省，不等同此卡地貌单元。"
+    },
+    {
+      "cardId": "inner-mongolian-plateau",
+      "source": "https://www.mdpi.com/2071-1050/12/17/6783",
+      "reason": "研究采用约118万平方公里的自治区范围，不能当作高原边界。"
+    },
+    {
+      "cardId": "china-regions",
+      "source": "https://geodoi.ac.cn/webcn/geodoi.aspx?Id=482",
+      "reason": "四大生态地理区含南方热带岛屿区，与本项目北方/南方/西北/青藏四区口径不同。"
+    },
+    {
+      "cardId": "brazilian-highlands",
+      "featureId": "region-1159104049",
+      "reason": "翻译重名；原始NAME为PLANALTO CENTRAL，选用真正BRAZILIAN HIGHLANDS的NE_ID 1159104225。"
+    },
+    {
+      "cardId": "sundarbans-mangroves",
+      "featureId": "region-1730072209",
+      "reason": "自然地理标注区域不等于红树林覆盖，不作为植被范围。"
+    }
+  ]
+}

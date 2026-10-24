@@ -1918,6 +1918,17 @@
       ]
     },
     {
+      "title": "Jiang等（2023）· 图2中国四大地理区分区图（CC BY 4.0）",
+      "url": "https://nhess.copernicus.org/articles/23/3747/2023/",
+      "usedBy": [
+        "northern-china",
+        "southern-china",
+        "northwestern-china",
+        "qinghai-tibet-region",
+        "topic:china-regions"
+      ]
+    },
+    {
       "title": "香港天文台 · 地形雨与1981—2010降雨分布",
       "url": "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html",
       "usedBy": [
@@ -2978,6 +2989,23 @@
       }
     },
     {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/",
+      "usedBy": [
+        "africa-continent",
+        "europe-continent",
+        "north-america-continent",
+        "south-america-continent",
+        "brazilian-highlands",
+        "deccan-plateau",
+        "ethiopian-highlands",
+        "great-plains",
+        "pampas",
+        "atacama-desert",
+        "gobi-desert"
+      ]
+    },
+    {
       "title": "National Geographic Society · Europe: Physical Geography",
       "url": "https://education.nationalgeographic.org/resource/europe-physical-geography/",
       "usedBy": [
@@ -3722,6 +3750,20 @@
       ]
     },
     {
+      "title": "Unicode CLDR 48 · 国家语言资料",
+      "url": "https://www.unicode.org/cldr/charts/48/supplemental/territory_language_information.html",
+      "usedBy": [
+        "topic:map-language"
+      ]
+    },
+    {
+      "title": "IANA · 语言与宏语言注册表",
+      "url": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
+      "usedBy": [
+        "topic:map-language"
+      ]
+    },
+    {
       "title": "中国科学院地理资源所 · 全球海陆岸线面积研究（2019）",
       "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html",
       "usedBy": [
@@ -3759,7 +3801,7 @@
     "reviewedAt": "2026-10-11",
     "method": "每个非气候卡采用明确真实要素ID或空数组；逐卡比对名称、尺度、坐标与对象归属，独立审查全部绑定和人文量化来源，不采用模糊别名或邻近点替代身份。",
     "naturalCards": 77,
-    "boundCards": 107,
+    "boundCards": 122,
     "bindingsFile": "src/data/feature-bindings.json",
     "pointOnlyCards": [
       "inner-mongolian-plateau",
@@ -3801,10 +3843,6 @@
       "pearl-delta",
       "south-north-water",
       "grand-canal",
-      "northern-china",
-      "southern-china",
-      "northwestern-china",
-      "qinghai-tibet-region",
       "yangtze-middle-lower-plain",
       "earth-rotation",
       "earth-season-contrast",
@@ -3826,19 +3864,8 @@
       "liaodong-hills",
       "shandong-hills",
       "southeast-hills",
-      "africa-continent",
-      "europe-continent",
-      "north-america-continent",
-      "south-america-continent",
       "oceania-region",
-      "brazilian-highlands",
-      "deccan-plateau",
-      "ethiopian-highlands",
-      "great-plains",
-      "pampas",
-      "atacama-desert",
       "namib-sand-sea",
-      "gobi-desert",
       "iceland-rift",
       "san-andreas-fault",
       "hawaii-hotspot",
@@ -3935,7 +3962,7 @@
     "public/data/learning-data-sources.json",
     "public/data/country-context-sources.json"
   ],
-  "sourceCount": 270,
+  "sourceCount": 274,
   "themeSourceManifest": "/data/theme-sources.json",
   "editorialRevision": {
     "version": "topic-intros-2026-10-11-v2",
@@ -3959,5 +3986,8 @@
     "doi": "10.6084/m9.figshare.9890531.v1",
     "license": "CC BY 4.0",
     "review": "由官方新输入重新生成，不重用旧HydroBASINS几何缓存；五个核心字段和输入校验见辅助图层来源清单。"
-  }
+  },
+  "languageOverviewSourceManifest": "/data/language-overview-sources.json",
+  "areaPresentationReview": "data/research/area-presentation-review.json",
+  "chinaReferenceRegionSourceManifest": "data/research/china-reference-region-sources.json"
 }

@@ -35,6 +35,7 @@ test('themes: scope and geography categories organize one shared library',async(
   const after=await page.evaluate(()=>({center:window.__terraAtlas!.map.getCenter().toArray(),zoom:window.__terraAtlas!.map.getZoom()}))
   expect(after).toEqual(before)
   await expect(page.locator('.topic-list>button').filter({hasText:'世界十四座8000米高峰'})).toHaveCount(0)
+  await page.locator('.topic-category-filters summary').click()
   await page.getByRole('button',{name:'人口文化',exact:true}).click()
   await expect(page.locator('.topic-list>button').filter({hasText:'人口密度分布'})).toHaveCount(1)
   await expect(page.locator('.topic-list>button').filter({hasText:'中国四大高原'})).toHaveCount(0)
@@ -43,6 +44,7 @@ test('themes: scope and geography categories organize one shared library',async(
   await expect(page.locator('.topic-result-count')).toContainText('中国地理 · 人口文化')
   await page.getByRole('button',{name:'世界地理',exact:true}).click()
   await expect(page.locator('.topic-list>button').filter({hasText:'人口密度分布'})).toHaveCount(1)
+  if(!await page.getByRole('button',{name:'地形地貌',exact:true}).isVisible())await page.locator('.topic-category-filters summary').click()
   await page.getByRole('button',{name:'地形地貌',exact:true}).click()
   await expect(page.locator('.topic-list>button').filter({hasText:'世界十四座8000米高峰'})).toHaveCount(1)
   await expect(page.locator('.topic-list>button').filter({hasText:'中国四大高原'})).toHaveCount(0)
@@ -53,6 +55,7 @@ test('themes: scope and geography categories organize one shared library',async(
 test('themes: scope, category and search survive reading, tab changes and browser Back',async({page})=>{
   await library(page)
   await page.getByRole('button',{name:'中国地理',exact:true}).click()
+  if(!await page.getByRole('button',{name:'地形地貌',exact:true}).isVisible())await page.locator('.topic-category-filters summary').click()
   await page.getByRole('button',{name:'地形地貌',exact:true}).click()
   const search=page.getByRole('searchbox',{name:'搜索主题和主题成员'})
   await search.fill('高原')
@@ -77,11 +80,13 @@ test('themes: scope, category and search survive reading, tab changes and browse
 test('themes: empty scoped search can return to every theme',async({page})=>{
   await library(page)
   await page.getByRole('button',{name:'中国地理',exact:true}).click()
+  if(!await page.getByRole('button',{name:'地形地貌',exact:true}).isVisible())await page.locator('.topic-category-filters summary').click()
   await page.getByRole('button',{name:'地形地貌',exact:true}).click()
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill('世界十四座8000米高峰')
   await expect(page.locator('.topic-empty')).toBeVisible()
   await page.getByRole('button',{name:'查看全部主题',exact:true}).click()
   await expect(page.getByRole('button',{name:'全部主题',exact:true})).toHaveAttribute('aria-pressed','true')
+  await page.locator('.topic-category-filters summary').click()
   await expect(page.getByRole('button',{name:'全部分类',exact:true})).toHaveAttribute('aria-pressed','true')
   await expect(page.getByRole('searchbox',{name:'搜索主题和主题成员'})).toHaveValue('')
   await expect(page.locator('.topic-list>button')).toHaveCount(40)
@@ -89,12 +94,12 @@ test('themes: empty scoped search can return to every theme',async({page})=>{
 
 test('themes: all four distribution themes replace each other and preserve the viewport',async({page})=>{
   const before=await page.evaluate(()=>({center:window.__terraAtlas!.map.getCenter().toArray(),zoom:window.__terraAtlas!.map.getZoom()}))
-  for(const [title,overlay,source] of [['人口密度分布','population','population-raster'],['国家宗教构成','religion','religion'],['语言分布','language','language-areas'],['长期气候分布','climate','climate']] as const){
+  for(const [title,overlay,source] of [['人口密度分布','population','population-raster'],['国家宗教构成','religion','religion'],['语言分布','language','countries'],['长期气候分布','climate','climate']] as const){
     await chooseTheme(page,title)
     if(overlay!=='population')await sourceLoaded(page,source)
     else await page.waitForFunction(()=>window.__terraAtlas!.map.isSourceLoaded('population-raster'))
     await relations(page,0)
-    const state=await page.evaluate(()=>({preferences:JSON.parse(localStorage.getItem('terra-atlas-v1')!),center:window.__terraAtlas!.map.getCenter().toArray(),zoom:window.__terraAtlas!.map.getZoom(),visible:Object.fromEntries(['climate-fill','population-raster','religion-fill','language-area-fill'].map(id=>[id,window.__terraAtlas!.map.getLayoutProperty(id,'visibility')]))}))
+    const state=await page.evaluate(()=>({preferences:JSON.parse(localStorage.getItem('terra-atlas-v1')!),center:window.__terraAtlas!.map.getCenter().toArray(),zoom:window.__terraAtlas!.map.getZoom(),visible:Object.fromEntries(['climate-fill','population-raster','religion-fill','language-overview-fill','language-area-fill'].map(id=>[id,window.__terraAtlas!.map.getLayoutProperty(id,'visibility')]))}))
     expect(['climate','population','religion','language'].filter(key=>state.preferences.layers[key])).toEqual([overlay])
     expect(state.preferences.topicId).toBe('map-'+overlay)
     expect(state.zoom).toBeCloseTo(before.zoom,5);state.center.forEach((coordinate,index)=>expect(coordinate).toBeCloseTo(before.center[index],5))

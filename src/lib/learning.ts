@@ -55,7 +55,7 @@ export function climateReference(place:ClimatePlace):Knowledge {
 }
 
 export interface CountryIndicators {year:number;note:string;countries:{countryId:string;iso3:string;name:string;population:number|null;urbanPercent:number|null;year:number}[]}
-export interface CountryLanguages {note:string;categories:{id:string;name:string}[];countries:{countryId:string;iso3:string;name:string;languages:{id:string;name:string;status:string}[];sourceText:string;year:number|null;period:string;sourceUrl:string}[]}
+export interface CountryLanguages {note:string;categories:{id:string;name:string}[];countries:{countryId:string;iso3:string;name:string;languages:{id:string;name:string;status:string;sourceLabel?:string}[];untranslatedEntries?:string[];sourceEntries?:string[];sourceText:string;year:number|null;period:string;sourceUrl:string}[]}
 export interface ReligionCategory {id:string;name:string;color:string}
 export interface ReligionCountry {countryId:string;iso3:string;name:string;year:number|null;period:string|null;shares:Record<string,number|null>;reportedGroups?:unknown[];largestReportedCategory:string|null;scope:string;sourceText:string;notes?:string[]|string;sourceId:string;sourceUrl?:string;sourceFile?:string}
 export interface HumanData {religion:{period:string;year:number|null;categories:ReligionCategory[];countries:ReligionCountry[]};[key:string]:unknown}

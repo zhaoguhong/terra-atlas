@@ -1351,3 +1351,15 @@ THIS SOFTWARE.
 ## Glottography language areas
 
 Language-area geometries are derived from Glottography v2.0, archived at https://doi.org/10.5281/zenodo.18613195, commit 20102238acf12a2b82bd4d752356687ee2acfd6d. Licensed under Creative Commons Attribution 4.0 (https://creativecommons.org/licenses/by/4.0/). Original source: Asher, R. E. & Christopher J. Moseley (eds.) (2007), Atlas of the World’s Languages, 2nd edn., Routledge. Digital dataset: The Glottography Consortium (2026). Only contemporary, language-level areas are used. Terra Atlas simplifies geometry for regional viewing and connects language names/families to Glottolog 5.3. Processing, input hashes and verification records are documented in /data/language-area-sources.json.
+
+## Unicode CLDR and language classification
+
+World language overview uses Unicode CLDR 48 territory language estimates and Chinese display names, Copyright © 2004–2025 Unicode, Inc., under the Unicode License V3. The complete notice is distributed at `public/licenses/Unicode-3.0.txt`. Source and input hashes: `public/data/language-overview-sources.json`.
+
+IANA Language Subtag Registry (File-Date: 2026-09-17) supplies factual language identifiers and macrolanguage relationships, joined by exact ISO codes. See https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry and RFC 5646. These presentation groups do not alter Glottography geometries or Glottolog identifiers.
+
+### 中国四大地理区参考面
+
+`data/china-reference-regions.geojson` 改编自 **Jiang, R., Zhang, G., Wang, S., Xue, B., Xie, Z., Yu, T., Wang, K., Ding, J., and Zhu, X. (2023)**, *Characteristics of cloud-to-ground lightning (CG) and differences between +CG and −CG strokes in China regarding the China National Lightning Detection Network*, NHESS 23, 3747–3759，**图2**，[DOI:10.5194/nhess-23-3747-2023](https://doi.org/10.5194/nhess-23-3747-2023)，原作与本项改编采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。
+
+本项目仅数字化图示中的北方、南方、西北和青藏四区分界，经图中经纬网配准，再裁剪到本站既有Natural Earth国家轮廓（公共领域），未导入闪电观测或其栅格值。共同分界共用一条线，保留原图概化口径；这不是作者提供的GIS边界文件，也不是官方划界或实测边界。作者与其机构未对本改编进行认可。原始PDF哈希、数字化输入、投影配准参数、输出哈希与验证见 `data/china-reference-region-sources.json`；全国尺度学习适用，不用于地方归属判定或面积统计。

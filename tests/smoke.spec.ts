@@ -15,7 +15,7 @@ test('production map, reading, bookmarks and shared links work', async ({ page, 
   await mapSettled(page)
   await page.waitForFunction(() => window.__terraAtlas!.map.queryRenderedFeatures({ layers: ['place-labels'] }).some(feature => /[\u3400-\u9fff]/.test(String(feature.properties?.name || ''))))
   expect(await page.evaluate(() => window.__terraAtlas!.map.queryRenderedFeatures({ layers: ['land-fill'] }).length)).toBeGreaterThan(0)
-  await page.getByRole('textbox', { name: '搜索地理对象' }).fill('长江')
+  await page.getByRole('combobox', { name: '搜索地理对象' }).fill('长江')
   await page.locator('.search-results>button').first().click()
   await expect(page.locator('.knowledge-panel h2')).toHaveText('长江')
   await selectedGeometry(page)

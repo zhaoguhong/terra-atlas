@@ -4,7 +4,7 @@ import {clickHeaderAction} from './header-actions'
 
 const more=(page:Page)=>page.getByRole('button',{name:'更多操作',exact:true})
 const actions=(page:Page)=>page.locator('#header-actions')
-const search=(page:Page)=>page.getByRole('textbox',{name:'搜索地理对象',exact:true})
+const search=(page:Page)=>page.getByRole('combobox',{name:'搜索地理对象',exact:true})
 let errors:string[]=[]
 
 test.setTimeout(90000)

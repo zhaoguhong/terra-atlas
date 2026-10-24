@@ -17,6 +17,8 @@ test.afterEach(()=>expect(errors,'map and legend runtime errors').toEqual([]))
 
 async function theme(page:Page,title:string){
   await openThemeLibrary(page)
+  const categories=page.locator('.topic-category-filters')
+  if(await categories.getAttribute('open')===null)await categories.locator('summary').click()
   await page.locator('.topic-categories').getByRole('button',{name:'全部分类',exact:true}).click()
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill(title)
   await page.locator('.topic-list>button').filter({has:page.getByText(title,{exact:true})}).click()
@@ -91,10 +93,19 @@ test('theme legends: natural areas and missing geometry have matching colours an
   expect(await page.evaluate(()=>window.__terraAtlas!.map.getPaintProperty('relations-area','fill-color'))).toContainEqual(['get','topicColor'])
 
   await theme(page,'中国四大地理区')
+  await sourceLoaded(page,'study-regions')
   await membersReady(page,['northern-china','southern-china','northwestern-china','qinghai-tibet-region'])
   legend=await expand(page)
-  await expect(legend).toContainText('尚未绘制区域划分面')
-  expect((await sourceFeatures(page,'relations')).every(feature=>feature.geometry.type==='Point')).toBe(true)
+  await expect(legend).toContainText('分区图数字化')
+  const regions=await sourceFeatures(page,'relations')
+  expect(regions).toHaveLength(4)
+  expect(regions.every(feature=>['Polygon','MultiPolygon'].includes(feature.geometry.type))).toBe(true)
+  expect(new Set(regions.map(feature=>feature.properties.topicColor)).size).toBe(4)
+  for(const feature of regions){
+    const entry=legend.locator('.map-legend-entry').filter({hasText:String(feature.properties.name)}).first()
+    await expect(entry.locator('.map-legend-symbol')).toHaveClass(/symbol-area/)
+    expect(await swatchColor(entry)).toBe(rgb(String(feature.properties.topicColor)))
+  }
 
   await theme(page,'中国34个省级行政区')
   await sourceLoaded(page,'provinces')
@@ -163,16 +174,17 @@ test('theme legends: climate group and detailed modes use the same colours as th
 
 test('theme legends: language areas, families and reference points switch and filter together',async({page})=>{
   await theme(page,'语言分布')
+  await page.getByRole('combobox',{name:'语言展示方式'}).selectOption('areas')
   await sourceLoaded(page,'language-areas')
   const mode=page.getByRole('combobox',{name:'语言展示方式'})
   await expect(mode).toHaveValue('areas')
   let legend=await expand(page)
   await expect(legend).toContainText('2007')
-  await expect(legend).toContainText(/其他语言/)
+  await expect(legend).toContainText(/其余地方语言/)
   const languagePaint=await page.evaluate(()=>window.__terraAtlas!.map.getPaintProperty('language-area-fill','fill-color')) as unknown[]
   const mandarin=languagePaint.indexOf('mand1415')
   expect(mandarin).toBeGreaterThan(1)
-  expect(await swatchColor(legend.locator('.map-legend-entry').filter({hasText:'官话'}).first())).toBe(rgb(String(languagePaint[mandarin+1])))
+  expect(await swatchColor(legend.locator('.map-legend-entry').filter({hasText:'汉语'}).first())).toBe(rgb(String(languagePaint[mandarin+1])))
   expect(await page.evaluate(()=>window.__terraAtlas!.data['language-areas'].features.every(feature=>['Polygon','MultiPolygon'].includes(feature.geometry.type)))).toBe(true)
   await legend.getByRole('button',{name:'收起图例',exact:true}).click()
   await closeExplorer(page)
@@ -214,8 +226,8 @@ test('theme legends: language areas, families and reference points switch and fi
 test('theme legends: a language area can be clicked and its display survives save and share',async({page,context})=>{
   await context.grantPermissions(['clipboard-read','clipboard-write'])
   await theme(page,'语言分布')
-  await sourceLoaded(page,'language-areas')
   await page.getByRole('combobox',{name:'语言展示方式'}).selectOption('areas')
+  await sourceLoaded(page,'language-areas')
   await page.getByRole('combobox',{name:'语言语系筛选'}).selectOption('sino1245')
   await page.getByRole('combobox',{name:'区域语言筛选'}).selectOption('mand1415')
   await closeExplorer(page)
@@ -295,4 +307,40 @@ test('theme legends: mobile expanded search, collapse and Escape retain usable m
   await clickHeaderAction(page,'分享当前地图')
   await expect.poll(()=>page.evaluate(()=>navigator.clipboard.readText())).toContain('topic=map-climate')
   await page.screenshot({path:test.info().outputPath('mobile-short-theme-toolbar.png')})
+})
+
+test('theme legends: world overview colours Guangdong and Hainan as Chinese and preserves dialect detail',async({page})=>{
+  await theme(page,'语言分布')
+  await expect(page.getByRole('combobox',{name:'语言展示方式'})).toHaveValue('overview')
+  await sourceLoaded(page,'countries')
+  await closeExplorer(page)
+  await page.evaluate(()=>window.__terraAtlas!.map.jumpTo({center:[111.5,21.5],zoom:5,padding:{top:0,bottom:0,left:0,right:0}}))
+  await mapSettled(page)
+  for(const coordinates of [[113.26,23.13],[110.33,20.02],[109.5,18.25]]){
+    const rendered=await page.evaluate(coordinates=>{
+      const map=window.__terraAtlas!.map
+      return map.queryRenderedFeatures(map.project(coordinates as [number,number]),{layers:['language-overview-fill']}).map(f=>f.properties?.id)
+    },coordinates)
+    expect(rendered).toContain('country-chn')
+  }
+  let legend=await expand(page)
+  await expect(legend).toContainText('国家主要通用语言')
+  await expect(legend.locator('.map-legend-entry').filter({hasText:'其他语言'})).toHaveCount(0)
+  const paint=await page.evaluate(()=>window.__terraAtlas!.map.getPaintProperty('language-overview-fill','fill-color')) as unknown[]
+  expect(await swatchColor(legend.getByRole('button',{name:'汉语',exact:true}))).toBe(rgb(String(paint[paint.indexOf('country-chn')+1])))
+  await legend.getByRole('button',{name:'汉语',exact:true}).click()
+  await expect(legend.getByRole('button',{name:'汉语',exact:true})).toHaveAttribute('aria-pressed','true')
+  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).thematic.languageId)).toBe('group:zh')
+  await page.screenshot({path:test.info().outputPath('chinese-country-overview.png')})
+  await legend.getByRole('button',{name:'收起图例',exact:true}).click()
+  await openExplorer(page)
+  await page.getByRole('combobox',{name:'语言展示方式'}).selectOption('areas')
+  await sourceLoaded(page,'language-areas')
+  await page.getByRole('combobox',{name:'区域语言筛选'}).selectOption('group:zh')
+  const filter=JSON.stringify(await page.evaluate(()=>window.__terraAtlas!.map.getFilter('language-area-fill')))
+  for(const code of ['mand1415','yuec1235','hain1238'])expect(filter).toContain(code)
+  expect(filter).not.toContain('hlai1239')
+  await expect(page.getByRole('combobox',{name:'区域语言筛选'})).toHaveValue('group:zh')
+  await page.getByRole('combobox',{name:'区域语言筛选'}).selectOption('yuec1235')
+  expect(JSON.stringify(await page.evaluate(()=>window.__terraAtlas!.map.getFilter('language-area-fill')))).not.toContain('mand1415')
 })

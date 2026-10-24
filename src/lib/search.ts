@@ -19,7 +19,7 @@ export function createFeatureCardIndex<T extends {id: string}>(cards: readonly T
   return index
 }
 
-/** Curated cards, climate reference points, then unbound map objects; at most ten results. */
+/** Exact place names precede substring matches; curated entries win equal matches. */
 export function searchCatalog<C extends {name: string}, G>(query: string, curated: SearchIndex<C>, references: SearchIndex<C>, features: SearchIndex<G>, limit = 10): (C | G)[] {
   const q = normalize(query.trim())
   if (!q || limit <= 0) return []
@@ -33,10 +33,13 @@ export function searchCatalog<C extends {name: string}, G>(query: string, curate
       }
     }
   }
-  append(curated, entry => entry.name === q)
-  append(curated, entry => entry.name !== q)
-  const curatedNames = new Set((results as C[]).map(card => card.name))
-  append(references, entry => !curatedNames.has(entry.value.name))
-  append(features, () => true)
+  const curatedNames = new Set(curated.filter(entry=>entry.terms.some(term=>term.includes(q))).map(entry=>entry.value.name))
+  // Real map objects with an exact name precede unrelated curated case cards
+  // and climate sample points. Do not infer new geometry from a partial name.
+  for (const exact of [true, false]) {
+    append(curated, entry => (entry.name === q) === exact)
+    append(features, entry => (entry.name === q) === exact)
+    append(references, entry => !curatedNames.has(entry.value.name) && (entry.name === q) === exact)
+  }
   return results
 }

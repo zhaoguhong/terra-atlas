@@ -175,6 +175,21 @@ test('etymology and creole names never become country language tags',()=>{
   assert(!dominica.includes('fra'))
 })
 
+test('country language overviews retain source entries and formerly omitted languages',()=>{
+  const countries=read('public/data/learning-country-languages.json').countries
+  for(const country of countries){
+    assert(country.languages.length+country.untranslatedEntries.length>0,country.countryId)
+    for(const entry of [...country.languages.map(language=>language.sourceLabel),...country.untranslatedEntries]){
+      assert(country.sourceEntries.includes(entry));assert(country.sourceText.includes(entry))
+    }
+  }
+  for(const [countryId,languageId] of [['country-grc','ell'],['country-swe','swe'],['country-nor','nob'],['country-afg','pus']]){
+    assert(countries.find(country=>country.countryId===countryId).languages.some(language=>language.id===languageId))
+  }
+  const afghanistan=countries.find(country=>country.countryId==='country-afg')
+  assert(afghanistan.untranslatedEntries.some(entry=>entry.startsWith('Nuristani')))
+})
+
 import {daylightHours,solarTimeOffsetMinutes,scaleDistanceKm} from '../src/lib/earth.ts'
 test('daylight teaching model handles equinoxes, hemisphere reversal and polar limits',()=>{
   for(const latitude of [-80,-40,0,40,80])assert(Math.abs(daylightHours(latitude,0)-12)<1e-10)
@@ -198,7 +213,7 @@ test('every theme member is reachable exactly once through an explicit learning 
 
 import {allTopicPresentationIds,getTopicPresentation,presentationForMember} from '../src/lib/topic-presentation.ts'
 import {buildMapLegend} from '../src/lib/map-legend.ts'
-import {climateGroups,languageFamilies,majorLanguages,familyColor,languageColor,otherLanguageColor} from '../src/lib/map-presentation.ts'
+import {climateGroups,languageFamilies,majorLanguages,languageOverview,languageMembers,familyColor,languageColor,otherLanguageColor} from '../src/lib/map-presentation.ts'
 import {validThematic} from '../src/lib/storage.ts'
 test('all themes explain every actual member geometry and colour without inventing ranges',()=>{
   const topics=read('src/data/topics.json')
@@ -224,8 +239,8 @@ test('language legends describe the filtered language and family views',()=>{
   const languageMeta=read('public/data/language-areas-meta.json')
   const input={layers:{...defaultLayers,language:true},thematic:validThematic({language:'sino1245',languageMode:'areas'}),topic:null,selection:null,human:null,languageMeta}
   const entries=buildMapLegend(input).sections[0].entries
-  assert(entries.some(entry=>entry.id==='action:language:mand1415'))
-  assert(!entries.some(entry=>entry.id==='action:language:stan1293'))
+  assert(entries.some(entry=>entry.id==='action:language:group:zh'))
+  assert(!entries.some(entry=>entry.id==='action:language:group:en'))
   assert.equal(entries.find(entry=>entry.id==='language-other').color,otherLanguageColor)
   const selected=buildMapLegend({...input,thematic:validThematic({languageMode:'points',languageId:'nucl1643'})}).sections[0].entries
   assert.equal(selected.length,1);assert.equal(selected[0].symbol,'point');assert.equal(selected[0].color,languageColor('nucl1643'))
@@ -242,8 +257,70 @@ test('climate legends reflect the selected displayed classification and keep for
 })
 test('thematic modes validate old records and persist explicit language and climate views',()=>{
   const old=validThematic({religion:'muslim',language:'sino1245',opacity:.5})
-  assert.equal(old.languageMode,'areas');assert.equal(old.climateMode,'groups');assert.equal(old.languageId,'all')
+  assert.equal(old.languageMode,'overview');assert.equal(old.climateMode,'groups');assert.equal(old.languageId,'all')
   const explicit=validThematic({languageMode:'points',languageId:'mand1415',climateMode:'types',opacity:.3})
   assert.equal(explicit.languageMode,'points');assert.equal(explicit.climateMode,'types');assert.equal(explicit.languageId,'mand1415')
   assert.equal(validThematic({languageMode:'invalid',climateMode:'invalid',opacity:NaN}).opacity,.72)
+})
+
+test('world language overview joins Chinese varieties without absorbing other languages',()=>{
+  for(const code of ['mand1415','yuec1235','wuch1236','hakk1236','minn1241','hain1238']){
+    assert(languageMembers('group:zh').includes(code),code)
+    assert.equal(languageColor(code),languageColor('group:zh'))
+  }
+  for(const code of ['tibe1272','hlai1239','uigh1240','chin1283'])assert(!languageMembers('group:zh').includes(code),code)
+  assert.equal(languageColor('egyp1253'),languageColor('group:ar'))
+  assert.equal(languageColor('alge1239'),languageColor('group:ar'))
+  for(const [id,group] of [['chn','zh'],['usa','en'],['fra','fr'],['idn','id']])assert.equal(languageOverview.countries.find(c=>c.countryId==='country-'+id).displayId,'group:'+group)
+  const input={layers:{...defaultLayers,language:true},thematic:validThematic({languageMode:'overview',languageId:'group:zh'}),topic:null,selection:null,human:null,languageMeta:null}
+  const legend=buildMapLegend(input)
+  assert.equal(legend.sections[0].entries.length,1)
+  assert.equal(legend.sections[0].entries[0].label,'汉语')
+  assert.equal(legend.sections[0].entries[0].color,languageColor('group:zh'))
+  assert.equal(validThematic(input.thematic).languageMode,'overview')
+})
+
+import {mapRepresentation} from '../src/lib/geometry-presentation.ts'
+test('area presentation follows reviewed feature identity rather than similar place names',()=>{
+  for(const id of ['northern-china','southern-china','northwestern-china','qinghai-tibet-region','brazilian-highlands','deccan-plateau','ethiopian-highlands','great-plains','pampas','gobi-desert','atacama-desert','africa-continent','europe-continent','north-america-continent','south-america-continent'])assert.equal(mapRepresentation(knowledge.find(k=>k.id===id)),'area',id)
+  assert.deepEqual(bindings['brazilian-highlands'],['region-1159104225'])
+  assert.equal(mapRepresentation(knowledge.find(k=>k.id==='inner-mongolian-plateau')),'point')
+  assert.equal(mapRepresentation(knowledge.find(k=>k.id==='yangtze')),'line')
+  assert.equal(mapRepresentation({id:'peak-sample',name:'Peak',nameEn:'Peak',geometryType:'Point'}),'point')
+  assert.equal(mapRepresentation(knowledge.find(k=>k.id==='sundarbans-mangroves')),'point')
+})
+test('exact map names are not hidden behind a similarly named curated point',()=>{
+  const c=createSearchIndex([{name:'内蒙古高原'}],p=>[p.name])
+  const g=createSearchIndex([{name:'蒙古高原',id:'region-1159104229'}],p=>[p.name])
+  assert.equal(searchCatalog('蒙古高原',c,[],g)[0].name,'蒙古高原')
+  assert.equal(searchCatalog('内蒙古高原',c,[],g)[0].name,'内蒙古高原')
+})
+
+import {coordinatesInBounds} from '../src/lib/discovery.ts'
+test('nearby discovery handles wrapped and unwrapped map bounds across the dateline',()=>{
+  for(const bounds of [[170,60,-170,75],[170,60,190,75],[-190,60,-170,75]]){
+    assert.equal(coordinatesInBounds([-179,66],bounds),true)
+    assert.equal(coordinatesInBounds([179,66],bounds),true)
+    assert.equal(coordinatesInBounds([0,66],bounds),false)
+    assert.equal(coordinatesInBounds([179,30],bounds),false)
+  }
+  assert.equal(coordinatesInBounds([104,35],[-180,-85,180,85]),true)
+})
+test('saved object references and bookmark names survive migration without trusting invalid coordinates',()=>{
+  const value={favorites:['city-ne-1159147031'],placeNames:{'city-ne-1159147031':'丽江',invalid:42},savedViews:[{id:'v',name:'城市视图',camera:{center:[100,27],zoom:5},layers:defaultLayers,place:'city-ne-1159147031',featureId:'city-ne-1159147031',placeCoordinates:[100,27]}]}
+  const restored=parsePreferences(value)
+  assert.deepEqual(restored.placeNames,{'city-ne-1159147031':'丽江'})
+  assert.equal(restored.savedViews[0].featureId,'city-ne-1159147031')
+  assert.deepEqual(restored.savedViews[0].placeCoordinates,[100,27])
+  assert.equal(parsePreferences({...value,savedViews:[{...value.savedViews[0],placeCoordinates:[200,0]}]}).savedViews[0].placeCoordinates,undefined)
+})
+
+test('appearance preferences migrate old records and reject unknown settings',()=>{
+  for(const value of [undefined,null,'sepia',{},1]){
+    const record=parsePreferences({appearance:value,favorites:['yangtze'],notes:{yangtze:'保留'}})
+    assert.equal(record.appearance,'system')
+    assert.deepEqual(record.favorites,['yangtze'])
+    assert.deepEqual(record.notes,{yangtze:'保留'})
+  }
+  for(const appearance of ['system','light','dark'])assert.equal(parsePreferences({appearance}).appearance,appearance)
 })

@@ -30,6 +30,7 @@ Copyright © 2026 Terra Atlas contributors（山河图贡献者）。
 第三方材料不会因为转换、简化、中文整理、截图或打包而自动适用本项目的 MIT 或原创内容许可：
 
 - Natural Earth 保留公有领域属性，Wikidata 结构化数据保留 CC0。
+- `public/data/china-reference-regions.geojson` 和 `scripts/china-region-digitization.json` 改编自Jiang等（2023）图2，采用CC BY 4.0；须保留原作者署名、许可与数字化修改说明，不适用MIT。
 - Beck 气候、GHS-POP、Glottolog、Glottography、世界银行等资料保留来源清单注明的原许可、署名和修改说明。
 - **`public/data/auxiliary-basins.geojson`** 从官方 [BasinATLAS v1.0 固定归档](https://doi.org/10.6084/m9.figshare.9890531.v1) 重新生成，采用 CC BY 4.0。须保留 Linke et al. (2019) 与底层分区来源的署名、许可链接和本项目修改说明；不适用 MIT。所选几何与五个核心字段、版本和输入哈希见[第三方声明](../third-party-notices.txt)与来源清单。未导入的环境属性仍各自授权，原 HydroBASINS 独立产品的许可不因本项目迁移而改变。
 - OpenFreeMap、OpenStreetMap、Mapterhorn 和本地高程数据分别保留各自的数据条件与归属；在线瓦片服务未被重新授权。

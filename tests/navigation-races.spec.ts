@@ -66,7 +66,7 @@ for(const destination of ['theme','selection','library'] as const){
           return source.data?.features?.length===4
         })
       }else if(destination==='selection'){
-        await page.getByRole('textbox',{name:'搜索地理对象',exact:true}).fill('Alps')
+        await page.getByRole('combobox',{name:'搜索地理对象',exact:true}).fill('Alps')
         await page.locator('.search-results>button').first().click()
         await expect(page.locator('.knowledge-panel h2')).toHaveText('阿尔卑斯山脉')
         await selectedGeometry(page)
@@ -117,7 +117,9 @@ for(const previous of ['collapsed reader','comparison'] as const){
     await page.locator('.topic-members>button').filter({has:page.getByText('黄土高原',{exact:true})}).click()
     await expect(page.locator('.knowledge-panel h2')).toHaveText('黄土高原');await selectedGeometry(page)
     if(isMobile){
-      await page.getByRole('button',{name:'卡片全屏',exact:true}).click()
+      await page.getByRole('button',{name:'调整阅读面板大小',exact:true}).press('End')
+      // The reader hides the library toolbar; dismiss through its visible library entry.
+      await page.getByRole('button',{name:'主题库',exact:true}).click()
       await page.getByRole('button',{name:'关闭探索面板',exact:true}).click()
     }else await page.getByRole('button',{name:'收起探索面板',exact:true}).click()
     await expect(page.locator('.explorer')).not.toBeVisible()

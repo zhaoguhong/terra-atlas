@@ -1,5 +1,6 @@
 import type {ErrorEvent, ExpressionSpecification, LayerSpecification, Map as GLMap, MapSourceDataEvent} from 'maplibre-gl'
-import type {MapDisplay, OnlineMapStatus} from '../types'
+import {applyMapAppearance} from './map-appearance'
+import type {ResolvedAppearance, MapDisplay, OnlineMapStatus} from '../types'
 
 const DETAIL_SOURCE = 'online-detail'
 const TERRAIN_SOURCE = 'online-terrain'
@@ -79,7 +80,8 @@ function validatedMetadata(value: unknown, hostname: string): TileMetadata {
 }
 
 /** Adds optional online sources without replacing the local map or its knowledge layers. */
-export function createOnlineMap(map: GLMap, onStatus: (status: OnlineMapStatus) => void) {
+export function createOnlineMap(map: GLMap, onStatus: (status: OnlineMapStatus) => void, initialAppearance:ResolvedAppearance='light') {
+  let appearance=initialAppearance
   let destroyed = false
   let display: MapDisplay = {basemap: 'natural', terrain3d: false}
   const state: OnlineMapStatus = {detail: 'off', terrain: 'off'}
@@ -170,6 +172,7 @@ export function createOnlineMap(map: GLMap, onStatus: (status: OnlineMapStatus) 
         }}, before)
         map.setTerrain({source: TERRAIN_SOURCE, exaggeration: 1})
       }
+      applyMapAppearance(map,appearance)
       // A metadata response alone is insufficient: wait for viewport tiles to finish loading.
       loadTimers[kind] = setTimeout(() => { if (epoch === epochs[kind] && state[kind] === 'loading') fail(kind) }, 15000)
     } catch {
@@ -190,6 +193,7 @@ export function createOnlineMap(map: GLMap, onStatus: (status: OnlineMapStatus) 
   map.on('sourcedata', sourceData)
 
   return {
+    setAppearance(next:ResolvedAppearance){appearance=next;if(!destroyed)applyMapAppearance(map,appearance)},
     update(next: MapDisplay) {
       if (destroyed) return
       if (!display.terrain3d && next.terrain3d) {

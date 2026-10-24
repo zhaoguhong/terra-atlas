@@ -6,7 +6,7 @@ const knowledge=read('src/data/knowledge.json')
 const bindings=read('src/data/feature-bindings.json')
 const sources=read('public/data/sources.json')
 const ids=new Set(), features=new Map()
-for(const name of ['land','countries','regions','rivers','lakes','peaks','theme-peaks','climate','learning-provinces','learning-languages','language-areas']){
+for(const name of ['land','countries','regions','china-reference-regions','rivers','lakes','peaks','theme-peaks','climate','learning-provinces','learning-languages','language-areas']){
   const data=read(`public/data/${name}.geojson`)
   assert.equal(data.type,'FeatureCollection')
   for(const f of data.features){
@@ -36,6 +36,20 @@ for(const k of knowledge){
 }
 for(const [id,values] of Object.entries(bindings))for(const feature of values)assert(features.has(feature),`${id}: missing geometry ${feature}`)
 const gazetteer=read('public/data/gazetteer.json')
+for(const name of ['china-reference-region-sources','area-presentation-review'])assert.equal(fs.readFileSync(`data/research/${name}.json`,'utf8'),fs.readFileSync(`public/data/${name}.json`,'utf8'),name+' provenance copies')
+const regionSources=read('data/research/china-reference-region-sources.json')
+for(const row of [...regionSources.inputs,regionSources.output])assert.equal(createHash('sha256').update(fs.readFileSync(row.path)).digest('hex'),row.sha256,row.path+' reference region hash')
+assert.equal(regionSources.license,'CC-BY-4.0')
+assert(regionSources.georeferencing.rmsPixels<1&&regionSources.georeferencing.maxPixels<2)
+const areaReview=read('data/research/area-presentation-review.json')
+assert.equal(areaReview.decisions.length,knowledge.length)
+for(const decision of areaReview.decisions)assert.deepEqual(decision.featureIds,bindings[decision.cardId]||[],decision.cardId+' reviewed geometry')
+for(const id of ['northern-china','southern-china','northwestern-china','qinghai-tibet-region']){
+  assert.equal(bindings[id].length,1)
+  assert(bindings[id][0].startsWith('region-cn-jiang2023-'))
+  assert.match(features.get(bindings[id][0]).geometry.type,/Polygon/)
+}
+console.log('Verified four digitized reference regions and 211 explicit area/line/point decisions.')
 const expectedCountryNames={'country-jor':'约旦','country-ner':'尼日尔','country-sen':'塞内加尔','country-cog':'刚果共和国'}
 for(const [id,name] of Object.entries(expectedCountryNames)){
   for(const p of [features.get(id)?.properties,gazetteer.find(p=>p.id===id)]){
@@ -45,6 +59,13 @@ for(const [id,name] of Object.entries(expectedCountryNames)){
 }
 for(const rows of [read('public/data/learning-human.json').religion.countries,read('public/data/learning-country-languages.json').countries,read('public/data/learning-country-indicators.json').countries]){
   for(const row of rows)assert.equal(row.name,features.get(row.countryId)?.properties.name,row.countryId+' derived country name')
+}
+for(const row of read('public/data/learning-country-languages.json').countries){
+  assert(row.languages.length+row.untranslatedEntries.length>0,row.countryId+' empty language overview')
+  assert(row.sourceEntries.length>0,row.countryId+' missing source order')
+  for(const entry of [...row.languages.map(language=>language.sourceLabel),...row.untranslatedEntries]){
+    assert(row.sourceEntries.includes(entry)&&row.sourceText.includes(entry),row.countryId+' language entry absent from source')
+  }
 }
 const legend=read('public/data/climate-legend.json')
 assert.equal(legend.length,30)
@@ -298,3 +319,27 @@ for(const path of ['data/research/language-area-validation.json','data/research/
 assert.equal(read('data/research/language-area-independent-validation.json').sha256,languageAreaMeta.sha256)
 assert(languageAreaMeta.note.includes('2007')&&languageAreaMeta.note.includes('重叠')&&languageAreaMeta.note.includes('空白'))
 console.log(`Verified ${languageAreas.features.length} language areas, ${familyCounts.size} families, exact point joins, versioned hashes and independent geometry validation.`)
+
+const languageOverview=read('public/data/language-overview.json'),overviewSources=read('public/data/language-overview-sources.json')
+assert.deepEqual(overviewSources,read('data/research/language-overview-sources.json'))
+assert.equal(content.languageOverviewSourceManifest,'/data/language-overview-sources.json')
+for(const artifact of overviewSources.artifacts)assert.equal(createHash('sha256').update(fs.readFileSync('public'+artifact.path)).digest('hex'),artifact.sha256)
+for(const input of overviewSources.localInputs)assert.equal(createHash('sha256').update(fs.readFileSync(input.path)).digest('hex'),input.sha256)
+const overviewCategories=new Map(languageOverview.categories.map(category=>[category.id,category]))
+const overviewCountryIds=new Set(read('public/data/countries.geojson').features.map(feature=>feature.properties.id))
+assert.equal(new Set(languageOverview.countries.map(country=>country.countryId)).size,overviewCountryIds.size)
+for(const country of languageOverview.countries){
+  assert(overviewCountryIds.has(country.countryId))
+  if(!country.displayId){assert.equal(country.selectionBasis,'missing');continue}
+  assert(overviewCategories.has(country.displayId))
+  const official=country.languages.filter(language=>['official','de_facto_official'].includes(language.status))
+  const candidates=official.length?official:country.languages
+  const highest=Math.max(...candidates.map(language=>language.populationPercent))
+  assert(candidates.some(language=>language.displayId===country.displayId&&language.populationPercent===highest))
+}
+for(const category of languageOverview.categories)for(const code of category.members)assert(languagePoints.has(code),code+' exact overview join')
+assert.equal(languageOverview.countries.find(country=>country.countryId==='country-chn').displayId,'group:zh')
+for(const code of ['mand1415','yuec1235','hain1238','minn1241'])assert(overviewCategories.get('group:zh').members.includes(code))
+for(const code of ['hlai1239','tibe1272','uigh1240'])assert(!overviewCategories.get('group:zh').members.includes(code))
+assert(fs.readFileSync('public/licenses/Unicode-3.0.txt','utf8').includes('UNICODE LICENSE V3'))
+console.log(`Verified CLDR country overview: ${languageOverview.countries.filter(country=>country.displayId).length} mapped countries, exact language groups, provenance and license.`)

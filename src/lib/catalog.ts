@@ -4,7 +4,7 @@ import type { Category, Knowledge, GeoProperties } from '../types'
 import {createFeatureCardIndex,createSearchIndex} from './search'
 export const knowledge = raw as Knowledge[]
 const featureCards = createFeatureCardIndex(knowledge, bindings)
-export const curatedSearchIndex = createSearchIndex(knowledge, k => [k.name, k.englishName, ...k.aliases, ...(k.tags || [])])
+export const curatedSearchIndex = createSearchIndex(knowledge, k => [k.name.split('：')[0], k.name, k.englishName, ...k.aliases, ...(k.tags || [])])
 export const categoryInfo: Record<Category, { name: string; color: string; description: string }> = {
   mountains: { name: '山脉', color: '#846848', description: '观察山脉的走向与地形分界' },
   terrain: { name: '地形', color: '#63816b', description: '认识高原、平原、盆地与沙漠' },

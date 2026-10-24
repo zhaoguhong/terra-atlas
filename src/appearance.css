@@ -1,0 +1,20 @@
+/* UI tokens intentionally do not replace categorical map/legend/chart colors. */
+:root[data-theme=dark]{--ink:#e1eadf;--ink-muted:#afc1b2;--surface:#18251f;--surface-raised:#25372d;--line:#42584a;--paper:#18251f;--green:#b4d5a2;--muted:#afc1b2;--border:#42584a;--shadow:0 8px 35px #0006;color:#e1eadf;background:#111a17}
+.appearance-control{display:flex;align-items:center;gap:5px;padding-left:6px;font-size:11px;color:var(--ink-muted,#657a68);white-space:nowrap}
+.appearance-control select{font:inherit;color:var(--ink,#315847);background:var(--surface,#faf9f1);border:1px solid var(--line,#dfdfd1);border-radius:6px;padding:7px 3px;max-width:94px;cursor:pointer}
+.appearance-control select:focus-visible{outline:2px solid var(--green);outline-offset:2px}
+:root[data-theme=dark] .map-vignette{background:none}
+:root[data-theme=dark] .climate-chart svg text{fill:var(--ink-muted)}
+:root[data-theme=dark] .maplibregl-ctrl-attrib{background:#18251fe6;color:var(--ink-muted)}
+:root[data-theme=dark] .maplibregl-ctrl-attrib a{color:var(--ink-muted)}
+:root[data-theme=dark] input::placeholder,:root[data-theme=dark] textarea::placeholder{color:#9fb2a3}
+:root[data-theme=dark] .compare-place span{color:var(--ink)}
+:root[data-theme=dark] .toggle:after{background:#e1eadf}
+@media(max-width:759px),(max-width:1000px) and (max-height:540px){
+  .header-actions .appearance-control{grid-column:1/-1;justify-content:space-between;padding:9px 10px 3px;border-top:1px solid var(--border);margin-top:4px;font-size:12px}
+  .appearance-control select{max-width:none;min-height:36px;padding:7px 9px}
+}
+:root[data-theme=dark] .topic-sticky-nav{box-shadow:0 5px 9px #18251fd9}
+:root[data-theme=dark] .header .search-box.mobile-search-open{box-shadow:0 0 0 4px #18251f}
+:root[data-theme=dark] .map-attribution{text-shadow:0 1px #111a17}
+:root[data-theme=dark] .maplibregl-ctrl-scale{background:#18251fd9;color:var(--ink-muted);border-color:var(--ink-muted)}

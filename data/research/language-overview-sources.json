@@ -1,0 +1,102 @@
+{
+  "reviewedAt": "2026-10-24",
+  "sources": [
+    {
+      "id": "unicode-cldr-48",
+      "title": "Unicode CLDR 48 · 国家语言资料与中文名称",
+      "url": "https://github.com/unicode-org/cldr/tree/release-48",
+      "version": "48",
+      "license": "Unicode-3.0",
+      "licensePath": "/licenses/Unicode-3.0.txt",
+      "processing": "按国家／地区显示主要通用语言：优先选CLDR记录的全国官方或事实官方语言中使用比例最高的一种；没有此类记录时选已报告比例最高的语言。多语国家的其他语言可点开查看。国家色面不表示每个地区或居民只使用该语言，也不是母语或方言边界。资料为CLDR 48汇编估计，调查年份不一，不代表2026年人口普查。"
+    },
+    {
+      "id": "iana-language-subtags-2026-09-17",
+      "title": "IANA Language Subtag Registry · 宏语言归属",
+      "url": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
+      "version": "File-Date: 2026-09-17",
+      "license": "IANA注册标识符与归属事实；登记规范RFC 5646，IETF Trust Legal Provisions",
+      "processing": "按ISO标识符与Macrolanguage字段精确连接Glottolog；汉语、阿拉伯语等在总览合并着色，保留原始语种ID与几何。未按名称或国家猜测细分语言范围。"
+    },
+    {
+      "id": "hainan-chinese-survey-2024",
+      "title": "中国语言资源集·海南（汉语方言）调查成果",
+      "url": "https://www.hntou.edu.cn/xwzx/xshd/202403/t20240311_85004.html",
+      "version": "2024-03-11",
+      "license": "原文版权归发布方；仅核对事实，不复制文章或图像",
+      "processing": "核对海南闽语属于汉语方言；不将调查点扩成分布面。"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "data/raw/language-areas/cldr48-supplementalData.xml",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr/release-48/common/supplemental/supplementalData.xml",
+      "sha256": "fb054c9f9a95f0c4da9dd1e5e0ef6dd208b6f9a73f45303011be247277d81bef"
+    },
+    {
+      "path": "data/raw/language-areas/cldr48-supplementalMetadata.xml",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr/release-48/common/supplemental/supplementalMetadata.xml",
+      "sha256": "36e807ce72b15304dd993f132216f408351be1c4376edaa2fe9e9547e2efcac1"
+    },
+    {
+      "path": "data/raw/language-areas/cldr48-zh.xml",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr/release-48/common/main/zh.xml",
+      "sha256": "b1ef8bcadcf19fa8914d9ba812a7bcec124c72fecbf4acea02e4c8bd2fe51866"
+    },
+    {
+      "path": "data/raw/language-areas/cldr48-LICENSE",
+      "url": "https://raw.githubusercontent.com/unicode-org/cldr/release-48/LICENSE",
+      "sha256": "b4c0ae8ef04f7059f96ce5bbe0467f9fe6f6d81bbe13517701dfeb961fb4d0b6"
+    },
+    {
+      "path": "data/raw/language-areas/language-subtag-registry.txt",
+      "url": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
+      "sha256": "755fad43283be7b41ebe3c89ad054b6eaf928f404f9c0edb74799e0eab74beb1"
+    }
+  ],
+  "localInputs": [
+    {
+      "path": "public/data/countries.geojson",
+      "sha256": "2a39cd564c4b0310c4305b9c174724c91a10ce3fd4c7dea01890f1bbbad12db6"
+    },
+    {
+      "path": "public/data/learning-languages.geojson",
+      "sha256": "f6aa41589aeb30660dd19cd630a503cd73278ed6d68f14b675f1cfe928744083"
+    },
+    {
+      "path": "public/data/language-areas-meta.json",
+      "sha256": "a9728897f2da926dfa24bba8d482cab64afa1471e42e5dd0b286d6a8e4a0cdbb"
+    }
+  ],
+  "artifacts": [
+    {
+      "path": "/data/language-overview.json",
+      "sha256": "dea9d50fc9afd9cc8aff6eb21f1bab13ecceec3fa8723cede27005320cb0a9a0"
+    }
+  ],
+  "validation": {
+    "countryCount": 242,
+    "mappedCountryCount": 235,
+    "missingCountries": [
+      "country-ata",
+      "country-atc",
+      "country-cyn",
+      "country-hmd",
+      "country-ioa",
+      "country-kas",
+      "country-sol"
+    ],
+    "categoryCount": 89,
+    "countryCodeExceptions": {
+      "source": "Natural Earth 50m ADM0_A3 and ISO_A2 / ISO_A2_EH fields",
+      "mapping": {
+        "kos": "XK",
+        "sds": "SS",
+        "ald": "AX",
+        "psx": "PS",
+        "sah": "EH"
+      }
+    },
+    "geometry": "Reuses unchanged Natural Earth country geometry only in country overview; language-area geometry unchanged."
+  }
+}

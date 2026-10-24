@@ -16,7 +16,7 @@ async function openLayers(page:Page){
   if(await button.isVisible())await button.click()
 }
 async function closeLayers(page:Page){
-  const button=page.getByRole('button',{name:'关闭探索面板',exact:true})
+  const button=page.getByRole('button',{name:'关闭图层面板',exact:true})
   if(await button.isVisible())await button.click()
 }
 async function baseSources(page:Page){
@@ -82,7 +82,7 @@ test('shared: a late place response cannot replace a newer search selection',asy
   await page.route('**/data/learning-provinces.geojson',async route=>{requested();await gate;await route.continue()})
   try{
     await page.goto(shared('province-cn-12'));await baseSources(page);await request
-    await page.getByRole('textbox',{name:'搜索地理对象'}).fill('Alps')
+    await page.getByRole('combobox',{name:'搜索地理对象'}).fill('Alps')
     await page.locator('.search-results>button').first().click();await selectedGeometry(page)
     const before=await page.evaluate(()=>({center:window.__terraAtlas!.map.getCenter().toArray(),zoom:window.__terraAtlas!.map.getZoom()}))
     release();await sourceLoaded(page,'provinces');await mapSettled(page)
@@ -156,7 +156,7 @@ test('shared: failed monthly data can be retried from the warning and restores s
     await expect(page.locator('.map-status')).toHaveCount(0)
     expect(attempts).toBe(2)
     expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).layers.grid)).toBe(true)
-    await page.getByRole('textbox',{name:'搜索地理对象'}).fill('拉萨')
+    await page.getByRole('combobox',{name:'搜索地理对象'}).fill('拉萨')
     await expect(page.locator('.search-results>button').filter({hasText:'拉萨'})).toHaveCount(1)
   }finally{release()}
 })

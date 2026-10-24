@@ -1,6 +1,6 @@
 import detailedClimate from '../../public/data/climate-legend.json' with {type:'json'}
 import familyMetadata from '../../public/data/learning-language-families.json' with {type:'json'}
-import {climateGroups,familyColor,languageColor,languageFamilies,majorLanguages,otherLanguageColor,otherLanguageLabel,thematicModes,type LanguageAreaMeta} from './map-presentation.ts'
+import {languageOverview,languageCategory,climateGroups,familyColor,languageColor,languageFamilies,majorLanguages,otherLanguageColor,otherLanguageLabel,thematicModes,type LanguageAreaMeta} from './map-presentation.ts'
 import {getTopicPresentation,TOPIC_SELECTED_COLOR,type TopicMemberPresentation} from './topic-presentation.ts'
 import type {LegendEntry,LegendSection,LegendSymbol} from '../components/MapLegend'
 import type {HumanData} from './learning'
@@ -26,16 +26,21 @@ export function buildMapLegend({layers,thematic,topic,selection,human,languageMe
   }else if(layers.climate){
     subtitle=`1991–2020 · 0.5° · ${modes.climateMode==='types'?'详细类型':'A–E五大类'}`
     sections.push({id:'climate',title:'长期气候分布',entries:modes.climateMode==='types'?detailedClimate.filter(category=>category.presentAtResolution).map(category=>({id:'action:climate:'+category.code,label:`${category.code} ${category.name}`,color:category.color})):climateGroups.map(group=>({id:'action:climate:'+group.id,label:group.id+' '+group.name,color:group.color})),note:'长期气候分类；色面与图例同步。C／D以最冷月0°C区分，无单列H类。详细分类共30类，其中Csc、Cwc在此尺度未出现。'})
+  }else if(layers.language&&modes.languageMode==='overview'){
+    title='世界语言概览';subtitle='国家主要通用语言 · CLDR 48'
+    const categories=majorLanguages.filter(category=>languageOverview.countries.some(country=>country.displayId===category.id)&&(modes.languageId==='all'||modes.languageId===category.id))
+    sections.push({id:'languages',title:'国家主要通用语言',entries:categories.map(category=>({id:'action:language:'+category.id,label:category.name,color:category.color,active:modes.languageId===category.id})),note:languageOverview.note})
+    sections.push({id:'language-missing',entries:[{id:'language-unmapped',label:'未着色：无可匹配国家语言资料或筛选未匹配',symbol:'empty'}]})
   }else if(layers.language){
     const points=modes.languageMode==='points',families=modes.languageMode==='families'||points
     title='语言分布';subtitle=points?'Glottolog 5.3 · 语系着色参考点':`2007图集参考范围 · ${families?'语系概览':'语言区域'}`
     const selectedLanguage=languageMeta?.languages.find(language=>language.id===modes.languageId)
     const selectedFamily=familyMetadata.families.find(family=>family.id===thematic.language)
     let entries:LegendEntry[]
-    if(modes.languageId!=='all')entries=[{id:'action:language:'+modes.languageId,label:selectedLanguage?.name||modes.languageId,color:majorLanguages.some(language=>language.id===modes.languageId)?languageColor(modes.languageId):'#5878b5',symbol:points?'point':'area',active:true}]
+    if(modes.languageId!=='all')entries=[{id:'action:language:'+modes.languageId,label:languageCategory(modes.languageId)?.id===modes.languageId?languageCategory(modes.languageId)!.name:selectedLanguage?.name||modes.languageId,color:languageCategory(modes.languageId)?languageColor(modes.languageId):'#5878b5',symbol:points?'point':'area',active:true}]
     else if(families&&thematic.language!=='all')entries=[{id:'action:family:'+thematic.language,label:selectedFamily?.name||thematic.language,color:languageFamilies.some(family=>family.id===thematic.language)?familyColor(thematic.language):'#5878b5',symbol:points?'point':'area',active:true}]
-    else entries=[...(families?languageFamilies:majorLanguages).filter(category=>families||!languageMeta||languageMeta.languages.some(language=>language.id===category.id&&(thematic.language==='all'||language.familyId===thematic.language))).map(category=>({id:`action:${families?'family':'language'}:${category.id}`,label:category.name,color:category.color,symbol:points?'point' as const:'area' as const})),{id:'language-other',label:families?otherLanguageLabel:'其他语言（可搜索筛选）',color:otherLanguageColor,symbol:points?'point':'area'}]
-    sections.push({id:'languages',title:points?'参考点颜色表示语系':families?'区域颜色表示语系':'区域颜色表示语言',entries,note:points?'一个点是一条语种参考位置，点的密度不表示人数。包含濒危及已消亡语言。':`${languageMeta?.note||'依据2007图集的语言参考范围，部分地区和多语言重叠欠表示。'} 未着色地区可能缺少范围资料，不表示无人使用语言。颜色不表示人数、人口占比或官方语言。`})
+    else entries=[...(families?languageFamilies:majorLanguages).filter(category=>families||!languageMeta||languageMeta.languages.some(language=>('members' in category?category.members.includes(language.id):language.id===category.id)&&(thematic.language==='all'||language.familyId===thematic.language))).map(category=>({id:`action:${families?'family':'language'}:${category.id}`,label:category.name,color:category.color,symbol:points?'point' as const:'area' as const})),{id:'language-other',label:families?otherLanguageLabel:'其余地方语言（点选可查看名称）',color:otherLanguageColor,symbol:points?'point':'area'}]
+    sections.push({id:'languages',title:points?'参考点颜色表示语系':families?'区域颜色表示语系':'区域颜色表示语言',entries,note:points?'一个点是一条语种参考位置，点的密度不表示人数。包含濒危及已消亡语言。':`汉语各方言与阿拉伯语等变体按宏语言统一着色，点开仍显示原始语种。${languageMeta?.note||'依据2007图集的语言参考范围，部分地区和多语言重叠欠表示。'} 未着色地区可能缺少范围资料，不表示无人使用语言。颜色不表示人数、人口占比或官方语言。`})
     if(families)sections.push({id:'family-filter',title:'语系分类 · 点击单独查看',entries:familyMetadata.families.map(family=>({id:'action:family:'+family.id,label:family.name,color:thematic.language===family.id?languageFamilies.some(item=>item.id===family.id)?familyColor(family.id):'#5878b5':familyColor(family.id),symbol:points?'point':'area',active:thematic.language===family.id})),note:'灰色在总览中统一表示“其他语系与分类”；点击分类后单独显示，不为不同分类重复分配相同类别色。'})
     sections.push({id:'language-missing',entries:[{id:'language-unmapped',label:'未着色：范围资料未覆盖或筛选未匹配',symbol:'empty'}]})
   }

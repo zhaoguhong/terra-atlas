@@ -146,8 +146,8 @@ const rules: Record<string, PresentationRule> = {
     fallback: { id: 'observation', label: '地图阅读观察点', color: TOPIC_MEMBER_COLOR, symbol: '●' },
   },
   'china-regions': {
-    note: '颜色区分四个地理区的参考点；选择名称可查看区域比较。',
-    caseNote: '四大地理区当前使用参考点定位，尚未绘制区域划分面。',
+    note: '颜色区分北方、南方、西北与青藏四个地理区；选择区域可查看比较。',
+    caseNote: '色面依据Jiang等（2023）分区图数字化，虚线为概化分界，区域之间存在过渡；适合全国尺度学习，不是行政区界。',
     named: ['northern-china', 'southern-china', 'northwestern-china', 'qinghai-tibet-region'],
   },
   'china-provinces': {
@@ -197,7 +197,7 @@ const rules: Record<string, PresentationRule> = {
   },
   'world-continents': {
     note: '颜色区分七大洲；范围和同色参考点帮助定位。',
-    caseNote: '当前仅亚洲和南极洲有概化范围，其余各洲使用参考点。',
+    caseNote: '六大洲显示Natural Earth概化标注范围，主要概括大陆；大洋洲包含分散岛群，暂以参考点定位。',
     named: ['asia-continent', 'europe-continent', 'africa-continent', 'north-america-continent', 'south-america-continent', 'oceania-region', 'antarctica'],
   },
   'world-plateaus-plains': {

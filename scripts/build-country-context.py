@@ -6,6 +6,7 @@ import re
 import tarfile
 from datetime import datetime, timezone
 from pathlib import Path
+from country_languages import LABELS, parse_languages
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / 'data/raw'
@@ -38,23 +39,6 @@ by_id={f['properties']['id']:f['properties'] for f in countries}
 for name, id in name_aliases.items():
     if id in by_id:names[normal(name)]=by_id[id]
 
-# These tags indicate that a source lists a language, not official status or shares.
-language_tags = [
-    ('eng','英语',r'\bEnglish\b'),('zho','汉语',r'\bChinese\b|\bMandarin\b|\bPutonghua\b'),
-    ('spa','西班牙语',r'\bSpanish\b'),('fra','法语',r'\bFrench\b'),
-    ('ara','阿拉伯语',r'\bArabic\b'),('rus','俄语',r'\bRussian\b'),
-    ('por','葡萄牙语',r'\bPortuguese\b'),('hin','印地语',r'\bHindi\b'),
-    ('deu','德语',r'\bGerman\b'),('jpn','日语',r'\bJapanese\b'),
-    ('kor','朝鲜语／韩语',r'\bKorean\b'),('ind','印度尼西亚语',r'\bIndonesian\b|Bahasa Indonesia'),
-    ('tur','土耳其语',r'\bTurkish\b'),('swa','斯瓦希里语',r'\bSwahili\b|\bKiswahili\b'),
-    ('ben','孟加拉语',r'\bBengali\b|\bBangla\b'),('urd','乌尔都语',r'\bUrdu\b'),
-    ('fas','波斯语',r'\bPersian\b|\bFarsi\b'),('ita','意大利语',r'\bItalian\b'),
-    ('vie','越南语',r'\bVietnamese\b'),('tha','泰语',r'\bThai\b'),
-    ('msa','马来语',r'\bMalay\b'),('tam','泰米尔语',r'\bTamil\b'),
-    ('nld','荷兰语',r'\bDutch\b'),('pol','波兰语',r'\bPolish\b'),
-    ('ukr','乌克兰语',r'\bUkrainian\b'),('nep','尼泊尔语',r'\bNepali\b'),
-    ('pap','帕皮阿门托语',r'\bPapiamento\b|\bPapiamentu\b'),
-]
 archive=RAW/'factbook-144d6977.tar.gz'
 assert digest(archive)==ARCHIVE_HASH, 'Factbook snapshot hash mismatch'
 records=[]
@@ -74,19 +58,17 @@ with tarfile.open(archive) as tar:
         # Do not import disputed regional official-status descriptions into the learning UI.
         text=text.split('; note -')[0]
         text=re.sub(r'\bofficial\b', 'source-described status', text, flags=re.I)
-        tag_text=text.split('note:')[0]
-        for _ in range(5):tag_text=re.sub(r'\([^()]*\)', '', tag_text)
-        tag_text=re.sub(r'(?:\b(?:French|English|Portuguese|Spanish)\s+(?:[A-Za-z-]+\s+){0,2}(?:[Cc]reole|patois)\b|\b(?:[Cc]reole|patois)\s+(?:French|English|Portuguese|Spanish)\b)', '',tag_text)
-        languages=[{'id':id,'name':name,'status':'历史资料所列语言，不表示法定地位或使用比例'} for id,name,pattern in language_tags if re.search(pattern,tag_text,re.I)]
+        languages, untranslated, entries = parse_languages(text)
         years=re.findall(r'\b((?:19|20)\d{2})\b',text)
         records.append({'countryId':p['id'],'iso3':p['id'].removeprefix('country-').upper(),'name':p['name'],
-            'languages':languages,'sourceText':text,'year':int(years[-1]) if years else None,
+            'languages':languages,'untranslatedEntries':untranslated,'sourceEntries':entries,'sourceText':text,'year':int(years[-1]) if years else None,
             'period':f'{years[-1]}年资料' if years else '条目未注明语言统计年份',
             'sourceId':'factbook-language-snapshot','sourceUrl':f'https://github.com/factbook/factbook.json/blob/{COMMIT}/'+member.name.split('/',1)[1]})
+assert all(r['languages'] or r['untranslatedEntries'] for r in records), 'Empty language display'
 assert len(records)>180, f'Unexpected low language coverage: {len(records)}'
 duplicates={r['countryId'] for r in records if sum(x['countryId']==r['countryId'] for x in records)>1}
 assert not duplicates, [(r['countryId'],r['sourceUrl']) for r in records if r['countryId'] in duplicates]
-language_output={'title':'国家语言概览','snapshot':COMMIT,'categories':[{'id':id,'name':name} for id,name,_ in language_tags],
+language_output={'title':'国家语言概览','snapshot':COMMIT,'categories':[{'id':id,'name':name} for id,name,_ in LABELS],
     'note':'资料列举的语言并不代表所有居民使用，也不是官方语言法律清单。地图上的语言参考点另来自Glottolog，不能据点位推算使用人口或精确边界。',
     'countries':sorted(records,key=lambda r:r['countryId'])}
 write(PUBLIC/'learning-country-languages.json',language_output)
@@ -114,9 +96,9 @@ sources=[{'id':'factbook-language-snapshot','title':'CIA World Factbook · 历�
     'version':COMMIT,'period':'条目各自注明年份；未注明保留未知，不视为2026现状',
     'license':'Public domain / mirror CC0 1.0','licenseUrl':f'https://github.com/factbook/factbook.json/blob/{COMMIT}/LICENSE.md',
     'inputPath':'data/raw/factbook-144d6977.tar.gz','inputSha256':ARCHIVE_HASH,
-    'processing':'原文语言列举与27种主要语言检索标签；只检索独立列举部分，排除括号内词源说明和note段落，克里奥尔语言不归入词源语言本体。仅按国家名称和人工别名明确连接。标签不代表法定地位、语言比例或地区边界；去除未核实的地区官方地位备注。'}]+indicator_sources
+    'processing':'按括号之外的逗号和分号保留原文列举；仅对完整名称明确匹配中文标签，未匹配的名称及混合陈述保留为可见原文条目。词源说明和克里奥尔名称不映射为其词源语言；保留原文顺序与逐项摘录。仅按国家名称和人工别名明确连接。标签不代表法定地位、语言比例或地区边界；去除未核实的地区官方地位备注。'}]+indicator_sources
 artifacts=[{'path':'/data/'+name,'sha256':digest(PUBLIC/name),'size':(PUBLIC/name).stat().st_size} for name in ['learning-country-languages.json','learning-country-indicators.json']]
 manifest={'reviewedAt':datetime.now(timezone.utc).isoformat(),'sources':sources,'artifacts':artifacts,'coverage':{'languages':len(records),'indicators':sum(r['population'] is not None for r in stats.values())}}
 write(RESEARCH/'country-context-sources.json',manifest);write(PUBLIC/'country-context-sources.json',manifest)
-write(RESEARCH/'country-context-validation.json',{'status':'passed','languageRecords':len(records),'unmatchedSourceNames':unmatched,'checks':['fixed snapshot SHA256','unique exact country connections','unknown years preserved','World Bank aggregates omitted','null is not zero'],'artifacts':artifacts})
+write(RESEARCH/'country-context-validation.json',{'status':'passed','languageRecords':len(records),'unmatchedSourceNames':unmatched,'checks':['fixed snapshot SHA256','unique exact country connections','unknown years preserved','World Bank aggregates omitted','null is not zero','whole-label translations preserve source order','untranslated and mixed entries remain visible','no empty language display'],'artifacts':artifacts})
 print(f'Country context: {len(records)} language records, {len(stats)} country contexts; {len(unmatched)} source entries have no matching map unit.')

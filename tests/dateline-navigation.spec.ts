@@ -14,7 +14,7 @@ test.beforeEach(async ({page}) => {
 
 async function selectCountry(page: Page, id: string) {
   const card = knowledge.find(card => card.id === id)!
-  await page.getByRole('textbox', {name: '搜索地理对象', exact: true}).fill(card.name)
+  await page.getByRole('combobox', {name: '搜索地理对象', exact: true}).fill(card.name)
   await page.locator('.search-results>button').first().click()
   await expect(page.locator('.knowledge-panel h2')).toHaveText(card.name)
   await selectedGeometry(page)

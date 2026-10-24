@@ -1,0 +1,175 @@
+{
+  "id": "jiang-2023-china-regions-figure2",
+  "version": "2026-10-24-digitization-v1",
+  "title": "中国四大地理区 · 论文分区图数字化参考范围",
+  "source": {
+    "url": "https://nhess.copernicus.org/articles/23/3747/2023/nhess-23-3747-2023.pdf",
+    "doi": "10.5194/nhess-23-3747-2023",
+    "authors": "Jiang et al.",
+    "year": 2023,
+    "figure": 2,
+    "page": 4,
+    "license": "CC-BY-4.0",
+    "sha256": "32a039e088359eb75476b44254128ef1df1fefd239e30520e5ca88ad42fce4ef"
+  },
+  "sourcePage": "https://nhess.copernicus.org/articles/23/3747/2023/",
+  "attribution": "Adapted from Jiang, R. et al. (2023), Natural Hazards and Earth System Sciences 23, 3747–3759, Figure 2, CC BY 4.0. Exterior land geometry: Natural Earth, public domain.",
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "processing": [
+    "提取已发表图2的四区分界，按图中经纬网进行圆锥投影配准；保留图示口径，不使用闪电栅格数据。",
+    "共同分界使用同一条数字化线，构成互不重叠的四区；外围轮廓裁剪到本站既有国家图层。",
+    "源图边界附近有概化、线宽与配准误差；不用于地方归属判断、面积统计或行政划界。"
+  ],
+  "inputs": [
+    {
+      "path": "scripts/china-region-digitization.json",
+      "sha256": "7fcb14487acf280fc38a66ac7e59bf9d151454ebc881c3eaca69afa4dda05caf"
+    },
+    {
+      "path": "public/data/countries.geojson",
+      "sha256": "2a39cd564c4b0310c4305b9c174724c91a10ce3fd4c7dea01890f1bbbad12db6",
+      "featureIds": [
+        "country-chn",
+        "country-twn",
+        "country-hkg",
+        "country-mac"
+      ],
+      "sourceManifest": "scripts/data-sources.lock.json"
+    }
+  ],
+  "output": {
+    "path": "public/data/china-reference-regions.geojson",
+    "sha256": "180383ad2612c0891fabc59fa09685601cd88f7441e2149564a2699183541bc1",
+    "features": 4
+  },
+  "georeferencing": {
+    "controlPoints": [
+      [
+        70,
+        50,
+        217,
+        119
+      ],
+      [
+        80,
+        50,
+        422,
+        189
+      ],
+      [
+        90,
+        50,
+        634,
+        236
+      ],
+      [
+        100,
+        50,
+        850,
+        260
+      ],
+      [
+        110,
+        50,
+        1068,
+        260
+      ],
+      [
+        130,
+        50,
+        1495,
+        189
+      ],
+      [
+        80,
+        30,
+        242,
+        828
+      ],
+      [
+        100,
+        20,
+        795,
+        1263
+      ]
+    ],
+    "parameters": [
+      0.6245582709273763,
+      3744.746172474535,
+      960.1498317459674,
+      -1729.4644685398043,
+      1.8338794962099194
+    ],
+    "rmsPixels": 0.5473328306142672,
+    "maxPixels": 1.4350777087362008
+  },
+  "validation": {
+    "validPolygons": 4,
+    "noInteriorOverlap": true,
+    "coversExistingLandMask": true,
+    "independentLocations": {
+      "ii": [
+        [
+          116.4,
+          39.9
+        ],
+        [
+          126.6,
+          45.8
+        ],
+        [
+          112.55,
+          37.87
+        ]
+      ],
+      "i": [
+        [
+          113.26,
+          23.13
+        ],
+        [
+          110.33,
+          20.03
+        ],
+        [
+          121.56,
+          25.04
+        ],
+        [
+          104.07,
+          30.67
+        ]
+      ],
+      "iii": [
+        [
+          87.62,
+          43.83
+        ],
+        [
+          111.67,
+          40.82
+        ],
+        [
+          94.66,
+          40.14
+        ]
+      ],
+      "iv": [
+        [
+          91.13,
+          29.65
+        ],
+        [
+          94.9,
+          36.4
+        ],
+        [
+          89,
+          32
+        ]
+      ]
+    }
+  },
+  "note": "依据Jiang等（2023）图2数字化的四大地理区概化分区，适合全国尺度学习；分界为过渡带参考，不是行政区界、精确气候线或实测边界。外围轮廓沿用本站Natural Earth数据。"
+}

@@ -26,11 +26,11 @@ async function explorerSettled(page:Page){
 }
 
 test('mobile exploration and layer settings have independent entries',async({page},info)=>{
-  await expect(themeEntry(page)).toHaveText('主题探索')
+  await expect(themeEntry(page)).toHaveText('继续随便看看')
   await expect(themeEntry(page)).toBeInViewport({ratio:1})
   await expect(layerEntry(page)).toBeInViewport({ratio:1})
   await themeEntry(page).click()
-  await expect(page.locator('.topic-library')).toBeVisible()
+  await expect(page.locator('.discovery-panel')).toBeVisible()
   await expect(explorer(page).locator('.panel-tabs').getByRole('button',{name:'图层',exact:true})).toHaveCount(0)
   await close(page).click()
   await layerEntry(page).click()
@@ -49,7 +49,7 @@ test('mobile exploration and layer settings have independent entries',async({pag
   await closeSettings(page).click()
   await expect(layerEntry(page)).toBeFocused()
   await themeEntry(page).click()
-  await expect(page.locator('.topic-library')).toBeVisible()
+  await expect(page.locator('.discovery-panel')).toBeVisible()
   await close(page).click();await layerEntry(page).click()
   await expect(settings(page)).toBeVisible()
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth&&document.documentElement.scrollHeight<=innerHeight)).toBe(true)
@@ -188,7 +188,7 @@ test('mobile settings return keyboard focus to the toolbar after resizing to des
 })
 
 test('mobile theme entry yields space to place cards and comparison',async({page})=>{
-  await page.getByRole('textbox',{name:'搜索地理对象',exact:true}).fill('长江')
+  await page.getByRole('combobox',{name:'搜索地理对象',exact:true}).fill('长江')
   await page.locator('.search-results>button').first().click();await selectedGeometry(page)
   await expect(themeEntry(page)).toBeHidden()
   await page.getByRole('button',{name:'关闭知识卡片',exact:true}).click()

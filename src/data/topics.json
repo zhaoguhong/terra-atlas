@@ -1543,19 +1543,19 @@
       "english-language",
       "arabic-language"
     ],
-    "description": "语言区域显示图集记录的使用范围，语系视图显示语言之间的亲缘分类，参考点显示语种记录的位置。三种方式回答不同问题。",
+    "description": "先看国家主要通用语言，再切换地方语言与方言、语系或参考点。汉语在世界概览统一显示，方言差异可进一步查看。",
     "question": "语系、母语和官方语言分别是什么意思？",
     "sections": [
       {
-        "title": "范围与参考点",
-        "body": "语言区域依据2007年图集，经Glottography数字化；部分地区和多语言重叠表示不足。Glottolog 5.3参考点包含濒危和已消亡语种，点多不意味着使用者多。"
+        "title": "国家概览与地方使用区",
+        "body": "默认使用Unicode CLDR 48的国家语言资料，优先选全国官方／事实官方语言中使用比例最高者着色；无此类记录时用已报告比例最高者。地方视图保留2007年图集参考范围，汉语方言统一同色，点开仍显示具体语种。"
       },
       {
         "title": "语言与语言地位",
         "body": "语系讨论语言的亲缘关系；母语与第二语言描述人的语言经历；官方语言是制度规定的地位。总览颜色只区分类别，使用人数和居民语言比例需要另外的统计资料。"
       }
     ],
-    "geometryNote": "语言区域采用Glottography数字化的2007图集contemporary参考范围，仅真实语言级面；语系按这些语言面归类。未覆盖处留白，多语言重叠在原图中欠表示。参考点视图采用Glottolog 5.3，不以点位、国界或人口补绘范围。",
+    "geometryNote": "国家概览沿用Natural Earth国家轮廓，只概括主要通用语言，不表示地方母语边界。地方视图沿用Glottography的2007图集真实参考范围，可重叠且有缺失；不按国界补绘语言区。Glottolog参考点不表示人数。",
     "kind": "distribution",
     "region": "world",
     "shared": true,
@@ -1563,7 +1563,7 @@
       "terrain",
       "borders"
     ],
-    "takeaway": "颜色说明语种或语系类别；语言范围可以重叠，参考点和使用人数需要分开理解。",
+    "takeaway": "国家通用语言、地方语言与方言、语系和参考点表达不同信息；同一国家可以使用多种语言。",
     "sources": [
       {
         "title": "UNESCO · Multilingual education（2025语言口径）",
@@ -1596,6 +1596,14 @@
       {
         "title": "Scientific Data · 世界语言使用区数字化与验证",
         "url": "https://www.nature.com/articles/s41597-025-05828-6"
+      },
+      {
+        "title": "Unicode CLDR 48 · 国家语言资料",
+        "url": "https://www.unicode.org/cldr/charts/48/supplemental/territory_language_information.html"
+      },
+      {
+        "title": "IANA · 语言与宏语言注册表",
+        "url": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
       }
     ],
     "modules": [
@@ -1624,7 +1632,7 @@
     "visuals": [
       {
         "kind": "comparison",
-        "title": "三种语言视图",
+        "title": "从世界概览到地方语言",
         "columns": [
           "视图",
           "显示内容",
@@ -1632,7 +1640,12 @@
         ],
         "rows": [
           [
-            "语言区域",
+            "国家通用语言",
+            "国家尺度的主要通用语言",
+            "Unicode CLDR 48"
+          ],
+          [
+            "地方语言与方言",
             "图集记录的使用参考范围",
             "2007图集／Glottography"
           ],
@@ -3101,7 +3114,7 @@
       "provinces",
       "rivers"
     ],
-    "takeaway": "四大地理区用于比较自然与人地差异，既不等于行政区，也不应遮盖区内变化。",
+    "takeaway": "四大地理区用于比较自然与人地差异，既不等于行政区，也不应遮盖区内变化。 地图色面采用已发表分区图的概化参考范围，区域之间存在过渡。",
     "sections": [
       {
         "title": "四区怎样区分",
@@ -3258,6 +3271,10 @@
       {
         "title": "中国科学院地理资源所 · 中国最大的咸水湖",
         "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+      },
+      {
+        "title": "Jiang等（2023）· 图2中国四大地理区分区图（CC BY 4.0）",
+        "url": "https://nhess.copernicus.org/articles/23/3747/2023/"
       }
     ],
     "geometryNote": "自然区若无范围一致的数据，以参考点定位；已有自然区域面仅为概化标注参考范围。省级行政面不代替自然区，河道不代替流域，地图不表示实时边界或水位。",

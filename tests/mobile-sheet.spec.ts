@@ -211,7 +211,7 @@ test('mobile reader: arbitrates article scrolling according to the active orient
 })
 
 test('mobile reader: standalone places keep selection and controls usable after rotation',async({page},info)=>{
-  await page.getByRole('textbox',{name:'搜索地理对象',exact:true}).fill('长江')
+  await page.getByRole('combobox',{name:'搜索地理对象',exact:true}).fill('长江')
   await page.locator('.search-results>button').first().click();await selectedGeometry(page)
   await expect(sheet(page)).toHaveClass(/sheet-half/)
   const content=page.locator('#place-reading-content')
@@ -227,7 +227,7 @@ test('mobile reader: standalone places keep selection and controls usable after 
   expect(full.y).toBeLessThanOrEqual(stage.y+10);expect(full.height).toBeGreaterThan(stage.height*.85)
   await expect(page.getByRole('textbox',{name:'这个地点的笔记',exact:true})).toHaveCount(0)
   await expect(page.getByRole('button',{name:'已收藏',exact:true})).toHaveAttribute('aria-pressed','true')
-  await expect(page.getByRole('textbox',{name:'搜索地理对象',exact:true})).toBeInViewport({ratio:1})
+  await expect(page.getByRole('combobox',{name:'搜索地理对象',exact:true})).toBeInViewport({ratio:1})
   await expect(handle(page)).toBeInViewport({ratio:1})
   await setStop(page,'peek')
   expect(size(await sheetBounds(page),landscape(page))).toBeLessThanOrEqual(60)
