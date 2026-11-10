@@ -1,0 +1,353 @@
+{
+  "id": "drylands",
+  "title": "干旱地区、沙漠与绿洲",
+  "introduction": "干旱描述一个地方水分供应不足的环境，沙丘、砾石地和裸岩则描述地表的模样。两者相互联系，却不是同一件事。认识干旱地区，可以先看雨为什么少、水怎样被消耗，再看山地、河流与地下水怎样支持绿洲，最后比较大陆内部和干旱海岸的不同景观。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "world-deserts",
+      "title": "世界沙漠与干旱景观",
+      "sectionId": "part-world-deserts",
+      "description": "撒哈拉的岩石高原、塔克拉玛干的沙丘、戈壁的砾石地，以及阿塔卡马和纳米布的干旱海岸，展示了荒漠的不同面貌。干旱说的是水分条件，沙丘、裸岩和盐地则是地表形态；两者需要放在一起理解。",
+      "keywords": [
+        "副热带高压",
+        "沙尘输送",
+        "荒漠地貌",
+        "冷沙漠",
+        "风沙",
+        "水源",
+        "荒漠",
+        "沙尘",
+        "沿海沙漠",
+        "海陆联系",
+        "沙丘",
+        "雾漠",
+        "南半球",
+        "干旱",
+        "人口分布"
+      ]
+    },
+    {
+      "id": "china-dry-water",
+      "title": "干旱地区的水从哪里来",
+      "sectionId": "part-china-dry-water",
+      "description": "西北低地虽然少雨，周围高山却能接受降水、储存积雪。河流从山地进入盆地，沿途支撑绿洲，也把上游用水与下游河岸林、内流湖的命运联系起来。",
+      "keywords": [
+        "冰川补给",
+        "山前绿洲",
+        "垂直分异",
+        "高原北缘",
+        "内流区",
+        "山地水源",
+        "内流盆地",
+        "绿洲农业",
+        "尺度",
+        "冷沙漠",
+        "风沙",
+        "水源",
+        "内流河",
+        "生态输水",
+        "绿洲用水",
+        "内流湖",
+        "盐分平衡",
+        "高原生态",
+        "三山两盆",
+        "绿洲",
+        "内陆水资源"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-world-deserts",
+      "title": "世界沙漠与干旱景观",
+      "paragraphs": [
+        "撒哈拉的岩石高原、塔克拉玛干的沙丘、戈壁的砾石地，以及阿塔卡马和纳米布的干旱海岸，展示了荒漠的不同面貌。干旱说的是水分条件，沙丘、裸岩和盐地则是地表形态；两者需要放在一起理解。"
+      ],
+      "partId": "world-deserts"
+    },
+    {
+      "id": "world-deserts-section-1",
+      "title": "少雨与耗水，共同决定干旱",
+      "paragraphs": [
+        "降水带来水，蒸发等过程消耗可用水分。温度、风与雨水到来的季节影响这种收支，因此相同年雨量在不同环境中，可能意味着不同的水分压力。",
+        "干旱是一种水分条件，沙漠中的地表却可以是沙丘、砾石、裸岩或盐地。先区分气候与地貌，再看它们怎样相互影响，就能理解为什么荒漠不全是起伏的沙海。"
+      ],
+      "partId": "world-deserts",
+      "mediaIds": [
+        "diagram-dryness"
+      ]
+    },
+    {
+      "id": "world-deserts-section-2",
+      "title": "大陆内部与雨影",
+      "paragraphs": [
+        "深入大陆的水汽往往有限，山地还会改变气流与降水。塔克拉玛干所在的盆地与周围高山，正好把低地干旱与山地来水放在同一幅地理图景中。",
+        "一座山的哪侧更干，要看主要气流从哪里来、季节怎样变化。海陆位置和大尺度环流提供背景，山地在这个背景中进一步改变水汽路径。"
+      ],
+      "partId": "world-deserts"
+    },
+    {
+      "id": "world-deserts-section-3",
+      "title": "靠海，为什么仍然少雨",
+      "paragraphs": [
+        "纳米布和阿塔卡马都邻近海洋，却有大片干旱地表。沿岸冷水、稳定大气与下沉气流等条件，限制空气上升和降水形成；山地也会改变水汽输送。海边有水汽，不等于它会落成雨。",
+        "沿海雾可以给部分生物提供水分，但雾与降雨不同。把这类海岸和塔克拉玛干等大陆内部盆地比较，可以看到干旱由不同条件组合而成，不能只归结为距海远近。"
+      ],
+      "partId": "world-deserts"
+    },
+    {
+      "id": "world-deserts-section-4",
+      "title": "绿洲依靠什么维持",
+      "paragraphs": [
+        "在干旱地区，河流、地下水以及山地降水和积雪融水，能给绿洲提供水源。农田和聚落的位置，常沿着这些水的通道展开。",
+        "取水既影响下游，也改变地表水与地下水之间的交换。某块农田的一季丰收，或一张绿洲的照片，记录的都是局部时刻；水源能否延续，还要看长期水量和植被变化。"
+      ],
+      "partId": "world-deserts"
+    },
+    {
+      "id": "world-deserts-module-interior",
+      "title": "大陆内部",
+      "paragraphs": [
+        "撒哈拉长期少雨、蒸发旺盛，副热带下沉气流限制云雨形成，海陆位置与地形又造成地区差异。风化、流水和风力留下了岩石高原、砾石地、山地及沙丘，常见的沙丘照片只是其中一部分。",
+        "塔克拉玛干的沙粒，部分来自山地侵蚀后由河流送入盆地的松散物质。风再搬运、堆积这些沙粒，地形与风向影响沙丘的形状；边缘还分布着戈壁、河道和绿洲。沙尘的来源既包括沙地，也包括干燥的细粒沉积物。",
+        "戈壁常见裸岩、砾石和稀疏植被。强风可以扬起干涸湖盆等处的细沉积物，将尘输向远方，粗砂和岩石的搬运方式却不同。地表的浅色本身，既不能证明它全是沙丘，也不足以判断土地正在退化。"
+      ],
+      "caseIds": [
+        "sahara",
+        "taklamakan",
+        "gobi-desert"
+      ],
+      "partId": "world-deserts"
+    },
+    {
+      "id": "world-deserts-module-coastal",
+      "title": "沿海干旱",
+      "paragraphs": [
+        "阿塔卡马沿岸，冷海水与稳定大气抑制降雨，山地又影响水汽输送。海拔和距海远近仍造成局部差异，某处极少雨的记录不能代表整个沙漠每一年。低云和雾可以出现，而河流、地下水及矿业用水还需要放到更大的水文与管理范围中理解。",
+        "纳米布砂海的物质经历了另一条旅程：内陆河流将沉积物送往海岸，沿岸过程与风又把它们带入沙丘区。不同年代和形态的沙丘之间，仍有砾石平原、岩丘与间歇河道。这里的沙丘，需要把河流、海洋和风的连续作用接起来解释。"
+      ],
+      "caseIds": [
+        "atacama-desert",
+        "namib-sand-sea"
+      ],
+      "partId": "world-deserts",
+      "mediaIds": [
+        "dunes-photo"
+      ]
+    },
+    {
+      "id": "world-deserts-module-regional",
+      "title": "放回区域背景",
+      "paragraphs": [
+        "澳大利亚的干旱分布受到纬度、环流、海陆位置与地形共同影响，东部山地和沿海条件又带来局部差别。内陆与海岸并不能用一幅代表景观概括。",
+        "气候上的干旱区可以超出命名沙漠，荒漠内部也有岩石、稀疏植被与河道。国家沙漠数据库按沙漠对象制图，本站Beck格网按气候分类制图，二者的面积不能直接互换。"
+      ],
+      "caseIds": [
+        "australia"
+      ],
+      "partId": "world-deserts"
+    },
+    {
+      "id": "part-china-dry-water",
+      "title": "干旱地区的水从哪里来",
+      "paragraphs": [
+        "西北低地虽然少雨，周围高山却能接受降水、储存积雪。河流从山地进入盆地，沿途支撑绿洲，也把上游用水与下游河岸林、内流湖的命运联系起来。"
+      ],
+      "partId": "china-dry-water"
+    },
+    {
+      "id": "china-dry-water-section-1",
+      "title": "干旱地区也有水的通道",
+      "paragraphs": [
+        "中国西北的高山与低地，有不同的降水和储水条件。山地接受降水、积累季节积雪，河流再把水送到山前和盆地，使低地聚落能够在干旱环境中获得来水。",
+        "天山、昆仑与塔里木河之间的联系，说明沙漠中的聚落通常依靠具体的地表水、地下水或供水工程。水从哪里来，往往也解释了绿洲为什么位于那里。"
+      ],
+      "partId": "china-dry-water"
+    },
+    {
+      "id": "china-dry-water-section-2",
+      "title": "山地与盆地为什么不同",
+      "paragraphs": [
+        "由盆地中心向山地移动，温度、降水与植被都可能改变。海陆位置、大尺度环流和山地阻挡决定水汽能否到达，山内还有迎风与背风、谷地与高坡的差别。",
+        "整个西北、甚至同一条山脉内部，都不是均一的降水环境。区域气候图保留大格局，小山谷和坡向的差异则需要更细尺度的资料。"
+      ],
+      "partId": "china-dry-water",
+      "mediaIds": [
+        "diagram-rain-shadow"
+      ]
+    },
+    {
+      "id": "china-dry-water-section-3",
+      "title": "绿洲的边界跟着什么变化",
+      "paragraphs": [
+        "灌溉、河道与地下水供给影响绿洲能够利用的水量。农田、聚落和自然植被各有需水方式，上游扩大取水，可能减少下游和河岸带能够获得的水。",
+        "绿洲能维持多大范围，需要依据全流域的补给、消耗与储量变化判断。短期绿化和局部增产，仍要放回这份长期水账中考量。"
+      ],
+      "partId": "china-dry-water"
+    },
+    {
+      "id": "china-dry-water-section-4",
+      "title": "盐分为什么会留在低地",
+      "paragraphs": [
+        "水分蒸发以后，许多溶解的盐类会留下来，在土壤或湖盆中积累。地下水埋深、排水是否通畅以及怎样灌溉，影响盐分向哪里移动。",
+        "内流湖、盐地和灌区各有自己的条件，却都与水盐迁移有关。从山地沿河流走到绿洲和尾闾，水的路径可以相连，水与盐的最终去向却未必相同。"
+      ],
+      "partId": "china-dry-water"
+    },
+    {
+      "id": "china-dry-water-module-mountain-water",
+      "title": "高山把水送向干旱低地",
+      "paragraphs": [
+        "天山从干旱盆地拔起，山地降水、积雪和冰川等储水参与补给出山河流。海拔、坡向与水汽路径使山内条件不同，各流域依赖的补给比例也不同。",
+        "祁连山与河西走廊同样体现高山和绿洲的联系：低地少雨，生产与生态却能获得山地来水。沿河向上追踪，就能把看似孤立的绿洲放回它所依靠的水源地区。"
+      ],
+      "caseIds": [
+        "tian-shan",
+        "kunlun"
+      ],
+      "partId": "china-dry-water"
+    },
+    {
+      "id": "china-dry-water-module-basin-river",
+      "title": "盆地、沙漠与内陆河",
+      "paragraphs": [
+        "塔里木盆地以古老稳定地块和厚层沉积物为基础，周围山地变形抬升，山前河流与风力继续塑造地表。山地来水流过沉积扇和绿洲，再进入荒漠；深入大陆、山地阻隔与蒸发共同造成干旱。",
+        "塔克拉玛干位于盆地内部，山地侵蚀、河流输送和风力堆积给它提供了沙丘物质。沙丘之外仍有戈壁、河道与绿洲，干燥细粒沉积物也能成为沙尘来源。",
+        "沿沙漠北缘流动的塔里木河，汇集山地冰雪融水、降水与地下水。河道入渗、蒸发和引水逐步减少向下游传递的流量；由于没有自然海洋出口，下游生态尤其依赖内流区有限水量的分配。盆地、沙漠和河流，分别描述了相互联系的不同对象。"
+      ],
+      "caseIds": [
+        "tarim-basin",
+        "taklamakan",
+        "tarim-river"
+      ],
+      "partId": "china-dry-water"
+    },
+    {
+      "id": "china-dry-water-module-regional-comparison",
+      "title": "封闭湖与省区联系",
+      "paragraphs": [
+        "青海湖处在另一套封闭水文系统中。构造与排水演变使湖盆失去外流通道，河流和降水补水，蒸发带走水分，盐类则逐渐积累。湖面多年变化，要比较降水、入湖径流与蒸发的收支。",
+        "把视野扩大到新疆，“三山两盆”概括了山地隆升与盆地演变形成的主要框架，出山河流在山前塑造冲积扇与绿洲。但帕米尔、阿尔金山和许多山间盆地也在这片省域之内，各盆地的冬温、降水和水资源并不相同。"
+      ],
+      "caseIds": [
+        "qinghai-lake",
+        "xinjiang"
+      ],
+      "partId": "china-dry-water"
+    }
+  ],
+  "questions": [
+    {
+      "question": "沿海沙漠紧靠海洋，为什么仍可能少雨？",
+      "answer": "海水的存在不等于水汽能形成降雨。近海水温、大气稳定度、下沉气流和区域环流都会影响降水条件。"
+    },
+    {
+      "question": "干旱区有积雪山地，是否就代表全年供水稳定？",
+      "answer": "不代表。融水时间、降雨年际变化、地下水储量和取水需求都会影响供水，季节错配尤其需要关注。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NASA Earth Observatory · Dust Storm over the Gobi Desert",
+      "url": "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-gobi-desert-79746/"
+    },
+    {
+      "title": "UNESCO · Namib Sand Sea",
+      "url": "https://whc.unesco.org/en/list/1430/"
+    },
+    {
+      "title": "NASA Astrobiology · The Driest Place on Earth",
+      "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
+    },
+    {
+      "title": "NOAA · What is upwelling?",
+      "url": "https://oceanservice.noaa.gov/facts/upwelling.html"
+    },
+    {
+      "title": "NOAA · Climate Zones",
+      "url": "https://www.noaa.gov/jetstream/global/climate-zones"
+    },
+    {
+      "title": "NOAA · Saharan Air Layer",
+      "url": "https://www.aoml.noaa.gov/saharan-air-layer/"
+    },
+    {
+      "title": "中国科学院地理资源所 · 塔克拉玛干沙漠",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692338.html"
+    },
+    {
+      "title": "NASA · The Taklimakan Desert: A Factory for Dust Storms",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-taklimakan-desert-a-factory-for-dust-storms-87969/"
+    },
+    {
+      "title": "National Geographic Society · South America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+    },
+    {
+      "title": "Geoscience Australia · Australia’s size compared（2025）",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared"
+    },
+    {
+      "title": "Geoscience Australia · Australian mainland deserts",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts"
+    },
+    {
+      "title": "联合国统计司 · Australia国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/au.html"
+    },
+    {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+    },
+    {
+      "title": "UNESCO · Xinjiang Tianshan",
+      "url": "https://whc.unesco.org/en/list/1414/"
+    },
+    {
+      "title": "USGS · Himalaya and vicinity tectonics",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+    },
+    {
+      "title": "中国科学院地理资源所 · 昆仑山脉",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692380.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 塔里木盆地",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html"
+    },
+    {
+      "title": "NASA · A Wall of Dust in the Tarim Basin",
+      "url": "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/"
+    },
+    {
+      "title": "中国科学院地球环境所 · 塔里木盆地的前生今世",
+      "url": "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html"
+    },
+    {
+      "title": "中国科学院 · 第三次新疆科考水资源调查",
+      "url": "https://www.cas.cn/cm/202308/t20230817_4964150.shtml"
+    },
+    {
+      "title": "中国科学院地质地球所 · 塔河生态恢复",
+      "url": "https://igg.cas.cn/hejl/jldt/201510/t20151029_4450452.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 青海湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 中国最大的咸水湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+    },
+    {
+      "title": "新疆交通运输厅 · 三山两盆与新疆地理",
+      "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/zxdt/202407/a0284b35255f42b49c4531b0dbbd81d9.shtml"
+    },
+    {
+      "title": "中国政府网资料 · 中华人民共和国行政区划",
+      "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+    }
+  ],
+  "presentation": "essay"
+}

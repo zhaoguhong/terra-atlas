@@ -1,0 +1,202 @@
+{
+  "id": "climate-change",
+  "title": "气候变化与地球环境",
+  "introduction": "气候变化指气温、降水等气候特征在较长时期内发生的变化。这些变化与地球的能量和水分分配相连，既体现在持续的气温记录中，也反映在海洋储热、冰川和海平面变化中。理解温室效应、自然波动与人类活动，再联系各地地形和社会条件，才能解释全球趋势与地方影响。",
+  "updatedAt": "2026-11-10",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "用长期记录认识变化",
+      "paragraphs": [
+        "判断气候变化，要把较长时期的观测放在一起，交代地区、测量方法与比较基准。一个寒冬或一个炎热下午只占记录的一小段，全球平均变化也不能直接代替某个地点的变化。",
+        "气温记录之外，海洋热量、冰川与冰盖变化提供了其他线索。独立观测之间能否相互印证，比挑选某个地点短短几年的起伏，更有助于判断长期趋势。"
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "温室效应怎样影响能量收支",
+      "paragraphs": [
+        "地球吸收太阳能量，同时向外发出红外辐射。温室气体吸收、发射其中一部分，改变地表与大气之间以及地球向太空的能量交换，天然温室效应便由此成为气候的一部分。",
+        "燃烧化石燃料、改变土地利用等活动增加温室气体浓度，增强了增暖作用。温度变化又会改变水汽，形成反馈；引起变化的驱动，与随后放大或减弱变化的反馈，需要分别理解。"
+      ],
+      "mediaIds": [
+        "diagram-climate-energy"
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "自然波动与人为影响共同存在",
+      "paragraphs": [
+        "厄尔尼诺与拉尼娜等海气变化，会让不同年份的温度和降水起伏；火山活动、太阳变化也影响气候。这些作用与持续增加的温室气体并存，使观测曲线不会年年按同一幅度变化。",
+        "归因研究结合观测、物理机制与模型，检验不同影响能够解释什么。人类活动是近期全球变暖的主要原因，但某次暴雨、干旱或热浪受到了多大影响，仍需要针对该事件研究。"
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "同样是冰的变化，过程并不相同",
+      "paragraphs": [
+        "海洋吸收地球系统增加的大量热量，海水增暖会膨胀。陆地冰川和冰盖的水进入海洋，则增加海水质量。这两种过程都参与海平面变化。",
+        "海冰已经漂浮在水中，它融化的直接海平面效应与陆冰不同，但海冰变化还会影响反照率与海气交换。高山冰川面积、冰质量与下游河流流量也不是同一个指标：冰雪储量变化，如何转化成来水变化，还取决于降水和流域过程。"
+      ],
+      "mediaIds": [
+        "diagram-polar"
+      ],
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "把几个常见指标分清",
+          "columns": [
+            "观察对象",
+            "说明什么",
+            "还需要什么信息"
+          ],
+          "rows": [
+            [
+              "海冰范围",
+              "海上结冰的空间范围",
+              "季节、厚度与连续记录"
+            ],
+            [
+              "陆地冰质量",
+              "陆地储存的冰量",
+              "累积、消融及冰流过程"
+            ],
+            [
+              "河流流量",
+              "单位时间通过的水量",
+              "降水、融雪、储水与取水"
+            ],
+            [
+              "海平面",
+              "海水相对高度变化",
+              "热膨胀、质量变化与当地地面运动"
+            ]
+          ],
+          "note": "指标相互联系，但不能直接代替彼此。"
+        }
+      ]
+    },
+    {
+      "id": "section-5",
+      "title": "相同全球背景下，各地影响不同",
+      "paragraphs": [
+        "同样的全球增暖背景，会在不同地形、海陆位置与生态条件下产生不同影响。人口、设施和治理能力又改变后果；一处海岸的处境，还取决于风暴潮、地面沉降与当地防护条件。",
+        "长江三角洲把低平河口与密集城市联系在一起。判断未来哪里可能淹水，需要当地高程、堤防、海平面变化与相应情景资料；全球平均海平面和本篇的定位地图，都不足以直接画出淹没范围。"
+      ]
+    },
+    {
+      "id": "section-6",
+      "title": "减缓与适应回答不同问题",
+      "paragraphs": [
+        "减缓气候变化，着眼于减少温室气体排放、保护和增加碳汇；适应则应对已经发生或预期的影响，例如调整用水、改善排水与降低热暴露。两种行动可以同时进行。",
+        "一种方案是否合适，还取决于地方条件、成本、公平和生态影响。它究竟改变了哪些排放，又为哪些人、哪些环境减少了影响，需要落实到具体的能源、农业、城市与用水安排中。"
+      ]
+    },
+    {
+      "id": "section-7",
+      "title": "怎样读本站的气候地图",
+      "paragraphs": [
+        "本站气候地图使用Beck等（2023）V3的1991—2020年、0.5°资料，描述这一基准时期的冷热和干湿组合。它提供空间比较的底图，本身不显示气候正在向哪里移动。",
+        "研究变化需要可比较的时间序列；读未来情景，则要知道模型、排放假设和所指时期。案例点帮助定位，变化的方向、速度和范围仍应由相应观测或研究来说明。"
+      ]
+    },
+    {
+      "id": "module-case-arctic-region",
+      "title": "北极：把海冰与陆地环境分开观察",
+      "paragraphs": [
+        "北极中心是海洋，周缘则有陆地冰川、冻土、城市和人类生活。海冰由海水冻结形成，随季节生消；陆地冰来自积雪，冻土描述低温地面状态，各自对气候变化作出不同响应。",
+        "因此，比较北极不同年份的影像，要先确认观察的是海冰范围、陆地冰体还是地表变化，再选择对应季节。单独一片白色区域的增减，无法代表整个北极环境的变化。"
+      ],
+      "caseIds": [
+        "arctic-region"
+      ]
+    },
+    {
+      "id": "module-case-tibetan-plateau",
+      "title": "青藏高原：冰雪储量与下游来水",
+      "paragraphs": [
+        "青藏高原的高海拔环境保存着冰雪，山脉、宽谷、湖盆与湿润河谷又有不同水文条件。冰川储量变化会参与改变来水，但河流同时接受降水、季节积雪和其他补给。",
+        "把冰川面积缩小直接换算成下游缺水，会跳过其中的季节与流域过程。更完整的认识，需要联系冰质量、降水、径流和用水记录，判断变化在什么时候、以什么方式传向下游。"
+      ],
+      "caseIds": [
+        "tibetan-plateau"
+      ]
+    },
+    {
+      "id": "module-case-yangtze-delta",
+      "title": "长三角：自然三角洲与城市区域",
+      "paragraphs": [
+        "长江河流与海洋过程塑造了自然三角洲，产业、交通和城市合作则形成更广的经济联系。前者按地形与沉积划分，后者的规划范围按行政和发展目标确定，还包含更多山地与内陆地区。",
+        "讨论气候影响时，河口的自然过程与城市之间的联系都很重要，但需要使用各自对应的范围。哪些地方地势低、人口集中在哪里、防护设施能覆盖哪里，决定了当地需要怎样应对。"
+      ],
+      "caseIds": [
+        "yangtze-delta"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "一张长期气候分类图，能否单独证明某地正在变暖？",
+      "answer": "不能。它概括固定时期的气候组合；判断变化需要可比较的连续观测，并说明时期、基准和资料的不确定性。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NASA · Causes of Climate Change",
+      "url": "https://science.nasa.gov/climate-change/causes/"
+    },
+    {
+      "title": "NASA · Evidence of Climate Change",
+      "url": "https://science.nasa.gov/climate-change/evidence/"
+    },
+    {
+      "title": "NASA · Effects of Climate Change",
+      "url": "https://science.nasa.gov/climate-change/effects/"
+    },
+    {
+      "title": "IPCC · AR6 Synthesis Report, Summary for Policymakers (2023)",
+      "url": "https://www.ipcc.ch/report/ar6/syr/summary-for-policymakers/"
+    },
+    {
+      "title": "NOAA · What are El Niño and La Niña?",
+      "url": "https://oceanservice.noaa.gov/facts/ninonina.html"
+    },
+    {
+      "title": "NSIDC · How does Antarctic sea ice differ from Arctic sea ice?",
+      "url": "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice"
+    },
+    {
+      "title": "NSIDC · Arctic",
+      "url": "https://nsidc.org/learn/cryosphere-glossary/arctic"
+    },
+    {
+      "title": "Arctic Council · Arctic Peoples",
+      "url": "https://arctic-council.org/explore/topics/arctic-peoples/"
+    },
+    {
+      "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+      "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+    },
+    {
+      "title": "USGS · Understanding plate motions",
+      "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+    },
+    {
+      "title": "中国政府网 · 长江三角洲区域一体化发展规划纲要（2019）",
+      "url": "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html"
+    },
+    {
+      "title": "上海市人民政府 · Geography（2024年末面积）",
+      "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 太湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html"
+    },
+    {
+      "title": "中国科学院南京地湖所 · 浅水湖泊水动力",
+      "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+    }
+  ],
+  "presentation": "essay"
+}

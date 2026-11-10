@@ -6,16 +6,18 @@ import climateLegend from '../../public/data/climate-legend.json'
 import {categoryInfo,knowledge} from '../lib/catalog'
 import {gridIndex,nearestClimate,useLocalJson,type Grid} from '../lib/learning'
 import type {ClimateNote,ClimateSeries,Selection} from '../types'
+import ReadingFigure from './ReadingFigure'
+import {topics} from '../lib/topics'
 import ClimateChart from './ClimateChart'
 import CountryContext from './CountryContext'
 import MobileSheetHandle from './MobileSheetHandle'
 import {useLandscapeLayout,useMobileLayout} from '../lib/mobile-layout'
 import {useReadingPosition} from '../lib/reading-position'
 
-export default function KnowledgePanel({selection,favorite,countryId,sheet,onSheet,onClose,onFavorite,onLocate,onShare,onCompare,onPick,onRelations,onClimate,embedded=false}:{
+export default function KnowledgePanel({selection,favorite,countryId,sheet,onSheet,onClose,onFavorite,onLocate,onShare,onCompare,onPick,onRelations,onClimate,onReadTopic,embedded=false}:{
   selection:Selection;favorite:boolean;countryId:string|null;sheet:'peek'|'half'|'full';onSheet:(s:'peek'|'half'|'full')=>void;
   onClose:()=>void;onFavorite:()=>void;onLocate:()=>void;onShare:()=>void;onCompare:()=>void;onPick:(id:string)=>void;onRelations:(ids:string[])=>void;
-  onClimate:(code:string)=>void;
+  onClimate:(code:string)=>void;onReadTopic?:(id:string)=>void;
   embedded?:boolean;
 }){
   const {card}=selection
@@ -50,7 +52,10 @@ export default function KnowledgePanel({selection,favorite,countryId,sheet,onShe
       <div className="knowledge-content-label"><BookOpen size={12}/>{curated?'地点介绍':'数据概览 · 尚无精选解读'}{referenceOnly&&<span><MapPin size={11}/>地图使用定位参考点</span>}</div>
       <p className="summary">{card.summary}</p>
       <div className="card-actions"><button className="favorite-button" aria-pressed={favorite} onClick={onFavorite}><Bookmark size={14} fill={favorite?'currentColor':'none'}/>{favorite?'已收藏':'收藏地点'}</button><button onClick={onLocate}><LocateFixed size={14}/>定位</button><button aria-label="加入两地对比" onClick={onCompare}><ArrowLeftRight size={14}/>对比</button><button aria-label="分享这个地点" onClick={onShare}><Share2 size={15}/></button></div>
+      {card.mediaIds?.[0]&&<ReadingFigure id={card.mediaIds[0]} compact/>}
+      {onReadTopic&&<section className="card-topic-reading" aria-label="相关图文专题">{topics.filter(topic=>card.readingTopicIds?.includes(topic.id)||topic.stops.includes(card.id)).slice(0,3).map(topic=><button key={topic.id} onClick={()=>onReadTopic(topic.id)}><BookOpen size={14}/>{topic.title}<ArrowRight size={13}/></button>)}</section>}
       <dl className="facts">{card.facts.map(f=><div key={f.label}><dt>{f.label}</dt><dd>{f.value}</dd></div>)}</dl>
+      <details className="place-expanded-details"><summary>展开地点介绍</summary>
       {detail&&<section className="reading-section climate-specific"><h3>{detail.code} · {detail.title}</h3><p>{detail.description}</p><h4>季节变化</h4><p>{detail.seasons}</p><h4>景观与生活</h4><p>{detail.landscape}</p><div className="tag-list">{detail.examples.map((e,i)=><span key={i}>{e}</span>)}</div></section>}
       <section className="reading-section"><h3><LocateFixed size={14}/>它在哪里</h3><p>{card.location}</p></section>
       <section className="reading-section"><h3><BookOpen size={14}/>{card.tags?.includes('山峰定位')?'怎样读这座山峰':card.category==='religion'||card.category==='language'||card.category==='population'||card.category==='human'?'怎样理解':'为什么会这样'}</h3><p>{card.formation}</p></section>
@@ -63,6 +68,7 @@ export default function KnowledgePanel({selection,favorite,countryId,sheet,onShe
       {!!related.length&&<section className="reading-section"><h3>相关地点 · 继续探索</h3><div className="related">{related.map(id=><button key={id} onClick={()=>onPick(id)}>{knowledge.find(k=>k.id===id)!.name}<ArrowRight size={12}/></button>)}</div></section>}
       {card.geometryNote&&<p className="geometry-note">{card.geometryNote}</p>}
       <details className="sources" key={card.id+':'+(selection.subtype||'')}><summary>核对资料 <span>{sources.length} 项来源</span><ChevronDown size={13}/></summary>{sources.map(source=><a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">{source.title}<ArrowRight size={12}/></a>)}</details>
+      </details>
       {monthly.error&&<p className="resource-error">{monthly.error}<button onClick={monthly.retry}>重试月气候资料</button></p>}
     </div><div className="knowledge-foot"><BookOpen size={13}/>在地图上观察，也读懂地方之间的联系。</div>
   </aside>

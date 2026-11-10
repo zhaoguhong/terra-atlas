@@ -9,7 +9,7 @@ export interface Knowledge {
   connections: string[]; facts: { label: string; value: string }[];
   sources: { title: string; url: string }[]; region?: View; relatedIds?: string[]; geometryNote?: string;
   sections?: { title: string; body: string }[]; questions?: string[]; tags?: string[];
-  mapZoom?: number; mapRole?: 'place' | 'concept';
+  mapZoom?: number; mapRole?: 'place' | 'concept'; mediaIds?: string[]; readingTopicIds?:string[];
 }
 export interface LayerState { terrain: boolean; mountains: boolean; rivers: boolean; lakes: boolean; climate: boolean; borders: boolean; population: boolean; religion: boolean; language: boolean; provinces: boolean; grid: boolean; cities: boolean; basins: boolean; plates: boolean }
 export interface MapDisplay { basemap: 'natural' | 'detail'; terrain3d: boolean }
@@ -27,9 +27,24 @@ export interface Topic {
   group: TopicGroup; kind: TopicKind; shared?: boolean; overlay: TopicOverlay | null;
   sections: {title: string; body: string}[]; sources: {title: string; url: string}[]; geometryNote?: string;
   visuals?: TopicVisual[];
-  modules?: {id: string; title: string; description: string; detail?:string; stops: string[]}[];
+  mapGuide?: {summary?:string;sections:{sectionId:string;title:string;body:string}[];cases:{id:string;prompt:string}[]};
+  modules?: {id: string; partTitle?:string; title: string; description: string; detail?:string; stops: string[]}[];
+  reading?: {parts?:ReadingPart[];coverId:string; keywords:string[]; highlights:string[]; minutes:number; relatedTopicIds:string[]};
 }
-export interface ClimateNote { code: string; title: string; description: string; seasons: string; landscape: string; examples: string[]; questions: string[]; sources: {title:string;url:string}[] }
+export interface ReadingProgress {sectionId:string; offset:number; updatedAt:number}
+export interface ReadingPart {id:string;title:string;sectionId:string;description:string;keywords:string[]}
+export interface TopicArticle {
+  id:string; title:string; introduction:string; updatedAt:string; parts?:ReadingPart[]; presentation?:'essay';
+  sections:{id:string; title:string; paragraphs:string[]; partId?:string; mediaIds?:string[]; visuals?:TopicVisual[]; caseIds?:string[]; mapLabels?:Record<string,string>; terms?:{term:string;definition:string}[]}[];
+  questions:{question:string;answer:string}[];
+  sources:{title:string;url:string}[];
+}
+export interface ReadingMedia {
+  id:string; path:string; kind:'photo'|'diagram'|'map'; title:string; alt:string; caption:string;
+  author:string; license:string; sourceUrl:string; width:number; height:number;
+  sourceUrls?:string[]; placeIds?:string[]; licenseUrl?:string;
+}
+export interface ClimateNote { code: string; title: string; description: string; seasons: string; landscape: string; examples: string[]; questions: string[]; sources: {title:string;url:string}[]; sections?:{title:string;body:string}[]; mediaIds?:string[]; readingTopicIds?:string[] }
 export interface ClimatePlace { id: string; name: string; coordinates: [number,number]; sampleCoordinates: [number,number]; temperature: number[]; precipitation: number[]; [key:string]: unknown }
 export interface ClimateSeries { period: string; resolution?: number; resolutionDegrees?: number; sourceId: string; places: ClimatePlace[]; [key:string]:unknown }
 export interface MapProbe { coordinates: [number,number] }

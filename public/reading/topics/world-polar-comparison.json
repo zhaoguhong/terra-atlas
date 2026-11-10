@@ -1,0 +1,147 @@
+{
+  "id": "world-polar-comparison",
+  "title": "北极与南极比较",
+  "introduction": "两极同样远离低纬度的强日照，却有不同的地理基础：北极以海洋为中心，南极以大陆为主体。海陆结构、地形高度与冰的类型共同影响这里的气候和生态。把这些条件一项项对照，便能理解同样的冰雪世界为什么如此不同。",
+  "updatedAt": "2026-11-10",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "先分清大陆、海洋和冰",
+      "paragraphs": [
+        "北极地区围绕北冰洋展开，陆地在海洋周缘；南极洲则被南大洋包围，大陆上覆盖着广泛的冰盖。先辨认冰下面是陆地还是海水，才容易理解冰从哪里来、怎样运动。",
+        "海冰由海水冻结形成，漂浮在海面；陆地上的积雪长期压实，可以形成冰川与冰盖。大陆冰向海边流动，部分伸入海面并浮起，就成为冰架。它们都可能呈现白色，却有不同的来源和变化过程。"
+      ],
+      "mediaIds": [
+        "diagram-polar"
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "同样高纬，气候仍有差别",
+      "paragraphs": [
+        "两极的日照都随季节剧烈变化，海洋调节、地形高度与环流又造成气候差异。南极大陆内部地势高，远离海洋的调节，与北冰洋周边的环境并不相同。",
+        "极夜也并非整个极区同时开始。昼长随纬度与日期变化，极点与极圈附近经历的日照过程不同。"
+      ],
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "把两极放在同一组问题下",
+          "columns": [
+            "条件",
+            "北极",
+            "南极"
+          ],
+          "rows": [
+            [
+              "中心地表",
+              "海洋",
+              "大陆"
+            ],
+            [
+              "主要冰体环境",
+              "海冰与周缘陆地冰并存",
+              "大陆冰盖、冰架与周缘海冰"
+            ],
+            [
+              "季节",
+              "与南半球相反",
+              "与北半球相反"
+            ],
+            [
+              "气候差异的背景",
+              "海洋及周缘陆地调节",
+              "大陆内部高海拔与海洋隔离"
+            ]
+          ],
+          "note": "两极内部都有地区差异，表中描述整体背景。"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "冰的变化怎样影响生命",
+      "paragraphs": [
+        "海冰覆盖与消退会改变海洋和大气的交换，也改变一些生物觅食、繁殖和移动的环境。北极周缘陆地上的冻土、苔原与针叶林，则同时受温度、水分和季节变化影响。",
+        "南极大陆和周缘海洋具有另一套生态条件，不能把北极的森林、动物或人类活动直接移到南极理解。比较两极生态，首先要确认对象生活在陆地、海冰还是海洋中，再看它依赖什么食物和环境。"
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "长期变化需要连续观测",
+      "paragraphs": [
+        "海冰面积、冰盖质量与冰川速度，记录着不同的变化，需要各自的观测方法。某一天冰多或冰少只是一个时点，长期趋势要从连续资料中辨认。",
+        "南北半球季节相反，比较两极时还需选择对应季节与一致口径。海陆结构、冰的类型和观测时间共同决定了数据该怎样解释。"
+      ]
+    },
+    {
+      "id": "module-north",
+      "title": "北极：海洋与周缘陆地",
+      "paragraphs": [
+        "北冰洋的海冰随季节生消，海洋环流和陆地淡水输入又影响盐度、结冰及生态。周缘陆地还分布着冰川和冻土：前者来自积雪，后者描述持续低温的地面状态。北极圈是常用位置参照，研究中的北极范围还会因问题不同而调整。",
+        "往南来到加拿大北方森林，火、虫害、风和水分长期改变林分。不同时期的火留下不同林龄的树木，一些树种也更容易在火后繁殖。海冰、冻土与森林属于相邻而不同的环境，各自需要合适的观测指标。"
+      ],
+      "caseIds": [
+        "arctic-region",
+        "arctic-ocean",
+        "canadian-boreal-forest"
+      ]
+    },
+    {
+      "id": "module-south",
+      "title": "南极大陆及周缘",
+      "paragraphs": [
+        "南极大陆上的积雪长期压实，形成冰川与冰盖。冰向沿海流动，部分伸入海面后浮起，成为冰架；周围海水冻结形成的则是海冰。这几类冰体对海平面、海洋和生态的作用不同。",
+        "大陆周围的南大洋广阔而连通，风与海水密度差异使水体能够绕南极流动。实际海流有锋面、弯曲和涡旋，并不固定在一条纬线上。不同资料采用的制图界线也可能不同，约定的边界并不会阻止海水交换。"
+      ],
+      "caseIds": [
+        "antarctica",
+        "southern-ocean"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "海冰与陆地冰盖融化，对海平面的作用为什么不同？",
+      "answer": "海冰原本漂浮并排开海水，陆地冰进入海洋则增加海水质量。实际海平面还受海水热膨胀等因素影响。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NSIDC · How does Antarctic sea ice differ from Arctic sea ice?",
+      "url": "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice"
+    },
+    {
+      "title": "NSIDC · Arctic",
+      "url": "https://nsidc.org/learn/cryosphere-glossary/arctic"
+    },
+    {
+      "title": "Arctic Council · Arctic Peoples",
+      "url": "https://arctic-council.org/explore/topics/arctic-peoples/"
+    },
+    {
+      "title": "NOAA AOML · Antarctic Circumpolar Current",
+      "url": "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/index.php"
+    },
+    {
+      "title": "Natural Resources Canada · Fire ecology",
+      "url": "https://natural-resources.canada.ca/forests-forestry/wildland-fires/fire-ecology"
+    },
+    {
+      "title": "NOAA · 世界最小的海洋（2026更新页面）",
+      "url": "https://oceanservice.noaa.gov/facts/smallestocean.html"
+    },
+    {
+      "title": "NASA · Ice and Clouds in the Bering Strait",
+      "url": "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/"
+    },
+    {
+      "title": "British Antarctic Survey · Antarctica",
+      "url": "https://www.bas.ac.uk/about/where-we-work/antarctica/"
+    },
+    {
+      "title": "ESA WorldCover · Data access",
+      "url": "https://esa-worldcover.org/en/data-access"
+    }
+  ],
+  "presentation": "essay"
+}

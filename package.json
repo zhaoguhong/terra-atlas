@@ -11,6 +11,7 @@
     "size:check": "node scripts/check-size.mjs",
     "preview": "vite preview --host 127.0.0.1",
     "data:check": "node scripts/check-data.mjs",
+    "reading:build": "node scripts/build-reading-content.mjs && node scripts/sync-content-manifests.mjs",
     "test": "node --experimental-strip-types --test scripts/core.test.mjs",
     "test:e2e": "playwright test",
     "test:e2e:smoke": "playwright test --config playwright.smoke.config.ts"

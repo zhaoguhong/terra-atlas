@@ -30,7 +30,7 @@ async function compactGeometry(page:Page){
       return {left:rect.left,top:rect.top,right:rect.right,bottom:rect.bottom,width:rect.width,height:rect.height}
     }
     return {
-      header:box('.header'),stage:box('.map-stage'),brand:box('.brand'),view:box('.map-view-actions'),
+      header:box('.header'),stage:box('.map-stage'),brand:box('.brand'),view:box('.study-navigation'),
       search:box('.search-box'),more:box('.header-more'),viewport:innerWidth,
       overflow:document.documentElement.scrollWidth>innerWidth,
     }
@@ -39,6 +39,8 @@ async function compactGeometry(page:Page){
   expect(boxes.header.height).toBeGreaterThanOrEqual(44)
   expect(boxes.stage.top).toBeCloseTo(boxes.header.bottom,0)
   expect(boxes.overflow).toBe(false)
+  expect(boxes.search.width).toBeLessThanOrEqual(100)
+  expect(boxes.search.height).toBeGreaterThanOrEqual(44)
   for(const item of [boxes.brand,boxes.view,boxes.search,boxes.more]){
     expect(item.top).toBeGreaterThanOrEqual(boxes.header.top)
     expect(item.bottom).toBeLessThanOrEqual(boxes.header.bottom)
@@ -140,7 +142,7 @@ test('mobile more menu supports keyboard dismissal and preserves all four action
   await page.screenshot({path:test.info().outputPath('mobile-more-menu.png')})
   // macOS WebKit uses Option-Tab to include buttons without Full Keyboard Access.
   await page.keyboard.press(tabKey)
-  await expect(actions(page).getByRole('button',{name:'打开两地对比',exact:true})).toBeFocused()
+  await expect(actions(page).getByRole('button',{name:'定位中国',exact:true})).toBeFocused()
   await page.keyboard.press('Escape')
   await expect(actions(page)).not.toBeVisible();await expect(more(page)).toBeFocused()
 
@@ -158,7 +160,7 @@ test('mobile more menu supports keyboard dismissal and preserves all four action
   await openMore(page)
   await actions(page).getByRole('button',{name:'打开收藏',exact:true}).click()
   await expect(page.locator('.explorer')).toHaveClass(/mobile-open/)
-  await expect(page.locator('.explorer')).toContainText('收藏与保存视图')
+  await expect(page.locator('.explorer').getByText('保存的地图视图',{exact:true})).toBeVisible()
   await expect(actions(page)).not.toBeVisible()
   await openMore(page)
   await page.keyboard.press('Escape')
@@ -184,12 +186,12 @@ test('mobile more menu supports keyboard dismissal and preserves all four action
 
   const mobileViewport=page.viewportSize()!
   await openMore(page);await more(page).focus();await page.keyboard.press(tabKey)
-  const firstAction=actions(page).getByRole('button',{name:'打开两地对比',exact:true})
+  const firstAction=actions(page).getByRole('button',{name:'定位中国',exact:true})
   await expect(firstAction).toBeFocused()
   await page.setViewportSize({width:760,height:900})
   await expect(more(page)).not.toBeVisible()
   await expect(actions(page)).toBeVisible()
-  await expect(firstAction).toBeFocused()
+  await expect(actions(page).getByRole('button',{name:'打开两地对比',exact:true})).toBeFocused()
   await page.setViewportSize(mobileViewport)
   await expect(actions(page)).not.toBeVisible()
   await expect(more(page)).toBeFocused()

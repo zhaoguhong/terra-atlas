@@ -1,0 +1,364 @@
+{
+  "id": "world-ecosystems",
+  "title": "土壤、植被与生态系统",
+  "introduction": "土壤、植物、动物和水共同组成生态系统。土壤储存水分并为根系提供空间，植物改变地表覆盖与水循环，河流、火和人类利用又持续改变生境。沿这些联系，从脚下土层走向森林、草原和湿地，才能理解景观为何不同，以及它们怎样维持和变化。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "soil-land",
+      "title": "土壤怎样形成与变化",
+      "sectionId": "part-soil-land",
+      "description": "脚下的土壤包含矿物、有机物、水和空气，也是根系与微生物生活的地方。母质、气候、生物、地形和时间共同参与成土，耕作和侵蚀则持续改变已经形成的土层。",
+      "keywords": [
+        "土壤",
+        "黑土",
+        "成土",
+        "有机质",
+        "侵蚀",
+        "土层",
+        "农业",
+        "耕作制度",
+        "风成沉积",
+        "流水侵蚀",
+        "水土保持",
+        "季风农业",
+        "农时",
+        "统计口径"
+      ]
+    },
+    {
+      "id": "world-ecosystems",
+      "title": "森林、草原与湿地",
+      "sectionId": "part-world-ecosystems",
+      "description": "土壤为植物提供条件，植物又通过根系、枯落物和蒸腾改变环境。把视野扩大，森林、草原与湿地都有各自的水源、季节和扰动过程。下面用成对案例比较这些联系：两种森林、两种草原，以及分别依靠内陆来水和潮汐的湿地。",
+      "keywords": [
+        "森林",
+        "水循环",
+        "生态更新",
+        "草原",
+        "生态联系",
+        "平原",
+        "农牧业",
+        "湿地",
+        "内流",
+        "红树林",
+        "海岸湿地",
+        "沙丘",
+        "雾漠"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-soil-land",
+      "title": "土壤怎样形成与变化",
+      "paragraphs": [
+        "脚下的土壤包含矿物、有机物、水和空气，也是根系与微生物生活的地方。母质、气候、生物、地形和时间共同参与成土，耕作和侵蚀则持续改变已经形成的土层。"
+      ],
+      "partId": "soil-land"
+    },
+    {
+      "id": "soil-land-section-1",
+      "title": "土壤怎样支持植物生长",
+      "paragraphs": [
+        "土壤中的矿物颗粒与有机物组成固体部分，颗粒间的孔隙容纳水和空气，也让根系与微生物活动。土壤能储多少水、排水是否顺畅，取决于颗粒和孔隙怎样组合，而不只是有多厚。",
+        "颜色可以提供线索，却不能单独说明肥力。质地、结构、酸碱性与养分各有作用，植物还需要适宜的温度和水分。把土壤理解为有物质进出、有生物活动的环境，才能继续看它怎样形成。"
+      ],
+      "partId": "soil-land"
+    },
+    {
+      "id": "soil-land-section-2",
+      "title": "五类条件长期共同作用",
+      "paragraphs": [
+        "成土母质提供初始材料，气候影响风化和水分，生物带入、分解有机物，地形改变排水及物质移动。这些过程随时间积累，逐渐造出不同的土层。",
+        "同一片岩石上的山坡和洼地，排水和物质停留条件不同，土壤便可能不同。相似气候下的不同母质，也未必形成一样的土层，差别往往需要几项条件共同解释。"
+      ],
+      "partId": "soil-land"
+    },
+    {
+      "id": "soil-land-section-3",
+      "title": "土层记录物质的进入与迁移",
+      "paragraphs": [
+        "地表枯枝落叶逐渐分解，雨水把部分物质向下带走，另一些物质则在特定层位积累。剖面中颜色和结构的变化，保留了这些进入、迁移过程的线索。",
+        "土层并非处处整齐完整。侵蚀削去地表，沉积覆盖旧层，耕作翻动土壤，地下水也改变剖面；城市填土还可能经历强烈的人工搬运和重组。"
+      ],
+      "partId": "soil-land",
+      "mediaIds": [
+        "diagram-soil"
+      ]
+    },
+    {
+      "id": "soil-land-section-4",
+      "title": "保护土壤要看水、覆盖与利用",
+      "paragraphs": [
+        "坡面径流带走颗粒，风也能搬走裸露细土。地表有没有覆盖、怎样耕作与排水，影响土壤能否留在原地。东北黑土和黄土坡地，显示了不同材料与利用条件下的保护问题。",
+        "形成土壤需要的时间，可能远长于一次侵蚀带走它的时间。长期生产能力取决于有机质、结构、盐分及流失状况，当季产量只是其中一个结果。"
+      ],
+      "partId": "soil-land"
+    },
+    {
+      "id": "soil-land-module-case-northeast-blacksoil",
+      "title": "黑土：有机质积累与耕作利用",
+      "paragraphs": [
+        "东北黑土的有机质和结构在长期成土过程中形成，为作物提供重要条件。吉林中部平原上的玉米、大豆和水稻利用暖季光热水分生长，品种与农时则适应较短的生长季。",
+        "黑土被耕作以后，地表覆盖、机械作业和侵蚀继续改变土壤。作物收成与土层状况需要一起观察：当季产量说明一次生产结果，土壤有机质和结构关系到以后能否持续生产。"
+      ],
+      "caseIds": [
+        "northeast-blacksoil"
+      ],
+      "partId": "soil-land"
+    },
+    {
+      "id": "soil-land-module-case-loess-plateau",
+      "title": "黄土坡地：材料怎样成为土层，又怎样流失",
+      "paragraphs": [
+        "黄土高原的细粒物质由风长期搬运、堆积而来。成土过程改造这些沉积物，雨水与河流又切割地表，形成塬、梁、峁和沟谷。黄土材料、土壤性质与地貌形态，因此分别记录不同环节。",
+        "与东北黑土对照，黄土坡地更能显示土层和坡面径流的关系。植被覆盖、坡度与用地方式影响水流速度及携沙，流失的细土进入沟道后，又把坡地利用与下游河流联系起来。"
+      ],
+      "caseIds": [
+        "loess-plateau"
+      ],
+      "partId": "soil-land"
+    },
+    {
+      "id": "soil-land-module-case-rice-farming",
+      "title": "稻作：水热、平地与管理",
+      "paragraphs": [
+        "稻作需要适宜热量、水源和土壤，也依靠灌溉、排水、品种与农时安排。长期或阶段性的水分管理，要配合作物生长，并非水越多越好。",
+        "暴雨淹没、盐水入侵和旱季缺水，都可能影响收成。气候名称只能提供背景，具体种植制度还要照顾当地地形、品种和季节。"
+      ],
+      "caseIds": [
+        "rice-farming"
+      ],
+      "partId": "soil-land"
+    },
+    {
+      "id": "part-world-ecosystems",
+      "title": "森林、草原与湿地",
+      "paragraphs": [
+        "土壤为植物提供条件，植物又通过根系、枯落物和蒸腾改变环境。把视野扩大，森林、草原与湿地都有各自的水源、季节和扰动过程。下面用成对案例比较这些联系：两种森林、两种草原，以及分别依靠内陆来水和潮汐的湿地。"
+      ],
+      "partId": "world-ecosystems"
+    },
+    {
+      "id": "world-ecosystems-section-1",
+      "title": "景观是多种条件共同作用的结果",
+      "paragraphs": [
+        "森林、草原、荒漠与湿地的分布，受到温度、水分、土壤、地形和扰动共同影响。河流泛滥、火与土地利用，使同一气候区也可能出现不同景观。",
+        "亚马孙雨林、加拿大针叶林、塞伦盖蒂草原和纳米布沙海，各有不同条件的组合。一张照片能显示一处地方的样貌，较大的区域内部仍有许多变化。"
+      ],
+      "partId": "world-ecosystems",
+      "mediaIds": [
+        "diagram-ecosystems"
+      ]
+    },
+    {
+      "id": "world-ecosystems-section-2",
+      "title": "水分不仅来自当地降雨",
+      "paragraphs": [
+        "湿地的水可以来自远处河流，也可以来自地下水或季节淹水。奥卡万戈以内陆来水维持湿地，孙德尔本斯则同时接受河口与潮汐影响，盐分条件也随之改变。",
+        "湿地和周围旱地的年降水可能接近，实际水分却不同。水沿什么路径到达、停留多久、怎样涨落，往往比当地一项雨量更能解释植物生长。"
+      ],
+      "partId": "world-ecosystems"
+    },
+    {
+      "id": "world-ecosystems-section-3",
+      "title": "森林和草原怎样维持",
+      "paragraphs": [
+        "热量和水分影响植物生长，火、食草动物、土壤与土地利用则继续改变群落。自然草原具有自己的生态过程，有些环境中的树木与草地格局由这些作用共同维持，不能把所有草原都解释为森林被破坏的结果。",
+        "森林内部也有不同节律。热带雨林与加拿大针叶林都有树木覆盖，生长季、树种和物质循环却不同。把这些条件与火和水分的变化联系起来，比单看绿色覆盖多少，更能说明森林怎样生活。"
+      ],
+      "partId": "world-ecosystems"
+    },
+    {
+      "id": "world-ecosystems-section-4",
+      "title": "从一张照片走向环境变化",
+      "paragraphs": [
+        "一个季节的照片或一次调查，只记录了生态系统的一刻。判断退化、恢复或边界移动，需要连续资料，并分清天气起伏、长期气候变化和土地利用的作用。",
+        "来水路径有没有改变，植物怎样利用环境，人类活动又改变了哪些条件，这些问题能够把分散的观察连接起来。"
+      ],
+      "partId": "world-ecosystems"
+    },
+    {
+      "id": "world-ecosystems-module-forests",
+      "title": "亚马孙与加拿大：两种森林的节律",
+      "paragraphs": [
+        "亚马孙雨林依赖热量、水分、土壤与生物过程的配合，树木蒸腾又参与水循环。河水季节涨落形成淹水与非淹水生境，砍伐、火和农业扩展会改变覆盖，以及水与碳的交换。雨林范围与汇水流域、行政区范围不同，讨论变化时需使用相应边界。",
+        "加拿大北方森林的生长季与树种不同，火、虫害、风和水分长期影响林分。部分树种在火后较易繁殖，不同时期的火留下不同林龄，形成相间分布的新老林。两种森林都在变化，但要解释变化，需分别追踪各自的季节、生物与扰动过程。"
+      ],
+      "caseIds": [
+        "amazon-rainforest",
+        "canadian-boreal-forest"
+      ],
+      "partId": "world-ecosystems"
+    },
+    {
+      "id": "world-ecosystems-module-grasslands",
+      "title": "两种草原案例",
+      "paragraphs": [
+        "塞伦盖蒂的降水、水源随季节变化，可利用的牧草也随之改变，食草动物及捕食者跟随资源移动。岩丘、树木和河道穿插于草地，一处地方适不适合停留，会随雨水和草的生长而改变。",
+        "潘帕斯较平缓的地形、土壤和降水支持草地与农业，耕作、畜牧和交通又长期改造了景观。今天的耕地、牧场和残存自然草地，需要分别辨认；当前土地覆盖与过去生态状态，描述的是不同时间的环境。"
+      ],
+      "caseIds": [
+        "serengeti-savanna",
+        "pampas"
+      ],
+      "partId": "world-ecosystems"
+    },
+    {
+      "id": "world-ecosystems-module-wetlands",
+      "title": "湿地从何处得到水",
+      "paragraphs": [
+        "奥卡万戈河水进入坡度很小的平原后分散，形成多条水道与湿地，最终不流入海洋。上游降雨形成的洪水缓慢传播，抵达时可以正值当地少雨季节；蒸发和地下过程继续改变淹水范围。来水与本地雨季之间的时间差，也影响生物活动。",
+        "孙德尔本斯位于海陆交接处，河流泥沙与潮汐反复搬运地表物质，塑造岛屿、水道和泥滩。淡水、海水混合造成盐度差别，耐盐植物适应周期淹水与特殊土壤。这里虽然也有森林，潮水、盐分和泥沙的节律却与内陆森林明显不同。"
+      ],
+      "caseIds": [
+        "okavango-delta",
+        "sundarbans-mangroves"
+      ],
+      "partId": "world-ecosystems",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "两处湿地的水从哪里来",
+          "columns": [
+            "比较项",
+            "奥卡万戈",
+            "孙德尔本斯"
+          ],
+          "rows": [
+            [
+              "位置背景",
+              "内陆低平地区",
+              "河口海陆交接处"
+            ],
+            [
+              "重要来水过程",
+              "上游降雨形成洪水并缓慢传播",
+              "河流淡水与潮汐交换"
+            ],
+            [
+              "环境节律",
+              "洪水到达与当地雨季可错开",
+              "周期淹水与淡咸水混合"
+            ],
+            [
+              "地表联系",
+              "分散水道与季节湿地",
+              "岛屿、水道、泥滩与红树林"
+            ]
+          ],
+          "note": "共同点是水的路径塑造生境；各处盐度、淹水与植被仍存在内部差异。"
+        }
+      ]
+    },
+    {
+      "id": "world-ecosystems-module-dry-life",
+      "title": "纳米布：少量水分怎样维持局部生境",
+      "paragraphs": [
+        "纳米布砂海少雨，雾和微地形仍为部分生物提供水分条件。沙丘之间还有砾石平原、岩丘与间歇河道，地表起伏和材料不同，可供生物利用的环境也不同。",
+        "这里的沙粒可能先由内陆河流抵达海岸，再经沿岸过程与风进入沙丘区。与前面的湿地相比，水分更为有限，局部水源也更重要；沙的来路与生物可用的水，把这片干旱海岸同内陆和海洋联系起来。"
+      ],
+      "caseIds": [
+        "namib-sand-sea"
+      ],
+      "partId": "world-ecosystems",
+      "mediaIds": [
+        "dunes-photo"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "土壤颜色越黑，是否一定越适合所有作物？",
+      "answer": "不是。颜色只是线索，作物还需要合适的排水、质地、酸碱性、养分和温度条件。"
+    },
+    {
+      "question": "同一气候区里为什么能同时出现森林和湿地？",
+      "answer": "地势、河流和地下水改变水分与排水条件，季节淹水及土壤等因素使局部景观不同。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "nrcs.usda.gov · soil facts",
+      "url": "https://www.nrcs.usda.gov/resources/education-and-teaching-materials/soil-facts"
+    },
+    {
+      "title": "usgs.gov · soil formation chapter 6",
+      "url": "https://www.usgs.gov/publications/soil-formation-chapter-6"
+    },
+    {
+      "title": "农业农村部 · 黑土同耕 稳粮兴邦",
+      "url": "https://qys.moa.gov.cn/gdxw/202604/t20260427_6483675.htm"
+    },
+    {
+      "title": "农业农村部 · 粮食作物区域大配方与施肥建议",
+      "url": "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm"
+    },
+    {
+      "title": "中国科学院地质地球所 · 黄土形成与物源",
+      "url": "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html"
+    },
+    {
+      "title": "中国科学院地球环境所 · 河谷砂黄土风—水过程",
+      "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
+    },
+    {
+      "title": "国家统计局 · National Grain Production in 2024",
+      "url": "https://www.stats.gov.cn/english/PressRelease/202412/t20241219_1957784.html"
+    },
+    {
+      "title": "World Bank · India: Managing Floods and Droughts（2023）",
+      "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+    },
+    {
+      "title": "ESA WorldCover · Data access",
+      "url": "https://esa-worldcover.org/en/data-access"
+    },
+    {
+      "title": "NASA Earth Observatory · Mapping the Amazon",
+      "url": "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/"
+    },
+    {
+      "title": "Natural Resources Canada · Fire ecology",
+      "url": "https://natural-resources.canada.ca/forests-forestry/wildland-fires/fire-ecology"
+    },
+    {
+      "title": "UNESCO · Serengeti National Park",
+      "url": "https://whc.unesco.org/en/list/156/"
+    },
+    {
+      "title": "UNESCO · Okavango Delta",
+      "url": "https://whc.unesco.org/en/list/1432/"
+    },
+    {
+      "title": "UNESCO · The Sundarbans",
+      "url": "https://whc.unesco.org/en/list/798/"
+    },
+    {
+      "title": "UNESCO · Namib Sand Sea",
+      "url": "https://whc.unesco.org/en/list/1430/"
+    },
+    {
+      "title": "National Geographic Society · Africa: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/"
+    },
+    {
+      "title": "NASA JPL/MISR · The Pampas of Argentina",
+      "url": "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/"
+    },
+    {
+      "title": "National Geographic Society · South America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+    },
+    {
+      "title": "NOAA · What is upwelling?",
+      "url": "https://oceanservice.noaa.gov/facts/upwelling.html"
+    },
+    {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+    }
+  ],
+  "presentation": "essay"
+}

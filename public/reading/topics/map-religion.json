@@ -1,0 +1,146 @@
+{
+  "id": "map-religion",
+  "title": "国家宗教构成",
+  "introduction": "宗教地理关心不同信仰传统分布在哪里，以及这些分布怎样随人群迁徙、文化交流和人口变化形成。国家统计提供了一种观察尺度，但宗教也存在于个人认同、社群组织与日常实践之中。把统计所说的“归属”讲清楚，再比较比例、人数和历史联系，才能理解地图上的颜色包含了什么。",
+  "updatedAt": "2026-11-10",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "统计怎样描述宗教生活",
+      "paragraphs": [
+        "宗教包含个人信念，也包含仪式、组织与共同生活。人口调查通常从中选择一个可以提问的方面，例如“你认同哪一种宗教”。统计得到的是这个问题在特定时期、特定人群中的回答。",
+        "自报归属、参加仪式、认同某种观念和登记为组织成员，并不是同一个指标。它们可以相互补充，却不宜直接替换。国家比例适合认识群体构成，一个人具体怎样生活和实践信仰，则需要另外了解。"
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "共同名称之下，还有许多差别",
+      "paragraphs": [
+        "基督宗教、伊斯兰教、印度教和佛教，都是包含多种传统与社群的宽泛名称。不同地方的人可能归属同一宗教，却使用不同语言，保有不同历史和生活习惯。一个国家内部也常有多种宗教，以及没有宗教归属的人。",
+        "统计把其中一些差别合并，才能比较较大群体的规模。读图时，可以先认识总体构成，再把视野移到地区和社群。地图上占多数的类别，并不会让同一国家中其他人的生活消失。"
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "宗教分布怎样逐渐形成",
+      "paragraphs": [
+        "迁移把宗教带往新的居住地，贸易和传教增加社群之间的接触，政治历史也会改变传播条件。已有的分布形成以后，出生、死亡、迁入迁出和归属选择仍在继续改变各地构成。",
+        "今天的地图因而包含不同时期的历史影响，不能直接用来还原某个古代时期。地形和交通可以影响人群往来，却不足以决定人的信仰；要解释一处具体分布，需要回到相应地区与时段的资料。"
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "少数群体，人数未必少",
+      "paragraphs": [
+        "一个国家里占比较小的群体，如果所在国家人口很多，其人数仍可能超过另一国家的多数群体。比例回答“在这群人中占多少”，人数回答“共有多少人”，两者需要配合阅读。",
+        "还要看清比例的分母。“某国居民中有多少属于一种宗教”，与“全球该宗教人口中有多少住在某国”，是两个不同问题。前者说明国家构成，后者说明全球集中程度。"
+      ],
+      "mediaIds": [
+        "diagram-culture-statistics"
+      ],
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "同样是百分比，分母可能不同",
+          "columns": [
+            "问题",
+            "分母",
+            "可以认识什么"
+          ],
+          "rows": [
+            [
+              "某国有多少居民归属该宗教",
+              "该国相应调查人口",
+              "国家内部的群体构成"
+            ],
+            [
+              "全球该宗教人口有多少住在某国",
+              "全球该宗教人口",
+              "跨国分布与集中程度"
+            ],
+            [
+              "受访者有多少参加某种仪式",
+              "相应调查的受访者",
+              "调查所定义的宗教实践"
+            ]
+          ],
+          "note": "只有对象、年份与定义清楚，比例才可以比较。"
+        }
+      ]
+    },
+    {
+      "id": "module-module-1",
+      "title": "同一比例，调查对象可能不同",
+      "paragraphs": [
+        "一份调查可能覆盖全体人口，也可能只调查公民、成年人，或已经表明宗教归属的人。提问措辞、选项、抽样方法和年份也会影响结果。比较前先确认这些条件，才能知道两个百分比是否在回答同一个问题。",
+        "没有报告的类别应保留为未知。它说明资料没有给出足够信息，不能据此认定当地不存在这一群体。地图使用资料的范围，也应止于调查实际支持的范围。"
+      ],
+      "caseIds": [
+        "religious-diversity"
+      ]
+    },
+    {
+      "id": "module-module-2",
+      "title": "几种传统，怎样用共同尺度比较",
+      "paragraphs": [
+        "比较基督宗教与伊斯兰教的全球分布，可以同时看各国人数、当地占比及其变化。迁移、自然增长与归属变化共同影响结果。一个群体即使人数增加，只要增长慢于世界总人口，占比仍可能下降。比较2010年与2020年时，应使用同一报告修订后的估计。",
+        "印度教提供了地理集中程度的例子：这里资料中的95%，指全球印度教人口中生活在印度的比例，分母是全球印度教人口，并非印度总人口。集中分布也仍包含地方传统和实践的差异。",
+        "佛教则提示我们关注“归属”与实践的区别。Pew采用自报宗教归属等资料，人数变化反映的是相应统计口径；寺院活动、节庆参与和思想传播各有自己的变化，不能完全由一个归属比例概括。"
+      ],
+      "caseIds": [
+        "christianity",
+        "islam",
+        "hinduism",
+        "buddhism"
+      ]
+    },
+    {
+      "id": "module-module-3",
+      "title": "没有宗教归属，意味着什么",
+      "paragraphs": [
+        "“无宗教归属”把未认同某种宗教的人归在一起，却不表示这些人具有相同信念。有些人仍参与节庆或祭祖，也可能保有精神信念；自报有宗教归属的人，也未必经常参加宗教活动。",
+        "成长背景、归属转换和人口自然变化会改变这一类别的规模，调查方式也影响读数。把它与有宗教归属的类别放在同一问题下比较，有助于理解人口构成；至于个人信念与日常实践，还应使用相应资料。"
+      ],
+      "caseIds": [
+        "unaffiliated"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "一个国家有占多数的宗教，可以据此判断某位居民的信仰吗？",
+      "answer": "不可以。国家比例只描述总体构成，不能代替个人的自我认同或具体信息。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pew Research Center · 全球宗教归属2020估计（2025报告）",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/"
+    },
+    {
+      "title": "Pew Research Center · Global religious change methodology",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/global-religious-change-methodology/"
+    },
+    {
+      "title": "Pew Research Center · Christian population change, 2010–2020",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/christian-population-change/"
+    },
+    {
+      "title": "Pew Research Center · Muslim population change, 2010–2020",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/muslim-population-change/"
+    },
+    {
+      "title": "Pew Research Center · Hindu population change, 2010–2020",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/hindu-population-change/"
+    },
+    {
+      "title": "Pew Research Center · Buddhist population change, 2010–2020",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/"
+    },
+    {
+      "title": "Pew Research Center · Religiously unaffiliated population change",
+      "url": "https://www.pewresearch.org/religion/2025/06/09/religiously-unaffiliated-population-change/"
+    }
+  ],
+  "presentation": "essay"
+}

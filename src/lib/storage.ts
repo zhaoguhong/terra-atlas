@@ -1,12 +1,13 @@
-import type { Appearance, Camera, LayerState, MapDisplay, SavedView, ThematicState, View } from '../types'
+import type { Appearance, Camera, LayerState, MapDisplay, SavedView, ThematicState, View, ReadingProgress } from '../types'
+import {parseReadingProgress,readingId} from './reading.ts'
 import {legacyTopic,singleOverlay,topicOverlays,validTopicReference} from './theme-state.ts'
 export const defaultLayers: LayerState = { terrain: true, mountains: true, rivers: true, lakes: true, climate: false, borders: true, population: false, religion: false, language: false, provinces: false, grid: false, cities:false, basins:false, plates:false }
 export const defaultThematic: ThematicState = { religion: 'largest', language: 'all', opacity: 0.72, climateMode:'groups', languageMode:'overview', languageId:'all' }
 export const defaultDisplay: MapDisplay = { basemap: 'natural', terrain3d: false }
 export const initialCamera: Camera = {center: [104, 35], zoom: typeof window !== 'undefined' && window.matchMedia('(max-width: 759px), (max-width: 1000px) and (max-height: 540px)').matches ? 2 : 3.3}
 export interface Collection { id: string; name: string; places: string[] }
-export interface Preferences { appearance: Appearance; favorites: string[]; placeNames: Record<string,string>; savedViews: SavedView[]; layers: LayerState; camera: Camera; view: View; opacity: number; thematic: ThematicState; display: MapDisplay; notes: Record<string,string>; collections: Collection[]; topicId:string|null }
-const defaults: Preferences = { appearance: 'system', favorites: [], placeNames: {}, savedViews: [], layers: defaultLayers, camera: initialCamera, view: 'china', opacity: 0.48, thematic: defaultThematic, display: defaultDisplay, notes: {}, collections: [],topicId:null }
+export interface Preferences { appearance: Appearance; favorites: string[]; placeNames: Record<string,string>; savedViews: SavedView[]; layers: LayerState; camera: Camera; view: View; opacity: number; thematic: ThematicState; display: MapDisplay; notes: Record<string,string>; collections: Collection[]; topicId:string|null; savedTopics:string[]; readingProgress:Record<string,ReadingProgress> }
+const defaults: Preferences = { appearance: 'system', favorites: [], placeNames: {}, savedViews: [], layers: defaultLayers, camera: initialCamera, view: 'china', opacity: 0.48, thematic: defaultThematic, display: defaultDisplay, notes: {}, collections: [],topicId:null,savedTopics:[],readingProgress:{} }
 export function validCamera(c: unknown): c is Camera {
   const v = c as Camera | undefined
   return !!v && Array.isArray(v.center) && v.center.length === 2 && v.center.every(Number.isFinite) && Math.abs(v.center[0]) <= 180 && Math.abs(v.center[1]) <= 85 && Number.isFinite(v.zoom) && v.zoom >= -1.2 && v.zoom <= 11.5 && (v.pitch === undefined || (Number.isFinite(v.pitch) && v.pitch >= 0 && v.pitch <= 60)) && (v.bearing === undefined || Number.isFinite(v.bearing))
@@ -32,6 +33,7 @@ export function parsePreferences(value: unknown): Preferences {
   const strings=(v:unknown)=>Array.isArray(v)?v.filter((x):x is string=>typeof x==='string').slice(0,1000):[]
   const notes=Object.fromEntries(Object.entries(p.notes||{}).filter(([k,v])=>k.length<200&&typeof v==='string').map(([k,v])=>[k,String(v).slice(0,4000)]))
   return {
+    savedTopics:[...new Set(strings(p.savedTopics).filter(readingId))],readingProgress:parseReadingProgress(p.readingProgress),
     appearance:p.appearance==='light'||p.appearance==='dark'?p.appearance:'system',
     favorites:strings(p.favorites),
     placeNames:Object.fromEntries(Object.entries(p.placeNames||{}).filter(([id,name])=>id.length<200&&typeof name==='string').slice(0,1000).map(([id,name])=>[id,name.slice(0,120)])),

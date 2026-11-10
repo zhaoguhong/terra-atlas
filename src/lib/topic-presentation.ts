@@ -1,3 +1,4 @@
+import rawTopics from '../data/topics.json' with { type: 'json' }
 import rawKnowledge from '../data/knowledge.json' with { type: 'json' }
 import rawBindings from '../data/feature-bindings.json' with { type: 'json' }
 import type { Knowledge, Topic } from '../types'
@@ -60,7 +61,26 @@ const hydro: SemanticClass = { id: 'hydro', label: '水能工程案例', color: 
 const mineral: SemanticClass = { id: 'mineral', label: '矿产案例', color: '#855a9f', symbol: '◆' }
 const industry: SemanticClass = { id: 'industry', label: '产业转型案例', color: '#587595', symbol: '■' }
 
-const rules: Record<string, PresentationRule> = {
+const authoredRules: Record<string, PresentationRule> = {
+  'landform-processes': {note:'山地、黄土地区与河流分别提供构造、风尘沉积和流水作用的观察入口。',caseNote:'图面使用原有山系概化范围和真实河道，不表示各类地貌的完整分布。'},
+  'landform-karst': {note:'桂林、石林与武隆以有来源的地点坐标表示，云贵高原提供区域参照。',caseNote:'点位不表示岩溶、洞穴或遗产地的完整范围；地下过程在专题剖面中解释。'},
+  'landform-danxia': {note:'参考点定位丹霞山与崀山，便于比较红层地貌。',caseNote:'没有用景区点推测丹霞分布面，也不把所有红色山体归为丹霞。'},
+  'landform-river-erosion': {note:'河道用线表示，黄土高原用概化范围作为区域背景。',caseNote:'河道数据用于定位，不能表达每处峡谷、凹岸或实际侵蚀速率。'},
+  'landform-river-deposition': {note:'平原范围与三角洲参考点帮助理解沉积环境的位置。',caseNote:'三角洲点位不代替完整冲积区或河口边界。'},
+  'landform-yardang': {note:'荒漠与盆地提供区域观察入口，同类参考范围使用同色。',caseNote:'区域色面不代表全部为雅丹；具体风蚀形态见图文解释。'},
+  'landform-dunes': {note:'沙漠范围与纳米布沙海参考点用于认识风沙环境。',caseNote:'荒漠范围不等于沙丘范围，内部还可有砾石地、裸岩和盐地。'},
+  'landform-loess': {note:'黄土高原概化范围与黄河真实河道联系物源、侵蚀和输沙。',caseNote:'图面不表示黄土厚度、侵蚀强度或实时输沙量。'},
+  'landform-glaciers': {note:'山系与湖群提供过去和现代冰川作用的案例背景。',caseNote:'山系色面不是冰川覆盖范围，湖泊范围也不是过去冰盖边界。'},
+  'landform-coasts': {note:'丘陵、三角洲与红树林参考点提供不同海岸环境的观察入口。',caseNote:'点位不表示海蚀柱、沙嘴或潮滩的完整分布。'},
+  'landform-volcanoes': {note:'山峰点、热点参考点与高原范围帮助比较不同火山背景。',caseNote:'地图不表示当前喷发状态，地形范围不等于熔岩分布或危险区。'},
+  'landform-structures': {note:'山系、裂谷与断层参考点分别联系碰撞、张裂和走滑背景。',caseNote:'概化自然区和定位点不代替局地断层或地质构造图。'},
+  'earth-rocks': {note:'高原、山系与具体景观点提供认识岩石材料的入口。',caseNote:'此图不是岩性分布图，不能根据区域填色判断每处岩石。'},
+  'water-cycle': {note:'河流用线、湖泊用面，岩溶地点以参考点表示。',caseNote:'地下水路径通过概念剖面解释，没有推测含水层边界或地下河线路。'},
+  'climate-causes': {note:'高地、干旱区与海气观察点帮助比较气候成因。',caseNote:'海气点位不是洋流或季风矢量，气候分类按原有长期格网读取。'},
+  'soil-land': {note:'黑土、黄土与稻作地点提供不同土壤过程的案例。',caseNote:'定位与地形参照不表示完整土类分布或耕地边界。'},
+  'earth-hazards': {note:'山地、河流低地与断层案例帮助理解自然过程。',caseNote:'图面不是风险区划，也不表示实时灾害、预警或场地安全。'},
+  'people-migration': {note:'城市与统计概念帮助阅读人口变化和地区联系。',caseNote:'没有绘制未经统计支持的迁移路线；城市行政面不等于建成区。'},
+  'earth-image-reading': {note:'地图阅读观察点与实际景观案例用于比较尺度、形态和影像证据。',caseNote:'专题示意图不伪装成遥感影像，地图点位也不代表拍摄覆盖范围。'},
   'china-plateaus': {
     note: '颜色区分四个高原；已核对的概化范围与同色定位点对应。',
     caseNote: '内蒙古高原目前以参考点定位；自然区色面为概化标注参考范围。',
@@ -295,6 +315,26 @@ const rules: Record<string, PresentationRule> = {
   },
 }
 
+// The published catalogue is authoritative: retired subjects have no runtime aliases.
+const mergedRules:Record<string,PresentationRule>={
+  'china-terrain':{note:'结合山系、地形参考范围与地点，观察中国整体地势；同类对象采用同色。',caseNote:'自然区域为概化标注参考范围；内蒙古高原目前以参考点定位，未核对独立范围的地点保留参考点。',classes:authoredRules['china-relief-steps'].classes!.map(group=>group.semantic.id==='basin'?{...group,members:[...group.members,'tarim-basin','junggar-basin']}:group)},
+  'world-terrain':{note:'山系和地形用已有概化范围，山峰用三角形定位；先比较大陆骨架，再看具体地点。',caseNote:'峰顶点不表示山体范围，地形色面也不是精确地质边界。'},
+  'landform-processes':{note:'山地、河流与岩石景观点连接地表过程、岩石循环和丹霞案例。',caseNote:'地形范围不表示完整岩性或丹霞分布；具体景观保留参考点。'},
+  'world-tectonics':{note:'山系、裂谷、断层与火山参考点提供不同构造背景；可开启真实板块边界辅助观察。',caseNote:'案例不是地震预测或实时火山状态；山系范围不等于断层与危险区边界。'},
+  'landform-rivers':{note:'河道、平原和三角洲参考点连接侵蚀、搬运与堆积。',caseNote:'同一条河上可同时发生多种过程；地形与河道不表达实测侵蚀速率。'},
+  'landform-wind':{note:'荒漠、黄土与河流案例帮助比较风蚀、风积和后续流水切割。',caseNote:'沙漠参考范围不等于沙丘或雅丹分布范围。'},
+  'china-rivers':{note:'河流用线、湖泊用面，沿长江的地形与城市作为上下游联系参照。'},
+  'world-rivers':{note:'河道与湖面分别表示真实水系要素，区域和地点提供环境背景。'},
+  'drylands':{note:'沙漠与盆地参考范围、山地水源和河湖共同构成干旱地区的观察入口。',caseNote:'荒漠不全是沙丘，绿洲范围与地下水路径未作推测。'},
+  'world-ecosystems':{note:'土壤、森林、草原与湿地通过地点案例联系；同类参考使用同色。',caseNote:'案例点和地形范围不表示完整土壤、植被或生态系统分布。'},
+  'agriculture-food':{note:'中国与世界的农田、灌区、牧区和供水城市提供生产与消费联系的案例。',caseNote:'参考点不是作物种植边界、产量图或调水线路。',classes:[{semantic:crop,members:['northeast-blacksoil','rice-farming','great-plains-wheat','mekong-delta-farming','kafa-coffee']},{semantic:irrigation,members:['hetao-irrigation']},{semantic:pasture,members:['xilingol-pasture','pampas']}]},
+  'energy-industry':{note:'能源、矿产、产业与港口案例连接资源地、加工地和消费地。',caseNote:'地点不表示资源储量或完整产业范围；地形参照不表示矿区范围，当前未绘制输送网络。',classes:[...authoredRules['china-energy-resources'].classes!,...authoredRules['world-energy-industry'].classes!]},
+  'transport-trade':{note:'港口、枢纽、海峡和运河显示定位点，河道与已有区域提供自然背景。',caseNote:'参考点不代表真实航线、铁路线路或贸易流量。',classes:[{semantic:port,members:['rotterdam-port','singapore-port','ningbo-zhoushan-port']},{semantic:transport,members:['gotthard-rail','qinghai-tibet-railway','zhengzhou-transport']},{semantic:canal,members:['suez-canal','panama-canal']}]},
+  'world-continents':{note:'大洲概化范围与国家、区域参考共同帮助比较海陆位置和地区差异。',caseNote:'宽泛区域使用参考点，不以国家范围代替区域边界。'},
+  'weather-systems':{note:'北京、香港与印度季风区提供海陆、地形和季节背景。',caseNote:'地图不显示当前天气、锋面、台风路径或预警，天气过程见专题示意。'},
+  'climate-change':{note:'北极、高原与三角洲案例用于定位不同环境和人类活动。',caseNote:'地图不是变化趋势或淹没预测；1991—2020气候分类仅为长期背景。'},
+}
+const rules:Record<string,PresentationRule>=Object.fromEntries((rawTopics as Topic[]).map(topic=>[topic.id,mergedRules[topic.id]||authoredRules[topic.id]||{note:'点、线、面分别表示地点、河道与已核对的参考范围。'}]))
 export const allTopicPresentationIds = Object.keys(rules)
 
 /** Geometry follows curated bindings; a subject's name never creates a line or area. */

@@ -1,0 +1,415 @@
+{
+  "id": "world-rivers",
+  "title": "世界河流与湖泊",
+  "introduction": "河流把分散的来水汇集起来，再送向更低的地方；湖泊则在水的途中储存和交换水量。由此，同在荒漠中的河岸可以依赖远方湿润地区，同样宽广的湖面也可能拥有不同深度与盐分。本篇以几条大河和代表湖泊为例，比较水源、地形与出口怎样共同塑造水域。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "world-river-contrast",
+      "title": "四条大河，四种联系",
+      "sectionId": "part-world-river-contrast",
+      "description": "尼罗河、亚马孙河、恒河与密西西比河，分别联系荒漠河谷、湿润低地、季风平原和大陆内陆。把源区、中游和河口接起来，便能看到同一条河怎样穿过不同的气候与地形。",
+      "keywords": [
+        "外来水源",
+        "河谷农业",
+        "流域联系",
+        "国际通道",
+        "水资源",
+        "曲流",
+        "洪泛平原",
+        "支流物质",
+        "流域与地形",
+        "热带水循环",
+        "泥沙",
+        "季风河流",
+        "文化地理",
+        "水质",
+        "山前冲积",
+        "季风农业",
+        "洪水风险",
+        "支流水系",
+        "内河航运",
+        "流域土地利用",
+        "北美",
+        "工业交通",
+        "区域差异"
+      ]
+    },
+    {
+      "id": "world-lakes",
+      "title": "世界代表湖泊与湖群",
+      "sectionId": "part-world-lakes",
+      "description": "水在湖泊中停留的时间、湖盆容纳它的方式，以及有没有通向下游的出口，共同塑造不同的湖水环境。狭长深湖、广阔浅湖和相连湖群，各有自己的地质与水文历史。",
+      "keywords": [
+        "封闭水体",
+        "盐度差异",
+        "岸线变化",
+        "裂谷深湖",
+        "储水口径",
+        "特有物种",
+        "断陷湖",
+        "湖水分层",
+        "渔业",
+        "浅湖与深湖",
+        "白尼罗河",
+        "湖泊出口",
+        "冰川湖盆",
+        "五湖水系",
+        "跨境生态",
+        "高盐湖",
+        "人类用水",
+        "地质风险"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-world-river-contrast",
+      "title": "四条大河，四种联系",
+      "paragraphs": [
+        "尼罗河、亚马孙河、恒河与密西西比河，分别联系荒漠河谷、湿润低地、季风平原和大陆内陆。把源区、中游和河口接起来，便能看到同一条河怎样穿过不同的气候与地形。"
+      ],
+      "partId": "world-river-contrast"
+    },
+    {
+      "id": "world-river-contrast-section-1",
+      "title": "比较大河，先追踪来水",
+      "paragraphs": [
+        "尼罗河、亚马孙河、恒河和密西西比河联系着不同的地形与气候。比较它们，可以从同一条线索开始：源区在哪里，主要支流从哪里汇入，来水集中在什么季节，最后经过怎样的低地和河口。",
+        "这些问题把沿岸景观与更大的流域联系起来。一段河岸少雨，仍可能得到远方湿润地区的水；一条河很长，也未必流量很大。河流的水量和节律，需要用整个集水区解释。"
+      ],
+      "partId": "world-river-contrast",
+      "mediaIds": [
+        "diagram-river-system"
+      ]
+    },
+    {
+      "id": "world-river-contrast-section-2",
+      "title": "干旱河谷可以接受远方来水",
+      "paragraphs": [
+        "尼罗河下游流经干旱地区，河水却得到上游湿润高地、湖区和季节降雨的补给。水沿河道来到少雨的下游，把相距遥远的环境连接起来，维持着荒漠中的大河。",
+        "亚马孙则联系湿润低地、广泛支流与季节淹水环境。两条河的水量，都需要放到整个集水区中理解，沿岸一座城市的降水只描述了其中很小一处。"
+      ],
+      "partId": "world-river-contrast"
+    },
+    {
+      "id": "world-river-contrast-section-3",
+      "title": "季风、平原与洪水",
+      "paragraphs": [
+        "恒河平原的水量随季风降雨明显变化，山区来水与地形也参与其中。密西西比汇集更广泛的内陆支流，各源区的降雨、融雪与土地利用共同影响洪水过程。",
+        "水漫出河道以后，河漫滩、堤防、城市地表与排水通道继续决定它的去向。洪水的社会后果，还与人口和资产分布在什么位置有关。"
+      ],
+      "partId": "world-river-contrast",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "四条大河的来水背景",
+          "columns": [
+            "河流",
+            "流域中的关键联系",
+            "不能忽略的变化"
+          ],
+          "rows": [
+            [
+              "尼罗河",
+              "上游湿润地区—干旱下游",
+              "上游降雨、湖泊与取水"
+            ],
+            [
+              "亚马孙河",
+              "山地与广大湿润低地",
+              "支流、季节淹水与河道迁移"
+            ],
+            [
+              "恒河",
+              "山区源流—季风平原",
+              "雨季与山区来水"
+            ],
+            [
+              "密西西比河",
+              "多条内陆支流—河口",
+              "不同源区的降雨与融雪"
+            ]
+          ],
+          "note": "定性比较流域关系，长度与流量需要另用统一口径的数据。"
+        }
+      ]
+    },
+    {
+      "id": "world-river-contrast-section-4",
+      "title": "流域决定自然联系，治理还涉及行政联系",
+      "paragraphs": [
+        "河水顺着地势流动，流域边界常跨越国界或行政边界。上游怎样用水、拦蓄泥沙，会影响下游的供水、航运与生态，而不同地区的需求又未必一致。",
+        "一条河的源区、中游和河口各有地形、气候与人口背景。流域平均值可以概括整体，协调实际用水时仍须照顾这些内部差异。"
+      ],
+      "partId": "world-river-contrast"
+    },
+    {
+      "id": "world-river-contrast-module-module-1",
+      "title": "尼罗河与荒漠河谷",
+      "paragraphs": [
+        "白尼罗河与青尼罗河在喀土穆汇合，上游湿润高地和湖区送来的水，使下游在干旱环境中仍能维持大河。侵蚀与沉积沿途塑造河谷、洪泛平原和三角洲。",
+        "埃及的农田与聚落沿河集中，依赖的水分和沉积物有相当部分来自远方。上游降雨、湖泊、水库和取水变化，都可能影响下游农业。当地的普遍干旱与尼罗河的存在因此能够并存，运河建设则另外创造了海洋之间的联系。"
+      ],
+      "caseIds": [
+        "nile",
+        "egypt"
+      ],
+      "partId": "world-river-contrast"
+    },
+    {
+      "id": "world-river-contrast-module-module-2",
+      "title": "亚马孙与湿润低地",
+      "paragraphs": [
+        "亚马孙河汇集广大区域的来水，也搬运山地泥沙。在低坡度河段，外弯侵蚀、内弯堆积使河道不断侧移，截弯还能留下牛轭湖，沙洲、岛屿与洪泛区随之调整。",
+        "安第斯山的演变和区域地质构造影响排水格局，安第斯东坡来水也汇入亚马孙水系。低平的亚马孙平原只是流域的一部分，雨林范围与巴西国界又是另两种边界。静态概化河线记录大致路径，逐年变化的真实河岸还要用相应时期资料辨认。"
+      ],
+      "caseIds": [
+        "amazon-river",
+        "amazon-basin"
+      ],
+      "partId": "world-river-contrast"
+    },
+    {
+      "id": "world-river-contrast-module-module-3",
+      "title": "恒河与农业平原",
+      "paragraphs": [
+        "恒河源区的雪冰与降雨进入水系，季风雨季为平原带来重要水量。河流由山地峡谷转入低地曲流和三角洲，侵蚀、沉积、灌溉与航运条件也随地形改变。",
+        "喜马拉雅山地抬升与山前盆地演变建立地形，流水将山地物质带向南方，在出山后较缓的地方沉积。反复泛滥与河道迁移继续塑造恒河平原，也影响堤防、道路和居民点如何安排。河道、冲积平原和汇水流域各有自己的范围。"
+      ],
+      "caseIds": [
+        "ganges",
+        "ganges-plain"
+      ],
+      "partId": "world-river-contrast"
+    },
+    {
+      "id": "world-river-contrast-module-module-4",
+      "title": "密西西比：许多支流连接的内陆",
+      "paragraphs": [
+        "密苏里河、俄亥俄河等支流把北美广大内陆的来水送入密西西比。不同源区的降雨、融雪与土地利用，经支流汇入同一条干流，使洪水传播和河道管理具有跨地区联系。",
+        "长期侵蚀、搬运与改道形成洪泛平原，泥沙抵达河口后参与构筑三角洲。量取密西西比干流，或连同密苏里上游计算水系路径，会得到不同长度；这也说明比较大河需要统一口径。"
+      ],
+      "caseIds": [
+        "mississippi",
+        "usa"
+      ],
+      "partId": "world-river-contrast"
+    },
+    {
+      "id": "part-world-lakes",
+      "title": "世界代表湖泊与湖群",
+      "paragraphs": [
+        "水在湖泊中停留的时间、湖盆容纳它的方式，以及有没有通向下游的出口，共同塑造不同的湖水环境。狭长深湖、广阔浅湖和相连湖群，各有自己的地质与水文历史。"
+      ],
+      "partId": "world-lakes"
+    },
+    {
+      "id": "world-lakes-section-1",
+      "title": "先有湖盆，再看水如何维持",
+      "paragraphs": [
+        "湖泊需要容水的低地，也需要来水与耗水长期配合。断裂、冰川侵蚀、河道变化等过程都能造出湖盆，形状相近的水面可能经历过不同的形成过程。",
+        "贝加尔湖与坦噶尼喀湖有裂谷背景，北美五大湖则深受冰川改造。湖盆历史帮助解释形态和深度，今天的水位还取决于当下进出了多少水。"
+      ],
+      "partId": "world-lakes"
+    },
+    {
+      "id": "world-lakes-section-2",
+      "title": "水进入湖泊以后，怎样离开",
+      "paragraphs": [
+        "降水、河流与地下水补给湖泊，蒸发、出湖河流和地下渗漏则带走水。长期进入的水多于离开的水，储量增加；反过来，储量减少。湖面涨落是这些过程共同留下的结果。",
+        "有没有出口，还影响盐分能否被水带走。里海等封闭水体中，蒸发带走水，许多溶解盐类留下；通向下游的湖泊则可以随出流水输出一部分物质。盐度仍需结合盐类来源和长期水量收支理解。"
+      ],
+      "partId": "world-lakes",
+      "mediaIds": [
+        "diagram-lake-balance"
+      ]
+    },
+    {
+      "id": "world-lakes-section-3",
+      "title": "面积、深度与水量是三件事",
+      "paragraphs": [
+        "广阔的湖面未必储水最多，深湖也未必拥有最大的面积。季节性浅湖的岸线可以明显移动，陡岸湖泊水位变化时，面积却可能变化较小。",
+        "里海、贝加尔湖、维多利亚湖和死海，可以分别比较面积、深度、海拔与盐度。蓝色湖面显示平面范围，这些不同性质仍需要各自的测量资料。"
+      ],
+      "partId": "world-lakes"
+    },
+    {
+      "id": "world-lakes-section-4",
+      "title": "湖泊怎样影响周围环境",
+      "paragraphs": [
+        "湖水能够调节邻近温度、容纳洪水，并为湿地和水生生物提供栖息地。取水、营养盐输入和湖岸开发，也会改变水质与生态。",
+        "许多影响从集水区其他地方沿河进入湖中。主要入湖河流、出口与周围城市之间的关系，决定了岸边的管理为何常常要延伸到更远的上游。"
+      ],
+      "partId": "world-lakes"
+    },
+    {
+      "id": "world-lakes-module-rift",
+      "title": "构造深湖",
+      "paragraphs": [
+        "贝加尔湖的湖盆与大陆伸展、断裂有关，湖底持续下沉，水与沉积物在深盆地内积累，周围断层仍在活动。UNESCO概述其湖龄约2,500万年，长期存在的湖泊保存着大量独特生物；湖面面积与储水量则是两个不同指标。",
+        "坦噶尼喀湖同样形成于大陆伸展，断层两侧的高差与下沉地块容纳了狭长深湖。最大深度约1,470米，影响储水与分层。湖泊联系多个国家，而不同岸段的坡度、聚落和生态仍各不相同。"
+      ],
+      "caseIds": [
+        "baikal",
+        "tanganyika"
+      ],
+      "partId": "world-lakes"
+    },
+    {
+      "id": "world-lakes-module-glacial",
+      "title": "湖群与高地湖",
+      "paragraphs": [
+        "北美的苏必利尔、密歇根、休伦、伊利与安大略五大湖，经连接水道排向圣劳伦斯河。大陆冰盖反复侵蚀、扩大原有谷地，冰退、地面回弹与融水再改变湖盆和排水，留下深浅、面积及水交换不同的五个湖。",
+        "维多利亚湖则在东非高地、两支裂谷隆起边缘之间的相对低平洼地积水，广阔而较浅，与邻近的深断陷湖有不同历史。降雨、河流和蒸发维持其水量，人工调节出口也能改变水位。"
+      ],
+      "caseIds": [
+        "great-lakes",
+        "victoria"
+      ],
+      "partId": "world-lakes"
+    },
+    {
+      "id": "world-lakes-module-closed",
+      "title": "封闭水域",
+      "paragraphs": [
+        "里海由古代海域在构造与海平面演变中失去外海联系而成。伏尔加河等带来水，蒸发造成主要损失，封闭水体中盐分得以保留。浅北部与深南部的条件、盐度并不相同，名称中的“海”也不意味着它有自然通海出口。",
+        "死海的深陷湖盆由断层活动形成。缺少自然外流出口、蒸发强而补给有限，使入流水携来的溶解盐不断富集。约旦河来水、取水和工业活动共同改变水量，湖面缩小所反映的，因而不只有炎热天气。"
+      ],
+      "caseIds": [
+        "caspian",
+        "dead-sea"
+      ],
+      "partId": "world-lakes"
+    }
+  ],
+  "questions": [
+    {
+      "question": "穿过沙漠的河流为什么还能有较多来水？",
+      "answer": "河流可以把上游较湿地区的降水带入干旱河段。需要查看整个流域的补给，而非只看这一段的当地降雨。"
+    },
+    {
+      "question": "没有流出河的湖泊，水为什么不会一直增加？",
+      "answer": "蒸发和地下水交换等过程仍会带走水。湖泊是否扩大，要比较各项来水与耗水的总量。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NASA · Nile River Fluctuations near Khartoum",
+      "url": "https://science.nasa.gov/photojournal/nile-river-fluctuations-near-khartoum-sudan/"
+    },
+    {
+      "title": "NASA · Khartoum, Sudan",
+      "url": "https://science.nasa.gov/earth/earth-observatory/khartoum-sudan-5514/"
+    },
+    {
+      "title": "联合国统计司 · Egypt国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/eg.html"
+    },
+    {
+      "title": "NASA · Amazon Meanders in Sunglint",
+      "url": "https://science.nasa.gov/earth/earth-observatory/amazon-meanders-in-sunglint-92370/"
+    },
+    {
+      "title": "NASA · Mud from the Andes Carried by the Amazon",
+      "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+    },
+    {
+      "title": "NASA · Topography of South America",
+      "url": "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/"
+    },
+    {
+      "title": "NASA · Ganges River Delta",
+      "url": "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/"
+    },
+    {
+      "title": "NASA · Ganges River Delta: Landsat view",
+      "url": "https://science.nasa.gov/resource/ganges-river-delta/"
+    },
+    {
+      "title": "NASA · Monsoon Floods Inundate Eastern India",
+      "url": "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/"
+    },
+    {
+      "title": "Nature · Himalayan gravel flux and Ganga Plain",
+      "url": "https://www.nature.com/articles/nature22039"
+    },
+    {
+      "title": "USGS · The Mississippi River: A place for fish",
+      "url": "https://www.usgs.gov/publications/mississippi-river-a-place-fish"
+    },
+    {
+      "title": "美国国家公园局 · Mississippi River Facts",
+      "url": "https://home.nps.gov/miss/riverfacts.htm"
+    },
+    {
+      "title": "US Census Bureau · Geography definitions",
+      "url": "https://www.census.gov/data/data-tools/survey-explorer/geo.html"
+    },
+    {
+      "title": "美国国家公园局 · Rocky Mountain System Provinces",
+      "url": "https://home.nps.gov/articles/rockies.htm"
+    },
+    {
+      "title": "美国国家公园局 · Geology of Grand Canyon",
+      "url": "https://home.nps.gov/grca/learn/nature/grca-geology.htm"
+    },
+    {
+      "title": "NOAA · Great Lakes ecoregion",
+      "url": "https://www.noaa.gov/education/resource-collections/freshwater/great-lakes-ecoregion"
+    },
+    {
+      "title": "US EPA · Great Lakes environmental atlas",
+      "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004ICU.TXT"
+    },
+    {
+      "title": "联合国统计司 · United States国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/us.html"
+    },
+    {
+      "title": "NASA · Caspian Sea",
+      "url": "https://science.nasa.gov/earth/earth-observatory/caspian-sea-44253/"
+    },
+    {
+      "title": "NASA · The Caspian Sea’s Shrinking Coastline",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-caspian-seas-shrinking-coastline/"
+    },
+    {
+      "title": "UNESCO · Lake Baikal",
+      "url": "https://whc.unesco.org/en/list/754/"
+    },
+    {
+      "title": "UNESCO · Baikal periodic report",
+      "url": "https://whc.unesco.org/document/163201"
+    },
+    {
+      "title": "NASA · A Tale of Contrasting Rift Valley Lakes",
+      "url": "https://science.nasa.gov/earth/earth-observatory/a-tale-of-contrasting-rift-valley-lakes-145194/"
+    },
+    {
+      "title": "NASA · Earthquake in Eastern Africa",
+      "url": "https://science.nasa.gov/earth/earth-observatory/earthquake-in-eastern-africa-15855/"
+    },
+    {
+      "title": "Scientific Data · White Nile basin lakes",
+      "url": "https://www.nature.com/articles/s41597-022-01742-3"
+    },
+    {
+      "title": "NASA · Nalubaale Dam, Uganda",
+      "url": "https://science.nasa.gov/earth/earth-observatory/nalubaale-dam-uganda-6371/"
+    },
+    {
+      "title": "NASA · Getting Saltier",
+      "url": "https://science.nasa.gov/earth/earth-observatory/getting-saltier-145373/"
+    },
+    {
+      "title": "NASA · Dead Sea",
+      "url": "https://science.nasa.gov/earth/earth-observatory/dead-sea-6136/"
+    },
+    {
+      "title": "USGS · Understanding plate motions",
+      "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+    }
+  ],
+  "presentation": "essay"
+}

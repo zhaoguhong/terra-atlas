@@ -28,10 +28,10 @@
     }
   },
   "purpose": "参考中国与世界地理公开课标主题检查知识缺口，继续服务个人自由探索，不强制教材章节或固定学习顺序；逐页主题对照基于已读取的2022官方PDF，2025日常修订另记录版本证据与待核限制。",
-  "scopeNote": "211张精选卡片、30种气候笔记与40个自由主题；只记录实际实现的精选内容，不声称全部教材或课标已覆盖。",
-  "contentCount": 211,
+  "scopeNote": "216张精选卡片、30种气候笔记与32个自由主题；只记录实际实现的精选内容，不声称全部教材或课标已覆盖。",
+  "contentCount": 216,
   "climateNoteCount": 30,
-  "topicCount": 40,
+  "topicCount": 32,
   "statusDefinitions": {
     "selected": "该主题有精选内容，仍不表示标准全部要求覆盖",
     "partial": "已有内容只覆盖主题的一部分，明确列出待补项",
@@ -129,8 +129,8 @@
         "hawaii-hotspot"
       ],
       "topicIds": [
-        "world-mountain-ranges",
-        "world-sea-connections",
+        "world-terrain",
+        "transport-trade",
         "world-continents",
         "world-tectonics"
       ],
@@ -228,21 +228,11 @@
         "australia"
       ],
       "topicIds": [
-        "china-water-journey",
-        "china-dry-water",
-        "world-river-contrast",
-        "world-lakes",
-        "china-plateaus",
-        "china-plains",
-        "china-basins",
-        "china-mountain-ranges",
         "china-rivers",
-        "world-high-peaks",
-        "world-mountain-ranges",
-        "china-relief-steps",
-        "china-lakes",
-        "world-plateaus-plains",
-        "world-deserts"
+        "drylands",
+        "world-rivers",
+        "china-terrain",
+        "world-terrain"
       ],
       "implemented": [
         "中国四大高原、三大平原、四大盆地、主要山系与丘陵，以及世界山系、高原平原、沙漠、河湖和十四座8000米主峰；主题与成员分别说明位置、成因和联系。"
@@ -292,17 +282,20 @@
         "namib-sand-sea"
       ],
       "topicIds": [
-        "world-latitude-height",
-        "china-north-south",
+        "map-climate",
+        "china-regions",
         "world-ocean-monsoon",
-        "world-ecosystems"
+        "world-ecosystems",
+        "weather-systems",
+        "climate-change"
       ],
       "implemented": [
         "5大组与30细分笔记统一Beck V3；分类格网及1991—2020月温月雨资料支持比较。",
-        "洋流、上升流、季风与厄尔尼诺机制，以及森林、草原、湿地、红树林案例；区分气候分类、生态系统与土地覆盖产品。"
+        "洋流、上升流、季风与厄尔尼诺机制，以及森林、草原、湿地、红树林案例；区分气候分类、生态系统与土地覆盖产品。",
+        "补充气压与风、上升冷却、气团锋面及热带气旋机制；新增温室效应、变化证据、影响与减缓适应的原创专题及示意图。"
       ],
       "remaining": [
-        "天气预报符号、实际天气、独立连续温度降水图仍不完整；没有用Köppen或生态案例点冒充其他完整分布体系。"
+        "尚未提供实时天气图、预报或历史天气序列，也未提供气候变化时序图和未来情景图层；现有气候分类仍为 Beck V3 1991—2020 基准。"
       ]
     },
     {
@@ -397,10 +390,9 @@
         "gotthard-rail"
       ],
       "topicIds": [
-        "world-sea-connections",
-        "world-energy-industry",
-        "world-agriculture-food",
-        "world-transport-trade"
+        "transport-trade",
+        "energy-industry",
+        "agriculture-food"
       ],
       "implemented": [
         "资源开采、能源结构与产业转型、农业生产和粮食系统、港口腹地及越岭交通案例；历史统计标明年份，不视为实时产量或通航情况。"
@@ -452,11 +444,10 @@
         "canadian-boreal-forest"
       ],
       "topicIds": [
-        "world-latitude-height",
-        "world-river-contrast",
+        "map-climate",
+        "world-rivers",
         "world-continents",
-        "world-polar-comparison",
-        "world-regional-comparison"
+        "world-polar-comparison"
       ],
       "implemented": [
         "七大洲综合入口，代表国家、宽泛区域的自然—生产—联系比较，以及南北极海陆格局、冰冻圈与居民活动的区别。"
@@ -572,18 +563,11 @@
         "qarhan-resources"
       ],
       "topicIds": [
-        "china-water-journey",
-        "china-dry-water",
-        "china-north-south",
-        "china-plateaus",
-        "china-plains",
-        "china-basins",
-        "china-mountain-ranges",
         "china-rivers",
+        "drylands",
         "china-regions",
-        "china-relief-steps",
-        "china-lakes",
-        "china-energy-resources"
+        "china-terrain",
+        "energy-industry"
       ],
       "implemented": [
         "四大地理区、地势阶梯、丘陵与主要河湖，结合季风、干旱区水源、水资源联系解释；新增能源与矿产具体案例。"
@@ -626,10 +610,9 @@
         "tianjin"
       ],
       "topicIds": [
-        "china-food-water-cities",
-        "china-agriculture",
-        "china-energy-resources",
-        "china-transport"
+        "agriculture-food",
+        "energy-industry",
+        "transport-trade"
       ],
       "implemented": [
         "粮食与稻作之外补入东北黑土、灌溉农业和草原牧业；煤气、盐湖、风光水电案例，以及港口、铁路与交通枢纽。"
@@ -693,9 +676,8 @@
         "taiwan-province"
       ],
       "topicIds": [
-        "china-north-south",
-        "china-food-water-cities",
         "china-regions",
+        "agriculture-food",
         "china-provinces"
       ],
       "implemented": [
@@ -752,11 +734,11 @@
         "rotterdam-port"
       ],
       "topicIds": [
-        "china-water-journey",
-        "china-dry-water",
+        "china-rivers",
+        "drylands",
         "world-tectonics",
         "world-ecosystems",
-        "world-energy-industry"
+        "energy-industry"
       ],
       "implemented": [
         "水土保持、生态来水、产业转型与资源利用；新增板块地震火山机制、湿地与森林生态、矿区用水与能源生产的环境联系。"
@@ -865,5 +847,21 @@
     ],
     "moduleCount": 122,
     "method": "根据本轮实际精选卡片与主题逐条更新实现范围；此记录描述实现范围，不构成对课标全文逐项达标的认证。"
+  },
+  "readingExpansion": {
+    "version": "topics-2026-11-06-v3",
+    "topicIds": [
+      "landform-processes",
+      "landform-karst",
+      "landform-rivers",
+      "landform-wind",
+      "landform-glaciers",
+      "landform-coasts",
+      "water-cycle",
+      "earth-hazards",
+      "weather-systems",
+      "climate-change"
+    ],
+    "scope": "59个旧专题整合为30个主主题，另补天气与气候变化；原主题章节与案例按组保留，正文经逐篇校订，提供章节直达与地图案例。仍为精选学习资料，不声称百科或教材全覆盖。"
   }
 }

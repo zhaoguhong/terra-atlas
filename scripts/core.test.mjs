@@ -81,6 +81,26 @@ import {geometryBounds} from '../src/lib/geo.ts'
 import {greatCircleDistance,greatCircleRoute,routeDistance} from '../src/lib/measure.ts'
 import {gridIndex,numberText} from '../src/lib/learning.ts'
 import {defaultLayers,parsePreferences,validCamera} from '../src/lib/storage.ts'
+test('reading records migrate old preferences and reject invalid imported positions',()=>{
+  const old=parsePreferences({favorites:['yangtze'],notes:{yangtze:'原有记录'}})
+  assert.deepEqual(old.savedTopics,[])
+  assert.deepEqual(old.readingProgress,{})
+  assert.deepEqual(old.favorites,['yangtze'])
+  assert.equal(old.notes.yangtze,'原有记录')
+  const restored=parsePreferences({savedTopics:['landform-karst','landform-karst',null,'../bad'],readingProgress:{
+    'landform-karst':{sectionId:'section-3',offset:.42,updatedAt:1700000000000},
+    'earth-rocks':{sectionId:'introduction',offset:10,updatedAt:-1},
+    'bad-section':{sectionId:'../section',offset:0,updatedAt:1},
+    'bad-offset':{sectionId:'section-1',offset:'0.5',updatedAt:1},
+    'bad-time':{sectionId:'section-1',offset:0,updatedAt:Infinity},
+    '../bad-id':{sectionId:'section-1',offset:0,updatedAt:1},
+  }})
+  assert.deepEqual(restored.savedTopics,['landform-karst'])
+  assert.deepEqual(restored.readingProgress,{
+    'landform-karst':{sectionId:'section-3',offset:.42,updatedAt:1700000000000},
+    'earth-rocks':{sectionId:'introduction',offset:1,updatedAt:0},
+  })
+})
 import {legacyTopic,singleOverlay,topicOverlays} from '../src/lib/theme-state.ts'
 test('theme overlays are exclusive including language and preserve auxiliary layers',()=>{
   const base={...defaultLayers,grid:true,provinces:true}
@@ -199,13 +219,13 @@ test('daylight teaching model handles equinoxes, hemisphere reversal and polar l
   assert.equal(solarTimeOffsetMinutes(120),480);assert.equal(solarTimeOffsetMinutes(-30),-120)
   assert.equal(scaleDistanceKm(4,50000),2);assert.equal(scaleDistanceKm(4,1000000),40)
 })
-test('every theme member is reachable exactly once through an explicit learning module',()=>{
+test('every theme member is reachable through explicit modules without duplicates inside a module',()=>{
   const topics=read('src/data/topics.json')
   assert.equal(new Set(topics.map(t=>t.id)).size,topics.length)
   for(const topic of topics){
     const modules=topic.modules||[],members=modules.flatMap(module=>module.stops)
     assert(modules.length,topic.id)
-    assert.equal(members.length,new Set(members).size,topic.id+' duplicate member')
+    for(const module of modules)assert.equal(module.stops.length,new Set(module.stops).size,topic.id+' duplicate member inside module')
     assert.deepEqual(new Set(members),new Set(topic.stops),topic.id+' incomplete module coverage')
     for(const id of members)assert(knowledge.some(card=>card.id===id),topic.id+' unknown member '+id)
   }
@@ -246,7 +266,7 @@ test('language legends describe the filtered language and family views',()=>{
   assert.equal(selected.length,1);assert.equal(selected[0].symbol,'point');assert.equal(selected[0].color,languageColor('nucl1643'))
 })
 test('climate legends reflect the selected displayed classification and keep foreground symbols',()=>{
-  const topic=read('src/data/topics.json').find(topic=>topic.id==='china-dry-water')
+  const topic=read('src/data/topics.json').find(topic=>topic.id==='drylands')
   const input={layers:{...defaultLayers,climate:true},thematic:validThematic({climateMode:'groups'}),topic,selection:null,human:null,languageMeta:null}
   const overview=buildMapLegend(input)
   assert.deepEqual(overview.sections[0].entries.map(entry=>entry.color),climateGroups.map(group=>group.color))
@@ -323,4 +343,64 @@ test('appearance preferences migrate old records and reject unknown settings',()
     assert.deepEqual(record.notes,{yangtze:'保留'})
   }
   for(const appearance of ['system','light','dark'])assert.equal(parsePreferences({appearance}).appearance,appearance)
+})
+
+import topicPlan from '../data/reading/topic-plan.mjs'
+import originalLandforms from '../data/reading/existing-landforms.mjs'
+import originalWaterClimate from '../data/reading/water-climate.mjs'
+import originalPeopleResources from '../data/reading/people-resources.mjs'
+import originalEarthRegions from '../data/reading/earth-regions.mjs'
+import originalNewLandforms from '../data/reading/landform-lessons.mjs'
+import originalFoundations from '../data/reading/foundations.mjs'
+test('consolidation retains topic identities, modules, sources and cases while publishing the edited prose',()=>{
+  const old=read('data/reading/topic-inputs.json'),topics=read('src/data/topics.json')
+  const lessons={...originalLandforms,...originalWaterClimate,...originalPeopleResources,...originalEarthRegions,...Object.fromEntries([...originalNewLandforms,...originalFoundations].map(item=>[item.id,item]))}
+  assert.equal(old.length,59);assert.equal(topics.length,32)
+  const used=topicPlan.flatMap(group=>group.from)
+  assert.equal(used.length,new Set(used).size)
+  const targets=new Set()
+  for(const input of old){
+    const group=topicPlan.find(group=>group.from.includes(input.id)),id=group?.id||input.id
+    targets.add(id)
+    const target=topics.find(topic=>topic.id===id),article=read('public/reading/topics/'+id+'.json')
+    assert(target,input.id+' lost parent')
+    for(const stop of input.stops)assert(target.stops.includes(stop),input.id+' lost map case '+stop)
+    for(const source of input.sources)assert(target.sources.some(s=>s.url===source.url),input.id+' lost source')
+    for(const module of input.modules){
+      const kept=target.modules.find(m=>m.id===(group?input.id+'-'+module.id:module.id))
+      assert(kept,input.id+' lost module '+module.id)
+      assert.deepEqual(kept.stops,module.stops,input.id+' module map entries')
+    }
+    const text=article.sections.flatMap(s=>s.paragraphs).join('\n')
+    const editorialPath='data/reading/edited-topics/'+id+'.json'
+    const edited=fs.existsSync(editorialPath)?read(editorialPath):null
+    if(edited){
+      assert.deepEqual(article,edited,id+' publishes the authored revision')
+      assert.equal(target.description,edited.introduction,id+' catalogue uses the revised introduction')
+      assert.deepEqual(target.reading.parts,edited.parts,id+' group descriptions match the revision')
+      const originalChapterPrefix=group?input.id+'-':''
+      if(lessons[input.id].articleSections){
+        for(const section of lessons[input.id].articleSections){
+          const current=article.sections.find(s=>s.id===section.id)
+          assert(current,input.id+' lost authored chapter address '+section.id)
+          assert.deepEqual(current.caseIds,section.caseIds,input.id+' authored chapter keeps map cases')
+        }
+      }else{
+        for(let i=1;i<=lessons[input.id].sections.length;i++)assert(article.sections.some(s=>s.id===originalChapterPrefix+'section-'+i),input.id+' lost chapter address')
+        for(const module of input.modules)assert(article.sections.some(s=>s.id===originalChapterPrefix+'module-'+module.id),input.id+' lost case chapter address')
+      }
+    }else if(group){
+      assert(text.includes(input.question),input.id+' lost introductory question')
+      assert(text.includes(input.takeaway),input.id+' lost learning takeaway')
+    }else{
+      assert.equal(target.question,input.question)
+      assert.equal(target.takeaway,input.takeaway)
+    }
+    if(!edited){
+      for(const [,body] of lessons[input.id].sections)for(const paragraph of body.split('\n\n'))assert(text.includes(paragraph),input.id+' lost original explanation')
+      assert(article.questions.some(q=>q.question===lessons[input.id].question[0]),input.id+' lost question')
+    }
+  }
+  assert.equal(targets.size,30)
+  for(const id of ['weather-systems','climate-change'])assert(topics.some(t=>t.id===id))
 })

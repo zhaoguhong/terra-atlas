@@ -1,0 +1,165 @@
+{
+  "id": "world-ocean-monsoon",
+  "title": "洋流、季风与海陆联系",
+  "introduction": "海洋既储存和输送热量，也为大气提供水汽。海水怎样流动，风在不同季节从哪里来，决定了沿岸与内陆能得到怎样的水热条件。墨西哥湾流、秘鲁沿岸上升流、印度季风与阿塔卡马的干旱，展示了几种不同的海陆联系。",
+  "updatedAt": "2026-11-10",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "海流怎样改变沿岸环境",
+      "paragraphs": [
+        "海流把水从一个地方带到另一个地方，也搬运水中的热量。海水一路与空气和周围水体交换能量，因而能够影响沿岸环境。“暖流”和“寒流”是与附近海水相比的称呼，不是海水具有固定温度。",
+        "墨西哥湾流输送暖水，秘鲁沿岸则有深层较冷水体上升。前者突出海水的水平输送，后者突出上下层之间的交换。沿岸的风、纬度与地形继续影响陆地气候，因此一处海岸的冷暖与干湿，常是几种过程共同作用的结果。"
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "上升流把深层水带向表面",
+      "paragraphs": [
+        "在一些沿岸地区，风与地球自转共同作用，使表层海水离岸，较深的冷水上升补充。它携带的营养物质进入有光照的表层，可以促进生物生产，影响海洋食物网。",
+        "上升流也改变海温与海气交换。渔获多少还受捕捞、生态变化等影响，有冷水或上升流，并不保证某年就有丰收。"
+      ],
+      "mediaIds": [
+        "diagram-upwelling"
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "季风首先是一种季节变化",
+      "paragraphs": [
+        "季风是大尺度风场的季节变化，与海陆热力差异、气压以及环流迁移等因素相连。在印度，来风改变水汽输送，降水出现明显季节节律，山地又使各地雨量不同。",
+        "雨季仍有活跃期与少雨间歇，雨带也会移动。加上年际波动，不同地方的降雨开始、停歇与增强，未必发生在同一时间。"
+      ],
+      "mediaIds": [
+        "diagram-monsoon"
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "水汽到达以后，还需要什么",
+      "paragraphs": [
+        "海洋可以提供水汽，但要形成降雨，还需要合适的输送与冷却条件。空气受到抬升时更容易冷却凝结，稳定的下沉条件则可能抑制云雨。因此，临海与多雨并不是同一个地理特征。",
+        "前面的上升流和季风，分别改变海面水温与季节性水汽输送。下面从具体海流进入沿海与内陆案例，比较这些条件怎样在同一个地方相互配合。"
+      ]
+    },
+    {
+      "id": "module-currents",
+      "title": "海水移动",
+      "paragraphs": [
+        "墨西哥湾流是强西边界流的一部分，风、地球自转、海盆形状和海水密度共同参与海洋环流。“暖流”以附近海水为参照，水在流动途中继续与空气及周围水体交换热量。实际路径有弯曲和涡旋，沿岸城市的温差、降水也不能只用一条海流解释。",
+        "秘鲁沿岸的上升流，则把深层营养盐重新送进光照充足的表层。冷水是常见伴随特征，生物生产还取决于光照、海温和生态过程，渔业资源又受到捕捞影响。判断海域是否丰产，需要继续观察这些环节。"
+      ],
+      "caseIds": [
+        "gulf-stream",
+        "peru-upwelling"
+      ]
+    },
+    {
+      "id": "module-coast-land",
+      "title": "阿塔卡马与印度：临海为何不一定多雨",
+      "paragraphs": [
+        "阿塔卡马沿海可以有低云和雾，却很少下雨。近地面的悬浮水滴与落到地面的降水不同；沿岸冷水、稳定的下沉气流和山地影响，共同限制降雨。海拔与距海远近又使沙漠内部存在差异。",
+        "印度的雨季与季节性来风和水汽输送有关。海陆增温、降温的差别参与改变气压和环流，德干高原等地形又进一步调整各地降雨。雨季仍有活跃期与间歇，并非每一天都有相同风向和雨量。",
+        "两地说明，海边能否得到雨，既取决于水汽有没有被送来，也取决于空气怎样升降。季风描述风场的季节变化，气候分类则概括多年的温度和降水组合。"
+      ],
+      "caseIds": [
+        "atacama-desert",
+        "indian-monsoon",
+        "deccan-plateau"
+      ],
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "两种海陆联系",
+          "columns": [
+            "比较项",
+            "阿塔卡马沿海",
+            "印度季风区"
+          ],
+          "rows": [
+            [
+              "水汽与气流",
+              "近海仍可有雾，空气稳定",
+              "来风季节变化，水汽输送改变"
+            ],
+            [
+              "降水条件",
+              "下沉气流等抑制降雨",
+              "湿润气流抬升，山地调节雨量"
+            ],
+            [
+              "时间变化",
+              "干旱背景中仍有地区与年份差异",
+              "雨季内也有活跃期与间歇"
+            ]
+          ],
+          "note": "比较的是主要机制，不能代替每个地点的月气候资料。"
+        }
+      ]
+    },
+    {
+      "id": "module-circumpolar",
+      "title": "连接海盆",
+      "paragraphs": [
+        "南极周围的广阔连通海域，使海水能够在风和密度差异作用下绕极流动。实际流路包含锋面、弯曲和涡旋，并非固定在一条纬线上；不同资料采用的南大洋制图界线，也不会阻止水体交换。",
+        "海冰在海面上随季节生消，陆地冰盖则由另一套过程形成。把这两类冰与周围海水分开辨认，才能继续理解南极周缘海洋与其他海盆之间的联系。"
+      ],
+      "caseIds": [
+        "southern-ocean"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "近海空气有水汽，为什么仍可能少雨？",
+      "answer": "水汽还需要适当的抬升和冷却条件才能形成降水。稳定或下沉的空气等因素可能抑制降雨。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NOAA · Ocean currents",
+      "url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents"
+    },
+    {
+      "title": "NOAA · What is upwelling?",
+      "url": "https://oceanservice.noaa.gov/facts/upwelling.html"
+    },
+    {
+      "title": "NOAA · What are El Niño and La Niña?",
+      "url": "https://oceanservice.noaa.gov/facts/ninonina.html"
+    },
+    {
+      "title": "NOAA NESDIS · What Is a Monsoon?",
+      "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+    },
+    {
+      "title": "NOAA AOML · Antarctic Circumpolar Current",
+      "url": "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/index.php"
+    },
+    {
+      "title": "NASA Astrobiology · The Driest Place on Earth",
+      "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
+    },
+    {
+      "title": "National Geographic Society · South America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+    },
+    {
+      "title": "World Bank · For Mekong Delta Farmers, Diversification is the Key to Climate Resilience",
+      "url": "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience"
+    },
+    {
+      "title": "NASA Earth Observatory · Lonar Crater, India",
+      "url": "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/"
+    },
+    {
+      "title": "NSIDC · How does Antarctic sea ice differ from Arctic sea ice?",
+      "url": "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice"
+    },
+    {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+    }
+  ],
+  "presentation": "essay"
+}

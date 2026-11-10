@@ -3,6 +3,28 @@ import { baseReady, mapSettled, selectedGeometry, sourceLoaded } from './map-rea
 import { chooseTheme } from './theme-controls'
 import { clickHeaderAction } from './header-actions'
 
+test('bundled full articles, local images and case navigation work below the configured base path',async({page})=>{
+  const errors:string[]=[]
+  page.on('pageerror',error=>errors.push(error.message))
+  page.on('response',response=>{if(response.status()>=400)errors.push(`HTTP ${response.status()}: ${response.url()}`)})
+  await page.goto('./');await baseReady(page)
+  await page.getByRole('button',{name:'学主题',exact:true}).click()
+  await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill('喀斯特')
+  await page.getByRole('button',{name:'阅读专题：喀斯特地貌',exact:true}).click()
+  const article=page.locator('.topic-reading-page:not([hidden])')
+  await expect(article.locator('h1')).toHaveText('喀斯特地貌')
+  const cover=article.locator('img').first()
+  await expect.poll(()=>cover.evaluate((image:HTMLImageElement)=>image.naturalWidth)).toBeGreaterThan(0)
+  expect(await cover.getAttribute('src')).toContain(new URL(page.url()).pathname+'media/reading/')
+  await article.getByRole('navigation',{name:'专题章节'}).getByRole('button',{name:'桂林喀斯特 · 漓江段',exact:true}).click()
+  await article.locator('[data-reading-section="module-case-guilin-karst"]').getByRole('button',{name:'在地图上看',exact:true}).click()
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('桂林喀斯特 · 漓江段')
+  await selectedGeometry(page)
+  await page.locator('.reading-return-button').click()
+  await expect(article).toBeVisible()
+  expect(errors).toEqual([])
+})
+
 test('production map, reading, bookmarks and shared links work', async ({ page, context }, info) => {
   const errors: string[] = []
   page.on('pageerror', error => errors.push(error.message))
@@ -47,7 +69,7 @@ test('theme, rendered climate legend and bundled licenses work', async ({ page, 
   page.on('pageerror', error => errors.push(error.message))
   await page.goto('./')
   await baseReady(page)
-  await chooseTheme(page, '长期气候分布')
+  await chooseTheme(page, '气候分布与成因')
   await sourceLoaded(page, 'climate')
   await mapSettled(page)
   await expect(page.getByRole('complementary', { name: '地图图例', exact: true })).toBeVisible()

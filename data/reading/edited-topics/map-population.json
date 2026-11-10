@@ -1,0 +1,352 @@
+{
+  "id": "map-population",
+  "title": "人口分布、变化与迁移",
+  "introduction": "人口地图记录人住在哪里，出生、死亡与迁移则不断改变这幅分布。自然环境为定居提供水土条件，产业、交通和公共服务又使人向一些地方集中。理解人口地理，需要把国家、城市和乡村联系起来，既看数量怎样变化，也看不同地方怎样分享这些变化。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "map-population",
+      "title": "人口密度分布",
+      "sectionId": "part-map-population",
+      "description": "一个国家人口很多，内部仍可能有大片稀疏地区；一片平均密度不高的土地，也可能集中了几座大城市。人数、密度和具体分布，是认识人口格局的三个不同入口。",
+      "keywords": [
+        "空间统计",
+        "格网尺度",
+        "人口分布",
+        "人口统计",
+        "年代",
+        "自然增长",
+        "中国人口",
+        "局地集聚",
+        "统计口径",
+        "南亚人口",
+        "估计与普查",
+        "水资源",
+        "城镇化",
+        "户籍居住",
+        "边界口径",
+        "直辖市",
+        "城市水资源",
+        "山前平原",
+        "河口城市",
+        "港口",
+        "区域联系"
+      ]
+    },
+    {
+      "id": "people-migration",
+      "title": "人口迁移与城市联系",
+      "sectionId": "part-people-migration",
+      "description": "人口分布并不停留在某一年的地图上。求学、工作、家庭团聚和返乡，使人们在不同地方之间迁居；原居地和目的地随之改变，汇款、探亲与信息往来又让两地继续相连。",
+      "keywords": [
+        "迁移",
+        "流动人口",
+        "城市化",
+        "城镇化",
+        "推力",
+        "拉力",
+        "户籍居住",
+        "边界口径",
+        "直辖市",
+        "城市水资源",
+        "山前平原",
+        "河口城市",
+        "港口",
+        "区域联系",
+        "南亚人口",
+        "估计与普查",
+        "水资源",
+        "人口统计",
+        "年代",
+        "自然增长"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-map-population",
+      "title": "人口密度分布",
+      "paragraphs": [
+        "一个国家人口很多，内部仍可能有大片稀疏地区；一片平均密度不高的土地，也可能集中了几座大城市。人数、密度和具体分布，是认识人口格局的三个不同入口。"
+      ],
+      "partId": "map-population"
+    },
+    {
+      "id": "map-population-section-1",
+      "title": "有多少人，住得有多集中",
+      "paragraphs": [
+        "人口总量是人数，人口密度是人数除以面积，人口分布则说明这些人具体住在哪里。把同一群人放在不同大小的范围中计算，得到的平均密度会不同。",
+        "一格人口栅格中，可能同时有城区、农田和无人山地；一个国家的平均值，则会把更多差异合在一起。总量和密度适合比较规模，若要认识聚居的形态，还需继续看河谷、城市与乡村的位置。"
+      ],
+      "partId": "map-population",
+      "mediaIds": [
+        "diagram-population"
+      ]
+    },
+    {
+      "id": "map-population-section-2",
+      "title": "人口为何向一些地方集中",
+      "paragraphs": [
+        "平原、水源与适宜的热量，为定居和农业提供条件。长期形成的聚落、交通通道与市场，使一些地方逐渐积累更多人口；就业、学校、医疗等机会和服务，又继续吸引人们迁入。",
+        "这些条件相互联系，也会改变。技术和交通扩大了一个地方可以利用的资源范围，产业变化则可能带来人口流入或流出。因此，自然环境有助于理解聚居的基础，今天的分布还要放回经济与社会历史中。"
+      ],
+      "partId": "map-population"
+    },
+    {
+      "id": "map-population-section-3",
+      "title": "人口增长与城镇化是两种变化",
+      "paragraphs": [
+        "一个地区的人口增减，取决于出生与死亡的差额，以及迁入与迁出的差额。城镇化关心的则是人口向城镇集中的过程和城镇人口占比，两者并不总是同向变化。",
+        "例如，总人口减少时，如果乡村人口减少得更快，城镇人口占比仍可能上升。城镇的统计划分、建成区扩展，也会影响我们看到的比例。比较不同国家或城市之前，需要先确认年份和范围。"
+      ],
+      "partId": "map-population",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "几种人口变化，各看什么",
+          "columns": [
+            "概念",
+            "主要观察对象",
+            "容易混淆的地方"
+          ],
+          "rows": [
+            [
+              "人口增长",
+              "出生、死亡、迁入与迁出",
+              "增长不等于每处都更密集"
+            ],
+            [
+              "城镇化",
+              "城镇人口及其占比",
+              "占比上升不一定总人口增加"
+            ],
+            [
+              "迁移",
+              "惯常居住地的改变",
+              "通勤和旅游另有统计定义"
+            ],
+            [
+              "净迁移",
+              "迁入减迁出",
+              "净值小不表示双向流动少"
+            ]
+          ],
+          "note": "年份、范围和定义一致，比较才有明确含义。"
+        }
+      ]
+    },
+    {
+      "id": "map-population-section-4",
+      "title": "读数之前先看年份和尺度",
+      "paragraphs": [
+        "人口资料有不同的观察尺度。行政统计把特定边界内的人口汇总，人口栅格则将估计人数分配到一格格空间中。两类资料需要分别核对年份与统计口径。",
+        "全球图适合辨认人口密集带，国家内部的图更容易看到城市与乡村的差别。范围变小以后，还应确认每个数值代表多少土地，才能理解聚居究竟有多集中。"
+      ],
+      "partId": "map-population"
+    },
+    {
+      "id": "map-population-module-module-1",
+      "title": "同一片土地，不同统计尺度",
+      "paragraphs": [
+        "用街区、格网或国家汇总人口，得到的是不同范围的平均值。全球图可以显示大的密集带，放大到城市周边，才更容易看见城区、农田与山地之间的差别。",
+        "本站局地人口格网采用GHS-POP 2020模型估计，国家概览另有2024指标。它们可以提供互补的认识，但年份与方法不同，不能把两者相减，当作某个地方四年间增加的人数。"
+      ],
+      "caseIds": [
+        "population-density",
+        "world-population"
+      ],
+      "partId": "map-population"
+    },
+    {
+      "id": "map-population-module-module-2",
+      "title": "中国与印度：总量之下的地区差异",
+      "paragraphs": [
+        "中国人口的东西差异之中，还包含平原、河谷和城市的局部集聚。水土条件与农耕历史影响早期聚居，产业、交通、迁移与年龄结构继续改变今天的人口和公共服务需求。",
+        "印度同样不能只用一个国家总量概括。平原、都市与高原上的人口密度各不相同，环境、产业和交通共同影响分布。这里的国家数字采用联合国2024估计，并非2024年实地普查。比较两国时，既要统一统计口径，也要保留各自内部的差异。"
+      ],
+      "caseIds": [
+        "china-population",
+        "india-population"
+      ],
+      "partId": "map-population"
+    },
+    {
+      "id": "map-population-module-module-3",
+      "title": "北京与上海：城市范围怎样影响读数",
+      "paragraphs": [
+        "北京的密集城区主要位于山前和平原，行政辖区却还包括大片山地；上海的港口、产业和交通在低平河口聚集，城市也与周围地区保持密切联系。两地都说明，城市人口不应脱离所统计的土地范围来读。",
+        "行政辖区、连续建成区和城区街区，是不同的空间单位。常住在城镇、拥有城镇户籍，也属于不同的人口口径。这些区别会影响城市规模与城镇化率的比较，后文再以中国城镇化的资料具体说明。"
+      ],
+      "caseIds": [
+        "china-urbanization",
+        "beijing",
+        "shanghai"
+      ],
+      "partId": "map-population"
+    },
+    {
+      "id": "part-people-migration",
+      "title": "人口迁移与城市联系",
+      "paragraphs": [
+        "人口分布并不停留在某一年的地图上。求学、工作、家庭团聚和返乡，使人们在不同地方之间迁居；原居地和目的地随之改变，汇款、探亲与信息往来又让两地继续相连。"
+      ],
+      "partId": "people-migration"
+    },
+    {
+      "id": "people-migration-section-1",
+      "title": "迁移与日常出行不同",
+      "paragraphs": [
+        "迁移通常伴随惯常居住地的改变，可以发生在一国内部，也可以越过国界。通勤、旅游和长期迁居在统计中各有定义，所跨越的距离与居住时间也会影响某次移动是否计作迁移。",
+        "同一地方可以同时有人迁入和迁出。净迁移只是两者之差：即便两边人数都很多，抵消后的净值也可能接近零。"
+      ],
+      "partId": "people-migration",
+      "mediaIds": [
+        "diagram-migration"
+      ]
+    },
+    {
+      "id": "people-migration-section-2",
+      "title": "有机会，也要有迁居的条件",
+      "paragraphs": [
+        "就业、收入、求学、家庭、安全和环境，都可能成为迁居的理由。但目的地有机会，不等于每个人都能前往：交通与生活成本、亲友支持和制度条件，会影响迁居是否可行。",
+        "所以，处在相似压力下的家庭可能作出不同选择，缺少资源的人有时反而更难离开。推力与拉力能够整理迁移原因，具体的人口流动仍要结合家庭和地区的条件理解。"
+      ],
+      "partId": "people-migration"
+    },
+    {
+      "id": "people-migration-section-3",
+      "title": "迁出地与迁入地一起变化",
+      "paragraphs": [
+        "迁入地获得新的劳动力，也需要安排住房、教育、医疗等服务。迁出地的劳动力、年龄结构和家庭生活则可能改变。迁居之后的汇款、返乡与信息交流，让这些影响跨越两地延续。",
+        "人口变化因此可以沿一条联系同时观察两端。城市增长还可能来自当地自然增长和统计边界调整；把这些过程分清，才容易判断迁移在其中起了多大作用。"
+      ],
+      "partId": "people-migration"
+    },
+    {
+      "id": "people-migration-section-4",
+      "title": "地图上的箭头需要真实数据",
+      "paragraphs": [
+        "迁移路线涉及明确的起点、终点、时期与人数。有这些资料，流量图中箭头的粗细才可以用来比较；仅说明地区之间有联系的示意，不能当作实际人口流量。",
+        "具体的迁移路线与规模，需要相应时期的统计或调查来确认，单凭两地的位置和城市规模，还不足以判断人口流动的方向。"
+      ],
+      "partId": "people-migration"
+    },
+    {
+      "id": "people-migration-module-case-china-urbanization",
+      "title": "中国城镇化：居住地、户籍与城市范围",
+      "paragraphs": [
+        "城镇人口占比描述居住地，户籍城镇化率描述户籍身份，建成区面积则描述城市土地。人口迁移与产业转变会影响它们，聚落建设和统计边界变化也会。",
+        "2020年11月1日普查记录的常住城镇人口占比为63.89%，同一公报引用的2020年公安部口径户籍城镇化率为45.4%；两项统计采用不同口径，其差值不等于所有流动人口的比例。对于离开户籍地居住的人，应另看普查对流动人口、人户分离的定义和统计。"
+      ],
+      "caseIds": [
+        "china-urbanization"
+      ],
+      "partId": "people-migration"
+    },
+    {
+      "id": "people-migration-module-case-beijing",
+      "title": "北京：人口集聚与服务范围",
+      "paragraphs": [
+        "首都功能、就业和交通联系参与推动北京的人口集聚，密集城区与周围山地却有很不同的居住状况。行政范围中的平均值，难以独自说明各处住房、通勤与公共服务的需求。",
+        "把北京放回本篇的尺度问题，就需要先确认讨论的是行政辖区、建成区还是街区，再选择相应人口资料。地形提供了城市发展的空间背景，增长和流动还需要统计记录来说明。"
+      ],
+      "caseIds": [
+        "beijing"
+      ],
+      "partId": "people-migration"
+    },
+    {
+      "id": "people-migration-module-case-shanghai",
+      "title": "上海：港口、就业与河口生活",
+      "paragraphs": [
+        "上海的港口、产业与交通把低平河口同更远的生产和消费地区连接起来，也参与吸引人口集聚。城市增长带来住房、用地和公共服务需求，不能只用建成区向外扩展来衡量。",
+        "与北京的山前背景相比，上海更直接面对河口环境：上游来水与海侧潮汐共同影响排水，供水与防洪要服务密集人口。城市的人口联系与环境条件，在这里落到同一片土地上。"
+      ],
+      "caseIds": [
+        "shanghai"
+      ],
+      "partId": "people-migration"
+    },
+    {
+      "id": "people-migration-module-case-india-population",
+      "title": "印度：数量变化与空间变化",
+      "paragraphs": [
+        "出生、死亡、年龄结构与迁移共同改变印度各地的人口。平原、都市和高原的聚居状况不同，国家总量增加也不意味着每个地方都以相同速度增长。",
+        "本站国家概览使用联合国2024估计，局地格网使用GHS-POP 2020模型。两者分别帮助认识全国规模与空间分布；判断一个地点实际增加了多少人口，还需要同一口径的连续资料。"
+      ],
+      "caseIds": [
+        "india-population"
+      ],
+      "partId": "people-migration"
+    },
+    {
+      "id": "people-migration-module-case-world-population",
+      "title": "世界人口：数量、变化与分布",
+      "paragraphs": [
+        "出生与死亡改变世界人口的自然增减，迁移则重新分配各地人口。社会、经济、环境和政策都会参与这些变化；未来人口预测还取决于相应假设及其不确定性。",
+        "世界尺度的总量与具体地点的居住状况，需要不同资料。GHS-POP格网表示2020年的模型估计，国家概览另有2024指标，所用年份和方法都随资料保留。"
+      ],
+      "caseIds": [
+        "world-population"
+      ],
+      "partId": "people-migration"
+    }
+  ],
+  "questions": [
+    {
+      "question": "一个国家平均人口密度低，是否表示它没有拥挤的大城市？",
+      "answer": "不是。全国平均会平滑内部差异，人口可能集中在少数城市、河谷或沿海地区。"
+    },
+    {
+      "question": "迁入和迁出人数都很大，但净迁移接近零，是否表示没有明显人口流动？",
+      "answer": "不是。净迁移抵消了双向流动，需要分别查看迁入、迁出和总流动规模。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "European Commission JRC · GHS-POP R2023A方法与数据",
+      "url": "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php"
+    },
+    {
+      "title": "World Bank · What does urban mean?（国家定义差异）",
+      "url": "https://blogs.worldbank.org/en/sustainablecities/what-does-urban-mean"
+    },
+    {
+      "title": "联合国 · World Population Prospects 2024主要结果",
+      "url": "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_wpp_2024_advance_unedited_0.pdf"
+    },
+    {
+      "title": "国家统计局 · 第七次全国人口普查与人口数据口径",
+      "url": "https://www.stats.gov.cn/sj/zxfb/202302/t20230203_1901091.html"
+    },
+    {
+      "title": "国家统计局 · 第七次人口普查城乡与流动人口公报",
+      "url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/html/fu03g.pdf"
+    },
+    {
+      "title": "UN Statistics Division · World Statistics Pocketbook 2024（印度）",
+      "url": "https://unstats.un.org/unsd/publications/pocketbook/files/world-stats-pocketbook-2024.pdf"
+    },
+    {
+      "title": "北京市人民政府 · 北京概况与地理自然",
+      "url": "https://www.beijing.gov.cn/renwen/bjgk/"
+    },
+    {
+      "title": "上海市人民政府 · Geography（2024年末面积）",
+      "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+    },
+    {
+      "title": "中国政府网资料 · 中华人民共和国行政区划",
+      "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+    },
+    {
+      "title": "international-partnerships.ec.europa.eu · migration_en",
+      "url": "https://international-partnerships.ec.europa.eu/policies/migration-and-forced-displacement/migration_en"
+    },
+    {
+      "title": "joint-research-centre.ec.europa.eu · understanding reasons behind migration interplay migration drivers 2024 12 18_en",
+      "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/understanding-reasons-behind-migration-interplay-migration-drivers-2024-12-18_en"
+    }
+  ],
+  "presentation": "essay"
+}

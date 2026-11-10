@@ -1945,6 +1945,46 @@
       "featureIds": [],
       "changed": false,
       "reason": "德雷克海峡附近海区参考点；不绘制南大洋法定界线、海流路径或当前海冰范围。"
+    },
+    {
+      "cardId": "guilin-karst",
+      "name": "桂林喀斯特 · 漓江段",
+      "decision": "point",
+      "featureIds": [],
+      "changed": true,
+      "reason": "UNESCO 组成地参考坐标；无范围一致的地貌数据，明确保留点位，不推测面积。"
+    },
+    {
+      "cardId": "shilin-karst",
+      "name": "云南石林 · 乃古片区",
+      "decision": "point",
+      "featureIds": [],
+      "changed": true,
+      "reason": "UNESCO 组成地参考坐标；无范围一致的地貌数据，明确保留点位，不推测面积。"
+    },
+    {
+      "cardId": "wulong-karst",
+      "name": "武隆喀斯特 · 天生三桥",
+      "decision": "point",
+      "featureIds": [],
+      "changed": true,
+      "reason": "UNESCO 组成地参考坐标；无范围一致的地貌数据，明确保留点位，不推测面积。"
+    },
+    {
+      "cardId": "danxiashan",
+      "name": "丹霞山",
+      "decision": "point",
+      "featureIds": [],
+      "changed": true,
+      "reason": "UNESCO 组成地参考坐标；无范围一致的地貌数据，明确保留点位，不推测面积。"
+    },
+    {
+      "cardId": "langshan-danxia",
+      "name": "崀山丹霞",
+      "decision": "point",
+      "featureIds": [],
+      "changed": true,
+      "reason": "UNESCO 组成地参考坐标；无范围一致的地貌数据，明确保留点位，不推测面积。"
     }
   ],
   "rejectedCandidates": [
@@ -1978,5 +2018,19 @@
       "featureId": "region-1730072209",
       "reason": "自然地理标注区域不等于红树林覆盖，不作为植被范围。"
     }
-  ]
+  ],
+  "readingAddition": {
+    "reviewedAt": "2026-11-06",
+    "placeIds": [
+      "guilin-karst",
+      "shilin-karst",
+      "wulong-karst",
+      "danxiashan",
+      "langshan-danxia"
+    ],
+    "coordinateSources": [
+      "https://whc.unesco.org/en/list/1248/maps/",
+      "https://whc.unesco.org/en/list/1335/maps/"
+    ]
+  }
 }

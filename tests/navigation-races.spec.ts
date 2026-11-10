@@ -58,12 +58,13 @@ for(const destination of ['theme','selection','library'] as const){
     const pending=await delayedFavorite(page)
     try{
       if(destination==='theme'){
-        await chooseTheme(page,'中国四大高原')
+        await chooseTheme(page,'中国地形格局')
         // Labels appear before the region geometry; wait for its real fit before recording the camera.
         await sourceLoaded(page,'regions')
         await page.waitForFunction(()=>{
-          const source=window.__terraAtlas!.map.getSource('relation-labels').serialize() as {data?:{features?:unknown[]}}
-          return source.data?.features?.length===4
+          const map=window.__terraAtlas!.map
+          const source=map.getSource('relations').serialize() as {data?:{features?:{properties:{id:string}}[]}}
+          return map.isSourceLoaded('relations')&&source.data?.features?.some(feature=>feature.properties.id==='region-1159104091')
         })
       }else if(destination==='selection'){
         await page.getByRole('combobox',{name:'搜索地理对象',exact:true}).fill('Alps')
@@ -71,14 +72,14 @@ for(const destination of ['theme','selection','library'] as const){
         await expect(page.locator('.knowledge-panel h2')).toHaveText('阿尔卑斯山脉')
         await selectedGeometry(page)
       }else{
-        await page.locator('.panel-tabs').getByRole('button',{name:'主题',exact:true}).click()
+        await page.locator('.panel-tabs').getByRole('button',{name:'主题地图',exact:true}).click()
         await expect(page.locator('.topic-library')).toBeVisible()
       }
       const before=await camera(page)
       await pending.settle()
       if(destination==='theme'){
-        await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-plateaus')
-        await expect(page.locator('.topic-reader h1')).toHaveText('中国四大高原')
+        await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
+        await expect(page.locator('.topic-reader h1')).toHaveText('中国地形格局')
         await expect(page.locator('.knowledge-panel h2')).toHaveCount(0)
       }else if(destination==='selection'){
         await expect(page.locator('.knowledge-panel h2')).toHaveText('阿尔卑斯山脉')
@@ -113,13 +114,13 @@ test('navigation race: an uncancelled lazy favorite still opens and locates its 
 for(const previous of ['collapsed reader','comparison'] as const){
   test(`navigation hash: a same-document link restores the reader after ${previous}`,async({page,isMobile},testInfo)=>{
     await page.goto('/');await baseReady(page)
-    await chooseTheme(page,'中国四大高原')
-    await page.locator('.topic-members>button').filter({has:page.getByText('黄土高原',{exact:true})}).click()
+    await chooseTheme(page,'中国地形格局')
+    await page.getByRole('region',{name:'黄土高原',exact:true}).getByRole('button',{name:/黄土高原/}).click()
     await expect(page.locator('.knowledge-panel h2')).toHaveText('黄土高原');await selectedGeometry(page)
     if(isMobile){
       await page.getByRole('button',{name:'调整阅读面板大小',exact:true}).press('End')
       // The reader hides the library toolbar; dismiss through its visible library entry.
-      await page.getByRole('button',{name:'主题库',exact:true}).click()
+      await page.getByRole('button',{name:'返回主题列表',exact:true}).click()
       await page.getByRole('button',{name:'关闭探索面板',exact:true}).click()
     }else await page.getByRole('button',{name:'收起探索面板',exact:true}).click()
     await expect(page.locator('.explorer')).not.toBeVisible()
@@ -127,11 +128,11 @@ for(const previous of ['collapsed reader','comparison'] as const){
       await clickHeaderAction(page,'打开两地对比')
       await expect(page.locator('.compare-panel')).toBeVisible()
     }
-    const response=await page.goto('/#'+new URLSearchParams({topic:'china-basins',place:'sichuan-basin',lng:'104',lat:'30.5',z:'4.2',view:'china',layers:'terrain,mountains,rivers,lakes,borders'}))
+    const response=await page.goto('/#'+new URLSearchParams({topic:'china-terrain',place:'sichuan-basin',lng:'104',lat:'30.5',z:'4.2',view:'china',layers:'terrain,mountains,rivers,lakes,borders'}))
     expect(response,'this must exercise hashchange without reloading React').toBeNull()
     await expect(page.locator('.compare-panel')).toHaveCount(0)
     await expect(page.locator('.explorer')).toBeVisible()
-    await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-basins')
+    await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
     await expect(page.locator('.knowledge-panel h2')).toHaveText('四川盆地')
     await expect(page.locator('.knowledge-panel h2')).toBeVisible()
     if(isMobile)await expect(page.locator('.explorer')).toHaveClass(/sheet-half/)

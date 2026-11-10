@@ -1,0 +1,328 @@
+{
+  "id": "energy-industry",
+  "title": "能源、矿产与产业",
+  "introduction": "矿产积存在特定地层中，风、阳光和河水则不断提供能量。它们怎样成为可用的原料与电力，还取决于开采、转换、输送和调节。沿着这条过程看下去，资源地、工厂、港口与消费地便联系起来，也能解释为什么资源丰富与工业发达并不总是发生在同一个地方。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "china-energy-resources",
+      "title": "中国能源与矿产",
+      "sectionId": "part-china-energy-resources",
+      "description": "中国的能源与矿产散布在不同环境中：沁水盆地有煤与煤层气，河西走廊利用风和阳光，长江上的三峡工程利用水能，柴达木盆地的盐湖则富集了多种矿物。它们的形成与利用，需要分别从地下、天空和水中寻找线索。",
+      "keywords": [
+        "煤炭",
+        "煤层气",
+        "风电",
+        "光伏",
+        "电网",
+        "水电",
+        "调度",
+        "盐湖",
+        "矿产",
+        "高原盆地",
+        "内流盐湖"
+      ]
+    },
+    {
+      "id": "world-energy-industry",
+      "title": "世界能源、矿产与产业",
+      "sectionId": "part-world-energy-industry",
+      "description": "沿着能源和原料的去向，世界产业的联系逐渐显现。波斯湾的油气、阿塔卡马的铜矿、北海的海上能源，各有开发条件；鲁尔的工厂与鹿特丹的港口，则说明加工和运输如何在资源之外形成自己的集聚。",
+      "keywords": [
+        "能源",
+        "运输链",
+        "矿产",
+        "产业链",
+        "产业转型",
+        "工业区位",
+        "遗产",
+        "港口",
+        "多式联运"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-china-energy-resources",
+      "title": "中国能源与矿产",
+      "paragraphs": [
+        "中国的能源与矿产散布在不同环境中：沁水盆地有煤与煤层气，河西走廊利用风和阳光，长江上的三峡工程利用水能，柴达木盆地的盐湖则富集了多种矿物。它们的形成与利用，需要分别从地下、天空和水中寻找线索。"
+      ],
+      "partId": "china-energy-resources"
+    },
+    {
+      "id": "china-energy-resources-section-1",
+      "title": "资源怎样变成供应",
+      "paragraphs": [
+        "煤层与盐湖矿产记录了漫长的地质和沉积过程；风、阳光与水能则依赖气象、河流水量和地势落差。不同来源决定了它们怎样获取，也决定了供给会怎样随时间变化。",
+        "资源存在以后，还要经过设备和设施才能被利用。埋藏条件影响采矿，电站需要把自然能量转成电力，铁路、港口和电网再把产出送到别处。技术、成本、用地与环境条件共同决定，一处资源能形成怎样的供应。"
+      ],
+      "partId": "china-energy-resources"
+    },
+    {
+      "id": "china-energy-resources-section-2",
+      "title": "煤、风光和水能怎样比较",
+      "paragraphs": [
+        "比较沁水煤炭、河西风光与三峡水电，可以先看供给依靠什么，再看它随时间怎样变化。煤需要开采和运输，风光发电随风速与日照改变，水电则受来水与调度影响。生产节奏与用电需求并不总能自然吻合。",
+        "这些差别也决定了比较指标。装机容量说明发电设备的规模，发电量说明一段时间实际产出的电；可调度能力则关注需要改变供电时能够调整多少。设备同样大，运行时间和出力不同，年发电量也会不同。"
+      ],
+      "partId": "china-energy-resources",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "用同一组问题比较供给",
+          "columns": [
+            "对象",
+            "取得供应的条件",
+            "时间上的约束"
+          ],
+          "rows": [
+            [
+              "煤炭",
+              "煤层、开采与运输",
+              "开采和供应安排"
+            ],
+            [
+              "风光发电",
+              "风、日照、设备与电网",
+              "天气与昼夜带来的出力变化"
+            ],
+            [
+              "水电",
+              "流量、落差与工程",
+              "来水丰枯及水库调度"
+            ]
+          ],
+          "note": "定性比较供应方式，不把矿产储量、装机容量与实际发电量排成同一个榜单。"
+        }
+      ]
+    },
+    {
+      "id": "china-energy-resources-section-3",
+      "title": "资源地与消费地如何连接",
+      "paragraphs": [
+        "煤炭和矿石经铁路、道路与港口运输，电力沿电网送往各地。资源地与人口、工业集中的地区常常相距很远，输送网络因此也是能源分布不可缺少的一部分。",
+        "风光出力有起伏，水库来水有丰枯。供需之间的衔接，需要调度、储能和多种电源配合；一处电站能够提供多少电，既与当地条件有关，也与它接入的系统有关。"
+      ],
+      "partId": "china-energy-resources",
+      "mediaIds": [
+        "diagram-energy"
+      ]
+    },
+    {
+      "id": "china-energy-resources-section-4",
+      "title": "开发需要看到当地水土环境",
+      "paragraphs": [
+        "开发资源也会改变资源地。矿山占用土地，能源工程影响水系统，盐湖开采涉及卤水、淡水与盐分的平衡。影响的程度取决于项目规模、工艺和治理方式。",
+        "尤其在干旱盆地，水既参与矿物富集，也是生产和生态系统共同需要的资源。讨论开发条件时，水从哪里来、使用后流向哪里，与矿物储量同样值得关注。"
+      ],
+      "partId": "china-energy-resources"
+    },
+    {
+      "id": "china-energy-resources-module-fossil",
+      "title": "地下能源：煤炭与煤层气",
+      "paragraphs": [
+        "沁水盆地的煤源于古代有机物的沉积、埋藏和煤化，煤层气则主要储存在煤层之中。今天地面植被的多少，并不能说明地下煤炭是否丰富。",
+        "煤层厚度、埋深和构造影响开采，煤层气的赋存与渗透条件影响抽采。工程还要处理安全与环境问题。资源储量描述地下积存的规模，年度开采量描述某一时期的生产，两者不能互换。"
+      ],
+      "caseIds": [
+        "qinshui-coal"
+      ],
+      "partId": "china-energy-resources"
+    },
+    {
+      "id": "china-energy-resources-module-renewables",
+      "title": "可再生发电：风光与水能",
+      "paragraphs": [
+        "河西走廊的风和太阳辐射提供了发电条件，开阔地形有利于部分设施布局。但资源与用电负荷的分布并不一致：酒泉到湖南的输电联系，便把西北的发电地与远方的消费地区接在一起。",
+        "三峡工程利用水位差驱动水轮机，水库和泄水设施调节下泄流量，船闸帮助船舶跨越水位差。河水提供流量，地势提供落差，两者共同构成水能条件。",
+        "丰水季与枯水季的来水不同，机组运行还要服从调度。工程规模再大，也不意味着随时满负荷发电；航运、发电与水库调节，需要放在同一个工程中理解。"
+      ],
+      "caseIds": [
+        "hexi-renewables",
+        "three-gorges-project"
+      ],
+      "partId": "china-energy-resources"
+    },
+    {
+      "id": "china-energy-resources-module-minerals",
+      "title": "盐湖：水带来物质，蒸发留下盐",
+      "paragraphs": [
+        "察尔汗盐湖位于柴达木盆地。周围地区的物质输入、卤水迁移和蒸发浓缩共同参与成盐成矿：水能够携带溶解物进入盆内，蒸发带走水分，使部分盐类留下并富集。",
+        "盆地由山麓粗粒沉积过渡到细粒平原、湖盆与盐土低地，提供了物质迁移和积累的空间。盐湖内部也有差异，有关察尔汗的研究将不同湖段的锂成矿与卤水输入、混合联系起来。开发需要知道矿物在哪里，也要理解卤水、淡水与盐分的联系。"
+      ],
+      "caseIds": [
+        "qarhan-resources",
+        "qaidam-basin"
+      ],
+      "partId": "china-energy-resources"
+    },
+    {
+      "id": "part-world-energy-industry",
+      "title": "世界能源、矿产与产业",
+      "paragraphs": [
+        "沿着能源和原料的去向，世界产业的联系逐渐显现。波斯湾的油气、阿塔卡马的铜矿、北海的海上能源，各有开发条件；鲁尔的工厂与鹿特丹的港口，则说明加工和运输如何在资源之外形成自己的集聚。"
+      ],
+      "partId": "world-energy-industry"
+    },
+    {
+      "id": "world-energy-industry-section-1",
+      "title": "矿产和工业有不同的空间逻辑",
+      "paragraphs": [
+        "矿产在哪里，主要取决于地质条件；工厂建在哪里，还要考虑能源、劳动力、市场、技术和运输。原料产地与加工中心可以靠近，也可以由贸易跨越很远的距离相连。",
+        "因此，拥有矿产并不必然形成工业中心。资源必须经过开发、加工和运输才成为产品，而港口、交通与技术积累也能支持原料并不丰富的地区发展产业。"
+      ],
+      "partId": "world-energy-industry"
+    },
+    {
+      "id": "world-energy-industry-section-2",
+      "title": "开采条件与资源数量分开看",
+      "paragraphs": [
+        "陆上、海上和干旱地区的开采，面对不同的工程与环境条件。水、能源和交通能否到位，会改变开发成本；地下存在资源，也不意味着它已经具备开采条件。",
+        "储量、产量和出口量分别描述资源积存、一定时期的生产与对外贸易。比较不同地区时，年份、单位和统计范围必须相合，产量高的地方也未必是消费最多的地方。"
+      ],
+      "partId": "world-energy-industry"
+    },
+    {
+      "id": "world-energy-industry-section-3",
+      "title": "工业地区为何会转型",
+      "paragraphs": [
+        "工业地区会随技术、市场和环境要求变化而调整。鲁尔曾依托煤炭和运输形成工业集聚，后来部分设施关闭或改作其他用途，已有的城市与产业联系也随之改变。",
+        "转型并非把旧产业的地名换成新产业。劳动力技能、研究能力、港口服务与交通网络，都可能参与新的生产；有些旧设施能够沿用，有些则需要重新建设。"
+      ],
+      "partId": "world-energy-industry"
+    },
+    {
+      "id": "world-energy-industry-section-4",
+      "title": "用物流把地点连成过程",
+      "paragraphs": [
+        "从矿体到原料，从原料到产品，货物可能经过多次加工、储存与转运。每一次转运都依赖具体设施，也让产地、加工区和消费市场形成跨地区的联系。",
+        "能源价格或运输条件改变，生产链的安排也可能调整。有时加工靠近资源，有时靠近市场或港口；地图上相距很远的两个地点，可能因此有着密切的生产往来。"
+      ],
+      "partId": "world-energy-industry"
+    },
+    {
+      "id": "world-energy-industry-module-resources",
+      "title": "资源与开发",
+      "paragraphs": [
+        "波斯湾的油气产业既依赖地下赋存，也依赖开发技术、设施和市场。液化天然气从开采到处理、液化、运输，再到最终使用，往往经过不同地区；湾岸港口与海峡把产地接入远方市场。",
+        "阿塔卡马的铜矿则呈现另一种过程：先勘探矿体，再开采和选矿，提高目标矿物的集中程度。NASA的历史影像记录了露天矿、尾矿设施，以及精矿浆向海岸港口输送的联系。",
+        "露天开采要移动大量并非最终产品的岩石，选矿还会产生尾矿。矿坑、处理区与尾矿区共同构成矿业用地，矿坑面积本身不能直接说明金属产量。"
+      ],
+      "caseIds": [
+        "persian-gulf-energy",
+        "atacama-copper"
+      ],
+      "partId": "world-energy-industry"
+    },
+    {
+      "id": "world-energy-industry-module-transition",
+      "title": "北海与鲁尔：资源之外的产业积累",
+      "paragraphs": [
+        "北海的海上油气与海上风电，使用同一片海域中的不同资源。油气开发寻找地下储层并建设生产井，风电获取不断变化的风并接入电网。设备与工程要求不同，港口服务和海上作业经验却可能形成衔接。",
+        "鲁尔的转型发生在陆地。煤炭、河运、铁路、劳动力与市场共同支持过工业集聚；部分设施关闭或重新利用后，原有交通、技能和城市服务仍可能参与新的生产。与北海对照，能够看到产业变化既涉及资源，也涉及长期积累的人和设施。"
+      ],
+      "caseIds": [
+        "north-sea-energy",
+        "ruhr-industry"
+      ],
+      "partId": "world-energy-industry"
+    },
+    {
+      "id": "world-energy-industry-module-networks",
+      "title": "鹿特丹与鲁尔：运输把产业接起来",
+      "paragraphs": [
+        "鹿特丹的河口位置提供海陆转换条件，长期建设使港口与内河、铁路、公路接续。莱茵河沿线和鲁尔的生产活动，由此与远方资源地及消费市场相连。",
+        "这样的联系说明，工业地区的原料可以来自远处，港口的服务范围也不由距离单独决定。实际货源、市场、运输方式与转运效率，共同决定哪些地区通过这座港口发生往来。"
+      ],
+      "caseIds": [
+        "rotterdam-port"
+      ],
+      "partId": "world-energy-industry",
+      "mediaIds": [
+        "port-photo"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "风光资源丰富，为什么还需要电网和调节能力？",
+      "answer": "发电随天气与时间变化，需求也在变化，需要输送与调节把供给和使用时刻接起来。"
+    },
+    {
+      "question": "工业为什么不总是建在原料产地旁边？",
+      "answer": "市场、能源、劳动力、技术和运输条件共同影响选址，有时靠近港口或消费地更合适。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "国家能源局 · 煤层气开发利用规划地质条件",
+      "url": "https://www.nea.gov.cn/2006-06/28/c_131215308.htm"
+    },
+    {
+      "title": "国家发展改革委 · 全国矿产资源规划",
+      "url": "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html"
+    },
+    {
+      "title": "中国科学院青海盐湖研究所 · 柴达木盆地盐湖锂矿床成因研究",
+      "url": "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html"
+    },
+    {
+      "title": "国家能源局 · 河西新能源与酒泉湖南输电联系",
+      "url": "https://zfxxgk.nea.gov.cn/2020-09/10/c_139420038.htm"
+    },
+    {
+      "title": "中国长江三峡集团 · 三峡工程综合功能",
+      "url": "https://www.ctg.com.cn/sxjt/sxgc4/bwsx/2024081104052483367/index.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 柴达木盆地",
+      "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html"
+    },
+    {
+      "title": "中国政府网资料 · 中国地形的分布（高原、平原与盆地）",
+      "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+    },
+    {
+      "title": "国家能源局 · 酒泉风光资源与新能源消纳",
+      "url": "https://zfxxgk.nea.gov.cn/auto87/201812/t20181211_3448.htm"
+    },
+    {
+      "title": "青海省人民政府 · 十四五规划资源利用与生态保护",
+      "url": "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+    },
+    {
+      "title": "EIA · About one-fifth of global LNG trade flows through the Strait of Hormuz",
+      "url": "https://www.eia.gov/todayinenergy/detail.php?id=65584"
+    },
+    {
+      "title": "NASA Earth Observatory · Escondida Copper Mine, Atacama Desert, Chile",
+      "url": "https://science.nasa.gov/earth/earth-observatory/escondida-copper-mine-atacama-desert-chile-43394/"
+    },
+    {
+      "title": "IEA · Offshore Energy Outlook 2018",
+      "url": "https://www.iea.org/reports/offshore-energy-outlook-2018"
+    },
+    {
+      "title": "Port of Rotterdam Authority · Connections",
+      "url": "https://www.portofrotterdam.com/en/logistics/connections"
+    },
+    {
+      "title": "NASA Astrobiology · The Driest Place on Earth",
+      "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
+    },
+    {
+      "title": "UNESCO · Zollverein Coal Mine Industrial Complex in Essen",
+      "url": "https://whc.unesco.org/en/list/975/"
+    },
+    {
+      "title": "莱茵河保护委员会 · 流域管理计划 2022–2027",
+      "url": "https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf"
+    },
+    {
+      "title": "Port of Rotterdam Authority · Inland shipping",
+      "url": "https://www.portofrotterdam.com/en/logistics/connections/intermodal-transportation/inland-shipping"
+    }
+  ],
+  "presentation": "essay"
+}

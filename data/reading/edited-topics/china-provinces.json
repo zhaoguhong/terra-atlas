@@ -1,0 +1,393 @@
+{
+  "id": "china-provinces",
+  "title": "中国34个省级行政区",
+  "introduction": "中国的34个省级行政区，为认识地点、使用统计和组织公共事务提供了共同参照。其中有23个省、5个自治区、4个直辖市和2个特别行政区。把这些名称放回地图，还会看见另一层关系：山川穿过省界，同一省内也可能同时有高原、盆地和城市。省区的位置与自然环境，需要相互参照着认识。",
+  "updatedAt": "2026-11-10",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "省区与山川，是两套相交的范围",
+      "paragraphs": [
+        "省级行政区确定管理与统计的范围，自然地理则按地形、水系、气候等条件认识土地。两套范围相互交叠：一座山可以延伸到邻省，一条河可以流过多个省区，一省之内也可能跨越高原与平原。",
+        "所以，认识省区不只是记住轮廓。知道它与谁相邻、山地在哪里、河水流向哪里，名称才与具体环境联系起来。行政边界通常不会让温度、降水或地貌在同一条线上突然改变。"
+      ],
+      "visuals": [
+        {
+          "kind": "bars",
+          "title": "34个省级行政区的构成",
+          "unit": "个",
+          "rows": [
+            {
+              "label": "省",
+              "value": 23
+            },
+            {
+              "label": "自治区",
+              "value": 5
+            },
+            {
+              "label": "直辖市",
+              "value": 4
+            },
+            {
+              "label": "特别行政区",
+              "value": 2
+            }
+          ],
+          "note": "按中国政府网名录计数，表示行政类别。",
+          "sources": [
+            {
+              "title": "中国政府网资料 · 中华人民共和国行政区划",
+              "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "沿山川建立省区的位置关系",
+      "paragraphs": [
+        "沿长江由上游走向河口，沿海岸由北向南，或从东部平原向西部高原，相邻省区便能连成几条有方向的线索。河流、海岸与地势提供参照，省会和首府则是这些区域中的城市节点。",
+        "城市节点方便定位，却不能代表全省环境。成都附近与川西高山、河北东南平原与西北坝上，都处在不同条件中。省级平均值可以比较总体情况，理解当地农业、聚落与交通时，还要继续走近这些内部差异。"
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "跨省联系怎样影响地方",
+      "paragraphs": [
+        "河流跨越省界，交通连接城市，粮食与能源从产地运往其他地区。一省的用水、生产与消费，常常与它的邻省，甚至相距很远的地方发生联系。",
+        "长江把上游来水、中游河湖和下游河口接在一起；海港则经铁路、公路和内河联系腹地。顺着水流与货流，能够看见行政区之间具体的相互依存。"
+      ],
+      "mediaIds": [
+        "diagram-region-method"
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "怎样比较一个省与另一个省",
+      "paragraphs": [
+        "比较省区，首先要确认讨论的是同一层次：全省与全省、城市行政辖区与行政辖区，或建成区与建成区。名称相同，面积和人口数字所指的范围也可能不同，资料年份同样需要对应。",
+        "下面按相邻位置串联省区，重点看地形、水系和交通如何跨界延续。这种分组帮助建立位置关系，与北方、南方、西北、青藏四大自然地理区的划分目的不同。"
+      ],
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "比较之前，先对齐范围",
+          "columns": [
+            "讨论对象",
+            "适合回答的问题",
+            "需要核对"
+          ],
+          "rows": [
+            [
+              "省级行政区",
+              "总体位置、人口和经济情况",
+              "区划口径与统计年份"
+            ],
+            [
+              "中心城区或建成区",
+              "连续城市空间与土地利用",
+              "城区边界与测绘时期"
+            ],
+            [
+              "流域或地形区",
+              "水的去向与自然条件",
+              "汇水关系或地形定义"
+            ]
+          ],
+          "note": "同名资料也可能采用不同范围，数值不能直接混用。"
+        }
+      ]
+    },
+    {
+      "id": "module-north-northeast",
+      "title": "华北与东北：山前、平原和海岸",
+      "paragraphs": [
+        "华北向西衔接高原与盆地，东北则由山地环抱的平原通向海岸。北京西北多山、东南面向平原，天津位于海河下游与渤海之滨，河北把坝上高原、太行山和燕山与东南平原连接起来。三地相邻，水从山地汇向低地，交通则把内陆接向港口。北京、天津的行政范围都超出中心城区，内部也有山地和其他非城市土地。",
+        "山西的山地、黄土丘陵与串列盆地，展示另一种高低组合。构造抬升、断陷与黄土堆积留下不同地表，河谷和盆地为农田、城市与道路提供较平缓的空间。向北进入内蒙古，东西跨度与水汽差异使森林、草原、荒漠和部分平原共存；自治区范围包括内蒙古高原之外的地区，也包括东北平原的一部分。",
+        "东北三省可以沿山地—平原—海岸比较。辽宁东西两侧多山丘，中部平原向南接近海岸，成为内陆与港口之间的通道；吉林东部山地向西过渡为平原和台地，水分条件也随之变化；黑龙江既有三江、松嫩平原，也有广阔山地和台地。寒冷季节影响农业安排，但三省的耕地、水源与土壤并不完全相同，黑土也不是每一块平原土地共有的性质。"
+      ],
+      "caseIds": [
+        "beijing",
+        "tianjin",
+        "hebei",
+        "shanxi",
+        "inner-mongolia",
+        "liaoning",
+        "jilin",
+        "heilongjiang"
+      ]
+    },
+    {
+      "id": "module-east",
+      "title": "华东：低平水网与山地海岸",
+      "paragraphs": [
+        "上海和江苏适合连在一起认识低平地区的水。长江经过江苏通向上海河口，大运河与太湖、洪泽湖等水域又构成各自的联系。平坦土地便于农田、城镇与交通展开，较小的排水坡降也使供水、防洪和水环境管理紧密相关。上海河口同时承接上游水沙与海侧潮汐、海浪及盐水，城市工程继续改变部分岸线。",
+        "沿海向南，浙江与福建的山地比重更为醒目。浙江由西南山地过渡到东北杭嘉湖平原，山间盆地、舟山群岛与沿海港湾穿插其间；福建内陆山地丘陵广布，平地多散布在河谷和海岸，闽江等河流联系山间盆地与沿海城市。两省的港航联系都要向内陆延伸，耕地和交通则需要适应不同起伏。",
+        "安徽和江西可以沿河湖继续比较。安徽的淮北平原、江淮丘陵、沿江平原、大别山与皖南山地交替，长江、淮河两大流域带来不同汇排水条件；江西总体南高北低，赣江等河流由周边山地汇向鄱阳湖，再经湖口联系长江。行政范围不同，水却沿自身的路径连接上游土地、农田与湖泊。",
+        "山东的中部山地、东部半岛丘陵与西部冲积平原，进一步说明沿海省份内部也有显著差异。黄河向北部海岸输送泥沙，丘陵坡地、平原灌区、河口湿地与海港各有条件，不能只用一种沿海景观概括。"
+      ],
+      "caseIds": [
+        "shanghai",
+        "jiangsu",
+        "zhejiang",
+        "anhui",
+        "fujian",
+        "jiangxi",
+        "shandong"
+      ]
+    },
+    {
+      "id": "module-central-south",
+      "title": "中南：几条大河之间的联系",
+      "paragraphs": [
+        "河南、湖北与湖南的位置，可以放在黄河、淮河和长江水系中认识。河南西高东低，山地物质经河流搬向中东部平原，南阳盆地与黄淮平原却有不同的汇水方向；湖北由西部高山峡谷过渡到江汉平原和湖泊；湖南的湘、资、沅、澧等河流，则从周缘山地汇向北部洞庭湖，再与长江联系。三省平原都便于耕作，来水、排水与洪水过程却各有背景。",
+        "再向南，广东和广西由珠江水系联系。广东的北部山地、东西沿海与珠江三角洲各有地形和产业条件；广西的峰林、峰丛、山间盆地与地下水系，则突出碳酸盐岩长期溶蚀的影响。西江把内陆与珠江三角洲相连，北部湾又提供海上出口。岩溶地区即使雨水较多，水也可能迅速转入地下，地表取水与薄土保护因此需要特别考虑。",
+        "海南把视野转向热量丰富的岛屿。山地、河流和海岸共同组成景观，海拔、坡向与降雨季节仍使岛内水热条件不同。多年气候的A组分类概括全年温暖的背景，不能代替每天的天气，也不能直接说明某地今天的植被覆盖。"
+      ],
+      "caseIds": [
+        "henan",
+        "hubei",
+        "hunan",
+        "guangdong",
+        "guangxi",
+        "hainan-province"
+      ]
+    },
+    {
+      "id": "module-southwest",
+      "title": "西南：同一省内，也能跨越多种环境",
+      "paragraphs": [
+        "西南省区横跨盆地、高原与深切山谷，省内差异常常很大。重庆的褶皱山岭与河流切割形成多组岭谷，聚落与交通利用河谷、台地，桥梁和隧道再把不同地形连接起来；四川则同时包含盆地、青藏高原边缘与横断山地。从成都附近向西，海拔抬高，水热、植被和聚落条件都随之改变。",
+        "贵州和云南都多高地，却不宜用同一种景观概括。贵州广布碳酸盐岩，溶蚀与河流切割形成峰丛、洼地和深谷，耕地较零碎，土层流失后岩石容易裸露。云南的构造与流水切割形成高山深谷，部分地区也有岩溶；水汽通道与海拔共同造成复杂气候，坝子和宽谷为农业、聚落与交通提供相对平缓空间。",
+        "西藏内部同样有藏北高原、藏南谷地、藏东高山峡谷与喜马拉雅山地。大陆碰撞建立高地，河流、冰川和冻融继续改造地表。较低谷地、高寒草地与东南较湿润河谷，提供不同的耕作、牧业和聚居条件，不能由一个高原平均值代替。"
+      ],
+      "caseIds": [
+        "chongqing",
+        "sichuan",
+        "guizhou",
+        "yunnan",
+        "xizang"
+      ]
+    },
+    {
+      "id": "module-northwest",
+      "title": "西北：沿高山、走廊与河流认识省区",
+      "paragraphs": [
+        "陕西由陕北黄土沟壑、关中平原与陕南山地河谷组成，甘肃则把祁连山地、河西走廊、黄土高原与陇南山地接在狭长省域中。两省都有黄土地貌，也有更湿润的山谷。河西绿洲依靠山地来水，甘肃省内还涉及内陆河、黄河与长江水系，说明同一省域可以联系不同水的出口。",
+        "青海与宁夏展示了另外两种水源背景。青海包含长江、黄河、澜沧江源区，也包含柴达木封闭盆地与盐湖，青海湖并不在黄河干流上；宁夏北部依靠黄河水发展灌溉农业，中部干旱带和南部较湿冷山地则有不同条件。水源改变局部土地利用，却没有让整个自治区变成同一种环境。",
+        "新疆以山地与盆地相间的“三山两盆”为主要框架，山地隆升与盆地下沉建立高差，河流出山后堆积冲积扇并供水给绿洲。帕米尔、阿尔金山及其他山间盆地，又使实际地形比这一概括更丰富。各盆地冬季温度、降水和水资源不同，需要分别看待。"
+      ],
+      "caseIds": [
+        "shaanxi",
+        "gansu",
+        "qinghai",
+        "ningxia",
+        "xinjiang"
+      ]
+    },
+    {
+      "id": "module-islands-sars",
+      "title": "台湾与港澳：岛屿、山地和城市空间",
+      "paragraphs": [
+        "台湾与港澳共同面向海洋，却有不同的地形来历与城市范围。台湾主岛的山地与板块碰撞、断层和侵蚀有关，澎湖玄武岩则记录古火山活动，同一组岛屿并不经历同一种形成过程。使用资料时还要区分“台湾省”与“台湾地区”的范围：原参考资料对二者分别说明，后者还涉及福建省的金门、马祖等岛屿。",
+        "香港的山地、港湾与澳门的半岛、岛屿，提供两种城市与海岸的组合。香港的岩石和长期侵蚀塑造起伏，湿润气流沿山坡抬升，使山地与低地有不同雨量；澳门的填海土地与跨海交通，则显著改变了原有水陆联系。两地的港口、填海和交通建设都在继续影响岸线，比较旧图与新统计时，需要核对时期。"
+      ],
+      "caseIds": [
+        "taiwan-province",
+        "hong-kong",
+        "macao"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "沿省界比较气候时，为什么常看不到突然变化？",
+      "answer": "行政边界并非依据所有气候条件划定，温度和降水通常连续变化，地形与环流更直接影响分布。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "中国政府网资料 · 中华人民共和国行政区划",
+      "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+    },
+    {
+      "title": "中国政府网 · 台湾基本情况（地理范围口径）",
+      "url": "https://www.gov.cn/guoqing/2020-07/28/content_5530577.htm"
+    },
+    {
+      "title": "北京市人民政府 · 北京概况与地理自然",
+      "url": "https://www.beijing.gov.cn/renwen/bjgk/"
+    },
+    {
+      "title": "天津市人民政府 · 海洋主体功能区规划自然条件",
+      "url": "https://www.tj.gov.cn/zwgk/szfwj/tjsrmzf/202005/t20200519_2365827.html"
+    },
+    {
+      "title": "河北省文化和旅游厅 · 河北自然地理解读",
+      "url": "https://whly.hebei.gov.cn/c/2019-05-09/557248.html"
+    },
+    {
+      "title": "山西省自然资源厅 · 自然资源统一确权登记总体工作方案",
+      "url": "https://zrzyt.shanxi.gov.cn/zwgk/zwgkjbml/zcfg/gfzhl/202109/t20210903_1845788.shtml"
+    },
+    {
+      "title": "内蒙古自治区人民政府 · 自然地理",
+      "url": "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/"
+    },
+    {
+      "title": "辽宁省人民政府 · 主体功能区规划自然条件",
+      "url": "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml"
+    },
+    {
+      "title": "吉林省人民政府 · 地理地貌",
+      "url": "https://www.jl.gov.cn/shengqing/jlgk/dldm/"
+    },
+    {
+      "title": "黑龙江省人民政府 · 地形地貌",
+      "url": "https://www.hlj.gov.cn/hlj/c108480/list_left_tt.shtml"
+    },
+    {
+      "title": "上海市人民政府 · Geography（2024年末面积）",
+      "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+    },
+    {
+      "title": "江苏省人民政府 · Overview of Jiangsu",
+      "url": "https://en.jiangsu.gov.cn/col/col88905/index.html"
+    },
+    {
+      "title": "浙江省人民政府新闻办公室 · Geography",
+      "url": "https://www.ezhejiang.gov.cn/2019-08/02/c_420288.htm"
+    },
+    {
+      "title": "安徽省人民政府 · 安徽省国土空间规划自然禀赋",
+      "url": "https://www.ahhuoshan.gov.cn/group3/M00/68/E4/wKgSG2Yg2gOAT2avAGMA_l-tT1w196.pdf"
+    },
+    {
+      "title": "福建省人民政府 · 主体功能区规划",
+      "url": "https://zfgb.fujian.gov.cn/3456"
+    },
+    {
+      "title": "江西省自然资源厅 · 十四五国土空间生态修复规划",
+      "url": "https://www.dingnan.gov.cn/dnxxxgk/gmjjhshfzgh/202203/ab6ad65d2e0a45ce80c01e42b999df2d.shtml"
+    },
+    {
+      "title": "山东省情资料库 · 自然地理",
+      "url": "https://shandong-chorography.org/database/f063/section/19/article/2/?reflow=original"
+    },
+    {
+      "title": "河南省涉台公共资料 · 地理概况",
+      "url": "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hngk/article491327f391ce412d8f70c2fb2e6eee0d.html"
+    },
+    {
+      "title": "湖北省自然资源厅 · 第一次地理国情普查地形地貌",
+      "url": "https://zrzyt.hubei.gov.cn/bmdt/ztzl/hbsdycqgdlgqpcgb/gbfb/201910/t20191031_209613.shtml"
+    },
+    {
+      "title": "湖南省民政厅 · 湖南行政区划概况（自然地理段）",
+      "url": "https://mzt.hunan.gov.cn/yw/qhdm/200812/t20081226_3722479.html"
+    },
+    {
+      "title": "广东省人民政府 · 主体功能区规划自然状况",
+      "url": "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html"
+    },
+    {
+      "title": "广西壮族自治区人民政府 · 国土空间规划（科协转载）",
+      "url": "https://www.kczg.org.cn/article/detail?id=6319786"
+    },
+    {
+      "title": "海南省林业局 · 热带生态系统与湿地",
+      "url": "https://lyj.hainan.gov.cn/xxgk/0100/0101/201202/t20120220_1388558.html"
+    },
+    {
+      "title": "重庆市人民政府 · 重庆概况地理",
+      "url": "https://wap.cq.gov.cn/zjcq/sqgk/cqsq/202412/t20241231_14378525.html"
+    },
+    {
+      "title": "四川省人民政府 · 国土空间生态修复规划",
+      "url": "https://www.sc.gov.cn/10462/10778/10876/2022/7/8/57f745e2c9f74c66a606f4c88cbe96db/files/484782a06c0144d39954782ac50d7696.pdf"
+    },
+    {
+      "title": "贵州省自然资源厅 · 2021年自然资源公报",
+      "url": "https://zrzy.guizhou.gov.cn/wzgb/zwgk/zdlyxxgk/tjsj/202301/P020230109380185262566.pdf"
+    },
+    {
+      "title": "云南宣传网 · 云南省基本情况（2024）",
+      "url": "https://www.ynxc.gov.cn/html/2024/yns_0418/11831.html"
+    },
+    {
+      "title": "西藏自治区人民政府 · 自然地理",
+      "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html"
+    },
+    {
+      "title": "陕西省人民政府 · 国土空间规划",
+      "url": "https://www.shaanxi.gov.cn/zfxxgk/fdzdgknr/ghxx/gtzygh/202406/P020240622343901996974.pdf"
+    },
+    {
+      "title": "甘肃省人民政府 · 国土空间规划",
+      "url": "https://www.lzxq.gov.cn/system/2024/07/26/031038275.shtml"
+    },
+    {
+      "title": "青海省人民政府 · 十四五规划自然区域与生态保护",
+      "url": "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+    },
+    {
+      "title": "宁夏回族自治区人民政府 · 自然资源保护和利用规划",
+      "url": "https://www.nx.gov.cn/zwgk/qzfwj/202109/t20210924_3045970_wap.html"
+    },
+    {
+      "title": "新疆交通运输厅 · 三山两盆与新疆地理",
+      "url": "https://jtyst.xinjiang.gov.cn/xjjtysj/zxdt/202407/a0284b35255f42b49c4531b0dbbd81d9.shtml"
+    },
+    {
+      "title": "中国科学院地理资源所 · 塔里木盆地",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html"
+    },
+    {
+      "title": "NASA · A Wall of Dust in the Tarim Basin",
+      "url": "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/"
+    },
+    {
+      "title": "中国科学院地球环境所 · 塔里木盆地的前生今世",
+      "url": "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html"
+    },
+    {
+      "title": "台湾行政院 · 土地（自然地形段）",
+      "url": "https://www.ey.gov.tw/state/4447F4A951A1EC45/094b1d53-de8d-4393-bde6-ab092969cce4"
+    },
+    {
+      "title": "香港天文台 · 地形雨与1981—2010降雨分布",
+      "url": "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html"
+    },
+    {
+      "title": "香港海事处 · Hong Kong Fact Sheet — the Port",
+      "url": "https://www.mardep.gov.hk/en/materials-and-publications/publications/hk-fact-sheet/index.html"
+    },
+    {
+      "title": "中国政府网 · 粤港澳大湾区发展规划纲要（2019）",
+      "url": "https://app.www.gov.cn/govdata/gov/201902/18/435204/article.html"
+    },
+    {
+      "title": "澳门旅游局 · 地理位置及时间",
+      "url": "https://www.macaotourism.gov.mo/zh-hant/article/about-macao/location-and-time"
+    },
+    {
+      "title": "中国科学院地理资源所 · 柴达木盆地",
+      "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html"
+    },
+    {
+      "title": "中国政府网资料 · 中国地形的分布（高原、平原与盆地）",
+      "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+    },
+    {
+      "title": "中国科学院地理资源所 · 青海湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 中国最大的咸水湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+    }
+  ],
+  "presentation": "essay"
+}

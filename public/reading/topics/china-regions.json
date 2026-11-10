@@ -1,0 +1,413 @@
+{
+  "id": "china-regions",
+  "title": "中国区域与南北差异",
+  "introduction": "中国不同地区的水热与地形，形成了农业、聚落和交通的不同条件。北方、南方、西北、青藏四大地理区，概括这种大范围差异：东部着重比较南北水热，西北突出干旱与山地来水，青藏突出高海拔的影响。先认识这些主要关系，再走近各区内部，就能理解总体规律怎样在具体地方发生变化。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "china-regions",
+      "title": "中国四大地理区",
+      "sectionId": "part-china-regions",
+      "description": "从东部平原向西北内陆和青藏高原，控制环境的条件逐渐改变。北方与南方的季节水热、西北低地对山地来水的依赖、青藏高海拔带来的寒冷，是认识四区的主要线索。它们共同影响土地怎样利用，也使不同地区通过河流、交通和生产保持联系。",
+      "keywords": [
+        "区域比较",
+        "农业用水",
+        "季节",
+        "南方差异",
+        "稻作",
+        "水环境",
+        "西北",
+        "绿洲",
+        "水量平衡",
+        "高寒",
+        "自然行政范围",
+        "亚洲水源"
+      ]
+    },
+    {
+      "id": "china-north-south",
+      "title": "跨过秦岭再比较",
+      "sectionId": "part-china-north-south",
+      "description": "秦岭—淮河一带，是认识中国东部南北差异的重要参照。温度、降雨季节和农业安排在这一带发生过渡，山地的高度与坡向又使同纬度的地点出现差别。跨过分界之后，南北各自内部仍值得继续比较。",
+      "keywords": [
+        "南北过渡",
+        "分水岭",
+        "区域比较",
+        "冲积平原",
+        "农业用水",
+        "旱涝",
+        "黑土保护",
+        "商品农业",
+        "山环水绕",
+        "高原盆地对照",
+        "省内差异",
+        "交通",
+        "省区比较",
+        "珠江",
+        "海陆联系",
+        "低纬高原",
+        "坝子",
+        "跨境河流"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-china-regions",
+      "title": "中国四大地理区",
+      "paragraphs": [
+        "从东部平原向西北内陆和青藏高原，控制环境的条件逐渐改变。北方与南方的季节水热、西北低地对山地来水的依赖、青藏高海拔带来的寒冷，是认识四区的主要线索。它们共同影响土地怎样利用，也使不同地区通过河流、交通和生产保持联系。"
+      ],
+      "partId": "china-regions"
+    },
+    {
+      "id": "china-regions-section-1",
+      "title": "为什么这样认识四个区域",
+      "paragraphs": [
+        "四大地理区综合位置、地形、水热与生产生活特点，用几个较大的范围概括中国环境。分区的作用，是让比较有共同对象：哪些差异来自热量，哪些更受水分限制，哪些又与海拔密切相关。",
+        "进入区内，山地、盆地、河谷和低地仍各有条件。自然特征通常逐渐过渡，各种变化也未必发生在同一位置，所以分区图上的界线适合概括区域，不能当作所有自然现象共同遵循的精确边界。"
+      ],
+      "partId": "china-regions"
+    },
+    {
+      "id": "china-regions-section-2",
+      "title": "先比较热量与水分",
+      "paragraphs": [
+        "北方与南方的差异，常体现在冬季温度、雨季和农时上；到了西北，山地来水与低地的干旱格外重要；进入青藏，高海拔则显著限制热量。这些条件，使各区发展出不同的用水与土地利用方式。",
+        "大的区别之下还有局部变化。南方包含凉爽高地，西北也有草原、河谷和绿洲，认识区域需要给这些差别留下位置。"
+      ],
+      "partId": "china-regions",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "四区的水热与土地利用",
+          "columns": [
+            "区域",
+            "主要环境线索",
+            "具体地区还要看"
+          ],
+          "rows": [
+            [
+              "北方",
+              "冬季与生长季、季节供水",
+              "东北和华北的热量、土壤差别"
+            ],
+            [
+              "南方",
+              "较丰富的热量与水分",
+              "高地与低地、旱季与排涝"
+            ],
+            [
+              "西北",
+              "干旱低地与山地水源",
+              "流域补给、绿洲和草原条件"
+            ],
+            [
+              "青藏",
+              "高海拔与高寒环境",
+              "谷地、湖盆及东南水汽通道"
+            ]
+          ],
+          "note": "用于比较总体关系，各区内部仍有显著差异。"
+        }
+      ]
+    },
+    {
+      "id": "china-regions-section-3",
+      "title": "地形如何改变区域内部",
+      "paragraphs": [
+        "山脉会改变气流行进与水汽分配，河谷把高低地联系起来，盆地与高原则有各自的汇水和温度条件。农业能在哪里展开，城市与道路沿哪里布局，都受到这些局地环境影响。",
+        "因此，同属一个大区的两处地方，生活条件仍可能相差很大。区域概括帮助认识总体规律，具体地形解释规律为什么到了某个地方会发生变化。"
+      ],
+      "partId": "china-regions"
+    },
+    {
+      "id": "china-regions-section-4",
+      "title": "把四区放在同一组问题下",
+      "paragraphs": [
+        "比较四区，可以依次看水与热是否充足、地形怎样安排水流、土地适合怎样利用。北方与南方的农业要配合不同季节节律，西北绿洲依赖外来河水，青藏的生产则需要适应高寒及谷地之间的差异。相同问题得到的不同答案，才把区域特征联系起来。",
+        "地区间也有物质与人口流动。河流带走来水，交通运送粮食和能源，城市吸引人口，一地的需求与变化可能传向远方。自然分区解释环境差异，跨区联系则解释各地如何共同运作。"
+      ],
+      "partId": "china-regions",
+      "mediaIds": [
+        "diagram-region-method"
+      ]
+    },
+    {
+      "id": "china-regions-module-north",
+      "title": "北方地区",
+      "paragraphs": [
+        "北方农业受到纬度、季风和地形影响。东北生长季较短，华北的热量条件又允许不同的复种安排；两地都需要让作物生长季与降雨、灌溉相配合。",
+        "北方广有旱作农业，也有局地水稻种植。品种、农时和供水条件影响田地怎样使用，历史交通与城市发展则持续改变农田周围的土地。"
+      ],
+      "caseIds": [
+        "northern-china"
+      ],
+      "partId": "china-regions"
+    },
+    {
+      "id": "china-regions-module-south",
+      "title": "南方地区",
+      "paragraphs": [
+        "南方较丰富的热量与水分支持稻作和多种作物，但农业条件还取决于坡度、土层和季节供水。陡坡、薄土与季节性旱雨，会在湿润的大背景下形成具体限制。",
+        "沿海低地、内陆盆地和高原各有水热条件。水汽、纬度与海拔影响温度和降水，河流沉积与城市建设改变低地景观；农田既需要稳定供水，也需要及时排涝。"
+      ],
+      "caseIds": [
+        "southern-china"
+      ],
+      "partId": "china-regions"
+    },
+    {
+      "id": "china-regions-module-northwest",
+      "title": "西北地区",
+      "paragraphs": [
+        "西北一些地区远离海洋，环流与地形又限制水汽到达。周围山地的降水、积雪、冰川和地下水，经河流等途径为低地提供水源，绿洲因此与上游山地紧密相连。",
+        "不同流域中，各类水源所占比例不同，对气候变化的反应也有差别。高山“水塔”的说法能够说明这种依赖，具体流量仍需逐流域测量；绿洲农田、草原牧业和荒漠也需要分别认识。"
+      ],
+      "caseIds": [
+        "northwestern-china"
+      ],
+      "partId": "china-regions"
+    },
+    {
+      "id": "china-regions-module-plateau",
+      "title": "青藏地区",
+      "paragraphs": [
+        "青藏高地与构造汇聚和抬升有关。虽然位置并非都在高纬，海拔仍使气温显著降低；季风、西风和水汽通道又影响各地降水。",
+        "高寒草地、东南深谷、湖盆和高山的环境不尽相同，较低谷地提供了不同的生产与聚居空间。水系也有内外之别：有些河流通往外部海洋，有些来水最终留在内流湖盆。"
+      ],
+      "caseIds": [
+        "qinghai-tibet-region"
+      ],
+      "partId": "china-regions"
+    },
+    {
+      "id": "part-china-north-south",
+      "title": "跨过秦岭再比较",
+      "paragraphs": [
+        "秦岭—淮河一带，是认识中国东部南北差异的重要参照。温度、降雨季节和农业安排在这一带发生过渡，山地的高度与坡向又使同纬度的地点出现差别。跨过分界之后，南北各自内部仍值得继续比较。"
+      ],
+      "partId": "china-north-south"
+    },
+    {
+      "id": "china-north-south-section-1",
+      "title": "南北差异是一组连续变化",
+      "paragraphs": [
+        "中国南北在热量、降水季节与植被上存在总体差异，变化却往往是渐进的。秦岭—淮河一线把这些差异组织起来，便于认识；它并非每一种地理现象共同遵循的精确边界。",
+        "东北平原、华北平原、四川、广东与云南，显示出纬度、海拔与地形的交织。高原和山地的存在，使“南方温暖、北方寒冷”这样的概括不足以解释所有地点。"
+      ],
+      "partId": "china-north-south",
+      "mediaIds": [
+        "diagram-climate-gradient"
+      ]
+    },
+    {
+      "id": "china-north-south-section-2",
+      "title": "热量先看冬夏和生长季",
+      "paragraphs": [
+        "纬度改变太阳高度和昼长的季节节律，海陆位置与地形进一步影响冬夏温度。农业尤其在意作物生长季有多少热量，全年平均气温不能完全说明能种什么、能种几季。",
+        "低纬度的高地可能比附近低地凉爽，盆地与周围山地也有差别。南方各地因此不能安排完全相同的种植制度。"
+      ],
+      "partId": "china-north-south"
+    },
+    {
+      "id": "china-north-south-section-3",
+      "title": "雨多之外，还要看什么时候下",
+      "paragraphs": [
+        "季风使许多地区的降水集中在某些月份。雨季开始早晚、持续长短和年际波动，都会影响农业与水资源。湿润地区仍可能在某个季节缺水，较干地区也可能遭遇短时强降雨。",
+        "水田、旱地与灌溉的分布，因而同时受到热量、水源、地形和耕作历史影响。年雨量相近的地方，供水恰好赶上农时与否，也可能很不一样。"
+      ],
+      "partId": "china-north-south"
+    },
+    {
+      "id": "china-north-south-section-4",
+      "title": "从季节差异理解农业与生活",
+      "paragraphs": [
+        "比较南北，月温度和月降水比一句“冷”或“热”提供更多信息。最冷月反映冬季条件，暖季长短影响作物安排，雨水到来的月份则关系灌溉与排水。把两地资料放在同一时期下比较，才能看到差异究竟发生在哪个季节。",
+        "这种比较能够说明生活面对的自然条件，却不能直接推导饮食、建筑或习惯。交通、历史、技术与社会选择同样参与其形成，自然环境是其中一部分。"
+      ],
+      "partId": "china-north-south"
+    },
+    {
+      "id": "china-north-south-module-mountain",
+      "title": "秦岭参照",
+      "paragraphs": [
+        "秦岭造山带经历了古生代至中生代的俯冲、碰撞，后续构造运动与流水侵蚀塑造今天的山地。河谷和缺口穿插其间，气温与降水随位置、海拔和坡向连续变化。",
+        "秦岭—淮河常被用来概括南北气候、植被与农业的差别。山脉确实影响水汽和水系，但分界两侧的变化需要落实到具体地点，不宜设想越过一条线，所有自然条件就同时反转。"
+      ],
+      "caseIds": [
+        "qinling"
+      ],
+      "partId": "china-north-south"
+    },
+    {
+      "id": "china-north-south-module-north",
+      "title": "东北与华北：同为平原，农时和用水不同",
+      "paragraphs": [
+        "东北平原包括松嫩、辽河与三江等部分，区域沉降、河流冲积和湖泊沉积共同塑造低地。冬季寒冷、暖季较短，农业需要在有限生长季中安排农时；黑土是重要资源，但并非各处都有相同土壤。",
+        "华北平原由多条河流长期搬运、堆积泥沙而成，约30万平方千米的概括范围内还包括山前冲积扇、古河道、湖洼和沿海低地。与东北相比，这里的热量条件允许不同种植安排，作物需水期与降雨季节是否吻合，则成为重要问题。两地都平坦，却不能据此采用同一套生产解释。"
+      ],
+      "caseIds": [
+        "north-china-plain",
+        "northeast-china-plain"
+      ],
+      "partId": "china-north-south"
+    },
+    {
+      "id": "china-north-south-module-south",
+      "title": "四川、广东与云南：南方内部的高低与海陆",
+      "paragraphs": [
+        "四川把盆地与青藏高原边缘、横断山地放在同一省域中。由成都附近向西升高，温度、降水、植被与聚落条件明显改变，高度的影响在较短距离内就能表现出来。",
+        "广东更突出山地、沿海和珠江三角洲的联系，季风与海洋带来水汽，河网和港口支持区域往来。云南则由高山峡谷、岩溶地区和坝子交错组成，海拔与水汽通道使各地气候复杂。",
+        "三地都属于南方，但农业与聚落面对的条件不同：盆地与高山的高度差、海岸与内陆的水汽联系、坝子与陡坡的可用土地，分别需要展开。温暖湿润的概括，不能替代这些具体组合。"
+      ],
+      "caseIds": [
+        "sichuan",
+        "guangdong",
+        "yunnan"
+      ],
+      "partId": "china-north-south"
+    }
+  ],
+  "questions": [
+    {
+      "question": "一个省横跨自然过渡带时，能否用全省同一种环境来概括？",
+      "answer": "不能。行政区划与自然分区目的不同，应继续看省内地形、水热和土地利用差异。"
+    },
+    {
+      "question": "云南纬度较低，为什么一些城市夏季仍较凉爽？",
+      "answer": "海拔会降低热量条件，云雨、地形和局地环流也有影响，需要把纬度与高度一起看。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "中国政府网资料 · 地形分布",
+      "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+    },
+    {
+      "title": "内蒙古自治区人民政府 · 国土空间规划",
+      "url": "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html"
+    },
+    {
+      "title": "西藏自治区人民政府 · 自然地理",
+      "url": "https://www.xizang.gov.cn/rsxz/zrdl/202306/t20230607_359670.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 华北平原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 东北平原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html"
+    },
+    {
+      "title": "中国科学院地质地球所 · 北秦岭造山带野外研讨",
+      "url": "https://www.igg.cas.cn/hejl/hzxm/202405/t20240528_7174019.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 中国南北过渡带研究",
+      "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202504/t20250409_7591749.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 四川盆地",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 云南高原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 云贵高原气候",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html"
+    },
+    {
+      "title": "UNESCO · South China Karst",
+      "url": "https://whc.unesco.org/en/list/1248/"
+    },
+    {
+      "title": "交通运输部珠江航务管理局 · 珠江水系航运简介",
+      "url": "https://zjhy.mot.gov.cn/zhuhanggk/shuixijj/201909/t20190916_3266853.html"
+    },
+    {
+      "title": "宁夏水利厅 · 珠江与沿海河流",
+      "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2718481.html"
+    },
+    {
+      "title": "NASA · Red Rocks and Rainbow Ridges",
+      "url": "https://science.nasa.gov/earth/earth-observatory/red-rocks-and-rainbow-ridges-148234/"
+    },
+    {
+      "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+      "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+    },
+    {
+      "title": "中国科学院西北研究院 · 祁连山冰冻圈水文",
+      "url": "https://nieer.cas.cn/xwdt/kydt/202609/t20260922_8286022.html"
+    },
+    {
+      "title": "UNESCO · Xinjiang Tianshan",
+      "url": "https://whc.unesco.org/en/list/1414/"
+    },
+    {
+      "title": "USGS · Himalaya and vicinity tectonics",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+    },
+    {
+      "title": "中国科学院地理资源所 · 塔里木盆地",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692366.html"
+    },
+    {
+      "title": "NASA · A Wall of Dust in the Tarim Basin",
+      "url": "https://science.nasa.gov/earth/earth-observatory/a-wall-of-dust-in-the-tarim-basin-152076/"
+    },
+    {
+      "title": "中国科学院地球环境所 · 塔里木盆地的前生今世",
+      "url": "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html"
+    },
+    {
+      "title": "内蒙古自治区人民政府 · 自然地理",
+      "url": "https://www.nmg.gov.cn/asnmg/yxnmg/zrdl/"
+    },
+    {
+      "title": "国家民委 · 内蒙古概况",
+      "url": "https://www.neac.gov.cn/seac/ztzl/mgz/gk.shtml"
+    },
+    {
+      "title": "中国科学院地理资源所 · 内蒙古高原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692371.html"
+    },
+    {
+      "title": "USGS · Understanding plate motions",
+      "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 青海湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 中国最大的咸水湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html"
+    },
+    {
+      "title": "Jiang等（2023）· 图2中国四大地理区分区图（CC BY 4.0）",
+      "url": "https://nhess.copernicus.org/articles/23/3747/2023/"
+    },
+    {
+      "title": "四川省人民政府 · 国土空间生态修复规划",
+      "url": "https://www.sc.gov.cn/10462/10778/10876/2022/7/8/57f745e2c9f74c66a606f4c88cbe96db/files/484782a06c0144d39954782ac50d7696.pdf"
+    },
+    {
+      "title": "中国政府网资料 · 中华人民共和国行政区划",
+      "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+    },
+    {
+      "title": "广东省人民政府 · 主体功能区规划自然状况",
+      "url": "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html"
+    },
+    {
+      "title": "云南宣传网 · 云南省基本情况（2024）",
+      "url": "https://www.ynxc.gov.cn/html/2024/yns_0418/11831.html"
+    }
+  ],
+  "presentation": "essay"
+}

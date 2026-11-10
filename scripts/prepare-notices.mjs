@@ -10,6 +10,8 @@ for (const [source, target] of [
   await copyFile(new URL('../' + source, import.meta.url), new URL('../public/licenses/' + target, import.meta.url))
 }
 const contentLicense = await readFile(new URL('../LICENSE-CONTENT.md', import.meta.url), 'utf8')
+const images = JSON.parse(await readFile(new URL('../src/data/reading-media.json', import.meta.url), 'utf8')).filter(image => image.kind === 'photo')
+await writeFile(new URL('../public/licenses/reading-images.txt', import.meta.url), '山河图 · 专题照片署名\n\n照片保留各自许可，不统一采用项目原创内容许可。下载 Wikimedia Commons 提供的缩略图或原文件，未修改画面。\n\n' + images.map(image => `${image.title}\n文件：${image.path}\n作者：${image.author}\n原作：${image.sourceUrl}\n许可：${image.license} — ${image.licenseUrl}\n`).join('\n'))
 await writeFile(new URL('../public/licenses/LICENSE-CONTENT.md', import.meta.url), contentLicense
   .replaceAll('(LICENSES/CC-BY-4.0.txt)', '(CC-BY-4.0.txt)')
   .replaceAll('(THIRD_PARTY_NOTICES.md)', '(../third-party-notices.txt)'))

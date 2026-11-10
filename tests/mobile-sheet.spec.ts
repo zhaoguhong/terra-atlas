@@ -92,7 +92,7 @@ async function settledScroll(content:Locator){
 
 test('mobile reader: follows the finger, snaps to three stops, and leaves a usable map when collapsed',async({page,context},info)=>{
   const horizontal=landscape(page)
-  await chooseTheme(page,'中国四大高原')
+  await chooseTheme(page,'中国地形格局')
   await expect(sheet(page)).toHaveClass(/sheet-half/)
   const half=await sheetBounds(page)
   await setStop(page,'full');const full=await sheetBounds(page)
@@ -142,23 +142,23 @@ test('mobile reader: follows the finger, snaps to three stops, and leaves a usab
   await expect.poll(()=>page.evaluate(()=>window.__terraAtlas!.map.getCenter().toArray())).not.toEqual(before)
   await mapSettled(page)
   await expect(sheet(page)).toHaveClass(/sheet-peek/)
-  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-plateaus')
+  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
   await openThemeLibrary(page)
   await expect(page.locator('.topic-library')).toBeVisible()
   await page.locator('.topic-resume').click()
-  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-plateaus')
+  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
   await expect(sheet(page)).toHaveClass(/sheet-half/)
   await expect(page.locator('.map-stage')).toHaveAttribute('data-reading-sheet','half')
   await expect(page.locator('#topic-reading-content')).toBeVisible()
   await openThemeLibrary(page)
   await expect(page.locator('.topic-library')).toBeVisible()
-  await chooseTheme(page,'中国四大盆地')
-  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-basins')
+  await chooseTheme(page,'中国地形格局',false)
+  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
   await page.screenshot({path:test.info().outputPath('draggable-theme-'+info.project.name+'.png')})
 })
 
 test('mobile reader: arbitrates article scrolling according to the active orientation',async({page,context},info)=>{
-  await chooseTheme(page,'中国四大高原')
+  await chooseTheme(page,'中国地形格局')
   const horizontal=landscape(page),content=page.locator('#topic-reading-content')
   expect(await contentTouch(content,-90)).toBe(!horizontal)
   await expect(sheet(page)).toHaveClass(horizontal?/sheet-half/:/sheet-full/)
@@ -192,7 +192,7 @@ test('mobile reader: arbitrates article scrolling according to the active orient
   await setStop(page,'full')
   await content.evaluate(el=>{el.scrollTop=0})
   // Begin on prose below the sticky navigation so real input reaches the article.
-  await page.getByText('展开主题介绍',{exact:true}).click()
+  await page.getByText('更多背景与解读',{exact:true}).click()
   const prose=(await page.locator('.topic-explanation .reading-section p').first().boundingBox())!
   const bounds=(await content.boundingBox())!,x=bounds.x+bounds.width*.45,y=Math.min(bounds.y+bounds.height-20,Math.max(bounds.y+80,prose.y+15))
   await swipe(page,cdp,x,y,-Math.min(140,y-bounds.y-20))
@@ -242,9 +242,9 @@ test('mobile reader: standalone places keep selection and controls usable after 
 
 test('landscape reader: preserves the paragraph being read through expansion and rotation',async({page},info)=>{
   test.skip(info.project.name!=='mobile-landscape','reading across sidebar width changes')
-  await chooseTheme(page,'中国四大高原')
+  await chooseTheme(page,'中国地形格局')
   const content=page.locator('#topic-reading-content')
-  await page.getByText('展开主题介绍',{exact:true}).click()
+  await page.getByText('更多背景与解读',{exact:true}).click()
   const paragraph=page.locator('.topic-explanation .reading-section p').nth(1)
   const text=await paragraph.innerText(),halfWidth=(await sheet(page).boundingBox())!.width
   // Place one third of this known paragraph above the visible reading edge.
@@ -287,8 +287,8 @@ test('landscape reader: preserves the paragraph being read through expansion and
   await expect(sheet(page)).toHaveClass(/sheet-full/)
   await sheetBounds(page)
   await retained()
-  await chooseTheme(page,'中国四大盆地')
-  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-basins')
+  await chooseTheme(page,'中国地形格局',false)
+  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
   expect(await settledScroll(content),'a different introduction starts at its beginning').toBeLessThan(2)
   await expect(page.locator('.topic-heading')).toBeInViewport({ratio:1})
   await page.screenshot({path:test.info().outputPath('reading-paragraph-after-topic-change.png')})
@@ -296,7 +296,7 @@ test('landscape reader: preserves the paragraph being read through expansion and
 
 test('landscape reader: cancelling a width drag restores the paragraph at the end of the article',async({page},info)=>{
   test.skip(info.project.name!=='mobile-landscape','cancelled sidebar reflow')
-  await chooseTheme(page,'中国四大高原')
+  await chooseTheme(page,'中国地形格局')
   const half=await sheetBounds(page)
   await setStop(page,'full');const full=await sheetBounds(page)
   await setStop(page,'half')
@@ -333,7 +333,7 @@ for(const viewport of [{width:568,height:320},{width:932,height:430}]){
   test.use({viewport,screen:viewport})
   test(`landscape reader: right sidebar keeps reading, modules, and the map usable at ${viewport.width}x${viewport.height}`,async({page,context},info)=>{
     test.skip(info.project.name!=='mobile-landscape','additional phone landscape sizes')
-    await chooseTheme(page,'中国四大高原')
+    await chooseTheme(page,'中国地形格局')
     const stage=(await page.locator('.map-stage').boundingBox())!,half=await sheetBounds(page)
     const insets=await sheet(page).evaluate(el=>{const style=getComputedStyle(el);return{top:parseFloat(style.top),bottom:parseFloat(style.bottom)}})
     expect(half.y).toBeCloseTo(stage.y+insets.top,0)
@@ -349,7 +349,7 @@ for(const viewport of [{width:568,height:320},{width:932,height:430}]){
     await expect(handle(page)).toBeInViewport({ratio:1})
     await page.locator('.topic-module-jump').click()
     await expect(page.locator('.topic-module').first()).toBeInViewport()
-    await page.locator('.topic-members').getByRole('button',{name:/黄土高原/}).click();await selectedGeometry(page)
+    await page.locator('.topic-members').getByRole('button',{name:/黄土高原/}).first().click();await selectedGeometry(page)
     await expect(page.locator('.knowledge-panel h2')).toHaveText('黄土高原')
     await expect(sheet(page)).toHaveClass(/sheet-half/)
     const point=await page.evaluate(()=>{
@@ -378,7 +378,7 @@ for(const viewport of [{width:568,height:320},{width:932,height:430}]){
     const full=await sheetBounds(page)
     expect(full.x).toBeLessThanOrEqual(stage.x+16)
     expect(full.width).toBeGreaterThan(stage.width*.9)
-    await expect(page.getByRole('button',{name:'主题库',exact:true})).toBeInViewport({ratio:1})
+    await expect(page.getByRole('button',{name:'返回主题列表',exact:true})).toBeInViewport({ratio:1})
     await expect(page.getByRole('button',{name:'主题全览',exact:true})).toBeInViewport({ratio:1})
     await page.getByRole('button',{name:'返回地图与资料',exact:true}).click()
     await expect(sheet(page)).toHaveClass(/sheet-half/)

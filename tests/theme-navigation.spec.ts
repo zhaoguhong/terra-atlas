@@ -1,10 +1,11 @@
+import {clickHeaderAction} from './header-actions'
 import {expect,test,type Page} from '@playwright/test'
 import rawTopics from '../src/data/topics.json' with {type:'json'}
 import rawKnowledge from '../src/data/knowledge.json' with {type:'json'}
 import rawBindings from '../src/data/feature-bindings.json' with {type:'json'}
 import type {Knowledge,Topic} from '../src/types'
 import {baseReady,mapSettled,renderFrames,selectedGeometry,sourceLoaded} from './map-readiness'
-import {openThemeLibrary,readerExpandKey} from './theme-controls'
+import {openThemeLibrary,readerExpandKey,expandThemeMembers} from './theme-controls'
 
 const topics=rawTopics as Topic[]
 const cards=new Map((rawKnowledge as Knowledge[]).map(card=>[card.id,card]))
@@ -37,15 +38,15 @@ function cardById(id:string){
   return card
 }
 async function openLibrary(page:Page){
-  await openThemeLibrary(page)
+  await openThemeLibrary(page,true)
 }
 async function searchTheme(page:Page,topic:Topic){
   await openLibrary(page)
   await page.locator('.topic-categories').getByRole('button',{name:'全部分类',exact:true}).click()
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill(topic.title)
-  const entry=page.locator('.topic-list>button').filter({has:page.getByText(topic.title,{exact:true})})
+  const entry=page.locator('.topic-library-card').filter({has:page.getByText(topic.title,{exact:true})})
   await expect(entry).toHaveCount(1)
-  await entry.click()
+  await entry.getByRole('button',{name:'在地图上看：'+topic.title,exact:true}).click();await expandThemeMembers(page)
   await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id',topic.id)
   await expect(page.locator('.topic-reader h1')).toHaveText(topic.title)
   await overviewGeometry(page,topic)
@@ -94,8 +95,9 @@ async function memberLocated(page:Page,id:string){
   },card.coordinates),{timeout,message:`${card.name} must be visible on the real map, outside reading panels`}).toBe(true)
 }
 async function selectMember(page:Page,id:string){
+  await expandThemeMembers(page)
   const card=cardById(id)
-  await page.locator('.topic-members>button').filter({has:page.getByText(card.name,{exact:true})}).click()
+  await page.locator('.topic-members>button').filter({has:page.getByText(card.name,{exact:true})}).first().click()
   await memberLocated(page,id)
 }
 async function returnOverview(page:Page,topic:Topic){
@@ -112,14 +114,14 @@ function sharedHash(topicId:string,place:string,center:[number,number]=[100,35])
 // the same map-and-reading checks in both Playwright viewport projects.
 for(const topic of topics){
   test(`theme catalogue: ${topic.id} has an introduction, modules and working first/last members`,async({page})=>{
-    if(topic.region==='world'&&!topic.shared){await page.getByRole('button',{name:'全球视野',exact:true}).click();await mapSettled(page)}
+    if(topic.region==='world'&&!topic.shared){await clickHeaderAction(page,'全球视野');await mapSettled(page)}
     await searchTheme(page,topic)
-    await expect(page.locator('.topic-summary')).toHaveText(topic.description)
+    await expect(page.locator('.topic-summary')).toHaveText(topic.mapGuide?.summary||topic.description)
     await expect(page.locator('.topic-observation')).toContainText(topic.question)
     const handle=page.getByRole('button',{name:'调整阅读面板大小',exact:true})
     if(await handle.isVisible())await handle.press('End')
     await expect(page.locator('.topic-expanded-intro')).not.toHaveAttribute('open','')
-    await page.getByText('展开主题介绍',{exact:true}).click()
+    await page.getByText('更多背景与解读',{exact:true}).click()
     await expect(page.locator('.topic-explanation .reading-section p')).toHaveCount(topic.sections.length)
     for(const section of topic.sections){
       await expect(page.locator('.topic-explanation')).toContainText(section.title)
@@ -129,14 +131,17 @@ for(const topic of topics){
     await expect(page.locator('.topic-visual')).toHaveCount(topic.visuals?.length||0)
     expect(topic.modules?.length,'each expanded theme has explicit learning modules').toBeGreaterThan(0)
     await expect(page.locator('.topic-module')).toHaveCount(topic.modules!.length)
-    await expect(page.locator('.topic-members>button')).toHaveCount(topic.stops.length)
+    await expect(page.locator('.topic-members>button')).toHaveCount(topic.modules!.reduce((sum,module)=>sum+module.stops.length,0))
     for(const module of topic.modules!){
-      const section=page.locator('.topic-module').filter({has:page.getByRole('heading',{name:module.title,exact:true})})
+      const section=page.locator('.topic-module').nth(topic.modules!.indexOf(module))
       await expect(section).toContainText(module.description)
-      await section.getByText('展开说明',{exact:true}).click()
-      await expect(section.locator('.module-detail p')).toBeVisible()
-      await expect(section.locator('.module-detail p')).toHaveText(module.detail!)
-      await section.getByText('展开说明',{exact:true}).click()
+      const explanation=section.locator('.module-detail')
+      if(module.detail){
+        await explanation.locator('summary').click()
+        await expect(explanation.locator('p')).toBeVisible()
+        await expect(explanation.locator('p')).toHaveText(module.detail)
+        await explanation.locator('summary').click()
+      }else await expect(explanation).toHaveCount(0)
       for(const id of module.stops)await expect(section.locator('.topic-members>button').filter({has:page.getByText(cardById(id).name,{exact:true})})).toContainText(cardById(id).summary)
     }
     expect(await page.locator('.topic-explanation').evaluate(element=>!!(element.compareDocumentPosition(document.querySelector('.topic-members-section')!)&Node.DOCUMENT_POSITION_FOLLOWING)),'topic introduction appears before member modules').toBe(true)
@@ -158,15 +163,15 @@ for(const topic of topics){
       expect(Math.abs(actual.center[0]+155)+Math.abs(actual.center[1]+45),'selecting a member actually moves the map').toBeGreaterThan(1)
       await returnOverview(page,topic)
     }
-    await page.getByRole('button',{name:'主题库',exact:true}).click()
+    await page.getByRole('button',{name:'返回主题列表',exact:true}).click()
     await expect(page.locator('.topic-library')).toBeVisible()
     await expect(page.getByRole('searchbox',{name:'搜索主题和主题成员'})).toHaveValue(topic.title)
-    await expect(page.locator('.topic-list>button').filter({has:page.getByText(topic.title,{exact:true})})).toHaveCount(1)
+    await expect(page.locator('.topic-library-card').filter({has:page.getByText(topic.title,{exact:true})})).toHaveCount(1)
   })
 }
 
 test('theme navigation: all four plateaus locate, reset scroll and restore the whole group',async({page},info)=>{
-  const topic=topicById('china-plateaus')
+  const topic=topicById('china-terrain')
   await searchTheme(page,topic)
   const overview=await camera(page)
   if(info.project.name.startsWith('mobile')){
@@ -199,18 +204,18 @@ test('theme navigation: all four plateaus locate, reset scroll and restore the w
       await expect(option).toBeEnabled()
     }
   }
-  await expect(page.locator('.topic-member-pagination')).toContainText('1 / 4')
+  await expect(page.locator('.topic-member-pagination')).toContainText(`1 / ${topic.stops.length}`)
   for(let index=1;index<topic.stops.length;index++){
     if(await handle.isVisible())await handle.press('End')
     await page.locator('.explorer-scroll').evaluate(element=>{element.scrollTop=element.scrollHeight})
     await expect(page.getByRole('button',{name:'主题全览',exact:true})).toBeInViewport()
-    await expect(page.getByRole('button',{name:'主题库',exact:true})).toBeInViewport()
+    await expect(page.getByRole('button',{name:'返回主题列表',exact:true})).toBeInViewport()
     if(index===2||!await next.isVisible()){
       await expect(memberSelect).toBeInViewport()
       await memberSelect.selectOption(topic.stops[index])
     }else await next.click()
     await memberLocated(page,topic.stops[index])
-    await expect(page.locator('.topic-member-pagination')).toContainText(`${index+1} / 4`)
+    await expect(page.locator('.topic-member-pagination')).toContainText(`${index+1} / ${topic.stops.length}`)
     await expect.poll(()=>page.locator('.explorer-scroll').evaluate(element=>element.scrollTop)).toBeLessThan(2)
   }
   if(await handle.isVisible())await handle.press('End')
@@ -224,18 +229,18 @@ test('theme navigation: all four plateaus locate, reset scroll and restore the w
   await page.screenshot({path:test.info().outputPath(`four-plateaus-${info.project.name}.png`)})
   await returnOverview(page,topic)
   expectSameCamera(await camera(page),overview)
-  await page.getByRole('button',{name:'主题库',exact:true}).click()
+  await page.getByRole('button',{name:'返回主题列表',exact:true}).click()
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill('黄土高原')
-  await expect(page.locator('.topic-list>button').filter({has:page.getByText(topic.title,{exact:true})})).toHaveCount(1)
+  await expect(page.locator('.topic-library-card').filter({has:page.getByText(topic.title,{exact:true})})).toHaveCount(1)
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill('没有这个地理主题123')
   await expect(page.locator('.topic-empty')).toBeVisible()
   await page.getByRole('button',{name:'查看全部主题',exact:true}).click()
   await expect(page.getByRole('searchbox',{name:'搜索主题和主题成员'})).toHaveValue('')
-  await expect(page.locator('.topic-list>button')).toHaveCount(topics.length)
+  await expect(page.locator('.topic-library-card')).toHaveCount(topics.length)
 })
 
 test('theme navigation: browser Back and Forward restore member, overview and camera',async({page})=>{
-  const topic=topicById('china-plateaus'),first=topic.stops[0],second=topic.stops[1]
+  const topic=topicById('china-terrain'),first=topic.stops[0],second=topic.stops[1]
   await searchTheme(page,topic)
   const overview=await camera(page)
   await selectMember(page,first)
@@ -261,9 +266,10 @@ test('theme navigation: browser Back and Forward restore member, overview and ca
 })
 
 test('theme navigation: related places keep context and can return to the previous member',async({page})=>{
-  const topic=topicById('china-plateaus'),member=cardById('loess-plateau'),related=cardById('yellow-river')
+  const topic=topicById('china-terrain'),member=cardById('loess-plateau'),related=cardById('yellow-river')
   await searchTheme(page,topic)
   await selectMember(page,member.id)
+  await page.getByText('展开地点介绍',{exact:true}).click()
   await page.locator('.related').getByRole('button',{name:related.name,exact:true}).click()
   await expect(page.locator('.knowledge-panel h2')).toHaveText(related.name)
   await selectedGeometry(page)
@@ -277,14 +283,14 @@ test('theme navigation: related places keep context and can return to the previo
 })
 
 test('theme navigation: map positioning preserves the theme, member, layers and reading position',async({page})=>{
-  const china=topicById('china-plateaus'),world=topicById('world-high-peaks')
+  const china=topicById('china-terrain'),world=topicById('world-terrain')
   await searchTheme(page,china)
   await selectMember(page,china.stops[1])
   const original=await camera(page)
   const layers=await page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).layers)
   await page.locator('.explorer-scroll').evaluate(element=>{element.scrollTop=180})
   const scroll=await page.locator('.explorer-scroll').evaluate(element=>element.scrollTop)
-  await page.getByRole('button',{name:'全球视野',exact:true}).click()
+  await clickHeaderAction(page,'全球视野')
   await mapSettled(page)
   await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id',china.id)
   await expect(page.locator('.knowledge-panel h2')).toHaveText(cardById(china.stops[1]).name)
@@ -297,10 +303,10 @@ test('theme navigation: map positioning preserves the theme, member, layers and 
   expectSameCamera(await camera(page),original)
   await openLibrary(page)
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill('')
-  await expect(page.locator('.topic-list>button').filter({has:page.getByText(china.title,{exact:true})})).toHaveCount(1)
-  await expect(page.locator('.topic-list>button').filter({has:page.getByText(world.title,{exact:true})})).toHaveCount(1)
+  await expect(page.locator('.topic-library-card').filter({has:page.getByText(china.title,{exact:true})})).toHaveCount(1)
+  await expect(page.locator('.topic-library-card').filter({has:page.getByText(world.title,{exact:true})})).toHaveCount(1)
   await searchTheme(page,world)
-  await page.getByRole('button',{name:'定位中国',exact:true}).click()
+  await clickHeaderAction(page,'定位中国')
   await mapSettled(page)
   await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id',world.id)
   await expect(page.locator('.topic-reader h1')).toHaveText(world.title)
@@ -313,20 +319,20 @@ test('theme navigation: opening an already open library does not add duplicate b
   await openLibrary(page)
   await renderFrames(page)
   const length=await page.evaluate(()=>history.length)
-  for(let index=0;index<3;index++)await page.locator('.panel-tabs').getByRole('button',{name:'主题',exact:true}).click()
+  for(let index=0;index<3;index++)await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'学主题',exact:true}).click()
   expect(await page.evaluate(()=>history.length)).toBe(length)
 })
 
 test('theme navigation: Back across a hash restores the member visited after that shared URL',async({page})=>{
   const first=cardById('tibetan-plateau'),second=cardById('loess-plateau'),third=cardById('sichuan-basin')
-  const originalHash=sharedHash('china-plateaus',first.id,first.coordinates)
+  const originalHash=sharedHash('china-terrain',first.id,first.coordinates)
   await page.goto('/'+originalHash)
   await expect(page.locator('.knowledge-panel h2')).toHaveText(first.name)
   await selectedGeometry(page)
   await page.getByRole('combobox',{name:'切换主题成员',exact:true}).selectOption(second.id)
   await memberLocated(page,second.id)
   const secondCamera=await camera(page)
-  await page.goto('/'+sharedHash('china-basins',third.id,third.coordinates))
+  await page.goto('/'+sharedHash('china-terrain',third.id,third.coordinates))
   await expect(page.locator('.knowledge-panel h2')).toHaveText(third.name)
   await selectedGeometry(page)
   await page.goBack()
@@ -334,7 +340,7 @@ test('theme navigation: Back across a hash restores the member visited after tha
   await memberLocated(page,second.id)
   expectSameCamera(await camera(page),secondCamera)
   await page.goForward()
-  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-basins')
+  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
   await expect(page.locator('.knowledge-panel h2')).toHaveText(third.name)
   await selectedGeometry(page)
 })
@@ -346,6 +352,7 @@ for(const [id,label,source,layer] of [
   test(`theme navigation: Back restores ${id} filters and the actual map layer`,async({page})=>{
     const topic=topicById(id)
     await searchTheme(page,topic)
+    if(id==='map-language')await page.getByRole('combobox',{name:'语言展示方式'}).selectOption('areas')
     await sourceLoaded(page,source)
     const select=page.getByRole('combobox',{name:label,exact:true})
     await expect.poll(()=>select.locator('option').count()).toBeGreaterThan(1)
@@ -356,10 +363,11 @@ for(const [id,label,source,layer] of [
       await page.locator('#human-opacity').focus()
       await page.keyboard.press('Home')
       await expect(page.locator('#human-opacity')).toHaveValue('0.15')
+      await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).thematic.opacity)).toBe(0.15)
     }
     await mapSettled(page)
     const before=await page.evaluate(layer=>({thematic:JSON.parse(localStorage.getItem('terra-atlas-v1')!).thematic,filter:window.__terraAtlas!.map.getFilter(layer),paint:window.__terraAtlas!.map.getPaintProperty(layer,layer==='religion-fill'||layer==='language-area-fill'?'fill-color':'circle-color')}),layer)
-    await searchTheme(page,topicById('china-plateaus'))
+    await searchTheme(page,topicById('china-terrain'))
     await page.goBack()
     await expect(page.locator('.topic-library')).toBeVisible()
     await page.goBack()
@@ -372,15 +380,10 @@ for(const [id,label,source,layer] of [
   })
 }
 
-for(const [oldId,currentId] of [
-  ['world-mountains','world-mountain-ranges'],
-  ['world-lake-origins','world-lakes'],
-  ['world-population-scales','map-population'],
-  ['world-culture-evidence','map-religion'],
-] as const){
-  test(`theme navigation: saved share alias ${oldId} opens ${currentId}`,async({page})=>{
+for(const currentId of ['world-terrain','world-rivers','map-population','map-religion'] as const){
+  test(`theme navigation: current share opens ${currentId} and its map selection`,async({page})=>{
     const topic=topicById(currentId),card=cardById(topic.stops[0])
-    const params=new URLSearchParams({topic:oldId,place:card.id,view:'world',lng:String(card.coordinates[0]),lat:String(card.coordinates[1]),z:'3.4',layers:'terrain,mountains,rivers,lakes,borders'})
+    const params=new URLSearchParams({topic:currentId,place:card.id,view:'world',lng:String(card.coordinates[0]),lat:String(card.coordinates[1]),z:'3.4',layers:'terrain,mountains,rivers,lakes,borders'})
     await page.goto('/#'+params)
     await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id',currentId)
     await expect(page.locator('.knowledge-panel h2')).toHaveText(card.name)
@@ -388,9 +391,9 @@ for(const [oldId,currentId] of [
     await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).topicId)).toBe(currentId)
     expect(await page.evaluate(()=>window.__terraAtlas!.map.getZoom())).toBeCloseTo(3.4,3)
     await returnOverview(page,topic)
-    await page.getByRole('button',{name:'主题库',exact:true}).click()
+    await page.getByRole('button',{name:'返回主题列表',exact:true}).click()
     await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill(topic.title)
-    await expect(page.locator('.topic-list>button').filter({has:page.getByText(topic.title,{exact:true})})).toHaveCount(1)
+    await expect(page.locator('.topic-library-card').filter({has:page.getByText(topic.title,{exact:true})})).toHaveCount(1)
   })
 }
 
@@ -412,7 +415,7 @@ test('theme provinces: all 34 administrative entries have distinct introductions
 
 test('theme labs: seasons and latitude change daylight, and longitude changes solar time',async({page})=>{
   const topic=topicById('earth-seasons')
-  if(topic.region==='world'&&!topic.shared)await page.getByRole('button',{name:'全球视野',exact:true}).click()
+  if(topic.region==='world'&&!topic.shared)await clickHeaderAction(page,'全球视野')
   await searchTheme(page,topic)
   const handle=page.getByRole('button',{name:'调整阅读面板大小',exact:true})
   if(await handle.isVisible())await handle.press('End')
@@ -431,12 +434,12 @@ test('theme labs: seasons and latitude change daylight, and longitude changes so
   await expect(page.getByTestId('solar-offset')).toHaveText('地方时慢 12 小时')
   await page.keyboard.press('End')
   await expect(page.getByTestId('solar-offset')).toHaveText('地方时快 12 小时')
-  await expect(page.getByRole('button',{name:'主题库',exact:true})).toBeInViewport()
+  await expect(page.getByRole('button',{name:'返回主题列表',exact:true})).toBeInViewport()
 })
 
 test('theme labs: scale and paper distance change the real-distance calculation',async({page})=>{
   const topic=topicById('earth-map-reading')
-  if(topic.region==='world'&&!topic.shared)await page.getByRole('button',{name:'全球视野',exact:true}).click()
+  if(topic.region==='world'&&!topic.shared)await clickHeaderAction(page,'全球视野')
   await searchTheme(page,topic)
   const handle=page.getByRole('button',{name:'调整阅读面板大小',exact:true})
   if(await handle.isVisible())await handle.press('End')

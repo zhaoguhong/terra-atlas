@@ -86,7 +86,7 @@ test('dateline collection: Pacific members render together and globe-wide view r
   expect(Math.abs(result.center[0])).toBeLessThanOrEqual(180)
   expect(result.members.every(member => member.visible && member.rendered), JSON.stringify(result)).toBe(true)
   await page.screenshot({path: info.outputPath(`pacific-${info.project.name}.png`)})
-  await page.getByRole('button', {name: '全球视野', exact: true}).click()
+  await clickHeaderAction(page,'全球视野')
   await mapSettled(page)
   await expect.poll(() => page.evaluate(() => window.__terraAtlas!.map.queryRenderedFeatures(undefined, {layers: ['land-fill']}).length)).toBeGreaterThan(0)
   await page.screenshot({path: info.outputPath(`world-${info.project.name}.png`)})

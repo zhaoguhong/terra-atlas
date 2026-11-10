@@ -1,0 +1,435 @@
+{
+  "id": "landform-wind",
+  "title": "风沙与黄土地貌",
+  "introduction": "风既能移走地表颗粒，也能把沙和粉尘堆积起来。侵蚀后留下的雅丹、堆积成的沙丘，以及后来被流水切开的黄土，记录了不同的物质经历。先比较它们的材料与过程，再走进戈壁、塔克拉玛干和黄土高原，就能分清哪些形态由风直接塑造，哪些又经历了水的改造。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "landform-yardang",
+      "title": "风蚀地貌与雅丹",
+      "sectionId": "part-landform-yardang",
+      "description": "雅丹的垄脊与沟槽，是原有材料遭受侵蚀后留下的形态。它与沙粒堆成的沙丘，都能在地面形成明显起伏，但一个主要涉及物质移走，一个主要涉及物质留下。",
+      "keywords": [
+        "雅丹",
+        "风蚀",
+        "风蚀蘑菇",
+        "戈壁",
+        "吹蚀",
+        "荒漠",
+        "沙尘",
+        "高原盆地",
+        "内流盐湖",
+        "副热带高压",
+        "沙尘输送",
+        "荒漠地貌"
+      ]
+    },
+    {
+      "id": "landform-dunes",
+      "title": "沙丘与风积地貌",
+      "sectionId": "part-landform-dunes",
+      "description": "沙丘的轮廓来自沙粒的搬运与堆积。沙源、风向和植被改变，沙丘的形态与活动性也会改变。它既能出现在炎热的内陆荒漠，也能出现在海岸和寒冷地区，气温与沙丘形态要分别认识。",
+      "keywords": [
+        "沙丘",
+        "风积",
+        "新月形沙丘",
+        "风向",
+        "沙漠",
+        "冷沙漠",
+        "风沙",
+        "水源",
+        "雾漠",
+        "副热带高压",
+        "沙尘输送",
+        "荒漠地貌"
+      ]
+    },
+    {
+      "id": "landform-loess",
+      "title": "黄土、塬梁峁与沟壑",
+      "sectionId": "part-landform-loess",
+      "description": "黄土与沙丘的颗粒、沉积形态并不相同。风搬来的粉尘长期覆盖高地，随后雨水和河流切开土层，留下塬、梁、峁及深浅不一的沟壑。材料的沉积和地表的切割，是理解黄土地貌的两段经历。",
+      "keywords": [
+        "黄土",
+        "塬",
+        "梁",
+        "峁",
+        "沟壑",
+        "水土流失",
+        "风成沉积",
+        "流水侵蚀",
+        "水土保持",
+        "水沙关系",
+        "下游悬河",
+        "流域治理"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-landform-yardang",
+      "title": "风蚀地貌与雅丹",
+      "paragraphs": [
+        "雅丹的垄脊与沟槽，是原有材料遭受侵蚀后留下的形态。它与沙粒堆成的沙丘，都能在地面形成明显起伏，但一个主要涉及物质移走，一个主要涉及物质留下。"
+      ],
+      "partId": "landform-yardang"
+    },
+    {
+      "id": "landform-yardang-section-1",
+      "title": "吹走颗粒与磨蚀岩面",
+      "paragraphs": [
+        "风吹走地面的松散细颗粒，较粗的颗粒可能留在原处；携沙气流撞击岩面，还能磨出沟痕。有效风力、颗粒供应、地面湿度和植被覆盖，共同决定这些作用能进行到什么程度。",
+        "少雨有利于一些风蚀过程，但如果缺少可搬运材料，或地面有较多植被、坚硬结皮，风的作用就会受到限制。干旱地区因此也有多种不同的地表。"
+      ],
+      "partId": "landform-yardang"
+    },
+    {
+      "id": "landform-yardang-section-2",
+      "title": "雅丹为什么常有方向性",
+      "paragraphs": [
+        "雅丹常有流线形的残留垄脊，沟槽排列与长期有效风向有关。沉积层、裂隙和原有起伏，会影响侵蚀从何处开始、哪些部分被保留下来。",
+        "流水、盐风化与重力也可能先行改造地面，或与风蚀继续共同作用。某处雅丹的细节，需要放回当地地质与气候历史中解释。"
+      ],
+      "partId": "landform-yardang",
+      "mediaIds": [
+        "diagram-yardang"
+      ]
+    },
+    {
+      "id": "landform-yardang-section-3",
+      "title": "雅丹、沙丘与戈壁，分别说明什么",
+      "paragraphs": [
+        "雅丹是侵蚀留下的垄脊与沟槽，沙丘是沙粒被风搬运后形成的堆积体，戈壁则突出砾石等地表覆盖。同一干旱地区可以同时有这三种景观，但它们描述的过程与材料并不相同。",
+        "比较时先问眼前物质是在被移走，还是在这里留下，再辨认岩层、沙粒或砾石。这样，照片中相似的起伏便能与不同成因联系起来。"
+      ],
+      "partId": "landform-yardang",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "干旱区常见地表的不同含义",
+          "columns": [
+            "名称",
+            "主要材料或形态",
+            "核心过程"
+          ],
+          "rows": [
+            [
+              "雅丹",
+              "残留垄脊与沟槽",
+              "风蚀等过程移走物质"
+            ],
+            [
+              "沙丘",
+              "沙粒组成的起伏地表",
+              "风搬运与堆积"
+            ],
+            [
+              "戈壁",
+              "砾石等地表覆盖",
+              "多种过程形成和保留覆盖"
+            ],
+            [
+              "黄土地貌",
+              "细粒覆盖与沟壑",
+              "粉尘堆积后受到流水改造"
+            ]
+          ],
+          "note": "名称并非相互排斥的区域划分，一片干旱区可以包含多种地表。"
+        }
+      ]
+    },
+    {
+      "id": "landform-yardang-section-4",
+      "title": "把形态放回环境",
+      "paragraphs": [
+        "柴达木盆地、戈壁与撒哈拉都包含多样的干旱景观：沙丘、盐湖、裸岩和砾石面可以相邻分布，雅丹只占其中一些地段。一个区域名称无法说明区域内每一处的材料和成因。",
+        "风蚀带走细颗粒，也影响土壤和空气中的粉尘。治理需要考虑沙尘来源、地表水分与土地利用，植树或挡风能发挥什么作用，要看当地的具体条件。"
+      ],
+      "partId": "landform-yardang"
+    },
+    {
+      "id": "landform-yardang-module-case-gobi-desert",
+      "title": "戈壁：裸岩、草地与风尘",
+      "paragraphs": [
+        "戈壁跨越蒙古南部与中国北部，裸岩、砾石、草地、沙地和暂时性湖盆并存。有限的水分、植被、风与地表物质，共同塑造了这种景观。",
+        "强风能够扬起干涸湖盆等处的细沉积物，把尘带到远方；粗砂和岩石的搬运方式不同。浅色地表可能是砾石或裸岩，既不能直接认作沙丘，也不足以说明土地正在退化。"
+      ],
+      "caseIds": [
+        "gobi-desert"
+      ],
+      "partId": "landform-yardang"
+    },
+    {
+      "id": "landform-yardang-module-case-qaidam-basin",
+      "title": "柴达木：沉积地表上的风蚀",
+      "paragraphs": [
+        "昆仑山、祁连山和阿尔金山围合着柴达木盆地，山地来水与碎屑不断进入盆内。从山麓的粗粒洪积物、戈壁到细粒平原和湖盆，不同沉积地带为后来的改造提供了不同材料。",
+        "在适合的沉积物与干旱环境中，风蚀能够留下垄脊和沟槽。把雅丹放回盆地，可以同时看见物质怎样先被带来、又怎样被移走；盆内的盐湖、砾石面和其他地貌则各有过程，不能统称为风蚀地貌。"
+      ],
+      "caseIds": [
+        "qaidam-basin"
+      ],
+      "partId": "landform-yardang"
+    },
+    {
+      "id": "landform-yardang-module-case-sahara",
+      "title": "撒哈拉沙漠",
+      "paragraphs": [
+        "撒哈拉横跨北非，除沙丘外，还有砾石地、岩石高原和山地。副热带下沉气流不利于云雨形成，海陆位置与地形进一步影响水分；长期少雨和强蒸发形成干旱环境，风化、流水与风力则把地表塑造成不同模样。"
+      ],
+      "caseIds": [
+        "sahara"
+      ],
+      "partId": "landform-yardang"
+    },
+    {
+      "id": "part-landform-dunes",
+      "title": "沙丘与风积地貌",
+      "paragraphs": [
+        "沙丘的轮廓来自沙粒的搬运与堆积。沙源、风向和植被改变，沙丘的形态与活动性也会改变。它既能出现在炎热的内陆荒漠，也能出现在海岸和寒冷地区，气温与沙丘形态要分别认识。"
+      ],
+      "partId": "landform-dunes"
+    },
+    {
+      "id": "landform-dunes-section-1",
+      "title": "先有沙源，才有可搬运的沙",
+      "paragraphs": [
+        "河流、海岸与岩石风化都可以提供沙粒。当地面较干、植被约束较弱而风力合适时，沙粒沿地面滚动、跃移，风便接续了其他过程的搬运。",
+        "沙漠描述干旱环境中的一类景观，沙丘则是一种具体地貌。裸岩和砾石可以占据沙漠的大部分地表，海岸及一些寒冷地区也可能积起沙丘。"
+      ],
+      "partId": "landform-dunes"
+    },
+    {
+      "id": "landform-dunes-section-2",
+      "title": "迎风坡与背风坡",
+      "paragraphs": [
+        "许多活动沙丘的迎风坡较缓，背风滑落坡较陡。沙粒沿迎风侧上移，越过顶部后落到背风侧，积累到一定条件再沿坡滑落，沙丘便在这种搬运中逐渐迁移。",
+        "实际风向、沙量、地形与植被常有变化，形成的沙丘会比理想剖面复杂。坡度与朝向也需要实地观测，不能由示意图直接确定。"
+      ],
+      "partId": "landform-dunes",
+      "mediaIds": [
+        "diagram-dunes"
+      ]
+    },
+    {
+      "id": "landform-dunes-section-3",
+      "title": "不同沙丘反映什么条件",
+      "paragraphs": [
+        "较单一的有效风向和一定沙量，可以形成新月形等沙丘；多方向风与充足沙源，则可能形成其他形态。线形、横向和星形沙丘，各自提供了风与沙相互作用的线索。",
+        "一张照片未必能显示整座沙丘，拍摄时的风向也不一定就是长期塑形的有效风向。辨认轮廓之后，还需要回到这些形成条件。"
+      ],
+      "partId": "landform-dunes"
+    },
+    {
+      "id": "landform-dunes-section-4",
+      "title": "沙丘并非都在不断移动",
+      "paragraphs": [
+        "植物、湿度、结皮或沙源的变化，可以让沙丘逐渐稳定；条件再变，也可能重新活动。沙面是否平滑、有没有脚印，都不足以单独判断活动性。",
+        "塔克拉玛干位于内陆盆地，纳米布砂海邻近海岸。两地沙源、地形与水汽条件不同，持续观察才能看出迁移和稳定的过程。"
+      ],
+      "partId": "landform-dunes"
+    },
+    {
+      "id": "landform-dunes-module-case-taklamakan",
+      "title": "塔克拉玛干沙漠",
+      "paragraphs": [
+        "塔克拉玛干位于塔里木盆地中部。周围山地侵蚀产生松散物质，河流将其送入盆地，干旱环境中的风继续搬运，在有限植被覆盖下形成大量流动沙丘。",
+        "沙丘形状受地形与风向影响，边缘还有戈壁、河道和绿洲。沙尘来源既可能是沙地，也可能是干燥的细粒沉积物，整片沙漠并非均一的沙海。"
+      ],
+      "caseIds": [
+        "taklamakan"
+      ],
+      "partId": "landform-dunes"
+    },
+    {
+      "id": "landform-dunes-module-case-namib-sand-sea",
+      "title": "纳米布砂海：雾与沙丘的相遇",
+      "paragraphs": [
+        "纳米布砂海位于纳米比亚的大西洋沿岸。内陆物质先随河流到达海岸，再由沿岸过程和风送入沙丘区，不同年代的堆积形成多样轮廓。砾石平原、岩丘和间歇河道也分布其间。",
+        "河流、海洋和风共同解释了沙从何而来；海雾则为当地生命提供重要水分。大沙丘与水分并不互相排斥，这里的水常以不同于降雨的方式抵达。"
+      ],
+      "caseIds": [
+        "namib-sand-sea"
+      ],
+      "partId": "landform-dunes",
+      "mediaIds": [
+        "dunes-photo"
+      ]
+    },
+    {
+      "id": "landform-dunes-module-case-sahara",
+      "title": "撒哈拉：沙丘只是荒漠的一部分",
+      "paragraphs": [
+        "撒哈拉的沙丘与岩石高原、砾石地、山地并存。长期少雨和强蒸发提供干旱背景，风化、流水与风力则在不同材料上形成不同地表。",
+        "与塔克拉玛干、纳米布砂海放在一起看，沙丘的存在需要沙源、可搬运条件与堆积空间，不能仅由气温高低解释。风把沙从哪里带来、在何处留下，是比较三地的共同问题。"
+      ],
+      "caseIds": [
+        "sahara"
+      ],
+      "partId": "landform-dunes"
+    },
+    {
+      "id": "part-landform-loess",
+      "title": "黄土、塬梁峁与沟壑",
+      "paragraphs": [
+        "黄土与沙丘的颗粒、沉积形态并不相同。风搬来的粉尘长期覆盖高地，随后雨水和河流切开土层，留下塬、梁、峁及深浅不一的沟壑。材料的沉积和地表的切割，是理解黄土地貌的两段经历。"
+      ],
+      "partId": "landform-loess"
+    },
+    {
+      "id": "landform-loess-section-1",
+      "title": "黄土为什么能覆盖大片高地",
+      "paragraphs": [
+        "黄土以粉砂等细颗粒为主，风搬来的粉尘长期沉积，逐渐形成厚层覆盖。物源、风向与沉积条件会随时间和地点变化，不能把全部黄土归于同一片沙漠的一次扬沙。",
+        "沉积与土壤形成交替进行，在剖面上留下层次。新裸露的土壁、长期积累的黄土层与后来形成的土壤，需要从厚度、颜色和颗粒中分别辨认。"
+      ],
+      "partId": "landform-loess"
+    },
+    {
+      "id": "landform-loess-section-2",
+      "title": "塬、梁、峁：沟谷之间留下的高地",
+      "paragraphs": [
+        "沟谷切开黄土覆盖的地表，较宽平的残留高地面称为塬，较长的条状高地称为梁，丘状高地则常称为峁。它们在区域内交错，反映不同的原有地形和分割程度。",
+        "这组名称帮助描述外形，却不意味着每片土地都必然按塬、梁、峁的顺序变化。把沟道连接、坡面与黄土厚度放在一起，才能进一步解释一处具体地貌。"
+      ],
+      "partId": "landform-loess",
+      "mediaIds": [
+        "diagram-loess"
+      ]
+    },
+    {
+      "id": "landform-loess-section-3",
+      "title": "雨水怎样变成沟壑",
+      "paragraphs": [
+        "雨落到黄土地面后，一部分下渗，一部分形成径流。坡面水汇成细沟，继续切割并接入较大沟道，沟壁崩塌和重力运动又拓宽谷地，逐渐形成相连的沟壑。",
+        "降雨强度、坡度、植被、土壤状态和土地利用共同影响侵蚀。年雨量相近的两地，若一地的雨集中在少数强降水过程中，地表受到的改造也可能不同。"
+      ],
+      "partId": "landform-loess"
+    },
+    {
+      "id": "landform-loess-section-4",
+      "title": "地貌与水土保持",
+      "paragraphs": [
+        "坡耕地、道路切坡与植被变化，会改变径流和泥沙的去向。梯田、植被恢复和沟道措施各有作用，需要配合当地水分与用地条件，实际效果也要持续观察。",
+        "黄土高原的泥沙与黄河相连，但坡面移走的泥沙还会在途中沉积、拦蓄或继续搬运。坡面侵蚀量不能直接当作河口输沙量，一张照片也无法代表整个地区的治理成效。"
+      ],
+      "partId": "landform-loess"
+    },
+    {
+      "id": "landform-loess-module-case-loess-plateau",
+      "title": "黄土高原",
+      "paragraphs": [
+        "黄土高原上，厚层细土与深切沟壑共同出现。细粒粉尘经风搬运后长期沉积，来源并非只有一个沙漠；土壤形成、雨水和河流侵蚀再改造土层，形成塬、梁、峁与沟谷。土色不能直接说明今天的堆积速度，沟壑也主要需要从后期流水切割理解。"
+      ],
+      "caseIds": [
+        "loess-plateau"
+      ],
+      "partId": "landform-loess"
+    },
+    {
+      "id": "landform-loess-module-case-yellow-river",
+      "title": "黄河",
+      "paragraphs": [
+        "黄河从青藏高原经过黄土高原，进入华北平原。上游与支流切割高地、汇入泥沙，下游坡度较小，部分泥沙沉积，历史改道又重塑了平原和三角洲。",
+        "衡量泥沙时，含沙量、输沙量与流量各有含义。水少造成浓度上升，并不必然带来更多的总输沙；从坡面到河口的输送，还受沿途沉积和拦蓄影响。"
+      ],
+      "caseIds": [
+        "yellow-river"
+      ],
+      "partId": "landform-loess"
+    }
+  ],
+  "questions": [
+    {
+      "question": "沙丘和雅丹看起来都起伏明显，最值得先区分什么？",
+      "answer": "先区分松散沙粒的堆积与原有材料被侵蚀后留下的形态，再结合材料、位置和排列方向判断。"
+    },
+    {
+      "question": "看到沙丘就能判断这里是炎热的内陆沙漠吗？",
+      "answer": "不能。沙丘也可以发育在海岸和寒冷环境。需要分别判断干湿条件、沙源和温度，而不是把沙丘与炎热画等号。"
+    },
+    {
+      "question": "黄土地貌的主要轮廓为什么不能只用风力解释？",
+      "answer": "风提供了重要的沉积物，后来的流水切割、坡面过程及其他作用塑造了许多沟壑和高地轮廓。材料与形态有不同的形成环节。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "nps.gov · aeolian landforms",
+      "url": "https://www.nps.gov/subjects/geology/aeolian-landforms.htm"
+    },
+    {
+      "title": "nps.gov · landforms",
+      "url": "https://www.nps.gov/subjects/geology/landforms.htm"
+    },
+    {
+      "title": "NASA Earth Observatory · Dust Storm over the Gobi Desert",
+      "url": "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-gobi-desert-79746/"
+    },
+    {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+    },
+    {
+      "title": "中国科学院地理资源所 · 柴达木盆地",
+      "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html"
+    },
+    {
+      "title": "中国政府网资料 · 中国地形的分布（高原、平原与盆地）",
+      "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+    },
+    {
+      "title": "中国科学院青海盐湖研究所 · 柴达木盆地盐湖锂矿床成因研究",
+      "url": "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html"
+    },
+    {
+      "title": "青海省人民政府 · 十四五规划资源利用与生态保护",
+      "url": "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+    },
+    {
+      "title": "NOAA · Climate Zones",
+      "url": "https://www.noaa.gov/jetstream/global/climate-zones"
+    },
+    {
+      "title": "NOAA · Saharan Air Layer",
+      "url": "https://www.aoml.noaa.gov/saharan-air-layer/"
+    },
+    {
+      "title": "UNESCO · Namib Sand Sea",
+      "url": "https://whc.unesco.org/en/list/1430/"
+    },
+    {
+      "title": "中国科学院地理资源所 · 塔克拉玛干沙漠",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692338.html"
+    },
+    {
+      "title": "NASA · The Taklimakan Desert: A Factory for Dust Storms",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-taklimakan-desert-a-factory-for-dust-storms-87969/"
+    },
+    {
+      "title": "NOAA · What is upwelling?",
+      "url": "https://oceanservice.noaa.gov/facts/upwelling.html"
+    },
+    {
+      "title": "nps.gov · fluvial landforms",
+      "url": "https://www.nps.gov/subjects/geology/fluvial-landforms.htm"
+    },
+    {
+      "title": "中国科学院地质地球所 · 黄土形成与物源",
+      "url": "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html"
+    },
+    {
+      "title": "中国科学院地球环境所 · 河谷砂黄土风—水过程",
+      "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
+    },
+    {
+      "title": "生态环境部 · 黄河流域生态保护规划",
+      "url": "https://www.mee.gov.cn/zcwj/zyygwj/202110/t20211009_955779.shtml"
+    },
+    {
+      "title": "黄河水利委员会 · 黄河防汛辨析",
+      "url": "https://www.yrcc.gov.cn/zwzc/zcjd/202403/t20240312_426969.html"
+    }
+  ],
+  "presentation": "essay"
+}

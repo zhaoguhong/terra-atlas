@@ -1,0 +1,524 @@
+{
+  "id": "agriculture-food",
+  "title": "农业与粮食系统",
+  "introduction": "农业把光、热、水和土壤转化为食物，也依赖品种、耕作与人的安排。东北粮田、南方稻田、干旱灌区和草原牧场，面对的是不同的生长季与水土条件。收获离开田地以后，储存、运输和市场又把生产地接到城市。本篇从一季作物怎样生长讲起，再看各地农业与远方消费如何相连。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "china-agriculture",
+      "title": "中国农业与牧业",
+      "sectionId": "part-china-agriculture",
+      "description": "认识中国农业，可以先比较水和热量怎样在一年中配合。东北作物利用有限的暖季，稻田要调节水层，河套灌区需要把河水送进田地并排出多余水盐，草原牧业则随牧草生长安排利用。不同的生产方式，都要适应当地的季节。",
+      "keywords": [
+        "黑土",
+        "农业",
+        "耕作制度",
+        "冲积平原",
+        "农业用水",
+        "旱涝",
+        "季风农业",
+        "农时",
+        "统计口径",
+        "河湖联系",
+        "灌溉",
+        "水盐平衡",
+        "牧业",
+        "草畜平衡"
+      ]
+    },
+    {
+      "id": "world-agriculture-food",
+      "title": "世界农业与粮食联系",
+      "sectionId": "part-world-agriculture-food",
+      "description": "把视野从中国移向世界，仍可以沿着水土与农时这条线索比较。北美大平原的小麦、湄公河三角洲的稻田、潘帕斯的农牧业与卡法森林的咖啡，各自需要不同条件。加工、运输与市场，又使种植和经营的选择超出当地自然环境。",
+      "keywords": [
+        "粮食",
+        "农业季节",
+        "稻作",
+        "水资源",
+        "季风农业",
+        "农时",
+        "统计口径",
+        "平原",
+        "农牧业",
+        "经济作物",
+        "生物多样性",
+        "农业统计",
+        "黑土",
+        "节水"
+      ]
+    },
+    {
+      "id": "china-food-water-cities",
+      "title": "粮食、水与城市一起看",
+      "sectionId": "part-china-food-water-cities",
+      "description": "食物生产需要水和土地，人口集中的城市却未必靠近主要粮田。运输把收获送往市场，供水工程把部分地区接入更远的水源；农田、水利与城市因而构成相互联系的空间。",
+      "keywords": [
+        "农业统计",
+        "黑土",
+        "节水",
+        "季风农业",
+        "农时",
+        "统计口径",
+        "黑土保护",
+        "商品农业",
+        "山环水绕",
+        "冲积平原",
+        "农业用水",
+        "旱涝",
+        "跨流域调水",
+        "水资源管理",
+        "人地协调",
+        "规划自然范围",
+        "城市群",
+        "跨界水环境",
+        "湾区",
+        "范围区分",
+        "城市网络",
+        "港湾城市",
+        "地形雨",
+        "行政与城区",
+        "填海",
+        "岸线变化",
+        "区域联系"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-china-agriculture",
+      "title": "中国农业与牧业",
+      "paragraphs": [
+        "认识中国农业，可以先比较水和热量怎样在一年中配合。东北作物利用有限的暖季，稻田要调节水层，河套灌区需要把河水送进田地并排出多余水盐，草原牧业则随牧草生长安排利用。不同的生产方式，都要适应当地的季节。"
+      ],
+      "partId": "china-agriculture"
+    },
+    {
+      "id": "china-agriculture-section-1",
+      "title": "从作物的一季生长看农业条件",
+      "paragraphs": [
+        "作物从播种到收获，需要适宜的温度、水分与土壤。地形影响机械作业、排水和侵蚀，雨水何时到来又影响播种与灌溉。自然条件因此要放进作物的生长过程，而不能只归结为一项年平均温度或年雨量。",
+        "同一片土地也并非只能种一种作物。品种、技术、市场和经营方式会改变田里的选择。东北黑土区、华北平原、长江中下游、河套和锡林郭勒，正好展示了种植、灌溉与放牧怎样回应不同条件。"
+      ],
+      "partId": "china-agriculture"
+    },
+    {
+      "id": "china-agriculture-section-2",
+      "title": "黑土的价值与保护",
+      "paragraphs": [
+        "黑土的价值来自长期成土过程中积累的有机质与形成的结构。耕作和侵蚀会改变这些性质，土层一旦流失，短期增施肥料难以完全恢复原有的保水、保肥等功能。",
+        "黑土保护因而不只是保住一种颜色。地表覆盖、耕作方式和减少侵蚀都很重要，具体措施还需适应不同坡度与土壤条件，让已经形成的土层尽量留在原地。"
+      ],
+      "partId": "china-agriculture",
+      "mediaIds": [
+        "diagram-soil"
+      ]
+    },
+    {
+      "id": "china-agriculture-section-3",
+      "title": "灌溉与排水一起决定用水效果",
+      "paragraphs": [
+        "河套等灌区靠河水补充降雨的不足。灌溉把水送入土壤，排水帮助控制过湿和盐分累积；南方水田同样需要调节水层，而非在整个生长季放任田块淹水。",
+        "一部分引水被作物利用，一部分蒸发，还有一部分回到河流或地下。地块的用水效率与整个流域的节水效果未必相同，需要连同回流水和下游需求一起考虑。"
+      ],
+      "partId": "china-agriculture"
+    },
+    {
+      "id": "china-agriculture-section-4",
+      "title": "草原利用关注恢复与季节",
+      "paragraphs": [
+        "牧草的生长受季节和年际降水影响，草地能够支持的利用强度也随之变化。放牧数量、移动安排与饲草供给，需要适应这种变化，给草地保留恢复的条件。",
+        "某一年草较绿或较黄，可能与当年的雨水有关，长期变化需要连续观察。农田与草地的边缘也不是只由一条气候线决定，地形、土壤、水源和人的选择都参与其中。"
+      ],
+      "partId": "china-agriculture",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "几种农业怎样安排水土与季节",
+          "columns": [
+            "类型",
+            "主要依靠",
+            "需要照顾的条件"
+          ],
+          "rows": [
+            [
+              "东北粮田",
+              "暖季光热与土壤",
+              "品种、播期和黑土保护"
+            ],
+            [
+              "南方稻作",
+              "水热、田地与灌排",
+              "生长阶段所需水层、雨季排涝"
+            ],
+            [
+              "河套灌区",
+              "河流引水",
+              "供水、排水与土壤盐分"
+            ],
+            [
+              "草原牧业",
+              "牧草、水源与季节",
+              "草地恢复、干旱年份的利用强度"
+            ]
+          ],
+          "note": "表中概括主要联系，各地区内部仍有不同地形、土壤和经营条件。"
+        }
+      ]
+    },
+    {
+      "id": "china-agriculture-module-northern-fields",
+      "title": "东北与华北：两种粮田条件",
+      "paragraphs": [
+        "东北冬季寒冷，作物主要利用暖季生长。适宜品种与播期，把夏季的光、热、水用于生产；长期成土积累的有机质提供土壤基础，耕作又需要减少侵蚀，保护已有的黑土层。",
+        "华北平原同样有大片耕地，但农业用水更需要关注作物需水期与降雨季节怎样衔接。山前冲积扇、古河道、湖洼和沿海低地的水土条件各不相同，河渠与灌排安排进一步影响农田。两处粮田都较平坦，实际农时与水土管理却各有重点。"
+      ],
+      "caseIds": [
+        "northeast-blacksoil",
+        "north-china-plain"
+      ],
+      "partId": "china-agriculture"
+    },
+    {
+      "id": "china-agriculture-module-rice-water",
+      "title": "稻田：水多也要会排水",
+      "paragraphs": [
+        "长江中下游的河湖与水网，为稻田提供水源，也带来雨季积涝的可能。稻作需要的是适时、适量的水，水层管理应配合品种、农时和生长阶段；暴雨淹没与旱季缺水，都可能影响收成。",
+        "水田也不都位于大片平原。龙脊梯田的照片展示了坡地被整理成台阶状田块的形态，让人看到农业如何利用地形、安排水的去向。具体到一块田，土层、进水与排水条件仍决定它怎样耕作。"
+      ],
+      "caseIds": [
+        "rice-farming",
+        "yangtze-middle-lower-plain"
+      ],
+      "partId": "china-agriculture",
+      "mediaIds": [
+        "terraces-photo"
+      ]
+    },
+    {
+      "id": "china-agriculture-module-oasis-pasture",
+      "title": "灌区与牧区：两种用地方式",
+      "paragraphs": [
+        "河套的冲积平原地势较平，引黄渠道把上游来水送入农田。灌溉后的绿色景观并不意味着气候湿润，蒸发和地下水变化仍会影响土壤盐分，供水与排水需要共同安排。",
+        "锡林郭勒的牧业依托草地，生产节奏随返青、旺盛生长和枯黄而变化。干旱年份牧草减少，就需要按草况与水源调整利用强度。储备饲草可以帮助应对短缺，却不能替代天然草地的长期保护。"
+      ],
+      "caseIds": [
+        "hetao-irrigation",
+        "xilingol-pasture"
+      ],
+      "partId": "china-agriculture"
+    },
+    {
+      "id": "part-world-agriculture-food",
+      "title": "世界农业与粮食联系",
+      "paragraphs": [
+        "把视野从中国移向世界，仍可以沿着水土与农时这条线索比较。北美大平原的小麦、湄公河三角洲的稻田、潘帕斯的农牧业与卡法森林的咖啡，各自需要不同条件。加工、运输与市场，又使种植和经营的选择超出当地自然环境。"
+      ],
+      "partId": "world-agriculture-food"
+    },
+    {
+      "id": "world-agriculture-food-section-1",
+      "title": "同是农业，生产条件各不相同",
+      "paragraphs": [
+        "小麦、稻作、畜牧和咖啡种植，各有水热、地形与土壤需求。北美大平原、湄公河三角洲、潘帕斯和埃塞俄比亚咖啡产地，呈现了这些条件的不同组合。",
+        "农业区的面貌也包含技术、经营规模和市场的作用。同一纬度可能有不同作物，同一种作物也可能采用不同方式生产，单凭一张农田照片难以概括全区。"
+      ],
+      "partId": "world-agriculture-food"
+    },
+    {
+      "id": "world-agriculture-food-section-2",
+      "title": "种植季节把气候与作物接起来",
+      "paragraphs": [
+        "温度和水分要放进一年中理解。年降水量相近的地方，如果雨水集中在不同月份，种植安排可能很不一样；播种、生长与收获必须与适宜的季节衔接。",
+        "水稻、小麦和咖啡对环境的要求不同。月度气温、降雨与作物生长季之间的关系，往往比单个年平均值更能解释当地的农时。"
+      ],
+      "partId": "world-agriculture-food"
+    },
+    {
+      "id": "world-agriculture-food-section-3",
+      "title": "产量、单产与土地面积",
+      "paragraphs": [
+        "总产量由种植面积和单位面积产量共同影响。单产高的地区未必总产量最大，出口多也不说明人均粮食消费最多，这些数字分别回答不同的问题。",
+        "贸易将气候与产品不同的地区联系起来。粮食离开田地后，还要经过运输和储存；沿途的损耗与设施条件，也影响它最终怎样到达消费地。"
+      ],
+      "partId": "world-agriculture-food"
+    },
+    {
+      "id": "world-agriculture-food-section-4",
+      "title": "稳产需要照顾水与土壤",
+      "paragraphs": [
+        "一季收成与长期生产能力，需要用不同时间尺度来衡量。侵蚀、盐分、土壤有机质和水源的变化，可能缓慢积累，影响后续许多年的农业条件。",
+        "缺水地区需要安排有限水源，雨季集中的地方要兼顾排水和保土。提高当年的产量之外，土地能否继续稳定生产，也是农业管理必须回应的问题。"
+      ],
+      "partId": "world-agriculture-food"
+    },
+    {
+      "id": "world-agriculture-food-module-staples",
+      "title": "小麦与水稻：把农时放回季节",
+      "paragraphs": [
+        "北美大平原上的冬小麦秋播，越冬后恢复生长；春小麦则在春季土壤条件允许后播种。由南向北，冬季低温与可耕作季节改变，品种和播期也相应调整。种植结构还会受到技术、收益与政策影响。",
+        "湄公河三角洲的稻田面对另一组季节条件。低平土地接受上游来水，也受河口咸水影响；洪水、淡水来量与盐分的变化，会限制适合种植的时间。水道密集，并不等于任何季节都有合用的水。",
+        "小麦与稻作的差别，不只是田里长着什么。前者的例子突出冬季低温与播期，后者突出雨季、洪水和淡咸水变化。把作物生长阶段与当地水热节律对齐，才能理解具体农时。"
+      ],
+      "caseIds": [
+        "great-plains-wheat",
+        "mekong-delta-farming",
+        "rice-farming",
+        "china-grain"
+      ],
+      "partId": "world-agriculture-food"
+    },
+    {
+      "id": "world-agriculture-food-module-land-use",
+      "title": "土地利用与商品",
+      "paragraphs": [
+        "潘帕斯平缓的地形、土壤与降水条件支持草地和农业。今天的农牧景观也经历了长期改造，已开垦土地不能再直接当作原有自然草原。耕作、畜牧和运输组织，共同影响这片平原的农业利用。",
+        "埃塞俄比亚卡法的森林保存了野生咖啡及其遗传多样性。采集、种植和经营又把森林、社区生活与全球商品联系起来，咖啡因此不只是一个出口数量。",
+        "栽培作物与野生近缘材料的联系，是农业多样性的重要基础。卡法森林的保护价值由此可见，但野生咖啡的多样性不能直接换算成出口量或品质排名。"
+      ],
+      "caseIds": [
+        "pampas",
+        "kafa-coffee"
+      ],
+      "partId": "world-agriculture-food"
+    },
+    {
+      "id": "part-china-food-water-cities",
+      "title": "粮食、水与城市一起看",
+      "paragraphs": [
+        "食物生产需要水和土地，人口集中的城市却未必靠近主要粮田。运输把收获送往市场，供水工程把部分地区接入更远的水源；农田、水利与城市因而构成相互联系的空间。"
+      ],
+      "partId": "china-food-water-cities"
+    },
+    {
+      "id": "china-food-water-cities-section-1",
+      "title": "粮食、水与城市是一组相互连接的需求",
+      "paragraphs": [
+        "粮食主产区与人口密集地区并不总是重合。东北平原、华北平原和长江流域的农业，经运输与市场联系到城市；城市的食物来源也常常跨越多个地区。",
+        "长江三角洲和珠江三角洲既有农业，也有密集的城市消费。理解这种分工，需要同时考虑产地条件、城市需求，以及两者之间的交通和储运设施。"
+      ],
+      "partId": "china-food-water-cities",
+      "mediaIds": [
+        "diagram-food-water"
+      ]
+    },
+    {
+      "id": "china-food-water-cities-section-2",
+      "title": "作物需要的水要在合适时间到位",
+      "paragraphs": [
+        "作物在播种、生长和成熟阶段的需水不同，雨季与用水高峰是否重合，土壤能够储存多少水，都会影响灌溉。因此，年降雨总量不能独自说明农业供水是否充足。",
+        "水稻、旱作粮食及不同复种制度各有要求。灌溉能够弥补部分时空差异，但农业用水仍需与河流、地下水及生态用水共同安排。"
+      ],
+      "partId": "china-food-water-cities"
+    },
+    {
+      "id": "china-food-water-cities-section-3",
+      "title": "调水改变联系，也需要管理取舍",
+      "paragraphs": [
+        "南水北调通过工程在自然流域之间输水，把水源区、输水沿线与受水区连接起来。水质、调度与节水措施影响供水效果，也影响这些地区之间的关系。",
+        "调入水增加，并不意味着用水需求可以无限增长。长期供水仍需统筹本地水、外调水和实际消耗，受水地区也要保护自身河湖与地下水。"
+      ],
+      "partId": "china-food-water-cities"
+    },
+    {
+      "id": "china-food-water-cities-section-4",
+      "title": "三角洲为什么容易形成密集联系",
+      "paragraphs": [
+        "河口、平原与海岸分别为农田、城市和港口提供条件，历史发展、产业和交通又强化了联系。长江与珠江入海处的城市集聚，包含自然条件和长期建设的共同作用。",
+        "香港、澳门与周边城市的用地和功能各有不同。密集的人口与产业也扩大了对外部粮食、水和能源的需求，城市群的日常生活因而与更广阔的供给地区相连。"
+      ],
+      "partId": "china-food-water-cities"
+    },
+    {
+      "id": "china-food-water-cities-module-food",
+      "title": "产地怎样供应远处的城市",
+      "paragraphs": [
+        "东北、华北和长江流域的农田，经运输和市场向城市提供粮食。不同地区的土壤、水源与种植制度影响能生产什么，城市需求、储运条件和沿途损耗则影响收获怎样到达消费地。",
+        "理解生产规模，还需要分清播种面积、单产与总产量。总产量约等于播种面积乘以平均单产；同一块地在不同季节播种会分别计入播种面积，因此播种面积与不重复计算的耕地面积不同。"
+      ],
+      "caseIds": [
+        "china-grain",
+        "rice-farming",
+        "northeast-china-plain",
+        "north-china-plain"
+      ],
+      "partId": "china-food-water-cities"
+    },
+    {
+      "id": "china-food-water-cities-module-water",
+      "title": "跨流域水资源联系",
+      "paragraphs": [
+        "南水北调的渠道、泵站与控制设施，能够跨越部分自然分水关系输水。自然河水仍按地形汇集，人工输水并没有改变分水岭的定义，也不会让原有流域边界消失。",
+        "这条联系需要长期运行和维护。水源区的水量、水质与生态，沿线输水管理，以及受水地区的节水，共同影响工程能够持续提供怎样的供水。"
+      ],
+      "caseIds": [
+        "south-north-water"
+      ],
+      "partId": "china-food-water-cities"
+    },
+    {
+      "id": "china-food-water-cities-module-markets",
+      "title": "三角洲城市：消费联系伸向更远处",
+      "paragraphs": [
+        "长江三角洲与珠江三角洲既有农业，也集中了城市人口和产业。河网、港口与陆路把本地和远处产地接入市场，使城市的食物来源超出周边农田。这里的产业和城市联系范围，也比自然三角洲的地形范围更广。",
+        "香港的山地与港湾、澳门的半岛和岛屿，为城市提供不同的用地条件，填海与跨海交通又改变了部分联系。它们与周边城市的分工及人口需求，进一步把日常食物、水和能源供应接到更广阔的地区。"
+      ],
+      "caseIds": [
+        "yangtze-delta",
+        "pearl-delta",
+        "hong-kong",
+        "macao"
+      ],
+      "partId": "china-food-water-cities"
+    }
+  ],
+  "questions": [
+    {
+      "question": "提高农田产量，为什么不能只关注肥料？",
+      "answer": "产量还受水分、温度、土壤结构、病虫害和管理影响，过量投入也不能替代良好的土壤与灌排条件。"
+    },
+    {
+      "question": "粮食总产量高，是否说明每公顷产量也最高？",
+      "answer": "不一定。总产量同时受面积和单产影响，需要分别比较。"
+    },
+    {
+      "question": "粮食主产区是否一定也是人口最密集的地区？",
+      "answer": "不一定。生产需要土地与水热条件，人口集中还受到就业和服务等因素影响，二者通过贸易与交通连接。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "农业农村部 · 黑土同耕 稳粮兴邦",
+      "url": "https://qys.moa.gov.cn/gdxw/202604/t20260427_6483675.htm"
+    },
+    {
+      "title": "农业农村部 · 粮食作物区域大配方与施肥建议",
+      "url": "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm"
+    },
+    {
+      "title": "内蒙古自治区人民政府 · 国土空间规划",
+      "url": "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 华北平原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
+    },
+    {
+      "title": "国家统计局 · National Grain Production in 2024",
+      "url": "https://www.stats.gov.cn/english/PressRelease/202412/t20241219_1957784.html"
+    },
+    {
+      "title": "World Bank · India: Managing Floods and Droughts（2023）",
+      "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+    },
+    {
+      "title": "中国科学院地理资源所 · 长江中下游平原",
+      "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692359.html"
+    },
+    {
+      "title": "中国政府网资料 · 中国地形的分布（高原、平原与盆地）",
+      "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+    },
+    {
+      "title": "内蒙古自治区农牧厅 · 河套灌区农业节水与盐碱地治理（2025）",
+      "url": "https://nmt.nmg.gov.cn/gk/zfxxgk/fdzdgknr/rdjy/202510/t20251030_2810626.html"
+    },
+    {
+      "title": "USDA ERS · Wheat Sector at a Glance",
+      "url": "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance"
+    },
+    {
+      "title": "World Bank · Greening Viet Nam’s Rice Bowl: A Mekong Delta Success Story",
+      "url": "https://www.worldbank.org/en/news/feature/2024/05/14/greening-viet-nam-s-rice-bowl-a-mekong-delta-success-story"
+    },
+    {
+      "title": "World Bank · For Mekong Delta Farmers, Diversification is the Key to Climate Resilience",
+      "url": "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience"
+    },
+    {
+      "title": "UNESCO MAB · Kafa",
+      "url": "https://www.unesco.org/en/mab/kafa"
+    },
+    {
+      "title": "National Geographic Society · South America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+    },
+    {
+      "title": "NASA Earth Observatory · Agriculture Patterns in the Great Plains",
+      "url": "https://science.nasa.gov/earth/earth-observatory/agriculture-patterns-in-the-great-plains-145932/"
+    },
+    {
+      "title": "NASA JPL/MISR · The Pampas of Argentina",
+      "url": "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/"
+    },
+    {
+      "title": "NASA Earth Observatory · East Africa",
+      "url": "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/"
+    },
+    {
+      "title": "国家统计局 · 2024年粮食产量数据公告",
+      "url": "https://www.stats.gov.cn/xxgk/sjfb/zxfb2020/202412/t20241213_1957744.html"
+    },
+    {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+    },
+    {
+      "title": "中国科学院地理资源所 · 东北平原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html"
+    },
+    {
+      "title": "中国政府网 · 南水北调中线一期通水与供水口径",
+      "url": "https://www.gov.cn/xinwen/2015-12/08/content_5021383.htm"
+    },
+    {
+      "title": "中国政府网 · 长江三角洲区域一体化发展规划纲要（2019）",
+      "url": "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html"
+    },
+    {
+      "title": "上海市人民政府 · Geography（2024年末面积）",
+      "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 太湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html"
+    },
+    {
+      "title": "中国科学院南京地湖所 · 浅水湖泊水动力",
+      "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+    },
+    {
+      "title": "中国政府网 · 粤港澳大湾区发展规划纲要（2019）",
+      "url": "https://app.www.gov.cn/govdata/gov/201902/18/435204/article.html"
+    },
+    {
+      "title": "广东省人民政府 · 主体功能区规划自然状况",
+      "url": "https://www.gd.gov.cn/zwgk/gongbao/2012/31/content/mpost_3363740.html"
+    },
+    {
+      "title": "交通运输部珠江航务管理局 · 珠江水系航运简介",
+      "url": "https://zjhy.mot.gov.cn/zhuhanggk/shuixijj/201909/t20190916_3266853.html"
+    },
+    {
+      "title": "宁夏水利厅 · 珠江与沿海河流",
+      "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2718481.html"
+    },
+    {
+      "title": "香港天文台 · 地形雨与1981—2010降雨分布",
+      "url": "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html"
+    },
+    {
+      "title": "香港海事处 · Hong Kong Fact Sheet — the Port",
+      "url": "https://www.mardep.gov.hk/en/materials-and-publications/publications/hk-fact-sheet/index.html"
+    },
+    {
+      "title": "中国政府网资料 · 中华人民共和国行政区划",
+      "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+    },
+    {
+      "title": "澳门旅游局 · 地理位置及时间",
+      "url": "https://www.macaotourism.gov.mo/zh-hant/article/about-macao/location-and-time"
+    }
+  ],
+  "presentation": "essay"
+}

@@ -1,0 +1,471 @@
+{
+  "id": "map-climate",
+  "title": "气候分布与成因",
+  "introduction": "气候描述一个地方长期的冷暖、干湿及季节节律。地图把这些复杂记录归成类别，便于比较；要理解类别为什么这样分布，还需要回到纬度、海陆、环流与地形。本篇先读懂温度和降水，再说明它们怎样形成全球差异，最后用高原、干旱海岸和季风区检验这些联系。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "map-climate",
+      "title": "长期气候分布",
+      "sectionId": "part-map-climate",
+      "description": "一幅气候图压缩了多年的温度与降水记录。Köppen–Geiger分类以A—E五大类概括主要的冷热、干湿差别，再用更细的代码记录雨季、旱季和夏季热量。",
+      "keywords": [
+        "热带",
+        "干湿季",
+        "多年平均",
+        "干旱阈值",
+        "蒸发需求",
+        "分类顺序",
+        "温和气候",
+        "0°C界线",
+        "季节比较",
+        "大陆性",
+        "冬夏温差",
+        "暖季长度",
+        "低温限制",
+        "高山气候",
+        "ET与EF"
+      ]
+    },
+    {
+      "id": "climate-causes",
+      "title": "气候为什么不同",
+      "sectionId": "part-climate-causes",
+      "description": "分类提供了共同的比较语言，却没有替每一种气候写出成因。解释冷热可以从太阳辐射入手；解释降水，还要追踪水汽从哪里来，空气怎样升降，以及这些过程如何随季节移动。",
+      "keywords": [
+        "气候成因",
+        "纬度",
+        "海陆",
+        "环流",
+        "地形雨",
+        "洋流",
+        "雨影",
+        "海拔效应",
+        "亚洲水塔",
+        "内外流区",
+        "沿海沙漠",
+        "海陆联系",
+        "季风",
+        "水热季节",
+        "热量输送"
+      ]
+    },
+    {
+      "id": "world-latitude-height",
+      "title": "低纬度也有高寒环境",
+      "sectionId": "part-world-latitude-height",
+      "description": "赤道附近也有寒冷高山，热带大陆内部也可能很干燥。纬度说明辐射背景，高度、海陆和环流改变实际环境；将这几项条件分开，才能理解相似景观为何出现在遥远的地方。",
+      "keywords": [
+        "东非",
+        "垂直分异",
+        "人地关系",
+        "大陆伸展",
+        "断陷湖",
+        "对照学习",
+        "生物群系",
+        "土地利用",
+        "范围口径",
+        "南半球",
+        "干旱",
+        "人口分布",
+        "海拔效应",
+        "亚洲水塔",
+        "内外流区",
+        "极地",
+        "冰盖",
+        "科学观测",
+        "热带",
+        "干湿季",
+        "多年平均",
+        "低温限制",
+        "高山气候",
+        "ET与EF"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-map-climate",
+      "title": "长期气候分布",
+      "paragraphs": [
+        "一幅气候图压缩了多年的温度与降水记录。Köppen–Geiger分类以A—E五大类概括主要的冷热、干湿差别，再用更细的代码记录雨季、旱季和夏季热量。"
+      ],
+      "partId": "map-climate"
+    },
+    {
+      "id": "map-climate-section-1",
+      "title": "气候图讲的是长期规律",
+      "paragraphs": [
+        "本站采用Beck等（2023）V3的1991—2020年、0.5° Köppen–Geiger资料。每个色块概括对应格网多年温度与降水的组合，描绘长期气候，并不记录某一天的天气。",
+        "同一类别内部，仍有海拔和局部季节差异。具体到一座城市或一片山地，月平均温度与降水能补充更多细节，让相同颜色下的不同生活环境显现出来。"
+      ],
+      "partId": "map-climate"
+    },
+    {
+      "id": "map-climate-section-2",
+      "title": "先理解 A—E，再读小写字母",
+      "paragraphs": [
+        "A为热带，B为干旱，C为温带，D为寒冷大陆性类别，E为极地。分类时先判断B类，其干旱阈值与温度及降水的季节分配有关，并非全球统一的一条年雨量线。",
+        "小写字母进一步表达降水季节性、夏季热量等条件。Af、Csa、Dfb等代码需要依照各自判据理解。本文始终采用Beck V3的同一套阈值，高寒环境也按这套标准分类，不另列H类。"
+      ],
+      "partId": "map-climate"
+    },
+    {
+      "id": "map-climate-section-3",
+      "title": "把温度与降水放在同一年里看",
+      "paragraphs": [
+        "月温度曲线显示最冷月、最热月和冬夏温差，月降水柱则显示雨水集中在哪些月份。两者叠在一年中，才能辨认热的时候是否也多雨，干季持续多久，以及水热条件怎样配合。",
+        "南北半球季节相反，曲线高点出现的月份常不同。比较两地时，应使用相同的统计时期，并同时看年内分配：相近的年平均温度或年雨量，可以对应很不一样的冬夏和雨季。"
+      ],
+      "partId": "map-climate",
+      "mediaIds": [
+        "diagram-climate-reading"
+      ]
+    },
+    {
+      "id": "map-climate-section-4",
+      "title": "从分布追问原因",
+      "paragraphs": [
+        "纬度改变太阳辐射条件，海陆位置与环流影响水汽及季节变化，山地和洋流再带来局部差异。气候代码记录这些作用的结果，解释成因则要把地理条件接起来。",
+        "同纬度海岸与内陆、相邻低地与高山，是两种有用的比较。月序列的样点若与所选格网不在同一位置，两者就可能反映不同条件；这种距离差异需要保留。"
+      ],
+      "partId": "map-climate"
+    },
+    {
+      "id": "map-climate-module-module-1",
+      "title": "热量与水分的五种组合",
+      "paragraphs": [
+        "A类首先排除干旱B类，再以最冷月平均温度≥18°C识别全年温暖的环境。低纬辐射提供热量，热带辐合带、季风和海陆位置安排雨季。Af的最干月≥60毫米，Am进一步依据年降水与最干月阈值划分，其余为Aw；热带并非每个月都多雨。",
+        "B类先于A、C、D、E判断。年平均温度与暖冷半年降水比例共同决定干旱阈值，所以相同年雨量在冷热不同的地区，未必得到同一分类。BW比BS更干，h与k以年均温18°C分开。大气下沉、内陆位置和山地雨影，都可能限制水分供给。",
+        "排除B类以后，C类要求最冷月平均温度>0°C且<18°C，最暖月>10°C。纬度、海陆、盛行风和海拔共同影响温度，雨季成因也不尽相同。这里采用Beck V3的0°C界线，与以−3°C划分C、D的其他方案有区别。",
+        "D类的最冷月平均温度≤0°C，最暖月>10°C，同样先排除B类。高纬与大陆性常使冬季明显降温，海拔和环流再改变局部条件。冬冷并不意味着夏凉，Dfa、Dwa仍可有炎热夏季。",
+        "E类在排除B类后，以最暖月平均温度≤10°C识别。ET为0°C<最暖月≤10°C，EF为最暖月≤0°C。高纬和高海拔都可能形成这样的热量条件，海洋、积雪与地形继续调节局部气候，因此高山也能按同一标准归入E类。"
+      ],
+      "caseIds": [
+        "climate-a",
+        "climate-b",
+        "climate-c",
+        "climate-d",
+        "climate-e"
+      ],
+      "partId": "map-climate"
+    },
+    {
+      "id": "part-climate-causes",
+      "title": "气候为什么不同",
+      "paragraphs": [
+        "分类提供了共同的比较语言，却没有替每一种气候写出成因。解释冷热可以从太阳辐射入手；解释降水，还要追踪水汽从哪里来，空气怎样升降，以及这些过程如何随季节移动。"
+      ],
+      "partId": "climate-causes"
+    },
+    {
+      "id": "climate-causes-section-1",
+      "title": "纬度给出热量背景",
+      "paragraphs": [
+        "太阳高度与昼长随纬度和季节变化，形成地球热量分布的基本背景。但太阳能到达地面以后，海拔、云量、地表性质和海洋调节，仍会影响一个地方的实际温度。",
+        "因此，从赤道走向极地，可以认识大范围的热量变化；沿同一纬度再比较高原、低地与海岸，则能看见其他条件怎样改变这一背景。"
+      ],
+      "partId": "climate-causes"
+    },
+    {
+      "id": "climate-causes-section-2",
+      "title": "水汽需要被输送，也需要冷却",
+      "paragraphs": [
+        "风把水汽送往不同地区，上升的空气冷却，有利于水汽凝结；持续下沉则可能抑制降水。大气环流组织了这些大尺度的输送与升降，并随季节发生移动。",
+        "即使海洋就在近旁，空气能否到达、抵达后能否抬升，都影响下雨的机会。沿海干旱区说明，有水汽来源与有足够降雨，是两件需要衔接起来的事。"
+      ],
+      "partId": "climate-causes"
+    },
+    {
+      "id": "climate-causes-section-3",
+      "title": "山地把水平差异变成立体差异",
+      "paragraphs": [
+        "气流遇山抬升，可能给迎风侧带来较多降水，背风侧则有不同的水分条件。海拔升高又通常降低温度，河谷和坡向使山地环境更加细密。",
+        "迎风与背风是相对主要气流而言的，也可能随季节改变。雨影需要放在区域环流中理解，一座山不会永远固定由某一侧接收所有水汽。"
+      ],
+      "partId": "climate-causes",
+      "mediaIds": [
+        "diagram-rain-shadow"
+      ]
+    },
+    {
+      "id": "climate-causes-section-4",
+      "title": "海陆与洋流改变季节和沿岸环境",
+      "paragraphs": [
+        "海洋与陆地储热、升降温的方式不同，因而改变季节温差及环流。洋流在移动中输送热量，上升流又可能把较冷的深层水带到近岸表面。",
+        "把两地的月温度与降水并排，先能看见差别发生在哪个季节，再用纬度、海陆、环流、地形与洋流解释。相似的气候代码，背后也可能有不同条件的配合。"
+      ],
+      "partId": "climate-causes"
+    },
+    {
+      "id": "climate-causes-module-case-tibetan-plateau",
+      "title": "青藏高原：纬度之外的高度",
+      "paragraphs": [
+        "青藏高原平均海拔超过4,000米，高度使这里在相近纬度上拥有较低温度和空气密度。内部山脉、宽谷、盆地与湖区，又有各自的局地环境。",
+        "东南缘深切而较湿润的谷地说明，高原也不是一整块均匀的寒冷区域。比较高原与低地，可以突出海拔效应；比较高原内部不同坡向和谷地，则需要进一步考虑水汽路径。"
+      ],
+      "caseIds": [
+        "tibetan-plateau"
+      ],
+      "partId": "climate-causes"
+    },
+    {
+      "id": "climate-causes-module-case-atacama-desert",
+      "title": "阿塔卡马：临海却极干旱",
+      "paragraphs": [
+        "阿塔卡马位于南美西岸，海洋近在一侧，陆地却极干旱。沿海冷水、稳定空气与下沉条件抑制降雨，邻近安第斯山地又改变水汽输送。",
+        "沿海能出现低云与雾，它们是悬浮的小水滴，并不等同于丰富降雨。海拔和距海远近也造成差异，局地极少雨记录不能代表整个沙漠每一年；河流、地下水与矿业用水还须放回更大的水文和管理范围。"
+      ],
+      "caseIds": [
+        "atacama-desert"
+      ],
+      "partId": "climate-causes"
+    },
+    {
+      "id": "climate-causes-module-case-indian-monsoon",
+      "title": "印度季风：风向、雨季与地形",
+      "paragraphs": [
+        "印度夏季来风将海洋水汽带向陆地，雨季与农业供水紧密相连。海陆季节升降温的差异参与改变气压和环流，大尺度风场与地形则调节各地降雨。",
+        "季风解释风和水汽的季节变化，Köppen–Geiger分类概括多年温度、降水组合。两者可以相互帮助理解，却不能互换成同一套标签。季节盛行风也不是每天固定不变的风向。"
+      ],
+      "caseIds": [
+        "indian-monsoon"
+      ],
+      "partId": "climate-causes"
+    },
+    {
+      "id": "climate-causes-module-case-gulf-stream",
+      "title": "墨西哥湾流：海水搬运热量",
+      "paragraphs": [
+        "墨西哥湾流沿美国东部近海向北输送温暖海水，是北大西洋环流的重要组成部分。风、地球自转、海盆形状与海水密度参与组织环流，它属于强西边界流的一部分。",
+        "“暖”是与附近海水相比较而言。水在途中不断交换热量，流路也有弯曲和涡旋，不能以一条固定箭头表示全年状态。沿岸城市的温差与降水，还需同时解释空气运动、纬度和地形。"
+      ],
+      "caseIds": [
+        "gulf-stream"
+      ],
+      "partId": "climate-causes"
+    },
+    {
+      "id": "part-world-latitude-height",
+      "title": "低纬度也有高寒环境",
+      "paragraphs": [
+        "赤道附近也有寒冷高山，热带大陆内部也可能很干燥。纬度说明辐射背景，高度、海陆和环流改变实际环境；将这几项条件分开，才能理解相似景观为何出现在遥远的地方。"
+      ],
+      "partId": "world-latitude-height"
+    },
+    {
+      "id": "world-latitude-height-section-1",
+      "title": "纬度与高度提供两条线索",
+      "paragraphs": [
+        "由赤道向极地，太阳辐射的年内分配逐渐改变；由低地向山上，气压和温度通常降低。两种变化可以在同一处叠加，使热带高山也有寒冷环境。",
+        "肯尼亚高地、青藏高原与南极洲，分别提供了不同纬度与高度的组合。它们都可能冷，却有不同的海陆、环流和季节背景。"
+      ],
+      "partId": "world-latitude-height",
+      "mediaIds": [
+        "diagram-height"
+      ]
+    },
+    {
+      "id": "world-latitude-height-section-2",
+      "title": "相同纬度不等于相同环境",
+      "paragraphs": [
+        "沿相近纬度比较巴西、非洲和澳大利亚，会遇见不同的气候景观。山地、距海远近、洋流和气流路径，改变了温度与水分。",
+        "纬度能帮助理解辐射，降水却还要追踪水汽怎样抵达、空气是否上升冷却。同在一条纬线附近，陆地可能得到很不一样的雨季。"
+      ],
+      "partId": "world-latitude-height"
+    },
+    {
+      "id": "world-latitude-height-section-3",
+      "title": "山地上的环境分带",
+      "paragraphs": [
+        "向高处延伸的植物分布，同时受到温度、水分、风和土壤影响。迎风与背风、向阳与背阴的山坡，可以有不同分带；雪线也取决于积累与消融的共同结果。",
+        "这些界线常常是过渡带。火灾、放牧和其他土地利用能继续改变植被，所以理想垂直分带图适合说明关系，实际山坡仍需要逐处观察。"
+      ],
+      "partId": "world-latitude-height"
+    },
+    {
+      "id": "world-latitude-height-section-4",
+      "title": "把区域色块与具体地点区分开",
+      "paragraphs": [
+        "0.5°气候格网覆盖较大的区域，在高山地带可能同时包括峰顶、山坡与谷底。一个类别概括格网整体，无法逐一表达其中明显的海拔差异。",
+        "全球图适合比较同纬度的高低地，具体地点的月序列补充季节节律。两种尺度配合，既能认识大势，也能保留一座山内部的不同环境。"
+      ],
+      "partId": "world-latitude-height"
+    },
+    {
+      "id": "world-latitude-height-module-module-1",
+      "title": "赤道附近：高地与湿润低地",
+      "paragraphs": [
+        "肯尼亚的部分高地由裂谷与火山作用塑造。赤道附近的辐射背景与较高海拔叠加，使高地温度低于附近低地；坡向和水汽又影响植被与雪冰分布。",
+        "巴西的湿润低地提供另一种低纬环境。比较时，纬度只是起点，地形与水分决定了更多差异。雨林、生物群系、河流流域和国界各有范围，区域比例需要采用对应资料的口径。"
+      ],
+      "caseIds": [
+        "kenya",
+        "east-african-rift",
+        "brazil"
+      ],
+      "partId": "world-latitude-height"
+    },
+    {
+      "id": "world-latitude-height-module-module-2",
+      "title": "澳大利亚、青藏与南极：不同条件的组合",
+      "paragraphs": [
+        "澳大利亚内陆的干旱与纬度、环流、海陆位置和地形有关，东部山地与沿海又形成差异。这里突出的是水分条件；气候干旱区与命名沙漠范围并不完全重合。",
+        "青藏高原突出高度的作用：平均海拔超过4,000米，使它在相近纬度上拥有较低温度，内部谷地和山脉又有不同的水分环境。南极洲则把高纬度日照背景与大陆内部的高地形叠加，形成另一种寒冷环境。",
+        "把三地并排，可以区分缺水与低温，也能看到相似的寒冷由不同条件组合而来。地图上的气候类别概括共同结果，纬度、海拔和环流则解释结果为何出现。"
+      ],
+      "caseIds": [
+        "australia",
+        "tibetan-plateau",
+        "antarctica"
+      ],
+      "partId": "world-latitude-height"
+    },
+    {
+      "id": "world-latitude-height-module-module-3",
+      "title": "回到分类理解差异",
+      "paragraphs": [
+        "回到同一套分类，高纬与高山如果满足相同热量条件，就可以得到同类代码。排除干旱B类后，最暖月≤10°C进入E类，其中ET为0°C<最暖月≤10°C，EF为最暖月≤0°C，不必另设H类。",
+        "同样，A类要求排除B类后最冷月≥18°C；Af最干月≥60毫米，Am依年降水与最干月阈值识别，其余为Aw。低纬辐射带来全年温暖，辐合带、季风和海陆位置却安排了不同雨季。分类保留共同特征，地点与月资料再把差别补回来。"
+      ],
+      "caseIds": [
+        "climate-a",
+        "climate-e"
+      ],
+      "partId": "world-latitude-height"
+    }
+  ],
+  "questions": [
+    {
+      "question": "年降水量相同，两地就会有同一种气候吗？",
+      "answer": "不会。温度、降水季节分配以及各类的具体判据都影响分类，年总量不足以表达这些差异。"
+    },
+    {
+      "question": "只知道一个地方的纬度，能否准确判断其降水？",
+      "answer": "不能。水汽来源、环流、海陆和地形等共同影响降水，纬度只能提供部分背景。"
+    },
+    {
+      "question": "赤道附近出现冰雪，是否与纬度规律矛盾？",
+      "answer": "不矛盾。高海拔能够显著降低温度，冰雪还取决于降雪积累和融化的长期平衡。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Beck 等（2023）· Köppen–Geiger 气候分类与全球数据",
+      "url": "https://www.nature.com/articles/s41597-023-02549-6"
+    },
+    {
+      "title": "NOAA · Köppen–Geiger Climate Subdivisions",
+      "url": "https://www.noaa.gov/jetstream/global/climate-zones/jetstream-max-addition-k-ppen-geiger-climate-subdivisions"
+    },
+    {
+      "title": "Beck 等（2023）：Köppen–Geiger 分类判据，表 1",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10593765/"
+    },
+    {
+      "title": "Beck 数据项目：V3 分类实现（tools.py）",
+      "url": "https://github.com/hylken/Koppen-Geiger_maps/blob/V3/tools.py"
+    },
+    {
+      "title": "GloH2O：V3 气候地图、时期与数据说明",
+      "url": "https://www.gloh2o.org/koppen/"
+    },
+    {
+      "title": "NOAA · Climate Zones",
+      "url": "https://www.noaa.gov/jetstream/global/climate-zones"
+    },
+    {
+      "title": "noaa.gov · global atmospheric circulations",
+      "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations"
+    },
+    {
+      "title": "oceanservice.noaa.gov · currents",
+      "url": "https://oceanservice.noaa.gov/facts/currents.html"
+    },
+    {
+      "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+      "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+    },
+    {
+      "title": "USGS · Understanding plate motions",
+      "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+    },
+    {
+      "title": "NASA Astrobiology · The Driest Place on Earth",
+      "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
+    },
+    {
+      "title": "National Geographic Society · South America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+    },
+    {
+      "title": "NOAA · What is upwelling?",
+      "url": "https://oceanservice.noaa.gov/facts/upwelling.html"
+    },
+    {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+    },
+    {
+      "title": "NOAA NESDIS · What Is a Monsoon?",
+      "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+    },
+    {
+      "title": "World Bank · For Mekong Delta Farmers, Diversification is the Key to Climate Resilience",
+      "url": "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience"
+    },
+    {
+      "title": "NOAA · Ocean currents",
+      "url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents"
+    },
+    {
+      "title": "UNESCO · Mount Kenya National Park/Natural Forest",
+      "url": "https://whc.unesco.org/en/list/800/"
+    },
+    {
+      "title": "USGS · East African Rift seismotectonics",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift"
+    },
+    {
+      "title": "Scientific Data · White Nile basin lakes",
+      "url": "https://www.nature.com/articles/s41597-022-01742-3"
+    },
+    {
+      "title": "联合国统计司 · Kenya国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/ke.html"
+    },
+    {
+      "title": "IBGE · 巴西六大生物群系地图（2019）",
+      "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/25812-ibge-lanca-mapa-inedito-de-biomas-e-sistema-costeiro-marinho-2"
+    },
+    {
+      "title": "NASA · Topography of South America",
+      "url": "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/"
+    },
+    {
+      "title": "NASA · Mud from the Andes Carried by the Amazon",
+      "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+    },
+    {
+      "title": "联合国统计司 · Brazil国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/br.html"
+    },
+    {
+      "title": "Geoscience Australia · Australia’s size compared（2025）",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared"
+    },
+    {
+      "title": "Geoscience Australia · Australian mainland deserts",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts"
+    },
+    {
+      "title": "联合国统计司 · Australia国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/au.html"
+    },
+    {
+      "title": "British Antarctic Survey · Antarctica",
+      "url": "https://www.bas.ac.uk/about/where-we-work/antarctica/"
+    }
+  ],
+  "presentation": "essay"
+}

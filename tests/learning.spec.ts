@@ -70,7 +70,7 @@ test('learning: local human layers render, filter real language points, and pres
   expect(requested).not.toContain('/data/learning-languages.geojson')
   expect(requested).not.toContain('/elevation/source.json')
   await openLayers(page)
-  await chooseTheme(page,'人口密度分布')
+  await chooseTheme(page,'人口分布、变化与迁移')
   await closeLayers(page)
   await expect(page.locator('.legend')).toContainText('人口密度 · 2020')
   await page.waitForFunction(()=>window.__terraAtlas!.map.isSourceLoaded('population-raster'),undefined,{timeout:45000})
@@ -106,6 +106,7 @@ test('learning: local human layers render, filter real language points, and pres
 
 test('learning: country profile separates periods, population, religion denominator and missing categories',async({page})=>{
   await select(page,'日本')
+  await page.getByText('展开地点介绍',{exact:true}).click()
   const profile=page.getByTestId('country-context')
   await expect(profile).toContainText('人口与城镇 · 2024')
   await expect(profile).toContainText('宗教构成 · 2021')
@@ -195,6 +196,7 @@ test('learning: two places expose real twelve-month charts and consistent long-t
   await page.screenshot({path:`${test.info().outputDir}/compare-${info.project.name}.png`})
   await panel.getByRole('button',{name:'关闭对比',exact:true}).click()
   await select(page,'成都')
+  await page.getByText('展开地点介绍',{exact:true}).click()
   await page.locator('.knowledge-panel .climate-chart summary').click()
   await expect(page.locator('.knowledge-panel .monthly-table tbody tr')).toHaveCount(12)
   await expect(page.locator('.knowledge-panel .climate-chart')).toContainText('不能视为城市气象站观测')
@@ -236,11 +238,12 @@ test('learning: actual map clicks create and clear a great-circle measurement',a
 })
 
 test('learning: a topic highlights multiple real locations and allows free jumping and exit',async({page},info)=>{
-  await chooseTheme(page,'从雪山到江湖')
-  await expect(page.locator('.topic-summary')).toContainText('长江把高原源区、四川盆地、中游湖泊和河口连接起来')
+  await chooseTheme(page,'中国河流与湖泊')
+  await expect(page.locator('.topic-summary')).toContainText('来水、河道、湖盆和出口')
   await page.waitForFunction(()=>{const atlas=window.__terraAtlas!,data=atlas.map.getSource('relations')!.serialize() as {data?:{features?:unknown[]}};return (data.data?.features?.length||0)>2&&atlas.map.isSourceLoaded('relations')},undefined,{timeout:45000})
   await mapSettled(page)
-  await page.locator('.topic-members').getByRole('button',{name:/四川盆地/}).click()
+  await page.getByRole('button',{name:/选择模块/}).click()
+  await page.locator('.topic-members').getByRole('button',{name:/四川盆地/}).first().click()
   await expect(page.locator('.knowledge-panel h2')).toHaveText('四川盆地')
   await page.getByRole('combobox',{name:'切换主题成员',exact:true}).selectOption('yangtze')
   await selectedGeometry(page)
@@ -282,10 +285,12 @@ test('learning: favorites and named collections export and import without notes 
 
 test('learning: old browser preferences retain favorites and camera while receiving new defaults',async({page})=>{
   await page.addInitScript(()=>localStorage.setItem('terra-atlas-v1',JSON.stringify({favorites:['yangtze'],savedViews:[{id:'old-view',name:'旧地图视图',camera:{center:[107,33],zoom:4.7},layers:{terrain:true,mountains:true,rivers:true,lakes:false,climate:false,borders:true},view:'world'}],layers:{terrain:true,mountains:true,rivers:true,lakes:false,climate:false,borders:true},camera:{center:[107,33],zoom:4.7},view:'world'})))
-  await page.reload();await baseReady(page)
-  await expect(page.getByRole('button',{name:'全球视野',exact:true})).toBeVisible()
+  await page.goto('/?legacy-preferences=1');await baseReady(page)
   const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!))
   expect(state.view).toBe('world')
+  expect(state.camera.center[0]).toBeCloseTo(107)
+  expect(state.camera.center[1]).toBeCloseTo(33)
+  expect(state.camera.zoom).toBeCloseTo(4.7)
   expect(state.favorites).toEqual(['yangtze']);expect(state.savedViews[0].name).toBe('旧地图视图')
   expect(state.layers.language).toBe(false);expect(state.layers.population).toBe(false);expect(state.opacity).toBe(.48);expect(state.thematic.language).toBe('all')
   expect(state.notes).toEqual({});expect(state.collections).toEqual([])
@@ -293,6 +298,7 @@ test('learning: old browser preferences retain favorites and camera while receiv
 
 test('learning: a card shows its own climate grid class without inventing monthly observations',async({page})=>{
   await select(page,'青藏高原')
+  await page.getByText('展开地点介绍',{exact:true}).click()
   const classification=page.getByTestId('card-climate')
   await expect(classification).toContainText('ET ·')
   await expect(classification).toContainText('Beck V3 · 1991–2020 · 0.5°')
@@ -322,7 +328,7 @@ test('learning: province references and real coordinate grid render independentl
 
 test('learning: mobile reader covers the map when full and preserves shared zoom when collapsed',async({page},info)=>{
   test.skip(!info.project.name.startsWith('mobile'),'mobile reading sheet controls')
-  await openLayers(page);await chooseTheme(page,'长期气候分布');await closeLayers(page)
+  await openLayers(page);await chooseTheme(page,'气候分布与成因');await closeLayers(page)
   await select(page,'喜马拉雅')
   await expect(page.locator('.legend')).toBeVisible()
   const handle=page.getByRole('button',{name:'调整阅读面板大小',exact:true})

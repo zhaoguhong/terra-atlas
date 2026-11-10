@@ -1,0 +1,21 @@
+// Editorial inputs, not URL aliases. Every original topic belongs to one main topic.
+export default [
+  {id:'china-terrain',title:'中国地形格局',from:['china-relief-steps','china-mountain-ranges','china-plateaus','china-basins','china-plains'],lead:'先看西高东低的整体地势，再认识山脉、高原、盆地与平原。把它们放回同一张地图，观察河流、水汽和交通怎样穿行其间。'},
+  {id:'world-terrain',title:'世界地形与山系',from:['world-mountain-ranges','world-plateaus-plains','world-high-peaks'],lead:'从各大陆的山地与低地建立世界地形骨架，再走近高原、平原和高峰。山系范围、地形单元与峰顶位置分别回答不同尺度的问题。'},
+  {id:'landform-processes',title:'岩石与地貌形成',from:['landform-processes','earth-rocks','landform-danxia'],lead:'地貌由岩石材料、地壳运动与水风冰的作用共同塑造。从岩石循环和地表过程入手，再用丹霞与红层景观观察材料和形态的联系。'},
+  {id:'world-tectonics',title:'板块、构造与火山',shared:true,from:['world-tectonics','landform-structures','landform-volcanoes'],lead:'板块运动改变岩层的位置与姿态，岩浆活动又能建造新的地表。把碰撞、俯冲、断层和火山放在一起，比较山地形成的不同路径。'},
+  {id:'landform-rivers',title:'河流塑造的地貌',from:['landform-river-erosion','landform-river-deposition'],lead:'沿着河流看侵蚀、搬运与沉积：峡谷记录切割，冲积扇、平原和三角洲接收泥沙。不同过程可以在同一条河的不同位置同时发生。'},
+  {id:'landform-wind',title:'风沙与黄土地貌',from:['landform-yardang','landform-dunes','landform-loess'],lead:'风能移走物质，也能堆积沙和尘。将雅丹、沙丘与黄土放在一起比较，再看流水怎样把黄土切成塬、梁、峁和沟壑。'},
+  {id:'china-rivers',title:'中国河流与湖泊',from:['china-rivers','china-lakes','china-water-journey'],lead:'从河流的源头、支流和出口认识中国水系，再把湖泊放回上下游联系。沿长江从高原走向河口，观察来水、泥沙与用水怎样变化。'},
+  {id:'world-rivers',title:'世界河流与湖泊',from:['world-river-contrast','world-lakes'],lead:'比较穿越荒漠的大河、湿润地区的河网和不同成因的湖泊。先追踪水的来源与去向，再讨论季节涨落、盐度和沿岸生活。'},
+  {id:'drylands',title:'干旱地区、沙漠与绿洲',group:'water',shared:true,from:['world-deserts','china-dry-water'],lead:'干旱描述水分条件，沙漠内部却有多种地表。由世界干旱景观进入中国西北，追踪山地来水、绿洲用水和内流湖的联系。'},
+  {id:'map-climate',title:'气候分布与成因',from:['map-climate','climate-causes','world-latitude-height'],lead:'先读多年温度与降水形成的气候分布，再用纬度、海拔、环流、海陆和地形解释差异。分类帮助概括，地点比较帮助理解成因。'},
+  {id:'world-ecosystems',title:'土壤、植被与生态系统',shared:true,from:['soil-land','world-ecosystems'],group:'climate',lead:'从脚下的土壤到森林、草原与湿地，观察岩石、水、气候和生物如何相互影响。自然过程和土地利用共同改变各地的生态环境。'},
+  {id:'map-population',title:'人口分布、变化与迁移',from:['map-population','people-migration'],lead:'先看人口在哪里聚集，再追问人口怎样变化、为什么流动。总量、密度、城乡比例与迁移分别描述不同现象，需要统一年份和范围比较。'},
+  {id:'agriculture-food',title:'农业与粮食系统',shared:true,from:['china-agriculture','world-agriculture-food','china-food-water-cities'],lead:'从中国粮田、稻作和牧区走向世界农业，比较水土、农时、技术与市场。把生产地、供水和消费城市连起来，理解粮食怎样到达餐桌。'},
+  {id:'energy-industry',title:'能源、矿产与产业',shared:true,from:['china-energy-resources','world-energy-industry'],lead:'比较中国与世界的能源、矿产和工业案例，理解资源地、加工地与消费地怎样连接。地质条件之外，设施、运输、技术与环境同样影响生产。'},
+  {id:'transport-trade',title:'交通、港口与全球联系',shared:true,from:['china-transport','world-sea-connections','world-transport-trade'],lead:'从陆路枢纽和内河港口出发，经过海峡、运河与海港，看运输怎样连接不同地区。自然通道、工程设施和转运组织共同决定通达条件。'},
+  {id:'china-regions',title:'中国区域与南北差异',from:['china-regions','china-north-south'],lead:'先认识北方、南方、西北和青藏的总体差异，再沿秦岭一带比较水热、农业与景观。区域是认识差异的入口，内部仍有丰富变化。'},
+  {id:'world-continents',title:'世界海陆与区域比较',from:['world-continents','world-regional-comparison'],lead:'从七大洲与海洋的位置建立世界轮廓，再用同一组问题比较区域和国家。先看地形、水热与人口，再寻找生产、交通和跨区域联系。'},
+  {id:'earth-map-reading',title:'读地图与影像',from:['earth-map-reading','earth-image-reading'],lead:'经纬网确定位置，比例尺和地形表达帮助认识空间；照片与卫星影像提供另一种观察。读清时间、尺度和图例，再用多种资料验证解释。'},
+]

@@ -27,6 +27,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "先找最干月，而非只找最高雨柱。Af 的少雨月份仍达到本类判据；全年温暖不表示降水没有季节变化。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Am 比较最干月是否低于 60 毫米，再核对年降水。雨林的实际范围还受地形和土地利用影响。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -57,6 +73,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "观察较短少雨期与较长湿季如何衔接，再把最干月与年总量一起代入原判据。只看最高雨柱容易误判。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "Af、Am、Aw 的区别不只在有没有雨季。Am 与 Aw 之间的门槛会随年降水量变化，不能固定成同一个最干月数值。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -87,6 +119,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "温度全年保持热带条件，降水柱却有明显季节差别。阅读时先确认所在半球，避免把固定月份当作所有地区的冬夏。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Am 比较时，需要同时使用最干月和年降水。本站 V3 图例合并使用 Aw，不另增 As 类来解释同一批格网。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -117,6 +165,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "先按年温度及降水季节分配检查干旱阈值，再看是否落入沙漠 W 类，最后区分 h 与 k。降水少并不意味着每个月完全无雨。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 BSh 相比，关键在 W/S 干旱程度的阈值；与 BWk 相比，关键在年平均温度。沙丘多少不是分类判据。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -147,6 +211,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "先识别 B 类及 W 条件，再检查年平均温度。冷沙漠的夏季仍可能很热，不能把 k 理解为全年严寒。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 BWh 的差别不是有没有沙子，而是温度判据；与 BSk 的差别在干旱程度。还应比较冬夏温差。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -177,6 +257,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "先读年降水与干旱阈值的关系，再看降水集中月份。草原式半干旱环境也可能经历强烈年际波动。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 BWh 比较 W/S 门槛，与 BSk 比较年平均温度。实际植被还受放牧、土壤与水源影响。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -207,6 +303,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "年平均温度决定 k，降水与干旱阈值决定 S。夏季温暖与冬季寒冷可以同时存在，单看最冷月不够。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 BWk 比较干旱程度，与 BSh 比较年平均温度。靠近气候过渡带时，更应查看原始月数据。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -237,6 +349,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "先确认 C 类温度条件，再找夏季少雨和炎热夏季。月序列中温度高峰与降水低谷的对应，是直观线索。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Csb 比较最热月等夏季热量条件；与 Cfa 比较是否满足夏干判据。不能只按是否临近地中海判断。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -267,6 +395,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "找夏季低降水，再观察最热月与达到温暖标准的月份数量。夏季较温和，不等于冬季没有低温天气。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Csa 的区别在夏季热量，与 Csc 的区别还涉及温暖月份数量。沿海、海拔及纬度可能参与形成差异。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -296,6 +440,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "夏季短而凉，需要逐月数达到规定热量条件的月份，同时核对夏干判据。少数月份的差异就可能改变亚类。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Csb 比较温暖月份数量，并留意格网尺度。稀少类别即使没有在本分辨率图面出现，其判据仍保留在图例中。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -326,6 +486,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "先确认 C 类，再看冬季少雨与夏季热量。冬干的判断是季节月份之间的数量关系，不能只凭冬季雨柱看起来矮。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Cfa 比较是否满足冬干条件，与 Cwb 比较夏季温度。季风是成因线索，代码本身不直接测量风向。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -356,6 +532,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "较温和的夏季与冬干可以组合出现，高地是值得观察的环境之一。先读月温度，再读降水的季节对比。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Cwa 比较夏季热量，与 Cwc 比较温暖月份数量。不能用一个海拔数字概括所有 Cwb 地区。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -385,6 +577,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "较短凉夏需要逐月核对温度，冬干仍按同一版本降水判据识别。年平均值会掩盖短生长季。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Cwb 比较温暖月份数量，与 Cfc 比较是否满足冬干。图面缺少此类格网不等于其他尺度或时期一定不存在。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -415,6 +623,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "先看温度，再确认没有满足 s 或 w 的干季判据。f 表示无规定干季，不表示各月雨量一样。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Cwa 比较冬干门槛，与 Cfb 比较夏季热量。年降水相近也可能属于不同亚类。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -445,6 +669,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "观察温和夏季和持续一定月份的暖季，再核对没有达到规定干季。沿海常见是分布线索，不是正式判据。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Cfa 比较最热月，与 Cfc 比较温暖月份数量。海洋、纬度和地形都可能参与形成温和季节。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -475,6 +715,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "数一数暖季月份，短凉夏是重要特征。降水有波动并不妨碍 f，只要没有满足规定的夏干或冬干条件。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Cfb 比较暖季长度；与 Dfc 的关键还包括最冷月是否越过 C/D 分界。本项目统一使用 0°C 口径。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -504,6 +760,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "先确认寒冷冬季进入 D 类，再识别夏干与炎热夏季。冬季冷与夏季热并不矛盾，年内温差可以很大。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Csa 比较最冷月，与 Dsb 比较夏季热量。分类中的 s 仍需用冬夏降水关系验证。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -534,6 +806,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "冬季寒冷，夏季热量低于 a 型条件，并满足夏干。先按同一规则确认大类，再检查各后缀。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Dsa 比较最热月及暖季条件，与 Dsc 比较温暖月份数量。不能仅凭山地或内陆位置决定代码。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -564,6 +852,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "短凉夏与夏干相结合，应逐月数暖月，并留意极寒冬季的进一步区分。年均气温无法替代这些信息。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Dsb 比较暖季长度，与 Dsd 比较最冷月的极寒判据。稀少亚类仍沿用同一套标准。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -593,6 +897,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "短凉夏之外，还需核对极寒冬季门槛。夏干依据月降水季节关系，不能从冬季有积雪直接推断。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Dsc 的关键差别在最冷月。积雪厚度和持续时间另受降雪与融化影响，代码没有直接提供这些量。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -622,6 +942,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "寒冷冬季、冬干和炎热夏季同时满足时进入本亚类。先把温度年变化与雨季放在一起读，再解释季风背景。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Cwa 比较最冷月，与 Dwb 比较夏季热量。冬干并不等于整个冬季绝无降雪。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -651,6 +987,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "冬季少雨且寒冷，夏季相对温和。确认温暖月份数量后，再与 a、c 型比较，避免只看温度曲线的整体高度。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Dwa 比较最热月条件，与 Dwc 比较暖季长度。实际植被还受到土壤和干扰影响。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -680,6 +1032,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "短凉夏配合冬干，暖季的长短比年平均温度更能显示生长限制。极寒冬季还需继续检查 d 型门槛。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Dwb 比较温暖月份数量，与 Dwd 比较最冷月。降水季节性与温度极端分别由不同字母描述。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -709,6 +1077,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "冬季极寒、夏季短，降水又满足冬干条件。温度与降水两组判据缺一不可，不能单靠很低的冬温判断。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Dwc 的差别在极寒门槛，与 Dfd 的差别在降水季节性。冻土分布还需专门资料，不能直接用气候类别替代。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -738,6 +1122,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "寒冷冬季与炎热夏季相结合，同时不满足规定干季。降水柱仍可能有明显高低，f 并非各月等量。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Cfa 比较最冷月，与 Dfb 比较夏季热量。大陆内部的季节差异可以提供解释线索。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -768,6 +1168,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "寒冷冬季、温和夏季和一定长度暖季共同确定温度后缀。先看每个月，再核对没有达到夏干或冬干门槛。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Dfa 比较最热月，与 Dfc 比较暖季长度。地区平均类别不能代表内部所有山顶和谷地。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -798,6 +1214,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "较短的凉夏使暖季月份数量成为关键，冬季则明显寒冷。f 类仍允许降水季节变化。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Dfb 比较温暖月份数量，与 Dfd 比较极寒冬季门槛。针叶林是景观线索，不能代替分类温度数据。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -827,6 +1259,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "短凉夏与极寒冬季组合，同时不满足规定干季。识别时先分离温度条件与降水条件，逐项核对。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 Dfc 比较最冷月，与 Dwd 比较冬干判据。年温差大并不意味着全年降水相同。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -857,6 +1305,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "最热月也只处于较低温度范围，但仍达到 ET 所需条件。判断极地类型时，最热月比最冷月更关键。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 EF 比较最热月是否达到 0°C。ET 可出现在高纬或高山环境，苔原植被范围与气候格网并不完全重合。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   },
   {
@@ -887,6 +1351,22 @@
         "title": "GloH2O：V3 气候地图、时期与数据说明",
         "url": "https://www.gloh2o.org/koppen/"
       }
+    ],
+    "sections": [
+      {
+        "title": "怎样读月气候图",
+        "body": "最热月仍低于冰原气候判据的界限，因此全年月平均都很冷。这里说的是月平均，不能推断每天每小时的温度。"
+      },
+      {
+        "title": "和相近类型比较",
+        "body": "与 ET 比较最热月。冰体的实际分布还取决于长期积累、消融和地形，气候代码不能直接量出冰的厚度。"
+      }
+    ],
+    "mediaIds": [
+      "diagram-climate-reading"
+    ],
+    "readingTopicIds": [
+      "map-climate"
     ]
   }
 ]

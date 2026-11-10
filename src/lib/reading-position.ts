@@ -10,6 +10,7 @@ export function useReadingPosition(scrollRef:RefObject<HTMLDivElement|null>,iden
     let width=panel.clientWidth
     let widthChangedWhileUnavailable=false
     let anchor:{element:HTMLElement;offset:number;height:number}|null=null
+    let atEnd=false
 
     const available=()=>{
       if(!panel.clientWidth||!panel.clientHeight||panel.closest('[inert]'))return false
@@ -31,6 +32,7 @@ export function useReadingPosition(scrollRef:RefObject<HTMLDivElement|null>,iden
       // Reflow can emit a clamped scroll before ResizeObserver. Retain the
       // old-width anchor until the observer has restored it at the new width.
       if(!available()||panel.clientWidth!==width||widthChangedWhileUnavailable)return
+      atEnd=panel.scrollTop>1&&panel.scrollHeight-panel.clientHeight-panel.scrollTop<=1
       if(panel.scrollTop<=1){anchor=null;return}
       const box=panel.getBoundingClientRect()
       const edge=readingEdge(box)
@@ -62,7 +64,11 @@ export function useReadingPosition(scrollRef:RefObject<HTMLDivElement|null>,iden
         const previous=anchor
         width=nextWidth
         widthChangedWhileUnavailable=false
-        if(previous&&panel.contains(previous.element)){
+        if(atEnd){
+          // Images and captions can change the last block's wrapping. Readers
+          // who reached the end should stay there through a resize or cancelled drag.
+          panel.scrollTop=panel.scrollHeight
+        }else if(previous&&panel.contains(previous.element)){
           const box=panel.getBoundingClientRect()
           const rect=previous.element.getBoundingClientRect()
           if(rect.height){

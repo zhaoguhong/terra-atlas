@@ -1,0 +1,447 @@
+{
+  "id": "landform-processes",
+  "title": "岩石与地貌形成",
+  "introduction": "地貌是地表的形态，也是岩石、地壳运动与风、水、冰共同作用的结果。理解一座山或一条谷地，可以先看它由什么材料组成，再看材料怎样被抬升、破碎、搬走和堆积。桂林的岩溶与丹霞的红色崖壁提供了一组对照：外形可能相似，岩石和主要改造过程却不同。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "earth-rocks",
+      "title": "岩石与岩石循环",
+      "sectionId": "part-earth-rocks",
+      "description": "岩石为地貌提供材料。熔岩冷却、沉积物固结和地下温压改变，能够形成不同岩石；岩石来到地表以后，性质与裂隙又影响水、风和冰怎样改造它。先认识材料，再追踪地表过程，地貌的来历就有了起点。",
+      "keywords": [
+        "岩石",
+        "岩浆岩",
+        "沉积岩",
+        "变质岩",
+        "石灰岩",
+        "砂岩",
+        "高原",
+        "火山岩",
+        "红层",
+        "丹霞",
+        "流水侵蚀",
+        "岩溶",
+        "碳酸盐岩",
+        "地下水",
+        "板块碰撞",
+        "雨影",
+        "垂直分异"
+      ]
+    },
+    {
+      "id": "landform-processes",
+      "title": "地貌怎样形成",
+      "sectionId": "part-landform-processes",
+      "description": "有了岩石材料，下一步是追踪它怎样变化。构造活动建立高差，风化使岩石破碎或发生化学改变，水、风、冰与重力再搬走碎屑，在别处留下堆积。高山、沟谷与平原，往往属于同一段物质旅程的不同位置。",
+      "keywords": [
+        "地貌",
+        "侵蚀",
+        "风化",
+        "搬运",
+        "堆积",
+        "内力",
+        "外力",
+        "板块碰撞",
+        "雨影",
+        "垂直分异",
+        "风成沉积",
+        "流水侵蚀",
+        "水土保持",
+        "三级阶梯",
+        "江湖关系",
+        "航运"
+      ]
+    },
+    {
+      "id": "landform-danxia",
+      "title": "丹霞与红层景观",
+      "sectionId": "part-landform-danxia",
+      "description": "红层提供了材料，陡崖、岩柱与沟谷显示了后来的改造。丹霞山与崀山的形态，可以从岩层的厚薄、软硬和裂隙入手理解；照片中的红色，仍需要地质资料说明。",
+      "keywords": [
+        "丹霞",
+        "红层",
+        "砂岩",
+        "砾岩",
+        "红色地貌",
+        "流水侵蚀"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-earth-rocks",
+      "title": "岩石与岩石循环",
+      "paragraphs": [
+        "岩石为地貌提供材料。熔岩冷却、沉积物固结和地下温压改变，能够形成不同岩石；岩石来到地表以后，性质与裂隙又影响水、风和冰怎样改造它。先认识材料，再追踪地表过程，地貌的来历就有了起点。"
+      ],
+      "partId": "earth-rocks"
+    },
+    {
+      "id": "earth-rocks-section-1",
+      "title": "按形成过程认识三大类岩石",
+      "paragraphs": [
+        "岩浆或熔岩冷却形成岩浆岩；碎屑、化学沉淀或生物相关物质等形成沉积岩；原有岩石在温度、压力和流体作用下改变，则形成变质岩。三大类岩石依据的是形成过程。",
+        "矿物、颗粒大小、层理与构造能帮助识别，颜色只是一项线索。红色不能独自证明是砂岩，白色也不能独自证明是石灰岩。"
+      ],
+      "partId": "earth-rocks"
+    },
+    {
+      "id": "earth-rocks-section-2",
+      "title": "同一大类，材料仍然不同",
+      "paragraphs": [
+        "玄武岩与花岗岩同属岩浆岩，成分和冷却环境却不同；砂岩、砾岩与石灰岩同属沉积岩，颗粒、形成条件与受水作用的方式也不同。三大岩类是认识形成过程的第一层分类，具体岩性还要继续辨认。",
+        "岩石的颗粒、层面和裂隙保存部分历史，也影响后来的侵蚀。解释地貌时，不能止于给岩石贴上类别，还需要看水能否沿裂隙进入、岩层是否容易溶蚀或破碎。"
+      ],
+      "partId": "earth-rocks"
+    },
+    {
+      "id": "earth-rocks-section-3",
+      "title": "岩石循环没有固定单行道",
+      "paragraphs": [
+        "岩石出露地表后，可能风化、被搬运，成为新的沉积物；埋入地下后，可能发生变质，条件足够时还可能熔融。不同路径需要不同环境，也经历不同时间。",
+        "岩石循环图因此画的是可能的联系。实际岩石不必依次经过岩浆岩、沉积岩、变质岩，再完整回到起点。"
+      ],
+      "partId": "earth-rocks",
+      "mediaIds": [
+        "diagram-rocks"
+      ]
+    },
+    {
+      "id": "earth-rocks-section-4",
+      "title": "岩性怎样影响地貌",
+      "paragraphs": [
+        "可溶性、抗侵蚀能力与裂隙，决定水进入岩体后怎样发挥作用。可溶性岩石上能发育喀斯特，红色碎屑沉积岩在一定条件下形成丹霞，熔岩铺展则可能留下台地。",
+        "同一种岩石在不同构造、气候和时间背景中，也能形成不同地貌。材料为过程提供条件，却无法单独决定最后的轮廓。"
+      ],
+      "partId": "earth-rocks"
+    },
+    {
+      "id": "earth-rocks-module-case-deccan-plateau",
+      "title": "德干高原：玄武岩与季风之间",
+      "paragraphs": [
+        "印度半岛的德干高原，北西部广布古代喷发留下的玄武岩。熔岩覆盖地表后，风化与河流切割继续改造山地和谷地，季风又影响各处水分与土地利用。",
+        "洛纳尔陨石坑形成于后来的局地撞击，与玄武岩基底的火山成因是两段不同历史。高原是区域地形，玄武岩是岩石类型，一处岩石的年龄不能代表整座高原，也不能将整个印度半岛看作同一火山台地。"
+      ],
+      "caseIds": [
+        "deccan-plateau"
+      ],
+      "partId": "earth-rocks"
+    },
+    {
+      "id": "earth-rocks-module-case-danxiashan",
+      "title": "丹霞山",
+      "paragraphs": [
+        "广东韶关的丹霞山，红色砂岩、砾岩等陆相沉积岩在抬升后受到流水、风化与重力改造，分割成陡崖、峰柱和沟谷。含铁矿物与红色有关，层理、裂隙及软硬差异则进一步影响外形。岩性与形态需要一起核对，红色山体并不都属于丹霞。"
+      ],
+      "caseIds": [
+        "danxiashan"
+      ],
+      "partId": "earth-rocks"
+    },
+    {
+      "id": "earth-rocks-module-case-guilin-karst",
+      "title": "桂林喀斯特 · 漓江段",
+      "paragraphs": [
+        "桂林漓江沿岸，水沿碳酸盐岩裂隙溶蚀，地下排水、河流和长期地形演变共同形成峰林、峰丛与低地。辨认时，峰体基部是否相连、峰间是深洼地还是开阔低地，比单座山的尖或高更有用。"
+      ],
+      "caseIds": [
+        "guilin-karst"
+      ],
+      "partId": "earth-rocks"
+    },
+    {
+      "id": "earth-rocks-module-case-himalayas",
+      "title": "喜马拉雅：岩石中的变形记录",
+      "paragraphs": [
+        "喜马拉雅的岩石经历了持续的构造变形。板块汇聚使岩层缩短、弯曲或沿断裂错开，山体内部由此保存着不同于地表轮廓的记录。岩石形成的年代，与它后来被抬升、被侵蚀的时间，也可能相隔很久。",
+        "这一案例把材料与后来的变化联系起来：观察岩层及其结构，可以追索变形；观察山脊和谷地，则要继续考虑河流、冰川与风化。在下一组地表过程的讨论中，再把它们合起来解释高山的起伏。"
+      ],
+      "caseIds": [
+        "himalayas"
+      ],
+      "partId": "earth-rocks"
+    },
+    {
+      "id": "part-landform-processes",
+      "title": "地貌怎样形成",
+      "paragraphs": [
+        "有了岩石材料，下一步是追踪它怎样变化。构造活动建立高差，风化使岩石破碎或发生化学改变，水、风、冰与重力再搬走碎屑，在别处留下堆积。高山、沟谷与平原，往往属于同一段物质旅程的不同位置。"
+      ],
+      "partId": "landform-processes"
+    },
+    {
+      "id": "landform-processes-section-1",
+      "title": "先观察形状，再寻找原因",
+      "paragraphs": [
+        "高原、盆地与平原概括较大范围的地形，河谷、沙丘与溶洞则描述更具体的形态或过程。云贵高原内部有喀斯特，黄土高原内部有沟谷和塬面，两种尺度可以同时成立。",
+        "高低起伏、坡面、岩层和水流位置都是观察线索。尖峰未必来自冰川，红色岩石也不一定形成丹霞；要解释外形，还得找到材料和过程的证据。"
+      ],
+      "partId": "landform-processes"
+    },
+    {
+      "id": "landform-processes-section-2",
+      "title": "地表的起伏从哪里来",
+      "paragraphs": [
+        "板块运动使地壳受到挤压、断裂或隆升，岩浆到达地表后又能建造新的岩体。这些过程建立高差，重力、水流和冰川随即沿着高低变化继续改造地表。",
+        "隆升与侵蚀可以同时发生。岩石被抬高时，山谷也在被切低，山顶高度因此未必与隆升速度同步增加；不同时间尺度的过程共同留下了今天的起伏。"
+      ],
+      "partId": "landform-processes"
+    },
+    {
+      "id": "landform-processes-section-3",
+      "title": "风化、侵蚀、搬运和堆积",
+      "paragraphs": [
+        "岩石在原地破碎或发生化学变化，称为风化；物质被移走，属于侵蚀；随水、风或冰继续移动，是搬运；搬运条件改变后留下的物质，则形成堆积。这些环节常在同一地区相互衔接。",
+        "黄土的细颗粒先随风迁移并沉积，后来又受雨水与河流切割。沟壑的成因需要追溯后期流水，不能仅因材料是风带来的，就把它也归为风蚀地貌。"
+      ],
+      "partId": "landform-processes",
+      "mediaIds": [
+        "diagram-processes"
+      ]
+    },
+    {
+      "id": "landform-processes-section-4",
+      "title": "从共同问题进入具体地貌",
+      "paragraphs": [
+        "比较两处地貌，可以先问岩石是什么、裂隙怎样分布，再看主要由水、风还是冰改造，以及作用经历了多久。植被、土壤和土地利用又会影响坡面流水，使相近材料形成不同外貌。",
+        "喜马拉雅突出抬升与侵蚀同时进行，黄土高原体现先堆积再切割，长江则把山地与下游沉积区连接起来。下面三个案例各强调一个环节，随后用丹霞与岩溶进一步比较材料的作用。"
+      ],
+      "partId": "landform-processes"
+    },
+    {
+      "id": "landform-processes-module-case-himalayas",
+      "title": "喜马拉雅山脉",
+      "paragraphs": [
+        "喜马拉雅位于青藏高原南缘，印度板块与欧亚板块的持续汇聚使地壳缩短、增厚并抬升。较轻的大陆地壳难以像海洋板块那样整体沉入地幔，因而逐渐形成高山。",
+        "与此同时，河流、冰川和风化不断改造山体，侵蚀切低谷地，构造继续抬升。高度还影响自然环境，山地在形成以后仍经历持续变化。"
+      ],
+      "caseIds": [
+        "himalayas"
+      ],
+      "partId": "landform-processes"
+    },
+    {
+      "id": "landform-processes-module-case-loess-plateau",
+      "title": "黄土高原",
+      "paragraphs": [
+        "黄土高原的粉尘经过风的搬运而长期沉积，来源并非只有一个沙漠。土壤形成与后期水蚀再改造土层，把高地分割为塬、梁、峁和沟谷。",
+        "黄土说明物质来源，沟壑则显示流水切割。裸露的黄色土壁本身，也不能说明当地今天仍在快速接受新沉积。"
+      ],
+      "caseIds": [
+        "loess-plateau"
+      ],
+      "partId": "landform-processes"
+    },
+    {
+      "id": "landform-processes-module-case-yangtze",
+      "title": "长江",
+      "paragraphs": [
+        "长江约6,300千米的干流包括沱沱河、通天河和金沙江等上游河段，从青藏高原穿过峡谷、盆地和平原，最终流入东海。构造抬升建立落差，降水、冰雪等水源汇集，河流沿途持续侵蚀和沉积。",
+        "进入平原与三角洲后，坡降总体减小，航运、泥沙堆积和洪水问题也随河段变化，河谷与河口都在水沙作用下不断调整。"
+      ],
+      "caseIds": [
+        "yangtze"
+      ],
+      "partId": "landform-processes"
+    },
+    {
+      "id": "part-landform-danxia",
+      "title": "丹霞与红层景观",
+      "paragraphs": [
+        "红层提供了材料，陡崖、岩柱与沟谷显示了后来的改造。丹霞山与崀山的形态，可以从岩层的厚薄、软硬和裂隙入手理解；照片中的红色，仍需要地质资料说明。"
+      ],
+      "partId": "landform-danxia",
+      "mediaIds": [
+        "danxia-photo"
+      ]
+    },
+    {
+      "id": "landform-danxia-section-1",
+      "title": "红色只是观察的起点",
+      "paragraphs": [
+        "丹霞发育在陆相红色砂岩、砾岩等沉积岩层上，常见陡崖、岩柱、方山和沟谷。岩石中的含铁矿物与红色有关，但其他过程也可能产生红色地表。",
+        "“红层”描述岩层，“丹霞”描述特定地质条件下发育的地貌。彩色条带还可能反映不同层位的矿物组成和风化差异，颜色、岩性和形态需要分别辨认。"
+      ],
+      "partId": "landform-danxia"
+    },
+    {
+      "id": "landform-danxia-section-2",
+      "title": "岩层怎样变成崖壁与岩柱",
+      "paragraphs": [
+        "沉积物固结成岩后，构造运动使岩层抬升或变形，流水沿易侵蚀处切割。风化削弱岩体，岩块沿裂隙崩落，陡崖逐渐后退，沟谷加深，原来的岩层便被不断分割。",
+        "厚度、软硬、倾斜程度与裂隙方向不同，有的地方留下平顶陡壁，有的形成岩柱或天然拱门。流水、风化与重力各有作用，侵蚀速度也会随条件变化。"
+      ],
+      "partId": "landform-danxia",
+      "mediaIds": [
+        "diagram-danxia"
+      ]
+    },
+    {
+      "id": "landform-danxia-section-3",
+      "title": "丹霞与喀斯特，形似而成因有别",
+      "paragraphs": [
+        "丹霞和喀斯特都可能出现峰柱、洞穴与天然桥，但它们背后的材料和过程不同。丹霞主要发育于陆相红色砂岩、砾岩等地层，流水切割、风化与崩落参与塑形；典型碳酸盐岩喀斯特则突出水的溶蚀和地下排水。",
+        "因此，颜色与轮廓只是观察入口。把岩石、层理、裂隙与水路连起来，才能解释一座峰柱为什么留下、一个洞口怎样形成。"
+      ],
+      "partId": "landform-danxia",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "同看峰柱，追问不同过程",
+          "columns": [
+            "比较项",
+            "丹霞",
+            "典型碳酸盐岩喀斯特"
+          ],
+          "rows": [
+            [
+              "主要材料",
+              "陆相红色砂岩、砾岩等",
+              "石灰岩、白云岩等"
+            ],
+            [
+              "显著过程",
+              "流水切割、风化与重力崩落",
+              "溶蚀与地下排水"
+            ],
+            [
+              "观察线索",
+              "层理、裂隙、陡崖和沟谷",
+              "峰谷组合、溶沟、洞穴和泉"
+            ]
+          ],
+          "note": "两类地貌均有多种过程参与，单张照片不能完成岩性鉴定。"
+        }
+      ]
+    },
+    {
+      "id": "landform-danxia-section-4",
+      "title": "把单座山放回区域",
+      "paragraphs": [
+        "丹霞山与崀山的崖壁、沟谷和周围植被，需要放在区域中共同观察。拍摄角度会强化陡峭感，多张照片、地图与剖面可以补足单一视角。",
+        "景区、世界遗产地与地貌实际延伸范围各有含义。本专题只以核对过的地点定位，具体形态与范围以对应地质资料为依据。"
+      ],
+      "partId": "landform-danxia"
+    },
+    {
+      "id": "landform-danxia-module-case-danxiashan",
+      "title": "丹霞山",
+      "paragraphs": [
+        "丹霞山的陡崖与峰柱，发育于广东韶关的红色陆相砂岩、砾岩等沉积岩层。抬升之后，流水切割、风化与岩块崩落共同塑形。颜色来自含铁矿物等因素，崖壁如何后退、岩柱如何保留，还与层理、裂隙和岩层软硬有关。"
+      ],
+      "caseIds": [
+        "danxiashan"
+      ],
+      "partId": "landform-danxia"
+    },
+    {
+      "id": "landform-danxia-module-case-langshan-danxia",
+      "title": "崀山丹霞",
+      "paragraphs": [
+        "湖南崀山同样有红层峰柱与陡崖，构造改变岩层，流水沿裂隙侵蚀，岩体又在重力作用下崩落。不同的岩层厚度、软硬和裂隙组合，留下柱状、墙状与谷地相间的形态。将整片地形放在一起，才能看出一块奇特岩石与周围景观的联系。"
+      ],
+      "caseIds": [
+        "langshan-danxia"
+      ],
+      "partId": "landform-danxia"
+    }
+  ],
+  "questions": [
+    {
+      "question": "黄土高原的黄土和沟壑，是由同一种作用形成的吗？",
+      "answer": "黄土的重要来源与风成沉积有关，沟壑则突出后来的流水切割。应把物质来源与地表形态的形成分开解释。"
+    },
+    {
+      "question": "岩石循环是不是每块岩石都必须走完的固定顺序？",
+      "answer": "不是。它表示多条可能的转化路径，实际经历取决于岩石所处环境和后续地质过程。"
+    },
+    {
+      "question": "照片里一座山呈红色，能直接称为丹霞吗？",
+      "answer": "不能。还需要核对岩性、地层和地貌形态。红层是材料线索，红色本身不是充分的识别依据。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "nps.gov · landforms",
+      "url": "https://www.nps.gov/subjects/geology/landforms.htm"
+    },
+    {
+      "title": "nps.gov · fluvial landforms",
+      "url": "https://www.nps.gov/subjects/geology/fluvial-landforms.htm"
+    },
+    {
+      "title": "nps.gov · aeolian landforms",
+      "url": "https://www.nps.gov/subjects/geology/aeolian-landforms.htm"
+    },
+    {
+      "title": "USGS · The Himalayas: Two continents collide",
+      "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html"
+    },
+    {
+      "title": "USGS · Seismicity of the Earth: Himalaya and vicinity",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+    },
+    {
+      "title": "中国科学院地质地球所 · 黄土形成与物源",
+      "url": "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html"
+    },
+    {
+      "title": "中国科学院地球环境所 · 河谷砂黄土风—水过程",
+      "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
+    },
+    {
+      "title": "宁夏水利厅 · 亚洲第一长河——长江",
+      "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html"
+    },
+    {
+      "title": "重庆市水利局 · 长江",
+      "url": "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html"
+    },
+    {
+      "title": "nps.gov · rocks",
+      "url": "https://www.nps.gov/subjects/geology/rocks.htm"
+    },
+    {
+      "title": "nps.gov · igneous",
+      "url": "https://www.nps.gov/subjects/geology/igneous.htm"
+    },
+    {
+      "title": "nps.gov · sedimentary",
+      "url": "https://www.nps.gov/subjects/geology/sedimentary.htm"
+    },
+    {
+      "title": "nps.gov · metamorphic",
+      "url": "https://www.nps.gov/subjects/geology/metamorphic.htm"
+    },
+    {
+      "title": "NASA Earth Observatory · Lonar Crater, India",
+      "url": "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/"
+    },
+    {
+      "title": "NOAA NESDIS · What Is a Monsoon?",
+      "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+    },
+    {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+    },
+    {
+      "title": "UNESCO · China Danxia",
+      "url": "https://whc.unesco.org/en/list/1335/"
+    },
+    {
+      "title": "UNESCO · 组成地地图与参考坐标",
+      "url": "https://whc.unesco.org/en/list/1335/maps/"
+    },
+    {
+      "title": "UNESCO · South China Karst",
+      "url": "https://whc.unesco.org/en/list/1248/"
+    },
+    {
+      "title": "UNESCO · 组成地地图与参考坐标",
+      "url": "https://whc.unesco.org/en/list/1248/maps/"
+    }
+  ],
+  "presentation": "essay"
+}

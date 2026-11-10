@@ -1,24 +1,25 @@
 import {test,expect} from '@playwright/test'
 import {baseReady,mapSettled,selectedGeometry} from './map-readiness'
-import {chooseTheme,openThemeLibrary} from './theme-controls'
+import {chooseTheme,openThemeLibrary,openDiscoveries} from './theme-controls'
 
 test.use({reducedMotion:'reduce'})
 test.beforeEach(async({page})=>{await page.goto('/');await baseReady(page)})
 
 test('discovery navigation: peer tabs retain the map and active theme, with independent place reading',async({page},info)=>{
-  await chooseTheme(page,'中国四大高原')
+  await chooseTheme(page,'中国地形格局')
   await mapSettled(page)
   await openThemeLibrary(page)
   const camera=await page.evaluate(()=>({center:window.__terraAtlas!.map.getCenter().toArray(),zoom:window.__terraAtlas!.map.getZoom()}))
+  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'看地图',exact:true}).click()
   const tabs=page.locator('.panel-tabs')
-  await tabs.getByRole('button',{name:'随便看看',exact:true}).click()
+  await openDiscoveries(page)
   await expect(tabs.getByRole('button',{name:'随便看看',exact:true})).toHaveAttribute('aria-pressed','true')
   await expect(page.locator('.discovery-panel')).toBeVisible()
   await mapSettled(page)
   const after=await page.evaluate(()=>({center:window.__terraAtlas!.map.getCenter().toArray(),zoom:window.__terraAtlas!.map.getZoom()}))
   expect(after.zoom).toBeCloseTo(camera.zoom,5)
   after.center.forEach((value,index)=>expect(value).toBeCloseTo(camera.center[index],5))
-  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).topicId)).toBe('china-plateaus')
+  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).topicId)).toBe('china-terrain')
   const first=page.locator('.discovery-panel .suggestions>button').first(),name=await first.locator('strong').innerText()
   await first.click()
   await expect(page.locator('.knowledge-panel:not(.embedded) h2')).toHaveText(name)
@@ -28,12 +29,13 @@ test('discovery navigation: peer tabs retain the map and active theme, with inde
   await page.getByRole('button',{name:'关闭知识卡片',exact:true}).click()
   if(info.project.name!=='desktop')await page.getByRole('button',{name:'打开主题探索',exact:true}).click()
   await expect(page.locator('.discovery-panel')).toBeVisible()
-  await page.getByRole('button',{name:'继续主题 · 中国四大高原'}).click()
-  await expect(page.locator('.topic-reader h1')).toHaveText('中国四大高原')
+  await page.getByRole('button',{name:'继续主题 · 中国地形格局'}).click()
+  await expect(page.locator('.topic-reader h1')).toHaveText('中国地形格局')
   await expect(page.locator('.discovery-panel')).toHaveCount(0)
   await openThemeLibrary(page)
-  await tabs.getByRole('button',{name:'随便看看',exact:true}).click()
-  await tabs.getByRole('button',{name:'主题',exact:true}).click()
+  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'看地图',exact:true}).click()
+  await openDiscoveries(page)
+  await tabs.getByRole('button',{name:'主题地图',exact:true}).click()
   await page.goBack()
   await expect(tabs.getByRole('button',{name:'随便看看',exact:true})).toHaveAttribute('aria-pressed','true')
   await expect(page.locator('.discovery-panel')).toBeVisible()
@@ -42,7 +44,8 @@ test('discovery navigation: peer tabs retain the map and active theme, with inde
 
 test('discovery navigation: category and scope filters apply to suggestions and random picks',async({page})=>{
   await openThemeLibrary(page)
-  await page.locator('.panel-tabs').getByRole('button',{name:'随便看看',exact:true}).click()
+  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'看地图',exact:true}).click()
+  await openDiscoveries(page)
   await page.getByRole('group',{name:'随便看看范围'}).getByRole('button',{name:'全球',exact:true}).click()
   await page.locator('.nearby-filters summary').click()
   await page.locator('.nearby-filters').getByRole('button',{name:'湖泊',exact:true}).click()

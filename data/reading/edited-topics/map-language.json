@@ -1,0 +1,234 @@
+{
+  "id": "map-language",
+  "title": "语言分布",
+  "introduction": "语言随着人群的往来与传承分布在世界各地。在家说方言，出门说普通话，是许多人熟悉的经验；放眼世界，一种语言可以跨越国界，同一个地方也可以使用多种语言。先分清母语、共同语、文字与语言亲缘，再追踪人们走过的道路，今天的语言地图就有了可以理解的来历。",
+  "updatedAt": "2026-11-10",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "母语、方言与共同语",
+      "paragraphs": [
+        "幼年生活中最先习得的语言，通常称为母语。在多语家庭长大的人，可以有不止一种母语。到了学校或工作场合，人们又可能换用另一种语言，与来自不同地方的人交谈。母语关乎早年的习得，共同语则关乎不同社群怎样交流。",
+        "即使同说一种语言，各地的说法也有差别。口音主要指发音，方言的差异还包括词汇和语法。方言是一种语言内部的地域或社会变体，并不是说得不够标准。",
+        "汉语中的吴语、粤语、闽语等，习惯上称为方言，彼此的口语差异却可能很大。能否相互听懂是划分语言的一项依据，历史、共同书写传统与使用者认同也会影响命名。普通话帮助不同方言区的人交流，各地方言则保留自己的称呼、语气和表达习惯。"
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "语言也有家谱",
+      "paragraphs": [
+        "英语与印地语分布在相距遥远的地区，却同属印欧语系。德语、西班牙语和俄语也在这个家族之中。语系把有共同祖语的语言归在一起，追溯的是它们在漫长岁月中的亲缘。",
+        "语言会随着世代更替慢慢变化。一群人迁往别处，与原来的社群来往渐少，两地的说法便可能沿不同方向发展，逐渐分化成不同的语言。亲缘有远有近，语系之内还能分出较近的支系：英语与德语同属日耳曼语族；西班牙语、葡萄牙语、法语和意大利语由拉丁语逐渐演变而来，属于罗曼语族。",
+        "追认这些亲属，不能只凭几个词听起来相像。汉语的“咖啡”与英语的 coffee 发音相近，反映的是词语的传播。语言学家需要比较基本词汇、语音之间成系统的对应，以及语法结构的历史变化，才能判断哪些相似来自共同祖语，哪些来自后来的借用。汉语所属的汉藏语系还包括藏语、缅甸语等，与印欧语系是不同的语言家族。"
+      ],
+      "mediaIds": [
+        "language-family-tree"
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "文字相近，语言未必同源",
+      "paragraphs": [
+        "英语、法语与越南语都使用以拉丁字母为基础的书写系统，越南语却属于南亚语系。日语使用汉字与假名，也不是汉语的一个分支。文字可以随文化交流被不同语言采用，语言亲缘则需要追溯共同祖语与历史演变。",
+        "这一差别可以和上一节连起来看：英语与印地语的地理位置、文字不同，却有共同的语言家族背景；英语与越南语共享一部分字母形式，亲缘却不同。外观上的相似与历史上的联系，需要分别解释。",
+        "文字出现以前，人类已经用语言交流，许多语言长期靠口耳传递故事、歌谣和知识。文字是记录语言的一种方式，手语则用手势、空间与面部表情组织表达，同样是完整的语言。"
+      ]
+    },
+    {
+      "id": "module-module-1",
+      "title": "人们怎样相遇，语言就怎样传播",
+      "paragraphs": [
+        "语言随着使用它的人移动，也通过社群接触扩大用途。山岭、河流和海峡影响来往的频率，河谷、海岸与商路又提供交流通道。相对隔绝的山谷和岛屿可能保留较多地方差异，贸易、婚姻和迁徙却也能维系相距很远的社群。",
+        "新几内亚及附近岛屿的语言多样性，需要结合地形、长期社群分化和语言接触理解。现代公路、城市、学校、广播和互联网又改变使用语言的机会，一些共同语因此进入更多生活场合。自然阻隔与社会联系，始终共同影响语言的分布。",
+        "有些语言还获得法律或公共制度规定的官方地位。官方语言、跨社群交流的共同语和个人母语，可能重合，也可能不同。家中交谈、课堂教学和办理公共事务所用的语言，可以落在同一个人的不同生活场景中。理解这层关系，再看各洲的语言分布，就不容易把一种国家标签当作所有人的日常语言。"
+      ],
+      "caseIds": [
+        "official-vs-mother-tongue"
+      ],
+      "mapLabels": {
+        "official-vs-mother-tongue": "查看各国的语言概况"
+      }
+    },
+    {
+      "id": "section-4",
+      "title": "亚洲：近邻之间，也有不同的语言家族",
+      "paragraphs": [
+        "联合国教科文组织2025年的介绍估计，世界上仍在使用的语言约有七千种。有些通行于广阔地区，有些集中在山谷、岛屿或少数社区；语言种类多的地方，使用者人数也未必最多。",
+        "从中国向周边看，汉语拥有庞大的母语人群，也随移民进入东南亚等地的华人社群。日本的日语、朝鲜半岛的朝鲜语各有自己的语言谱系，说明地理相邻并不等于亲缘接近。",
+        "南亚又展示了另一种组合。印地语广泛用于印度北部，孟加拉语主要分布在孟加拉国与印度东部相邻地区，两者同属印欧语系；印度南部的泰米尔语、泰卢固语等属于达罗毗荼语系。同一国界之内，可以包含不同语言家族。亚洲北部广泛使用的俄语，则将东欧与西伯利亚连接起来，其分布与人口迁移、国家扩张和教育传播有关。"
+      ],
+      "caseIds": [
+        "mandarin-language"
+      ],
+      "mapLabels": {
+        "mandarin-language": "查看汉语与地方方言的分布"
+      },
+      "mediaIds": [
+        "language-world-areas"
+      ]
+    },
+    {
+      "id": "module-module-2",
+      "title": "跨过大洋的语言",
+      "paragraphs": [
+        "大西洋两岸的语言分布，把欧洲与美洲的历史连在了一起。西班牙语通行于西班牙，也用于墨西哥、中美洲和南美洲的许多国家；巴西则广泛使用葡萄牙语。这幅格局，主要形成于十五、十六世纪以来的航海、殖民征服与人口迁移。",
+        "随着定居者抵达美洲，殖民行政机构、教会和学校逐渐扩大了欧洲语言的使用。战争与强制同化压缩了原住民语言的生存空间。不过，克丘亚语、瓜拉尼语等原住民语言一直延续至今。传入的欧洲语言也在当地吸收新词，发展出各自的口音和表达，渐渐有了与欧洲不同的面貌。",
+        "英语从不列颠走向世界，也经历了殖民扩张与移民传播。它在北美、澳大利亚等地扎下根来，进入南亚和非洲的行政与教育体系。此后，美国在经济、科研和文化上的影响，加上国际交流的需要，继续扩大了英语的用途。对于许多使用者，英语是在家庭之外学会的语言，用于大学课堂、工作和跨国通信。",
+        "法语的传播同样越过大洋，进入北美、加勒比地区和非洲的许多地方。英语、法语和葡萄牙语在一些国家用于公共事务，也方便不同社群相互沟通；人们回到家中，却可能说着别的语言。统计一门语言有多少使用者时，母语者与后来学会使用它的人因此需要分开，两者的分布也未必相同。"
+      ],
+      "caseIds": [
+        "english-language"
+      ],
+      "mapLabels": {
+        "english-language": "在完整地图中查看英语"
+      }
+    },
+    {
+      "id": "section-5",
+      "title": "阿拉伯语：书面传统与地方口语",
+      "paragraphs": [
+        "北非的大西洋沿岸、埃及与西亚的阿拉伯半岛，分布着广阔的阿拉伯语使用区。七世纪以来，政治扩张与伊斯兰教传播扩大了它的使用范围，贸易和学术往来又使它进入更多交流场合。诗歌、宗教经典与书法，则使阿拉伯语的文字和声音在这些地区的文化生活中占有重要位置。",
+        "在这片广大的区域内，读到的文字与日常说的话，有着不同程度的差别。现代标准阿拉伯语广泛用于书写、新闻和正式演讲，家庭、街巷与市场里的交谈则常用当地口语。摩洛哥、埃及和阿拉伯半岛的口语各有特点，距离较远的变体之间，理解也可能需要适应。共同的书面语，帮助人们跨过这些差异交流。",
+        "阿拉伯语的文化影响还越出了它的使用区。伊朗的波斯语采用改造过的阿拉伯字母，却属于印欧语系。宗教经典也可以在不同语言的社群中流传；学习经典所用的语言，并不意味着人们日常都改说同一种话。"
+      ],
+      "caseIds": [
+        "arabic-language"
+      ],
+      "mapLabels": {
+        "arabic-language": "查看北非与西亚的语言区域"
+      }
+    },
+    {
+      "id": "section-6",
+      "title": "非洲：多种语言怎样共同使用",
+      "paragraphs": [
+        "在非洲，英语、法语或葡萄牙语的国家标签之外，还有大量日常语言。约鲁巴语、豪萨语、阿姆哈拉语和祖鲁语等，各有使用社群。家庭、集市、学校与公共机构面对不同的交谈对象，人们也会随场合换用语言。",
+        "东非的斯瓦希里语是一种班图语言，沿印度洋西岸的港口和商路传播，吸收了许多阿拉伯语等语言的词汇。在坦桑尼亚、肯尼亚等地，它帮助不同社群交流。借词记录了接触，基本结构与历史演变则显示亲缘，二者可以在同一种语言中同时存在。",
+        "与前面的阿拉伯语书面语和地方口语相比，这里更突出不同语言共同承担生活用途的情形。多语生活可以让家庭传承、地方交谈与更广范围的交流各有语言可用。"
+      ]
+    },
+    {
+      "id": "section-7",
+      "title": "岛屿之间的远亲",
+      "paragraphs": [
+        "东非沿岸之外，马达加斯加岛上的语言又与亚洲有着联系。马达加斯加语属于南岛语系，与东南亚岛屿上的许多语言有历史亲缘。这个语系的成员散布在马达加斯加、台湾、菲律宾、印度尼西亚和太平洋诸岛，远及夏威夷、新西兰与拉帕努伊岛。",
+        "如此辽阔而分散的分布，与古代人群的航海迁移有关。人们乘船抵达新的岛屿，带去了自己的语言；定居后，各个社群的说法又逐渐分化。海洋阻隔往来，也容许远航。陆地相距多远，只能解释一部分语言差异，还要看人们曾经沿什么道路相遇。"
+      ],
+      "mediaIds": [
+        "language-austronesian-points"
+      ]
+    },
+    {
+      "id": "section-8",
+      "title": "让一种语言继续被使用",
+      "paragraphs": [
+        "语言的延续，离不开一代人把它教给下一代。如果孩子还能听懂长辈的话，却很少再用它交谈，传承就可能逐渐减弱。家庭作出这样的选择，往往与求学、就业机会和周围人怎样看待这种语言有关。",
+        "随之减少的，还有用这种语言讲故事、唱歌和开玩笑的机会。称呼亲人的方式、地方的名字、歌谣的韵脚，都依附于具体的说法。录音、词典和文字记录能够保存这些资料；孩子在家中、课堂和社区活动里继续使用它，才会把它带入下一代的生活。",
+        "学会共同语、接触外语，可以与保留母语和家乡话一同发生。语言的未来也在这些寻常选择里：长辈讲过的故事，孩子是否还愿意用同样的语言，再讲给别人听。"
+      ],
+      "caseIds": [
+        "language-diversity"
+      ],
+      "mapLabels": {
+        "language-diversity": "在地图上继续探索语言世界"
+      }
+    }
+  ],
+  "presentation": "essay",
+  "questions": [
+    {
+      "question": "英语和越南语都使用拉丁字母，英语和印地语却属于同一语系。这两种联系分别是怎样形成的？",
+      "answer": "文字可以随着文化交流被不同语言采用；语系则依据共同祖语及历史演变来划分。英语与印地语同属印欧语系，越南语属于南亚语系。书写形式的相近与语言的亲缘，需要分别追溯。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "UNESCO · Multilingual education（2025语言口径）",
+      "url": "https://www.unesco.org/en/languages-education/need-know?hub=66703"
+    },
+    {
+      "title": "Glottolog 5.3 · 数据目录与分类说明",
+      "url": "https://glottolog.org/glottolog/glottologinformation"
+    },
+    {
+      "title": "United Nations · 多语与六种正式语言",
+      "url": "https://www.un.org/en/observances/english-language-day/multilingualism-and-the-un"
+    },
+    {
+      "title": "教育部 · 国家通用语言文字概念（2025修订法律文本）",
+      "url": "https://www.moe.gov.cn/jyb_sjzl/sjzl_zcfg/zcfg_jyfl/202606/t20260605_1438880.html"
+    },
+    {
+      "title": "United Nations · English Language Day",
+      "url": "https://www.un.org/en/observances/english-language-day"
+    },
+    {
+      "title": "UNESCO · World Arabic Language Day",
+      "url": "https://www.unesco.org/en/world-arabic-language-day?hub=68184"
+    },
+    {
+      "title": "Glottography · 2007世界语言图集使用区（v2.0）",
+      "url": "https://doi.org/10.5281/zenodo.18613195"
+    },
+    {
+      "title": "Scientific Data · 世界语言使用区数字化与验证",
+      "url": "https://www.nature.com/articles/s41597-025-05828-6"
+    },
+    {
+      "title": "Unicode CLDR 48 · 国家语言资料",
+      "url": "https://www.unicode.org/cldr/charts/48/supplemental/territory_language_information.html"
+    },
+    {
+      "title": "IANA · 语言与宏语言注册表",
+      "url": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry"
+    },
+    {
+      "title": "Michael Gasser · 语言与方言",
+      "url": "https://socialsci.libretexts.org/Bookshelves/Linguistics/How_Language_Works_(Gasser)/01%3A_Introduction/1.04%3A_Dialects_and_Languages"
+    },
+    {
+      "title": "Glottolog 5.3 · 印欧语系",
+      "url": "https://glottolog.org/resource/languoid/id/indo1319"
+    },
+    {
+      "title": "Glottolog 5.3 · 汉藏语系",
+      "url": "https://glottolog.org/resource/languoid/id/sino1245"
+    },
+    {
+      "title": "David Crystal · 英语走向世界的历史",
+      "url": "https://www.cambridge.org/core/books/abs/english-as-a-global-language/why-english-the-historical-context/39284D2FB6C02AA7106B6B9313CD9E6B"
+    },
+    {
+      "title": "British Council · The English Effect",
+      "url": "https://www.britishcouncil.org/sites/default/files/english-effect-report-v2.pdf"
+    },
+    {
+      "title": "Instituto Cervantes · 巴西与西班牙语世界",
+      "url": "https://cvc.cervantes.es/lengua/anuario/anuario_00/moreno/p01.htm"
+    },
+    {
+      "title": "联合国 · 六种正式语言的教学与使用",
+      "url": "https://languages.un.org/en/six-official-un-languages"
+    },
+    {
+      "title": "UNESCO · 世界阿拉伯语日",
+      "url": "https://www.unesco.org/en/world-arabic-language-day"
+    },
+    {
+      "title": "美国国会图书馆 · 印度洋世界中的非洲",
+      "url": "https://guides.loc.gov/africa-in-the-indian-ocean-world"
+    },
+    {
+      "title": "UNESCO · 世界斯瓦希里语日",
+      "url": "https://www.unesco.org/en/days/kiswahili-language"
+    },
+    {
+      "title": "ANU Press · 太平洋的语言分布",
+      "url": "https://press-files.anu.edu.au/downloads/press/p60461/html/ch02s02.html"
+    },
+    {
+      "title": "UNESCO · 口头传统与语言传承",
+      "url": "https://ich.unesco.org/en/oral-traditions-00053"
+    }
+  ]
+}

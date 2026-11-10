@@ -29,7 +29,7 @@ async function writes(page:Page){
 test('map updates: opacity and language filters preserve source geometry while religion metrics update only religion',async({page})=>{
   await page.goto('/');await baseReady(page)
   for(const source of ['regions','rivers','lakes','peaks','summits'])await sourceLoaded(page,source)
-  await chooseTheme(page,'长期气候分布');await sourceLoaded(page,'climate');await resetWrites(page)
+  await chooseTheme(page,'气候分布与成因');await sourceLoaded(page,'climate');await resetWrites(page)
   await page.locator('#climate-opacity').fill('0.65')
   expect(await writes(page),'climate opacity must not reserialize any source geometry').toEqual({})
   expect(await page.evaluate(()=>window.__terraAtlas!.map.getPaintProperty('climate-fill','fill-opacity'))).toBe(.65)

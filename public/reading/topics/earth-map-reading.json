@@ -1,0 +1,310 @@
+{
+  "id": "earth-map-reading",
+  "title": "读地图与影像",
+  "introduction": "地图用位置、比例和符号表达地理，照片与卫星影像则记录地表在某个时刻的样子。两者互相补充：地图交代山川与地点的关系，影像提供纹理和形态。读懂它们，需要知道画的是哪里、多大范围、什么时间，以及哪些信息经过了选择和简化。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "earth-map-reading",
+      "title": "经纬网、比例尺与地形阅读",
+      "sectionId": "part-earth-map-reading",
+      "description": "同一座山，在世界地图上可以只是一个点，在地形图上则有山脊、谷地与坡面。表达范围改变，细节随之取舍；经纬网、比例尺和等高线，分别帮助我们读出位置、距离与高低。",
+      "keywords": [
+        "地球与地图",
+        "观察方法"
+      ]
+    },
+    {
+      "id": "earth-image-reading",
+      "title": "怎样读地理照片与卫星影像",
+      "sectionId": "part-earth-image-reading",
+      "description": "地图符号概括了地物，影像则留下河道弯曲、田块边缘与峰体阴影等纹理。不过，镜头和传感器也有自己的取舍。认识这些可见细节，需要同时了解拍摄地点、时刻、角度与记录方式。",
+      "keywords": [
+        "卫星影像",
+        "遥感",
+        "假彩色",
+        "影像判读",
+        "照片",
+        "分辨率",
+        "地球与地图",
+        "观察方法",
+        "岩溶",
+        "碳酸盐岩",
+        "地下水",
+        "规划自然范围",
+        "城市群",
+        "跨界水环境"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-earth-map-reading",
+      "title": "经纬网、比例尺与地形阅读",
+      "paragraphs": [
+        "同一座山，在世界地图上可以只是一个点，在地形图上则有山脊、谷地与坡面。表达范围改变，细节随之取舍；经纬网、比例尺和等高线，分别帮助我们读出位置、距离与高低。"
+      ],
+      "partId": "earth-map-reading"
+    },
+    {
+      "id": "earth-map-reading-section-1",
+      "title": "位置先用经纬度表达",
+      "paragraphs": [
+        "纬度表示相对赤道的南北位置，经度表示相对本初子午线的东西位置。有了这组角度，陆地与海洋上的地点都能被记录下来，不必依赖附近是否有城市或道路。",
+        "同一地点可以写成十进制度，也可以写成度、分、秒。记录时还要说明东西经、南北纬，确认经纬顺序和坐标系统。小数位多只是书写得细，测量是否准确仍取决于资料来源。"
+      ],
+      "partId": "earth-map-reading"
+    },
+    {
+      "id": "earth-map-reading-section-2",
+      "title": "地图怎样把地面缩到纸上",
+      "paragraphs": [
+        "比例尺表示图上长度与实地长度的比例，连接了平面上的远近和地面距离。比例尺较大的地图，通常在较小范围内表达更多细节；交互地图缩放时，屏幕上的显示比例随之改变。",
+        "但地球表面是弯曲的，把它投影到平面，形状、面积或距离总会有某种变形。两个地区在屏幕上看起来同样大，并不保证实际面积相等。全球面积比较需要相应面积资料，距离测量也需要合适的地理计算。"
+      ],
+      "partId": "earth-map-reading"
+    },
+    {
+      "id": "earth-map-reading-section-3",
+      "title": "等高线怎样表达山谷和山脊",
+      "paragraphs": [
+        "等高线连接高程相同的点。在比例尺和等高距相同的前提下，线密通常表示坡陡，线疏通常表示坡缓；一圈封闭的线是山顶还是洼地，还要看高程怎样变化。",
+        "等高线穿过河谷时，通常向较高的上游弯曲；沿山脊则呈现不同的弯曲方向。形状与数值合在一起，才让平面的线条显出山谷和山脊的起伏。"
+      ],
+      "partId": "earth-map-reading",
+      "mediaIds": [
+        "diagram-contours"
+      ]
+    },
+    {
+      "id": "earth-map-reading-section-4",
+      "title": "符号的含义来自图例",
+      "paragraphs": [
+        "同一种颜色，在不同地图上可以表示海拔、气候类别或人口数量；同样大小的点，可以标记地点，也可以表示某种数量。图例、单位与范围让这些符号获得明确含义，视觉印象本身还不能完成解释。",
+        "一个地点也可以同时落在省区、流域、气候格网和地貌范围之内。省区描述管理范围，流域描述汇水关系，其余范围有各自定义。把几个图层叠在一起，是让不同问题互相参照，而不是让边界互相替代。"
+      ],
+      "partId": "earth-map-reading"
+    },
+    {
+      "id": "earth-map-reading-module-coordinates",
+      "title": "读位置",
+      "paragraphs": [
+        "赤道的纬度为0°，南北纬说明地点在它的哪一侧。经线在两极汇合，因此同样相差1°经度，所对应的东西向距离会随纬度改变，不能把经纬网当作地面上大小相等的方格。",
+        "坐标的书写顺序也需要注意。日常文字常先写纬度、后写经度，地图数据则常采用经度在前、纬度在后的顺序。方向正确却把两项颠倒，仍会把地点移到完全不同的位置。"
+      ],
+      "caseIds": [
+        "earth-coordinates"
+      ],
+      "partId": "earth-map-reading"
+    },
+    {
+      "id": "earth-map-reading-module-scale",
+      "title": "富士山：从位置走近地形",
+      "paragraphs": [
+        "在覆盖日本的地图上，富士山主要承担位置标记的作用；缩小观察范围，才有空间表达周围坡面、谷地和道路。比例尺的分母越小，比例尺越大，通常可以在较小范围内保留更多细节。",
+        "纸图比例尺1∶50,000，表示图上长度与实地长度之比为一比五万，因此图上4厘米对应实地2千米。屏幕地图会缩放，读距离应使用与当前显示对应的比例尺或测量工具。",
+        "显示放大与资料变精细仍是两件事。若原始数据只保留概化山脊，放大后线条会更醒目，却不会自动出现未被记录的山沟。"
+      ],
+      "caseIds": [
+        "earth-scale"
+      ],
+      "partId": "earth-map-reading"
+    },
+    {
+      "id": "earth-map-reading-module-relief",
+      "title": "读地形",
+      "paragraphs": [
+        "珠峰附近的地形格网记录的是经过采样和处理的像元高程。它能帮助认识周围起伏，却不等同于峰顶的正式测量；后者还涉及测量方法、基准面和具体位置。",
+        "比较两幅等高线图的坡度，也要先确认比例尺和等高距。只有这两个条件一致，线条的疏密才便于直接比较，否则相似的间距可能代表不同坡度。"
+      ],
+      "caseIds": [
+        "earth-contours"
+      ],
+      "partId": "earth-map-reading"
+    },
+    {
+      "id": "part-earth-image-reading",
+      "title": "怎样读地理照片与卫星影像",
+      "paragraphs": [
+        "地图符号概括了地物，影像则留下河道弯曲、田块边缘与峰体阴影等纹理。不过，镜头和传感器也有自己的取舍。认识这些可见细节，需要同时了解拍摄地点、时刻、角度与记录方式。"
+      ],
+      "partId": "earth-image-reading"
+    },
+    {
+      "id": "earth-image-reading-section-1",
+      "title": "先读影像之外的信息",
+      "paragraphs": [
+        "一张照片记录了某地、某时、某个方向的景观。旱季与雨季的水面可能不同，拍摄角度也会改变坡面的观感；地点、日期和尺度决定了照片能够说明哪些事情。",
+        "卫星影像还受到传感器、分辨率与处理方式的影响。一个像元覆盖多大的地面范围，决定了它能分辨多小的对象。把图片放大，无法补回原本没有记录的细节。"
+      ],
+      "partId": "earth-image-reading",
+      "mediaIds": [
+        "diagram-image-reading"
+      ]
+    },
+    {
+      "id": "earth-image-reading-section-2",
+      "title": "影像为什么不一定使用自然颜色",
+      "paragraphs": [
+        "自然色影像尽量接近日常视觉，假彩色影像则把其他波段转换成可见颜色，以突出植被、水分等特征。某些组合会让健康植被呈现红色，颜色在这里是一种表达方法。",
+        "因此，看见红色树林，应先确认波段组合，再判断植被状况；遇到暗色区域，也要结合形状、位置与周围环境，区分水体、阴影和深色地物。颜色提供线索，其他特征补足它不能单独说明的部分。"
+      ],
+      "partId": "earth-image-reading"
+    },
+    {
+      "id": "earth-image-reading-section-3",
+      "title": "形状、纹理与周围关系",
+      "paragraphs": [
+        "河流常形成连续弯曲的通道，农田可能分成规则地块，山地阴影则与光照方向有关。颜色之外，形状、尺度、纹理和邻近环境，都提供了辨认地物的线索。",
+        "这些线索并非固定答案。养殖塘、水库和城市绿地可以有多种形态，同一类地物在不同地区也会不同。地面资料能够帮助确认影像中暂时无法分辨的对象。"
+      ],
+      "partId": "earth-image-reading"
+    },
+    {
+      "id": "earth-image-reading-section-4",
+      "title": "两幅影像怎样显示真实变化",
+      "paragraphs": [
+        "要比较两期影像，季节、分辨率和观察范围应尽量接近，还要识别云、阴影及水位差异。一座湖旱季水面较小，可能只是季节涨落；两张图颜色不同，也可能来自不同处理方式。",
+        "控制这些条件以后，连续观测才能更可靠地揭示地表变化。照片说明某时某地的景观，地图交代位置关系，示意剖面解释可能的过程；把它们组合起来，才能从“看见不同”继续走向“解释为什么不同”。"
+      ],
+      "partId": "earth-image-reading",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "同一地点，三种表达各有所长",
+          "columns": [
+            "资料",
+            "主要说明",
+            "阅读时先核对"
+          ],
+          "rows": [
+            [
+              "地图",
+              "地点、范围与空间关系",
+              "比例尺、图例、单位和边界含义"
+            ],
+            [
+              "照片或卫星影像",
+              "特定时刻的形态与纹理",
+              "地点、日期、分辨率与颜色处理"
+            ],
+            [
+              "示意剖面",
+              "高低关系或形成机制",
+              "路线或示意性质，是否使用实测数据"
+            ]
+          ],
+          "note": "资料互相补充，不能把示意形态当作某地点的真实测量。"
+        }
+      ]
+    },
+    {
+      "id": "earth-image-reading-module-case-earth-scale",
+      "title": "比例尺：从富士山看范围与细节",
+      "paragraphs": [
+        "在整幅日本地图上，富士山只是一个位置；缩小观察范围后，山体周围的起伏逐渐成为主体。地图范围与细节之间的取舍，和照片的取景有相通之处。",
+        "不过，图像能够清楚显示到哪一步，仍由原始分辨率决定。屏幕缩放改变观看大小，纸图比例尺用于长度换算，二者不能完全等同。"
+      ],
+      "caseIds": [
+        "earth-scale"
+      ],
+      "partId": "earth-image-reading"
+    },
+    {
+      "id": "earth-image-reading-module-case-earth-contours",
+      "title": "等高线：从高程理解坡面",
+      "paragraphs": [
+        "地形阴影模拟光照下的明暗，等高线则用高程表达起伏。前者便于迅速看出山势，后者能够读出高度变化，理解二者的差别有助于避免把阴影边缘当成实际边界。",
+        "同一坡面在不同光照方向下，可以有很不同的明暗。若要比较坡度，需要回到高程、等高距与比例尺，而不能只凭某一侧阴影是否浓重。"
+      ],
+      "caseIds": [
+        "earth-contours"
+      ],
+      "partId": "earth-image-reading"
+    },
+    {
+      "id": "earth-image-reading-module-case-guilin-karst",
+      "title": "桂林：照片中的山峰怎样与地图对应",
+      "paragraphs": [
+        "漓江沿岸的照片，可以显示峰体、阴影和低地；地图则把这些局部景观放回河流与区域位置。辨认峰丛和峰林时，要看峰体基部是否相连，峰间是深洼地还是开阔低地，而不是只看某座山是否尖锐。",
+        "这两类资料仍需要地质解释补充：水沿碳酸盐岩裂隙溶蚀，地下排水和河流长期改造地形，才形成眼前的组合。照片记录形态，地图联系空间，机制说明它们怎样形成。"
+      ],
+      "caseIds": [
+        "guilin-karst"
+      ],
+      "partId": "earth-image-reading",
+      "mediaIds": [
+        "guilin-photo"
+      ]
+    },
+    {
+      "id": "earth-image-reading-module-case-yangtze-delta",
+      "title": "长三角：自然三角洲与城市区域",
+      "paragraphs": [
+        "影像中的长江河口可以呈现水道、岸线与沉积地貌，却不能单凭这些景象划定整个长三角城市区域。自然三角洲和区域规划，采用的是不同范围。",
+        "前者由流水、海洋过程与沉积地形来理解；后者依行政范围和发展目标划定，还包括更多山地及内陆地区。影像记录地表，交通与产业资料则帮助说明城市之间的联系。"
+      ],
+      "caseIds": [
+        "yangtze-delta"
+      ],
+      "partId": "earth-image-reading"
+    }
+  ],
+  "questions": [
+    {
+      "question": "地图放大以后，原来模糊的数据会自动变精确吗？",
+      "answer": "不会。缩放只改变显示，真实精度仍受原始数据的比例尺、分辨率和测量方法限制。"
+    },
+    {
+      "question": "假彩色影像中的红色树林，能否直接判断为枯死？",
+      "answer": "不能。颜色可能来自波段映射，必须先查影像组合与说明，再结合其他证据判断。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NOAA · What is latitude?",
+      "url": "https://oceanservice.noaa.gov/facts/latitude.html"
+    },
+    {
+      "title": "NOAA · What is longitude?",
+      "url": "https://oceanservice.noaa.gov/facts/longitude.html"
+    },
+    {
+      "title": "USGS · Topographic Mapping：等高线与比例尺",
+      "url": "https://www.usgs.gov/educational-resources/topographic-mapping"
+    },
+    {
+      "title": "science.nasa.gov · how to interpret a false color satellite image",
+      "url": "https://science.nasa.gov/earth/earth-observatory/how-to-interpret-a-false-color-satellite-image/"
+    },
+    {
+      "title": "science.nasa.gov · how to interpret a satellite image",
+      "url": "https://science.nasa.gov/earth/earth-observatory/how-to-interpret-a-satellite-image/"
+    },
+    {
+      "title": "UNESCO · South China Karst",
+      "url": "https://whc.unesco.org/en/list/1248/"
+    },
+    {
+      "title": "UNESCO · 组成地地图与参考坐标",
+      "url": "https://whc.unesco.org/en/list/1248/maps/"
+    },
+    {
+      "title": "中国政府网 · 长江三角洲区域一体化发展规划纲要（2019）",
+      "url": "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html"
+    },
+    {
+      "title": "上海市人民政府 · Geography（2024年末面积）",
+      "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 太湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html"
+    },
+    {
+      "title": "中国科学院南京地湖所 · 浅水湖泊水动力",
+      "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+    }
+  ],
+  "presentation": "essay"
+}

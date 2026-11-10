@@ -1,7 +1,8 @@
+import allReadingTopics from '../src/data/topics.json' with {type:'json'}
 import {test,expect,type Page} from '@playwright/test'
 import {baseReady,mapSettled,selectedGeometry} from './map-readiness'
 import {clickHeaderAction} from './header-actions'
-import {openThemeLibrary} from './theme-controls'
+import {openThemeLibrary,openDiscoveries} from './theme-controls'
 
 async function select(page:Page,name:string){
   await page.getByRole('combobox',{name:'搜索地理对象'}).fill(name)
@@ -20,7 +21,8 @@ test.beforeEach(async({page})=>{await page.goto('/');await baseReady(page)})
 test('optimization: casual exploration is a peer of the theme catalogue',async({page},info)=>{
   await openThemeLibrary(page)
   await expect(page.getByRole('region',{name:'附近探索'})).toHaveCount(0)
-  await page.locator('.panel-tabs').getByRole('button',{name:'随便看看',exact:true}).click()
+  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'看地图',exact:true}).click()
+  await openDiscoveries(page)
   await expect(page.locator('.topic-library')).toHaveCount(0)
   const nearby=page.getByRole('region',{name:'附近探索'})
   await expect(nearby).toBeVisible()
@@ -38,13 +40,13 @@ test('optimization: casual exploration is a peer of the theme catalogue',async({
   await selectedGeometry(page)
   await openThemeLibrary(page)
   await expect(page.locator('.theme-catalogue-heading')).toBeInViewport()
-  await expect(page.locator('.topic-list>button')).toHaveCount(40)
+  await expect(page.locator('.topic-library-card')).toHaveCount(allReadingTopics.length)
   await page.locator('.topic-scope').getByRole('button',{name:'中国地理',exact:true}).click()
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill('河流')
   await page.getByRole('button',{name:'重置主题筛选'}).click()
   await expect(page.getByRole('searchbox',{name:'搜索主题和主题成员'})).toHaveValue('')
   await expect(page.locator('.topic-scope').getByRole('button',{name:'全部主题',exact:true})).toHaveAttribute('aria-pressed','true')
-  await expect(page.locator('.topic-list>button')).toHaveCount(40)
+  await expect(page.locator('.topic-library-card')).toHaveCount(allReadingTopics.length)
 })
 
 test('optimization: reading frees map space and a pinned explorer remains open',async({page},info)=>{
@@ -115,6 +117,7 @@ test('optimization: a real country without statistics finishes loading with an h
   await page.route('**/data/learning-country-languages.json',async route=>{await gate;await route.continue()})
   try{
     await select(page,'奥兰')
+    await page.getByText('展开地点介绍',{exact:true}).click()
     const profile=page.getByTestId('country-context')
     await expect(profile.getByRole('status')).toHaveText('正在读取区域统计资料…')
     release()
@@ -132,6 +135,7 @@ test('optimization: language overviews display translated and preserved source e
   await select(page,'挪威')
   await expect(page.locator('.country-language-list>li')).toHaveText(['挪威语（书面语）','挪威语（新挪威语）','原文条目small Sami- and Finnish-speaking minorities'])
   await select(page,'阿富汗')
+  await page.getByText('展开地点介绍',{exact:true}).click()
   await expect(page.locator('.country-language-list>li').nth(0)).toHaveText('达里语')
   await expect(page.locator('.country-language-list>li').nth(1)).toHaveText('普什图语')
   await expect(page.locator('.country-language-list')).toContainText('Nuristani 1%')

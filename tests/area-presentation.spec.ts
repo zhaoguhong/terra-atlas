@@ -27,10 +27,11 @@ async function search(page:Page,name:string,label:string){
   })
 }
 test('area presentation: four geographical regions have distinct rendered areas and geography matches',async({page},info)=>{
-  await chooseTheme(page,'中国四大地理区')
+  await chooseTheme(page,'中国区域与南北差异')
   await page.waitForFunction(()=>{
-    const source=window.__terraAtlas?.map.getSource('relations')?.serialize() as {data?:{features?:{geometry:{type:string}}[]}}|undefined
-    return source?.data?.features?.length===4&&source.data.features.every(f=>/Polygon/.test(f.geometry.type))
+    const source=window.__terraAtlas?.map.getSource('relations')?.serialize() as {data?:{features?:{geometry:{type:string};properties:{id:string}}[]}}|undefined
+    const regions=source?.data?.features?.filter(f=>f.properties.id.startsWith('region-cn-jiang2023-'))
+    return regions?.length===4&&regions.every(f=>/Polygon/.test(f.geometry.type))
   })
   await mapSettled(page)
   const check=await page.evaluate(()=>{

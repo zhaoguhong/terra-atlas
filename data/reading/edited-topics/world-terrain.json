@@ -1,0 +1,584 @@
+{
+  "id": "world-terrain",
+  "title": "世界地形与山系",
+  "introduction": "世界陆地由山系、高原、盆地和平原组合而成。山地在大陆上的位置影响气流与河流，高地与低地又通过水沙相连；单座高峰则只是更大地形系统中的一个高点。先认识大陆上的山地带，再比较高原和平原，最后走近亚洲十四座八千米级高峰，可以把全球格局与局部起伏联系起来。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "world-mountain-ranges",
+      "title": "世界主要山系",
+      "sectionId": "part-world-mountain-ranges",
+      "description": "喜马拉雅、安第斯、落基、阿尔卑斯和乌拉尔，各据不同的大陆位置。它们的走向和外形，与板块运动和长期侵蚀相连；两条同样高大的山脉，也可能有很不相同的形成历史。",
+      "keywords": [
+        "板块碰撞",
+        "雨影",
+        "垂直分异",
+        "板块俯冲",
+        "火山地震",
+        "山河联系",
+        "大陆分水岭",
+        "冰川地貌",
+        "融雪",
+        "大陆碰撞",
+        "交通区位",
+        "古老造山带",
+        "欧亚分界",
+        "矿产区位",
+        "层状火山",
+        "海拔效应",
+        "文化景观"
+      ]
+    },
+    {
+      "id": "world-plateaus-plains",
+      "title": "世界高原与平原",
+      "sectionId": "part-world-plateaus-plains",
+      "description": "离开山地，广阔的高原和平原铺展在大陆内部。青藏、德干、巴西高原与恒河平原、北美大平原、潘帕斯，虽然可以分别归入高地或低缓地形，岩石、温度、来水和生产方式却各不相同。",
+      "keywords": [
+        "海拔效应",
+        "亚洲水塔",
+        "内外流区",
+        "高原",
+        "火山岩",
+        "上游来水",
+        "尺度",
+        "平原",
+        "地下水",
+        "山前冲积",
+        "季风农业",
+        "洪水风险",
+        "农牧业",
+        "流域与地形",
+        "热带水循环",
+        "泥沙"
+      ]
+    },
+    {
+      "id": "world-high-peaks",
+      "title": "世界十四座8000米高峰",
+      "sectionId": "part-world-high-peaks",
+      "description": "传统名录中的十四座8000米独立主峰全部位于亚洲，其中10座在喜马拉雅，4座在喀喇昆仑。把这些峰顶放回更大的山地系统，大陆碰撞、地壳增厚和持续侵蚀之间的联系便更清楚。",
+      "keywords": [
+        "8000米主峰",
+        "山峰定位"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-world-mountain-ranges",
+      "title": "世界主要山系",
+      "paragraphs": [
+        "喜马拉雅、安第斯、落基、阿尔卑斯和乌拉尔，各据不同的大陆位置。它们的走向和外形，与板块运动和长期侵蚀相连；两条同样高大的山脉，也可能有很不相同的形成历史。"
+      ],
+      "partId": "world-mountain-ranges"
+    },
+    {
+      "id": "world-mountain-ranges-section-1",
+      "title": "先在大陆上找山地带",
+      "paragraphs": [
+        "喜马拉雅位于亚洲内部，安第斯与落基展布在美洲西部，阿尔卑斯和乌拉尔则构成欧洲及欧亚内部的山地带。山脉的走向、延伸和海陆位置，共同勾勒出大陆的地形格局。",
+        "同一山系内部，高峰、谷地与山间盆地差异很大。一处典型景观可以说明某种过程，却不能代表整条山系都具有相同形态。"
+      ],
+      "partId": "world-mountain-ranges"
+    },
+    {
+      "id": "world-mountain-ranges-section-2",
+      "title": "高大的山系，形成路径并不相同",
+      "paragraphs": [
+        "喜马拉雅与阿尔卑斯的形成涉及大陆碰撞，地壳缩短、增厚；安第斯则与俯冲及许多地区的火山活动密切相关。落基山地还经历了多期区域构造变化。相近的山地外形，背后有不同地质历史。",
+        "构造建立高差以后，冰川、河流和风化继续削蚀山体，切开谷地。比较山系，要同时看它怎样升高、又怎样被改造，不能只凭最高峰判断整条山脉的来历。"
+      ],
+      "partId": "world-mountain-ranges",
+      "mediaIds": [
+        "diagram-structures"
+      ]
+    },
+    {
+      "id": "world-mountain-ranges-section-3",
+      "title": "山地与海洋的距离",
+      "paragraphs": [
+        "来自海洋的气流遇到临海山地，会受到地形影响；内陆山地的水汽条件则不同。再加上海拔与纬度的共同作用，即使纬度接近，山上的冰雪、森林和草地也可能很不一样。",
+        "河流从山地两侧流向平原与海岸，带去水和沉积物。谷地因此连接上下游，也为交通提供通道，山地的影响会沿水系延伸到远处。"
+      ],
+      "partId": "world-mountain-ranges"
+    },
+    {
+      "id": "world-mountain-ranges-section-4",
+      "title": "人如何穿越与利用山地",
+      "paragraphs": [
+        "山口和河谷让穿山交通相对容易，陡坡、高差和气候又增加建设、维护的要求。旅游、农业、能源开发和居住各有空间需求，人们在山地中的活动并不均匀分布。",
+        "自然阻隔影响选择，技术、历史与经济联系也决定道路怎样延伸。山地既形成阻隔，也存在由人长期经营的跨山联系。"
+      ],
+      "partId": "world-mountain-ranges"
+    },
+    {
+      "id": "world-mountain-ranges-module-asia",
+      "title": "亚洲高山",
+      "paragraphs": [
+        "亚洲的高山中，喜马拉雅与富士山代表不同的形成方式。印度板块与欧亚板块持续汇聚，较轻的大陆地壳难以像海洋板块那样整体沉入地幔，地壳因而缩短、增厚并抬升；河流、冰川和风化继续切割喜马拉雅山体。",
+        "富士山的锥形则来自熔岩与火山碎屑的多期堆积，侵蚀和坡面过程再改造它的外形。1707年喷发包括山腹喷发与降灰，火山活动的影响也会越出山顶附近。"
+      ],
+      "caseIds": [
+        "himalayas",
+        "fujisan"
+      ],
+      "partId": "world-mountain-ranges"
+    },
+    {
+      "id": "world-mountain-ranges-module-americas",
+      "title": "美洲山系",
+      "paragraphs": [
+        "安第斯沿南美洲西侧延伸，纳斯卡板块向南美板块之下俯冲，引起地壳变形、抬升和许多地区的火山、地震活动。山系跨越很长的纬度范围，各段的构造与气候不同，并非每座山都是活火山。",
+        "北美的落基山脉经历多期造山，中、南段的重要抬升与拉拉米德造山作用有关，低角度俯冲是解释内陆抬升的主要机制之一。山中河谷有的向太平洋排水，有的通向大陆内部和东侧水系；大陆分水岭是水流去向的界线，与整个山脉的面状范围不同，各条河流也并非源于同一峰顶。"
+      ],
+      "caseIds": [
+        "andes",
+        "rockies"
+      ],
+      "partId": "world-mountain-ranges"
+    },
+    {
+      "id": "world-mountain-ranges-module-europe",
+      "title": "欧洲及欧亚内部",
+      "paragraphs": [
+        "阿尔卑斯与欧洲、亚得里亚／非洲方向的板块汇聚有关。海洋闭合后发生大陆碰撞，冰川后来反复拓宽谷地，留下湖盆和堆积物，河流也继续侵蚀山体。",
+        "乌拉尔经历古生代造山，以及后来的多期抬升、断裂和长期剥蚀，今天总体低于喜马拉雅等年轻高山。古老岩石中的矿产与工业发展有联系，但工业区的位置还受铁路、能源、市场和政策影响。"
+      ],
+      "caseIds": [
+        "alps",
+        "urals"
+      ],
+      "partId": "world-mountain-ranges"
+    },
+    {
+      "id": "part-world-plateaus-plains",
+      "title": "世界高原与平原",
+      "paragraphs": [
+        "离开山地，广阔的高原和平原铺展在大陆内部。青藏、德干、巴西高原与恒河平原、北美大平原、潘帕斯，虽然可以分别归入高地或低缓地形，岩石、温度、来水和生产方式却各不相同。"
+      ],
+      "partId": "world-plateaus-plains"
+    },
+    {
+      "id": "world-plateaus-plains-section-1",
+      "title": "用相对高低组织大陆地形",
+      "paragraphs": [
+        "高原与平原描述较大的地形单元，内部仍有明显起伏。深谷可以切入高原边缘，平原中也会保留低丘、旧河道和局部高地，理解这些名称需要同时比较高程与周围地形。",
+        "“亚马孙盆地”等名称还有地形与流域的不同用法。认识其范围时，应分清讨论的是低地形态，还是河流汇水关系。"
+      ],
+      "partId": "world-plateaus-plains",
+      "mediaIds": [
+        "diagram-plateaus"
+      ]
+    },
+    {
+      "id": "world-plateaus-plains-section-2",
+      "title": "高地有不同的形成历史",
+      "paragraphs": [
+        "青藏高原的隆升与大陆碰撞联系紧密，德干保存大面积玄武岩，巴西与埃塞俄比亚高地又有各自的地质背景。同样是高地，形成过程可以相差很大。",
+        "岩石组成、构造和流水切割，进一步改变高原面与谷地的组合。照片能显示局部形态，区域地形还需要在更大的范围内辨认。"
+      ],
+      "partId": "world-plateaus-plains"
+    },
+    {
+      "id": "world-plateaus-plains-section-3",
+      "title": "平原上的农业为什么不同",
+      "paragraphs": [
+        "北美大平原、恒河平原与潘帕斯都有较平缓的地表，热量、雨季、土壤和水源却不一样，历史形成的生产方式与市场联系也不同。平坦只提供了部分耕作和运输条件。",
+        "具体作物能否生长，还看水与热量能否在需要的季节到位。比较农业规模时，面积、产量和单产也应分别理解，农田照片不能替代这些统计。"
+      ],
+      "partId": "world-plateaus-plains",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "平坦土地上的不同农业条件",
+          "columns": [
+            "地区",
+            "共同的地形便利",
+            "进一步比较"
+          ],
+          "rows": [
+            [
+              "北美大平原",
+              "较平缓，便于耕作与运输",
+              "水分梯度、灌溉与作物组合"
+            ],
+            [
+              "恒河平原",
+              "广阔冲积低地",
+              "季风来水、洪水与灌溉"
+            ],
+            [
+              "潘帕斯",
+              "较平缓的陆地",
+              "土壤、水分、牧业与市场联系"
+            ]
+          ],
+          "note": "平坦只提供一部分条件，农业还受技术、历史和市场影响。"
+        }
+      ]
+    },
+    {
+      "id": "world-plateaus-plains-section-4",
+      "title": "沿河流，把高地与低地联系起来",
+      "paragraphs": [
+        "许多河流在高地汇水，把水与沉积物带往低地。高原边缘的深谷、山前的堆积地和下游平原，由此形成一条物质传递路径。",
+        "亚马孙提供了很好的尺度对照：流域包含向同一水系汇水的山地和低地，低平的亚马孙平原只是其中一部分，雨林范围又由另一组生态条件决定。把这些范围分开，再沿河连起来，地形与水系的关系就更清楚。"
+      ],
+      "partId": "world-plateaus-plains"
+    },
+    {
+      "id": "world-plateaus-plains-module-highlands",
+      "title": "比较四组高地",
+      "paragraphs": [
+        "青藏高原由印度与欧亚大陆碰撞及持续变形促成隆升，各地的时间和机制并不完全相同。平均海拔超过4,000米，内部却仍有山脉、宽谷、盆地和湖区。同纬度下，较高海拔减少热量、降低空气密度；高原东南缘仍有较湿润的深切谷地。",
+        "印度半岛的德干地区保存大面积古代玄武岩熔岩，经风化和河流切割形成多样地表。洛纳尔陨石坑是后来发生的局地撞击，不能与基底岩石的火山成因混同；一处岩石的年龄也不能代表整座高原或整个印度半岛的历史。",
+        "埃塞俄比亚高地的骨架与区域隆升、火山活动和裂谷伸展有关，河流继续切割山地。高地降雨汇成径流，影响更远的下游。与邻近低地比较，能看出海拔对气温的影响，深谷和坡向又造成内部差异；一个气候像元不足以代表所有城镇与农地。",
+        "巴西高原经长期风化、侵蚀与河流下切，形成台地、丘陵和谷地。各流域向四周排水，降水季节与用地也有差异。沿亚马孙流域南缘进入高原，河谷收窄、起伏增强，支流改变方向，局部深谷仍包含在区域尺度的高原之中。"
+      ],
+      "caseIds": [
+        "tibetan-plateau",
+        "deccan-plateau",
+        "ethiopian-highlands",
+        "brazilian-highlands"
+      ],
+      "partId": "world-plateaus-plains"
+    },
+    {
+      "id": "world-plateaus-plains-module-plains",
+      "title": "平原上的生产联系",
+      "paragraphs": [
+        "北美大平原经河流搬运、沉积与长期侵蚀塑造，内部仍有坡度、谷地与局部起伏，水分也随地点和年份变化。方格农田与圆形灌溉图案来自土地划分和灌溉方式；沿南北方向，小麦播种季节、牧场与作物组合各有不同。",
+        "喜马拉雅抬升与山前盆地演变建立了恒河平原的地形背景。河流出山后坡度减小，携来的物质沉积，泛滥与河道迁移继续塑造平原，也影响堤防、道路和居民点的布局。",
+        "潘帕斯的平缓地形、土壤和降水支持草地与农业，今天的农牧景观又经历了长期开垦与经营。耕作、畜牧和交通组织同样重要；已经开垦的土地，不能当作原有自然草原，土地覆盖、历史生态与行政范围应分别辨认。"
+      ],
+      "caseIds": [
+        "great-plains",
+        "ganges-plain",
+        "pampas"
+      ],
+      "partId": "world-plateaus-plains"
+    },
+    {
+      "id": "world-plateaus-plains-module-basin",
+      "title": "补看流域尺度",
+      "paragraphs": [
+        "亚马孙流域的河流都汇入同一水系，安第斯东坡也在分水岭之内，低平的亚马孙平原只是流域的一部分。流域范围与雨林范围、巴西国界并不重合。",
+        "区域构造和安第斯演变影响排水格局，河流长期搬运、沉积和侧向迁移，塑造低地洪泛景观。地形说的是高低，流域说的是水向何处汇集，两种范围因而有所交叠，却各有依据。"
+      ],
+      "caseIds": [
+        "amazon-basin"
+      ],
+      "partId": "world-plateaus-plains"
+    },
+    {
+      "id": "part-world-high-peaks",
+      "title": "世界十四座8000米高峰",
+      "paragraphs": [
+        "传统名录中的十四座8000米独立主峰全部位于亚洲，其中10座在喜马拉雅，4座在喀喇昆仑。把这些峰顶放回更大的山地系统，大陆碰撞、地壳增厚和持续侵蚀之间的联系便更清楚。"
+      ],
+      "partId": "world-high-peaks"
+    },
+    {
+      "id": "world-high-peaks-section-1",
+      "title": "十四峰为什么集中在这里",
+      "paragraphs": [
+        "十四座八千米级独立高峰集中在喜马拉雅与喀喇昆仑，大陆碰撞、地壳增厚和高山系统为这种集中提供了背景。峰顶属于更大的山体，冰川和河流仍在持续改造周围的坡面与谷地。",
+        "峰顶高度只是构造与侵蚀共同作用的一个结果，高峰数量也不能单独衡量某个地区的构造活跃程度。"
+      ],
+      "partId": "world-high-peaks"
+    },
+    {
+      "id": "world-high-peaks-section-2",
+      "title": "海拔、相对高度与突出程度",
+      "paragraphs": [
+        "海拔参照一定的高程基准，相对高度则必须说明与哪一处比较。一座峰的海拔很高，附近高原也可能很高，二者的差值才说明局部高差的一部分。",
+        "独立山峰另有专门判定方法。峰名、坐标与海拔来自具体资料，测量基准、年份和雪面处理不同，都可能产生数值差异，末位数字也并非永远固定。"
+      ],
+      "partId": "world-high-peaks"
+    },
+    {
+      "id": "world-high-peaks-section-3",
+      "title": "高山环境怎样随高度变化",
+      "paragraphs": [
+        "海拔升高通常伴随气压与温度降低，实际温度梯度还受天气、季节和地形影响。迎风、背风和坡向又改变降雪、融化与积雪保存条件。",
+        "因此，低纬地区也能有冰雪，同一山体两侧的环境也会不同。区域气候格网不等于峰顶实测，三维地形的形状也不能代替正式高程测量。"
+      ],
+      "partId": "world-high-peaks",
+      "mediaIds": [
+        "diagram-height"
+      ]
+    },
+    {
+      "id": "world-high-peaks-section-4",
+      "title": "高峰之间，除了海拔还比较什么",
+      "paragraphs": [
+        "用同一高程基准，可以比较峰顶海拔；回到地图，还能比较它们属于哪一山系、与邻近高原和谷地怎样相接。附近地面很高时，一座高海拔山峰的局部高差，未必也按同样比例增大。",
+        "十四座八千米级独立主峰分属喀喇昆仑和喜马拉雅。以下按这两组山系辨认各峰位置，再联系气候、冰川与谷地，避免把整片高山环境缩成一张高度排名。"
+      ],
+      "partId": "world-high-peaks",
+      "visuals": [
+        {
+          "kind": "bars",
+          "title": "十四座主峰分布在哪组山地",
+          "unit": "座",
+          "rows": [
+            {
+              "label": "喜马拉雅",
+              "value": 10
+            },
+            {
+              "label": "喀喇昆仑",
+              "value": 4
+            }
+          ],
+          "note": "按UIAA经典十四座8000米主峰名录及本站逐峰归属计数。",
+          "sources": [
+            {
+              "title": "UIAA · 经典十四座8000米主峰的名录口径",
+              "url": "https://www.theuiaa.org/8000m-peaks/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "world-high-peaks-module-karakoram",
+      "title": "喀喇昆仑高峰群",
+      "paragraphs": [
+        "喀喇昆仑的四座主峰是乔戈里峰、布洛阿特峰、加舒尔布鲁木一峰和二峰，位于这组十四峰的西北一带。布洛阿特在乔戈里东南、两座加舒尔布鲁木峰西北；一峰与二峰相邻，二峰位于一峰西北侧。",
+        "这些参考点表示各自的峰顶位置，与东南方向的喜马拉雅高峰群可以相互对照。名称中的序号并不说明方向或距离，点位也不代表整座山体、山脉或冰川的范围。"
+      ],
+      "caseIds": [
+        "summit-k2",
+        "summit-broad-peak",
+        "summit-gasherbrum-i",
+        "summit-gasherbrum-ii"
+      ],
+      "partId": "world-high-peaks"
+    },
+    {
+      "id": "world-high-peaks-module-himalaya",
+      "title": "喜马拉雅高峰群",
+      "paragraphs": [
+        "喜马拉雅的十座主峰，可以先从珠穆朗玛峰一带辨认。洛子峰紧邻珠峰南侧，马卡鲁峰在它们以东；再向东是干城章嘉峰，它位于十四峰的最东侧。相邻的峰顶仍各有独立的名称、名录身份和位置。",
+        "珠峰西北方向是卓奥友峰，希夏邦马峰又在卓奥友与珠峰西北、马纳斯鲁东北。向西到喜马拉雅中部，道拉吉里位于安纳普尔纳一峰以西，马纳斯鲁在安纳普尔纳一峰以东、希夏邦马以西。这里的安纳普尔纳一峰只表示该主峰，不代表整个安纳普尔纳山体。",
+        "南迦帕尔巴特位于十四峰的最西侧，虽邻近喀喇昆仑高峰群，仍属于喜马拉雅。将这些峰顶与周围山体、水系和多年气候联系起来，才能从名录上的点位进一步认识连续的高山环境。"
+      ],
+      "caseIds": [
+        "summit-everest",
+        "summit-kangchenjunga",
+        "summit-lhotse",
+        "summit-makalu",
+        "summit-cho-oyu",
+        "summit-dhaulagiri",
+        "summit-manaslu",
+        "summit-nanga-parbat",
+        "summit-annapurna-i",
+        "summit-shishapangma"
+      ],
+      "partId": "world-high-peaks"
+    }
+  ],
+  "questions": [
+    {
+      "question": "同样是高大山系，为什么有的火山较多，有的并不突出？",
+      "answer": "需要比较板块和岩浆形成背景。俯冲、碰撞及板内活动有不同机制，山高本身不是火山数量的决定条件。"
+    },
+    {
+      "question": "平原适合农业，是否意味着所有平原都适合种同一种作物？",
+      "answer": "不是。温度、降水时间、土壤、灌排以及经营方式不同，适宜作物和生产安排也不同。"
+    },
+    {
+      "question": "两个峰海拔相近，局部看起来一定同样高大吗？",
+      "answer": "不一定。山脚或周边高原的高度、谷地深度、观察位置和峰体形状都会改变可见高差。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "USGS · The Himalayas: Two continents collide",
+      "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html"
+    },
+    {
+      "title": "USGS · Seismicity of the Earth: Himalaya and vicinity",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+    },
+    {
+      "title": "USGS · South America seismotectonics",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region"
+    },
+    {
+      "title": "NASA · Mud from the Andes Carried by the Amazon",
+      "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+    },
+    {
+      "title": "美国国家公园局 · Rocky Mountain System Provinces",
+      "url": "https://home.nps.gov/articles/rockies.htm"
+    },
+    {
+      "title": "美国国家公园局 · Geology of Grand Canyon",
+      "url": "https://home.nps.gov/grca/learn/nature/grca-geology.htm"
+    },
+    {
+      "title": "苏黎世联邦理工地震研究所 · Switzerland tectonics",
+      "url": "https://www.seismo.ethz.ch/en/knowledge/causes-of-earthquakes/Switzerland/"
+    },
+    {
+      "title": "UNESCO · Toratau Global Geopark",
+      "url": "https://www.unesco.org/en/iggp/toratau-unesco-global-geopark"
+    },
+    {
+      "title": "UNESCO · Northern Urals nomination geology",
+      "url": "https://whc.unesco.org/document/167636"
+    },
+    {
+      "title": "USGS · Understanding plate motions",
+      "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+    },
+    {
+      "title": "USGS · What is a hotspot and how do you know it is there?",
+      "url": "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there"
+    },
+    {
+      "title": "UNESCO · Fujisan, sacred place and source of artistic inspiration",
+      "url": "https://whc.unesco.org/en/list/1418/"
+    },
+    {
+      "title": "日本气象厅 · 富士山火山资料",
+      "url": "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html"
+    },
+    {
+      "title": "NASA Earth Observatory · Lonar Crater, India",
+      "url": "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/"
+    },
+    {
+      "title": "NASA Earth Observatory · East Africa",
+      "url": "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/"
+    },
+    {
+      "title": "National Geographic Society · South America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+    },
+    {
+      "title": "NASA Earth Observatory · Agriculture Patterns in the Great Plains",
+      "url": "https://science.nasa.gov/earth/earth-observatory/agriculture-patterns-in-the-great-plains-145932/"
+    },
+    {
+      "title": "USDA ERS · Wheat Sector at a Glance",
+      "url": "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance"
+    },
+    {
+      "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+      "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+    },
+    {
+      "title": "NOAA NESDIS · What Is a Monsoon?",
+      "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+    },
+    {
+      "title": "National Geographic Society · Africa: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/"
+    },
+    {
+      "title": "UNESCO MAB · Kafa",
+      "url": "https://www.unesco.org/en/mab/kafa"
+    },
+    {
+      "title": "NASA Earth Observatory · Mapping the Amazon",
+      "url": "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/"
+    },
+    {
+      "title": "NASA Earth Observatory · Brasília at Night",
+      "url": "https://science.nasa.gov/earth/earth-observatory/brasilia-at-night-48963/"
+    },
+    {
+      "title": "National Geographic Society · North America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/north-america-physical-geography/"
+    },
+    {
+      "title": "NASA · Monsoon Floods Inundate Eastern India",
+      "url": "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/"
+    },
+    {
+      "title": "NASA · Ganges River Delta",
+      "url": "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/"
+    },
+    {
+      "title": "Nature · Himalayan gravel flux and Ganga Plain",
+      "url": "https://www.nature.com/articles/nature22039"
+    },
+    {
+      "title": "NASA JPL/MISR · The Pampas of Argentina",
+      "url": "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/"
+    },
+    {
+      "title": "NASA · Topography of South America",
+      "url": "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/"
+    },
+    {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+    },
+    {
+      "title": "UIAA · 经典十四座8000米主峰的名录口径",
+      "url": "https://www.theuiaa.org/8000m-peaks/"
+    },
+    {
+      "title": "Wikidata · Mount Everest（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q513"
+    },
+    {
+      "title": "Wikidata · K2（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q43512"
+    },
+    {
+      "title": "Wikidata · Kangchenjunga（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q82019"
+    },
+    {
+      "title": "Wikidata · Lhotse（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q168702"
+    },
+    {
+      "title": "Wikidata · Makalu（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q169986"
+    },
+    {
+      "title": "Wikidata · Cho Oyu（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q170089"
+    },
+    {
+      "title": "Wikidata · Dhaulagiri（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q165440"
+    },
+    {
+      "title": "Wikidata · Manaslu（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q170070"
+    },
+    {
+      "title": "Wikidata · Nanga Parbat（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q130736"
+    },
+    {
+      "title": "Wikidata · Annapurna I（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q16466024"
+    },
+    {
+      "title": "Wikidata · Gasherbrum I（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q187138"
+    },
+    {
+      "title": "Wikidata · Broad Peak（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q180996"
+    },
+    {
+      "title": "Wikidata · Gasherbrum II（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q186853"
+    },
+    {
+      "title": "Wikidata · Shishapangma（峰顶参考坐标）",
+      "url": "https://www.wikidata.org/wiki/Q105124"
+    }
+  ],
+  "presentation": "essay"
+}

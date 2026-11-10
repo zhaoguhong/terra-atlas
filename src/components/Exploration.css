@@ -13,6 +13,8 @@
 .browse-themes span{flex:1;text-align:left}
 .theme-catalogue-heading{scroll-margin-top:12px;outline-offset:4px}
 .theme-catalogue-heading h2{font-size:18px;font-weight:600;color:var(--ink,#416244);margin:0 0 5px}
+.explorer .explorer-intro{padding:14px 0 12px}
+.explorer .explorer-intro p{margin:0}
 .panel-tabs>.pin-explorer{margin-left:auto;border-bottom:0;padding:8px;min-width:32px;justify-content:center}
 .panel-tabs>.pin-explorer[aria-pressed=true]{background:var(--surface-raised,#e8efdf);color:var(--ink,#3e643e);border-radius:5px}
 .panel-tabs>.collapse-explorer{margin-left:0!important}

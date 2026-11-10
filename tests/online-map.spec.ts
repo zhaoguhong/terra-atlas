@@ -319,7 +319,7 @@ test('mobile online attribution and the climate legend remain readable in separa
   await fixtures(page); await start(page); await enableDetail(page)
   await page.getByRole('checkbox', { name: '三维地形', exact: true }).check()
   await status(page, 'terrain', 'ready')
-  await chooseTheme(page, '长期气候分布')
+  await chooseTheme(page, '气候分布与成因')
   await sourceLoaded(page, 'climate'); await closeLayers(page); await mapSettled(page)
   const attribution = page.locator('.map-attribution'), legend = page.locator('.legend')
   await expect(attribution.getByRole('link', { name: 'OpenStreetMap', exact: true })).toBeVisible()

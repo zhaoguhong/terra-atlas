@@ -7,7 +7,7 @@ import type {LayerState,Topic,TopicGroup,TopicScope} from '../types'
 export const topics=rawTopics as Topic[]
 export const topicGroups: {id:TopicGroup;name:string;description:string}[]=[
   {id:'regions',name:'区域认识',description:'中国地理分区、省区与世界各洲'},
-  {id:'landforms',name:'地形地貌',description:'高原、平原、盆地与山峰'},
+  {id:'landforms',name:'地形地貌',description:'喀斯特、丹霞、流水、风沙与区域地形'},
   {id:'water',name:'河流湖海',description:'水系、湖泊与海洋通道'},
   {id:'climate',name:'气候环境',description:'气候类型与自然环境'},
   {id:'people',name:'人口文化',description:'人口、宗教与语言资料'},
@@ -31,6 +31,5 @@ export function topicMapMembers(topic:Topic):string[] {
   })
 }
 export function topicForSelection(id:string|null|undefined) {
-  const aliases:Record<string,string>={'world-mountains':'world-mountain-ranges','world-lake-origins':'world-lakes','world-population-scales':'map-population','world-culture-evidence':'map-religion'}
-  return topics.find(topic=>topic.id===(id&&aliases[id]||id))||null
+  return topics.find(topic=>topic.id===id)||null
 }

@@ -21,7 +21,7 @@ async function theme(page:Page,title:string){
   if(await categories.getAttribute('open')===null)await categories.locator('summary').click()
   await page.locator('.topic-categories').getByRole('button',{name:'全部分类',exact:true}).click()
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill(title)
-  await page.locator('.topic-list>button').filter({has:page.getByText(title,{exact:true})}).click()
+  await page.locator('.topic-library-card').filter({has:page.getByText(title,{exact:true})}).getByRole('button',{name:/^在地图上看：/}).click()
   await expect(page.locator('.topic-reader h1')).toHaveText(title)
 }
 async function expand(page:Page){
@@ -75,29 +75,30 @@ async function openExplorer(page:Page){
 }
 
 test('theme legends: natural areas and missing geometry have matching colours and explanations',async({page})=>{
-  await theme(page,'中国四大高原')
+  await theme(page,'中国地形格局')
   await sourceLoaded(page,'regions')
   await membersReady(page,['tibetan-plateau','loess-plateau','inner-mongolian-plateau','yunnan-guizhou-plateau'])
   let legend=await expand(page)
   await expect(legend).toContainText('内蒙古高原目前以参考点定位')
   const features=await sourceFeatures(page,'relations')
-  expect(new Set(features.map(feature=>feature.properties.topicColor)).size).toBe(4)
+  const plateauIds=['tibetan-plateau','loess-plateau','inner-mongolian-plateau','yunnan-guizhou-plateau']
+  expect(new Set(features.filter(feature=>plateauIds.includes(String(feature.properties.topicMemberId))).map(feature=>feature.properties.topicColor)).size).toBe(1)
   for(const [id,name,type] of [['tibetan-plateau','青藏高原','area'],['loess-plateau','黄土高原','area'],['inner-mongolian-plateau','内蒙古高原','point'],['yunnan-guizhou-plateau','云贵高原','area']] as const){
     const feature=features.find(feature=>feature.properties.topicMemberId===id)!
     expect(feature).toBeTruthy()
     expect(type==='point'?feature.geometry.type==='Point':['Polygon','MultiPolygon'].includes(feature.geometry.type)).toBe(true)
-    const entry=legend.locator('.map-legend-entry').filter({hasText:name}).first()
+    const entry=legend.locator('.map-legend-entry').filter({hasText:type==='point'?'高原案例（参考点）':'高原案例（范围）'}).first()
     await expect(entry.locator('.map-legend-symbol')).toHaveClass(new RegExp(`symbol-${type}`))
     expect(await swatchColor(entry)).toBe(rgb(String(feature.properties.topicColor)))
   }
   expect(await page.evaluate(()=>window.__terraAtlas!.map.getPaintProperty('relations-area','fill-color'))).toContainEqual(['get','topicColor'])
 
-  await theme(page,'中国四大地理区')
+  await theme(page,'中国区域与南北差异')
   await sourceLoaded(page,'study-regions')
   await membersReady(page,['northern-china','southern-china','northwestern-china','qinghai-tibet-region'])
   legend=await expand(page)
   await expect(legend).toContainText('分区图数字化')
-  const regions=await sourceFeatures(page,'relations')
+  const regions=(await sourceFeatures(page,'relations')).filter(feature=>['northern-china','southern-china','northwestern-china','qinghai-tibet-region'].includes(String(feature.properties.topicMemberId)))
   expect(regions).toHaveLength(4)
   expect(regions.every(feature=>['Polygon','MultiPolygon'].includes(feature.geometry.type))).toBe(true)
   expect(new Set(regions.map(feature=>feature.properties.topicColor)).size).toBe(4)
@@ -118,7 +119,7 @@ test('theme legends: natural areas and missing geometry have matching colours an
 })
 
 test('theme legends: energy diamonds and peak triangles agree with the actual map symbols',async({page})=>{
-  await theme(page,'中国能源与矿产')
+  await theme(page,'能源、矿产与产业')
   await sourceLoaded(page,'regions')
   await membersReady(page,['qinshui-coal','hexi-renewables','three-gorges-project','qarhan-resources'])
   const legend=await expand(page),features=await sourceFeatures(page,'relations')
@@ -135,11 +136,11 @@ test('theme legends: energy diamonds and peak triangles agree with the actual ma
   }
   expect(new Set(colours).size).toBe(4)
   await expect(legend).toContainText('不表示矿区范围')
-  await page.getByRole('button',{name:'全球视野',exact:true}).click()
-  await theme(page,'世界十四座8000米高峰')
+  await clickHeaderAction(page,'全球视野')
+  await theme(page,'世界地形与山系')
   await sourceLoaded(page,'summits')
   await membersReady(page,['summit-everest','summit-k2','summit-shishapangma'])
-  const peaks=await sourceFeatures(page,'relations')
+  const peaks=(await sourceFeatures(page,'relations')).filter(feature=>String(feature.properties.topicMemberId).startsWith('summit-'))
   expect(peaks).toHaveLength(14)
   expect(peaks.every(feature=>feature.geometry.type==='Point'&&feature.properties.presentationKind==='peak')).toBe(true)
   for(const id of new Set(peaks.map(feature=>String(feature.properties.symbolId))))expect(await page.evaluate(id=>window.__terraAtlas!.map.hasImage(id),id)).toBe(true)
@@ -148,7 +149,7 @@ test('theme legends: energy diamonds and peak triangles agree with the actual ma
 })
 
 test('theme legends: climate group and detailed modes use the same colours as their legends',async({page})=>{
-  await theme(page,'长期气候分布')
+  await theme(page,'气候分布与成因')
   await sourceLoaded(page,'climate')
   await page.getByRole('combobox',{name:'气候展示方式'}).selectOption('groups')
   const legend=await expand(page)
@@ -265,7 +266,7 @@ test('theme legends: a language area can be clicked and its display survives sav
 
 test('theme legends: mobile expanded search, collapse and Escape retain usable map space',async({page},info)=>{
   test.skip(!info.project.name.startsWith('mobile'),'mobile legend layout')
-  await theme(page,'长期气候分布')
+  await theme(page,'气候分布与成因')
   await sourceLoaded(page,'climate')
   await page.getByRole('combobox',{name:'气候展示方式'}).selectOption('types')
   await closeExplorer(page)

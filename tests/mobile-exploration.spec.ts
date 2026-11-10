@@ -81,9 +81,9 @@ test('mobile layer changes preview on an interactive map while settings remain o
   await page.screenshot({path:test.info().outputPath('layer-map-preview-'+info.project.name+'.png')})
 })
 
-test('mobile settings and a closed reader preserve the current theme member and reading size',async({page})=>{
-  await chooseTheme(page,'中国四大高原')
-  await page.locator('.topic-members').getByRole('button',{name:/黄土高原/}).click()
+test('mobile settings and the full catalogue preserve the current theme member and reading size',async({page})=>{
+  await chooseTheme(page,'中国地形格局')
+  await page.locator('.topic-members').getByRole('button',{name:/黄土高原/}).first().click()
   await selectedGeometry(page)
   const handle=page.getByRole('button',{name:'调整阅读面板大小',exact:true})
   await handle.press('Home')
@@ -91,36 +91,36 @@ test('mobile settings and a closed reader preserve the current theme member and 
   await expect(themeEntry(page)).toBeHidden()
   await layerEntry(page).click()
   await expect(settings(page)).toBeVisible()
-  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-plateaus')
+  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
   await closeSettings(page).click()
   await expect(explorer(page)).toHaveClass(/topic-active.*sheet-peek/)
-  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-plateaus')
+  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
   await handle.press(readerExpandKey(page))
   await expect(page.locator('.knowledge-panel h2')).toHaveText('黄土高原')
   await expect(page.locator('.knowledge-panel h2')).toBeVisible()
-  await page.getByRole('button',{name:'主题库',exact:true}).click()
+  await page.getByRole('button',{name:'返回主题列表',exact:true}).click()
   await expect(page.locator('.topic-library')).toBeVisible()
-  await close(page).click()
-  await expect(explorer(page)).not.toBeVisible()
-  await expect(themeEntry(page)).toContainText('继续探索')
-  await expect(themeEntry(page)).toContainText('中国四大高原')
-  await themeEntry(page).click()
-  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-plateaus')
+  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'看地图',exact:true}).click()
+  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
   await expect(page.locator('.knowledge-panel h2')).toHaveText('黄土高原')
+  await handle.press('Home')
+  await expect(explorer(page)).toHaveClass(/sheet-peek/)
+  await handle.press(readerExpandKey(page))
   await expect(explorer(page)).toHaveClass(/sheet-half/)
+  await expect(page.locator('.knowledge-panel h2')).toHaveText('黄土高原')
   await expect(themeEntry(page)).toBeHidden()
-  await page.getByRole('button',{name:'主题库',exact:true}).click()
+  await page.getByRole('button',{name:'返回主题列表',exact:true}).click()
   await expect(page.locator('.topic-library')).toBeVisible()
-  await expect(page.locator('.topic-resume')).toContainText('中国四大高原')
+  await expect(page.locator('.topic-resume')).toContainText('中国地形格局')
   await page.locator('.topic-resume').click()
-  await expect(page.locator('.topic-reader h1')).toHaveText('中国四大高原')
+  await expect(page.locator('.topic-reader h1')).toHaveText('中国地形格局')
   await expect(explorer(page)).toHaveClass(/sheet-half/)
 })
 
 test('mobile layers preserve the paragraph being read when settings close before and after rotation',async({page})=>{
-  await chooseTheme(page,'中国四大高原')
+  await chooseTheme(page,'中国地形格局')
   await explorerSettled(page)
-  await page.getByText('展开主题介绍',{exact:true}).click()
+  await page.getByText('更多背景与解读',{exact:true}).click()
   const paragraph=page.locator('.topic-explanation .reading-section p').nth(1)
   const text=await paragraph.innerText()
   await paragraph.evaluate(element=>{
@@ -142,7 +142,7 @@ test('mobile layers preserve the paragraph being read when settings close before
   expect(initial.progress).toBeCloseTo(1/3,1)
   await expect(paragraph).toBeInViewport()
   const retained=async()=>{
-    await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-plateaus')
+    await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','china-terrain')
     await expect(explorer(page)).toHaveClass(/sheet-half/)
     await explorerSettled(page)
     await expect(paragraph).toHaveText(text)
@@ -171,14 +171,14 @@ test('mobile layers preserve the paragraph being read when settings close before
 })
 
 test('mobile settings return keyboard focus to the toolbar after resizing to desktop',async({page})=>{
-  await chooseTheme(page,'中国四大高原')
+  await chooseTheme(page,'中国地形格局')
   await layerEntry(page).click()
   await expect(settings(page)).toBeVisible()
   await page.setViewportSize({width:1440,height:950})
   await explorerSettled(page)
   await expect(layerEntry(page)).toBeVisible()
   await page.keyboard.press('Escape')
-  await expect(page.locator('.topic-reader h1')).toHaveText('中国四大高原')
+  await expect(page.locator('.topic-reader h1')).toHaveText('中国地形格局')
   await expect(layerEntry(page)).toBeInViewport({ratio:1})
   await expect(layerEntry(page)).toBeFocused()
   expect(await page.evaluate(()=>{
@@ -202,7 +202,7 @@ test('mobile theme entry yields space to place cards and comparison',async({page
 
 
 test('layer settings remain usable when a full reader rotates through desktop',async({page})=>{
-  await chooseTheme(page,'中国四大高原')
+  await chooseTheme(page,'中国地形格局')
   const handle=page.getByRole('button',{name:'调整阅读面板大小',exact:true})
   await handle.press('End')
   const original=page.viewportSize()!

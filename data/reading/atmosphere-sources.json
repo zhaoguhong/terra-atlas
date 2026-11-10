@@ -1,0 +1,112 @@
+{
+  "version": "atmosphere-source-review-2026-11-06-v1",
+  "reviewedAt": "2026-11-06",
+  "processing": "核读官方网页的相关机制说明，原创中文概述；未转载来源正文或图像，不新增实时天气、情景预测或气候分类数据。",
+  "license": "原创讲解与示意图 CC BY 4.0；引用网页保留发布机构各自权利，本项目未重新授权第三方原文。",
+  "checks": [
+    "天气与长期气候分开；冷暖锋、上升冷却和气旋条件按 NOAA 核对。",
+    "温室气体、自然波动、冰与海平面、减缓与适应按 NASA、NOAA 和 IPCC AR6 核对。",
+    "原有 Beck V3 1991—2020 A–E 分类保持不变；新主题的地点不作为变化趋势、淹没预测或实时天气。"
+  ],
+  "sources": [
+    {
+      "url": "https://www.noaa.gov/jetstream/synoptic/origin-of-wind",
+      "title": "NOAA · Origin of Wind",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "Official web explainer reviewed 2026-11-06",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "retrievalNote": "直接下载受限；依据本次已核读的官方网页检索内容，不声称已保存完整原件。"
+    },
+    {
+      "url": "https://www.noaa.gov/jetstream/synoptic/air-masses",
+      "title": "NOAA · Air Masses",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "Official web explainer reviewed 2026-11-06",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "retrievalNote": "直接下载受限；依据本次已核读的官方网页检索内容，不声称已保存完整原件。"
+    },
+    {
+      "url": "https://www.noaa.gov/jetstream/wxmaps",
+      "title": "NOAA · How to read Surface Weather Maps",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "Official web explainer reviewed 2026-11-06",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "retrievalNote": "直接下载受限；依据本次已核读的官方网页检索内容，不声称已保存完整原件。"
+    },
+    {
+      "url": "https://www.noaa.gov/jetstream/thunderstorms/ingredients-for-thunderstorm",
+      "title": "NOAA · Ingredients for a Thunderstorm",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "Official web explainer reviewed 2026-11-06",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "retrievalNote": "直接下载受限；依据本次已核读的官方网页检索内容，不声称已保存完整原件。"
+    },
+    {
+      "url": "https://oceanservice.noaa.gov/facts/how-hurricanes-form.html",
+      "title": "NOAA · How do hurricanes form?",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "Official web explainer reviewed 2026-11-06",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "sourceSnapshotSha256": "e5a135380b418f88829d5886c9ae1758acf70152f2bc124f0998b4a1c6962885"
+    },
+    {
+      "url": "https://oceanservice.noaa.gov/facts/cyclone.html",
+      "title": "NOAA · Hurricane and typhoon",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "Official web explainer reviewed 2026-11-06",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "sourceSnapshotSha256": "811efbaa18dac426f81ffcfb089c82313be281208d5555c5d1f329c1dce6154c"
+    },
+    {
+      "url": "https://science.nasa.gov/climate-change/causes/",
+      "title": "NASA · Causes of Climate Change",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "Official web explainer reviewed 2026-11-06",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "sourceSnapshotSha256": "ee7f77ec01fafdcd1399fd12948589243d8e86b88471c2e5f711147ce3be4977"
+    },
+    {
+      "url": "https://science.nasa.gov/climate-change/evidence/",
+      "title": "NASA · Evidence of Climate Change",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "Official web explainer reviewed 2026-11-06",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "sourceSnapshotSha256": "b9092a8dafc9fb937fdc1d68c6aad898c6c0ee3d33c50fafa846d351e7f1c1b3"
+    },
+    {
+      "url": "https://science.nasa.gov/climate-change/effects/",
+      "title": "NASA · Effects of Climate Change",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "Official web explainer reviewed 2026-11-06",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "sourceSnapshotSha256": "85f6d1b09d6caf31dc8f5a8d9271db18ae889ab49fb563dd51f70d1e04dd9ef9"
+    },
+    {
+      "url": "https://www.ipcc.ch/report/ar6/syr/summary-for-policymakers/",
+      "title": "IPCC · AR6 Synthesis Report, Summary for Policymakers (2023)",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "IPCC AR6 SYR 2023",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "retrievalNote": "直接下载受限；依据本次已核读的官方网页检索内容，不声称已保存完整原件。"
+    },
+    {
+      "url": "https://oceanservice.noaa.gov/facts/ninonina.html",
+      "title": "NOAA · What are El Niño and La Niña?",
+      "accessedAt": "2026-11-06",
+      "inputVersion": "Official web explainer reviewed 2026-11-06",
+      "processing": "参考机制后原创概述；不复制正文和图像。",
+      "license": "来源网页保留原发布机构条件；仅作资料引用。",
+      "sourceSnapshotSha256": "80b6b256a530114ce1720922745060725d0040600b3fd723087f9ac7d9db61d7"
+    }
+  ]
+}

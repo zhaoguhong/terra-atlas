@@ -1,0 +1,324 @@
+{
+  "id": "landform-rivers",
+  "title": "河流塑造的地貌",
+  "introduction": "河流改造地表，靠的是侵蚀、搬运与沉积之间的持续联系。流水切开岩土，把泥沙带往下游，再在搬运条件改变的地方留下堆积。峡谷、阶地、冲积扇、平原和三角洲，由此成为同一条物质路径上的不同地貌；它们还会随来水、来沙和地势继续变化。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "landform-river-erosion",
+      "title": "流水侵蚀地貌",
+      "sectionId": "part-landform-river-erosion",
+      "description": "河谷两侧高出河面的台阶，有时保存着过去的河床或洪泛平原。水流后来继续下切，旧谷底便留在了高处。从这些位置变化，可以追索河流怎样不断改造自身的通道。",
+      "keywords": [
+        "峡谷",
+        "河谷",
+        "侵蚀",
+        "阶地",
+        "瀑布",
+        "下切",
+        "三级阶梯",
+        "江湖关系",
+        "航运",
+        "水沙关系",
+        "下游悬河",
+        "流域治理",
+        "风成沉积",
+        "流水侵蚀",
+        "水土保持"
+      ]
+    },
+    {
+      "id": "landform-river-deposition",
+      "title": "冲积扇、平原与三角洲",
+      "sectionId": "part-landform-river-deposition",
+      "description": "水流携带的泥沙，在搬运条件改变后留下来。出山口展开的冲积扇，与河流进入湖海时形成的三角洲，都可能向外伸展，但所处的位置、水流环境和沉积过程不同。",
+      "keywords": [
+        "冲积扇",
+        "三角洲",
+        "冲积平原",
+        "河漫滩",
+        "牛轭湖",
+        "沉积",
+        "农业用水",
+        "旱涝",
+        "规划自然范围",
+        "城市群",
+        "跨界水环境",
+        "稻作",
+        "水资源"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-landform-river-erosion",
+      "title": "流水侵蚀地貌",
+      "paragraphs": [
+        "河谷两侧高出河面的台阶，有时保存着过去的河床或洪泛平原。水流后来继续下切，旧谷底便留在了高处。从这些位置变化，可以追索河流怎样不断改造自身的通道。"
+      ],
+      "partId": "landform-river-erosion"
+    },
+    {
+      "id": "landform-river-erosion-section-1",
+      "title": "河流向下切，也向两侧改造",
+      "paragraphs": [
+        "河流下切使河床降低，侧蚀使河岸后退。坡降、流量、泥沙、岩性与侵蚀基准面共同影响这两种作用，所以深谷的形成既涉及水流，也涉及河床材料和周围环境。",
+        "水中颗粒磨蚀河床，水流沿裂隙剥离岩块，某些岩石还会受到溶解作用。谷壁上的风化、崩塌与坡面运动继续扩展谷地，河床和两侧山坡的变化相互联系。"
+      ],
+      "partId": "landform-river-erosion",
+      "mediaIds": [
+        "diagram-river-erosion"
+      ]
+    },
+    {
+      "id": "landform-river-erosion-section-2",
+      "title": "峡谷与瀑布怎样理解",
+      "paragraphs": [
+        "峡谷通常切割较深，谷壁陡峭。构造抬升可能为河流下切创造条件，岩石差异和地质结构则影响谷壁形态；峡谷的深度不能直接换算成某一次抬升的高度。",
+        "瀑布处的河床落差，可以与软硬岩层、断层或冰川遗留地形有关。水流持续改造落差处，瀑布的位置和形状也会变化，具体成因需要照片之外的地质证据。"
+      ],
+      "partId": "landform-river-erosion"
+    },
+    {
+      "id": "landform-river-erosion-section-3",
+      "title": "河流阶地为什么高于今天的河面",
+      "paragraphs": [
+        "河流下切以后，过去谷底或洪泛平原的一部分可能留在两侧，形成高于今天河面的阶地。阶地上有时保存河流沉积物，有时以基岩为主，记录的都是河流曾经的位置。",
+        "气候、水沙条件和构造变化，都可能促使河流调整。要从阶地读出这段历史，需要年代、沉积和区域地质资料；台阶的数量并不对应地震的次数。"
+      ],
+      "partId": "landform-river-erosion"
+    },
+    {
+      "id": "landform-river-erosion-section-4",
+      "title": "一段河谷怎样联系整个流域",
+      "paragraphs": [
+        "河流切割的深浅与方向，受坡降、流量、岩石和河床材料共同影响；上下游来水、来沙改变，也会使这一河段作出调整。局部峡谷因此需要放回整条河与周围地形中理解。",
+        "长江的高山河段、黄河与黄土沟谷，分别展示不同材料和来水条件下的侵蚀。河流把移走的物质带向何处，则引出下一部分的冲积扇、平原和三角洲。"
+      ],
+      "partId": "landform-river-erosion"
+    },
+    {
+      "id": "landform-river-erosion-module-case-yangtze",
+      "title": "长江",
+      "paragraphs": [
+        "长江从青藏高原流向东海，约6,300千米的干流包括沱沱河、通天河和金沙江等上游河段。构造抬升建立落差，降水与冰雪等水源汇集，流水则持续侵蚀、搬运和沉积。",
+        "从高原峡谷进入盆地、平原与三角洲，河道坡降总体减小，航运条件、泥沙沉积和洪水问题也随河段改变。"
+      ],
+      "caseIds": [
+        "yangtze"
+      ],
+      "partId": "landform-river-erosion"
+    },
+    {
+      "id": "landform-river-erosion-module-case-yellow-river",
+      "title": "黄河",
+      "paragraphs": [
+        "黄河连接青藏高原、黄土高原与华北平原。河流长期切割高原，流经黄土地区时，支流侵蚀可增加来沙；进入坡度较小的下游平原后，部分泥沙又沉积下来，历史改道进一步塑造平原和三角洲。",
+        "含沙量表示浓度，输沙量还与流量有关。水少时泥沙浓度上升，并不一定意味着河流运走的泥沙总量更多。"
+      ],
+      "caseIds": [
+        "yellow-river"
+      ],
+      "partId": "landform-river-erosion"
+    },
+    {
+      "id": "landform-river-erosion-module-case-loess-plateau",
+      "title": "黄土高原",
+      "paragraphs": [
+        "黄土高原的厚层黄土由风搬来的细粒粉尘长期沉积形成，物源并非只有一个沙漠。沉积后的土壤形成、雨水与河流切割，逐渐塑造塬、梁、峁和沟谷。黄色土层说明材料，沟壑则更多显示后期水蚀，也不能凭裸露土色判断当下仍在快速堆积。"
+      ],
+      "caseIds": [
+        "loess-plateau"
+      ],
+      "partId": "landform-river-erosion"
+    },
+    {
+      "id": "part-landform-river-deposition",
+      "title": "冲积扇、平原与三角洲",
+      "paragraphs": [
+        "水流携带的泥沙，在搬运条件改变后留下来。出山口展开的冲积扇，与河流进入湖海时形成的三角洲，都可能向外伸展，但所处的位置、水流环境和沉积过程不同。"
+      ],
+      "partId": "landform-river-deposition"
+    },
+    {
+      "id": "landform-river-deposition-section-1",
+      "title": "泥沙在哪里停下来",
+      "paragraphs": [
+        "水流离开狭谷、进入低平地区或开阔水体后，搬运条件会改变，部分泥沙便可能留下。流量、流速、坡降和颗粒性质共同影响沉积，洪水及河道变化还会不断调整沉积位置。",
+        "粗细颗粒有不同的搬运方式，同一堆积体内部因此也会出现粒度差异。水流变慢时，并非所有颗粒都会同时落到河底。"
+      ],
+      "partId": "landform-river-deposition"
+    },
+    {
+      "id": "landform-river-deposition-section-2",
+      "title": "冲积扇和平原，沉积位置有什么不同",
+      "paragraphs": [
+        "河流离开山口时，坡度与水流约束改变，泥沙可能在山前铺展成扇形堆积体。进入更广阔低地，多条河道长期摆动、泛滥和沉积，又能塑造冲积平原。",
+        "两者都与流水堆积有关，但所在位置、地形和沉积物分布不同。沿河从山口走向平原，可以观察河道如何展开、颗粒与坡度怎样变化，再联系泥沙由哪里运来。"
+      ],
+      "partId": "landform-river-deposition",
+      "mediaIds": [
+        "diagram-river-deposition"
+      ]
+    },
+    {
+      "id": "landform-river-deposition-section-3",
+      "title": "三角洲不一定是三角形",
+      "paragraphs": [
+        "河流进入海洋或湖泊，泥沙在河口附近累积，可能形成三角洲。波浪、潮汐和水位变化会重新分配河流送来的材料，使三角洲出现不同的岸线与分汊河道。",
+        "有的河口突出入海，有的岸线较平顺，三角洲未必呈三角形，也不只出现在海边。能否形成明显的三角洲，取决于供水供沙与接收水体的共同作用。"
+      ],
+      "partId": "landform-river-deposition",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "三种流水堆积地貌",
+          "columns": [
+            "地貌",
+            "常见位置",
+            "主要联系"
+          ],
+          "rows": [
+            [
+              "冲积扇",
+              "河流出山口附近",
+              "坡度与约束变化，泥沙铺展"
+            ],
+            [
+              "冲积平原",
+              "较开阔低地",
+              "河道摆动、泛滥与长期沉积"
+            ],
+            [
+              "三角洲",
+              "河流入海或入湖处",
+              "河流来沙与接纳水体共同作用"
+            ]
+          ],
+          "note": "位置是理解机制的线索，真实形态受岩性、来水来沙及后期改造影响。"
+        }
+      ]
+    },
+    {
+      "id": "landform-river-deposition-section-4",
+      "title": "平坦土地也在变化",
+      "paragraphs": [
+        "洪水能把沉积物铺到河漫滩上，弯曲河道迁移或裁弯取直后，还可能留下牛轭湖。看似平坦的土地一直在接受水沙改造，堤防、采砂、围垦和水库又改变了这些联系。",
+        "三角洲与低平河岸方便耕作、交通和聚落发展，也面临洪水、沉降或海水影响。长江三角洲与湄公河三角洲的利用条件，需要分别联系河网、来水和沿海环境理解。"
+      ],
+      "partId": "landform-river-deposition"
+    },
+    {
+      "id": "landform-river-deposition-module-case-north-china-plain",
+      "title": "华北平原",
+      "paragraphs": [
+        "黄河、淮河、海河等水系把泥沙送到山前、河道与海岸附近，河道摆动和海陆变化逐渐塑造华北平原。约30万平方千米的概括范围内，仍能分辨冲积扇、古河道、湖洼和沿海低地。黄河历史改道改变了水系与沉积，今天笔直的河渠则还包含人工治理的结果。"
+      ],
+      "caseIds": [
+        "north-china-plain"
+      ],
+      "partId": "landform-river-deposition"
+    },
+    {
+      "id": "landform-river-deposition-module-case-yangtze-delta",
+      "title": "长江三角洲：河流遇到海洋",
+      "paragraphs": [
+        "长江把流域泥沙送到河口，海浪和潮汐重新搬运、分配这些物质，共同塑造三角洲。与山前冲积扇相比，这里的堆积还受到海洋过程和海平面条件影响。",
+        "自然三角洲依据地形和沉积划分，经济联系中的长三角则覆盖更广地区。解释河口地貌，应使用前一种范围；讨论城市和产业时，再把它与更大的区域网络联系起来。"
+      ],
+      "caseIds": [
+        "yangtze-delta"
+      ],
+      "partId": "landform-river-deposition"
+    },
+    {
+      "id": "landform-river-deposition-module-case-mekong-delta-farming",
+      "title": "湄公河三角洲：稻作与淡咸水变化",
+      "paragraphs": [
+        "湄公河三角洲由河流沉积和长期土地经营形成低平农区，稻田与河网相连。季节洪水、上游淡水来量和海水影响，使不同地段的条件各异，密集的水道并不意味着任何季节都有适合灌溉的水。",
+        "水稻需要水，农田也要应对过量洪水与咸水。世行项目记录了当地改进用水和农业多样化的实践，节水、种养组合与水的季节、盐分和调度条件需要配合。"
+      ],
+      "caseIds": [
+        "mekong-delta-farming"
+      ],
+      "partId": "landform-river-deposition"
+    }
+  ],
+  "questions": [
+    {
+      "question": "河流阶地上的旧河流沉积，为什么可以出现在今天河面上方？",
+      "answer": "河流下切后，过去的河床或洪泛平原可能被保留在两侧。它记录的是过去的位置，不能用今天的水位直接解释。"
+    },
+    {
+      "question": "冲积扇与三角洲都可能向外展开，怎样区分？",
+      "answer": "先看位置与水流环境。冲积扇常位于山口，三角洲位于河流进入湖海等水体的位置；还需结合沉积与地貌资料。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "nps.gov · fluvial landforms",
+      "url": "https://www.nps.gov/subjects/geology/fluvial-landforms.htm"
+    },
+    {
+      "title": "nps.gov · landforms",
+      "url": "https://www.nps.gov/subjects/geology/landforms.htm"
+    },
+    {
+      "title": "宁夏水利厅 · 亚洲第一长河——长江",
+      "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html"
+    },
+    {
+      "title": "重庆市水利局 · 长江",
+      "url": "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html"
+    },
+    {
+      "title": "生态环境部 · 黄河流域生态保护规划",
+      "url": "https://www.mee.gov.cn/zcwj/zyygwj/202110/t20211009_955779.shtml"
+    },
+    {
+      "title": "黄河水利委员会 · 黄河防汛辨析",
+      "url": "https://www.yrcc.gov.cn/zwzc/zcjd/202403/t20240312_426969.html"
+    },
+    {
+      "title": "中国科学院地质地球所 · 黄土形成与物源",
+      "url": "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html"
+    },
+    {
+      "title": "中国科学院地球环境所 · 河谷砂黄土风—水过程",
+      "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
+    },
+    {
+      "title": "nps.gov · coastal landforms",
+      "url": "https://www.nps.gov/subjects/geology/coastal-landforms.htm"
+    },
+    {
+      "title": "中国科学院地理资源所 · 华北平原",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
+    },
+    {
+      "title": "中国政府网 · 长江三角洲区域一体化发展规划纲要（2019）",
+      "url": "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html"
+    },
+    {
+      "title": "上海市人民政府 · Geography（2024年末面积）",
+      "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 太湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html"
+    },
+    {
+      "title": "中国科学院南京地湖所 · 浅水湖泊水动力",
+      "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+    },
+    {
+      "title": "World Bank · Greening Viet Nam’s Rice Bowl: A Mekong Delta Success Story",
+      "url": "https://www.worldbank.org/en/news/feature/2024/05/14/greening-viet-nam-s-rice-bowl-a-mekong-delta-success-story"
+    },
+    {
+      "title": "World Bank · For Mekong Delta Farmers, Diversification is the Key to Climate Resilience",
+      "url": "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience"
+    }
+  ],
+  "presentation": "essay"
+}

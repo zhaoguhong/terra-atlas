@@ -17,6 +17,7 @@ Copyright © 2026 Terra Atlas contributors（山河图贡献者）。
 - `src/data/knowledge.json` 中的原创地理概述、解释、关系说明和观察问题。
 - `src/data/climate-notes.json` 中的原创季节、景观、生活、区域参考说明和观察问题。
 - `src/data/topics.json` 中的原创主题摘要、正文、学习模块、图表解释与观察问题。
+- `data/reading/*.mjs` 与 `public/reading/topics/*.json` 中的原创专题讲解，以及 `public/media/reading/*.svg` 中的原创教学示意图。生成脚本本身适用 MIT。
 - 组件中属于上述讲解的原创教学文字；界面操作文字随程序代码适用 MIT。
 
 允许分享、改编和商业使用。分享时须按协议保留作者、已有版权与免责声明、提供许可链接和可行的原作链接，并注明修改。署名可以根据使用媒介合理安排，不要求固定放在首页。可参考：
@@ -35,6 +36,7 @@ Copyright © 2026 Terra Atlas contributors（山河图贡献者）。
 - **`public/data/auxiliary-basins.geojson`** 从官方 [BasinATLAS v1.0 固定归档](https://doi.org/10.6084/m9.figshare.9890531.v1) 重新生成，采用 CC BY 4.0。须保留 Linke et al. (2019) 与底层分区来源的署名、许可链接和本项目修改说明；不适用 MIT。所选几何与五个核心字段、版本和输入哈希见[第三方声明](../third-party-notices.txt)与来源清单。未导入的环境属性仍各自授权，原 HydroBASINS 独立产品的许可不因本项目迁移而改变。
 - OpenFreeMap、OpenStreetMap、Mapterhorn 和本地高程数据分别保留各自的数据条件与归属；在线瓦片服务未被重新授权。
 - 引用网页、书籍、图像及原文保留其权利。来源链接或本地核验缓存不代表获得全文再分发权。
+- `public/media/reading/*.jpg` 为 Wikimedia Commons 上的第三方照片，分别采用 CC0、CC BY、CC BY-SA 或 Free Art License；不得统一标注为本项目的 CC BY 4.0。逐图作者、原作链接、许可和下载文件哈希见 `data/research/reading-sources.json` 与公开的 `/data/reading-sources.json`，文字署名清单见 `/licenses/reading-images.txt`。
 - 界面截图中的第三方地图和文字保留相应许可和归属。
 
 具体版本、引用、处理方式和许可见 [THIRD_PARTY_NOTICES.md](../third-party-notices.txt) 与 `data/research/`、`public/data/` 的来源清单。

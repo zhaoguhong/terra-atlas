@@ -1,0 +1,177 @@
+{
+  "id": "earth-hazards",
+  "title": "地形、水与自然灾害",
+  "introduction": "山坡上的岩土会移动，河流会涨水，断层会错动。这些自然过程各有成因；它们遇上人口、建筑和道路时，才与人的损失联系起来。认识自然灾害，需要先理解物质和水怎样运动，再看哪些地方、哪些设施处在这些路径上，以及它们有怎样的承受与应对能力。",
+  "updatedAt": "2026-11-10",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "自然过程怎样成为灾害风险",
+      "paragraphs": [
+        "同样强度的洪水或地震，发生在无人区与人口密集的城市，可能造成很不一样的损失。自然过程的强度、暴露其中的人口和设施，以及建筑与社会的脆弱性，共同影响风险。",
+        "因此，地形图能帮助理解水和岩土可能往哪里移动，人口与设施资料则说明谁可能受到影响。两类信息结合起来，才开始接近风险问题；具体场地仍需专门评估。"
+      ],
+      "mediaIds": [
+        "diagram-hazards"
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "崩塌、滑坡与泥石流",
+      "paragraphs": [
+        "崩塌时，岩土从陡坡分离、下落；滑坡突出沿一定滑动面运动；泥石流则由水与松散物质混合，沿坡沟快速流动。它们都受重力影响，参与的材料和运动方式却有所不同。",
+        "降雨、地震、坡脚切割或工程活动可能改变边坡稳定条件。实际事件还会发生复杂转化，外观相似并不足以认定同一种机制，需要现场与专业调查。"
+      ],
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "三种坡面过程",
+          "columns": [
+            "过程",
+            "主要运动方式",
+            "认识时关注"
+          ],
+          "rows": [
+            [
+              "崩塌",
+              "岩土脱离陡坡下落",
+              "岩体裂隙、坡形与触发条件"
+            ],
+            [
+              "滑坡",
+              "岩土沿滑动面移动",
+              "地层结构、水分与坡脚条件"
+            ],
+            [
+              "泥石流",
+              "水与松散物质沿沟流动",
+              "物源、来水与沟道联系"
+            ]
+          ],
+          "note": "本表用于机制比较，不能替代现场调查或风险评估。"
+        }
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "洪水需要沿流域追踪",
+      "paragraphs": [
+        "强降雨或融雪增加来水后，河道、湖泊与洼地会影响水的汇集和排泄，排水设施也参与其中。城市地表硬化可能改变径流形成，因此洪水需要沿整个流域追踪，不能只看受淹处的降雨。",
+        "“百年一遇”表达的是特定统计条件下的概率，并非每隔固定年数发生一次。资料长度和环境的长期变化都会影响估计，概率值应连同这些条件一起理解。"
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "地图学习怎样转向现实判断",
+      "paragraphs": [
+        "沿山坡到河谷、再到平原，可以追踪岩土与水可能移动的方向，也能辨认哪些设施位于这些路径上。区域地图适合建立这样的空间认识。",
+        "具体防灾仍应依据当地监测、预警和应急信息，场地风险需要专门评估。历史事件提供了线索，却不能据此排出下一次事件的时间。"
+      ]
+    },
+    {
+      "id": "module-case-himalayas",
+      "title": "喜马拉雅山脉",
+      "paragraphs": [
+        "喜马拉雅位于青藏高原南缘。印度板块与欧亚板块持续汇聚，较轻的大陆地壳难以像海洋板块那样整体沉入地幔，因而发生缩短、增厚与抬升。",
+        "河流和冰川不断切割谷地，风化与坡面作用继续改变山体，海拔也影响自然环境。高差在构造和侵蚀的共同作用下延续，具体坡地的风险则还需要考察岩体、水和暴露的设施。"
+      ],
+      "caseIds": [
+        "himalayas"
+      ]
+    },
+    {
+      "id": "module-case-loess-plateau",
+      "title": "黄土高原：坡面与沟道相连",
+      "paragraphs": [
+        "黄土由细粒粉尘长期堆积而来，雨水与河流又切出塬、梁、峁和沟谷。厚层黄土、坡度、植被和降雨共同影响坡面侵蚀，搬走的物质可能继续进入沟道。",
+        "与喜马拉雅的高山岩体相比，这里突出的是沉积物与流水的联系。了解材料怎样受水影响、坡面怎样连接沟道，比只看山坡外形更有助于认识物质移动。"
+      ],
+      "caseIds": [
+        "loess-plateau"
+      ]
+    },
+    {
+      "id": "module-case-yangtze-delta",
+      "title": "长江河口：低地怎样排水",
+      "paragraphs": [
+        "长江河口的低平地形承接上游来水，也受到海侧潮位影响。高水位可能妨碍低地排水，降雨、洪水与风暴潮的不同组合，因而会带来不同的积水条件。河道、堤防和排水设施共同影响水的去向。",
+        "人口与设施密集，使同样的淹水过程可能影响更多生活和生产活动。评估具体风险，需要当地高程、水位、防护与暴露资料；自然三角洲与更广的长三角经济区域范围不同，应使用与问题对应的范围。"
+      ],
+      "caseIds": [
+        "yangtze-delta"
+      ]
+    },
+    {
+      "id": "module-case-san-andreas-fault",
+      "title": "圣安德烈亚斯：水平错动的边界",
+      "paragraphs": [
+        "圣安德烈亚斯断层属于太平洋板块与北美板块之间的复杂边界系统，帕克菲尔德案例突出两侧地块的水平相对错动。运动由主断层及相关断层分担，各段活动方式也有差别。",
+        "有些段缓慢蠕滑，有些段积累应变后发生地震。长期运动规律不能准确给出下一次地震的日期与震级。"
+      ],
+      "caseIds": [
+        "san-andreas-fault"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "洪水重现期为一百年，是否代表刚发生过就能安全一百年？",
+      "answer": "不是。重现期是概率统计概念，不是固定间隔，连续年份也可能发生相应规模的洪水。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "pubs.usgs.gov · fs 2004 3072",
+      "url": "https://pubs.usgs.gov/fs/2004/3072/fs-2004-3072.html"
+    },
+    {
+      "title": "undrr.org · disaster risk",
+      "url": "https://www.undrr.org/terminology/disaster-risk"
+    },
+    {
+      "title": "usgs.gov · floods and recurrence intervals",
+      "url": "https://www.usgs.gov/water-science-school/science/floods-and-recurrence-intervals"
+    },
+    {
+      "title": "USGS · The Himalayas: Two continents collide",
+      "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html"
+    },
+    {
+      "title": "USGS · Seismicity of the Earth: Himalaya and vicinity",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+    },
+    {
+      "title": "中国科学院地质地球所 · 黄土形成与物源",
+      "url": "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html"
+    },
+    {
+      "title": "中国科学院地球环境所 · 河谷砂黄土风—水过程",
+      "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
+    },
+    {
+      "title": "中国政府网 · 长江三角洲区域一体化发展规划纲要（2019）",
+      "url": "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html"
+    },
+    {
+      "title": "上海市人民政府 · Geography（2024年末面积）",
+      "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+    },
+    {
+      "title": "中国科学院地理资源所 · 太湖",
+      "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html"
+    },
+    {
+      "title": "中国科学院南京地湖所 · 浅水湖泊水动力",
+      "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+    },
+    {
+      "title": "USGS · Parkfield: Tectonic Setting",
+      "url": "https://earthquake.usgs.gov/learn/parkfield/geology.php"
+    },
+    {
+      "title": "USGS · Understanding plate motions",
+      "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+    }
+  ],
+  "presentation": "essay"
+}

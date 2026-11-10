@@ -1,0 +1,509 @@
+{
+  "id": "transport-trade",
+  "title": "交通、港口与全球联系",
+  "introduction": "交通把分散的人口、生产和市场连接起来。地形提供通道，也设置障碍；道路、铁路、河运和海运通过枢纽与港口接续，才构成完整旅程。本篇先看线路为什么经过某些地方，再比较天然海峡与人工运河，最后追踪货物怎样在港口换装、进入更远的腹地。",
+  "updatedAt": "2026-11-10",
+  "parts": [
+    {
+      "id": "china-transport",
+      "title": "中国交通与港口",
+      "sectionId": "part-china-transport",
+      "description": "中国的交通网络跨越平原、山地与高原，也沿河流通向海港。郑州的陆路交会、青藏铁路的工程、重庆的江河运输与宁波舟山港的海陆转运，各自解决不同的通行问题。",
+      "keywords": [
+        "铁路",
+        "交通枢纽",
+        "高原工程",
+        "多年冻土",
+        "渝",
+        "重庆",
+        "省级行政区",
+        "历史交通",
+        "人工水系",
+        "系统范围",
+        "港口",
+        "多式联运",
+        "津",
+        "天津"
+      ]
+    },
+    {
+      "id": "world-sea-connections",
+      "title": "海洋、海峡与人工运河",
+      "sectionId": "part-world-sea-connections",
+      "description": "海洋彼此连通，陆地却使一些航路收窄，或迫使船舶远绕。天然海峡穿过两侧陆地之间，人工运河则开辟新的通道。它们所连接的海域及采用的工程方式，决定了各自怎样改变航程。",
+      "keywords": [
+        "洋盆",
+        "海陆联系",
+        "水热系统",
+        "环流",
+        "河口",
+        "全球联系",
+        "季风",
+        "航运",
+        "时间尺度",
+        "海冰",
+        "极地比较",
+        "洋区口径",
+        "海峡",
+        "交通区位",
+        "港口",
+        "海水交换",
+        "欧非联系",
+        "尺度",
+        "海陆变化",
+        "洋区联系",
+        "北极",
+        "半封闭海域",
+        "干夏",
+        "气候命名",
+        "人工水道",
+        "国际航运",
+        "工程变化",
+        "船闸",
+        "淡水供给",
+        "国际交通"
+      ]
+    },
+    {
+      "id": "world-transport-trade",
+      "title": "交通、港口与世界贸易",
+      "sectionId": "part-world-transport-trade",
+      "description": "海峡和运河改变经过的路线，港口则决定货物怎样转运。从新加坡的海上中转，到鹿特丹与欧洲内陆的联系，一条运输链往往需要多种方式接续，货物才会真正到达市场。",
+      "keywords": [
+        "港口",
+        "多式联运",
+        "贸易网络",
+        "铁路",
+        "山地交通",
+        "海峡",
+        "交通区位",
+        "人工水道",
+        "国际航运",
+        "工程变化",
+        "船闸",
+        "淡水供给",
+        "国际交通"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "id": "part-china-transport",
+      "title": "中国交通与港口",
+      "paragraphs": [
+        "中国的交通网络跨越平原、山地与高原，也沿河流通向海港。郑州的陆路交会、青藏铁路的工程、重庆的江河运输与宁波舟山港的海陆转运，各自解决不同的通行问题。"
+      ],
+      "partId": "china-transport"
+    },
+    {
+      "id": "china-transport-section-1",
+      "title": "线路为什么经过这些地方",
+      "paragraphs": [
+        "一条交通线需要连接客流、货源和目的地。城市在哪里、产业与市场需要什么，影响线路的大致方向；山地、河流与海岸则影响它具体怎样通过。距离短有利于运输，但沿途能连接谁同样重要。",
+        "郑州的线路交会、青藏铁路跨越高原、重庆的江河联系与宁波舟山港的海陆转换，分别展示了网络中的不同环节。先分清线路与节点各自承担什么，再看地形，就能理解这些地点为什么形成不同的交通功能。"
+      ],
+      "partId": "china-transport"
+    },
+    {
+      "id": "china-transport-section-2",
+      "title": "平原、山地和高原提出不同要求",
+      "paragraphs": [
+        "平原较便于连续铺设线路，进入山地就要借助谷地、山口或隧道跨越高差。高原的高寒与冻土又增加设计和维护要求。工程可以改善通达条件，但建设与长期运营各有需要解决的问题。",
+        "地图上连成一条线的道路或铁路，背后有坡度、地质、桥隧和养护的取舍。最短的距离未必带来最低的成本。"
+      ],
+      "partId": "china-transport"
+    },
+    {
+      "id": "china-transport-section-3",
+      "title": "枢纽为什么会形成",
+      "paragraphs": [
+        "多条线路交会，为枢纽提供了位置条件；站场分工、换装、仓储和服务，才使人和货物能够顺利转向。稳定的运输需求又使这些设施持续运转，并吸引新的产业与活动。",
+        "郑州位于内陆交会处，重庆借助山地间的江河，天津连接沿海与腹地。不同位置的优势，需要放进各自服务的网络中理解。"
+      ],
+      "partId": "china-transport",
+      "mediaIds": [
+        "diagram-transport"
+      ]
+    },
+    {
+      "id": "china-transport-section-4",
+      "title": "港口把海上与陆上接起来",
+      "paragraphs": [
+        "货物从船上卸下，还要经过铁路、公路或内河继续前行。港口因此同时依赖海侧的水域、岸线和陆侧的运输网络，周围腹地的需求也影响它的规模。",
+        "宁波舟山港等大型港口的作用，由自然条件、设施与转运组织共同形成。不同货物对时效、距离和运输方式的要求各异，完整旅程包括产地、中转地与最终目的地。"
+      ],
+      "partId": "china-transport"
+    },
+    {
+      "id": "china-transport-module-land",
+      "title": "陆路：平原枢纽与高原工程",
+      "paragraphs": [
+        "郑州周围相对连续的平地有利于组织线路，长期交通建设与产业集聚强化了东西、南北方向的枢纽功能。邻近的黄河与山地又要求线路跨河或绕避障碍。桥梁、站场和货源组织，决定这些交会能转化为多强的联系。",
+        "青藏铁路则要在高原上协调坡度、谷地、山口和地基条件。多年冻土区采用调控路基热量等办法适应地基，线路选择还必须考虑未来维护。铁路连接高原城镇，实际路线却远比两城之间的一条直线复杂。"
+      ],
+      "caseIds": [
+        "zhengzhou-transport",
+        "qinghai-tibet-railway"
+      ],
+      "partId": "china-transport"
+    },
+    {
+      "id": "china-transport-module-inland-water",
+      "title": "天然河流与人工运河：水路怎样接续",
+      "paragraphs": [
+        "重庆的江河穿行于山岭和谷地之间，为运输提供联系轴线；桥梁、隧道和轨道交通又帮助城市跨谷穿山。水运与陆路在这里接续，使一条河的作用延伸到河岸之外。",
+        "大运河则通过人工开挖、改线、堤闸和持续维护，跨越不同水位与分水地形，连接原本分属不同流域的地方。天然河流依地势汇水，人工运河通过工程组织通道；两者都依赖水量和维护，却有不同的形成与运行方式。",
+        "大运河各段来自不同朝代和地区的建设，河流改道与政治经济变化也不断改变用途。它是一套长期累积的水运系统，不能用一个始建年份概括。"
+      ],
+      "caseIds": [
+        "chongqing",
+        "grand-canal"
+      ],
+      "partId": "china-transport"
+    },
+    {
+      "id": "china-transport-module-ports",
+      "title": "海港：海侧条件与内陆腹地",
+      "paragraphs": [
+        "宁波舟山的海岸与岛群提供多种港湾条件，现代码头、航道与集疏运设施把它们组织成分工协作的港口网络。船舶需要适当水深，货物上岸后则依靠铁路、公路和内河通向腹地。",
+        "天津处在海河下游与渤海之间。泥沙输送和海陆变迁塑造了滨海低平原，北部仍有山地。港口把内陆铁路、公路货源接入海运，发展依赖腹地经济、疏浚与维护；低平河口也要求排水、防洪和海岸防护。"
+      ],
+      "caseIds": [
+        "ningbo-zhoushan-port",
+        "tianjin"
+      ],
+      "partId": "china-transport"
+    },
+    {
+      "id": "part-world-sea-connections",
+      "title": "海洋、海峡与人工运河",
+      "paragraphs": [
+        "海洋彼此连通，陆地却使一些航路收窄，或迫使船舶远绕。天然海峡穿过两侧陆地之间，人工运河则开辟新的通道。它们所连接的海域及采用的工程方式，决定了各自怎样改变航程。"
+      ],
+      "partId": "world-sea-connections"
+    },
+    {
+      "id": "world-sea-connections-section-1",
+      "title": "大洋相连，通道宽窄不同",
+      "paragraphs": [
+        "世界海洋是一片连通的水体，海陆轮廓使通道有宽有窄。马六甲、直布罗陀与白令都称海峡，纬度、尺度与周围环境却很不同，其运输作用与海水交换也各有特点。",
+        "认识海峡的位置，需要同时看两侧陆地和相连水域。只记住水道名称，会漏掉它在区域中的实际关系。"
+      ],
+      "partId": "world-sea-connections"
+    },
+    {
+      "id": "world-sea-connections-section-2",
+      "title": "天然海峡与人工运河",
+      "paragraphs": [
+        "海峡是天然水道，运河则由人工开凿或改造。苏伊士运河连接地中海与红海，巴拿马运河让船舶穿越美洲，提供绕行大陆南端之外的路径；两者的地形和运行方式并不相同。",
+        "一条通道能缩短某些航程，并不意味着所有船舶都能通过。船的吃水与尺度、设施状况及当期运行条件，都影响实际通行。"
+      ],
+      "partId": "world-sea-connections",
+      "mediaIds": [
+        "diagram-sea-passage"
+      ]
+    },
+    {
+      "id": "world-sea-connections-section-3",
+      "title": "为什么有些通道特别重要",
+      "paragraphs": [
+        "陆地把可航行路线挤向少数通道，船舶便可能在那里集中。港口、补给、转运与腹地市场又影响船舶的选择，几何上最短的线路未必是实际航线。",
+        "一条通道的作用，也体现在绕行的代价中。比较经过通道和绕行所连接的海域与距离，能够理解它在整个运输网络中的位置。"
+      ],
+      "partId": "world-sea-connections"
+    },
+    {
+      "id": "world-sea-connections-section-4",
+      "title": "海水交换与航运是不同问题",
+      "paragraphs": [
+        "狭窄水道也会影响海水交换。白令海峡联系高纬水域，直布罗陀连接地中海与大西洋；海水的流速、盐度与温度差，各需相应海洋资料解释。",
+        "海水运动与船舶运输共享一个地理位置，却受到不同条件驱动。研究通道时，水体怎样交换与货物怎样经过，应分别说明。"
+      ],
+      "partId": "world-sea-connections"
+    },
+    {
+      "id": "world-sea-connections-module-module-1",
+      "title": "四大洋：通道所连接的背景",
+      "paragraphs": [
+        "太平洋、大西洋、印度洋与北冰洋相互连通，各有不同的海陆轮廓。对运输而言，这些轮廓决定船舶在哪里能够直行，在哪里必须绕行或进入较窄通道。海峡和运河的作用，正是在这样的背景中形成。",
+        "海洋环境也影响航行条件。印度洋的季风具有明显季节变化，北冰洋的海冰随季节生消；静态地图只能说明大体位置，具体航行仍需当期气象、海况与冰情资料。海水环流和船舶航线共享海域，却不是同一种路线。"
+      ],
+      "caseIds": [
+        "pacific-ocean",
+        "atlantic-ocean",
+        "indian-ocean",
+        "arctic-ocean"
+      ],
+      "partId": "world-sea-connections"
+    },
+    {
+      "id": "world-sea-connections-module-module-2",
+      "title": "海峡与内海：相连水域各不相同",
+      "paragraphs": [
+        "马六甲海峡的狭窄通道缩短了部分海运距离，也使浅水、交通组织和航路管理更加重要。直布罗陀连接地中海与大西洋，白令海峡则连接高纬水域，三者虽同称海峡，位置与环境各不相同。",
+        "海峡还让相邻海域交换水和物质。地中海通过自然入口与外海联系，密度、水位、潮汐及海底形态影响不同深度的流动；白令的浅水通道也参与海水、热与营养物质交换。这些海洋过程说明水怎样流过，航运则另需考虑船型、水深和运行条件。"
+      ],
+      "caseIds": [
+        "malacca-strait",
+        "gibraltar-strait",
+        "bering-strait",
+        "mediterranean"
+      ],
+      "partId": "world-sea-connections"
+    },
+    {
+      "id": "world-sea-connections-module-module-3",
+      "title": "人工运河",
+      "paragraphs": [
+        "苏伊士运河经人工开挖、扩建和疏浚，将地中海与红海连接起来，使一些航线免于绕行非洲南端。它能节省多少距离，取决于出发港和目的港；船型、交通组织及运行条件继续影响通道效率。",
+        "巴拿马运河由航道、坝、湖泊和船闸组成，船舶需要通过高于海平面的湖泊段。船进入闸室后，注水或放水改变水位，再驶入下一段；部分闸室过程使用湖泊淡水按重力供给，两洋海水并非自由直通。"
+      ],
+      "caseIds": [
+        "suez-canal",
+        "panama-canal"
+      ],
+      "partId": "world-sea-connections"
+    },
+    {
+      "id": "part-world-transport-trade",
+      "title": "交通、港口与世界贸易",
+      "paragraphs": [
+        "海峡和运河改变经过的路线，港口则决定货物怎样转运。从新加坡的海上中转，到鹿特丹与欧洲内陆的联系，一条运输链往往需要多种方式接续，货物才会真正到达市场。"
+      ],
+      "partId": "world-transport-trade"
+    },
+    {
+      "id": "world-transport-trade-section-1",
+      "title": "贸易路线是一个网络",
+      "paragraphs": [
+        "港口是运输节点，海陆线路是通道，腹地的生产与需求使网络持续运转。鹿特丹、新加坡、海峡、运河和跨山铁路，各自承担不同的衔接。",
+        "一个地点的功能，既来自它所处的位置，也来自它能够连接谁。港口的海岸条件只是其中一部分。"
+      ],
+      "partId": "world-transport-trade"
+    },
+    {
+      "id": "world-transport-trade-section-2",
+      "title": "通道如何改变距离",
+      "paragraphs": [
+        "苏伊士和巴拿马让船舶避开部分海上绕行，圣哥达隧道则改变跨越山地的条件。工程所解决的障碍不同，带来的时间和成本变化，也取决于起终点、设施和运行安排。",
+        "航程缩短以后，船舶或列车仍需与通道尺度、运力和调度相适应，地理距离只是完整运输成本的一项。"
+      ],
+      "partId": "world-transport-trade"
+    },
+    {
+      "id": "world-transport-trade-section-3",
+      "title": "中转港与腹地港怎样比较",
+      "paragraphs": [
+        "货物下船以后，可以换船继续海上旅程，也可以转入铁路、公路或内河。新加坡突出海上中转，鹿特丹与欧洲腹地联系紧密；码头、装卸、仓储和后续运输，把地理位置变成实际服务能力。",
+        "比较港口，既要看服务哪一段旅程，也要用相应指标。吞吐量记录经港货物，转运量关注其中的中转，贸易额描述交易价值。年份与统计对象不同，这些数字说明的也不是同一件事。"
+      ],
+      "partId": "world-transport-trade",
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "两座港口怎样连接货物",
+          "columns": [
+            "比较项",
+            "新加坡",
+            "鹿特丹"
+          ],
+          "rows": [
+            [
+              "突出的联系",
+              "海上航线之间的中转",
+              "海运与欧洲腹地的接续"
+            ],
+            [
+              "后续运输",
+              "换船前往其他港口",
+              "内河、铁路与公路"
+            ],
+            [
+              "共同需要",
+              "码头、班轮与装卸服务",
+              "码头、转运与集疏运服务"
+            ]
+          ],
+          "note": "比较主要功能，不表示两座港口只承担表中一种业务。"
+        }
+      ]
+    },
+    {
+      "id": "world-transport-trade-section-4",
+      "title": "网络也会暴露于中断",
+      "paragraphs": [
+        "一段运输遇到天气、设施故障或通道限制，后续装卸和运送也可能受影响。备用线路能否接替，需要看容量、时间、成本和货物特性。",
+        "备选路线因此有实际条件：连接相同两地，并不保证能够承接同样的货物与流量。地图有助于理解替代关系，实时安排仍需当期运行资料。"
+      ],
+      "partId": "world-transport-trade"
+    },
+    {
+      "id": "world-transport-trade-module-ports",
+      "title": "两个港口案例",
+      "paragraphs": [
+        "鹿特丹的河口位置提供海陆转换条件，长期建设形成了多式联运网络。莱茵河、鲁尔区与港口之间，货物可以先后使用内河、铁路和公路。港口腹地由这些道路、市场和转运效率建立，不能只按离港口多远来划定。",
+        "新加坡靠近重要海上联系，码头、班轮网络与补给服务进一步支持中转。一箱货物可以在这里卸下，再换船前往另一个区域港口。因此，港口处理的货物既可能服务本地，也可能继续远行，吞吐量与国家商品贸易总额没有一一对应关系。"
+      ],
+      "caseIds": [
+        "rotterdam-port",
+        "singapore-port"
+      ],
+      "partId": "world-transport-trade",
+      "mediaIds": [
+        "port-photo"
+      ]
+    },
+    {
+      "id": "world-transport-trade-module-barriers",
+      "title": "跨越高差与穿过陆地：三种工程",
+      "paragraphs": [
+        "圣哥达基础隧道以较低的线路穿过山体，减少列车爬升，改善坡度与曲线条件。它解决的是山地高差和绕行问题，依赖地质勘察、工程设施与长期维护。",
+        "苏伊士是持续扩建、疏浚的海平面运河，让部分船舶免于绕行非洲南端。巴拿马则通过船闸衔接不同水位，让船舶经过较高的湖泊段；闸室注水、放水，湖泊淡水参与部分重力供水过程。",
+        "三者都改变通行条件，但工程方式不同。选择一对起终点后，才能继续比较它们减少多少绕行、需要怎样的运力与调度，以及维护和用水带来哪些约束。"
+      ],
+      "caseIds": [
+        "gotthard-rail",
+        "suez-canal",
+        "panama-canal"
+      ],
+      "partId": "world-transport-trade"
+    },
+    {
+      "id": "world-transport-trade-module-strait",
+      "title": "天然海上通道",
+      "paragraphs": [
+        "马六甲海峡提供天然通道，附近港口承担停靠、装卸和转运。船舶交通、港口与航路管理共同使这里成为国际联系节点。",
+        "狭窄和浅水既影响通行，也增加航路管理要求。海峡提供地理通道，港口承担货物处理，两者在运输网络中相互配合，却各有不同的作用。"
+      ],
+      "caseIds": [
+        "malacca-strait"
+      ],
+      "partId": "world-transport-trade"
+    }
+  ],
+  "questions": [
+    {
+      "question": "两条铁路相交，为什么不一定形成重要货运枢纽？",
+      "answer": "还需足够需求、换装设施、仓储与对外连接，网络位置和实际服务能力共同决定作用。"
+    },
+    {
+      "question": "地图上两港之间的直线，为什么未必是可走的航线？",
+      "answer": "直线可能穿过陆地或浅水，实际航行还需考虑航道、船舶条件、港口和运行安排。"
+    },
+    {
+      "question": "最短路线为什么不一定是最低成本路线？",
+      "answer": "费用还取决于通道条件、装卸与等待、运输能力、时效及设施使用，距离只是其中一项。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "郑州市人民政府 · 交通枢纽与物流联系",
+      "url": "https://www.zhengzhou.gov.cn/2026lh01/9888984.jhtml"
+    },
+    {
+      "title": "中国科学院 · 青藏铁路冻土研究团队",
+      "url": "https://www.cas.cn/spx/202210/t20221008_4849995.shtml"
+    },
+    {
+      "title": "交通运输部、浙江省人民政府 · 宁波舟山港总体规划批复",
+      "url": "https://xxgk.mot.gov.cn/jigou/zhghs/202006/t20200630_3319765.html"
+    },
+    {
+      "title": "天津市人民政府 · 海洋主体功能区规划自然条件",
+      "url": "https://www.tj.gov.cn/zwgk/szfwj/tjsrmzf/202005/t20200519_2365827.html"
+    },
+    {
+      "title": "中国科学院 · 青藏铁路冻土路基技术纪实",
+      "url": "https://www.cas.cn/cm/202403/t20240304_5007246.shtml"
+    },
+    {
+      "title": "重庆市人民政府 · 重庆概况地理",
+      "url": "https://wap.cq.gov.cn/zjcq/sqgk/cqsq/202412/t20241231_14378525.html"
+    },
+    {
+      "title": "中国政府网资料 · 中华人民共和国行政区划",
+      "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+    },
+    {
+      "title": "UNESCO · The Grand Canal",
+      "url": "https://whc.unesco.org/en/list/1443"
+    },
+    {
+      "title": "河南省涉台公共资料 · 地理概况",
+      "url": "https://ytsc.rootinhenan.gov.cn/sitesources/ytsc/page_pc/hngk/article491327f391ce412d8f70c2fb2e6eee0d.html"
+    },
+    {
+      "title": "NOAA · The Ocean（五大洋划分口径）",
+      "url": "https://www.noaa.gov/jetstream/ocean"
+    },
+    {
+      "title": "NOAA · How many oceans are there?",
+      "url": "https://oceanservice.noaa.gov/facts/howmanyoceans.html"
+    },
+    {
+      "title": "NOAA · Atlantic Meridional Overturning Circulation",
+      "url": "https://oceanservice.noaa.gov/facts/amoc.html"
+    },
+    {
+      "title": "NASA · 航线与多年平均资料尺度",
+      "url": "https://science.nasa.gov/blogs/earth-matters/2013/03/25/matters-of-scale-and-why-they-matter/"
+    },
+    {
+      "title": "World Bank · India: Managing Floods and Droughts（2023）",
+      "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+    },
+    {
+      "title": "NOAA · 世界最小的海洋（2026更新页面）",
+      "url": "https://oceanservice.noaa.gov/facts/smallestocean.html"
+    },
+    {
+      "title": "NASA · Ice and Clouds in the Bering Strait",
+      "url": "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/"
+    },
+    {
+      "title": "新加坡海事及港务管理局 · 马六甲与新加坡海峡航路资料",
+      "url": "https://www.mpa.gov.sg/who-we-are/newsroom-resources/publications/singapore-port-information"
+    },
+    {
+      "title": "NASA · The Strait of Gibraltar",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-strait-of-gibraltar-151478/"
+    },
+    {
+      "title": "NASA · The Strait of Gibraltar in 3D",
+      "url": "https://science.nasa.gov/earth/earth-observatory/the-strait-of-gibraltar-in-3d-3926/"
+    },
+    {
+      "title": "Suez Canal Authority · Canal Characteristics",
+      "url": "https://www.suezcanal.gov.eg/English/About/SuezCanal/Pages/CanalCharacteristics.aspx"
+    },
+    {
+      "title": "Panama Canal Authority · History and how the canal works",
+      "url": "https://pancanal.com/en/history-of-the-panama-canal/"
+    },
+    {
+      "title": "Panama Canal Authority · 运河淡水与气候事件",
+      "url": "https://pancanal.com/en/panama-canal-prepares-for-the-impact-of-climate-events/"
+    },
+    {
+      "title": "Met Office · 欧洲区域气候与海洋影响",
+      "url": "https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/applied-science/precis/dissy1808.pdf"
+    },
+    {
+      "title": "Port of Rotterdam Authority · Connections",
+      "url": "https://www.portofrotterdam.com/en/logistics/connections"
+    },
+    {
+      "title": "Port of Rotterdam Authority · Inland shipping",
+      "url": "https://www.portofrotterdam.com/en/logistics/connections/intermodal-transportation/inland-shipping"
+    },
+    {
+      "title": "Maritime and Port Authority of Singapore · Strong growth momentum for Maritime Singapore",
+      "url": "https://www.mpa.gov.sg/media-centre/details/strong-growth-momentum-for-maritime-singapore"
+    },
+    {
+      "title": "Swiss Federal Office of Transport · New Rail Link through the Alps",
+      "url": "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps"
+    }
+  ],
+  "presentation": "essay"
+}

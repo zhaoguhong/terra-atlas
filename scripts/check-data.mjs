@@ -49,7 +49,7 @@ for(const id of ['northern-china','southern-china','northwestern-china','qinghai
   assert(bindings[id][0].startsWith('region-cn-jiang2023-'))
   assert.match(features.get(bindings[id][0]).geometry.type,/Polygon/)
 }
-console.log('Verified four digitized reference regions and 211 explicit area/line/point decisions.')
+console.log(`Verified four digitized reference regions and ${knowledge.length} explicit area/line/point decisions.`)
 const expectedCountryNames={'country-jor':'约旦','country-ner':'尼日尔','country-sen':'塞内加尔','country-cog':'刚果共和国'}
 for(const [id,name] of Object.entries(expectedCountryNames)){
   for(const p of [features.get(id)?.properties,gazetteer.find(p=>p.id===id)]){
@@ -153,11 +153,11 @@ for(const topic of read('src/data/topics.json')){
   assert(topic.modules?.length,topic.id+' explicit learning modules')
   const members=topic.modules.flatMap(module=>{
     assert(module.id&&module.title&&module.description&&module.stops.length,topic.id+' complete module')
-    assert(module.detail?.length>=30&&module.detail!==module.description,topic.id+' module explanation adds detail')
+    assert(module.description.length>=40&&(!module.detail||(module.detail.length>=20&&module.detail!==module.description)),topic.id+' substantive module with optional nonrepeating detail')
     assert(!module.description.includes('先定位各个对象'),topic.id+' placeholder module introduction')
     return module.stops
   })
-  assert.equal(new Set(members).size,members.length,topic.id+' duplicate module member')
+  for(const module of topic.modules)assert.equal(new Set(module.stops).size,module.stops.length,topic.id+' duplicate member inside module')
   assert.deepEqual(new Set(members),new Set(topic.stops),topic.id+' all members reachable in modules')
   assert.equal(new Set(topic.modules.map(module=>module.id)).size,topic.modules.length,topic.id+' duplicate module id')
   for(const visual of topic.visuals||[]){
@@ -263,7 +263,7 @@ assert.equal(fs.readFileSync('public/data/topic-intro-review.json','utf8'),fs.re
 assert.equal(introReview.outputSha256,createHash('sha256').update(fs.readFileSync('src/data/topics.json')).digest('hex'))
 assert.deepEqual(introReview.topics.map(entry=>entry.id),introTopics.map(topic=>topic.id))
 for(const entry of introReview.topics)assert.deepEqual(entry.modulesReviewed,introTopics.find(t=>t.id===entry.id).modules.map(m=>m.id))
-console.log('Verified 3 versioned auxiliary layers, '+auxiliaryIds.size+' real features, and review coverage for all 40 themes / 122 modules.')
+console.log('Verified 3 versioned auxiliary layers, '+auxiliaryIds.size+' real features, and review coverage for '+introTopics.length+' themes / '+introTopics.reduce((n,t)=>n+t.modules.length,0)+' modules.')
 
 const themeSources=read('public/data/theme-sources.json')
 assert.equal(content.themeSourceManifest,'/data/theme-sources.json')
@@ -343,3 +343,84 @@ for(const code of ['mand1415','yuec1235','hain1238','minn1241'])assert(overviewC
 for(const code of ['hlai1239','tibe1272','uigh1240'])assert(!overviewCategories.get('group:zh').members.includes(code))
 assert(fs.readFileSync('public/licenses/Unicode-3.0.txt','utf8').includes('UNICODE LICENSE V3'))
 console.log(`Verified CLDR country overview: ${languageOverview.countries.filter(country=>country.displayId).length} mapped countries, exact language groups, provenance and license.`)
+
+// Full reading is a separate, lazy-loaded artifact for every catalogue topic.
+const readingSources=read('data/research/reading-sources.json'),media=read('src/data/reading-media.json'),readingTopics=read('src/data/topics.json')
+assert.deepEqual(readingSources,read('public/data/reading-sources.json'),'reading provenance copies')
+assert.equal(content.readingSourceManifest,'/data/reading-sources.json')
+assert.equal(readingSources.topicCount,readingTopics.length)
+assert.equal(new Set(media.map(m=>m.id)).size,media.length)
+const mediaIds=new Set(media.map(m=>m.id)),topicIds=new Set(readingTopics.map(t=>t.id))
+for(const item of media){
+  assert(item.path.startsWith('media/reading/')&&!item.path.includes('..'),item.id+' local asset path')
+  assert(item.alt&&item.caption&&item.author&&item.license&&/^https?:\/\//.test(item.licenseUrl),item.id+' attribution and accessible description')
+  assert(/^https:\/\//.test(item.sourceUrl)&&item.width>0&&item.height>0,item.id+' source and dimensions')
+  const buffer=fs.readFileSync('public/'+item.path)
+  if(item.kind==='diagram'||item.kind==='map'){
+    const svg=buffer.toString()
+    assert(svg.includes('<title'),item.id+' accessible SVG title')
+    if(item.kind==='diagram')assert(svg.includes('概念示意'),item.id+' schematic labelled')
+    else {
+      assert(item.sourceUrls?.length&&item.processing&&item.featureIds?.length,item.id+' real map inputs and processing')
+      const inputs=read(item.id==='language-world-areas'?'public/data/language-areas.geojson':'public/data/learning-languages.geojson')
+      const ids=new Set(inputs.features.map(f=>f.properties.glottocode))
+      assert(item.featureIds.every(id=>ids.has(id)),item.id+' only known language features')
+    }
+    assert(!/<script|<foreignObject|href="https?:/i.test(svg),item.id+' static, self-contained SVG')
+  }else assert.equal(buffer.subarray(0,2).toString('hex'),'ffd8',item.id+' valid JPEG signature')
+}
+assert.equal(readingTopics.length,32,'consolidated catalogue plus two atmosphere topics')
+const editorialIds=readingTopics.map(t=>t.id)
+assert.deepEqual(new Set(fs.readdirSync('data/reading/edited-topics')),new Set(editorialIds.map(id=>id+'.json')),'all 32 editorial sources present')
+assert.deepEqual(new Set(readingSources.editorialRevision.topicIds),new Set(editorialIds),'editorial review covers the remaining catalogue')
+assert.deepEqual(new Set(fs.readdirSync('public/reading/topics')),new Set(readingTopics.map(t=>t.id+'.json')),'no retired public articles')
+for(const input of readingSources.inputs)assert.equal(createHash('sha256').update(fs.readFileSync(input.path)).digest('hex'),input.sha256,input.path+' authored input hash')
+for(const topic of readingTopics){
+  assert(topic.reading&&mediaIds.has(topic.reading.coverId),topic.id+' real cover asset')
+  for(const id of topic.reading.relatedTopicIds)assert(topicIds.has(id)&&id!==topic.id,topic.id+' related article')
+  const article=read(`public/reading/topics/${topic.id}.json`)
+  assert.deepEqual(article,read(`data/reading/edited-topics/${topic.id}.json`),topic.id+' authored prose survives generation')
+  assert.equal(article.id,topic.id);assert.equal(article.title,topic.title)
+  assert(topic.mapGuide,topic.id+' map guide')
+  assert(topic.mapGuide.sections.length>=3&&topic.mapGuide.sections.length<=4,topic.id+' concise guide structure')
+  const guideSize=topic.mapGuide.sections.reduce((n,s)=>n+s.body.length,0)
+  assert(guideSize>=160&&guideSize<=400,topic.id+' substantive but bounded map guide')
+  for(const section of topic.mapGuide.sections){
+    const original=article.sections.find(s=>s.id===section.sectionId)
+    assert(original,topic.id+' traceable guide excerpt')
+    const authored=read('data/reading/map-essays.json')[topic.id].sections.find(s=>s.sectionId===section.sectionId)
+    assert.deepEqual(section,authored,topic.id+' authored short essay preserved')
+  }
+  assert.equal(topic.mapGuide.cases.length,3,topic.id+' three observation entries')
+  assert.equal(new Set(topic.mapGuide.cases.map(c=>c.id)).size,3,topic.id+' distinct observation entries')
+  for(const item of topic.mapGuide.cases){
+    assert(topic.stops.includes(item.id)&&cardIds.has(item.id),topic.id+' existing map entry '+item.id)
+    assert(item.prompt.trim().length>=12,topic.id+' observation prompt')
+  }
+  assert(article.sections.length>=5&&article.questions.length,topic.id+' explanation chapters and case study')
+  assert.equal(new Set(article.sections.map(s=>s.id)).size,article.sections.length,topic.id+' stable unique chapter IDs')
+  assert(article.sections.reduce((n,s)=>n+s.paragraphs.join('').length,0)>=650,topic.id+' substantive reading')
+  if(article.parts){
+    assert.deepEqual(article.parts,topic.reading.parts,topic.id+' matching chapter index')
+    for(const part of article.parts)assert(article.sections.some(s=>s.id===part.sectionId&&s.partId===part.id),topic.id+' reachable chapter group')
+    for(const section of article.sections)assert(article.parts.some(part=>part.id===section.partId),topic.id+' valid chapter group')
+  }
+  assert.equal(new Set(article.sections.flatMap(s=>s.mediaIds||[])).size,article.sections.flatMap(s=>s.mediaIds||[]).length,topic.id+' no duplicate figures')
+  const cases=new Set()
+  for(const section of article.sections){
+    assert(/^[a-z][a-z0-9-]{0,79}$/.test(section.id)&&section.title&&section.paragraphs.every(p=>p.length>=20),topic.id+' valid chapter')
+    for(const visual of section.visuals||[]){assert(visual.title);if(visual.kind==='comparison'){assert(visual.columns.length>=2&&visual.rows.length>=2);for(const row of visual.rows)assert.equal(row.length,visual.columns.length,topic.id+' complete comparison row')}else{assert.equal(visual.kind,'bars');assert(visual.unit&&visual.sources.length&&visual.rows.every(row=>Number.isFinite(row.value)&&row.value>=0));for(const source of visual.sources)assert(sourceUrls.has(source.url),topic.id+' sourced numeric chart')}}
+    for(const id of section.mediaIds||[])assert(mediaIds.has(id),topic.id+' missing figure '+id)
+    for(const id of section.caseIds||[]){assert(cardIds.has(id),topic.id+' missing case '+id);cases.add(id)}
+  }
+  assert.deepEqual(cases,new Set(topic.stops),topic.id+' all map cases available from reading')
+  for(const source of article.sources)assert(sourceUrls.has(source.url),topic.id+' missing article source')
+}
+for(const card of knowledge){
+  assert(card.readingTopicIds?.length,card.id+' no route to full reading')
+  for(const id of card.readingTopicIds)assert(topicIds.has(id),card.id+' dangling reading link')
+  for(const id of card.mediaIds||[])assert(mediaIds.has(id),card.id+' missing image')
+}
+for(const note of notes){assert.equal(note.sections?.length,2,note.code+' curve and comparison explanation');assert(note.sections.every(s=>s.body.length>35),note.code+' substantive explanation')}
+for(const output of readingSources.outputs)assert.equal(createHash('sha256').update(fs.readFileSync(output.path)).digest('hex'),output.sha256,output.path+' reading artifact hash')
+console.log(`Verified ${readingTopics.length} full reading articles, ${media.length} attributed local figures, every case link, all reading routes and climate-note comparisons.`)

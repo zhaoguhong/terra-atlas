@@ -1,0 +1,156 @@
+{
+  "id": "weather-systems",
+  "title": "天气为什么变化",
+  "introduction": "天气是某时某地空气的状态，也是空气不断运动、交换热量和水分的结果。气压差推动风，空气上升有机会形成云雨，冷暖空气相遇又带来锋面。把这些过程连接起来，再看它们怎样经过山地、海岸与城市，就能理解一次天气变化为何同时伴随风、温度和降水的改变。",
+  "updatedAt": "2026-11-10",
+  "sections": [
+    {
+      "id": "section-1",
+      "title": "先区分今天的天气与多年的气候",
+      "paragraphs": [
+        "气温、风、云和降水，描述着某时某地的天气；把较长时期的观测放在一起，才得到气候的平均状况与变化范围。一个多年较暖的地方，同样会经历寒冷的一天。",
+        "天气资料总要带着具体的时间、位置和单位来读。长期气候分区能说明一个地方通常怎样冷暖干湿，当下是否有雨，却需要当天的天气观测。"
+      ]
+    },
+    {
+      "id": "section-2",
+      "title": "气压差推动空气，地球自转改变方向",
+      "paragraphs": [
+        "空气有重量，气压是空气作用在单位面积上的压力。水平气压差推动空气运动，地球自转和近地面摩擦再改变风向、速度，实际风便很少笔直地从高压吹向低压。",
+        "天气图把气压相同的位置连成等压线。在同一地图尺度下，等压线越密，通常意味着水平气压梯度越大。地面上能感受到多大的风，还受地形、摩擦与具体天气系统影响。"
+      ]
+    },
+    {
+      "id": "section-3",
+      "title": "水汽怎样变成云雨",
+      "paragraphs": [
+        "空气上升时膨胀冷却，达到适当条件后，水汽凝结成小水滴或形成冰晶，云便出现了。地面加热、山地阻挡、低层辐合与锋面抬升，都可以促使空气上升。",
+        "云中的水滴、冰晶还要继续增长，才可能形成落到地面的降水。香港的湿润来风遇到山坡，会使迎风与背风处的云雨条件不同；一次雨究竟有多大，仍要靠观测确定。"
+      ],
+      "mediaIds": [
+        "diagram-rain-shadow"
+      ]
+    },
+    {
+      "id": "section-4",
+      "title": "冷暖空气相遇，锋面带来天气转换",
+      "paragraphs": [
+        "大范围内温度、湿度较一致的空气称为气团。较冷空气推进、替代较暖空气，形成冷锋；暖空气推进则形成暖锋。锋面附近的抬升，常伴随云雨以及气温和风的变化。",
+        "这里的冷暖，是两侧空气的相对差别。冷锋过境若缺少水汽或足够抬升，也可能不下雨；降温是否达到寒潮标准，则须依当地气象部门的业务规定判断。"
+      ],
+      "mediaIds": [
+        "diagram-weather-fronts"
+      ]
+    },
+    {
+      "id": "section-5",
+      "title": "台风形成需要多种条件共同满足",
+      "paragraphs": [
+        "热带海面为风暴提供水分和能量。温暖海水、湿润空气、已有扰动和较弱的垂直风切变等条件配合时，热带气旋更有利于发展；温暖海面本身还不够。热带气旋发展到一定强度后，在西北太平洋称为台风，在大西洋等海域称为飓风。",
+        "风暴通过海洋与大气的能量交换发展，强风、暴雨和沿海水位变化带来不同影响。风暴路径、风圈与海岸地形共同影响沿岸城市的处境，判断一次具体风暴的风险，需要相应的观测和预报。"
+      ]
+    },
+    {
+      "id": "section-6",
+      "title": "每日天气怎样落在季节背景中",
+      "paragraphs": [
+        "季风改变大尺度来风的季节背景，每一天的天气仍由当时的气压、空气性质与水汽条件决定。雨季中的少雨间歇、旱季偶然出现的降雨，都可以发生在这样的背景之中。",
+        "北京的山前平原、香港的山地海岸与印度季风区，提供三种不同的观察位置。连续记录风向、气温与云雨，再与同一日期的天气图对照，便能把本篇的空气运动过程联系起来。"
+      ]
+    },
+    {
+      "id": "module-case-beijing",
+      "title": "北京：山前平原上的天气背景",
+      "paragraphs": [
+        "北京西北高、东南低，山地与平原相邻。不同地势和地表条件，使山地、山前与密集城区对空气活动产生不同影响。城市行政范围因此不能当作均匀的天气环境。",
+        "这里适合把地形与同一日期的天气资料对照：气流从哪里来，山地位于哪一侧，风向和气温何时改变。地形提供持续存在的背景，某一天的风雨则由当时的天气系统决定。"
+      ],
+      "caseIds": [
+        "beijing"
+      ]
+    },
+    {
+      "id": "module-case-hong-kong",
+      "title": "香港：湿润气流遇到山地",
+      "paragraphs": [
+        "香港山地与海岸相邻，潮湿空气沿坡抬升时冷却，可能形成云雨。天文台测站的长期平均资料显示，山地与低地雨量存在差别，这为理解地形作用提供了具体例子。",
+        "与北京的山前平原相比，香港更突出湿润来风与山坡的配合。一次降雨的范围和强度仍受当时水汽、气流和天气系统影响，需要读取相应观测。"
+      ],
+      "caseIds": [
+        "hong-kong"
+      ]
+    },
+    {
+      "id": "module-case-indian-monsoon",
+      "title": "印度季风：风向、雨季与地形",
+      "paragraphs": [
+        "季风描述风系的季节变化，Köppen–Geiger的A—E类则概括多年温度与降水组合，两者各有用途。季风也并非每天固定的风向；一个案例点只能帮助定位，不能划定风系的范围。",
+        "印度夏季来风能把海洋水汽带向陆地。海陆随季节增温、降温的差别参与改变气压与环流，大尺度环流和山地再调节水汽输送与降雨。这些过程共同影响雨季，也关系到陆地上的农业供水。"
+      ],
+      "caseIds": [
+        "indian-monsoon"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "处在湿润气候区，是否意味着每天都下雨？",
+      "answer": "不是。气候概括多年统计特征，某天的降雨还需要水汽、抬升和云内过程等条件；应使用对应时刻的观测判断。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NOAA · Origin of Wind",
+      "url": "https://www.noaa.gov/jetstream/synoptic/origin-of-wind"
+    },
+    {
+      "title": "NOAA · Air Masses",
+      "url": "https://www.noaa.gov/jetstream/synoptic/air-masses"
+    },
+    {
+      "title": "NOAA · How to read Surface Weather Maps",
+      "url": "https://www.noaa.gov/jetstream/wxmaps"
+    },
+    {
+      "title": "NOAA · Ingredients for a Thunderstorm",
+      "url": "https://www.noaa.gov/jetstream/thunderstorms/ingredients-for-thunderstorm"
+    },
+    {
+      "title": "NOAA · How do hurricanes form?",
+      "url": "https://oceanservice.noaa.gov/facts/how-hurricanes-form.html"
+    },
+    {
+      "title": "NOAA · Hurricane and typhoon",
+      "url": "https://oceanservice.noaa.gov/facts/cyclone.html"
+    },
+    {
+      "title": "北京市人民政府 · 北京概况与地理自然",
+      "url": "https://www.beijing.gov.cn/renwen/bjgk/"
+    },
+    {
+      "title": "中国政府网资料 · 中华人民共和国行政区划",
+      "url": "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
+    },
+    {
+      "title": "香港天文台 · 地形雨与1981—2010降雨分布",
+      "url": "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html"
+    },
+    {
+      "title": "香港海事处 · Hong Kong Fact Sheet — the Port",
+      "url": "https://www.mardep.gov.hk/en/materials-and-publications/publications/hk-fact-sheet/index.html"
+    },
+    {
+      "title": "中国政府网 · 粤港澳大湾区发展规划纲要（2019）",
+      "url": "https://app.www.gov.cn/govdata/gov/201902/18/435204/article.html"
+    },
+    {
+      "title": "NOAA NESDIS · What Is a Monsoon?",
+      "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+    },
+    {
+      "title": "World Bank · For Mekong Delta Farmers, Diversification is the Key to Climate Resilience",
+      "url": "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience"
+    }
+  ],
+  "presentation": "essay"
+}
