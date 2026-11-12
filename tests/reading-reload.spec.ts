@@ -2,8 +2,16 @@ import {expect,test,type Page} from '@playwright/test'
 import {baseReady,selectedGeometry} from './map-readiness'
 
 const reader=(page:Page)=>page.locator('.topic-reading-page:not([hidden])')
-async function selectChapter(page:Page,id:string){
+async function chapterNavigation(page:Page){
+  // The main map may be ready while the lazy reader is still loading. Wait
+  // for its article before deciding which responsive chapter control to use.
+  await expect(reader(page).locator('h1')).toBeVisible()
   const nav=reader(page).getByRole('navigation',{name:'专题章节'})
+  await expect(nav).toBeVisible()
+  return nav
+}
+async function selectChapter(page:Page,id:string){
+  const nav=await chapterNavigation(page)
   const select=nav.getByRole('combobox',{name:'跳转专题章节'})
   if(await select.isVisible())await select.selectOption(id)
   else{
@@ -12,7 +20,7 @@ async function selectChapter(page:Page,id:string){
   }
 }
 async function expectChapter(page:Page,id:string){
-  const nav=reader(page).getByRole('navigation',{name:'专题章节'})
+  const nav=await chapterNavigation(page)
   const select=nav.getByRole('combobox',{name:'跳转专题章节'})
   if(await select.isVisible())await expect(select).toHaveValue(id)
   else{
@@ -26,7 +34,12 @@ async function catalogue(page:Page){
 }
 async function openArticle(page:Page){
   await catalogue(page)
-  await page.getByRole('button',{name:'阅读专题：常见地貌与中国典型景观',exact:true}).click()
+  const [response]=await Promise.all([
+    page.waitForResponse(response=>new URL(response.url()).pathname.endsWith('/reading/topics/landform-landscapes.json')),
+    page.getByRole('button',{name:'阅读专题：常见地貌与中国典型景观',exact:true}).click(),
+  ])
+  expect(response.ok()).toBe(true)
+  expect(await response.finished()).toBeNull()
   await expect(reader(page).locator('h1')).toHaveText('常见地貌与中国典型景观')
 }
 async function scrollWithinChapter(page:Page){

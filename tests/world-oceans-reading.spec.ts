@@ -61,7 +61,14 @@ test('world geography: existing continent and region bookmarks remain separate a
   await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).savedTopics)).toEqual(['world-continents','world-regional-comparison'])
   await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).readingProgress['world-regional-comparison']?.sectionId)).toBe('world-regional-comparison-section-1')
   await page.getByRole('button',{name:'学主题',exact:true}).click()
-  await page.getByRole('button',{name:'阅读专题：世界区域比较',exact:true}).click()
+  // This first article opening downloads both the lazy reader and its JSON;
+  // finish the real content request before checking the saved-state control.
+  const [response]=await Promise.all([
+    page.waitForResponse(response=>new URL(response.url()).pathname.endsWith('/reading/topics/world-regional-comparison.json')),
+    page.getByRole('button',{name:'阅读专题：世界区域比较',exact:true}).click(),
+  ])
+  expect(response.ok()).toBe(true)
+  expect(await response.finished()).toBeNull()
   await expect(page.locator(visibleReader).getByRole('button',{name:'取消收藏专题',exact:true})).toBeVisible()
   await expect(page.locator(visibleReader).locator('h1')).toHaveText('世界区域比较')
 })
