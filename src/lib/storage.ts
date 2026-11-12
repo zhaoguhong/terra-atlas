@@ -1,5 +1,6 @@
 import type { Appearance, Camera, LayerState, MapDisplay, SavedView, ThematicState, View, ReadingProgress } from '../types'
 import {parseReadingProgress,readingId} from './reading.ts'
+import {resolveTopicReference,migrateReadingProgress} from './topic-redirects.ts'
 import {legacyTopic,singleOverlay,topicOverlays,validTopicReference} from './theme-state.ts'
 export const defaultLayers: LayerState = { terrain: true, mountains: true, rivers: true, lakes: true, climate: false, borders: true, population: false, religion: false, language: false, provinces: false, grid: false, cities:false, basins:false, plates:false }
 export const defaultThematic: ThematicState = { religion: 'largest', language: 'all', opacity: 0.72, climateMode:'groups', languageMode:'overview', languageId:'all' }
@@ -33,7 +34,7 @@ export function parsePreferences(value: unknown): Preferences {
   const strings=(v:unknown)=>Array.isArray(v)?v.filter((x):x is string=>typeof x==='string').slice(0,1000):[]
   const notes=Object.fromEntries(Object.entries(p.notes||{}).filter(([k,v])=>k.length<200&&typeof v==='string').map(([k,v])=>[k,String(v).slice(0,4000)]))
   return {
-    savedTopics:[...new Set(strings(p.savedTopics).filter(readingId))],readingProgress:parseReadingProgress(p.readingProgress),
+    savedTopics:[...new Set(strings(p.savedTopics).filter(readingId).map(id=>resolveTopicReference(id).topicId))],readingProgress:migrateReadingProgress(parseReadingProgress(p.readingProgress)),
     appearance:p.appearance==='light'||p.appearance==='dark'?p.appearance:'system',
     favorites:strings(p.favorites),
     placeNames:Object.fromEntries(Object.entries(p.placeNames||{}).filter(([id,name])=>id.length<200&&typeof name==='string').slice(0,1000).map(([id,name])=>[id,name.slice(0,120)])),

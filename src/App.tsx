@@ -1,3 +1,4 @@
+import {resolveTopicReference,migrateReadingProgress} from './lib/topic-redirects'
 import {lazy,Suspense,useCallback,useEffect,useMemo,useRef,useState,type CSSProperties} from 'react'
 import {ArrowDown,ArrowLeftRight,ArrowRight,Bookmark,BookOpen,Check,ChevronLeft,Compass,Download,Globe2,Info,Layers,LocateFixed,MapPin,MoreHorizontal,Mountain,Pin,Plus,Ruler,Search,Share2,Shuffle,Trash2,Upload,Users,Languages,Church,Waves,X,ZoomIn,ZoomOut,CloudSun,Grid2X2} from 'lucide-react'
 import AtlasMap,{sourceForId,type AtlasHandle,type Measurement} from './components/AtlasMap'
@@ -96,7 +97,7 @@ export default function App(){
   const [readingProgress,setReadingProgress]=useState(initial.readingProgress)
   const [studyScreen,setStudyScreen]=useState<'map'|'library'|'article'>(restoredNavigation?.studyScreen||'map')
   const [readerSession,setReaderSession]=useState(0)
-  const [readerTopicId,setReaderTopicId]=useState<string|null>(restoredNavigation?.readerTopicId||null)
+  const [readerTopicId,setReaderTopicId]=useState<string|null>(()=>{const id=restoredNavigation?.readerTopicId;if(!id)return null;const resumed=loadReadingResume(history.state?.terraAtlasEntryId,id);return resolveTopicReference(id,(resumed&&resumed.updatedAt>(restoredNavigation?.readerProgress?.updatedAt||0)?resumed:restoredNavigation?.readerProgress)?.sectionId).topicId})
   const [readerReturn,setReaderReturn]=useState(!!restoredNavigation?.readerReturn)
   const reportReading=useCallback((id:string,value:ReadingProgress,flush=false)=>{
     const next={...pendingPreferences.current.readingProgress,[id]:value}
@@ -226,7 +227,9 @@ export default function App(){
       const saved=event.state?.terraAtlasNavigation as NavigationEntry|undefined
       if(!saved||!validCamera(saved.camera))return
       const restored=topicForSelection(saved.topicId)
-      setStudyScreen(saved.studyScreen||'map');setReaderTopicId(saved.readerTopicId||null);setReaderReturn(!!saved.readerReturn)
+      const readingRoute=saved.readerTopicId?resolveTopicReference(saved.readerTopicId,saved.readerProgress?.sectionId):null
+      setStudyScreen(saved.studyScreen||'map');setReaderTopicId(readingRoute?.topicId||null);setReaderReturn(!!saved.readerReturn)
+      if(saved.readerTopicId&&saved.readerProgress)setReadingProgress(current=>migrateReadingProgress({...current,[saved.readerTopicId!]:saved.readerProgress!}))
       restoredHistoryHash.current=location.hash;hashApplied.current=location.hash
       setThematic(saved.thematic);setOpacity(saved.opacity);setDisplay(saved.display)
       cancelSharedPlace();setActiveTopic(restored?.id||null);setTopicLibrary(saved.library);setView(saved.view);setSelection(saved.selection);setMemberTrail(saved.trail||[])
@@ -460,9 +463,10 @@ export default function App(){
     pendingPickIdRequest.current++
     hashApplied.current=hash;retrySharedPlace.current=null;setSharedPlaceError('')
     const params=new URLSearchParams(location.hash.slice(1)),id=params.get('place')
-    const sharedArticle=topicForSelection(params.get('read'))
+    const sharedRoute=params.get('read')?resolveTopicReference(params.get('read')!,params.get('chapter')||undefined):null
+    const sharedArticle=topicForSelection(sharedRoute?.topicId)
     setReaderTopicId(sharedArticle?.id||null);setStudyScreen(sharedArticle?'article':'map');setReaderReturn(false)
-    if(sharedArticle&&params.get('chapter')&&/^[a-z][a-z0-9-]{0,79}$/.test(params.get('chapter')!))setReadingProgress(current=>({...current,[sharedArticle.id]:{sectionId:params.get('chapter')!,offset:0,updatedAt:Date.now()}}))
+    if(sharedArticle&&sharedRoute?.sectionId&&/^[a-z][a-z0-9-]{0,79}$/.test(sharedRoute.sectionId))setReadingProgress(current=>({...current,[sharedArticle.id]:{sectionId:sharedRoute.sectionId!,offset:0,updatedAt:Date.now()}}))
     const coordinatesFor=(fallback:[number,number]):[number,number]=>{
       const lng=Number(params.get('plng')),lat=Number(params.get('plat'))
       return params.has('plng')&&params.has('plat')&&[lng,lat].every(Number.isFinite)&&Math.abs(lng)<=180&&Math.abs(lat)<=85?[lng,lat]:fallback
@@ -675,7 +679,7 @@ export default function App(){
     return()=>cancelAnimationFrame(frame)
   },[landscapeLayout,fullReader,sidePanel])
   useEffect(()=>{
-    const elements=Array.from(document.querySelectorAll<HTMLElement>('.maplibregl-map,.map-tools,.map-legend,.topic-launch'))
+    const elements=Array.from(document.querySelectorAll<HTMLElement>('.map-stage .maplibregl-map,.map-tools,.map-legend,.topic-launch'))
     const mapCovered=fullReader||(mobileLayout&&compareOpen)
     const moveFocus=mapCovered&&elements.some(element=>element.contains(document.activeElement))
     if(moveFocus)document.querySelector<HTMLButtonElement>(compareOpen?'.compare-panel .knowledge-top button':'.mobile-reading-sheet .mobile-sheet-handle')?.focus({preventScroll:true})

@@ -28,10 +28,10 @@
     }
   },
   "purpose": "参考中国与世界地理公开课标主题检查知识缺口，继续服务个人自由探索，不强制教材章节或固定学习顺序；逐页主题对照基于已读取的2022官方PDF，2025日常修订另记录版本证据与待核限制。",
-  "scopeNote": "216张精选卡片、30种气候笔记与32个自由主题；只记录实际实现的精选内容，不声称全部教材或课标已覆盖。",
+  "scopeNote": "216张精选卡片、30种气候笔记与30个自由主题；只记录实际实现的精选内容，不声称全部教材或课标已覆盖。",
   "contentCount": 216,
   "climateNoteCount": 30,
-  "topicCount": 32,
+  "topicCount": 30,
   "statusDefinitions": {
     "selected": "该主题有精选内容，仍不表示标准全部要求覆盖",
     "partial": "已有内容只覆盖主题的一部分，明确列出待补项",
@@ -126,16 +126,18 @@
         "oceania-region",
         "iceland-rift",
         "san-andreas-fault",
-        "hawaii-hotspot"
+        "hawaii-hotspot",
+        "southern-ocean"
       ],
       "topicIds": [
         "world-terrain",
         "transport-trade",
         "world-continents",
-        "world-tectonics"
+        "world-tectonics",
+        "world-oceans"
       ],
       "implemented": [
-        "七大洲精选综合卡、四大洋入口与南大洋约定说明；碰撞、俯冲、离散、转换和热点案例，区分地震火山机制与实时灾害预报。"
+        "七大洲与五大洋分别提供完整介绍及同口径面积图；解释传统四大洋划分、IHO 2023年南大洋决议与国家保留意见。碰撞、俯冲、离散、转换和热点案例区分地震火山机制与实时灾害预报。"
       ],
       "remaining": [
         "未绘制完整板块边界、全球地震点和海底地形专用数据层；案例点不是板块范围。"
@@ -447,10 +449,11 @@
         "map-climate",
         "world-rivers",
         "world-continents",
-        "world-polar-comparison"
+        "world-polar-comparison",
+        "world-regional-comparison"
       ],
       "implemented": [
-        "七大洲综合入口，代表国家、宽泛区域的自然—生产—联系比较，以及南北极海陆格局、冰冻圈与居民活动的区别。"
+        "七大洲逐洲介绍，独立的世界区域比较涵盖四个地区与四个国家，并解释区域内部差异；极地篇比较南北极海陆格局、冰冻圈与居民活动。"
       ],
       "remaining": [
         "不是所有国家与地区百科；首都和行政机构资料保留原条目时期，不视为实时法律状态。"
@@ -849,19 +852,18 @@
     "method": "根据本轮实际精选卡片与主题逐条更新实现范围；此记录描述实现范围，不构成对课标全文逐项达标的认证。"
   },
   "readingExpansion": {
-    "version": "topics-2026-11-06-v3",
+    "version": "illustrated-science-articles-2026-11-12",
     "topicIds": [
+      "world-continents",
+      "world-oceans",
+      "world-regional-comparison",
       "landform-processes",
-      "landform-karst",
-      "landform-rivers",
-      "landform-wind",
-      "landform-glaciers",
-      "landform-coasts",
+      "landform-landscapes",
       "water-cycle",
       "earth-hazards",
       "weather-systems",
       "climate-change"
     ],
-    "scope": "59个旧专题整合为30个主主题，另补天气与气候变化；原主题章节与案例按组保留，正文经逐篇校订，提供章节直达与地图案例。仍为精选学习资料，不声称百科或教材全覆盖。"
+    "scope": "59个原专题经整合、补充天气与气候变化、重写地貌两篇并拆分七大洲、五大洋与世界区域比较后，当前为30个主题；旧章节与案例保留明确去向，提供章节直达与地图案例。仍为精选学习资料，不声称百科或教材全覆盖。"
   }
 }

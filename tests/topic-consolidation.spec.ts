@@ -18,9 +18,9 @@ async function openTopic(page:Page,title:string,articleId?:string){
   await expect(reader(page).locator('h1')).toHaveText(title)
 }
 
-test('consolidation: 32 main subjects and direct access to retired titles inside the same article',async({page},info)=>{
+test('consolidation: 30 main subjects and direct access to retired titles inside the same article',async({page},info)=>{
   await page.goto('/');await baseReady(page);await openThemeLibrary(page)
-  await expect(page.locator('.topic-library-card')).toHaveCount(32)
+  await expect(page.locator('.topic-library-card')).toHaveCount(30)
   for(const [query,chapter] of [['四大盆地','中国四大盆地'],['四大高原','中国四大高原']] as const){
     await openThemeLibrary(page)
     await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill(query)
@@ -54,11 +54,11 @@ test('consolidation: 32 main subjects and direct access to retired titles inside
 test('consolidation: Danxia and all fourteen summits retain their own reading and map cases',async({page})=>{
   await page.goto('/');await baseReady(page);await openThemeLibrary(page)
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill('丹霞')
-  await page.getByRole('button',{name:'直达章节 · 丹霞与红层景观',exact:true}).click()
-  await expect(reader(page).locator('h1')).toHaveText('岩石与地貌形成')
-  await expect(reader(page).locator('[data-reading-section="part-landform-danxia"] img')).toHaveAttribute('src',/danxia-photo/)
-  const danxia=reader(page).locator('[data-reading-section="landform-danxia-module-case-danxiashan"]')
-  await danxia.getByRole('button',{name:'在地图上看',exact:true}).click();await selectedGeometry(page)
+  await page.getByRole('button',{name:'直达章节 · 丹霞与砂岩峰林：相似的陡壁，不同的岩层',exact:true}).click()
+  await expect(reader(page).locator('h1')).toHaveText('常见地貌与中国典型景观')
+  await expect(reader(page).locator('[data-reading-section="redbeds-sandstone"] img').first()).toHaveAttribute('src',/danxia-photo/)
+  const danxia=reader(page).locator('[data-reading-section="redbeds-sandstone"]')
+  await danxia.getByRole('button',{name:'在地图上看 · 丹霞山',exact:true}).click();await selectedGeometry(page)
   await expect(page.locator('.knowledge-panel h2')).toHaveText('丹霞山')
   await openTopic(page,'世界地形与山系')
   const summits=reader(page).locator('[data-reading-section^="world-high-peaks-module-"] .reading-cases button')
@@ -67,12 +67,18 @@ test('consolidation: Danxia and all fourteen summits retain their own reading an
   expect(await page.evaluate(()=>JSON.stringify(window.__terraAtlas!.map.getSource('selection')!.serialize()))).toContain('peak-wikidata-')
 })
 
-for(const [id,title,claim] of [['weather-systems','天气为什么变化','较冷空气推进、替代较暖空气，形成冷锋'],['climate-change','气候变化与地球环境','判断气候变化，要把较长时期的观测放在一起']] as const){
+for(const [id,title,sectionId,claim,diagramId] of [
+  ['weather-systems','天气为什么变化','section-4','较冷空气向暖空气一侧推进时形成冷锋','diagram-weather-fronts'],
+  ['climate-change','气候变化与地球环境','section-2','温室气体能够吸收和发射一部分红外辐射','diagram-climate-energy'],
+] as const){
   test(`atmosphere: ${id} has sourced explanations, a real diagram and working map cases`,async({page},info)=>{
     const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message))
     await page.goto('/');await baseReady(page);await openTopic(page,title,id)
-    await expect(reader(page)).toContainText(claim)
-    await expect.poll(()=>reader(page).locator('img').first().evaluate((image:HTMLImageElement)=>image.naturalWidth)).toBeGreaterThan(0)
+    await expect(reader(page).locator(`[data-reading-section="${sectionId}"]`)).toContainText(claim)
+    if(id==='climate-change')await expect(reader(page).locator('[data-reading-section="section-1"]')).toContainText('把不同年份的资料放到相同的比较基准下')
+    const diagram=reader(page).locator(`[data-media-id="${diagramId}"] .reading-image-button img`)
+    await diagram.scrollIntoViewIfNeeded()
+    await expect.poll(()=>diagram.evaluate((image:HTMLImageElement)=>image.naturalWidth)).toBeGreaterThan(0)
     await reader(page).locator('.article-sources summary').click()
     await expect(reader(page).locator('.article-sources a').filter({hasText:id==='weather-systems'?'NOAA':'NASA'}).first()).toBeVisible()
     expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)

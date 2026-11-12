@@ -8,7 +8,7 @@ const manifest=read('data/research/content-sources.json')
 const previous=new Map(manifest.sources.map(source=>[source.url,source])),sources=new Map()
 const reading=read('data/research/reading-sources.json')
 const readingRefs=reading.articles.map(article=>['reading:'+article.id,read(article.path).sources])
-const imageRefs=reading.media.map(media=>['media:'+media.id,[{title:media.title,url:media.sourceUrl}]])
+const imageRefs=reading.media.map(media=>['media:'+media.id,(media.sourceUrls||[media.sourceUrl]).map(url=>({title:previous.get(url)?.title||media.title+' · 配图依据',url}))])
 for(const [usedBy,refs] of [...knowledge.map(k=>[k.id,k.sources]),...topics.map(t=>['topic:'+t.id,t.sources]),...notes.map(n=>['climate-note:'+n.code,n.sources]),...readingRefs,...imageRefs])for(const ref of refs){
  const source=sources.get(ref.url)||{...previous.get(ref.url),...ref,usedBy:[]}
  if(!source.usedBy.includes(usedBy))source.usedBy.push(usedBy)
@@ -16,6 +16,10 @@ for(const [usedBy,refs] of [...knowledge.map(k=>[k.id,k.sources]),...topics.map(
 }
 for(const ref of reading.atmosphereSourceReview.sources){const record=sources.get(ref.url);if(record)Object.assign(record,ref)}
 for(const ref of reading.languageRevision?.sources||[]){const record=sources.get(ref.url);if(record)Object.assign(record,ref)}
+for(const ref of reading.landformRevision?.sources||[]){const record=sources.get(ref.url);if(record)Object.assign(record,ref)}
+for(const ref of reading.worldGeographyRevision?.sources||[]){const record=sources.get(ref.url);if(record)Object.assign(record,ref)}
+manifest.landformRevision=reading.landformRevision
+manifest.worldGeographyRevision=reading.worldGeographyRevision
 manifest.reviewedAt=reading.reviewedAt
 manifest.editorialRevision=reading.editorialRevision
 manifest.sources=[...sources.values()];manifest.sourceCount=sources.size
@@ -32,7 +36,20 @@ coverage.contentCount=knowledge.length;coverage.topicCount=topics.length;coverag
 coverage.scopeNote=`${knowledge.length}张精选卡片、${notes.length}种气候笔记与${topics.length}个自由主题；只记录实际实现的精选内容，不声称全部教材或课标已覆盖。`
 const aliases={'world-mountains':'world-mountain-ranges','world-lake-origins':'world-lakes','world-population-scales':'map-population','world-culture-evidence':'map-religion'}
 Object.assign(aliases,Object.fromEntries(topicPlan.flatMap(group=>group.from.map(id=>[id,group.id]))))
+const landformRedirects=read('src/data/topic-redirects.json')
+for(const [id,target] of Object.entries(landformRedirects))aliases[id]=target.topicId
 for(const item of coverage.coverage)item.topicIds=[...new Set(item.topicIds.map(id=>aliases[id]||id))].filter(id=>topics.some(t=>t.id===id))
-coverage.readingExpansion={version:reading.version,topicIds:topics.filter(t=>t.id.startsWith('landform-')||['earth-rocks','water-cycle','climate-causes','soil-land','earth-hazards','people-migration','earth-image-reading','weather-systems','climate-change'].includes(t.id)).map(t=>t.id),scope:'59个旧专题整合为30个主主题，另补天气与气候变化；原主题章节与案例按组保留，正文经逐篇校订，提供章节直达与地图案例。仍为精选学习资料，不声称百科或教材全覆盖。'}
+const oceanCoverage=coverage.coverage.find(item=>item.id==='land-sea-continent')
+if(oceanCoverage&&topics.some(topic=>topic.id==='world-oceans')){
+  oceanCoverage.topicIds=[...new Set([...oceanCoverage.topicIds,'world-oceans'])]
+  oceanCoverage.cardIds=[...new Set([...oceanCoverage.cardIds,'southern-ocean'])]
+  oceanCoverage.implemented=['七大洲与五大洋分别提供完整介绍及同口径面积图；解释传统四大洋划分、IHO 2023年南大洋决议与国家保留意见。碰撞、俯冲、离散、转换和热点案例区分地震火山机制与实时灾害预报。']
+}
+const regionCoverage=coverage.coverage.find(item=>item.id==='world-regions-countries')
+if(regionCoverage&&topics.some(topic=>topic.id==='world-regional-comparison')){
+  regionCoverage.topicIds=[...new Set([...regionCoverage.topicIds,'world-regional-comparison'])]
+  regionCoverage.implemented=['七大洲逐洲介绍，独立的世界区域比较涵盖四个地区与四个国家，并解释区域内部差异；极地篇比较南北极海陆格局、冰冻圈与居民活动。']
+}
+coverage.readingExpansion={version:reading.version,topicIds:topics.filter(t=>t.id.startsWith('landform-')||['earth-rocks','water-cycle','climate-causes','soil-land','earth-hazards','people-migration','earth-image-reading','weather-systems','climate-change','world-continents','world-oceans','world-regional-comparison'].includes(t.id)).map(t=>t.id),scope:`59个原专题经整合、补充天气与气候变化、重写地貌两篇并拆分七大洲、五大洋与世界区域比较后，当前为${topics.length}个主题；旧章节与案例保留明确去向，提供章节直达与地图案例。仍为精选学习资料，不声称百科或教材全覆盖。`}
 write('data/research/curriculum-coverage.json',coverage)
 console.log(`Synced ${knowledge.length} cards, ${topics.length} themes, ${sources.size} sources; research and public manifests match.`)

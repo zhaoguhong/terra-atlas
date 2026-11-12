@@ -1,0 +1,738 @@
+[
+  {
+    "id": "landform-processes",
+    "title": "岩石与地貌的形成",
+    "introduction": "地貌是地表的形态：高山与深谷、平原与丘陵、崖壁与沙丘，都是它的不同表现。眼前的形态记录着一段形成历史。岩石提供材料，地壳运动与火山活动改变地面的高度和结构，水、风、冰与重力又持续拆解、搬运和堆积这些材料。要理解一处风景，需要把材料、作用和时间连在一起，也需要分清脚下的岩石与覆盖在岩石上的泥沙。",
+    "updatedAt": "2026-11-12",
+    "presentation": "essay",
+    "sections": [
+      {
+        "id": "rocks",
+        "title": "从矿物到岩石，认识山川的材料",
+        "paragraphs": [
+          "一块岩石不是没有内部结构的硬物。花岗岩上常能辨认出不同颜色的晶粒，砂岩断面上可以看见被胶结在一起的颗粒，有些石灰岩还保存着生物遗体的痕迹。这些组成与结构，记录了岩石形成时的条件，也会影响它日后怎样开裂、溶解和破碎。矿物是具有一定化学组成和晶体结构的天然物质；岩石则由一种或多种矿物组成，有些还含有天然玻璃或生物成因的物质。认识地貌，往往要先从这层材料差异开始。",
+          "按形成过程，岩石通常分为岩浆岩、沉积岩和变质岩。岩浆岩来自熔融物质的冷却凝固。岩浆在地下缓慢冷却，晶体有较长时间生长，常形成肉眼可见的晶粒，花岗岩就是常见例子；熔融物质喷出地表成为熔岩，冷却通常更快，玄武岩便常具有细小的晶粒。实际岩石还可能经历多阶段冷却，留下大小不同的晶体，不能只凭颗粒大小判断全部形成过程。",
+          "沉积岩的材料多在地表或水底汇集。山坡落下的碎屑被河水搬走，粗颗粒可能较早停留，细泥则继续向远处运动；长期堆积后，沉积物被埋藏、压实，颗粒之间又受到矿物胶结，逐渐形成岩石。砾岩、砂岩与泥岩反映了不同粒级的材料。一次洪水、河道迁移或环境变化都可能改变沉积条件，于是岩层之间留下厚薄、颜色和颗粒的差别。",
+          "沉积岩并非全由碎石和泥沙压成。石灰岩的形成常涉及水中碳酸盐的沉淀和生物活动，某些盐类岩石则与水分蒸发、溶解物浓缩有关。砂岩和石灰岩虽然同属沉积岩，对水的反应却很不同：水可能沿砂岩裂隙使岩块分离，也能在适当条件下溶解石灰岩中的碳酸盐。后文的砂岩峰林与喀斯特景观，就需要从这一区别理解。",
+          "已经形成的岩石如果进入更高温、更高压或流体活动较强的环境，矿物及结构可以发生变化，形成变质岩。石灰岩可变成大理岩，砂岩可变成石英岩。变质作用主要发生在固态条件下；若岩石熔化为岩浆，再冷却形成新岩石，便进入岩浆岩的形成过程。这里的区别不是名称上的细节，而是两种不同的物质变化。",
+          "岩石循环把这些过程联系起来，却没有规定每块岩石都必须依次走过三种类型。花岗岩可以风化成砂粒，再参与形成沉积岩；沉积岩可以变质，也可以在地表重新被侵蚀。德干高原的大面积玄武岩记录了熔岩铺展，喜马拉雅山地则保存着沉积、变形与变质等多段历史。今天岩石出露在高处，并不意味着它最初就形成在高山上。"
+        ],
+        "caseIds": [
+          "deccan-plateau"
+        ],
+        "mediaIds": [
+          "diagram-rocks"
+        ],
+        "mediaAfterParagraph": {
+          "diagram-rocks": 5
+        }
+      },
+      {
+        "id": "uplift",
+        "title": "地面为什么会抬升、弯曲和断裂",
+        "paragraphs": [
+          "有了岩石，还需要解释为什么同样的材料会出现在峰顶、谷底或地下。地球外部的岩石圈由多个板块组成，板块的相对运动不断改变岩层的位置。相邻板块汇聚时，岩层可能缩短、增厚，形成褶皱和断层；分离时，岩石圈可能伸展、减薄，地块之间出现高低差。火山喷出的熔岩与碎屑，又能直接堆积成新的地表。它们提供的起伏，是河流、冰川和重力继续作用的背景。",
+          "岩层弯曲形成褶皱，沿破裂面发生明显相对位移则形成断层。另一些裂缝没有显著的两侧错动，称为节理。节理虽然不一定造成很大的地块位移，却会让水和空气进入岩体，成为风化、渗流与崩落容易发展的部位。山体是否容易分成石柱、岩墙或大块岩石，不仅取决于岩石成分，也与裂隙的间距和方向有关。",
+          "褶皱的形态不能直接等同于地表的山谷。岩层向上拱起的部位可能遭到强烈侵蚀，反而变低；附近较耐侵蚀的岩层则可能保留下来，成为高地。断层两侧也未必始终保存清楚的台阶，因为坡面会被削低，谷地会被泥沙填充。地质构造解释岩层怎样排列，地貌还要把后来发生的剥蚀与堆积算进去。",
+          "喜马拉雅与青藏高原提供了大陆汇聚的典型背景。印度板块与欧亚板块的碰撞使地壳发生强烈缩短和增厚，而河流与冰川又持续向下切割、向外搬运物质。因此，高山不是先完整建成、随后才开始受侵蚀的静止物体。抬升与侵蚀能够长期同时发生，山峰的高度和山谷的深度，是这些过程共同作用的结果。",
+          "抬升还会改变河流与低处出口之间的高差，使河流在一定条件下加强下切。但河流的反应也受到来水、泥沙、岩性和下游条件影响，不能把每一条深谷都简单归因于一次抬升。同样，火山形成的高地在喷发间歇也会被流水切沟、发生崩塌。地表从产生之初，就已经处在不断改造之中。"
+        ],
+        "caseIds": [
+          "himalayas"
+        ],
+        "mediaIds": [],
+        "mediaAfterParagraph": {}
+      },
+      {
+        "id": "weathering",
+        "title": "完整岩石怎样变成碎屑与溶解物",
+        "paragraphs": [
+          "露出地面的岩石会与空气、水、生物接触，原有的矿物和结构在新的环境中逐渐改变，这个过程称为风化。“风化”并不专指风的作用，也不意味着物质已经被搬走。一块岩石可以在原地裂成碎块，或部分矿物转变为黏土，仍然留在原来的坡面上。随后，流水、风或重力才可能把这些产物带离。",
+          "物理风化主要使岩石破碎而不改变主要矿物的化学组成。裂隙中的水在合适的冻结条件下能够促使裂缝扩展；盐类在孔隙和裂隙中结晶，也可能产生破坏作用。岩体上方的物质被剥去后，应力条件改变，近地表岩石也可能沿裂面剥离。具体哪种过程重要，要看温度、水分、盐分和岩石结构，不能把所有破碎都解释成昼夜温差。",
+          "化学风化则改变矿物本身。水与溶解在其中的气体参与反应，有的矿物转化为新的矿物，有的成分被溶解带走。花岗岩中的长石可以逐渐发生化学改变，而石英通常较耐受，因而风化产物中可能保留较多石英砂粒。岩石不是在表面均匀消失的，水更容易沿裂隙进入，岩块的边角也能从多个方向受到作用。",
+          "石灰岩中的碳酸盐与含二氧化碳的水发生反应，可以形成溶解态物质并被水带走。雨水经过土壤时常能获得更多二氧化碳，沿岩石裂隙渗入后，长期扩大通道。这是理解许多喀斯特洞穴与地下水路的基础。不过，水能够继续溶解多少岩石，还取决于水的化学状态、温度和流动更新，不能把洞穴想成酸性雨水一次冲出来的空洞。",
+          "植物根系能够进入裂隙，土壤中的生物活动又会改变水的化学条件；植被同时也能遮护地表、减弱雨滴打击和地表径流。生物对地貌的影响因此可以有不同方向。由风化产物逐步形成土壤，还需要有机质积累、物质迁移等过程，裸露碎石与成熟土壤之间并没有一条只靠时间自动完成的直线。",
+          "风化的速度和方式也不只由一种气候决定。水分、温度、岩石成分、裂隙、坡度和暴露时间会共同影响结果。桂林的碳酸盐岩、丹霞山的红色碎屑岩和黄土高原的松散沉积物，面对降雨时有不同的反应。先认识材料和结构，才容易解释为什么同样是水，能够留下洞穴、崖壁或沟壑。"
+        ],
+        "caseIds": [
+          "guilin-karst",
+          "danxiashan"
+        ],
+        "mediaIds": [],
+        "mediaAfterParagraph": {}
+      },
+      {
+        "id": "transport",
+        "title": "从山坡到河口：侵蚀、搬运与沉积",
+        "paragraphs": [
+          "风化准备了可被移动的材料，侵蚀把材料从原处剥离，搬运使它们迁移，沉积则让它们在新的位置停留下来。这些过程常在同一个地方相接，甚至同时发生。河水能够冲走河床上的颗粒，也能借助携带的砂砾磨蚀岩面；在河道另一处，水流条件改变，泥沙又会落下。判断一段河床是在升高还是降低，需要看一定时期内物质进出的差额。",
+          "水可以滚动、跃移或悬浮搬运固体颗粒，也能携带肉眼看不见的溶解物。较粗的颗粒通常需要较强的水流才能启动，细颗粒进入水中后又可能被带得很远；黏土颗粒之间的黏结，使实际启动条件比单纯比较粒径更复杂。因此，水流变缓时常会发生分选，但不能把沉积顺序简化为任何时候都严格按颗粒大小排列。",
+          "重力使岩土有向低处运动的趋势。岩块可以从陡壁坠落，坡体可以沿滑动面移动，水与松散物质混合后还可能沿沟道流动。流水和风并不承担全部搬运，山坡本身就是重要的物质来源。坡脚被河流掏蚀、岩体出现裂隙或坡内水分改变，都可能影响这种移动；搬下来的碎屑随后又进入河流，参与更远的旅程。",
+          "风对松散、干燥而缺少植被覆盖的细颗粒较容易发生作用。沙粒常贴近地面跳跃或滚动，较细的尘粒则能悬浮得更高、更久。冰川的搬运方式又不同：流动的冰可以携带大小差异很大的岩屑，并在冰下或冰缘把它们留在一起。不同搬运介质留下的颗粒大小、排列和地层结构，是重建过去环境的重要证据。",
+          "一条大河把许多坡面和支流的来水、泥沙汇集起来。上游峡谷提供高差，中游河谷和湖泊能够暂存泥沙，河口则同时受到海潮、海浪与沿岸水流影响。长江沿途既有侵蚀，也有堆积，各段作用会随洪水、枯水和工程改变而变化。把上游一概写成侵蚀区、下游一概写成沉积区，会漏掉真实河流内部的差异。",
+          "黄土高原的沟壑与黄河的泥沙说明了坡面和流域的联系。雨水从坡面进入细沟，汇成较大的沟流，能够把原先由风带来的粉尘颗粒再次搬走；其中一部分在沟底和河漫滩停留，另一部分继续向下游运动。山坡、河道、平原和海岸之间存在物质交换，一处景观的形成条件，往往要到它的上游或远处去寻找。"
+        ],
+        "caseIds": [
+          "yangtze",
+          "loess-plateau"
+        ],
+        "mediaIds": [
+          "diagram-processes"
+        ],
+        "mediaAfterParagraph": {
+          "diagram-processes": 0
+        }
+      },
+      {
+        "id": "history",
+        "title": "把材料、环境和时间放回同一处景观",
+        "paragraphs": [
+          "地貌名称有不同的侧重点。山地、丘陵、高原、平原和盆地主要概括地表的高度、起伏及相对位置；河流地貌和冰川地貌强调塑造过程；丹霞与喀斯特还涉及特定材料及其受改造的方式。它们并不是互相排斥的标签。一片高原上可以同时有岩溶峰丛、河流峡谷与盆地，一条河谷也可能先受冰川改造，后来再被河流切割。",
+          "同一种外形也可能有不同来历。柱状山峰可以出现在石灰岩地区，也可以出现在砂岩地区；平坦地面可能来自河流沉积、熔岩铺展，或长期剥蚀。仅凭照片给景观取一个形象名称，并不能完成成因解释。岩石、地层、裂隙、沉积物和周围地形必须彼此吻合，才构成较可靠的证据。",
+          "时间让这些证据叠在一起。一次崩塌可以迅速改变崖壁，河流则在许多次洪水中迁移和堆积；山系的形成与夷平又涉及更长的地质历史。岩石的年龄、岩石露出地面的时间，以及今天山谷或崖壁的形成时间，往往并不相同。一块很古老的岩石，可以拥有相对年轻的侵蚀表面。",
+          "环境也会变化。今天没有冰川的谷地，可能保存过去的冰蚀形态；干旱盆地中的沉积层可能来自过去的湖泊；黄土堆积后，又会被后来的水流切割。旧地貌不会在环境改变时立即消失，新过程常沿着旧地形继续作用。我们看到的景观，因而既反映现在的条件，也保留过去的历史。",
+          "这也解释了为什么地貌不会按一套固定步骤整齐演化。岩层抬升、出口降低、河流改道或气候改变，都可能使原有过程发生转折。继续认识具体地貌时，可以带着几个相互联系的问题：它由什么材料组成，物质怎样移动，附近有哪些联系，哪些痕迹来自过去。把这些线索接起来，才能从景观名称走向对山川形成的理解。"
+        ],
+        "caseIds": [],
+        "mediaIds": [],
+        "mediaAfterParagraph": {}
+      }
+    ],
+    "questions": [
+      {
+        "question": "为什么同样是陡峭的山峰，形成过程可能很不一样？",
+        "answer": "陡峭描述的是形态。岩石的成分与结构、岩层和裂隙的方向、抬升与侵蚀的历史都能影响山峰。需要结合材料和地质证据，才能区分溶蚀、流水切割、冰川改造或其他作用。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "nps.gov · landforms",
+        "url": "https://www.nps.gov/subjects/geology/landforms.htm"
+      },
+      {
+        "title": "nps.gov · fluvial landforms",
+        "url": "https://www.nps.gov/subjects/geology/fluvial-landforms.htm"
+      },
+      {
+        "title": "nps.gov · aeolian landforms",
+        "url": "https://www.nps.gov/subjects/geology/aeolian-landforms.htm"
+      },
+      {
+        "title": "USGS · The Himalayas: Two continents collide",
+        "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html"
+      },
+      {
+        "title": "USGS · Seismicity of the Earth: Himalaya and vicinity",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+      },
+      {
+        "title": "中国科学院地质地球所 · 黄土形成与物源",
+        "url": "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html"
+      },
+      {
+        "title": "中国科学院地球环境所 · 河谷砂黄土风—水过程",
+        "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
+      },
+      {
+        "title": "宁夏水利厅 · 亚洲第一长河——长江",
+        "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html"
+      },
+      {
+        "title": "重庆市水利局 · 长江",
+        "url": "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html"
+      },
+      {
+        "title": "nps.gov · rocks",
+        "url": "https://www.nps.gov/subjects/geology/rocks.htm"
+      },
+      {
+        "title": "nps.gov · igneous",
+        "url": "https://www.nps.gov/subjects/geology/igneous.htm"
+      },
+      {
+        "title": "nps.gov · sedimentary",
+        "url": "https://www.nps.gov/subjects/geology/sedimentary.htm"
+      },
+      {
+        "title": "nps.gov · metamorphic",
+        "url": "https://www.nps.gov/subjects/geology/metamorphic.htm"
+      },
+      {
+        "title": "NASA Earth Observatory · Lonar Crater, India",
+        "url": "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/"
+      },
+      {
+        "title": "NOAA NESDIS · What Is a Monsoon?",
+        "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+      },
+      {
+        "title": "UNESCO · China Danxia",
+        "url": "https://whc.unesco.org/en/list/1335/"
+      },
+      {
+        "title": "UNESCO · 组成地地图与参考坐标",
+        "url": "https://whc.unesco.org/en/list/1335/maps/"
+      },
+      {
+        "title": "UNESCO · South China Karst",
+        "url": "https://whc.unesco.org/en/list/1248/"
+      },
+      {
+        "title": "UNESCO · 组成地地图与参考坐标",
+        "url": "https://whc.unesco.org/en/list/1248/maps/"
+      },
+      {
+        "title": "NPS · Karst Landscapes",
+        "url": "https://www.nps.gov/subjects/caves/karst-landscapes.htm"
+      },
+      {
+        "title": "USGS · Geology of Joshua Tree National Park",
+        "url": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-joshua-tree-national-park"
+      }
+    ]
+  },
+  {
+    "id": "landform-landscapes",
+    "title": "常见地貌与中国典型景观",
+    "introduction": "桂林的峰林、丹霞山的红色崖壁、张家界的砂岩石柱与黄土高原的沟壑，呈现出中国山川的不同面貌。它们的差异来自岩石和沉积物，也来自水、风、冰、重力及地壳运动长期作用的方式。认识地貌，需要先看清形态，再追踪材料与过程。本篇以中国常见或有代表性的景观为主，结合少量世界案例，比较地表与地下、侵蚀与堆积之间的联系；这些景观并不构成一套彼此排斥、穷尽所有地貌的分类。",
+    "updatedAt": "2026-11-12",
+    "presentation": "essay",
+    "sections": [
+      {
+        "id": "karst",
+        "title": "喀斯特：从地表峰林到地下水路",
+        "paragraphs": [
+          "喀斯特又称岩溶，是可溶性岩石受到溶蚀，并伴随流水侵蚀、重力崩塌等作用形成的地貌与水文现象。中国南方常见的喀斯特景观，主要发育在石灰岩、白云岩等碳酸盐岩地区。桂林的峰林、云南石林的石柱、武隆的天生桥虽然外观不同，却都需要把地表形态与岩石中的水路联系起来理解。",
+          "水进入岩石，并不是像刀一样从完整山体中随意切出一个洞。岩层原有的层面、节理和其他裂隙，先提供了渗流通道。含有二氧化碳的水能够溶解碳酸盐，流动又将溶解物带走，通道便可能在长期作用下扩大。不同位置的来水与排水条件不一样，有的裂隙不断扩展，有的变化较慢，地下水因而逐渐形成不均匀的通路。",
+          "地表水沿裂隙下渗，溶蚀会在岩面形成沟槽，沟槽之间留下石芽和石柱。云南石林展现了这种细密的岩石形态：石柱并非从地下生长出来，而是原有岩体在裂隙控制和差异溶蚀下被分割。它与桂林的峰林在规模和形态上有明显区别，不能因为都像成林的石头，就把两者当作同一尺度的景观。",
+          "峰丛通常表现为基部相连的成群山峰，山峰之间分布洼地；峰林则常表现为低地上较分离的峰体。桂林漓江沿岸的山峰与河谷，把地表流水和岩溶作用联系在一起。河流搬走沉积物、调整低地，地下排水又参与改变水的去向。不同的抬升、排水与地层条件，会使峰丛和峰林形成不同组合，不能把每一处峰丛都视为必然走向同一种峰林的早期阶段。",
+          "地下通道扩大到一定规模，就可能形成洞穴和地下河。水路位置会随着河流下切、地下水位及出口变化而调整，较高的旧洞道可能逐渐失去常流水，留下多层洞穴。洞顶或岩体局部坍塌，还能使地下空间暴露到地表。天坑是规模较大的岩溶洼陷，天然桥则保留了横跨空隙的岩体，但具体形态仍需结合当地岩层与演化历史解释，不能把所有洼地和石桥都归于同一种坍塌过程。",
+          "武隆天生三桥及周围的峡谷、洞穴，便适合从地表与地下的转换来认识。岩溶水路与峡谷切割相互联系，部分岩体被移走，部分保留为桥体。与漓江峰林和云南石林比较，武隆更突出较大的高差与地下空间暴露后的形态。中国南方喀斯特世界遗产由多个组成地构成，反映的也是多种岩溶景观，而不是一片处处相同的“石灰岩山”。",
+          "洞穴里还会发生与溶蚀方向不同的沉积。含溶解碳酸盐的水进入洞穴后，在二氧化碳逸出等适当条件下，碳酸钙可以重新析出。洞顶滴水处逐渐形成钟乳石，洞底滴落处形成石笋，二者接合后可以形成石柱。挖空岩体的溶蚀与洞内沉积能够属于同一套水循环的不同环节，也不意味着每个洞穴都有丰富钟乳石。",
+          "地下通道发达，使部分岩溶地区即使降雨不少，地表也可能缺少稳定溪流；与此同时，泉口能够集中排出地下的水。云贵高原上的聚落、耕地与山间低地，常需要适应这种水源分布。经由裂隙快速进入地下的污染物，也可能沿通道传到远处。地面的一处落水点、山里的洞穴与谷地泉水，因而可能属于同一套相连的系统。"
+        ],
+        "caseIds": [
+          "guilin-karst",
+          "shilin-karst",
+          "wulong-karst",
+          "yunnan-guizhou-plateau"
+        ],
+        "mediaIds": [
+          "diagram-karst",
+          "guilin-photo",
+          "karst-landscape-illustration"
+        ],
+        "mediaAfterParagraph": {
+          "diagram-karst": 2,
+          "guilin-photo": 3,
+          "karst-landscape-illustration": 5
+        }
+      },
+      {
+        "id": "redbeds-sandstone",
+        "title": "丹霞与砂岩峰林：相似的陡壁，不同的岩层",
+        "paragraphs": [
+          "离开典型的碳酸盐岩地区，红色崖壁与砂岩峰柱提供了另一组景观。丹霞地貌主要发育于陆相红色碎屑岩层，常见红色陡崖、方山、岩墙、石柱和峡谷。这里的“红层”先说明岩层的材料与颜色，“丹霞”还包含鲜明的地貌形态。红色常与岩石中的含铁矿物有关，但一片地表仅仅呈红色，并不足以判断它就是丹霞。",
+          "形成这类景观，先要有砂、砾、泥等材料沉积并成岩，后来岩层出露，才有风化和侵蚀能够逐步改造它。岩层抬升或周围低地加深，会提供继续切割的高差；流水沿节理和低洼处汇集，把岩体分割成不同部分。较耐侵蚀的层位可能保留为陡壁，较软弱的层位更易退缩，使岩壁上下形成不同轮廓。岩块失去支撑后又会崩落，崖壁逐渐后退。",
+          "广东丹霞山与湖南崀山都能看到红层峰体、陡壁与谷地的组合。有些峰顶保留较平缓的层面，有些则被进一步分割成狭窄峰柱；山脚和山谷还在接收崩落、冲刷产生的碎屑。这样的景观既保留了沉积岩层的结构，也记录着后来地表切割的过程。岩石形成的年代与今天崖壁的年龄并不相同，不能把很久以前的沉积时间直接当作眼前山峰的形成时间。",
+          "与喀斯特比较，丹霞也可能出现洞穴和天然桥，但这些形态不能自动说明发生了同样的溶蚀。岩壁较弱层位的侵蚀、沿裂隙的分割和岩体崩塌，都能形成空隙。判断机制需要看岩性和结构；“有洞”“有柱”“有桥”只是对形态的描述。即便同一处景观里存在局部溶解作用，也不能据此把整套景观都归为典型碳酸盐岩喀斯特。",
+          "湖南张家界武陵源最具代表性的景观是高耸的砂岩峰柱。远望时，它们与某些喀斯特峰林一样显得密集而陡峭，岩石材料却不同。砂岩中的层面与节理决定了水容易进入和岩块容易分离的方向，长期风化、流水侵蚀与崩塌则继续扩大沟谷和间隙。识别砂岩峰林，既要看一根石柱的形状，也要看石柱与相邻谷地怎样组成整片地形。",
+          "河北嶂石岩的代表景观则突出绵延的崖壁、阶梯状地形和相接的谷地。岩层性质及其排列，使崖壁在较大范围内呈现连续的层次。丹霞、张家界和嶂石岩常被并称为“中国三大砂岩地貌”，这个并称有助于认识典型景观，但不能代替对所有砂岩地貌的分类，也不意味着三个地区的岩石组合和形成条件完全一致。",
+          "把几种景观并排看，最有用的对照不是红色或灰色、像城堡或像森林，而是岩石怎样组成山体，层面和裂隙如何排列，水从哪里通过，哪些部分被移走。相似的峰柱可以有不同来历，同一类岩石也可以形成连续崖壁或分离山峰。照片呈现外形，剖面与地质资料则补充外形背后的联系。"
+        ],
+        "caseIds": [
+          "danxiashan",
+          "langshan-danxia"
+        ],
+        "mediaIds": [
+          "danxia-photo",
+          "diagram-danxia"
+        ],
+        "mediaAfterParagraph": {
+          "danxia-photo": 2,
+          "diagram-danxia": 3
+        }
+      },
+      {
+        "id": "granite",
+        "title": "花岗岩山地：从地下岩体到峰林与岩块",
+        "paragraphs": [
+          "花岗岩的形成环境与砂岩不同。它由地下岩浆缓慢冷却结晶形成，最初并不一定暴露在地表。经历地壳运动和上覆物质长期剥蚀以后，原先埋藏的岩体才逐渐出露。黄山的花岗岩峰体与岩石景观，就是认识这一类材料如何参与塑造地貌的典型入口。山峰不是岩浆沿着今天的轮廓凝固而成，地下成岩与地表成景之间还隔着一段漫长过程。",
+          "花岗岩常给人坚硬、完整的印象，实际岩体内部仍有节理。岩浆冷却、后来的构造作用及近地表应力变化，都可能参与形成或扩大裂隙。水和空气沿裂隙进入后，风化可以从岩体内部的分割面开始。多组裂隙相交，便把较大的岩体划分为不同尺度的岩块，流水和重力继续移走松动部分，山谷与峰体的轮廓逐渐显现。",
+          "裂隙间距较大时，可以留下块体较大的岩石；裂隙密集处更容易被分割和剥蚀。但实际形态还取决于坡度、矿物组成、风化深度与后来的搬运。岩块的棱角能够从多个方向受到风化，边角相对更易改变，逐渐产生较圆的形态；部分岩块则沿裂隙崩开，保留鲜明棱角。圆润岩块与陡峭岩峰可以出现在同一种岩石构成的地区。",
+          "这种比较也能帮助区分花岗岩山地与砂岩山地。砂岩常保存沉积层面的组织，花岗岩则更需要注意晶粒、矿物差异与节理系统。二者都可能出现陡崖、石柱和崩落岩块，形态名称并不能直接替代岩性判断。黄山的山峰、岩壁与孤立岩块应放在周围山谷及整个出露岩体中理解，不能把某块“像动物”的石头当成单独形成的地质类型。",
+          "中国山川的地方名称常保存了人们对外形的观察，科学解释则要继续追问这些外形怎样产生。花岗岩景观的价值，正在于它把地下的岩浆结晶与地表的风化侵蚀联系起来：今天看似直接立在山坡上的岩块，可能经历过深埋、出露、原地风化和周围材料被移走的多段历史。"
+        ],
+        "caseIds": [],
+        "mediaIds": [],
+        "mediaAfterParagraph": {}
+      },
+      {
+        "id": "rivers",
+        "title": "河流地貌：峡谷、阶地与平原是一条相连的水路",
+        "paragraphs": [
+          "河流地貌从山坡和支流开始，并不只存在于主河道两侧。降水在坡面汇集，细沟逐步连接成沟谷，河流再把不同地方的水与物质送向下游。河床向下切割、河岸向两侧退移以及泥沙重新堆积，会共同改变河谷。某一河段的形态，需要放回整个流域的来水、来沙和出口条件中理解。",
+          "当河流持续下切，而谷坡扩展的速度相对较慢时，可以形成狭深的谷地。岩性、裂隙和坡面崩落又使两岸呈现不同轮廓。长江上游和三峡一带的深切河谷，适合观察水路怎样穿过山地；照片里今天的水面还受到水库蓄水影响，不能直接把它当作河谷长期演化中始终不变的河床位置。瀑布处的岩层差异、断裂或河床落差，则会使下切集中在局部位置。",
+          "坡降较缓、河岸容易受到侵蚀的河段，河道常会弯曲。水流在弯道内的运动使凹岸较易被侵蚀，凸岸附近则常发生堆积，弯曲可能逐渐迁移；河道截弯后，旧弯道还可能留下牛轭湖。真实水流会受洪水、河床结构和工程影响，不是每个弯道都按完全相同的速度发展。曲流也并非只存在于平原，已经下切到岩石中的弯曲河谷，还可能保存较早的河道形态。",
+          "河漫滩是与洪水过程密切相关的低平地带。河道迁移和洪水漫溢把沉积物铺到两岸，逐渐形成不同的地层。如果河流后来加强下切，原先的河漫滩或谷底便可能高悬于今天河面之上，成为阶地。阶地像台阶，却不一定是人修出的平台；有的由河流沉积物组成，有的切在基岩上，也有两者结合的情况。不同阶地的形成要联系河流下切与堆积历史，不能仅凭级数推断发生过多少次构造抬升。",
+          "水流从狭窄山谷进入开阔山前时，流路展开，坡度与搬运条件改变，部分泥沙便可能停留。河道多次改道，沉积物逐步向外铺展，形成冲积扇。较粗砾石常见于较靠近山口的部位，细颗粒可以向外延伸，但洪水、泥石流和河道变迁会造成复杂的交错。多个冲积扇连在一起，可以形成广阔的山前沉积地带，并与更远处的平原相接。",
+          "华北平原的形成涉及多条河流长期搬运和堆积，地面之下保存着不同河道及沉积环境留下的材料。平原虽总体低缓，内部仍可能有旧河道、低洼地和微小高差。黄河的输沙与河道变化，则把上游山地、黄土地区和下游低地联系起来。平坦并不等于地面永远稳定，沉积、侵蚀、压实和人的用水、筑堤等活动都可能继续改变它。",
+          "到了河口，淡水携带的泥沙遇到海潮、海浪和沿岸水流。若一定时期内沉积的物质能够形成明显的河口堆积体，就可能发育三角洲。它不一定呈整齐的三角形，形态取决于河流来水来沙、海洋搬运、海平面和地面升降等条件。长江三角洲与湄公河三角洲都由河流和海洋共同塑造，支汊、水网与潮汐影响各有不同，不能把一个地区的规律原样套到另一个地区。",
+          "沿这条从山地到河口的水路，峡谷的切割、平原的堆积和海岸的变化并不互相独立。上游暂存了多少泥沙，支流加入了多少水，河道与湖泊怎样调节流动，都会影响更远处的形态。认识河流地貌，也就需要把一个地点的景观放回整条水路，理解它从哪里得到材料，又把材料送向哪里。"
+        ],
+        "caseIds": [
+          "yangtze",
+          "yellow-river",
+          "loess-plateau",
+          "north-china-plain",
+          "yangtze-delta",
+          "mekong-delta-farming"
+        ],
+        "mediaIds": [
+          "river-landscape-illustration",
+          "diagram-river-erosion",
+          "diagram-river-deposition"
+        ],
+        "mediaAfterParagraph": {
+          "river-landscape-illustration": 1,
+          "diagram-river-erosion": 3,
+          "diagram-river-deposition": 6
+        }
+      },
+      {
+        "id": "wind",
+        "title": "雅丹与沙丘：风移走的土地和风堆起的土地",
+        "paragraphs": [
+          "干旱地区不一定到处覆盖沙丘。裸岩、砾石地、干涸湖床和盐地，也可以组成荒漠景观。缺水常使植被较稀疏，地表的松散物质更容易暴露，但风能否搬动物质，还取决于风速、颗粒大小、地表结皮与水分。戈壁和撒哈拉都不能简单理解成一片连续沙海，雅丹与沙丘更代表了不同的物质收支。",
+          "风把松散颗粒从地面吹走，称为吹蚀；被风携带的砂粒撞击岩面，则能产生磨蚀。风蚀并不均匀发生，较弱层位和裂隙容易成为切割的起点，较耐侵蚀的部分留下。雅丹通常表现为被沟槽分开的垄脊、丘体或其他残留形态，许多具有与主导风作用相关的方向性。它们常发育在较易受侵蚀的沉积层中，却不是风从别处把沙堆成的山。",
+          "柴达木盆地内一些雅丹景观，建立在过去河湖沉积形成的材料之上。先有沉积物堆积，后来环境和出露条件变化，风蚀、水流冲刷与其他风化作用再参与改造。由此形成的形态既受风影响，也保存地层和旧环境的约束。并不是整个柴达木盆地都由雅丹覆盖，更不能根据一个盆地的轮廓推测雅丹的实际分布范围。",
+          "沙丘则由搬来的沙粒堆积而成。很多沙粒在风中作贴近地面的跳跃运动，撞击地面又带起其他颗粒；到达障碍物、植被周围或风力减弱的位置后，沙粒可能停下来。风继续把迎风侧的沙向上输送，沙越过丘脊后在背风侧沉积，坡面过陡时还会发生滑落。沙丘可以借此迁移，但迁移速度和方向会随供沙、风向和植被改变。",
+          "新月形、长条形或星状沙丘，反映了不同的风向组合、沙源与地表条件。形态提供了线索，却不能只看一张照片就准确还原当地全年风场。塔克拉玛干的大面积沙丘与周边山地、盆地沉积和长期风沙过程有关；并非每一粒沙都由当下的风把附近岩石直接磨碎而来，河流和更早的沉积历史也能提供沙源。",
+          "纳米布砂海把沙丘与海岸环境联系起来。供沙、风和地形共同组织沙丘，来自海洋的雾又参与维持局部生境。把它与大陆内部的塔克拉玛干比较，可以看见相似沙丘形态背后的不同水分来源和区域条件。沙丘本身是否活动，还需观察表面植被、结皮和实际搬运，不能把所有沙丘都想象成不断前进的沙浪。",
+          "雅丹和沙丘有时相邻，却分别突出材料被移走与被留下。更细的尘粒还能越过沙丘，在空中悬浮更久、传播更远。它们的沉积把风沙过程与黄土地貌接了起来；风的作用并不止于沙漠边界，今天的地貌也不能只用当地正在发生的过程来解释。"
+        ],
+        "caseIds": [
+          "gobi-desert",
+          "qaidam-basin",
+          "sahara",
+          "taklamakan",
+          "namib-sand-sea"
+        ],
+        "mediaIds": [
+          "diagram-yardang",
+          "diagram-dunes",
+          "dunes-photo"
+        ],
+        "mediaAfterParagraph": {
+          "diagram-yardang": 2,
+          "diagram-dunes": 4,
+          "dunes-photo": 5
+        }
+      },
+      {
+        "id": "loess",
+        "title": "黄土高原：风积粉尘怎样变成塬、梁、峁",
+        "paragraphs": [
+          "黄土是以粉砂颗粒为主的松散沉积物，不能简单等同于所有颜色发黄的土壤。中国黄土高原的大量黄土，与粉尘被风搬运并长期沉积有关。粉尘物源和搬运路径涉及不同地区、不同阶段的多种过程，山地剥蚀、河流搬运及干旱区物质再起动，都可能参与其中，不能把全部黄土只归于一个沙漠。",
+          "粉尘覆盖在既有地形上，厚薄会随位置和沉积、侵蚀历史而变化。沉积间歇中，植物与土壤形成过程又能改造地表，留下与黄土层交替出现的古土壤层。这些地层记录的环境变化，与今天看见的沟壑外形是不同层面的信息。黄土堆积给出了材料，后来的流水侵蚀则大幅改变了材料的形态。",
+          "雨滴打击、坡面径流和沟道汇流，使颗粒逐渐离开原处。细小水流在地表汇成沟，沟头向上游扩展，沟岸退缩，原先较连续的地面便被分割。较宽阔、顶部相对平坦的残留高地称为塬，较狭长的高地称为梁，孤立或较圆的丘体称为峁。它们主要描述形态，不是一套所有地方都必须依次经历、速度相同的演化阶段。",
+          "黄土高原并非只由厚黄土覆盖，区域内部还有基岩山地、河谷平原和其他地表。即使在黄土覆盖地区，坡度、降雨、植被和土地利用也各不相同。一些黄土崖壁可以保持陡直外观，但这种外观并不意味着材料像致密岩石一样稳定；裂隙、浸水和坡脚条件改变，都可能影响局部稳定性。",
+          "被侵蚀的粉尘颗粒进入沟道，成为河流输沙的一部分，黄河又把不同支流的水沙联系起来。黄土高原的地貌因此同时保存着风的沉积和水的切割，不能只归为风成或只归为流水作用。坡面覆盖、耕作方式和沟道工程能够影响新的侵蚀与沉积，却不能把已经形成的地形历史立即抹去。理解这些过程，才知道水土保持为什么需要同时考虑坡面、沟谷与下游水路。"
+        ],
+        "caseIds": [
+          "loess-plateau",
+          "yellow-river"
+        ],
+        "mediaIds": [
+          "diagram-loess"
+        ],
+        "mediaAfterParagraph": {
+          "diagram-loess": 2
+        }
+      },
+      {
+        "id": "glaciers",
+        "title": "冰川地貌：流动的冰留下怎样的谷地",
+        "paragraphs": [
+          "冰川是能够在重力作用下流动的冰体，常由多年积雪逐步压实和转化形成。它不同于只在冬季覆盖地面的积雪。冰的内部变形，以及具备条件时冰体底部相对地面的滑动，使冰川缓慢移动。嵌在冰中的岩屑能够磨蚀基岩，冰与裂隙中的水又能参与松动和拔取岩块，逐步改变谷底与谷壁。",
+          "山谷中的河流常把切割集中在较窄的水道，冰川则可以占据更宽的谷地，对谷底和两侧同时发生作用。经过长期改造，谷地可能形成较宽的谷底与陡峭谷壁，横断面近似U形。实际谷形还受原有地形和岩石控制，并非所有冰川谷都像标准字母。阿尔卑斯和喜马拉雅的许多高山谷地，可用来理解抬升形成的高差怎样再被冰川改造。",
+          "在山地上部，冰雪积聚和侵蚀能够形成碗状凹地，即冰斗。相邻冰斗或谷地向山体内部侵蚀，其间可能留下尖锐山脊；多个方向的侵蚀共同作用，又可能保留尖峭峰体。支谷冰川与主谷冰川的侵蚀程度不同，支谷谷底可能高于主谷，冰退后形成悬谷，流水从较高处落下。这样的空间关系，比单独记住一个角峰或U形谷的名称更能说明过程。",
+          "冰川还会搬运大量碎屑。冰体消融后，不同大小的颗粒可以混杂堆积，形成冰碛；沿冰缘或冰川末端留下的垄状堆积，记录了冰体曾经到达的位置。冰川融水又会重新分选和搬运这些材料，所以冰碛与融水沉积的颗粒排列可能不同。河流后来进入冰川谷，也会在旧谷底切出新的河道。",
+          "今天没有冰的地区，也可以保存冰川遗迹。北美五大湖所在地区曾受到大陆冰盖改造，湖盆的形成与更早的地质基础、反复冰蚀及冰后变化共同有关，并非某一次冰川活动均匀挖出了五个盆。美国优胜美地的谷地照片则展示了山谷中保留下来的冰川改造线索。比较这两种尺度，可以区分高山谷地冰川与广阔大陆冰盖对地形的不同影响。",
+          "冰川前进或退缩，指的是末端位置变化，不等于内部冰体停止或反向流动。即使末端退缩，冰仍可能向下游流动，只是消融等损失超过了补充。认识冰川地貌时，还要把过去的冰川范围与今天的冰体分开：谷形保存历史，当前冰川的位置和质量变化则需要新的观测资料。"
+        ],
+        "caseIds": [
+          "alps",
+          "himalayas",
+          "great-lakes"
+        ],
+        "mediaIds": [
+          "glacier-valley-illustration",
+          "diagram-glaciers",
+          "glacier-photo"
+        ],
+        "mediaAfterParagraph": {
+          "glacier-valley-illustration": 1,
+          "diagram-glaciers": 2,
+          "glacier-photo": 4
+        }
+      },
+      {
+        "id": "volcanoes",
+        "title": "火山地貌：喷发建造地面，侵蚀继续改造",
+        "paragraphs": [
+          "许多地貌来自原有材料被搬走，火山活动则能把地下物质直接带到地表，建造新的山体或覆盖旧地形。喷出的熔岩冷却成岩，火山灰、浮石及较大的碎块也会落下堆积。喷发方式、物质性质和次数不同，地面形成的轮廓就不同。认识火山地貌，不能只寻找一座顶部冒烟的圆锥山。",
+          "较易流动的熔岩能够铺展较远，多次溢流可以构成宽缓的火山体或广阔熔岩地形；比较黏稠的岩浆、气体释放和爆发性喷出，则会形成不同的堆积。层状火山常由多期熔岩及火山碎屑共同建成，富士山提供了较醒目的外形案例，但即便轮廓接近对称，内部也有复杂的喷发历史。外形本身不能判断一座火山当下是否安全或即将喷发。",
+          "火山口通常与喷发通道附近的活动有关，较大的破火山口则常与岩浆排出后上方岩体塌陷等过程相连。它们不是同一个概念，也不能把所有圆形盆地或湖泊都解释成火山口。地形、岩石与喷发沉积需要共同支持判断。火山停止喷发后，降水和地下水可以进入洼地，但有没有湖、湖水多深，还取决于排水与渗漏条件。",
+          "德干高原的玄武岩展示了另一种火山景观：大规模熔岩铺展，留下厚层火山岩，而不只是一座孤立锥体。夏威夷与富士山的比较，还能帮助区分不同构造环境中的火山活动。火山与板块运动有重要联系，但并非所有火山都紧贴板块边界；地貌的解释需要回到具体岩浆来源和地质背景。",
+          "黑龙江五大连池把火山锥、熔岩地形与湖泊放在同一个区域中。喷出的熔岩沿地势铺展，能够阻挡原有水路，使水在低处汇集，形成熔岩堰塞湖；五大连池的相连湖泊正与这种过程有关。湖面虽然位于火山地区，却不能因此都叫火山口湖。比较湖泊与火山锥、熔岩边缘的位置，便能理解火山活动怎样改变原有的排水。",
+          "喷发以后，河流切沟、岩石风化与坡面崩落继续发生，有些火山的原始轮廓会被大幅改变。今天看见的山体既有喷发时堆积的部分，也有后来被削去的部分。火山地貌因此同时包含建造和拆解的历史，与前面讲过的流水、冰川和重力作用相接。"
+        ],
+        "caseIds": [
+          "fujisan",
+          "deccan-plateau",
+          "hawaii-hotspot"
+        ],
+        "mediaIds": [
+          "volcano-photo"
+        ],
+        "mediaAfterParagraph": {
+          "volcano-photo": 1
+        }
+      },
+      {
+        "id": "coasts",
+        "title": "海岸地貌：岩岸、沙滩与河口如何变化",
+        "paragraphs": [
+          "海岸是陆地与海洋相互作用的一带，而非固定不动的一条线。海浪把能量送到岸边，潮汐改变水位和水流，河流带来泥沙，沿岸水流又把材料移向其他地方。陆地的岩石、海底坡度、来沙与相对海平面变化共同决定岸线形态。同一片海岸可以既有侵蚀的岬角，也有堆积的海湾。",
+          "海浪接触岩岸时，水流冲击、裂隙中的压力变化以及砂砾磨蚀等过程会改造岩面。节理与较弱层位可能先被扩大，形成洞穴；岩体局部贯通后可以出现海蚀拱桥，桥顶崩塌后又可能留下孤立岩柱。这个顺序有助于理解部分岩岸景观，却不是每根海蚀柱都能机械套用的完整历史。海蚀崖不断后退时，崖前还可能留下被侵蚀形成的平台。",
+          "澳大利亚十二使徒岩岸的照片展示了岩柱、崖壁与海面的关系，辽东和山东丘陵则提供中国山地、丘陵与海岸相接的区域背景。区域中既有岩岸，也有河口低地和沉积岸段；不能把整个半岛都当成一种海岸，更不能由丘陵范围推断每一处海蚀形态的位置。具体景观需要在合适尺度的地质与海岸资料中辨认。",
+          "沙滩由砂粒在岸边反复搬运、堆积形成。海浪斜向进入海岸时，水和沙的运动能够产生沿岸输送，沙便可能沿岸迁移并在海湾口或岸线转折处堆积。向水中伸出的狭长沙体称为沙嘴；沙坝或其他障壁部分隔开海水后，后方可以形成潟湖。它们常与潮汐通道、风暴和来沙变化相互影响，不是建成以后便永久稳定的地形。",
+          "河口又把海岸联系到整片内陆流域。长江河口的淡水、泥沙与海潮相遇，形成支汊、沙洲与潮滩等相互联系的地形。若来沙减少、海侧搬运增强或地面沉降，即使河流仍在输沙，某些岸段也可能后退。三角洲是否继续向海推进，需要看物质收支和容纳沉积的空间，不能只看河水是否浑浊。",
+          "孙德尔本斯的潮汐河道、泥滩与红树林，则展示生物怎样参与海岸过程。植物根系和地表结构能够影响水流、拦留沉积物，地势与潮水又决定植物生长的环境。湿地既受局地条件影响，也依赖上游来水来沙和海侧水位。地形、生态与水文因此在海岸相互联系。",
+          "从岩岸到潮滩，海岸形态持续记录侵蚀、堆积与水位变化。把海岸与内陆的峡谷、平原、沙丘放在一起，便能看到不同地貌之间的共同联系：材料被释放、搬运、暂存，又可能再次移动。认识一处景观时，既要辨认它眼前的形态，也要理解它连接着哪些水路、物源和过去的环境。"
+        ],
+        "caseIds": [
+          "liaodong-hills",
+          "shandong-hills",
+          "yangtze-delta",
+          "sundarbans-mangroves"
+        ],
+        "mediaIds": [
+          "coast-photo",
+          "diagram-coasts",
+          "coast-landforms-illustration"
+        ],
+        "mediaAfterParagraph": {
+          "coast-photo": 1,
+          "diagram-coasts": 3,
+          "coast-landforms-illustration": 5
+        }
+      }
+    ],
+    "questions": [
+      {
+        "question": "桂林与张家界都能看见高耸的峰体，为什么不能仅凭外形把它们归为同一种地貌？",
+        "answer": "峰体的外形不能单独说明成因。桂林的典型峰林发育于碳酸盐岩，溶蚀与地下排水具有重要作用；张家界武陵源的代表性峰柱由砂岩构成，需要结合岩层、节理及流水侵蚀、风化和崩塌来解释。"
+      },
+      {
+        "question": "雅丹、沙丘与黄土沟壑分别保存了怎样的物质运动？",
+        "answer": "雅丹主要是原有地层被侵蚀后留下的形态，沙丘由搬来的沙粒堆积而成，黄土沟壑则多是在风积粉尘的基础上被流水切割形成。它们说明侵蚀与沉积可以在不同位置和不同时期相接。"
+      }
+    ],
+    "sources": [
+      {
+        "title": "nps.gov · landforms",
+        "url": "https://www.nps.gov/subjects/geology/landforms.htm"
+      },
+      {
+        "title": "nps.gov · fluvial landforms",
+        "url": "https://www.nps.gov/subjects/geology/fluvial-landforms.htm"
+      },
+      {
+        "title": "nps.gov · aeolian landforms",
+        "url": "https://www.nps.gov/subjects/geology/aeolian-landforms.htm"
+      },
+      {
+        "title": "USGS · The Himalayas: Two continents collide",
+        "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html"
+      },
+      {
+        "title": "USGS · Seismicity of the Earth: Himalaya and vicinity",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+      },
+      {
+        "title": "中国科学院地质地球所 · 黄土形成与物源",
+        "url": "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html"
+      },
+      {
+        "title": "中国科学院地球环境所 · 河谷砂黄土风—水过程",
+        "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
+      },
+      {
+        "title": "宁夏水利厅 · 亚洲第一长河——长江",
+        "url": "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html"
+      },
+      {
+        "title": "重庆市水利局 · 长江",
+        "url": "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html"
+      },
+      {
+        "title": "nps.gov · rocks",
+        "url": "https://www.nps.gov/subjects/geology/rocks.htm"
+      },
+      {
+        "title": "nps.gov · igneous",
+        "url": "https://www.nps.gov/subjects/geology/igneous.htm"
+      },
+      {
+        "title": "nps.gov · sedimentary",
+        "url": "https://www.nps.gov/subjects/geology/sedimentary.htm"
+      },
+      {
+        "title": "nps.gov · metamorphic",
+        "url": "https://www.nps.gov/subjects/geology/metamorphic.htm"
+      },
+      {
+        "title": "NASA Earth Observatory · Lonar Crater, India",
+        "url": "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/"
+      },
+      {
+        "title": "NOAA NESDIS · What Is a Monsoon?",
+        "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+      },
+      {
+        "title": "Natural Earth · 自然地理区域参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+      },
+      {
+        "title": "UNESCO · China Danxia",
+        "url": "https://whc.unesco.org/en/list/1335/"
+      },
+      {
+        "title": "UNESCO · 组成地地图与参考坐标",
+        "url": "https://whc.unesco.org/en/list/1335/maps/"
+      },
+      {
+        "title": "UNESCO · South China Karst",
+        "url": "https://whc.unesco.org/en/list/1248/"
+      },
+      {
+        "title": "UNESCO · 组成地地图与参考坐标",
+        "url": "https://whc.unesco.org/en/list/1248/maps/"
+      },
+      {
+        "title": "usgs.gov · karst aquifers",
+        "url": "https://www.usgs.gov/mission-areas/water-resources/science/karst-aquifers"
+      },
+      {
+        "title": "nps.gov · karst landscapes",
+        "url": "https://www.nps.gov/subjects/caves/karst-landscapes.htm"
+      },
+      {
+        "title": "中国科学院地理资源所 · 云南高原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 云贵高原气候",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html"
+      },
+      {
+        "title": "生态环境部 · 黄河流域生态保护规划",
+        "url": "https://www.mee.gov.cn/zcwj/zyygwj/202110/t20211009_955779.shtml"
+      },
+      {
+        "title": "黄河水利委员会 · 黄河防汛辨析",
+        "url": "https://www.yrcc.gov.cn/zwzc/zcjd/202403/t20240312_426969.html"
+      },
+      {
+        "title": "nps.gov · coastal landforms",
+        "url": "https://www.nps.gov/subjects/geology/coastal-landforms.htm"
+      },
+      {
+        "title": "中国科学院地理资源所 · 华北平原",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
+      },
+      {
+        "title": "中国政府网 · 长江三角洲区域一体化发展规划纲要（2019）",
+        "url": "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html"
+      },
+      {
+        "title": "上海市人民政府 · Geography（2024年末面积）",
+        "url": "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html"
+      },
+      {
+        "title": "中国科学院地理资源所 · 太湖",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html"
+      },
+      {
+        "title": "中国科学院南京地湖所 · 浅水湖泊水动力",
+        "url": "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
+      },
+      {
+        "title": "World Bank · Greening Viet Nam’s Rice Bowl: A Mekong Delta Success Story",
+        "url": "https://www.worldbank.org/en/news/feature/2024/05/14/greening-viet-nam-s-rice-bowl-a-mekong-delta-success-story"
+      },
+      {
+        "title": "World Bank · For Mekong Delta Farmers, Diversification is the Key to Climate Resilience",
+        "url": "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience"
+      },
+      {
+        "title": "NASA Earth Observatory · Dust Storm over the Gobi Desert",
+        "url": "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-gobi-desert-79746/"
+      },
+      {
+        "title": "中国科学院地理资源所 · 柴达木盆地",
+        "url": "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html"
+      },
+      {
+        "title": "中国政府网资料 · 地形分布",
+        "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      },
+      {
+        "title": "中国科学院青海盐湖研究所 · 柴达木盆地盐湖锂矿床成因研究",
+        "url": "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html"
+      },
+      {
+        "title": "青海省人民政府 · 十四五规划资源利用与生态保护",
+        "url": "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
+      },
+      {
+        "title": "NOAA · Climate Zones",
+        "url": "https://www.noaa.gov/jetstream/global/climate-zones"
+      },
+      {
+        "title": "NOAA · Saharan Air Layer",
+        "url": "https://www.aoml.noaa.gov/saharan-air-layer/"
+      },
+      {
+        "title": "UNESCO · Namib Sand Sea",
+        "url": "https://whc.unesco.org/en/list/1430/"
+      },
+      {
+        "title": "中国科学院地理资源所 · 塔克拉玛干沙漠",
+        "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692338.html"
+      },
+      {
+        "title": "NASA · The Taklimakan Desert: A Factory for Dust Storms",
+        "url": "https://science.nasa.gov/earth/earth-observatory/the-taklimakan-desert-a-factory-for-dust-storms-87969/"
+      },
+      {
+        "title": "NOAA · What is upwelling?",
+        "url": "https://oceanservice.noaa.gov/facts/upwelling.html"
+      },
+      {
+        "title": "nps.gov · glacial landforms",
+        "url": "https://www.nps.gov/subjects/geology/glacial-landforms.htm"
+      },
+      {
+        "title": "nps.gov · ushapedvalleysfjordshangingvalleys",
+        "url": "https://www.nps.gov/articles/ushapedvalleysfjordshangingvalleys.htm"
+      },
+      {
+        "title": "苏黎世联邦理工地震研究所 · Switzerland tectonics",
+        "url": "https://www.seismo.ethz.ch/en/knowledge/causes-of-earthquakes/Switzerland/"
+      },
+      {
+        "title": "NOAA · Great Lakes ecoregion",
+        "url": "https://www.noaa.gov/education/resource-collections/freshwater/great-lakes-ecoregion"
+      },
+      {
+        "title": "US EPA · Great Lakes environmental atlas",
+        "url": "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004ICU.TXT"
+      },
+      {
+        "title": "辽宁省人民政府 · 主体功能区规划自然条件",
+        "url": "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml"
+      },
+      {
+        "title": "山东省情资料库 · 自然地理",
+        "url": "https://shandong-chorography.org/database/f063/section/19/article/2/?reflow=original"
+      },
+      {
+        "title": "UNESCO · The Sundarbans",
+        "url": "https://whc.unesco.org/en/list/798/"
+      },
+      {
+        "title": "ESA WorldCover · Data access",
+        "url": "https://esa-worldcover.org/en/data-access"
+      },
+      {
+        "title": "USGS · Understanding plate motions",
+        "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+      },
+      {
+        "title": "UNESCO · Þingvellir National Park",
+        "url": "https://whc.unesco.org/en/list/1152/"
+      },
+      {
+        "title": "USGS · Parkfield: Tectonic Setting",
+        "url": "https://earthquake.usgs.gov/learn/parkfield/geology.php"
+      },
+      {
+        "title": "USGS · What is a hotspot and how do you know it is there?",
+        "url": "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there"
+      },
+      {
+        "title": "USGS · East African Rift seismotectonics",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift"
+      },
+      {
+        "title": "Scientific Data · White Nile basin lakes",
+        "url": "https://www.nature.com/articles/s41597-022-01742-3"
+      },
+      {
+        "title": "USGS · South America seismotectonics",
+        "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region"
+      },
+      {
+        "title": "NASA · Mud from the Andes Carried by the Amazon",
+        "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+      },
+      {
+        "title": "UNESCO · Fujisan, sacred place and source of artistic inspiration",
+        "url": "https://whc.unesco.org/en/list/1418/"
+      },
+      {
+        "title": "日本气象厅 · 富士山火山资料",
+        "url": "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html"
+      },
+      {
+        "title": "USGS · 板块边界数据与原始归属",
+        "url": "https://earthquake.usgs.gov/arcgis/rest/services/eq/map_plateboundaries/MapServer"
+      },
+      {
+        "title": "nps.gov · index",
+        "url": "https://www.nps.gov/subjects/volcanoes/index.htm"
+      },
+      {
+        "title": "UNESCO · Wulingyuan Scenic and Historic Interest Area",
+        "url": "https://whc.unesco.org/en/list/640/"
+      },
+      {
+        "title": "UNESCO · Mount Huangshan",
+        "url": "https://whc.unesco.org/en/list/547/"
+      },
+      {
+        "title": "NPS · Volcanic Landforms",
+        "url": "https://www.nps.gov/subjects/geology/volcanic-landforms.htm"
+      },
+      {
+        "title": "石家庄市文化广电和旅游局 · 嶂石岩与三大砂岩地貌",
+        "url": "https://wglj.sjz.gov.cn/columns/4bccb071-c987-46a8-9718-77801cb4eb16/202507/26/37b527a6-99cf-4d1d-b276-f2227f1320d5.html"
+      },
+      {
+        "title": "Smithsonian Global Volcanism Program · Wudalianchi",
+        "url": "https://volcano.si.edu/volcano.cfm?vn=305030"
+      },
+      {
+        "title": "USGS · Geology of Joshua Tree National Park",
+        "url": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-joshua-tree-national-park"
+      }
+    ]
+  }
+]

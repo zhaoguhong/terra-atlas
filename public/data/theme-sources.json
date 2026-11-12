@@ -143,8 +143,8 @@
     "method": "显式14个实体ID与固定名录逐项比较，原始输入SHA-256核对；每个坐标数值有效、落在对应亚洲高山区域，各卡绑定到同一实体ID；不使用名称模糊匹配生成范围。",
     "limitations": "峰顶参考坐标不代表正式测量精度；自然区域图形仍为制图标注参考范围。",
     "classicSummits": 14,
-    "collectionTopics": 7,
+    "collectionTopics": 9,
     "distributionTopics": 4,
-    "connectionTopics": 21
+    "connectionTopics": 17
   }
 }

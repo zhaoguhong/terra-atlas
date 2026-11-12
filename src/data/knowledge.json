@@ -71,7 +71,7 @@
       "world-terrain",
       "world-tectonics",
       "landform-processes",
-      "landform-glaciers",
+      "landform-landscapes",
       "earth-hazards"
     ],
     "mediaIds": [
@@ -668,7 +668,7 @@
     ],
     "readingTopicIds": [
       "world-terrain",
-      "landform-glaciers"
+      "landform-landscapes"
     ],
     "mediaIds": [
       "diagram-structures"
@@ -908,8 +908,7 @@
       "china-terrain",
       "world-ecosystems",
       "landform-processes",
-      "landform-rivers",
-      "landform-wind",
+      "landform-landscapes",
       "earth-hazards"
     ]
   },
@@ -1073,7 +1072,7 @@
     "mapZoom": 3.8,
     "readingTopicIds": [
       "china-terrain",
-      "landform-karst"
+      "landform-landscapes"
     ]
   },
   {
@@ -1146,7 +1145,7 @@
       "china-terrain",
       "china-regions",
       "agriculture-food",
-      "landform-rivers"
+      "landform-landscapes"
     ]
   },
   {
@@ -1437,7 +1436,7 @@
     ],
     "readingTopicIds": [
       "drylands",
-      "landform-wind"
+      "landform-landscapes"
     ]
   },
   {
@@ -1507,7 +1506,7 @@
     ],
     "readingTopicIds": [
       "drylands",
-      "landform-wind"
+      "landform-landscapes"
     ]
   },
   {
@@ -1809,7 +1808,7 @@
     "readingTopicIds": [
       "china-rivers",
       "landform-processes",
-      "landform-rivers",
+      "landform-landscapes",
       "water-cycle"
     ],
     "mediaIds": [
@@ -1886,8 +1885,7 @@
     ],
     "readingTopicIds": [
       "china-rivers",
-      "landform-rivers",
-      "landform-wind"
+      "landform-landscapes"
     ],
     "mediaIds": [
       "diagram-river-system"
@@ -2553,7 +2551,7 @@
     ],
     "readingTopicIds": [
       "world-rivers",
-      "world-continents"
+      "world-regional-comparison"
     ],
     "mediaIds": [
       "diagram-river-system"
@@ -3083,7 +3081,7 @@
     ],
     "readingTopicIds": [
       "world-rivers",
-      "landform-glaciers"
+      "landform-landscapes"
     ],
     "mediaIds": [
       "diagram-lake-balance"
@@ -4004,7 +4002,7 @@
       "工业交通"
     ],
     "readingTopicIds": [
-      "world-continents"
+      "world-regional-comparison"
     ]
   },
   {
@@ -4091,7 +4089,7 @@
       "人口与水"
     ],
     "readingTopicIds": [
-      "world-continents"
+      "world-regional-comparison"
     ]
   },
   {
@@ -4343,7 +4341,7 @@
     ],
     "readingTopicIds": [
       "map-climate",
-      "world-continents"
+      "world-regional-comparison"
     ]
   },
   {
@@ -4423,7 +4421,7 @@
     "readingTopicIds": [
       "map-climate",
       "drylands",
-      "world-continents"
+      "world-regional-comparison"
     ]
   },
   {
@@ -4568,7 +4566,7 @@
       "文化多元"
     ],
     "readingTopicIds": [
-      "world-continents",
+      "world-regional-comparison",
       "world-tectonics"
     ]
   },
@@ -4644,7 +4642,7 @@
     ],
     "readingTopicIds": [
       "energy-industry",
-      "world-continents"
+      "world-regional-comparison"
     ]
   },
   {
@@ -4795,7 +4793,7 @@
     ],
     "mapZoom": 2.7,
     "readingTopicIds": [
-      "world-continents"
+      "world-regional-comparison"
     ]
   },
   {
@@ -4860,7 +4858,7 @@
     ],
     "mapZoom": 3.4,
     "readingTopicIds": [
-      "world-continents"
+      "world-regional-comparison"
     ]
   },
   {
@@ -4929,7 +4927,7 @@
     ],
     "mapZoom": 3,
     "readingTopicIds": [
-      "world-continents"
+      "world-regional-comparison"
     ]
   },
   {
@@ -5003,7 +5001,7 @@
     ],
     "mapZoom": 1.8,
     "readingTopicIds": [
-      "world-continents"
+      "world-regional-comparison"
     ]
   },
   {
@@ -5969,7 +5967,8 @@
     ],
     "readingTopicIds": [
       "world-terrain",
-      "world-tectonics"
+      "world-tectonics",
+      "landform-landscapes"
     ],
     "mediaIds": [
       "volcano-photo"
@@ -6005,7 +6004,7 @@
     "facts": [
       {
         "label": "面积概述",
-        "value": "约1.66亿平方千米；NOAA JetStream五大洋分区表口径"
+        "value": "约16,872.3万平方千米；NOAA NCEI ETOPO1表口径，五洋分区中南大洋北界60°S，合并原表另列南海"
       },
       {
         "label": "概念提醒",
@@ -6020,6 +6019,14 @@
       {
         "title": "NOAA · How many oceans are there?",
         "url": "https://oceanservice.noaa.gov/facts/howmanyoceans.html"
+      },
+      {
+        "title": "IHO · 决议02/2023：承认南大洋及海域界限（M-3，2024年7月版，第110—113页）",
+        "url": "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf"
+      },
+      {
+        "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+        "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
       }
     ],
     "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
@@ -6044,6 +6051,7 @@
     ],
     "mapZoom": 1.3,
     "readingTopicIds": [
+      "world-oceans",
       "transport-trade"
     ]
   },
@@ -6077,7 +6085,7 @@
     "facts": [
       {
         "label": "面积概述",
-        "value": "约8,200万平方千米；NOAA JetStream五大洋分区表口径"
+        "value": "约8,513.3万平方千米；NOAA NCEI ETOPO1表口径，五洋分区中南大洋北界60°S"
       }
     ],
     "sources": [
@@ -6088,6 +6096,14 @@
       {
         "title": "NOAA · Atlantic Meridional Overturning Circulation",
         "url": "https://oceanservice.noaa.gov/facts/amoc.html"
+      },
+      {
+        "title": "IHO · 决议02/2023：承认南大洋及海域界限（M-3，2024年7月版，第110—113页）",
+        "url": "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf"
+      },
+      {
+        "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+        "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
       }
     ],
     "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
@@ -6112,6 +6128,7 @@
     ],
     "mapZoom": 1.5,
     "readingTopicIds": [
+      "world-oceans",
       "transport-trade"
     ]
   },
@@ -6145,7 +6162,7 @@
     "facts": [
       {
         "label": "面积概述",
-        "value": "约7,360万平方千米；NOAA JetStream五大洋分区表口径"
+        "value": "约7,056万平方千米；NOAA NCEI ETOPO1表口径，五洋分区中南大洋北界60°S"
       }
     ],
     "sources": [
@@ -6160,6 +6177,14 @@
       {
         "title": "World Bank · India: Managing Floods and Droughts（2023）",
         "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+      },
+      {
+        "title": "IHO · 决议02/2023：承认南大洋及海域界限（M-3，2024年7月版，第110—113页）",
+        "url": "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf"
+      },
+      {
+        "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+        "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
       }
     ],
     "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
@@ -6184,6 +6209,7 @@
     ],
     "mapZoom": 1.5,
     "readingTopicIds": [
+      "world-oceans",
       "transport-trade"
     ]
   },
@@ -6215,8 +6241,12 @@
     ],
     "facts": [
       {
+        "label": "面积概述",
+        "value": "约1,555.8万平方千米；NOAA NCEI ETOPO1表口径，五洋分区中南大洋北界60°S"
+      },
+      {
         "label": "面积口径",
-        "value": "约1,560万平方千米；NOAA National Ocean Service页面口径，与其它分区表不同"
+        "value": "与本站五大洋面积图同用NOAA NCEI ETOPO1表；海冰面积另按季节变化。"
       },
       {
         "label": "平均深度",
@@ -6231,6 +6261,14 @@
       {
         "title": "NASA · Ice and Clouds in the Bering Strait",
         "url": "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/"
+      },
+      {
+        "title": "IHO · 决议02/2023：承认南大洋及海域界限（M-3，2024年7月版，第110—113页）",
+        "url": "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf"
+      },
+      {
+        "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+        "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
       }
     ],
     "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
@@ -6255,6 +6293,7 @@
     ],
     "mapZoom": 1.5,
     "readingTopicIds": [
+      "world-oceans",
       "transport-trade",
       "world-polar-comparison"
     ]
@@ -8130,8 +8169,7 @@
     "readingTopicIds": [
       "agriculture-food",
       "earth-map-reading",
-      "landform-rivers",
-      "landform-coasts",
+      "landform-landscapes",
       "earth-hazards",
       "climate-change"
     ]
@@ -9230,7 +9268,7 @@
     "readingTopicIds": [
       "china-terrain",
       "energy-industry",
-      "landform-wind"
+      "landform-landscapes"
     ]
   },
   {
@@ -10199,7 +10237,7 @@
     "sections": [
       {
         "title": "在高峰群中的位置",
-        "body": "希夏邦马峰的参考点在卓奥友峰与珠穆朗玛峰西北侧、马纳斯鲁峰东北侧。把它放回十四座主峰的全览图，观察喜马拉雅山地的连续走向。"
+        "body": "希夏邦马峰的参考点在卓奥友峰与珠穆朗玛峰西北侧、马纳斯鲁峰东南侧。把它放回十四座主峰的全览图，观察喜马拉雅山地的连续走向。"
       },
       {
         "title": "从山峰看山地",
@@ -13094,7 +13132,7 @@
     "mapZoom": 4,
     "readingTopicIds": [
       "china-terrain",
-      "landform-coasts"
+      "landform-landscapes"
     ]
   },
   {
@@ -13161,7 +13199,7 @@
     "mapZoom": 4,
     "readingTopicIds": [
       "china-terrain",
-      "landform-coasts"
+      "landform-landscapes"
     ]
   },
   {
@@ -13767,7 +13805,8 @@
       "world-terrain",
       "world-tectonics",
       "world-ocean-monsoon",
-      "landform-processes"
+      "landform-processes",
+      "landform-landscapes"
     ]
   },
   {
@@ -14149,7 +14188,7 @@
     "readingTopicIds": [
       "drylands",
       "world-ecosystems",
-      "landform-wind"
+      "landform-landscapes"
     ],
     "mediaIds": [
       "dunes-photo"
@@ -14222,7 +14261,7 @@
     "geometryNote": "色面采用Natural Earth同名地理对象的1:1000万概化标注参考范围，用于观察整体位置与延伸；不是精确地貌边界、植被分布或行政范围。",
     "readingTopicIds": [
       "drylands",
-      "landform-wind"
+      "landform-landscapes"
     ]
   },
   {
@@ -14433,7 +14472,8 @@
     "mapZoom": 4,
     "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。",
     "readingTopicIds": [
-      "world-tectonics"
+      "world-tectonics",
+      "landform-landscapes"
     ],
     "mediaIds": [
       "diagram-structures"
@@ -14713,7 +14753,7 @@
     "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。",
     "readingTopicIds": [
       "world-ecosystems",
-      "landform-coasts"
+      "landform-landscapes"
     ]
   },
   {
@@ -15406,7 +15446,7 @@
     "geometryNote": "以约略参考点定位本卡讨论的区域或案例；没有范围一致且已核验的图形，不绘制边界，也不以国家、省区或相邻自然区替代。",
     "readingTopicIds": [
       "agriculture-food",
-      "landform-rivers"
+      "landform-landscapes"
     ]
   },
   {
@@ -15704,13 +15744,17 @@
       -60
     ],
     "summary": "南大洋环绕南极洲，连接太平洋、大西洋和印度洋。南极绕极流是其重要环流，海冰的季节伸缩又使海洋、冰与大气持续相互影响。",
-    "location": "南极洲周围海域，参考点选在德雷克海峡附近，不表示统一海洋边界。",
+    "location": "环绕南极洲的海域；IHO在2023年决议中以南纬60°作为北界，保留国家范围意见与其他用途的划分。",
     "formation": "广阔连通海域、风和海水密度差异使水体能绕南极流动，实际海流有锋面、弯曲和涡旋。海冰在海面生消，陆地冰盖则是另一类冰体。",
     "connections": [
       "南极绕极流连接多个海盆，海洋的地理联系不必沿大陆海岸展开。",
       "南北半球季节相反，比较同一月份的两极海冰容易混淆季节与长期变化。"
     ],
     "facts": [
+      {
+        "label": "面积概述",
+        "value": "约2,196万平方千米；NOAA NCEI ETOPO1表口径，五洋分区中南大洋北界60°S"
+      },
       {
         "label": "典型过程",
         "value": "南极绕极流"
@@ -15728,6 +15772,10 @@
       {
         "title": "跨季节比较两极",
         "body": "南极海冰在南半球冬季扩展，北极此时处于另一季节。比较变化需要统一月份、季节和多年基准；地图当前的海陆轮廓没有表达某天海冰，不能据此判断当年的冰量。"
+      },
+      {
+        "title": "五大洋的现行约定与保留意见",
+        "body": "IHO已于2023年承认南大洋，并以南纬60°为北界；阿根廷等仍保留意见，各国机构也可采用自己的技术界限。该纬线不是海洋锋面或海冰的自然边缘。"
       }
     ],
     "questions": [
@@ -15746,6 +15794,14 @@
       {
         "title": "NSIDC · How does Antarctic sea ice differ from Arctic sea ice?",
         "url": "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice"
+      },
+      {
+        "title": "IHO · 决议02/2023：承认南大洋及海域界限（M-3，2024年7月版，第110—113页）",
+        "url": "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf"
+      },
+      {
+        "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+        "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
       }
     ],
     "relatedIds": [
@@ -15758,6 +15814,7 @@
     "mapZoom": 2,
     "geometryNote": "德雷克海峡附近海区参考点；不绘制南大洋法定界线、海流路径或当前海冰范围。",
     "readingTopicIds": [
+      "world-oceans",
       "world-ocean-monsoon",
       "world-polar-comparison"
     ]
@@ -15839,7 +15896,7 @@
     "readingTopicIds": [
       "earth-map-reading",
       "landform-processes",
-      "landform-karst",
+      "landform-landscapes",
       "water-cycle"
     ]
   },
@@ -15916,7 +15973,7 @@
       }
     ],
     "readingTopicIds": [
-      "landform-karst"
+      "landform-landscapes"
     ]
   },
   {
@@ -15993,7 +16050,7 @@
       }
     ],
     "readingTopicIds": [
-      "landform-karst"
+      "landform-landscapes"
     ]
   },
   {
@@ -16068,7 +16125,8 @@
       }
     ],
     "readingTopicIds": [
-      "landform-processes"
+      "landform-processes",
+      "landform-landscapes"
     ]
   },
   {
@@ -16142,7 +16200,7 @@
       }
     ],
     "readingTopicIds": [
-      "landform-processes"
+      "landform-landscapes"
     ]
   }
 ]

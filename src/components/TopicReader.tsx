@@ -1,9 +1,9 @@
-import {useEffect,useLayoutEffect,useRef,useState} from 'react'
+import {Fragment,useEffect,useLayoutEffect,useRef,useState} from 'react'
 import {ArrowLeft,ArrowRight,Bookmark,BookOpen,MapPin,Share2} from 'lucide-react'
 import type {ReadingProgress,Topic,TopicArticle} from '../types'
 import {useLocalJson} from '../lib/learning'
 import {knowledge} from '../lib/catalog'
-import {topics} from '../lib/topics'
+import {topics,topicGroups} from '../lib/topics'
 import ReadingFigure from './ReadingFigure'
 import TopicVisuals from './TopicVisuals'
 import './TopicReading.css'
@@ -59,29 +59,31 @@ export default function TopicReader({topic,visible,progress,saved,onProgress,onB
   const parts=article.data?.parts
   const essay=article.data?.presentation==='essay'
   const activePart=article.data?.sections.find(item=>item.id===section)?.partId
+  const category=topicGroups.find(group=>group.id===topic.group)?.name
   const related=(topic.reading?.relatedTopicIds||[]).map(id=>topics.find(t=>t.id===id)).filter((t):t is Topic=>!!t)
   return <section className={'topic-reading-page'+(essay?' reading-essay':'')} hidden={!visible} aria-label="完整专题阅读" data-reading-topic={topic.id}>
     <div className="reading-toolbar"><button onClick={()=>leave(onBack)}><ArrowLeft size={16}/>返回地图</button><span>{topic.title}</span><div><button onClick={onSave} aria-label={saved?'取消收藏专题':'收藏专题'} aria-pressed={saved}><Bookmark size={16} fill={saved?'currentColor':'none'}/><span>{saved?'已收藏':'收藏专题'}</span></button><button onClick={()=>leave(onShare)} aria-label="分享专题阅读"><Share2 size={16}/></button><button onClick={()=>leave(onLibrary)}><BookOpen size={16}/>主题目录</button></div></div>
     <div className="reading-layout">
       <nav className={'reading-toc'+(parts?' reading-toc-grouped':'')} aria-label="专题章节"><span>本篇内容 · 可自由选读</span>{parts?<>
-        <label className="reading-chapter-select">跳转章节<select aria-label="跳转专题章节" value={section} onChange={event=>goTo(event.target.value)}><option value="introduction">主题概览</option>{parts.map(part=><optgroup key={part.id} label={part.title}>{article.data!.sections.filter(s=>s.partId===part.id).map(s=><option key={s.id} value={s.id}>{s.title}</option>)}</optgroup>)}<option value="questions">看图与思考</option></select></label>
-        <div className="reading-toc-groups">{parts.map(part=><details key={part.id} open={activePart===part.id||undefined}><summary>{part.title}</summary>{article.data!.sections.filter(s=>s.partId===part.id).map(s=><button key={s.id} aria-current={section===s.id?'location':undefined} onClick={()=>goTo(s.id)}>{s.id===part.sectionId?'本组概览':s.title}</button>)}</details>)}<button onClick={()=>goTo('questions')}>看图与思考</button></div>
-      </>:<>{article.data?.sections.map(s=><button key={s.id} aria-current={section===s.id?'location':undefined} onClick={()=>goTo(s.id)}>{s.title}</button>)}{article.data&&<button onClick={()=>goTo('questions')}>看图与思考</button>}</>}</nav>
+        <label className="reading-chapter-select">跳转章节<select aria-label="跳转专题章节" value={section} onChange={event=>goTo(event.target.value)}><option value="introduction">主题概览</option>{parts.map(part=><optgroup key={part.id} label={part.title}>{article.data!.sections.filter(s=>s.partId===part.id).map(s=><option key={s.id} value={s.id}>{s.title}</option>)}</optgroup>)}</select></label>
+        <div className="reading-toc-groups">{parts.map(part=><details key={part.id} open={activePart===part.id||undefined}><summary>{part.title}</summary>{article.data!.sections.filter(s=>s.partId===part.id).map(s=><button key={s.id} aria-current={section===s.id?'location':undefined} onClick={()=>goTo(s.id)}>{s.id===part.sectionId?'本组概览':s.title}</button>)}</details>)}</div>
+      </>:<><label className="reading-chapter-select">跳转章节<select aria-label="跳转专题章节" value={section} onChange={event=>goTo(event.target.value)}><option value="introduction">主题概览</option>{article.data?.sections.map(s=><option key={s.id} value={s.id}>{s.title}</option>)}</select></label><div className="reading-toc-flat"><button aria-current={section==='introduction'?'location':undefined} onClick={()=>goTo('introduction')}>主题概览</button>{article.data?.sections.map(s=><button key={s.id} aria-current={section===s.id?'location':undefined} onClick={()=>goTo(s.id)}>{s.title}</button>)}</div></>}</nav>
       <div className="reading-body" ref={scroll}>
         {article.error?<div className="reading-load-error" role="alert"><h1>这篇专题暂未加载成功</h1><p>地图和简要介绍仍可使用。</p><button onClick={article.retry}>重新加载</button><button onClick={onBack}>返回地图</button></div>:!article.data?<p className="reading-loading" role="status">正在加载专题…</p>:<article className="reading-article">
-          <section data-reading-section="introduction"><header className="reading-title"><p className="eyebrow">{parts?`${parts.length} 组章节 · 可自由选读`:`专题阅读 · 约 ${topic.reading?.minutes||6} 分钟`}</p><h1 tabIndex={-1}>{article.data.title}</h1><p>{article.data.introduction}</p></header>
-          {!essay&&topic.reading?.coverId&&<ReadingFigure id={topic.reading.coverId}/>}
+          <section data-reading-section="introduction"><header className="reading-title"><p className="eyebrow">山河图 · {category}</p><h1 tabIndex={-1}>{article.data.title}</h1><div className="reading-meta"><span>约 {topic.reading?.minutes||6} 分钟</span><span>{parts?`${parts.length} 组章节`:`${article.data.sections.length} 节内容`}</span><span>可自由选读</span></div><p>{article.data.introduction}</p></header>
+          {!essay&&topic.reading?.coverId&&<ReadingFigure id={topic.reading.coverId} onExplore={id=>leave(()=>onMap(id))}/>}
           {parts&&<div className="reading-part-index" aria-label="选择阅读内容">{parts.map(part=><button key={part.id} onClick={()=>goTo(part.sectionId)}><strong>{part.title}</strong>{!essay&&<span>{part.description}</span>}<ArrowRight size={16}/></button>)}</div>}
           </section>
           {article.data.sections.map(s=><section key={s.id} className={"article-section"+(parts?.some(part=>part.sectionId===s.id)?" article-part-start":"")} data-reading-section={s.id}>
-            <h2 tabIndex={-1}>{s.title}</h2>{s.paragraphs.map((p,index)=><p key={index}>{p}</p>)}
-            {s.mediaIds?.filter(id=>essay||id!==topic.reading?.coverId).map(id=><ReadingFigure key={id} id={id}/>)}
+            <h2 tabIndex={-1}>{s.title}</h2>
+            {s.mediaPlacement==='before-text'&&s.mediaIds?.filter(id=>essay||id!==topic.reading?.coverId).map(id=><ReadingFigure key={id} id={id} onExplore={id=>leave(()=>onMap(id))}/>)}
+            {s.paragraphs.map((p,index)=><Fragment key={index}><p>{p}</p>{s.mediaIds?.filter(id=>s.mediaAfterParagraph?.[id]===index).map(id=><ReadingFigure key={id} id={id} onExplore={id=>leave(()=>onMap(id))}/>)}</Fragment>)}
+            {s.mediaPlacement!=='before-text'&&s.mediaIds?.filter(id=>s.mediaAfterParagraph?.[id]===undefined&&(essay||id!==topic.reading?.coverId)).map(id=><ReadingFigure key={id} id={id} onExplore={id=>leave(()=>onMap(id))}/>)}
             {!!s.visuals?.length&&<TopicVisuals visuals={s.visuals} onPick={id=>leave(()=>onMap(id))}/>}
             {s.terms?.map(term=><details className="reading-term" key={term.term}><summary>{term.term}</summary><p>{term.definition}</p></details>)}
             {!!s.caseIds?.length&&(essay?<div className="reading-map-links reading-cases">{s.caseIds.map(id=><button key={id} onClick={()=>leave(()=>onMap(id))}><MapPin size={15}/><span>{s.mapLabels?.[id]||'在地图上看'}{s.caseIds!.length>1&&<small> · {knowledge.find(card=>card.id===id)?.name}</small>}</span><ArrowRight size={14}/></button>)}</div>:<div className="reading-cases">{s.caseIds.map(id=>{const card=knowledge.find(k=>k.id===id);return card?<div key={id}><div><h3>{card.name}</h3><p>{card.summary}</p></div><button onClick={()=>leave(()=>onMap(id))}><MapPin size={14}/>在地图上看</button></div>:null})}</div>)}
           </section>)}
           {!essay&&!!topic.visuals?.length&&<section className="article-section" data-reading-section="comparison"><h2 tabIndex={-1}>放在一起比较</h2><TopicVisuals visuals={topic.visuals} onPick={id=>leave(()=>onMap(id))}/></section>}
-          <section className="article-section reading-questions" data-reading-section="questions"><h2 tabIndex={-1}>看图与思考</h2>{article.data.questions.map((question,index)=><details key={index}><summary>{question.question}</summary><p>{question.answer}</p></details>)}</section>
           {!!related.length&&<section className="article-section"><h2>接着读什么</h2><div className="reading-related">{related.map(t=><button key={t.id} onClick={()=>leave(()=>onRead(t))}><span>{t.title}<small>{t.description}</small></span><ArrowRight size={16}/></button>)}</div></section>}
           <footer className="article-sources"><details><summary>资料来源与图片说明 · {article.data.sources.length} 项参考</summary><p>正文为原创中文讲解，示意图用于说明机制；照片与地图各自保留来源。更新：{article.data.updatedAt}。</p>{article.data.sources.map(source=><a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</details><button onClick={()=>leave(onLibrary)}>浏览其他主题 <ArrowRight size={15}/></button></footer>
         </article>}

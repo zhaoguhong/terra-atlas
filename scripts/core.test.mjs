@@ -95,10 +95,10 @@ test('reading records migrate old preferences and reject invalid imported positi
     'bad-time':{sectionId:'section-1',offset:0,updatedAt:Infinity},
     '../bad-id':{sectionId:'section-1',offset:0,updatedAt:1},
   }})
-  assert.deepEqual(restored.savedTopics,['landform-karst'])
+  assert.deepEqual(restored.savedTopics,['landform-landscapes'])
   assert.deepEqual(restored.readingProgress,{
-    'landform-karst':{sectionId:'section-3',offset:.42,updatedAt:1700000000000},
-    'earth-rocks':{sectionId:'introduction',offset:1,updatedAt:0},
+    'landform-landscapes':{sectionId:'karst',offset:0,updatedAt:1700000000000},
+    'landform-processes':{sectionId:'introduction',offset:1,updatedAt:0},
   })
 })
 import {legacyTopic,singleOverlay,topicOverlays} from '../src/lib/theme-state.ts'
@@ -352,16 +352,41 @@ import originalPeopleResources from '../data/reading/people-resources.mjs'
 import originalEarthRegions from '../data/reading/earth-regions.mjs'
 import originalNewLandforms from '../data/reading/landform-lessons.mjs'
 import originalFoundations from '../data/reading/foundations.mjs'
+import {resolveTopicReference,migrateReadingProgress} from '../src/lib/topic-redirects.ts'
+test('unrecognized URL topic and chapter values cannot use inherited redirect properties',()=>{
+  for(const id of ['constructor','toString','__proto__']){
+    assert.deepEqual(resolveTopicReference(id,'introduction'),{topicId:id,sectionId:'introduction'})
+    assert.deepEqual(resolveTopicReference('world-continents',id),{topicId:'world-continents',sectionId:id})
+  }
+})
+test('retired review chapters restore readable content for shares and saved progress',()=>{
+  for(const id of ['china-terrain','map-climate','landform-karst','world-continents']){
+    const route=resolveTopicReference(id,'questions')
+    assert.equal(route.sectionId,'introduction')
+    const migrated=migrateReadingProgress({[id]:{sectionId:'questions',offset:.7,updatedAt:123}})
+    assert.deepEqual(migrated[route.topicId],{sectionId:'introduction',offset:0,updatedAt:123})
+  }
+})
 test('consolidation retains topic identities, modules, sources and cases while publishing the edited prose',()=>{
   const old=read('data/reading/topic-inputs.json'),topics=read('src/data/topics.json')
   const lessons={...originalLandforms,...originalWaterClimate,...originalPeopleResources,...originalEarthRegions,...Object.fromEntries([...originalNewLandforms,...originalFoundations].map(item=>[item.id,item]))}
-  assert.equal(old.length,59);assert.equal(topics.length,32)
+  assert.equal(old.length,59);assert.equal(topics.length,30)
   const used=topicPlan.flatMap(group=>group.from)
   assert.equal(used.length,new Set(used).size)
   const targets=new Set()
   for(const input of old){
     const group=topicPlan.find(group=>group.from.includes(input.id)),id=group?.id||input.id
     targets.add(id)
+    const redirected=read('src/data/topic-redirects.json')[input.id]
+    if(redirected){
+      const destination=topics.find(t=>t.id===redirected.topicId)
+      assert(destination,input.id+' migrated topic')
+      const destinationIds=new Set([redirected.topicId,...Object.values(redirected.chapters).map(chapter=>chapter.topicId)])
+      const destinationArticles=[...destinationIds].map(id=>read('public/reading/topics/'+id+'.json'))
+      for(const stop of input.stops)assert(destinationArticles.some(article=>article.sections.some(s=>s.caseIds?.includes(stop))),input.id+' preserved case '+stop)
+      for(const chapter of Object.values(redirected.chapters))assert(read('public/reading/topics/'+chapter.topicId+'.json').sections.some(s=>s.id===chapter.sectionId)||['introduction','questions'].includes(chapter.sectionId),'old chapter remains reachable')
+      continue
+    }
     const target=topics.find(topic=>topic.id===id),article=read('public/reading/topics/'+id+'.json')
     assert(target,input.id+' lost parent')
     for(const stop of input.stops)assert(target.stops.includes(stop),input.id+' lost map case '+stop)
@@ -403,4 +428,30 @@ test('consolidation retains topic identities, modules, sources and cases while p
   }
   assert.equal(targets.size,30)
   for(const id of ['weather-systems','climate-change'])assert(topics.some(t=>t.id===id))
+})
+
+test('world geography introduces every continent and ocean after comparable overviews',()=>{
+  const topics=read('src/data/topics.json')
+  const continents=read('public/reading/topics/world-continents.json')
+  const oceans=read('public/reading/topics/world-oceans.json')
+  const regional=read('public/reading/topics/world-regional-comparison.json')
+  assert.equal(continents.title,'七大洲')
+  assert.equal(oceans.title,'五大洋')
+  assert.equal(regional.title,'世界区域比较')
+  for(const article of [continents,oceans]){
+    const topic=topics.find(t=>t.id===article.id)
+    const firstChart=article.sections.findIndex(section=>section.visuals?.some(visual=>visual.kind==='bars'))
+    const firstPlace=article.sections.findIndex(section=>section.caseIds?.length)
+    assert(firstChart>=0&&firstChart<firstPlace,article.id+' area comparison precedes individual places')
+    const bars=article.sections[firstChart].visuals.find(visual=>visual.kind==='bars')
+    assert.equal(bars.rows.length,article.id==='world-continents'?7:5)
+    for(const id of topic.stops){
+      const explanation=article.sections.find(section=>section.caseIds?.includes(id))
+      assert(explanation&&explanation.paragraphs.join('').length>=150,id+' has a substantive individual explanation')
+    }
+  }
+  const oceanText=oceans.sections.flatMap(section=>section.paragraphs).join('\n')
+  for(const marker of ['四大洋','五大洋','2023','60','阿根廷'])assert(oceanText.includes(marker),'explains ocean conventions: '+marker)
+  assert(oceans.sources.some(source=>source.url.includes('iho.int')),'current IHO primary source')
+  for(const id of ['southeast-asia','middle-east','western-europe','sub-saharan-africa','japan','india','brazil','australia'])assert(regional.sections.some(section=>section.caseIds?.includes(id)),id+' stays in regional comparison')
 })

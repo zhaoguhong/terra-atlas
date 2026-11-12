@@ -1,351 +1,184 @@
 {
   "id": "world-continents",
-  "title": "世界海陆与区域比较",
-  "introduction": "七大洲与周围海洋，构成认识世界的位置框架。纬度跨度、陆地宽度、海岸形状与山地分布，共同影响各地的冷暖、干湿及交通联系。由这个框架走近区域和国家，既能比较它们面对的自然条件，也能看到河流、港口和贸易怎样把差异很大的地方连在一起。",
-  "updatedAt": "2026-11-10",
-  "parts": [
-    {
-      "id": "world-continents",
-      "title": "世界七大洲",
-      "sectionId": "part-world-continents",
-      "description": "在七大洲中，亚洲陆地面积最大，非洲其次，大洋洲最小。面积说明范围，纬度与海陆位置则提供另一组线索：一块陆地跨越怎样的季节，海洋影响能深入多远，山脉又把气流和水系引向哪里。",
-      "keywords": [
-        "洲界与统计",
-        "区域差异",
-        "尺度",
-        "大洲",
-        "海陆联系",
-        "水分梯度",
-        "空间骨架",
-        "山地与流域",
-        "岛屿",
-        "极地",
-        "冰盖",
-        "科学观测"
-      ]
-    },
-    {
-      "id": "world-regional-comparison",
-      "title": "世界区域怎样比较",
-      "sectionId": "part-world-regional-comparison",
-      "description": "大洲之内，还可以按自然环境、文化经济联系或国家范围划分地区。区域比较需要说明边界和尺度，再追踪位置、地形、水源与人的活动之间的联系；一个代表地点只能说明其中一部分。",
-      "keywords": [
-        "半岛群岛",
-        "季风",
-        "海上通道",
-        "水资源",
-        "区域定义",
-        "文化多元",
-        "海洋影响",
-        "城市网络",
-        "非洲区域",
-        "垂直分异",
-        "统计尺度",
-        "岛国",
-        "冬季风",
-        "工业交通",
-        "南亚",
-        "人口与水",
-        "生物群系",
-        "土地利用",
-        "范围口径",
-        "南半球",
-        "干旱",
-        "人口分布"
-      ]
-    }
-  ],
+  "title": "七大洲",
+  "presentation": "essay",
+  "updatedAt": "2026-11-12",
+  "introduction": "地球的陆地约占表面三成，其余是相互连通的海洋。七大洲把陆地整理成便于认识的地理框架：亚洲、非洲、北美洲、南美洲、南极洲、欧洲和大洋洲。面积、纬度跨度、海岸与山川共同影响各洲的环境；从整体大小进入每一洲，才能理解同一片陆地上为什么会出现相差很远的景观与生活条件。",
   "sections": [
     {
-      "id": "part-world-continents",
-      "title": "世界七大洲",
+      "id": "continents-overview",
+      "title": "七大洲有多大",
       "paragraphs": [
-        "在七大洲中，亚洲陆地面积最大，非洲其次，大洋洲最小。面积说明范围，纬度与海陆位置则提供另一组线索：一块陆地跨越怎样的季节，海洋影响能深入多远，山脉又把气流和水系引向哪里。"
+        "按本篇采用的同一套岸线研究，亚洲陆地约4413万平方千米，非洲约2983万，北美洲约2424万，南美洲约1774万，南极洲约1261万，欧洲约1000万，大洋洲约894万。亚洲接近大洋洲的五倍；亚洲和非洲合起来，约占这套统计全球陆地面积的一半。面积提供规模感，却不能直接说明一洲内部的地形、气候和人口分布。",
+        "下面的比较图统一采用2015±2年遥感影像岸线研究，计入各洲所属岛礁。它与教材常见约数可能有差别，尤其是南极洲：陆地、冰盖、向海浮起的冰架是否纳入，会改变统计边缘。这里比较的是同一研究下的七洲，而不是把不同资料的数字拼在一起。地图投影还会放大或压缩不同纬度地区的屏幕面积，因此条形图比直接比较底图色块更适合判断大小。"
       ],
-      "partId": "world-continents"
-    },
-    {
-      "id": "world-continents-section-1",
-      "title": "先用纬度和海洋确定位置",
-      "paragraphs": [
-        "赤道、回归线与极圈，为世界提供纬度参照；大陆周围的海洋和邻近陆地，则交代海陆格局。两组关系结合起来，可以先判断某地大致处在怎样的辐射、季节与水汽背景中。",
-        "大洲是地理上的常用划分，也包含历史形成的惯例。亚洲与欧洲位于相连的大陆上，大洋洲包括大陆主体和广泛岛屿，洲界因此不能直接代替岩石圈板块边界。"
-      ],
-      "partId": "world-continents",
-      "mediaIds": [
-        "diagram-latitude-belts"
-      ]
-    },
-    {
-      "id": "world-continents-section-2",
-      "title": "面积与纬度都重要",
-      "paragraphs": [
-        "大陆南北延伸得越远，所跨越的太阳辐射与季节条件越多；东西宽度和海岸形状，则影响海洋作用深入内陆的程度。山脉又会改变水汽和道路的走向。",
-        "屏幕上的视觉大小受地图投影影响，高纬地区尤其可能被放大。比较大洲面积，应依据面积资料，而非直接比较色块所占的大小。"
-      ],
-      "partId": "world-continents",
       "visuals": [
         {
           "kind": "bars",
           "title": "七大洲陆地面积对比",
-          "unit": "百万 km²",
+          "unit": "万平方千米",
           "rows": [
             {
               "label": "亚洲",
-              "value": 44.13,
+              "value": 4413,
               "place": "asia-continent"
             },
             {
               "label": "非洲",
-              "value": 29.83,
+              "value": 2983,
               "place": "africa-continent"
             },
             {
               "label": "北美洲",
-              "value": 24.24,
+              "value": 2424,
               "place": "north-america-continent"
             },
             {
               "label": "南美洲",
-              "value": 17.74,
+              "value": 1774,
               "place": "south-america-continent"
             },
             {
               "label": "南极洲",
-              "value": 12.61,
+              "value": 1261,
               "place": "antarctica"
             },
             {
               "label": "欧洲",
-              "value": 10,
+              "value": 1000,
               "place": "europe-continent"
             },
             {
               "label": "大洋洲",
-              "value": 8.94,
+              "value": 894,
               "place": "oceania-region"
             }
           ],
-          "note": "同一研究的2015±2年遥感岸线统计，含各洲所属岛礁。与教材常见约数的范围和岸线口径不同，南极洲差异尤其明显。条长按实际面积比例；点击洲名可阅读。",
+          "note": "同一研究的2015±2年遥感岸线统计，含所属岛礁，数值换算为万平方千米并取约数；南极洲按该研究的岸线和冰缘处理，不能与包含冰架等不同口径的教材约数混用。条长按实际面积比例，点击洲名可定位。",
           "sources": [
             {
               "title": "中国科学院地理资源所 · 全球海陆岸线面积研究（2019）",
               "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html"
+            },
+            {
+              "title": "全球变化数据学报 · 2015年全球岛礁、陆地面积与海岸线（表7）",
+              "url": "https://geodoi.ac.cn/DOIPaper/HTML/2019139402/201902139403.htm"
             }
           ]
         }
       ]
     },
     {
-      "id": "world-continents-section-3",
-      "title": "山川怎样丰富一块大陆",
+      "id": "continents-boundaries",
+      "title": "大陆、岛屿与大洲",
       "paragraphs": [
-        "山地、高原、平原和河流，把大尺度海陆格局细分成不同环境。高山可以把寒冷带入低纬地区，临海山地改变水汽分配，河流又把山地来水带往低地，使同一大陆同时出现湿润森林、干旱地带与高寒景观。",
-        "非洲的沙漠、森林、草原和高地，亚洲的季风地区、内陆盆地和高原，都是这种组合的表现。大洲名称帮助定位；解释具体地区，还需要继续追踪山川、水热与人的活动。"
+        "大陆指广大的连续陆地，岛屿是四周被水包围的陆地，大洲则通常把大陆主体与附近岛屿放在一个地理单元中。亚洲和欧洲实际连成亚欧大陆，却依照沿用的地理惯例分作两洲；大洋洲包括澳大利亚大陆及太平洋中的许多岛屿，也不能只用澳大利亚国家的面积代替。",
+        "七大洲的分界兼有海峡、地峡、山地和历史惯例。乌拉尔山一带帮助辨认欧亚位置，苏伊士地峡连接亚洲与非洲，巴拿马地峡连接南北美洲。这些线索用于组织陆地位置，不等同于板块边界。印度板块与欧亚板块碰撞的地方在亚洲内部，而一个板块也可能同时承载大陆与海底。"
       ],
-      "partId": "world-continents"
+      "mediaIds": [
+        "world-land-ocean-map"
+      ]
     },
     {
-      "id": "world-continents-section-4",
-      "title": "海洋连接而非只隔开大陆",
+      "id": "asia",
+      "title": "亚洲：从广阔内陆到季风海岸",
       "paragraphs": [
-        "大洋分开了陆地，也承载海运、洋流及跨洲迁移。海峡和运河把一些地点变成通道，港口则向海上和内陆两侧延伸，把远方的生产与消费连接起来。",
-        "因此，大洲之间的关系也可以顺着一条海路或贸易联系来认识。沿途自然条件的差别，往往正是地区相互需要、交换物资的背景。"
-      ],
-      "partId": "world-continents"
-    },
-    {
-      "id": "world-continents-module-eurasia",
-      "title": "欧亚：相连陆地上的不同环境",
-      "paragraphs": [
-        "亚洲与欧洲位于连续大陆上，乌拉尔及邻近海域是辨认惯常洲际位置的重要参照。亚洲广大内陆、沿海地区与高山之间，纬度、海拔、季风和距海远近有不同组合，形成复杂的温度、水分与地形格局。",
-        "欧洲北部的湖泊、峡湾和平原保存冰川影响，南部山系则记录板块挤压。西岸、内陆与地中海沿岸各有季节特点，许多地方距海较近。海洋联系仍需河流、铁路和道路延伸到内陆：鹿特丹经莱茵河联系鲁尔区，就是海港与生产消费地区相接的例子。"
+        "亚洲面积最大，北临北冰洋，东向太平洋，南接印度洋，西侧与欧洲陆地相连。它从北极附近延伸到赤道一带，既有辽阔的东西跨度，也有显著的南北温度差。北方寒冷地区、东部沿海、南方半岛与中部内陆，很难用一种“亚洲气候”概括。",
+        "青藏高原、喜马拉雅山、天山与其他高地构成醒目的地形骨架，高山和高原之间又分布盆地、河谷与通道。北部的西西伯利亚平原、东部和南部的河流平原，地表起伏与高山显著不同。亚洲多条大河与高地有联系，来水却不只依靠冰雪，还受到季风降水、地下水和流域大小影响。",
+        "广阔内陆距海遥远，山地又阻挡和重新分配水汽，形成中亚等地的干旱背景；东亚、南亚和东南亚则深受季节环流影响。河流平原、三角洲和沿海地带为农业、聚落与交通提供条件，内陆绿洲依赖稳定来水，寒冷高地又有不同的牧业与生活方式。这些空间差异，是理解亚洲各区域的起点。"
       ],
       "caseIds": [
-        "asia-continent",
-        "europe-continent"
-      ],
-      "partId": "world-continents"
+        "asia-continent"
+      ]
     },
     {
-      "id": "world-continents-module-africa",
-      "title": "赤道两侧的非洲",
+      "id": "africa",
+      "title": "非洲：赤道两侧的高原与水分差异",
       "paragraphs": [
-        "非洲横跨赤道，大陆上的热量条件随纬度变化，雨季长度和来水则受环流与地形调节。东非裂谷、高地与湖泊，还显示出构造活动对地表的塑造。",
-        "从撒哈拉到东非和奥卡万戈，可以遇见很不相同的水分条件。森林、草原与沙漠并不排成整齐的平行带：山地改变温度和降水，河流带来外地的水，土地利用也会改变景观。"
+        "非洲位于欧洲以南，西向大西洋，东向印度洋，东北经苏伊士一带与亚洲相接。赤道穿过大陆中部，大片陆地处在热带纬度；与欧洲曲折的海岸相比，非洲大陆轮廓更整，许多内陆地区距离海岸较远。",
+        "非洲以高原地形为重要背景，东部裂谷、高地和湖泊显示地壳活动，刚果盆地等低地则形成另一种地表组合。尼罗河、刚果河、尼日尔河等水系把不同来水地区联系起来；一条河穿过干旱地带，并不意味着沿途都有充足降雨。",
+        "撒哈拉的干旱环境、赤道附近湿润森林、具有干湿季变化的草原，以及东非高地的较凉环境，体现纬度、环流与海拔共同作用。森林、草原和荒漠不会严格排成平行条带，山地、洋流和水路还会改变局地条件。农业和聚落需要顺应雨季与水源，跨区域往来又受到历史、设施和市场影响。"
       ],
       "caseIds": [
         "africa-continent"
-      ],
-      "partId": "world-continents"
+      ]
     },
     {
-      "id": "world-continents-module-americas",
-      "title": "南北美洲",
+      "id": "north-america",
+      "title": "北美洲：西部高山、中央平原与北方冰川遗迹",
       "paragraphs": [
-        "北美洲从北极地区延伸到加勒比，寒冷、温带和热带环境并存。西部构造活动形成高大山系，冰川改造北部地表与湖盆，内陆平原则有草地、农业和河流水系。从太平洋沿岸向东，落基山、大平原、五大湖和大西洋沿岸依次提供位置参照；密西西比等河流及其支流，也显示低地的缓慢倾斜。",
-        "南美洲西侧的安第斯经隆升与长期侵蚀形成高山，河流把物质搬往低地。高海拔把寒冷环境带入低纬地区，附近海岸和盆地却可能温暖；海洋影响和山地对湿气的阻挡，使西岸干旱地区与东侧亚马孙雨林形成鲜明对照。"
+        "北美洲西临太平洋，东临大西洋，北临北冰洋，向南经狭长的中美洲连接南美洲。它从高纬延伸到热带，既有格陵兰和加拿大北部的寒冷环境，也有温带平原、干旱盆地与加勒比地区的热带岛屿。",
+        "从西向东看，落基山及相邻山地、广阔的中央平原、五大湖和东部较低山地提供清楚的地形次序。西部高山改变太平洋水汽进入内陆的路径，北方冰川曾磨蚀和堆积地表，留下众多湖盆。中央低地的密西西比河及其支流，则把大片内陆集水区联系到墨西哥湾。",
+        "大尺度地形与海陆位置造成不同的水热组合：部分太平洋沿岸湿润，越山后可能迅速变干，中央平原则面向南北不同气团的活动。耕作、牧业、城市和交通沿着适合的地形与水源展开，同时也受到灌溉、机械化、市场和历史的塑造。北美洲的自然格局不能由美国一国代替。"
       ],
       "caseIds": [
-        "north-america-continent",
+        "north-america-continent"
+      ]
+    },
+    {
+      "id": "south-america",
+      "title": "南美洲：安第斯与东部低地相对",
+      "paragraphs": [
+        "南美洲位于北美洲以南，西侧为太平洋，东侧为大西洋，主体在南半球，北部又越过赤道。大陆北部较宽，向南逐渐收窄；赤道附近的湿润低地与最南端的寒凉环境，处在同一片南北延伸的陆地上。",
+        "安第斯山沿大陆西缘延伸，高海拔把低温、积雪和冰川环境带到低纬地区。东侧分布亚马孙盆地、巴西高原以及南部平原等地形单元。安第斯提供部分河流水和泥沙，亚马孙巨大流域则承接广泛的降水，把高山与湿润低地共同汇入大西洋方向。",
+        "西岸阿塔卡马的极端干旱与东侧亚马孙雨林形成鲜明对照，海洋、环流和山地各自参与其中。向南还有草原、温带森林与更冷的环境。雨林、牧场、农田和城市反映不同土地利用，不能把整洲等同于亚马孙；巴西国界、亚马孙流域与雨林范围，也分别回答不同的空间问题。"
+      ],
+      "caseIds": [
         "south-america-continent"
-      ],
-      "partId": "world-continents"
+      ]
     },
     {
-      "id": "world-continents-module-ocean-polar",
-      "title": "大洋洲与南极洲",
+      "id": "antarctica",
+      "title": "南极洲：被冰盖覆盖的大陆",
       "paragraphs": [
-        "大洋洲包括大陆与广泛岛屿，陆地面积之外，还有辽阔的海洋联系。不同岛屿可能来自大陆分离、火山活动或珊瑚礁生长，面积、海拔与海洋作用也各不相同。澳大利亚干旱内陆的特点，无法概括新几内亚高地、新西兰或太平洋小岛；澳大利亚既是国家名，也常指大陆主体，其国家统计不能直接作为大洋洲总量。",
-        "南极洲长期低温，使积雪逐渐压实成冰川与冰盖。冰向海岸移动，伸入海面后浮起的部分形成冰架，周缘海水冻结形成海冰。大陆冰盖、冰架与海冰来源不同，对海平面、海洋和生态的作用也有区别。"
+        "南极洲围绕南极点，周围为南大洋，与北极中央为海洋的格局不同。它在七洲中面积居第五位，绝大部分表面覆盖厚冰，冰层下仍有山地、盆地和其他陆地起伏。冰面高度与岩石地表高度并不是同一个量。",
+        "高纬度带来长时间的极昼与极夜，冰雪反射和高海拔进一步参与塑造寒冷环境。内陆降水很少，多以雪的形式落下；长期积累的雪逐渐压实成冰，冰体在重力作用下缓慢流向海岸。因此，广阔冰盖与干燥气候可以同时存在。",
+        "陆地上的冰盖向海延伸并浮起，形成冰架；周围海水冻结，则形成海冰。两者的物质来源和对海平面的直接作用不同。南极洲没有常住的原住居民社会，人类活动以科学考察及受管理的相关活动为主。认识这一洲，需要把大陆、冰盖和周围海洋连起来，而不是只看白色冰面的轮廓。"
       ],
       "caseIds": [
-        "oceania-region",
         "antarctica"
-      ],
-      "partId": "world-continents"
-    },
-    {
-      "id": "part-world-regional-comparison",
-      "title": "世界区域怎样比较",
-      "paragraphs": [
-        "大洲之内，还可以按自然环境、文化经济联系或国家范围划分地区。区域比较需要说明边界和尺度，再追踪位置、地形、水源与人的活动之间的联系；一个代表地点只能说明其中一部分。"
-      ],
-      "partId": "world-regional-comparison"
-    },
-    {
-      "id": "world-regional-comparison-section-1",
-      "title": "比较区域，先让问题和范围相称",
-      "paragraphs": [
-        "东南亚、中东、西欧与撒哈拉以南非洲，采用的划分标准并不完全相同；国家则有自己的行政和统计范围。比较的第一步，是说明讨论哪一片地方，再从位置、地形、水热、人口和交通提出共同问题。",
-        "范围与问题配合，资料才有可比性。某个海港的降雨不能代表整个国家，一处典型景观也不能直接对照另一地区的平均值。把尺度和时期对齐之后，差别才能回到具体原因，而不是停留在印象。"
-      ],
-      "partId": "world-regional-comparison",
-      "mediaIds": [
-        "diagram-region-method"
       ]
     },
     {
-      "id": "world-regional-comparison-section-2",
-      "title": "自然条件提供不同组合",
+      "id": "europe",
+      "title": "欧洲：海洋深入陆地的西部半岛",
       "paragraphs": [
-        "中东部分地区的生活需要围绕干旱与水源安排，东南亚的季风、半岛、岛屿和海峡共同影响联系，西欧则有明显的海洋作用及密集交通网络。这些概括进入各区内部，还会遇到湿干、高低和城乡差别。",
-        "巴西与澳大利亚各有不同的大陆位置、气候和人口分布，日本与印度的地形和季风背景也不相同。具体地点能够说明这些组合怎样影响生活，也能检验一个区域概括适用到哪里。"
+        "欧洲位于亚欧大陆西部，北向北冰洋，西接大西洋，南侧隔地中海与非洲相望。与亚洲相比，它的陆地面积较小，海湾、半岛和岛屿更多地切分海岸，使许多地区较接近海洋；东部又通过平原与亚洲广大内陆相连。",
+        "北部山地、湖泊与峡湾保存冰川改造的痕迹，中部和东部有广阔平原，阿尔卑斯等南部山系则记录板块挤压和长期侵蚀。不同高度和朝向，使相近纬度地区也会出现不同温度、降雨与积雪条件。",
+        "大西洋和西风影响部分西部沿岸，向内陆海洋影响逐渐变化，地中海沿岸又有自己的季节节律。河流、海港、铁路和公路把各地连接成密集网络：鹿特丹港经莱茵河联系欧洲内陆，穿越阿尔卑斯的交通工程又改善山地通达。海岸位置提供条件，设施和长期城市发展让这些条件成为实际联系。"
       ],
-      "partId": "world-regional-comparison",
-      "visuals": [
-        {
-          "kind": "comparison",
-          "title": "比较区域时的三条线索",
-          "columns": [
-            "线索",
-            "需要认识的条件",
-            "可以继续追问"
-          ],
-          "rows": [
-            [
-              "位置与水热",
-              "纬度、海陆、海拔、雨季",
-              "水从哪里来，何时充足或短缺"
-            ],
-            [
-              "地形与通道",
-              "山地、平原、河流、海岸",
-              "聚落和交通怎样跨越或利用地形"
-            ],
-            [
-              "生产与联系",
-              "人口、设施、市场、历史",
-              "资源怎样使用，货物与人流向哪里"
-            ]
-          ],
-          "note": "用共同问题比较，不预设自然条件能够决定全部社会结果。"
-        }
+      "caseIds": [
+        "europe-continent"
       ]
     },
     {
-      "id": "world-regional-comparison-section-3",
-      "title": "发展不能只归因于自然条件",
+      "id": "oceania",
+      "title": "大洋洲：大陆与辽阔海面上的岛屿",
       "paragraphs": [
-        "资源、地形与气候影响生产的成本和选择，却不会自动生成某种经济结构。历史、制度、技术、市场及国际联系，参与决定当地怎样利用这些条件。",
-        "相似自然环境中的地区，可以走上不同的发展道路。理解这种差别，需要从“拥有怎样的条件”继续追问“人们实际上怎样使用”。"
-      ],
-      "partId": "world-regional-comparison"
-    },
-    {
-      "id": "world-regional-comparison-section-4",
-      "title": "比较之后再寻找联系",
-      "paragraphs": [
-        "粮食、能源、工业品、人口和信息，不断在区域之间流动。港口、海峡与城市网络承载这些联系，把不同地方的生产组织在一起，也使变化的影响传向远方。",
-        "两地可以在自然环境上迥异，却因一种货物或一条交通线保持密切往来。区域比较因而既关注差别，也关注这些差别如何促成联系。"
-      ],
-      "partId": "world-regional-comparison"
-    },
-    {
-      "id": "world-regional-comparison-module-broad-regions",
-      "title": "四组区域：水从哪里来，地区怎样连接",
-      "paragraphs": [
-        "东南亚的半岛与群岛展示两种联系路径：半岛河流沿山谷通向三角洲，群岛之间更多依靠海峡、港口与航空。板块活动、河流沉积与海陆位置塑造山地和岛链，季节环流又带来不同雨季。热带背景之下，各地水分节律仍需分别看待。",
-        "中东的一些地区首先面对干旱与水源问题，河谷、山地、沿海和盆地却并不一致。河流、地下水、调水或海水淡化都可能支持聚落，绿洲与城市的存在，不一定说明当地多雨。与东南亚相比，这里更能显示供水来源对居住和生产的制约。",
-        "西欧受到大西洋、西风与山地共同影响，部分沿岸冬季较温和，迎风山地与背风地区又有水分差异。河流航运、海港和长期城市发展形成密集网络，自然通道与设施共同影响地区联系。",
-        "撒哈拉以南非洲跨越不同纬度，也有显著高度差别。赤道附近的湿润低地与东非高原，可以用来比较水分和海拔的作用；南部与西部还有多样环境。人口、生产和文化的差异，则需要进一步联系历史与交通解释。"
+        "大洋洲由澳大利亚大陆及太平洋中的许多岛屿构成，陆地面积在七洲中最小，但岛屿之间隔着非常辽阔的海域。澳大利亚是国家，也是大陆主体的常用称呼；大洋洲还包括新几内亚、新西兰和众多太平洋岛屿，三个名称不能互换。",
+        "澳大利亚内陆大范围干旱，东部山地与沿海地区则有明显差别。新几内亚有湿润低地和高山，新西兰有高山、河谷与冰川遗迹；太平洋小岛又有火山岛、珊瑚岛礁等不同来历。岛屿是否高耸、能否储水、离其他陆地多远，都会改变生态与居民活动的条件。",
+        "因此，大洋洲的共同点更多在海洋联系，而不是单一景观。近岸渔业、农业、航运和旅游等活动需要适应岛屿资源、水源与交通，海浪和海平面变化对低平岛屿的影响，也与大陆高地不同。把陆地面积与岛间距离一起考虑，才能理解这一洲的空间尺度。"
       ],
       "caseIds": [
-        "southeast-asia",
-        "middle-east",
-        "western-europe",
-        "sub-saharan-africa"
-      ],
-      "partId": "world-regional-comparison"
+        "oceania-region"
+      ]
     },
     {
-      "id": "world-regional-comparison-module-countries",
-      "title": "国家对照：季风、地形与区域范围",
+      "id": "continents-connections",
+      "title": "从大洲轮廓走向区域差异",
       "paragraphs": [
-        "日本和印度都受到季节气流影响，地形位置却不同。日本山地岛弧邻海，冬季来自亚洲大陆的空气经过日本海获得水汽，迎风侧常多雪，越山后的太平洋侧相对较干；印度则以山地、平原和高原组合承接季风雨季，雨水既补给农业和地下水，异常强雨也可能带来洪水。两国都需要结合季节来理解水分，不能只比较全年雨量。",
-        "巴西和澳大利亚则适合比较一个国家内部的多样环境。巴西有雨林、草原、半干旱区和湿地。IBGE的2019年地图划分六个大陆生物群系，其中亚马孙生物群系约占国土49.5%；这一范围不同于跨国亚马孙流域，也不等于今天实际雨林覆盖的面积。",
-        "澳大利亚的干旱与纬度、环流、海陆位置及地形有关，东部山地和海岸又形成差别。命名沙漠、气候干旱区与国家范围各有定义，国家沙漠数据库与Beck气候格网不能直接混用。比较巴西和澳大利亚时，先辨认各自内部的湿干、高低与人口分布，才不会把国家名变成单一景观。"
-      ],
-      "caseIds": [
-        "japan",
-        "india",
-        "brazil",
-        "australia"
-      ],
-      "partId": "world-regional-comparison"
+        "七大洲建立了全球位置框架，纬度、海岸与山川则进一步塑造每洲内部的差异。亚洲的高原与海岸、非洲的湿润低地与荒漠、南美洲的高山与盆地，都说明大洲名称不能代表一种均匀环境。",
+        "海洋既分隔陆地，也通过海流、航路和港口把各洲联系起来。进一步比较东南亚、中东、西欧等区域，或日本、印度、巴西与澳大利亚这些国家时，需要缩小尺度，分别认识水源、地形、历史与交通。七洲图告诉我们各地在哪里，区域研究继续解释它们为什么不同。"
+      ]
     }
   ],
   "questions": [
     {
       "question": "大洲边界为什么不能直接代替板块边界？",
       "answer": "大洲主要按陆地位置与地理惯例划分，板块则依据岩石圈结构和运动，两者的定义不同。"
-    },
-    {
-      "question": "两地纬度相近，能否直接用同一种发展或生活方式解释？",
-      "answer": "不能。海陆、地形、历史与社会条件不同，需要分别研究，再用一致的指标比较。"
     }
   ],
   "sources": [
-    {
-      "title": "National Geographic Society · Africa: Physical Geography",
-      "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/"
-    },
-    {
-      "title": "National Geographic Society · Europe: Physical Geography",
-      "url": "https://education.nationalgeographic.org/resource/europe-physical-geography/"
-    },
-    {
-      "title": "National Geographic Society · North America: Physical Geography",
-      "url": "https://education.nationalgeographic.org/resource/north-america-physical-geography/"
-    },
-    {
-      "title": "National Geographic Society · South America: Physical Geography",
-      "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
-    },
-    {
-      "title": "National Geographic Society · Australia and Oceania: Physical Geography",
-      "url": "https://education.nationalgeographic.org/resource/oceania-physical-geography/"
-    },
     {
       "title": "NASA · 亚洲第三极的水资源联系",
       "url": "https://science.nasa.gov/earth/water-on-earth/the-water-future-of-earths-third-pole/"
@@ -379,12 +212,8 @@
       "url": "https://whc.unesco.org/document/167636"
     },
     {
-      "title": "Port of Rotterdam Authority · Connections",
-      "url": "https://www.portofrotterdam.com/en/logistics/connections"
-    },
-    {
-      "title": "Swiss Federal Office of Transport · New Rail Link through the Alps",
-      "url": "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps"
+      "title": "National Geographic Society · Africa: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/"
     },
     {
       "title": "NASA Earth Observatory · East Africa",
@@ -395,8 +224,20 @@
       "url": "https://whc.unesco.org/en/list/1432/"
     },
     {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+    },
+    {
+      "title": "National Geographic Society · North America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/north-america-physical-geography/"
+    },
+    {
       "title": "USDA ERS · Wheat Sector at a Glance",
       "url": "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance"
+    },
+    {
+      "title": "National Geographic Society · South America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
     },
     {
       "title": "NASA Earth Observatory · Mapping the Amazon",
@@ -407,121 +248,40 @@
       "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
     },
     {
-      "title": "USGS · What is a hotspot and how do you know it is there?",
-      "url": "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there"
-    },
-    {
       "title": "British Antarctic Survey · Antarctica",
       "url": "https://www.bas.ac.uk/about/where-we-work/antarctica/"
+    },
+    {
+      "title": "National Geographic Society · Europe: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/europe-physical-geography/"
+    },
+    {
+      "title": "Port of Rotterdam Authority · Connections",
+      "url": "https://www.portofrotterdam.com/en/logistics/connections"
+    },
+    {
+      "title": "Swiss Federal Office of Transport · New Rail Link through the Alps",
+      "url": "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps"
+    },
+    {
+      "title": "National Geographic Society · Australia and Oceania: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/oceania-physical-geography/"
+    },
+    {
+      "title": "USGS · What is a hotspot and how do you know it is there?",
+      "url": "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there"
     },
     {
       "title": "中国科学院地理资源所 · 全球海陆岸线面积研究（2019）",
       "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html"
     },
     {
-      "title": "Natural Earth · 自然地理区域参考范围",
-      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+      "title": "全球变化数据学报 · 2015年全球岛礁、陆地面积与海岸线（表7）",
+      "url": "https://geodoi.ac.cn/DOIPaper/HTML/2019139402/201902139403.htm"
     },
     {
-      "title": "NOAA NESDIS · What Is a Monsoon?",
-      "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
-    },
-    {
-      "title": "湄公河委员会 · Geography",
-      "url": "https://www.mrcmekong.org/geography/"
-    },
-    {
-      "title": "湄公河委员会 · Climate",
-      "url": "https://www.mrcmekong.org/basin-climate/"
-    },
-    {
-      "title": "NASA · East Indonesia Island Chain",
-      "url": "https://science.nasa.gov/earth/earth-observatory/east-indonesia-island-chain-87707/"
-    },
-    {
-      "title": "Beck 等（2023）· Köppen–Geiger 气候分类与全球数据",
-      "url": "https://www.nature.com/articles/s41597-023-02549-6"
-    },
-    {
-      "title": "NOAA · Climate Zones",
-      "url": "https://www.noaa.gov/jetstream/global/climate-zones"
-    },
-    {
-      "title": "Met Office · 欧洲区域气候与海洋影响",
-      "url": "https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/applied-science/precis/dissy1808.pdf"
-    },
-    {
-      "title": "USGS · East African Rift seismotectonics",
-      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift"
-    },
-    {
-      "title": "Scientific Data · White Nile basin lakes",
-      "url": "https://www.nature.com/articles/s41597-022-01742-3"
-    },
-    {
-      "title": "UNESCO · Mount Kenya National Park/Natural Forest",
-      "url": "https://whc.unesco.org/en/list/800/"
-    },
-    {
-      "title": "日本统计局 · Statistical Handbook of Japan 2025",
-      "url": "https://www.stat.go.jp/english/data/handbook/pdf/2025all.pdf"
-    },
-    {
-      "title": "日本气象厅 · 富士山火山资料",
-      "url": "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html"
-    },
-    {
-      "title": "联合国统计司 · Japan国别概览（2025）",
-      "url": "https://data.un.org/legacy/en/iso/jp.html"
-    },
-    {
-      "title": "World Bank · India: Managing Floods and Droughts（2023）",
-      "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
-    },
-    {
-      "title": "NASA · Monsoon Floods Inundate Eastern India",
-      "url": "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/"
-    },
-    {
-      "title": "NASA · Ganges River Delta",
-      "url": "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/"
-    },
-    {
-      "title": "Nature · Himalayan gravel flux and Ganga Plain",
-      "url": "https://www.nature.com/articles/nature22039"
-    },
-    {
-      "title": "联合国统计司 · India国别概览（2025）",
-      "url": "https://data.un.org/legacy/en/iso/in.html"
-    },
-    {
-      "title": "IBGE · 巴西六大生物群系地图（2019）",
-      "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/25812-ibge-lanca-mapa-inedito-de-biomas-e-sistema-costeiro-marinho-2"
-    },
-    {
-      "title": "NASA · Topography of South America",
-      "url": "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/"
-    },
-    {
-      "title": "NASA · Mud from the Andes Carried by the Amazon",
-      "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
-    },
-    {
-      "title": "联合国统计司 · Brazil国别概览（2025）",
-      "url": "https://data.un.org/legacy/en/iso/br.html"
-    },
-    {
-      "title": "Geoscience Australia · Australia’s size compared（2025）",
-      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared"
-    },
-    {
-      "title": "Geoscience Australia · Australian mainland deserts",
-      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts"
-    },
-    {
-      "title": "联合国统计司 · Australia国别概览（2025）",
-      "url": "https://data.un.org/legacy/en/iso/au.html"
+      "title": "National Geographic Society · Asia: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/asia/"
     }
-  ],
-  "presentation": "essay"
+  ]
 }

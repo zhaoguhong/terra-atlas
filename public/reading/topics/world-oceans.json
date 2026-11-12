@@ -1,0 +1,191 @@
+{
+  "id": "world-oceans",
+  "title": "五大洋",
+  "presentation": "essay",
+  "updatedAt": "2026-11-12",
+  "introduction": "海洋覆盖地球表面约七成，海水相互连通。太平洋、大西洋、印度洋、南大洋和北冰洋，是在这一整体中划分的五个主要洋区。它们大小不同，周围陆地、海底地形、气候和海冰也各有特点；理解五大洋，既要认识位置与规模，也要说明为什么有些资料仍写“四大洋”。",
+  "sections": [
+    {
+      "id": "oceans-overview",
+      "title": "同一片海洋中的五个洋区",
+      "paragraphs": [
+        "按本篇统一使用的NOAA ETOPO1面积表整理，太平洋约1.69亿平方千米，大西洋约8513万，印度洋约7056万，南大洋约2196万，北冰洋约1556万。太平洋约占这套五洋合计面积的近一半，北冰洋最小。图表把原表单列的南海并入太平洋，避免漏算，也没有把原表的北、南分区重复累加。",
+        "海洋面积并不是只有一个不变数字。是否单列南大洋、如何安排附属海、岸线与冰架怎样处理，都会改变统计结果。因此，本篇让五个洋区使用同一份面积表；这份历史模型统计用于比较规模，不代表本次重新测量，也不能用其他资料的洋界或海冰范围来直接替换。"
+      ],
+      "visuals": [
+        {
+          "kind": "bars",
+          "title": "五大洋面积对比",
+          "unit": "万平方千米",
+          "rows": [
+            {
+              "label": "太平洋",
+              "value": 16872.3,
+              "place": "pacific-ocean"
+            },
+            {
+              "label": "大西洋",
+              "value": 8513.3,
+              "place": "atlantic-ocean"
+            },
+            {
+              "label": "印度洋",
+              "value": 7056,
+              "place": "indian-ocean"
+            },
+            {
+              "label": "南大洋",
+              "value": 2196,
+              "place": "southern-ocean"
+            },
+            {
+              "label": "北冰洋",
+              "value": 1555.8,
+              "place": "arctic-ocean"
+            }
+          ],
+          "note": "统一采用NOAA ETOPO1公布的面积表，南大洋北界为南纬60°；太平洋合并该表另列的南海条目（696.3万平方千米），其余沿用原表洋区及附属海口径。数值作规模比较，不表示现时海冰或精确洋界；不与JetStream等不同分区表混算。",
+          "sources": [
+            {
+              "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+              "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "four-or-five-oceans",
+      "title": "四大洋与五大洋：分歧与现行约定",
+      "paragraphs": [
+        "四大洋口径列出太平洋、大西洋、印度洋和北冰洋，把南极洲周围海域分别计入前三者；五大洋口径则把环绕南极洲的南大洋单列。两种说法的差别在划分方式，海水本身一直连通。旧图集、教材和统计资料保留不同版本，因而读者仍会遇到不同洋数。",
+        "国际水道测量组织（IHO）在2023年通过02/2023号决议，承认南大洋，并以南纬60°作为其北界，相应调整太平洋、大西洋和印度洋的南界。此前1953年《海洋与海的界限》没有单列南大洋，后续修订长期未定；截至2026年，已不能继续笼统地说“IHO尚未认可南大洋”。",
+        "决议仍保留国家意见：阿根廷认为没有充分技术依据把这部分水域单列为一个洋区；澳大利亚保留本国的范围约定。IHO也允许各国水道测量机构在符合相关技术模型的前提下使用自己的界限。因此，今天的分歧既包括传统四洋用法，也包括不同用途采用什么边界。",
+        "南纬60°是一条便于命名和制图的界线，不是海水性质突然变化的物理边界。研究海洋生态时，还会使用南极辐合带等随位置和时间变化的自然分界。山河图以五大洋为介绍框架，提及面积和范围时分别注明依据；地图只标参考位置，不把某种约定画成唯一、精确的自然边缘。"
+      ],
+      "mediaIds": [
+        "world-land-ocean-map"
+      ]
+    },
+    {
+      "id": "pacific",
+      "title": "太平洋：最广阔的洋盆",
+      "paragraphs": [
+        "太平洋在亚洲、大洋洲与美洲之间展开，北经白令海峡与北冰洋相接，向南通往南大洋。它是面积最大的洋区；世界地图常在太平洋中部切开图幅，于是同一个洋会出现在图的左右两侧。在地球上，这两侧实际相连。",
+        "太平洋周缘许多地方位于板块边界，深海沟、岛弧、火山和地震带与俯冲等过程密切相关。海洋面积大，并不意味着海底平坦：大陆架、深海平原、海山和海沟共同构成海底地形，海面以下也有巨大的高差。",
+        "这片海域既储存和输送热量，也通过蒸发与大气交换水汽。热带太平洋海温和环流变化与厄尔尼诺等现象有关，影响会经大气联系传向远方。沿岸气候仍需结合风、山地和纬度解释；同临太平洋的东亚海岸、美洲西岸与大洋洲岛屿，并不会因此具有相同环境。"
+      ],
+      "caseIds": [
+        "pacific-ocean"
+      ]
+    },
+    {
+      "id": "atlantic",
+      "title": "大西洋：位于两侧大陆之间",
+      "paragraphs": [
+        "大西洋在美洲与欧洲、非洲之间南北延伸，北接北冰洋，南通南大洋，面积居五洋第二。地中海经直布罗陀海峡与它相接，亚马孙、刚果、莱茵河所在水系等也把不同大陆的来水、泥沙和营养物质送向大西洋及其附属海。",
+        "大西洋中脊与海底扩张有关，是理解洋盆怎样演变的重要线索。海面上的南北延伸形态，与海底的山脊、盆地和两侧大陆边缘共同组成这片洋区；沿岸河口、潮汐和波浪作用，又形成尺度更小的近岸环境。",
+        "大西洋经向翻转环流（AMOC）涉及表层与深层的水体交换，参与热量输送。它是一套环流系统，不能与单条墨西哥湾暖流或整个全球海洋环流互换。海港与跨洋航线连接两侧陆地，河流和陆路再把港口延伸到腹地，使海洋联系进入大陆内部。"
+      ],
+      "caseIds": [
+        "atlantic-ocean"
+      ]
+    },
+    {
+      "id": "indian",
+      "title": "印度洋：北部受大陆围合的季风洋区",
+      "paragraphs": [
+        "印度洋位于非洲以东、澳大利亚以西、亚洲以南，南部与南大洋相接。它的北部被亚洲大陆围合，阿拉伯海和孟加拉湾分别位于印度半岛两侧；与太平洋、大西洋相比，这种北侧陆地格局使海陆季节联系格外醒目。",
+        "季风涉及海陆热力差异和大尺度环流的季节变化，印度洋是南亚等地的重要水汽来源。风把水汽送向陆地，山地进一步决定雨水落在哪里；同样临海的地点，也会因迎风背风、季节和气压背景不同而出现降水差异。",
+        "恒河等水系经三角洲进入孟加拉湾，把山地、平原与近海连成一条水沙路径。马六甲海峡方向联系太平洋，红海、苏伊士运河方向联系地中海。海洋水汽与海上运输在这里重叠，却属于不同机制，需要分别看风和水的运动、船舶能够通行的水道以及港口设施。"
+      ],
+      "caseIds": [
+        "indian-ocean"
+      ]
+    },
+    {
+      "id": "southern",
+      "title": "南大洋：环绕南极洲的海洋联系",
+      "paragraphs": [
+        "南大洋环绕南极洲；按IHO的2023年决议，北界取南纬60°。与北冰洋被大陆和岛屿环绕的格局相比，这里在大陆外围形成连续的海洋通道，把太平洋、大西洋与印度洋联系起来。",
+        "南极绕极流大体向东环绕南极洲，风、海水密度差异与海底地形共同影响它的运动。这种连通使南大洋参与全球海水、热量和物质交换，也为把这片海域作为独立研究对象提供了自然背景。但洋流和海洋锋面的位置，并不处处沿南纬60°排列。",
+        "南极洲流入海中的冰川与冰架，是陆地冰系统的一部分；南大洋海面每年冻结和消融的海冰，则来自海水。海冰变化影响光照、空气与海水的交换和生物活动，不能把季节海冰边缘当成南大洋边界，也不能把海冰面积当成这一洋区的总面积。"
+      ],
+      "caseIds": [
+        "southern-ocean"
+      ]
+    },
+    {
+      "id": "arctic",
+      "title": "北冰洋：大陆环绕的极地海洋",
+      "paragraphs": [
+        "北冰洋位于北极附近，周围是欧亚大陆、北美洲与格陵兰等陆地，面积在五洋中最小。它通过大西洋一侧的海域和水道交换海水，太平洋一侧则经白令海峡相连。北极点在海洋中，南极点位于大陆上，两极首先就有不同的海陆结构。",
+        "低温使海水形成海冰，夏季融化与冬季冻结带来明显季节变化。陆地河流注入淡水，海冰形成和融化也改变海水盐度；来自其他洋区的水体再通过海峡进入，共同影响水层结构和热量交换。冰面下面仍然是海水，海冰并不把北冰洋变成大陆。",
+        "环绕的陆地、较狭窄的出口与季节海冰，使北冰洋的交换和通达条件不同于南大洋。沿岸居民、生态系统和航行活动都受到这些条件影响。是否能够航行还取决于冰况、天气、船舶与设施，认识北冰洋的地理位置不能直接替代对某次航程条件的判断。"
+      ],
+      "caseIds": [
+        "arctic-ocean"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "四大洋与五大洋的差别在哪里？",
+      "answer": "是否单列南大洋，以及各资料采用什么界限。IHO已于2023年承认南大洋、以南纬60°为北界，仍保留国家范围意见与不同研究用途。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "IHO · 决议02/2023：承认南大洋及海域界限（M-3，2024年7月版，第110—113页）",
+      "url": "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf"
+    },
+    {
+      "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+      "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
+    },
+    {
+      "title": "NOAA · What is the largest ocean basin on Earth?",
+      "url": "https://oceanservice.noaa.gov/facts/biggestocean.html"
+    },
+    {
+      "title": "NOAA · 世界最小的海洋（2026更新页面）",
+      "url": "https://oceanservice.noaa.gov/facts/smallestocean.html"
+    },
+    {
+      "title": "NOAA · Atlantic Meridional Overturning Circulation",
+      "url": "https://oceanservice.noaa.gov/facts/amoc.html"
+    },
+    {
+      "title": "NOAA AOML · Antarctic Circumpolar Current",
+      "url": "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/index.php"
+    },
+    {
+      "title": "NSIDC · How does Antarctic sea ice differ from Arctic sea ice?",
+      "url": "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice"
+    },
+    {
+      "title": "NOAA NESDIS · What Is a Monsoon?",
+      "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+    },
+    {
+      "title": "NOAA · The Ocean（五大洋划分口径）",
+      "url": "https://www.noaa.gov/jetstream/ocean"
+    },
+    {
+      "title": "NOAA · How many oceans are there?",
+      "url": "https://oceanservice.noaa.gov/facts/howmanyoceans.html"
+    },
+    {
+      "title": "NASA · 航线与多年平均资料尺度",
+      "url": "https://science.nasa.gov/blogs/earth-matters/2013/03/25/matters-of-scale-and-why-they-matter/"
+    },
+    {
+      "title": "World Bank · India: Managing Floods and Droughts（2023）",
+      "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+    },
+    {
+      "title": "NASA · Ice and Clouds in the Bering Strait",
+      "url": "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/"
+    }
+  ]
+}

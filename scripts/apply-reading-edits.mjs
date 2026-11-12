@@ -16,7 +16,7 @@ export function applyReadingEdits(topics,articles){
     assert(index>=0,'Unknown editorial topic '+edited.id)
     const original=articles[index]
     const articleIdentity=({introduction,sections,parts,questions,presentation,updatedAt,...identity})=>identity
-    const sectionIdentity=({title,paragraphs,mediaIds,visuals,...identity})=>identity
+    const sectionIdentity=({title,paragraphs,mediaIds,mediaPlacement,visuals,...identity})=>identity
     const partIdentity=({description,...identity})=>identity
     assert.deepEqual(articleIdentity(edited),articleIdentity(original),edited.id+' metadata and sources preserved')
     assert.deepEqual(edited.sections.map(sectionIdentity).sort((a,b)=>a.id.localeCompare(b.id)),original.sections.map(sectionIdentity).sort((a,b)=>a.id.localeCompare(b.id)),edited.id+' chapter addresses and map cases preserved')

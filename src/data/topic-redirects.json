@@ -1,0 +1,900 @@
+{
+  "landform-processes": {
+    "topicId": "landform-processes",
+    "sectionId": "rocks",
+    "chapters": {
+      "part-earth-rocks": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "earth-rocks-section-1": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "earth-rocks-section-2": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "earth-rocks-section-3": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "earth-rocks-section-4": {
+        "topicId": "landform-processes",
+        "sectionId": "weathering"
+      },
+      "earth-rocks-module-case-deccan-plateau": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "earth-rocks-module-case-danxiashan": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "earth-rocks-module-case-guilin-karst": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "earth-rocks-module-case-himalayas": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "part-landform-processes": {
+        "topicId": "landform-processes",
+        "sectionId": "history"
+      },
+      "landform-processes-section-1": {
+        "topicId": "landform-processes",
+        "sectionId": "history"
+      },
+      "section-1": {
+        "topicId": "landform-processes",
+        "sectionId": "history"
+      },
+      "landform-processes-section-2": {
+        "topicId": "landform-processes",
+        "sectionId": "uplift"
+      },
+      "section-2": {
+        "topicId": "landform-processes",
+        "sectionId": "uplift"
+      },
+      "landform-processes-section-3": {
+        "topicId": "landform-processes",
+        "sectionId": "transport"
+      },
+      "section-3": {
+        "topicId": "landform-processes",
+        "sectionId": "transport"
+      },
+      "landform-processes-section-4": {
+        "topicId": "landform-processes",
+        "sectionId": "history"
+      },
+      "section-4": {
+        "topicId": "landform-processes",
+        "sectionId": "history"
+      },
+      "landform-processes-module-case-himalayas": {
+        "topicId": "landform-processes",
+        "sectionId": "uplift"
+      },
+      "module-case-himalayas": {
+        "topicId": "landform-processes",
+        "sectionId": "uplift"
+      },
+      "landform-processes-module-case-loess-plateau": {
+        "topicId": "landform-processes",
+        "sectionId": "transport"
+      },
+      "module-case-loess-plateau": {
+        "topicId": "landform-processes",
+        "sectionId": "transport"
+      },
+      "landform-processes-module-case-yangtze": {
+        "topicId": "landform-processes",
+        "sectionId": "transport"
+      },
+      "module-case-yangtze": {
+        "topicId": "landform-processes",
+        "sectionId": "transport"
+      },
+      "part-landform-danxia": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "landform-danxia-section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "landform-danxia-section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "landform-danxia-section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "landform-danxia-section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "landform-danxia-module-case-danxiashan": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "landform-danxia-module-case-langshan-danxia": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "introduction": {
+        "topicId": "landform-processes",
+        "sectionId": "introduction"
+      },
+      "questions": {
+        "topicId": "landform-processes",
+        "sectionId": "questions"
+      }
+    }
+  },
+  "earth-rocks": {
+    "topicId": "landform-processes",
+    "sectionId": "rocks",
+    "chapters": {
+      "part-earth-rocks": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "section-1": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "section-2": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "section-3": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "section-4": {
+        "topicId": "landform-processes",
+        "sectionId": "weathering"
+      },
+      "module-case-deccan-plateau": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "module-case-danxiashan": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "module-case-guilin-karst": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      },
+      "module-case-himalayas": {
+        "topicId": "landform-processes",
+        "sectionId": "rocks"
+      }
+    }
+  },
+  "landform-danxia": {
+    "topicId": "landform-landscapes",
+    "sectionId": "redbeds-sandstone",
+    "chapters": {
+      "part-landform-danxia": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "module-case-danxiashan": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      },
+      "module-case-langshan-danxia": {
+        "topicId": "landform-landscapes",
+        "sectionId": "redbeds-sandstone"
+      }
+    }
+  },
+  "landform-karst": {
+    "topicId": "landform-landscapes",
+    "sectionId": "karst",
+    "chapters": {
+      "section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "karst"
+      },
+      "section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "karst"
+      },
+      "section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "karst"
+      },
+      "section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "karst"
+      },
+      "section-5": {
+        "topicId": "landform-landscapes",
+        "sectionId": "karst"
+      },
+      "module-case-guilin-karst": {
+        "topicId": "landform-landscapes",
+        "sectionId": "karst"
+      },
+      "module-case-shilin-karst": {
+        "topicId": "landform-landscapes",
+        "sectionId": "karst"
+      },
+      "module-case-wulong-karst": {
+        "topicId": "landform-landscapes",
+        "sectionId": "karst"
+      },
+      "module-case-yunnan-guizhou-plateau": {
+        "topicId": "landform-landscapes",
+        "sectionId": "karst"
+      },
+      "introduction": {
+        "topicId": "landform-landscapes",
+        "sectionId": "karst"
+      },
+      "questions": {
+        "topicId": "landform-landscapes",
+        "sectionId": "questions"
+      }
+    }
+  },
+  "landform-rivers": {
+    "topicId": "landform-landscapes",
+    "sectionId": "rivers",
+    "chapters": {
+      "part-landform-river-erosion": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-erosion-section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-erosion-section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-erosion-section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-erosion-section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-erosion-module-case-yangtze": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-erosion-module-case-yellow-river": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-erosion-module-case-loess-plateau": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "part-landform-river-deposition": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-deposition-section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-deposition-section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-deposition-section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-deposition-section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-deposition-module-case-north-china-plain": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-deposition-module-case-yangtze-delta": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "landform-river-deposition-module-case-mekong-delta-farming": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "introduction": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "questions": {
+        "topicId": "landform-landscapes",
+        "sectionId": "questions"
+      }
+    }
+  },
+  "landform-river-erosion": {
+    "topicId": "landform-landscapes",
+    "sectionId": "rivers",
+    "chapters": {
+      "part-landform-river-erosion": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "module-case-yangtze": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "module-case-yellow-river": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "module-case-loess-plateau": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      }
+    }
+  },
+  "landform-river-deposition": {
+    "topicId": "landform-landscapes",
+    "sectionId": "rivers",
+    "chapters": {
+      "part-landform-river-deposition": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "module-case-north-china-plain": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "module-case-yangtze-delta": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      },
+      "module-case-mekong-delta-farming": {
+        "topicId": "landform-landscapes",
+        "sectionId": "rivers"
+      }
+    }
+  },
+  "landform-wind": {
+    "topicId": "landform-landscapes",
+    "sectionId": "wind",
+    "chapters": {
+      "part-landform-yardang": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-yardang-section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-yardang-section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-yardang-section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-yardang-section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-yardang-module-case-gobi-desert": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-yardang-module-case-qaidam-basin": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-yardang-module-case-sahara": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "part-landform-dunes": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-dunes-section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-dunes-section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-dunes-section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-dunes-section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-dunes-module-case-taklamakan": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-dunes-module-case-namib-sand-sea": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "landform-dunes-module-case-sahara": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "part-landform-loess": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "landform-loess-section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "landform-loess-section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "landform-loess-section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "landform-loess-section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "landform-loess-module-case-loess-plateau": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "landform-loess-module-case-yellow-river": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "introduction": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "questions": {
+        "topicId": "landform-landscapes",
+        "sectionId": "questions"
+      }
+    }
+  },
+  "landform-yardang": {
+    "topicId": "landform-landscapes",
+    "sectionId": "wind",
+    "chapters": {
+      "part-landform-yardang": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "module-case-gobi-desert": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "module-case-qaidam-basin": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "module-case-sahara": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      }
+    }
+  },
+  "landform-dunes": {
+    "topicId": "landform-landscapes",
+    "sectionId": "wind",
+    "chapters": {
+      "part-landform-dunes": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "module-case-taklamakan": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "module-case-namib-sand-sea": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      },
+      "module-case-sahara": {
+        "topicId": "landform-landscapes",
+        "sectionId": "wind"
+      }
+    }
+  },
+  "landform-loess": {
+    "topicId": "landform-landscapes",
+    "sectionId": "loess",
+    "chapters": {
+      "part-landform-loess": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "module-case-loess-plateau": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      },
+      "module-case-yellow-river": {
+        "topicId": "landform-landscapes",
+        "sectionId": "loess"
+      }
+    }
+  },
+  "landform-glaciers": {
+    "topicId": "landform-landscapes",
+    "sectionId": "glaciers",
+    "chapters": {
+      "section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "glaciers"
+      },
+      "section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "glaciers"
+      },
+      "section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "glaciers"
+      },
+      "section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "glaciers"
+      },
+      "module-case-alps": {
+        "topicId": "landform-landscapes",
+        "sectionId": "glaciers"
+      },
+      "module-case-himalayas": {
+        "topicId": "landform-landscapes",
+        "sectionId": "glaciers"
+      },
+      "module-case-great-lakes": {
+        "topicId": "landform-landscapes",
+        "sectionId": "glaciers"
+      },
+      "introduction": {
+        "topicId": "landform-landscapes",
+        "sectionId": "glaciers"
+      },
+      "questions": {
+        "topicId": "landform-landscapes",
+        "sectionId": "questions"
+      }
+    }
+  },
+  "landform-coasts": {
+    "topicId": "landform-landscapes",
+    "sectionId": "coasts",
+    "chapters": {
+      "section-1": {
+        "topicId": "landform-landscapes",
+        "sectionId": "coasts"
+      },
+      "section-2": {
+        "topicId": "landform-landscapes",
+        "sectionId": "coasts"
+      },
+      "section-3": {
+        "topicId": "landform-landscapes",
+        "sectionId": "coasts"
+      },
+      "section-4": {
+        "topicId": "landform-landscapes",
+        "sectionId": "coasts"
+      },
+      "module-case-liaodong-hills": {
+        "topicId": "landform-landscapes",
+        "sectionId": "coasts"
+      },
+      "module-case-shandong-hills": {
+        "topicId": "landform-landscapes",
+        "sectionId": "coasts"
+      },
+      "module-case-yangtze-delta": {
+        "topicId": "landform-landscapes",
+        "sectionId": "coasts"
+      },
+      "module-case-sundarbans-mangroves": {
+        "topicId": "landform-landscapes",
+        "sectionId": "coasts"
+      },
+      "introduction": {
+        "topicId": "landform-landscapes",
+        "sectionId": "coasts"
+      },
+      "questions": {
+        "topicId": "landform-landscapes",
+        "sectionId": "questions"
+      }
+    }
+  },
+  "world-continents": {
+    "topicId": "world-continents",
+    "sectionId": "continents-overview",
+    "chapters": {
+      "part-world-continents": {
+        "topicId": "world-continents",
+        "sectionId": "continents-overview"
+      },
+      "world-continents-section-1": {
+        "topicId": "world-continents",
+        "sectionId": "continents-boundaries"
+      },
+      "section-1": {
+        "topicId": "world-continents",
+        "sectionId": "continents-boundaries"
+      },
+      "world-continents-section-2": {
+        "topicId": "world-continents",
+        "sectionId": "continents-overview"
+      },
+      "section-2": {
+        "topicId": "world-continents",
+        "sectionId": "continents-overview"
+      },
+      "world-continents-section-3": {
+        "topicId": "world-continents",
+        "sectionId": "continents-connections"
+      },
+      "section-3": {
+        "topicId": "world-continents",
+        "sectionId": "continents-connections"
+      },
+      "world-continents-module-eurasia": {
+        "topicId": "world-continents",
+        "sectionId": "asia"
+      },
+      "module-eurasia": {
+        "topicId": "world-continents",
+        "sectionId": "asia"
+      },
+      "world-continents-module-africa": {
+        "topicId": "world-continents",
+        "sectionId": "africa"
+      },
+      "module-africa": {
+        "topicId": "world-continents",
+        "sectionId": "africa"
+      },
+      "world-continents-module-americas": {
+        "topicId": "world-continents",
+        "sectionId": "north-america"
+      },
+      "module-americas": {
+        "topicId": "world-continents",
+        "sectionId": "north-america"
+      },
+      "world-continents-module-ocean-polar": {
+        "topicId": "world-continents",
+        "sectionId": "oceania"
+      },
+      "module-ocean-polar": {
+        "topicId": "world-continents",
+        "sectionId": "oceania"
+      },
+      "world-continents-section-4": {
+        "topicId": "world-continents",
+        "sectionId": "continents-connections"
+      },
+      "section-4": {
+        "topicId": "world-continents",
+        "sectionId": "continents-connections"
+      },
+      "part-world-regional-comparison": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "part-world-regional-comparison"
+      },
+      "world-regional-comparison-section-1": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-1"
+      },
+      "world-regional-comparison-section-2": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-2"
+      },
+      "world-regional-comparison-module-broad-regions": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-module-broad-regions"
+      },
+      "world-regional-comparison-module-countries": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-module-countries"
+      },
+      "world-regional-comparison-section-3": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-3"
+      },
+      "world-regional-comparison-section-4": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-4"
+      },
+      "introduction": {
+        "topicId": "world-continents",
+        "sectionId": "introduction"
+      },
+      "questions": {
+        "topicId": "world-continents",
+        "sectionId": "questions"
+      }
+    }
+  },
+  "world-regional-comparison": {
+    "topicId": "world-regional-comparison",
+    "sectionId": "part-world-regional-comparison",
+    "chapters": {
+      "part-world-regional-comparison": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "part-world-regional-comparison"
+      },
+      "section-1": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-1"
+      },
+      "world-regional-comparison-section-1": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-1"
+      },
+      "section-2": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-2"
+      },
+      "world-regional-comparison-section-2": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-2"
+      },
+      "module-broad-regions": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-module-broad-regions"
+      },
+      "world-regional-comparison-module-broad-regions": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-module-broad-regions"
+      },
+      "module-countries": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-module-countries"
+      },
+      "world-regional-comparison-module-countries": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-module-countries"
+      },
+      "section-3": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-3"
+      },
+      "world-regional-comparison-section-3": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-3"
+      },
+      "section-4": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-4"
+      },
+      "world-regional-comparison-section-4": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "world-regional-comparison-section-4"
+      },
+      "introduction": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "introduction"
+      },
+      "questions": {
+        "topicId": "world-regional-comparison",
+        "sectionId": "questions"
+      }
+    }
+  }
+}

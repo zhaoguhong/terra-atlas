@@ -2,7 +2,7 @@
   "reviewedAt": "2026-10-11",
   "version": "topic-intros-2026-10-11-v2",
   "inputSha256": "cf3fcfbcbf4489046a08cccbee1f8013e9ceba7d6f5bba8917cd241bfc2f1b91",
-  "outputSha256": "1332e73fcd49afbffcf1239f5b58d1be242c838ae5dfd53f219223647344dadf",
+  "outputSha256": "826f81728a54c4dedfdad2f38ed39e31418b035dfd40d9d2b4ca354e2021f4b0",
   "license": "说明与图表代码原创；参考文章和源数据分别保留原许可。",
   "processing": "按主题逐项审查摘要、正文、模块和图表，删除操作套话与重复地点列表；详细解释由用户展开，地图阅读保持自由顺序。",
   "topics": [
@@ -37,7 +37,7 @@
         "comparison",
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
         "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
@@ -99,7 +99,7 @@
         "comparison",
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
         "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
@@ -147,7 +147,7 @@
         "comparison",
         "bars"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
         "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
@@ -214,7 +214,7 @@
         "comparison",
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://science.nasa.gov/photojournal/nile-river-fluctuations-near-khartoum-sudan/",
         "https://science.nasa.gov/earth/earth-observatory/khartoum-sudan-5514/",
@@ -266,7 +266,7 @@
         "comparison",
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.nature.com/articles/s41597-023-02549-6",
         "https://www.noaa.gov/jetstream/global/climate-zones/jetstream-max-addition-k-ppen-geiger-climate-subdivisions",
@@ -317,7 +317,7 @@
       "visuals": [
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php",
         "https://blogs.worldbank.org/en/sustainablecities/what-does-urban-mean",
@@ -345,7 +345,7 @@
       "visuals": [
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/",
         "https://www.pewresearch.org/religion/2025/06/09/global-religious-change-methodology/",
@@ -368,7 +368,7 @@
       "visuals": [
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.unesco.org/en/languages-education/need-know?hub=66703",
         "https://glottolog.org/glottolog/glottologinformation",
@@ -399,7 +399,7 @@
         "comparison",
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-gobi-desert-79746/",
         "https://whc.unesco.org/en/list/1430/",
@@ -444,7 +444,7 @@
       "visuals": [
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
         "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html",
@@ -493,7 +493,7 @@
       "visuals": [
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.beijing.gov.cn/renwen/bjgk/",
         "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
@@ -524,7 +524,7 @@
         "comparison",
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://qys.moa.gov.cn/gdxw/202604/t20260427_6483675.htm",
         "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm",
@@ -581,7 +581,7 @@
         "comparison",
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.zhengzhou.gov.cn/2026lh01/9888984.jhtml",
         "https://www.cas.cn/spx/202210/t20221008_4849995.shtml",
@@ -625,7 +625,7 @@
       "visuals": [
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://science.nasa.gov/earth/facts/",
         "https://spaceplace.nasa.gov/seasons/en/",
@@ -650,7 +650,7 @@
       "visuals": [
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://oceanservice.noaa.gov/facts/latitude.html",
         "https://oceanservice.noaa.gov/facts/longitude.html",
@@ -681,7 +681,7 @@
       "visuals": [
         "bars"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
         "https://www.gov.cn/guoqing/2020-07/28/content_5530577.htm",
@@ -747,7 +747,7 @@
         "comparison",
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.nea.gov.cn/2006-06/28/c_131215308.htm",
         "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
@@ -770,22 +770,97 @@
     },
     {
       "id": "world-continents",
-      "title": "世界海陆与区域比较",
+      "title": "七大洲",
       "summaryReviewed": true,
-      "sectionsReviewed": 4,
+      "sectionsReviewed": 3,
       "modulesReviewed": [
-        "world-continents-eurasia",
-        "world-continents-africa",
-        "world-continents-americas",
-        "world-continents-ocean-polar",
-        "world-regional-comparison-broad-regions",
-        "world-regional-comparison-countries"
+        "asia",
+        "africa",
+        "north-america",
+        "south-america",
+        "antarctica",
+        "europe",
+        "oceania"
       ],
       "visuals": [
-        "bars",
+        "bars"
+      ],
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
+      "sourceUrls": [
+        "https://science.nasa.gov/earth/water-on-earth/the-water-future-of-earths-third-pole/",
+        "https://unstats.un.org/unsd/methodology/M49",
+        "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
+        "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://www.unesco.org/en/iggp/toratau-unesco-global-geopark",
+        "https://whc.unesco.org/document/167636",
+        "https://education.nationalgeographic.org/resource/africa-physical-geography/",
+        "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/",
+        "https://whc.unesco.org/en/list/1432/",
+        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/",
+        "https://education.nationalgeographic.org/resource/north-america-physical-geography/",
+        "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance",
+        "https://education.nationalgeographic.org/resource/south-america-physical-geography/",
+        "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/",
+        "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/",
+        "https://www.bas.ac.uk/about/where-we-work/antarctica/",
+        "https://education.nationalgeographic.org/resource/europe-physical-geography/",
+        "https://www.portofrotterdam.com/en/logistics/connections",
+        "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps",
+        "https://education.nationalgeographic.org/resource/oceania-physical-geography/",
+        "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there",
+        "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html",
+        "https://geodoi.ac.cn/DOIPaper/HTML/2019139402/201902139403.htm",
+        "https://education.nationalgeographic.org/resource/asia/"
+      ]
+    },
+    {
+      "id": "world-oceans",
+      "title": "五大洋",
+      "summaryReviewed": true,
+      "sectionsReviewed": 3,
+      "modulesReviewed": [
+        "pacific",
+        "atlantic",
+        "indian",
+        "southern",
+        "arctic"
+      ],
+      "visuals": [
+        "bars"
+      ],
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
+      "sourceUrls": [
+        "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf",
+        "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf",
+        "https://oceanservice.noaa.gov/facts/biggestocean.html",
+        "https://oceanservice.noaa.gov/facts/smallestocean.html",
+        "https://oceanservice.noaa.gov/facts/amoc.html",
+        "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/index.php",
+        "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice",
+        "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon",
+        "https://www.noaa.gov/jetstream/ocean",
+        "https://oceanservice.noaa.gov/facts/howmanyoceans.html",
+        "https://science.nasa.gov/blogs/earth-matters/2013/03/25/matters-of-scale-and-why-they-matter/",
+        "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts",
+        "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/"
+      ]
+    },
+    {
+      "id": "world-regional-comparison",
+      "title": "世界区域比较",
+      "summaryReviewed": true,
+      "sectionsReviewed": 3,
+      "modulesReviewed": [
+        "world-regional-comparison-module-broad-regions",
+        "world-regional-comparison-module-countries"
+      ],
+      "visuals": [
+        "comparison",
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://education.nationalgeographic.org/resource/africa-physical-geography/",
         "https://education.nationalgeographic.org/resource/europe-physical-geography/",
@@ -810,6 +885,7 @@
         "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there",
         "https://www.bas.ac.uk/about/where-we-work/antarctica/",
         "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html",
+        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/",
         "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon",
         "https://www.mrcmekong.org/geography/",
         "https://www.mrcmekong.org/basin-climate/",
@@ -857,7 +933,7 @@
       "visuals": [
         "plates"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://pubs.usgs.gov/gip/dynamic/understanding.html",
         "https://whc.unesco.org/en/list/1152/",
@@ -896,7 +972,7 @@
       "visuals": [
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.nrcs.usda.gov/resources/education-and-teaching-materials/soil-facts",
         "https://www.usgs.gov/publications/soil-formation-chapter-6",
@@ -932,7 +1008,7 @@
       "visuals": [
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents",
         "https://oceanservice.noaa.gov/facts/upwelling.html",
@@ -958,7 +1034,7 @@
       "visuals": [
         "comparison"
       ],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice",
         "https://nsidc.org/learn/cryosphere-glossary/arctic",
@@ -973,22 +1049,17 @@
     },
     {
       "id": "landform-processes",
-      "title": "岩石与地貌形成",
+      "title": "岩石与地貌的形成",
       "summaryReviewed": true,
       "sectionsReviewed": 4,
       "modulesReviewed": [
-        "landform-processes-case-himalayas",
-        "landform-processes-case-loess-plateau",
-        "landform-processes-case-yangtze",
-        "earth-rocks-case-deccan-plateau",
-        "earth-rocks-case-danxiashan",
-        "earth-rocks-case-guilin-karst",
-        "earth-rocks-case-himalayas",
-        "landform-danxia-case-danxiashan",
-        "landform-danxia-case-langshan-danxia"
+        "rocks",
+        "uplift",
+        "weathering",
+        "transport"
       ],
       "visuals": [],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.nps.gov/subjects/geology/landforms.htm",
         "https://www.nps.gov/subjects/geology/fluvial-landforms.htm",
@@ -1009,55 +1080,55 @@
         "https://whc.unesco.org/en/list/1335/",
         "https://whc.unesco.org/en/list/1335/maps/",
         "https://whc.unesco.org/en/list/1248/",
-        "https://whc.unesco.org/en/list/1248/maps/"
-      ]
-    },
-    {
-      "id": "landform-karst",
-      "title": "喀斯特地貌",
-      "summaryReviewed": true,
-      "sectionsReviewed": 4,
-      "modulesReviewed": [
-        "case-guilin-karst",
-        "case-shilin-karst",
-        "case-wulong-karst",
-        "case-yunnan-guizhou-plateau"
-      ],
-      "visuals": [],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
-      "sourceUrls": [
-        "https://www.usgs.gov/mission-areas/water-resources/science/karst-aquifers",
-        "https://whc.unesco.org/en/list/1248/",
-        "https://www.nps.gov/subjects/caves/karst-landscapes.htm",
         "https://whc.unesco.org/en/list/1248/maps/",
-        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html",
-        "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html"
+        "https://www.nps.gov/subjects/caves/karst-landscapes.htm",
+        "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-joshua-tree-national-park"
       ]
     },
     {
-      "id": "landform-rivers",
-      "title": "河流塑造的地貌",
+      "id": "landform-landscapes",
+      "title": "常见地貌与中国典型景观",
       "summaryReviewed": true,
       "sectionsReviewed": 4,
       "modulesReviewed": [
-        "landform-river-erosion-case-yangtze",
-        "landform-river-erosion-case-yellow-river",
-        "landform-river-erosion-case-loess-plateau",
-        "landform-river-deposition-case-north-china-plain",
-        "landform-river-deposition-case-yangtze-delta",
-        "landform-river-deposition-case-mekong-delta-farming"
+        "karst",
+        "redbeds-sandstone",
+        "rivers",
+        "wind",
+        "loess",
+        "glaciers",
+        "volcanoes",
+        "coasts"
       ],
       "visuals": [],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
-        "https://www.nps.gov/subjects/geology/fluvial-landforms.htm",
         "https://www.nps.gov/subjects/geology/landforms.htm",
-        "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
-        "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
-        "https://www.mee.gov.cn/zcwj/zyygwj/202110/t20211009_955779.shtml",
-        "https://www.yrcc.gov.cn/zwzc/zcjd/202403/t20240312_426969.html",
+        "https://www.nps.gov/subjects/geology/fluvial-landforms.htm",
+        "https://www.nps.gov/subjects/geology/aeolian-landforms.htm",
+        "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
         "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html",
         "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html",
+        "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
+        "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
+        "https://www.nps.gov/subjects/geology/rocks.htm",
+        "https://www.nps.gov/subjects/geology/igneous.htm",
+        "https://www.nps.gov/subjects/geology/sedimentary.htm",
+        "https://www.nps.gov/subjects/geology/metamorphic.htm",
+        "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/",
+        "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon",
+        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/",
+        "https://whc.unesco.org/en/list/1335/",
+        "https://whc.unesco.org/en/list/1335/maps/",
+        "https://whc.unesco.org/en/list/1248/",
+        "https://whc.unesco.org/en/list/1248/maps/",
+        "https://www.usgs.gov/mission-areas/water-resources/science/karst-aquifers",
+        "https://www.nps.gov/subjects/caves/karst-landscapes.htm",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html",
+        "https://www.igsnrr.cas.cn/cbkx/kpyd/zybk/qhzy/202009/t20200910_5692909.html",
+        "https://www.mee.gov.cn/zcwj/zyygwj/202110/t20211009_955779.shtml",
+        "https://www.yrcc.gov.cn/zwzc/zcjd/202403/t20240312_426969.html",
         "https://www.nps.gov/subjects/geology/coastal-landforms.htm",
         "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html",
         "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html",
@@ -1065,31 +1136,8 @@
         "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html",
         "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html",
         "https://www.worldbank.org/en/news/feature/2024/05/14/greening-viet-nam-s-rice-bowl-a-mekong-delta-success-story",
-        "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience"
-      ]
-    },
-    {
-      "id": "landform-wind",
-      "title": "风沙与黄土地貌",
-      "summaryReviewed": true,
-      "sectionsReviewed": 4,
-      "modulesReviewed": [
-        "landform-yardang-case-gobi-desert",
-        "landform-yardang-case-qaidam-basin",
-        "landform-yardang-case-sahara",
-        "landform-dunes-case-taklamakan",
-        "landform-dunes-case-namib-sand-sea",
-        "landform-dunes-case-sahara",
-        "landform-loess-case-loess-plateau",
-        "landform-loess-case-yellow-river"
-      ],
-      "visuals": [],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
-      "sourceUrls": [
-        "https://www.nps.gov/subjects/geology/aeolian-landforms.htm",
-        "https://www.nps.gov/subjects/geology/landforms.htm",
+        "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience",
         "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-gobi-desert-79746/",
-        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/",
         "https://igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692364.html",
         "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
         "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html",
@@ -1100,60 +1148,33 @@
         "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692338.html",
         "https://science.nasa.gov/earth/earth-observatory/the-taklimakan-desert-a-factory-for-dust-storms-87969/",
         "https://oceanservice.noaa.gov/facts/upwelling.html",
-        "https://www.nps.gov/subjects/geology/fluvial-landforms.htm",
-        "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html",
-        "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html",
-        "https://www.mee.gov.cn/zcwj/zyygwj/202110/t20211009_955779.shtml",
-        "https://www.yrcc.gov.cn/zwzc/zcjd/202403/t20240312_426969.html"
-      ]
-    },
-    {
-      "id": "landform-glaciers",
-      "title": "冰川地貌",
-      "summaryReviewed": true,
-      "sectionsReviewed": 4,
-      "modulesReviewed": [
-        "case-alps",
-        "case-himalayas",
-        "case-great-lakes"
-      ],
-      "visuals": [],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
-      "sourceUrls": [
         "https://www.nps.gov/subjects/geology/glacial-landforms.htm",
         "https://www.nps.gov/articles/ushapedvalleysfjordshangingvalleys.htm",
         "https://www.seismo.ethz.ch/en/knowledge/causes-of-earthquakes/Switzerland/",
-        "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
-        "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
         "https://www.noaa.gov/education/resource-collections/freshwater/great-lakes-ecoregion",
-        "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004ICU.TXT"
-      ]
-    },
-    {
-      "id": "landform-coasts",
-      "title": "海岸地貌",
-      "summaryReviewed": true,
-      "sectionsReviewed": 4,
-      "modulesReviewed": [
-        "case-liaodong-hills",
-        "case-shandong-hills",
-        "case-yangtze-delta",
-        "case-sundarbans-mangroves"
-      ],
-      "visuals": [],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
-      "sourceUrls": [
-        "https://www.nps.gov/subjects/geology/coastal-landforms.htm",
-        "https://www.nps.gov/subjects/geology/fluvial-landforms.htm",
-        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+        "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004ICU.TXT",
         "https://www.ln.gov.cn/web/zwgkx/zfxxgk1/zc/xzgfxwj/szf/szfwj/2023010421545165331/index.shtml",
         "https://shandong-chorography.org/database/f063/section/19/article/2/?reflow=original",
-        "https://app.www.gov.cn/govdata/gov/201912/01/451514/article.html",
-        "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html",
-        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html",
-        "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html",
         "https://whc.unesco.org/en/list/798/",
-        "https://esa-worldcover.org/en/data-access"
+        "https://esa-worldcover.org/en/data-access",
+        "https://pubs.usgs.gov/gip/dynamic/understanding.html",
+        "https://whc.unesco.org/en/list/1152/",
+        "https://earthquake.usgs.gov/learn/parkfield/geology.php",
+        "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift",
+        "https://www.nature.com/articles/s41597-022-01742-3",
+        "https://www.usgs.gov/publications/seismicity-earth-1900-2013-seismotectonics-south-america-nazca-plate-region",
+        "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/",
+        "https://whc.unesco.org/en/list/1418/",
+        "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html",
+        "https://earthquake.usgs.gov/arcgis/rest/services/eq/map_plateboundaries/MapServer",
+        "https://www.nps.gov/subjects/volcanoes/index.htm",
+        "https://whc.unesco.org/en/list/640/",
+        "https://whc.unesco.org/en/list/547/",
+        "https://www.nps.gov/subjects/geology/volcanic-landforms.htm",
+        "https://wglj.sjz.gov.cn/columns/4bccb071-c987-46a8-9718-77801cb4eb16/202507/26/37b527a6-99cf-4d1d-b276-f2227f1320d5.html",
+        "https://volcano.si.edu/volcano.cfm?vn=305030",
+        "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-joshua-tree-national-park"
       ]
     },
     {
@@ -1168,7 +1189,7 @@
         "case-guilin-karst"
       ],
       "visuals": [],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.usgs.gov/special-topics/water-science-school/water-cycle",
         "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater",
@@ -1194,7 +1215,7 @@
         "case-san-andreas-fault"
       ],
       "visuals": [],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://pubs.usgs.gov/fs/2004/3072/fs-2004-3072.html",
         "https://www.undrr.org/terminology/disaster-risk",
@@ -1222,7 +1243,7 @@
         "case-indian-monsoon"
       ],
       "visuals": [],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://www.noaa.gov/jetstream/synoptic/origin-of-wind",
         "https://www.noaa.gov/jetstream/synoptic/air-masses",
@@ -1250,7 +1271,7 @@
         "case-yangtze-delta"
       ],
       "visuals": [],
-      "decision": "地图保留概览；完整文章含机制解释、图文、案例与思考题。",
+      "decision": "地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。",
       "sourceUrls": [
         "https://science.nasa.gov/climate-change/causes/",
         "https://science.nasa.gov/climate-change/evidence/",
@@ -1288,10 +1309,10 @@
   "readingRevision": {
     "reviewedAt": "2026-11-06",
     "version": "topics-2026-11-06-v3",
-    "scope": "本次编写与自查：59个原专题整合为30个主主题，保留原文、模块、图片和地图案例，新增天气及气候变化；32个地图侧栏增加精选正文导读和案例观察提示。非外部独立审核。"
+    "scope": "先前59个原专题整合并补充为32篇；六篇地貌重写为两篇，世界海陆与区域比较再拆为七大洲、五大洋与世界区域比较，当前30篇。保留旧链接转向与地图案例，按同类对象比较补充相关主题。非外部独立审核。"
   },
   "editorialRevision": {
-    "reviewedAt": "2026-11-10",
+    "reviewedAt": "2026-11-12",
     "topicIds": [
       "china-terrain",
       "china-rivers",
@@ -1311,21 +1332,205 @@
       "china-provinces",
       "energy-industry",
       "world-continents",
+      "world-oceans",
+      "world-regional-comparison",
       "world-tectonics",
       "world-ecosystems",
       "world-ocean-monsoon",
       "world-polar-comparison",
-      "landform-processes",
-      "landform-karst",
-      "landform-rivers",
-      "landform-wind",
-      "landform-glaciers",
-      "landform-coasts",
       "water-cycle",
       "earth-hazards",
       "weather-systems",
-      "climate-change"
+      "climate-change",
+      "landform-processes",
+      "landform-landscapes"
     ],
     "scope": "按科普文章逐篇编辑32篇主题、独立地图简版与模块解读；调整材料顺序、比较与配图，保留章节地址、案例及来源。文字编辑与一致性自查，不声称重新核验全部外部资料。"
+  },
+  "landformRevision": {
+    "version": "landforms-two-articles-2026-11-12",
+    "reviewedAt": "2026-11-12",
+    "processing": "将六篇地貌专题重写为两篇原创科普长文；新增张家界、嶂石岩、黄山与五大连池的文字比较，沿用已核验地图案例，不新增或推测范围。复用现有照片和概念图，沿用各自许可。旧主题与章节地址生成明确转向表。",
+    "validation": "章节、案例、图片位置与引用在生成和数据检查时校验；实际测试记录保存在私有验证目录。",
+    "sources": [
+      {
+        "title": "UNESCO · Wulingyuan Scenic and Historic Interest Area",
+        "url": "https://whc.unesco.org/en/list/640/",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      },
+      {
+        "title": "UNESCO · Mount Huangshan",
+        "url": "https://whc.unesco.org/en/list/547/",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      },
+      {
+        "title": "NPS · Volcanic Landforms",
+        "url": "https://www.nps.gov/subjects/geology/volcanic-landforms.htm",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      },
+      {
+        "title": "石家庄市文化广电和旅游局 · 嶂石岩与三大砂岩地貌",
+        "url": "https://wglj.sjz.gov.cn/columns/4bccb071-c987-46a8-9718-77801cb4eb16/202507/26/37b527a6-99cf-4d1d-b276-f2227f1320d5.html",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      },
+      {
+        "title": "Smithsonian Global Volcanism Program · Wudalianchi",
+        "url": "https://volcano.si.edu/volcano.cfm?vn=305030",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      },
+      {
+        "title": "USGS · Geology of Joshua Tree National Park",
+        "url": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-joshua-tree-national-park",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      }
+    ]
+  },
+  "worldGeographyRevision": {
+    "version": "world-geography-2026-11-12",
+    "reviewedAt": "2026-11-12",
+    "topicIds": [
+      "world-continents",
+      "world-oceans",
+      "world-regional-comparison"
+    ],
+    "processing": "将世界海陆与区域比较拆为七大洲、五大洋、世界区域比较。七洲面积图前置并逐洲介绍；新增同口径五洋面积图，逐洋解释位置及自然联系。保留区域章节、旧章节显式转向和所有原案例来源；复用真实海陆位置图，不绘制新地理范围。",
+    "licenses": "新增正文与图表编排采用CC BY 4.0；面积数字保留原始来源和统计口径。IHO文献仅作事实依据，不转载PDF或整段原文；海陆图沿用Natural Earth公共领域几何。",
+    "sources": [
+      {
+        "title": "IHO · 决议02/2023：承认南大洋及海域界限（M-3，2024年7月版，第110—113页）",
+        "url": "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf",
+        "accessedAt": "2026-11-12",
+        "version": "IHO M-3 2nd Edition 2010, updated July 2024; Resolution 02/2023",
+        "scope": "核读PDF第110—113页（零基页码）：已承认南大洋、南纬60°北界、非政治/海洋物理边界说明、阿根廷与澳大利亚等保留意见。",
+        "license": "IHO文献版权保留；仅原创概述事实，未转载原文或PDF。"
+      },
+      {
+        "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+        "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf",
+        "accessedAt": "2026-11-12",
+        "version": "ETOPO1 World Ocean Volumes, official PDF under NCEI Older Versions",
+        "scope": "读取官方表：太平洋161760000、另列南海6963000、大西洋85133000、印度洋70560000、南大洋21960000、北冰洋15558000，单位平方千米；原表南大洋北界60°S。太平洋相加为168723000。",
+        "license": "NOAA美国政府公开数据；保留机构、模型与处理说明。"
+      },
+      {
+        "title": "National Geographic Society · Asia: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/asia/",
+        "accessedAt": "2026-11-12",
+        "scope": "亚洲主要地形单元与冰雪来水；新增正文沿用原有NASA/USGS资料，并核对National Geographic官方教育页面摘录。",
+        "license": "参考网页版权保留，正文为原创概述。"
+      },
+      {
+        "title": "全球变化数据学报 · 2015年全球岛礁、陆地面积与海岸线（表7）",
+        "url": "https://geodoi.ac.cn/DOIPaper/HTML/2019139402/201902139403.htm",
+        "accessedAt": "2026-11-12",
+        "version": "2019研究，2015±2年遥感影像；表7",
+        "scope": "检索可核对原始研究表7各洲面积，与现有CAS来源记录一致；页面全文访问失败，未声称重新读取完整论文。",
+        "license": "事实数值引用；原研究与其数据许可保留。"
+      }
+    ],
+    "conflictingSources": [
+      {
+        "url": "https://oceanservice.noaa.gov/facts/howmanyoceans.html",
+        "accessedAt": "2026-11-12",
+        "note": "页面仍有IHO未批准旧描述，与IHO 02/2023决议冲突。新正文以IHO直接决议为现行依据；保留旧NOAA引用作原卡来源追溯，不采用其未批准判断。"
+      },
+      {
+        "url": "https://www.noaa.gov/jetstream/ocean",
+        "accessedAt": "2026-11-12",
+        "note": "其南大洋3500万平方千米表与本篇60°S分界不同，不与新图混用。五个大洋卡的面积事实统一为NCEI ETOPO1表处理结果。"
+      }
+    ],
+    "areaInputs": {
+      "continents": {
+        "sourceUrl": "https://geodoi.ac.cn/DOIPaper/HTML/2019139402/201902139403.htm",
+        "period": "2015±2年",
+        "unit": "km²",
+        "values": [
+          {
+            "id": "asia-continent",
+            "areaKm2": 44130000
+          },
+          {
+            "id": "africa-continent",
+            "areaKm2": 29830000
+          },
+          {
+            "id": "north-america-continent",
+            "areaKm2": 24240000
+          },
+          {
+            "id": "south-america-continent",
+            "areaKm2": 17740000
+          },
+          {
+            "id": "antarctica",
+            "areaKm2": 12610000
+          },
+          {
+            "id": "europe-continent",
+            "areaKm2": 10000000
+          },
+          {
+            "id": "oceania-region",
+            "areaKm2": 8940000
+          }
+        ],
+        "processing": "沿用既有表7数值换算，图表显示万平方千米取约数，原始精度不代表岸线绝对精度。"
+      },
+      "oceans": {
+        "sourceUrl": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf",
+        "model": "ETOPO1",
+        "southernBoundary": "60°S",
+        "unit": "km²",
+        "values": [
+          {
+            "id": "pacific-ocean",
+            "areaKm2": 168723000
+          },
+          {
+            "id": "atlantic-ocean",
+            "areaKm2": 85133000
+          },
+          {
+            "id": "indian-ocean",
+            "areaKm2": 70560000
+          },
+          {
+            "id": "southern-ocean",
+            "areaKm2": 21960000
+          },
+          {
+            "id": "arctic-ocean",
+            "areaKm2": 15558000
+          }
+        ],
+        "processing": "以原表洋区面积为准；太平洋并入原表另列South China Sea 6963000平方千米；不重复相加North/South子项。历史模型统计，并非现时重测。"
+      }
+    },
+    "validation": "生成时检查七洲五洋均有独立章节、图表行与已有真实卡片ID一致、区域章节和转向可达。浏览器和自动检查结果由实际执行记录另存。"
   }
 }

@@ -41,6 +41,7 @@ export interface ElevationRegion {
 export interface ElevationManifest { id: string; note: string; attribution: string; regions: ElevationRegion[] }
 declare global { interface Window { __terraAtlas?: AtlasHandle } }
 interface Props {
+  embedded?: boolean;
   appearance: 'light' | 'dark';
   layers: LayerState; opacity: number; selection: Selection | null; camera: Camera;
   display: MapDisplay; onOnlineStatus: (status: OnlineMapStatus) => void;
@@ -203,6 +204,13 @@ export default function AtlasMap(props: Props) {
         maxPitch: 60, maxTileCacheSize: 64, maxTileCacheZoomLevels: 3,
         transformConstrain: (center, zoom) => ({center: new maplibre.LngLat(wrapLongitude(center.lng), Math.max(-85, Math.min(85, center.lat))), zoom: Math.max(-1.2, Math.min(11.5, zoom))}),
         dragRotate: false, touchPitch: false, attributionControl: false,
+        cooperativeGestures: !!props.embedded,
+        locale: {
+          'CooperativeGesturesHandler.WindowsHelpText':'按住 Ctrl 并滚动以缩放地图',
+          'CooperativeGesturesHandler.MacHelpText':'按住 ⌘ 并滚动以缩放地图',
+          'CooperativeGesturesHandler.MobileHelpText':'使用双指移动地图',
+          'Map.Title':props.embedded?'配图中的交互式地理地图':'交互式地理地图',
+        },
         localIdeographFontFamily: 'PingFang SC, Microsoft YaHei, sans-serif',
         style: {version: 8, sources: {}, layers: [{id: 'ocean', type: 'background', paint: {'background-color': props.appearance==='dark'?'#111f2a':'#eff4f4'}}]},
       })
@@ -596,7 +604,7 @@ export default function AtlasMap(props: Props) {
       onlineRef.current = createOnlineMap(map, state => current.current.onOnlineStatus(state), current.current.appearance)
       if (props.display.terrain3d) onlineRef.current.setRequestedPitch(props.camera.pitch ?? 0)
       applyMapAppearance(map,current.current.appearance)
-      initialized = true; window.__terraAtlas = handle; refresh()
+      initialized = true; if(!props.embedded)window.__terraAtlas = handle; refresh()
       const pickLayers = ['relation-member-labels', 'relation-member-hit', 'relations-area', 'relations-line', 'relations-reference', 'relations-dot', 'relations-symbols','city-hit','city-labels','plate-hit','basin-fill','place-labels', 'place-hit', 'river-hit', 'lake-fill', 'province-fill', 'language-dots', 'language-labels', 'language-area-fill','country-hit', 'climate-fill']
       map.on('click', event => {
         // Clicks on an adjacent world copy refer to the same canonical place.
@@ -634,7 +642,7 @@ export default function AtlasMap(props: Props) {
         else map.getCanvas().style.cursor = map.queryRenderedFeatures(event.point, {layers: pickLayers}).length ? 'pointer' : ''
       })
       // The searchable gazetteer and optional thematic datasets never delay the base map.
-      void ensure(['gazetteer'])
+      if(!props.embedded)void ensure(['gazetteer'])
       await ensure(['land', 'countries'])
       if (disposed) return
       readyReported = true; current.current.onReady(handle); status(); emitVisible()
@@ -708,5 +716,5 @@ export default function AtlasMap(props: Props) {
     if (props.mode === 'measure') map.doubleClickZoom.disable(); else map.doubleClickZoom.enable()
     map.getCanvas().style.cursor = props.mode && props.mode !== 'explore' ? 'crosshair' : ''
   }, [props.mode])
-  return <div ref={container} className="atlas-map" aria-label="交互式地理地图" data-testid="atlas-map" />
+  return <div ref={container} className="atlas-map" aria-label={props.embedded?'配图中的交互式地理地图':'交互式地理地图'} data-testid="atlas-map" data-embedded={props.embedded||undefined}/>
 }

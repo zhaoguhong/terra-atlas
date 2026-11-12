@@ -1,0 +1,350 @@
+{
+  "id": "world-regional-comparison",
+  "title": "世界区域比较",
+  "presentation": "essay",
+  "updatedAt": "2026-11-12",
+  "introduction": "世界区域研究从具体的土地与居民活动出发。东南亚的半岛和群岛、中东的干旱地区、西欧的海洋沿岸、撒哈拉以南非洲的高地与低地，表现出不同的水源、地形与交通条件。用同一组线索对照，再走近日本、印度、巴西和澳大利亚，可以看见自然环境怎样参与生产生活，也能认识历史、技术和社会组织带来的差别。",
+  "sections": [
+    {
+      "id": "part-world-regional-comparison",
+      "title": "从区域范围开始",
+      "paragraphs": [
+        "从大洲缩小到区域，环境与生活的联系会更具体。东南亚的半岛和群岛、中东的干旱地区、西欧的海洋沿岸，以及撒哈拉以南非洲的高地与低地，各有不同的水源和交通条件。国家边界又把这些环境组织成另一套范围，比较时需要分清它们。",
+        "区域可以按自然条件、行政管理或历史文化联系划分，同一个名称在不同资料中也可能覆盖不同范围。比较前先明确范围，再使用相同的年份、单位和统计定义，才能区分真实差异与口径差异。本篇把位置、水热、地形和联系作为共同线索，同时保留每个地区内部的变化。"
+      ]
+    },
+    {
+      "id": "world-regional-comparison-section-1",
+      "title": "区域名称背后的范围",
+      "paragraphs": [
+        "东南亚包含半岛与群岛，西欧强调欧洲的一部分，中东则综合了地理与历史联系；撒哈拉以南非洲以沙漠南侧的广阔陆地为参照。它们的划分目的不同，内部也都有多种环境。",
+        "国家具有明确的行政和统计范围，却不一定与自然区域重合。例如，巴西国土包含亚马孙以外的生物群系，亚马孙流域又跨越国界。先认清名称所指的土地，才能让温度、人口或土地面积的比较落到同一尺度。"
+      ],
+      "mediaIds": [
+        "diagram-region-method"
+      ]
+    },
+    {
+      "id": "world-regional-comparison-section-2",
+      "title": "水源与地形带来的不同生活条件",
+      "paragraphs": [
+        "东南亚的季风向半岛与岛屿送来雨水，河谷和三角洲承接来水与沉积物；中东部分地区更干旱，聚落往往需要依靠河流、地下水或供水工程。两地的生产生活，都必须适应水从哪里来、什么时候到来的差别。",
+        "海拔又能改变纬度提供的背景。东非高地与附近低地即使同处低纬，也有不同温度；日本与印度都受季节气流影响，山地的位置与朝向却使雨雪落在不同地方。"
+      ],
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "比较区域时的三条线索",
+          "columns": [
+            "线索",
+            "需要认识的条件",
+            "可以继续追问"
+          ],
+          "rows": [
+            [
+              "位置与水热",
+              "纬度、海陆、海拔、雨季",
+              "水从哪里来，何时充足或短缺"
+            ],
+            [
+              "地形与通道",
+              "山地、平原、河流、海岸",
+              "聚落和交通怎样跨越或利用地形"
+            ],
+            [
+              "生产与联系",
+              "人口、设施、市场、历史",
+              "资源怎样使用，货物与人流向哪里"
+            ]
+          ],
+          "note": "用共同问题比较，不预设自然条件能够决定全部社会结果。"
+        }
+      ]
+    },
+    {
+      "id": "world-regional-comparison-module-broad-regions",
+      "title": "四组区域：水从哪里来，地区怎样连接",
+      "paragraphs": [
+        "东南亚的半岛与群岛展示两种联系路径：半岛河流沿山谷通向三角洲，群岛之间更多依靠海峡、港口与航空。板块活动、河流沉积与海陆位置塑造山地和岛链，季节环流又带来不同雨季。热带背景之下，各地水分节律仍需分别看待。",
+        "中东的一些地区首先面对干旱与水源问题，河谷、山地、沿海和盆地却并不一致。河流、地下水、调水或海水淡化都可能支持聚落，绿洲与城市的存在，不一定说明当地多雨。与东南亚相比，这里更能显示供水来源对居住和生产的制约。",
+        "西欧受到大西洋、西风与山地共同影响，部分沿岸冬季较温和，迎风山地与背风地区又有水分差异。河流航运、海港和长期城市发展形成密集网络，自然通道与设施共同影响地区联系。",
+        "撒哈拉以南非洲跨越不同纬度，也有显著高度差别。赤道附近的湿润低地与东非高原，可以用来比较水分和海拔的作用；南部与西部还有多样环境。人口、生产和文化的差异，则需要进一步联系历史与交通解释。"
+      ],
+      "caseIds": [
+        "southeast-asia",
+        "middle-east",
+        "western-europe",
+        "sub-saharan-africa"
+      ],
+      "visuals": [
+        {
+          "kind": "comparison",
+          "title": "四组区域的环境与联系",
+          "columns": [
+            "区域",
+            "水热与地形线索",
+            "生产生活与联系"
+          ],
+          "rows": [
+            [
+              "东南亚",
+              "热带半岛与群岛，季风雨季、山谷和三角洲",
+              "河谷农业与沿海聚落，海峡和港口联系岛屿及外部市场"
+            ],
+            [
+              "中东",
+              "干旱背景下并存河谷、山地、沿岸和盆地",
+              "供水条件影响聚落，河流、地下水及工程供水各有作用"
+            ],
+            [
+              "西欧",
+              "大西洋、西风与山地共同作用，海岸曲折",
+              "海港、可通航河流与陆路衔接，形成密集城市网络"
+            ],
+            [
+              "撒哈拉以南非洲",
+              "跨越多种水分条件，东非高地与低地差别明显",
+              "雨季、海拔和来水影响生产，历史与交通参与解释地区差异"
+            ]
+          ],
+          "note": "宽泛区域只作对照入口，内部差异需回到具体地点；不把自然条件直接等同于发展水平。"
+        }
+      ]
+    },
+    {
+      "id": "world-regional-comparison-module-countries",
+      "title": "国家对照：季风、地形与区域范围",
+      "paragraphs": [
+        "日本和印度都受到季节气流影响，地形位置却不同。日本山地岛弧邻海，冬季来自亚洲大陆的空气经过日本海获得水汽，迎风侧常多雪，越山后的太平洋侧相对较干；印度则以山地、平原和高原组合承接季风雨季，雨水既补给农业和地下水，异常强雨也可能带来洪水。两国都需要结合季节来理解水分，不能只比较全年雨量。",
+        "巴西和澳大利亚则适合比较一个国家内部的多样环境。巴西有雨林、草原、半干旱区和湿地。IBGE的2019年地图划分六个大陆生物群系，其中亚马孙生物群系约占国土49.5%；这一范围不同于跨国亚马孙流域，也不等于今天实际雨林覆盖的面积。",
+        "澳大利亚的干旱与纬度、环流、海陆位置及地形有关，东部山地和海岸又形成差别。命名沙漠、气候干旱区与国家范围各有定义，国家沙漠数据库与Beck气候格网不能直接混用。比较巴西和澳大利亚时，先辨认各自内部的湿干、高低与人口分布，才不会把国家名变成单一景观。"
+      ],
+      "caseIds": [
+        "japan",
+        "india",
+        "brazil",
+        "australia"
+      ]
+    },
+    {
+      "id": "world-regional-comparison-section-3",
+      "title": "自然条件怎样参与地区发展",
+      "paragraphs": [
+        "河流、资源和地形会改变生产与运输成本，具体的发展道路还取决于人的组织。技术能改善供水和交通，市场决定哪些产品有需求，历史形成的制度、技能与城市网络也会持续起作用。",
+        "因此，相似自然环境中可以出现不同产业结构。资源丰富的地方可能输出原料，港口则可能依靠转运和加工集聚产业；自然条件提供了可能性，社会活动决定这些可能性如何被使用。"
+      ]
+    },
+    {
+      "id": "world-regional-comparison-section-4",
+      "title": "差异也促成地区间的往来",
+      "paragraphs": [
+        "不同区域有不同的产品与需求，粮食、能源、工业品和信息因而不断跨区流动。海港、海峡与城市网络承载这些往来，让相距很远的生产与消费互相影响。",
+        "一个地区发生的变化，可以沿运输和市场联系传向另一地区。世界区域既有各自的环境，也共同处在这些往来之中；认识差异之后，沿着货物、水和人口的去向，还能看见地区之间的依存。"
+      ]
+    }
+  ],
+  "questions": [
+    {
+      "question": "两地纬度相近，能否直接用同一种发展或生活方式解释？",
+      "answer": "不能。海陆、地形、历史与社会条件不同，需要分别研究，再用一致的指标比较。"
+    }
+  ],
+  "sources": [
+    {
+      "title": "National Geographic Society · Africa: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/africa-physical-geography/"
+    },
+    {
+      "title": "National Geographic Society · Europe: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/europe-physical-geography/"
+    },
+    {
+      "title": "National Geographic Society · North America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/north-america-physical-geography/"
+    },
+    {
+      "title": "National Geographic Society · South America: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/south-america-physical-geography/"
+    },
+    {
+      "title": "National Geographic Society · Australia and Oceania: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/oceania-physical-geography/"
+    },
+    {
+      "title": "NASA · 亚洲第三极的水资源联系",
+      "url": "https://science.nasa.gov/earth/water-on-earth/the-water-future-of-earths-third-pole/"
+    },
+    {
+      "title": "UN Statistics Division · M49区域分类与使用口径",
+      "url": "https://unstats.un.org/unsd/methodology/M49"
+    },
+    {
+      "title": "USGS · The Himalayas: Two continents collide",
+      "url": "https://pubs.usgs.gov/gip/dynamic/himalaya.html"
+    },
+    {
+      "title": "USGS · Seismicity of the Earth: Himalaya and vicinity",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
+    },
+    {
+      "title": "中国科学院青藏高原研究所 · 从青藏高原到第三极和泛第三极",
+      "url": "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html"
+    },
+    {
+      "title": "USGS · Understanding plate motions",
+      "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
+    },
+    {
+      "title": "UNESCO · Toratau Global Geopark",
+      "url": "https://www.unesco.org/en/iggp/toratau-unesco-global-geopark"
+    },
+    {
+      "title": "UNESCO · Northern Urals nomination geology",
+      "url": "https://whc.unesco.org/document/167636"
+    },
+    {
+      "title": "Port of Rotterdam Authority · Connections",
+      "url": "https://www.portofrotterdam.com/en/logistics/connections"
+    },
+    {
+      "title": "Swiss Federal Office of Transport · New Rail Link through the Alps",
+      "url": "https://www.bav.admin.ch/en/nrla-new-rail-link-through-the-alps"
+    },
+    {
+      "title": "NASA Earth Observatory · East Africa",
+      "url": "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/"
+    },
+    {
+      "title": "UNESCO · Okavango Delta",
+      "url": "https://whc.unesco.org/en/list/1432/"
+    },
+    {
+      "title": "USDA ERS · Wheat Sector at a Glance",
+      "url": "https://ers.usda.gov/topics/crops/wheat/wheat-sector-at-a-glance"
+    },
+    {
+      "title": "NASA Earth Observatory · Mapping the Amazon",
+      "url": "https://science.nasa.gov/earth/earth-observatory/mapping-the-amazon-145649/"
+    },
+    {
+      "title": "NASA Astrobiology · The Driest Place on Earth",
+      "url": "https://astrobiology.nasa.gov/news/the-driest-place-on-earth/"
+    },
+    {
+      "title": "USGS · What is a hotspot and how do you know it is there?",
+      "url": "https://www.usgs.gov/faqs/what-a-hotspot-and-how-do-you-know-its-there"
+    },
+    {
+      "title": "British Antarctic Survey · Antarctica",
+      "url": "https://www.bas.ac.uk/about/where-we-work/antarctica/"
+    },
+    {
+      "title": "中国科学院地理资源所 · 全球海陆岸线面积研究（2019）",
+      "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html"
+    },
+    {
+      "title": "Natural Earth · 自然地理区域参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+    },
+    {
+      "title": "NOAA NESDIS · What Is a Monsoon?",
+      "url": "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon"
+    },
+    {
+      "title": "湄公河委员会 · Geography",
+      "url": "https://www.mrcmekong.org/geography/"
+    },
+    {
+      "title": "湄公河委员会 · Climate",
+      "url": "https://www.mrcmekong.org/basin-climate/"
+    },
+    {
+      "title": "NASA · East Indonesia Island Chain",
+      "url": "https://science.nasa.gov/earth/earth-observatory/east-indonesia-island-chain-87707/"
+    },
+    {
+      "title": "Beck 等（2023）· Köppen–Geiger 气候分类与全球数据",
+      "url": "https://www.nature.com/articles/s41597-023-02549-6"
+    },
+    {
+      "title": "NOAA · Climate Zones",
+      "url": "https://www.noaa.gov/jetstream/global/climate-zones"
+    },
+    {
+      "title": "Met Office · 欧洲区域气候与海洋影响",
+      "url": "https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/applied-science/precis/dissy1808.pdf"
+    },
+    {
+      "title": "USGS · East African Rift seismotectonics",
+      "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2013-east-african-rift"
+    },
+    {
+      "title": "Scientific Data · White Nile basin lakes",
+      "url": "https://www.nature.com/articles/s41597-022-01742-3"
+    },
+    {
+      "title": "UNESCO · Mount Kenya National Park/Natural Forest",
+      "url": "https://whc.unesco.org/en/list/800/"
+    },
+    {
+      "title": "日本统计局 · Statistical Handbook of Japan 2025",
+      "url": "https://www.stat.go.jp/english/data/handbook/pdf/2025all.pdf"
+    },
+    {
+      "title": "日本气象厅 · 富士山火山资料",
+      "url": "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html"
+    },
+    {
+      "title": "联合国统计司 · Japan国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/jp.html"
+    },
+    {
+      "title": "World Bank · India: Managing Floods and Droughts（2023）",
+      "url": "https://www.worldbank.org/en/news/feature/2023/08/17/india-managing-the-complex-problem-of-floods-and-droughts"
+    },
+    {
+      "title": "NASA · Monsoon Floods Inundate Eastern India",
+      "url": "https://science.nasa.gov/earth/earth-observatory/monsoon-floods-inundate-eastern-india-7944/"
+    },
+    {
+      "title": "NASA · Ganges River Delta",
+      "url": "https://science.nasa.gov/earth/earth-observatory/ganges-river-delta-1326/"
+    },
+    {
+      "title": "Nature · Himalayan gravel flux and Ganga Plain",
+      "url": "https://www.nature.com/articles/nature22039"
+    },
+    {
+      "title": "联合国统计司 · India国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/in.html"
+    },
+    {
+      "title": "IBGE · 巴西六大生物群系地图（2019）",
+      "url": "https://agenciadenoticias.ibge.gov.br/en/agencia-press-room/2185-news-agency/releases-en/25812-ibge-lanca-mapa-inedito-de-biomas-e-sistema-costeiro-marinho-2"
+    },
+    {
+      "title": "NASA · Topography of South America",
+      "url": "https://science.nasa.gov/earth/earth-observatory/topography-of-south-america-3581/"
+    },
+    {
+      "title": "NASA · Mud from the Andes Carried by the Amazon",
+      "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
+    },
+    {
+      "title": "联合国统计司 · Brazil国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/br.html"
+    },
+    {
+      "title": "Geoscience Australia · Australia’s size compared（2025）",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/dimensions/australias-size-compared"
+    },
+    {
+      "title": "Geoscience Australia · Australian mainland deserts",
+      "url": "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts"
+    },
+    {
+      "title": "联合国统计司 · Australia国别概览（2025）",
+      "url": "https://data.un.org/legacy/en/iso/au.html"
+    }
+  ]
+}

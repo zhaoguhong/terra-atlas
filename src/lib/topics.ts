@@ -2,6 +2,7 @@ import rawTopics from '../data/topics.json'
 import bindings from '../data/feature-bindings.json'
 import {knowledge} from './catalog'
 import {singleOverlay} from './theme-state'
+import {resolveTopicReference} from './topic-redirects'
 import type {LayerState,Topic,TopicGroup,TopicScope} from '../types'
 
 export const topics=rawTopics as Topic[]
@@ -31,5 +32,5 @@ export function topicMapMembers(topic:Topic):string[] {
   })
 }
 export function topicForSelection(id:string|null|undefined) {
-  return topics.find(topic=>topic.id===id)||null
+  return topics.find(topic=>topic.id===(id?resolveTopicReference(id).topicId:id))||null
 }

@@ -7,7 +7,7 @@ test('map topic list: sidebar opens all themes without leaving or moving the map
   const before=await page.evaluate(()=>({center:window.__terraAtlas!.map.getCenter().toArray(),zoom:window.__terraAtlas!.map.getZoom()}))
   await page.locator('.panel-tabs').getByRole('button',{name:'主题地图',exact:true}).click()
   await expect(page.locator('.app')).toHaveAttribute('data-study-screen','map')
-  await expect(page.locator('.map-topic-library .topic-library-card')).toHaveCount(32)
+  await expect(page.locator('.map-topic-library .topic-library-card')).toHaveCount(30)
   await expect(page.locator('.study-library')).toHaveCount(0)
   if(info.project.name!=='desktop'){
     const field=page.locator('.map-topic-library .topic-search')

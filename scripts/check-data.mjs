@@ -351,7 +351,9 @@ assert.equal(content.readingSourceManifest,'/data/reading-sources.json')
 assert.equal(readingSources.topicCount,readingTopics.length)
 assert.equal(new Set(media.map(m=>m.id)).size,media.length)
 const mediaIds=new Set(media.map(m=>m.id)),topicIds=new Set(readingTopics.map(t=>t.id))
+const illustrations=read('data/reading/ai-illustrations.json')
 for(const item of media){
+  assert(['photo','diagram','map','illustration'].includes(item.kind),item.id+' known media kind')
   assert(item.path.startsWith('media/reading/')&&!item.path.includes('..'),item.id+' local asset path')
   assert(item.alt&&item.caption&&item.author&&item.license&&/^https?:\/\//.test(item.licenseUrl),item.id+' attribution and accessible description')
   assert(/^https:\/\//.test(item.sourceUrl)&&item.width>0&&item.height>0,item.id+' source and dimensions')
@@ -362,16 +364,60 @@ for(const item of media){
     if(item.kind==='diagram')assert(svg.includes('概念示意'),item.id+' schematic labelled')
     else {
       assert(item.sourceUrls?.length&&item.processing&&item.featureIds?.length,item.id+' real map inputs and processing')
-      const inputs=read(item.id==='language-world-areas'?'public/data/language-areas.geojson':'public/data/learning-languages.geojson')
-      const ids=new Set(inputs.features.map(f=>f.properties.glottocode))
-      assert(item.featureIds.every(id=>ids.has(id)),item.id+' only known language features')
+      if(item.id.startsWith('language-')){
+        const inputs=read(item.id==='language-world-areas'?'public/data/language-areas.geojson':'public/data/learning-languages.geojson')
+        const ids=new Set(inputs.features.map(f=>f.properties.glottocode))
+        assert(item.featureIds.every(id=>ids.has(id)),item.id+' only known language features')
+      }else{
+        assert(item.inputs?.length&&item.inputVersions?.length,item.id+' versioned map inputs')
+        const mapFeatures=new Set()
+        for(const input of item.inputs){
+          assert.equal(createHash('sha256').update(fs.readFileSync(input.path)).digest('hex'),input.sha256,item.id+' input hash '+input.path)
+          if(input.path.endsWith('.geojson')){
+            const dataset=read(input.path),valid=new Set(dataset.features.map(feature=>feature.properties.id))
+            for(const id of input.featureIds||[]){assert(valid.has(id),item.id+' explicit input feature '+id);mapFeatures.add(id)}
+          }
+        }
+        assert(item.featureIds.every(id=>mapFeatures.has(id)),item.id+' mapped features belong to declared data')
+        assert(item.placeIds?.every(id=>cardIds.has(id)),item.id+' known geography labels')
+      }
     }
     assert(!/<script|<foreignObject|href="https?:/i.test(svg),item.id+' static, self-contained SVG')
-  }else assert.equal(buffer.subarray(0,2).toString('hex'),'ffd8',item.id+' valid JPEG signature')
+  }else {
+    assert.equal(buffer.subarray(0,2).toString('hex'),'ffd8',item.id+' valid JPEG signature')
+    if(item.kind==='illustration'){
+      const authored=illustrations.figures.find(figure=>figure.id===item.id)
+      assert(authored?.generation.prompt&&authored.generation.generatedAt&&authored.generation.tool,item.id+' generation provenance')
+      const {generation,...expected}=authored
+      assert.deepEqual(item,expected,item.id+' authored illustration metadata')
+      assert(item.processing&&item.sourceUrls?.includes(item.sourceUrl)&&item.caption.includes('示')&&item.author.includes('AI'),item.id+' sourced and disclosed illustration')
+      assert(Array.isArray(item.placeIds)&&item.placeIds.every(id=>cardIds.has(id)),item.id+' only explicitly linked exploration places')
+    }
+  }
 }
-assert.equal(readingTopics.length,32,'consolidated catalogue plus two atmosphere topics')
+assert.equal(readingTopics.length,30,'two landform articles and three distinct world geography subjects')
+const revisedLandforms=read('data/reading/landform-articles.json')
+const revisedGuides=read('data/reading/landform-map-guides.json')
+const revisedWorldGeography=read('data/reading/world-geography-articles.json')
+const worldGuides=read('data/reading/world-geography-map-guides.json')
+const worldSourceReview=read('data/reading/world-geography-sources.json')
+for(const [topicId,inputKey] of [['world-continents','continents'],['world-oceans','oceans']]){
+  const article=revisedWorldGeography.find(article=>article.id===topicId)
+  const chart=article.sections.flatMap(section=>section.visuals||[]).find(visual=>visual.kind==='bars')
+  const input=worldSourceReview.areaInputs[inputKey]
+  assert.equal(chart.unit,'万平方千米',topicId+' comparable area units')
+  assert.deepEqual(chart.rows.map(row=>({id:row.place,areaKm2:Math.round(row.value*10000)})),input.values,topicId+' chart matches the recorded area input')
+  assert(chart.sources.some(source=>source.url===input.sourceUrl),topicId+' original area source retained')
+}
+assert.equal(worldSourceReview.areaInputs.oceans.southernBoundary,'60°S','ocean area convention matches IHO reference')
+assert.deepEqual(readingSources.worldGeographyRevision,worldSourceReview,'world geography review preserved')
+const redirects=read('src/data/topic-redirects.json')
+for(const entry of Object.values(redirects))for(const route of [entry,...Object.values(entry.chapters)]){
+  const destination=read(`public/reading/topics/${route.topicId}.json`)
+  assert(['introduction','questions'].includes(route.sectionId)||destination.sections.some(s=>s.id===route.sectionId),'valid legacy chapter destination')
+}
 const editorialIds=readingTopics.map(t=>t.id)
-assert.deepEqual(new Set(fs.readdirSync('data/reading/edited-topics')),new Set(editorialIds.map(id=>id+'.json')),'all 32 editorial sources present')
+assert.equal(fs.readdirSync('data/reading/edited-topics').length,32,'previous editorial sources retained as provenance')
 assert.deepEqual(new Set(readingSources.editorialRevision.topicIds),new Set(editorialIds),'editorial review covers the remaining catalogue')
 assert.deepEqual(new Set(fs.readdirSync('public/reading/topics')),new Set(readingTopics.map(t=>t.id+'.json')),'no retired public articles')
 for(const input of readingSources.inputs)assert.equal(createHash('sha256').update(fs.readFileSync(input.path)).digest('hex'),input.sha256,input.path+' authored input hash')
@@ -379,7 +425,7 @@ for(const topic of readingTopics){
   assert(topic.reading&&mediaIds.has(topic.reading.coverId),topic.id+' real cover asset')
   for(const id of topic.reading.relatedTopicIds)assert(topicIds.has(id)&&id!==topic.id,topic.id+' related article')
   const article=read(`public/reading/topics/${topic.id}.json`)
-  assert.deepEqual(article,read(`data/reading/edited-topics/${topic.id}.json`),topic.id+' authored prose survives generation')
+  assert.deepEqual(article,revisedWorldGeography.find(a=>a.id===topic.id)||revisedLandforms.find(a=>a.id===topic.id)||read(`data/reading/edited-topics/${topic.id}.json`),topic.id+' authored prose survives generation')
   assert.equal(article.id,topic.id);assert.equal(article.title,topic.title)
   assert(topic.mapGuide,topic.id+' map guide')
   assert(topic.mapGuide.sections.length>=3&&topic.mapGuide.sections.length<=4,topic.id+' concise guide structure')
@@ -388,7 +434,7 @@ for(const topic of readingTopics){
   for(const section of topic.mapGuide.sections){
     const original=article.sections.find(s=>s.id===section.sectionId)
     assert(original,topic.id+' traceable guide excerpt')
-    const authored=read('data/reading/map-essays.json')[topic.id].sections.find(s=>s.sectionId===section.sectionId)
+    const authored=(worldGuides[topic.id]||revisedGuides[topic.id]||read('data/reading/map-essays.json')[topic.id]).sections.find(s=>s.sectionId===section.sectionId)
     assert.deepEqual(section,authored,topic.id+' authored short essay preserved')
   }
   assert.equal(topic.mapGuide.cases.length,3,topic.id+' three observation entries')
@@ -408,9 +454,11 @@ for(const topic of readingTopics){
   assert.equal(new Set(article.sections.flatMap(s=>s.mediaIds||[])).size,article.sections.flatMap(s=>s.mediaIds||[]).length,topic.id+' no duplicate figures')
   const cases=new Set()
   for(const section of article.sections){
+    if(section.mediaPlacement!==undefined)assert(section.mediaPlacement==='before-text'&&section.mediaIds?.length,topic.id+' valid opening figure placement')
     assert(/^[a-z][a-z0-9-]{0,79}$/.test(section.id)&&section.title&&section.paragraphs.every(p=>p.length>=20),topic.id+' valid chapter')
     for(const visual of section.visuals||[]){assert(visual.title);if(visual.kind==='comparison'){assert(visual.columns.length>=2&&visual.rows.length>=2);for(const row of visual.rows)assert.equal(row.length,visual.columns.length,topic.id+' complete comparison row')}else{assert.equal(visual.kind,'bars');assert(visual.unit&&visual.sources.length&&visual.rows.every(row=>Number.isFinite(row.value)&&row.value>=0));for(const source of visual.sources)assert(sourceUrls.has(source.url),topic.id+' sourced numeric chart')}}
     for(const id of section.mediaIds||[])assert(mediaIds.has(id),topic.id+' missing figure '+id)
+    for(const [id,after] of Object.entries(section.mediaAfterParagraph||{}))assert(section.mediaIds.includes(id)&&Number.isInteger(after)&&after>=0&&after<section.paragraphs.length,topic.id+' valid inline figure position')
     for(const id of section.caseIds||[]){assert(cardIds.has(id),topic.id+' missing case '+id);cases.add(id)}
   }
   assert.deepEqual(cases,new Set(topic.stops),topic.id+' all map cases available from reading')

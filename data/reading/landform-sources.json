@@ -1,0 +1,62 @@
+{
+  "version": "landforms-two-articles-2026-11-12",
+  "reviewedAt": "2026-11-12",
+  "processing": "将六篇地貌专题重写为两篇原创科普长文；新增张家界、嶂石岩、黄山与五大连池的文字比较，沿用已核验地图案例，不新增或推测范围。复用现有照片和概念图，沿用各自许可。旧主题与章节地址生成明确转向表。",
+  "validation": "章节、案例、图片位置与引用在生成和数据检查时校验；实际测试记录保存在私有验证目录。",
+  "sources": [
+    {
+      "title": "UNESCO · Wulingyuan Scenic and Historic Interest Area",
+      "url": "https://whc.unesco.org/en/list/640/",
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
+    },
+    {
+      "title": "UNESCO · Mount Huangshan",
+      "url": "https://whc.unesco.org/en/list/547/",
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
+    },
+    {
+      "title": "NPS · Volcanic Landforms",
+      "url": "https://www.nps.gov/subjects/geology/volcanic-landforms.htm",
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
+    },
+    {
+      "title": "石家庄市文化广电和旅游局 · 嶂石岩与三大砂岩地貌",
+      "url": "https://wglj.sjz.gov.cn/columns/4bccb071-c987-46a8-9718-77801cb4eb16/202507/26/37b527a6-99cf-4d1d-b276-f2227f1320d5.html",
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
+    },
+    {
+      "title": "Smithsonian Global Volcanism Program · Wudalianchi",
+      "url": "https://volcano.si.edu/volcano.cfm?vn=305030",
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
+    },
+    {
+      "title": "USGS · Geology of Joshua Tree National Park",
+      "url": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-joshua-tree-national-park",
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
+    }
+  ]
+}

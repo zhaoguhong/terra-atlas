@@ -1,0 +1,455 @@
+{
+  "version": "illustrated-science-articles-2026-11-12",
+  "reviewedAt": "2026-11-12",
+  "sourceReview": {
+    "url": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+    "accessedAt": "2026-11-12",
+    "scope": "读取地形分布正文及高原、盆地、平原位置表；仅核对插图涉及的相对位置与山脉总体走向，不采用原文旧高程数值。",
+    "limitations": "AI 绘制的海岸、地形纹理与色块为概化示意，不能用于测距、范围分析或精确定位；不声称外部专家审定。"
+  },
+  "figures": [
+    {
+      "id": "china-plateaus-illustration",
+      "path": "media/reading/china-plateaus-illustration.jpg",
+      "kind": "illustration",
+      "title": "中国四大高原位置示意",
+      "alt": "中国四大高原位置示意。青藏高原在西南部，内蒙古高原在北部，黄土高原在其南侧，云贵高原在西南地区东部。四色用于辨认相对位置；色块和地形纹理均为示意，不代表精确边界或实测高程。",
+      "caption": "青藏高原在西南部，内蒙古高原在北部，黄土高原在其南侧，云贵高原在西南地区东部。四色用于辨认相对位置；色块和地形纹理均为示意，不代表精确边界或实测高程。",
+      "author": "山河图 · AI 辅助制图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [
+        "tibetan-plateau",
+        "inner-mongolian-plateau",
+        "loess-plateau",
+        "yunnan-guizhou-plateau"
+      ],
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Create a standalone educational atlas illustration, landscape 1536x1024, NOT a webpage screenshot, for a Chinese geography article. Title at upper left “中国四大高原”; small subtitle “位置与地貌示意”. Warm ivory margins, restrained professional cartographic design, beautiful finely shaded relief of China and nearby East Asia, subtle sea blue, tan western highlands, sage eastern lowlands, north up. Geographic coastlines and topography must be plausible; no political boundaries, no province outlines, no national outline cutout. Frame around 73–132 E and 20–51 N, include enough eastern coastline for orientation. Main map fills canvas. Show exactly four distinct semi-transparent SOFT edged color patches for schematic main landform distribution, not hard precise boundaries. Tibetan Plateau “青藏高原” large muted lavender region in west/southwest, from roughly 78E to102E 28–37N, south of Tarim, enclosed by Kunlun north and Himalaya south; Inner Mongolian Plateau “内蒙古高原” muted sage elongated east-west region in NORTHERN CHINA, south of Mongolia, mainly ~101–119E 40–45N and west of Greater Khingan, must NOT fill Mongolia or all Inner Mongolia administrative region; Loess Plateau “黄土高原” ochre smaller patch SOUTH of Inner Mongolian Plateau, EAST of Tibetan Plateau, around 103–113E 34–40N, west of Taihang and north of Qinling; Yunnan-Guizhou Plateau “云贵高原” muted terracotta around 100–109E 24–28N SOUTH of Sichuan basin, east of Hengduan, do not extend across Vietnam or the Sichuan basin. Leave unhighlighted spatial gaps as appropriate, not four adjacent puzzle pieces. All four labels large, dark, clear Chinese characters directly on or near the correct region, no markers or numbers. Put two small contextual mountain labels “昆仑山脉” north of Tibetan Plateau and “喜马拉雅山脉” along its southwest/south edge, using light gray text much smaller than plateau names. Minimal north arrow labeled N. Bottom small footer exact Chinese “色块表示大致分布，不代表精确边界”. Make map geography subordinate to readable names and location relationships. No decorative icons, no user interface, no fabricated source labels, no data statistics, no extra text. This is an AI-assisted schematic for human review, NOT a satellite photo."
+      }
+    },
+    {
+      "id": "china-basins-illustration",
+      "path": "media/reading/china-basins-illustration.jpg",
+      "kind": "illustration",
+      "title": "中国四大盆地位置示意",
+      "alt": "中国四大盆地位置示意。位置示意：天山南北分别是塔里木、准噶尔盆地；柴达木盆地位于青藏高原东北部，四川盆地位于高原东侧。色块用于辨认相对位置，不代表精确边界。",
+      "caption": "位置示意：天山南北分别是塔里木、准噶尔盆地；柴达木盆地位于青藏高原东北部，四川盆地位于高原东侧。色块用于辨认相对位置，不代表精确边界。",
+      "author": "山河图 · AI 辅助制图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [
+        "tarim-basin",
+        "junggar-basin",
+        "qaidam-basin",
+        "sichuan-basin"
+      ],
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Create a landscape 1536x1024 standalone Chinese educational atlas illustration, not a webpage. Title “中国四大盆地”, subtitle “山地之间的低地”. A beautiful softly shaded relief physical map of China and nearby East Asia, north up, warm ivory tones with fine mountain texture, pale blue ocean east, tan dry northwest and sage green southeast. No political boundaries or province outlines. Main map fills frame, modest title in upper left and N arrow top right. Four distinct subtle translucent patches follow schematic basin interiors, with LARGE highly readable dark Chinese labels. Show exactly these four: “准噶尔盆地” centered around 87E 45N NORTH of Tianshan and south of Altai, a compact triangular shape; “塔里木盆地” around 83E 39.5N SOUTH of Tianshan and north of Kunlun, broad horizontal oval; “柴达木盆地” around 94.5E 37N, smaller elongated depression southeast of Tarim, north of Kunlun eastern segment and south of Qilian, inside northeastern Tibetan Plateau; “四川盆地” around 105E 30.5N well EAST of Tibetan Plateau, north of Yunnan-Guizhou Plateau, small rounded green lowland enclosed by mountains. Use muted ochre for Tarim, sage for Junggar, lavender for Qaidam, terracotta for Sichuan. Use soft edged highlights as schematic distribution, NOT invented precise polygon boundaries. Keep the basins separate with realistic mountainous land BETWEEN them, especially clear Tianshan band between northern Junggar and southern Tarim. Add just three small gray contextual mountain labels “天山” BETWEEN Junggar and Tarim, “昆仑山脉” SOUTH of Tarim, “祁连山” NORTHEAST of Qaidam. China coastline and East Asia location relationships must be plausible. Topographic view extending 73–126E and 22–50N, enough east coast for orientation. Footer exact text “位置示意，不代表精确边界”. No other writing, no UI, no fabricated citations, no elevation numbers, no 3D perspective, no ornamental icons. Match quiet ivory and sage editorial teaching atlas aesthetic."
+      }
+    },
+    {
+      "id": "china-plains-illustration",
+      "path": "media/reading/china-plains-illustration.jpg",
+      "kind": "illustration",
+      "title": "中国三大平原位置示意",
+      "alt": "中国三大平原位置示意。位置示意：沿东部由北向南辨认东北、华北和长江中下游平原。色块概括位置关系，长江中下游的低地由多片沿江、沿湖平原组成，并非一整块连续平地。",
+      "caption": "位置示意：沿东部由北向南辨认东北、华北和长江中下游平原。色块概括位置关系，长江中下游的低地由多片沿江、沿湖平原组成，并非一整块连续平地。",
+      "author": "山河图 · AI 辅助制图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [
+        "northeast-china-plain",
+        "north-china-plain",
+        "yangtze-middle-lower-plain"
+      ],
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Standalone Chinese educational atlas illustration, landscape 1536x1024, not a webpage. Title at upper left “中国三大平原”, subtitle “沿东部低地，由北向南”. Professional warm ivory atlas style, shaded relief with fine mountain texture and pale blue seas; no political or province outlines. Show eastern China north-up with Korea, Taiwan and nearby sea for orientation, roughly 104–135E 23–52N. Exactly three highlighted geographic groupings with LARGE readable Chinese labels, restrained translucent colors and soft edges; clearly a distribution schematic not a precise surveyed map. “东北平原” sage green, north/northeast centered 125E 45N between Greater and Lesser Khingan and Changbai mountains, a broad north–south lowland, composed of Songnen/Liaohe/Sanjiang parts rather than coloring the mountains; “华北平原” ochre around 115–119E 34–40N, south/southwest of Northeast Plain, WEST of Bohai Sea and EAST of Taihang mountains, not coloring Shandong peninsula mountainous core; “长江中下游平原” muted lavender in a NARROW DISCONTINUOUS EAST–WEST band along Yangtze River from 111E to122E around 28–32N, with lake-plain patches and delta; NOT all of southeastern China and NOT south of Fujian or Guangdong. Render the three groupings clearly separated by intervening unhighlighted terrain; do not invent one continuous north-south green corridor. Label “长江” in small blue type following an east-flowing river toward estuary near Shanghai; label “太行山” in small gray along WEST edge of North China Plain; label “大兴安岭” in small gray along WEST edge of Northeast Plain. Do not add any other place labels. Main map fills entire frame with title on ivory upper left margin and small N north arrow upper right. Very subtle north-south relationship, no arrows or infographics. Footer “色块表示大致分布，不代表精确边界”. No UI, no statistics, no source claims. Accurate relative placement more important than dramatic aesthetics."
+      }
+    },
+    {
+      "id": "china-mountains-illustration",
+      "path": "media/reading/china-mountains-illustration.jpg",
+      "kind": "illustration",
+      "title": "中国主要山脉走向示意",
+      "alt": "中国主要山脉走向示意。本图选择文中讨论的六条山脉，突出它们与相邻高原、盆地和平原的位置关系。虚线仅示主要走向，不代表实测山脊线或山脉完整范围。",
+      "caption": "本图选择文中讨论的六条山脉，突出它们与相邻高原、盆地和平原的位置关系。虚线仅示主要走向，不代表实测山脊线或山脉完整范围。",
+      "author": "山河图 · AI 辅助制图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
+      "sourceUrls": [
+        "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [
+        "tian-shan",
+        "kunlun",
+        "himalayas",
+        "qilian",
+        "qinling",
+        "greater-khingan"
+      ],
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Create a landscape 1536x1024 standalone educational atlas illustration for a Chinese geography article. Title “中国主要山脉”, subtitle “先辨走向，再看两侧地形”. Beautiful warm ivory traditional atlas with contemporary clear Chinese typography, finely shaded topographic relief, sage eastern lowlands, tan highlands and pale blue eastern sea. North up. Physical map roughly 73–132E 20–53N, no national or province borders, no political outline, no decorative compass roses, no fabricated citations, no numeric elevations. Focus exactly SIX mountain ranges discussed in article. Mark each with restrained terracotta dashed schematic axis following plausible overall orientation; lines must be explicitly schematic, not claim actual ridge traces. Six LARGE DARK READABLE LABELS: “天山” runs roughly west–east near 80–95E, 42–44N, between Junggar north and Tarim south; “昆仑山脉” west–east along northern Tibetan Plateau about 78–98E 35–37N, SOUTH of Tarim; “喜马拉雅山脉” curved arc along SOUTH edge of Tibetan Plateau, about 75–95E 28–34N, clearly farther south than Kunlun with broad Tibetan highland between; “祁连山” northwest–southeast roughly 95–103E 36–40N northeast of Qaidam/Tibetan Plateau; “秦岭” west–east around106–112E 33–34N, EAST of Tibetan Plateau and NORTH of Sichuan basin; “大兴安岭” NNE–SSW in northeastern China ~119–123E 43–51N, WEST of Northeast Plain, and EAST of Inner Mongolian Plateau. No other major labels. Three SMALL gray background geographic labels only: “青藏高原” central between Kunlun and Himalaya; “塔里木盆地” between Tianshan and Kunlun; “东北平原” EAST of Greater Khingan. Maintain geographic separation: Qilian northwest of Qinling, Tibetan plateau big enough, ocean only to right/southeast, no glowing outlines. Footer “虚线仅示主要走向，不代表山脉完整范围”. Small N arrow at top right. Wide image composed for readable embedded article use."
+      }
+    },
+    {
+      "id": "polar-worlds-illustration",
+      "path": "media/reading/polar-worlds-illustration.jpg",
+      "kind": "illustration",
+      "title": "北极与南极的海陆、冰体对照",
+      "alt": "北极与南极的海陆、冰体对照。北极以海洋为中心，南极以大陆为主体。海冰漂浮在海水上，冰盖覆盖陆地，冰架是陆地冰向海伸出的漂浮部分。本图为关系示意，地形与冰厚均非等比例。",
+      "caption": "北极以海洋为中心，南极以大陆为主体。海冰漂浮在海水上，冰盖覆盖陆地，冰架是陆地冰向海伸出的漂浮部分。本图为关系示意，地形与冰厚均非等比例。",
+      "author": "山河图 · AI 辅助绘图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice",
+      "sourceUrls": [
+        "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [],
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Create a standalone educational geography illustration for Terra Atlas, landscape 1536x1024. Elegant scientific atlas plate with warm ivory paper, muted sage vegetation, ochre earth, blue water, delicate shaded relief, excellent spatial legibility and restrained professional Chinese typography. Not a webpage, not a photo. No real-world mapped boundaries, no coordinates or invented measured data, no logo, no sources fabricated in the artwork. Two large separate equal-width cutaway scenes side by side. Title “北极与南极”, panel headers “北极：海洋居中” and “南极：大陆居中”. LEFT: broad deep blue ocean cross-section with THIN broken floating sea ice on surface, modest low land at far edges; open ocean water visibly beneath central ice. RIGHT: large raised brown rock continent cross-section covered by thick white domed ice sheet, sloping toward coast into a short floating ice shelf over blue seawater. Open ocean at right, a few separate thin sea-ice floes beyond shelf. Land beneath main ice sheet must be unmistakable; water beneath floating ice shelf unmistakable. Small leader labels only “海冰”“海水” left, and “冰盖”“陆地”“冰架” right. No wildlife, no people, no vegetation, no Earth maps. Diagram proportions deliberately schematic. Footer “海陆与冰体关系示意，非等比例”. Beautiful rich terrain rendering with ample calm margin, visually compare sea water with land below ice."
+      }
+    },
+    {
+      "id": "watershed-landscape-illustration",
+      "path": "media/reading/watershed-landscape-illustration.jpg",
+      "kind": "illustration",
+      "title": "水的地上与地下旅程",
+      "alt": "水的地上与地下旅程。降水进入河流，也能下渗到土壤和岩层。地下水主要储存在孔隙与裂隙中，与地表水相互联系。图为水循环情景示意，不对应真实流域；蒸腾等过程在此省略。",
+      "caption": "降水进入河流，也能下渗到土壤和岩层。地下水主要储存在孔隙与裂隙中，与地表水相互联系。图为水循环情景示意，不对应真实流域；蒸腾等过程在此省略。",
+      "author": "山河图 · AI 辅助绘图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.usgs.gov/water-science-school/water-cycle",
+      "sourceUrls": [
+        "https://www.usgs.gov/water-science-school/water-cycle"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [],
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Create a standalone educational geography illustration for Terra Atlas, landscape 1536x1024. Elegant scientific atlas plate with warm ivory paper, muted sage vegetation, ochre earth, blue water, delicate shaded relief, excellent spatial legibility and restrained professional Chinese typography. Not a webpage, not a photo. No real-world mapped boundaries, no coordinates or invented measured data, no logo, no sources fabricated in the artwork. Title “一滴水的地上与地下旅程”. One broad isometric cutaway mountain-to-ocean landscape: snowy peaks in back left, green forested hills, branching tributaries joining a main river across a floodplain toward ocean at right. Soil-and-rock cross-section along front shows water stored in many pores and cracks, NOT a giant underground lake/cavern. Clouds over mountains release rain; unobtrusive blue arrow upward from ocean labeled “蒸发”; down from cloud “降水”; tiny downward arrows into soil “下渗”; surface river labeled “河流”; subtle subsurface arrow downhill toward river labeled “地下水”. Plants and sun but no decorative cute icons, no houses needed. Exactly those five labels and title, footer “水循环概念示意，非真实流域”. Ensure all tributaries join downstream and river flows from high elevation to sea. Detailed natural illustration with understandable shallow cutaway, no numerical measurements."
+      }
+    },
+    {
+      "id": "karst-landscape-illustration",
+      "path": "media/reading/karst-landscape-illustration.jpg",
+      "kind": "illustration",
+      "title": "喀斯特的地表与地下",
+      "alt": "喀斯特的地表与地下。水沿裂隙进入可溶岩层，溶蚀扩大通道，形成落水洞、溶洞和泉等相连的地貌。图为多种形态的组合示意，不能用于推断具体洞穴的大小与水路。",
+      "caption": "水沿裂隙进入可溶岩层，溶蚀扩大通道，形成落水洞、溶洞和泉等相连的地貌。图为多种形态的组合示意，不能用于推断具体洞穴的大小与水路。",
+      "author": "山河图 · AI 辅助绘图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.nps.gov/subjects/caves/karst-landscapes.htm",
+      "sourceUrls": [
+        "https://www.nps.gov/subjects/caves/karst-landscapes.htm"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [],
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Create a standalone educational geography illustration for Terra Atlas, landscape 1536x1024. Elegant scientific atlas plate with warm ivory paper, muted sage vegetation, ochre earth, blue water, delicate shaded relief, excellent spatial legibility and restrained professional Chinese typography. Not a webpage, not a photo. No real-world mapped boundaries, no coordinates or invented measured data, no logo, no sources fabricated in the artwork. Title “喀斯特：地表与地下”. Main scene is a scientific cutaway of lush limestone terrain: several separate rounded and steep limestone towers, shallow valley at surface, rain infiltration through narrow fractures; an enlarged underground limestone cave connected by a modest channel to a spring at lower slope. Water flows into sinkhole on higher ground and emerges from spring lower right. Show light ochre layered limestone rock, cracks, a few stalactites and stalagmites inside cave, darkness subdued so geology remains readable. Five small leader labels “石灰岩”“裂隙”“落水洞”“溶洞”“泉”. Surface topography varied, with full three-dimensional land surface above the cutaway. No giant underground river filling the entire geology, no arrows contradicting gravity, no human buildings or fantasy. Footer “地貌与水路概念示意，非具体洞穴剖面”."
+      }
+    },
+    {
+      "id": "river-landscape-illustration",
+      "path": "media/reading/river-landscape-illustration.jpg",
+      "kind": "illustration",
+      "title": "从峡谷到平原与三角洲",
+      "alt": "从峡谷到平原与三角洲。河流连接山地、平原和海洋，侵蚀、搬运与堆积共同塑造河谷、曲流和三角洲。本图是地貌组合示意，不对应一条真实河道，也不意味着所有河流都具备这些形态。",
+      "caption": "河流连接山地、平原和海洋，侵蚀、搬运与堆积共同塑造河谷、曲流和三角洲。本图是地貌组合示意，不对应一条真实河道，也不意味着所有河流都具备这些形态。",
+      "author": "山河图 · AI 辅助绘图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.nps.gov/subjects/geology/fluvial-landforms.htm",
+      "sourceUrls": [
+        "https://www.nps.gov/subjects/geology/fluvial-landforms.htm"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [],
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Standalone educational geography atlas illustration, landscape 1536x1024. Warm ivory paper, muted sage green and ochre earth, soft blue water, beautifully detailed scientific landscape engraving/watercolor hybrid, clear readable Chinese labels, spacious elegant editorial plate. Not a webpage or photo. Conceptual landscapes, no real place outlines, no invented measurements, no numeric data, no logo. Title “河流从山地走向海洋”. An expansive oblique landscape, high eroding mountain valley upper left, river bends on low broad central floodplain, and river splitting into a small delta meeting the sea lower right. Tributaries join toward low ground; channels split ONLY at delta. Clearly show one broad meander with eroding concave outer bank, depositing convex inner bank without label these details. Thin leader labels “峡谷”“支流”“曲流”“冲积平原”“三角洲”. Have a small isolated crescent oxbow beside middle channel, not connected both ends. Show sediment ochre bars in downstream delta; green floodplain with minimal trees, detailed slate rocky mountains. No dams, no cities, no pretend real river course. Footer “河流地貌组合示意，非真实河道”. Process understanding and consistent downhill flow are more important than visual drama."
+      }
+    },
+    {
+      "id": "ecosystem-landscapes-illustration",
+      "path": "media/reading/ecosystem-landscapes-illustration.jpg",
+      "kind": "illustration",
+      "title": "森林、草原与荒漠景观",
+      "alt": "森林、草原与荒漠景观。森林、草原和荒漠的植被覆盖、根系与地表形态不同。这是三种景观的独立示意，并非真实地理剖面或固定的演替顺序；图中不表示气候分类阈值。",
+      "caption": "森林、草原和荒漠的植被覆盖、根系与地表形态不同。这是三种景观的独立示意，并非真实地理剖面或固定的演替顺序；图中不表示气候分类阈值。",
+      "author": "山河图 · AI 辅助绘图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/global-maps/land-surface-temperature-vegetation/",
+      "sourceUrls": [
+        "https://science.nasa.gov/earth/earth-observatory/global-maps/land-surface-temperature-vegetation/"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [],
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Standalone educational geography atlas illustration, landscape 1536x1024. Warm ivory paper, muted sage green and ochre earth, soft blue water, beautifully detailed scientific landscape engraving/watercolor hybrid, clear readable Chinese labels, spacious elegant editorial plate. Not a webpage or photo. Conceptual landscapes, no real place outlines, no invented measurements, no numeric data, no logo. Title “水热条件与植被景观”. Three equal-width vertical landscape panels side by side with clear ivory gutters. LEFT title “森林”: dense temperate broadleaf green trees, mixed understory, moist brown soil cutaway at bottom with roots. MIDDLE title “草原”: open rolling grassland without forest, dense fine grass roots in brown soil cutaway at bottom. RIGHT title “荒漠”: dry rocky ground and small dunes with sparse low drought-tolerant shrubs, sparse roots in shallow soil cutaway. Each panel independent example, no connected realistic geographic transect or map, no climate thresholds implied. Bottom full-width text “景观对照示意，植被还受土壤、地形与人类活动影响”. Consistent scale of each scenery, no animals, no pine forest labeled grassland, no arbitrary rainfall or temperature numbers. Calm educational plate, main landscapes occupy most canvas."
+      }
+    },
+    {
+      "id": "city-water-landscape-illustration",
+      "path": "media/reading/city-water-landscape-illustration.jpg",
+      "kind": "illustration",
+      "title": "雨水穿过城市的不同路径",
+      "alt": "雨水穿过城市的不同路径。硬化地面使更多雨水形成径流，绿地和雨水花园则可暂存雨水并促进下渗。排水管网与河道共同影响雨水去向。概念示意不对应具体城市，也不是工程设计图。",
+      "caption": "硬化地面使更多雨水形成径流，绿地和雨水花园则可暂存雨水并促进下渗。排水管网与河道共同影响雨水去向。概念示意不对应具体城市，也不是工程设计图。",
+      "author": "山河图 · AI 辅助绘图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.usgs.gov/water-science-school/science/impervious-surfaces-and-flooding",
+      "sourceUrls": [
+        "https://www.usgs.gov/water-science-school/science/impervious-surfaces-and-flooding",
+        "https://www.epa.gov/soakuptherain/soak-rain-rain-gardens"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [],
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Standalone educational geography atlas illustration, landscape 1536x1024. Warm ivory paper, muted sage green and ochre earth, soft blue water, beautifully detailed scientific landscape engraving/watercolor hybrid, clear readable Chinese labels, spacious elegant editorial plate. Not a webpage or photo. Conceptual landscapes, no real place outlines, no invented measurements, no numeric data, no logo. Title “一座城市怎样接住雨水”. Detailed isometric riverfront neighborhood cutaway, half dense paved streets and buildings left, half tree-lined park with shallow rain garden right, visible calm river at front right. Show surface runoff from a paved street into stormwater drains at left and rain infiltration through park soil at right; underground pipe carries street runoff toward river with outlet drawn above river level. Park rain garden shallow depression stores some rain, permeable footpath at right. Five leader labels “硬化地面”“排水管网”“下渗”“雨水花园”“河道”. Rain clouds light at top, no disaster spectacle, no flooded basements, no exaggerated futuristic architecture. This is a generic city, not actual Chinese place. Footer “城市雨水路径概念示意，非工程设计图”. Keep all flows downhill and pipe geometry consistent."
+      }
+    },
+    {
+      "id": "glacier-valley-illustration",
+      "path": "media/reading/glacier-valley-illustration.jpg",
+      "kind": "illustration",
+      "title": "冰川与它留下的谷地",
+      "alt": "冰川与它留下的谷地。左图表现冰川占据谷地，右图表现退缩后暴露的U形谷和冰碛。两幅是同一谷地的两种概念状态，不是特定冰川的历史复原，也不表示变化所需时间。",
+      "caption": "左图表现冰川占据谷地，右图表现退缩后暴露的U形谷和冰碛。两幅是同一谷地的两种概念状态，不是特定冰川的历史复原，也不表示变化所需时间。",
+      "author": "山河图 · AI 辅助绘图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.nps.gov/subjects/geology/glacial-landforms.htm",
+      "sourceUrls": [
+        "https://www.nps.gov/subjects/geology/glacial-landforms.htm"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [],
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Standalone educational geography atlas illustration, landscape 1536x1024. Warm ivory paper, sage green vegetation, ochre earth and soft blue water, beautifully detailed scientific landscape engraving/watercolor hybrid, restrained readable Chinese labels, calm editorial plate. Not a webpage or photograph. Conceptual terrain, not a map of real place; no coordinates or invented numeric data. Title “冰川留下的谷地”. Two equal panels LEFT “冰川覆盖时” and RIGHT “冰川退缩后”. Both show SAME alpine valley from same elevated viewpoint. Left thick white-blue glacier fills a U-shaped mountain valley, rock debris stripes along both edges and a little at terminus; snow accumulation high at back, glacier terminus downslope foreground. Right largely ice-free broad U-shaped valley with steep rocky walls, gently flatter floor, small stream and lake behind a curved moraine ridge in foreground, tiny remnant glacier at very distant headwall only. Green sparse vegetation in right, bare cold rock left. Labels “冰川”“侧碛” left, “U形谷”“冰碛” right with precise leader lines. Avoid implausible straight vertical valleys, no cartoon sun or wildlife. Footer “同一谷地的两种状态示意，非年代复原”. No claims of time rate or exact former boundary."
+      }
+    },
+    {
+      "id": "coast-landforms-illustration",
+      "path": "media/reading/coast-landforms-illustration.jpg",
+      "kind": "illustration",
+      "title": "岩岸侵蚀与沙岸堆积",
+      "alt": "岩岸侵蚀与沙岸堆积。岩岸上可见海蚀崖、海蚀拱与海蚀柱；沙质岸段可形成沙嘴及受其遮蔽的潟湖。两幅为独立的地貌情景示意，并非同一岸线先后变化的两个阶段。",
+      "caption": "岩岸上可见海蚀崖、海蚀拱与海蚀柱；沙质岸段可形成沙嘴及受其遮蔽的潟湖。两幅为独立的地貌情景示意，并非同一岸线先后变化的两个阶段。",
+      "author": "山河图 · AI 辅助绘图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.nps.gov/subjects/geology/coastal-landforms.htm",
+      "sourceUrls": [
+        "https://www.nps.gov/subjects/geology/coastal-landforms.htm"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [],
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Standalone educational geography atlas illustration, landscape 1536x1024. Warm ivory paper, sage green vegetation, ochre earth and soft blue water, beautifully detailed scientific landscape engraving/watercolor hybrid, restrained readable Chinese labels, calm editorial plate. Not a webpage or photograph. Conceptual terrain, not a map of real place; no coordinates or invented numeric data. Title “海浪塑造的岸线”. Two equal panels separated by ivory gutter. LEFT header “岩岸的侵蚀”: realistic rock headland with cliff at sea, small arch cut through headland and one isolated sea stack offshore, wave-cut rocky platform at base. Three leader labels “海蚀崖”“海蚀拱”“海蚀柱”. RIGHT header “沙岸的堆积”: low sandy coast and gentle waves, a narrow sand spit attached to land at one end extending parallel to coast partly enclosing a lagoon, spit tip not attached to opposite shore; dune belt at back. Two leader labels “沙嘴”“潟湖”. Everything clearly depicts independent conceptual examples, not stages of same coast and not a real site. Sea is consistently on lower/front of both panels. Footer “侵蚀与堆积地貌示意，非真实岸线”. No people, no buildings."
+      }
+    },
+    {
+      "id": "agriculture-landscapes-illustration",
+      "path": "media/reading/agriculture-landscapes-illustration.jpg",
+      "kind": "illustration",
+      "title": "平原、梯田与草地的利用",
+      "alt": "平原、梯田与草地的利用。平原耕作、坡地梯田和草地放牧利用了不同的土地条件。三幅为生产景观示意，不对应指定产区；作物和经营方式仍受水热、土壤、水源与管理影响。",
+      "caption": "平原耕作、坡地梯田和草地放牧利用了不同的土地条件。三幅为生产景观示意，不对应指定产区；作物和经营方式仍受水热、土壤、水源与管理影响。",
+      "author": "山河图 · AI 辅助绘图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://science.nasa.gov/earth/earth-observatory/agriculture-patterns-in-the-great-plains-145932/",
+      "sourceUrls": [
+        "https://science.nasa.gov/earth/earth-observatory/agriculture-patterns-in-the-great-plains-145932/",
+        "https://www.fao.org/giahs/around-the-world/detail/china-hani-rice-terraces/en"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [],
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Standalone educational geography atlas illustration, landscape 1536x1024. Warm ivory paper, sage green vegetation, ochre earth and soft blue water, beautifully detailed scientific landscape engraving/watercolor hybrid, restrained readable Chinese labels, calm editorial plate. Not a webpage or photograph. Conceptual terrain, not a map of real place; no coordinates or invented numeric data. Title “土地、水与农业”. Three independent equal vertical illustrated landscape panels with ivory gutters. LEFT heading “平原耕作”: broad flat green and golden cereal fields, simple irrigation ditch, small farm tracks, windbreaks at far edge. MIDDLE heading “坡地梯田”: lush terraced hillside, rice paddies following contours with realistic water on level terrace surfaces; steps separated by earth bunds. RIGHT heading “草地放牧”: open temperate grassland with few SMALL distant cattle grazing near a natural stream; not exotic desert, no densely packed animals. No tractors required, no stereotyped people. Labels only three headings and main title. No false claim any crop can grow anywhere, no numeric comparison. Footer “土地利用景观示意，具体生产取决于水热、土壤与经营条件”. Natural muted palette and finely detailed rural landscapes, educational and coherent."
+      }
+    },
+    {
+      "id": "rain-shadow-landscape-illustration",
+      "path": "media/reading/rain-shadow-landscape-illustration.jpg",
+      "kind": "illustration",
+      "title": "迎风坡与背风坡",
+      "alt": "迎风坡与背风坡。湿润空气沿迎风坡抬升、冷却，可能形成降水；越过山地后下沉，空气可变得较暖较干。图为地形降水概念示意，是否出现明显雨影取决于风向、水汽和山体条件。",
+      "caption": "湿润空气沿迎风坡抬升、冷却，可能形成降水；越过山地后下沉，空气可变得较暖较干。图为地形降水概念示意，是否出现明显雨影取决于风向、水汽和山体条件。",
+      "author": "山河图 · AI 辅助绘图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html",
+      "sourceUrls": [
+        "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html"
+      ],
+      "width": 1536,
+      "height": 1024,
+      "placeIds": [],
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "generation": {
+        "tool": "OpenAI imagegen (built-in)",
+        "generatedAt": "2026-11-12",
+        "prompt": "Standalone educational geography atlas illustration, landscape 1536x1024. Warm ivory paper, sage green vegetation, ochre earth and soft blue water, beautifully detailed scientific landscape engraving/watercolor hybrid, restrained readable Chinese labels, calm editorial plate. Not a webpage or photograph. Conceptual terrain, not a map of real place; no coordinates or invented numeric data. Title “一座山的两侧”. One continuous mountain cross-section landscape with blue sea far LEFT, moist green windward LEFT slope with rising cloud and rain, ridge at center, dry brown leeward RIGHT slope and sparse shrubs; prevailing wind travels LEFT TO RIGHT. Three restrained connected arrows: low incoming moist wind at left pointing RIGHT, arrow rising up left slope, arrow descending down right slope. EXACT Chinese labels “湿润气流”“迎风坡”“背风坡”. Rain only concentrated left windward; no rain on right. Show cloud condensation near upper windward slope and blue sky on descending side. No temperatures or altitude values, no tropical palms or fantasy. Footer “地形降水概念示意，并非所有山脉都形成明显雨影”. Must make arrow directions and slope positions unambiguous. Atlas educational landscape plate."
+      }
+    }
+  ],
+  "additionalSourceReviews": [
+    {
+      "mediaId": "polar-worlds-illustration",
+      "sourceUrls": [
+        "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "核对图示概念与形态关系，不采集或重建数值资料。"
+    },
+    {
+      "mediaId": "watershed-landscape-illustration",
+      "sourceUrls": [
+        "https://www.usgs.gov/water-science-school/water-cycle"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "核对图示概念与形态关系，不采集或重建数值资料。"
+    },
+    {
+      "mediaId": "karst-landscape-illustration",
+      "sourceUrls": [
+        "https://www.nps.gov/subjects/caves/karst-landscapes.htm"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "核对图示概念与形态关系，不采集或重建数值资料。"
+    },
+    {
+      "mediaId": "river-landscape-illustration",
+      "sourceUrls": [
+        "https://www.nps.gov/subjects/geology/fluvial-landforms.htm"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "核对图示概念与形态关系，不采集或重建数值资料。"
+    },
+    {
+      "mediaId": "ecosystem-landscapes-illustration",
+      "sourceUrls": [
+        "https://science.nasa.gov/earth/earth-observatory/global-maps/land-surface-temperature-vegetation/"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "核对图示概念与形态关系，不采集或重建数值资料。"
+    },
+    {
+      "mediaId": "city-water-landscape-illustration",
+      "sourceUrls": [
+        "https://www.usgs.gov/water-science-school/science/impervious-surfaces-and-flooding",
+        "https://www.epa.gov/soakuptherain/soak-rain-rain-gardens"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "核对图示概念与形态关系，不采集或重建数值资料。"
+    },
+    {
+      "mediaId": "glacier-valley-illustration",
+      "sourceUrls": [
+        "https://www.nps.gov/subjects/geology/glacial-landforms.htm"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "核对图示概念与形态关系，不采集或重建数值资料。"
+    },
+    {
+      "mediaId": "coast-landforms-illustration",
+      "sourceUrls": [
+        "https://www.nps.gov/subjects/geology/coastal-landforms.htm"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "核对图示概念与形态关系，不采集或重建数值资料。"
+    },
+    {
+      "mediaId": "agriculture-landscapes-illustration",
+      "sourceUrls": [
+        "https://science.nasa.gov/earth/earth-observatory/agriculture-patterns-in-the-great-plains-145932/",
+        "https://www.fao.org/giahs/around-the-world/detail/china-hani-rice-terraces/en"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "核对图示概念与形态关系，不采集或重建数值资料。"
+    },
+    {
+      "mediaId": "rain-shadow-landscape-illustration",
+      "sourceUrls": [
+        "https://www.weather.gov.hk/en/education/weather/rain/00045-why-is-there-more-rain-in-tai-mo-shan-.html"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "核对图示概念与形态关系，不采集或重建数值资料。"
+    }
+  ]
+}

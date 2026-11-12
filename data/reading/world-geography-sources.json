@@ -1,0 +1,124 @@
+{
+  "version": "world-geography-2026-11-12",
+  "reviewedAt": "2026-11-12",
+  "topicIds": [
+    "world-continents",
+    "world-oceans",
+    "world-regional-comparison"
+  ],
+  "processing": "将世界海陆与区域比较拆为七大洲、五大洋、世界区域比较。七洲面积图前置并逐洲介绍；新增同口径五洋面积图，逐洋解释位置及自然联系。保留区域章节、旧章节显式转向和所有原案例来源；复用真实海陆位置图，不绘制新地理范围。",
+  "licenses": "新增正文与图表编排采用CC BY 4.0；面积数字保留原始来源和统计口径。IHO文献仅作事实依据，不转载PDF或整段原文；海陆图沿用Natural Earth公共领域几何。",
+  "sources": [
+    {
+      "title": "IHO · 决议02/2023：承认南大洋及海域界限（M-3，2024年7月版，第110—113页）",
+      "url": "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf",
+      "accessedAt": "2026-11-12",
+      "version": "IHO M-3 2nd Edition 2010, updated July 2024; Resolution 02/2023",
+      "scope": "核读PDF第110—113页（零基页码）：已承认南大洋、南纬60°北界、非政治/海洋物理边界说明、阿根廷与澳大利亚等保留意见。",
+      "license": "IHO文献版权保留；仅原创概述事实，未转载原文或PDF。"
+    },
+    {
+      "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+      "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf",
+      "accessedAt": "2026-11-12",
+      "version": "ETOPO1 World Ocean Volumes, official PDF under NCEI Older Versions",
+      "scope": "读取官方表：太平洋161760000、另列南海6963000、大西洋85133000、印度洋70560000、南大洋21960000、北冰洋15558000，单位平方千米；原表南大洋北界60°S。太平洋相加为168723000。",
+      "license": "NOAA美国政府公开数据；保留机构、模型与处理说明。"
+    },
+    {
+      "title": "National Geographic Society · Asia: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/asia/",
+      "accessedAt": "2026-11-12",
+      "scope": "亚洲主要地形单元与冰雪来水；新增正文沿用原有NASA/USGS资料，并核对National Geographic官方教育页面摘录。",
+      "license": "参考网页版权保留，正文为原创概述。"
+    },
+    {
+      "title": "全球变化数据学报 · 2015年全球岛礁、陆地面积与海岸线（表7）",
+      "url": "https://geodoi.ac.cn/DOIPaper/HTML/2019139402/201902139403.htm",
+      "accessedAt": "2026-11-12",
+      "version": "2019研究，2015±2年遥感影像；表7",
+      "scope": "检索可核对原始研究表7各洲面积，与现有CAS来源记录一致；页面全文访问失败，未声称重新读取完整论文。",
+      "license": "事实数值引用；原研究与其数据许可保留。"
+    }
+  ],
+  "conflictingSources": [
+    {
+      "url": "https://oceanservice.noaa.gov/facts/howmanyoceans.html",
+      "accessedAt": "2026-11-12",
+      "note": "页面仍有IHO未批准旧描述，与IHO 02/2023决议冲突。新正文以IHO直接决议为现行依据；保留旧NOAA引用作原卡来源追溯，不采用其未批准判断。"
+    },
+    {
+      "url": "https://www.noaa.gov/jetstream/ocean",
+      "accessedAt": "2026-11-12",
+      "note": "其南大洋3500万平方千米表与本篇60°S分界不同，不与新图混用。五个大洋卡的面积事实统一为NCEI ETOPO1表处理结果。"
+    }
+  ],
+  "areaInputs": {
+    "continents": {
+      "sourceUrl": "https://geodoi.ac.cn/DOIPaper/HTML/2019139402/201902139403.htm",
+      "period": "2015±2年",
+      "unit": "km²",
+      "values": [
+        {
+          "id": "asia-continent",
+          "areaKm2": 44130000
+        },
+        {
+          "id": "africa-continent",
+          "areaKm2": 29830000
+        },
+        {
+          "id": "north-america-continent",
+          "areaKm2": 24240000
+        },
+        {
+          "id": "south-america-continent",
+          "areaKm2": 17740000
+        },
+        {
+          "id": "antarctica",
+          "areaKm2": 12610000
+        },
+        {
+          "id": "europe-continent",
+          "areaKm2": 10000000
+        },
+        {
+          "id": "oceania-region",
+          "areaKm2": 8940000
+        }
+      ],
+      "processing": "沿用既有表7数值换算，图表显示万平方千米取约数，原始精度不代表岸线绝对精度。"
+    },
+    "oceans": {
+      "sourceUrl": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf",
+      "model": "ETOPO1",
+      "southernBoundary": "60°S",
+      "unit": "km²",
+      "values": [
+        {
+          "id": "pacific-ocean",
+          "areaKm2": 168723000
+        },
+        {
+          "id": "atlantic-ocean",
+          "areaKm2": 85133000
+        },
+        {
+          "id": "indian-ocean",
+          "areaKm2": 70560000
+        },
+        {
+          "id": "southern-ocean",
+          "areaKm2": 21960000
+        },
+        {
+          "id": "arctic-ocean",
+          "areaKm2": 15558000
+        }
+      ],
+      "processing": "以原表洋区面积为准；太平洋并入原表另列South China Sea 6963000平方千米；不重复相加North/South子项。历史模型统计，并非现时重测。"
+    }
+  },
+  "validation": "生成时检查七洲五洋均有独立章节、图表行与已有真实卡片ID一致、区域章节和转向可达。浏览器和自动检查结果由实际执行记录另存。"
+}

@@ -29,18 +29,18 @@ export interface Topic {
   visuals?: TopicVisual[];
   mapGuide?: {summary?:string;sections:{sectionId:string;title:string;body:string}[];cases:{id:string;prompt:string}[]};
   modules?: {id: string; partTitle?:string; title: string; description: string; detail?:string; stops: string[]}[];
-  reading?: {parts?:ReadingPart[];coverId:string; keywords:string[]; highlights:string[]; minutes:number; relatedTopicIds:string[]};
+  reading?: {parts?:ReadingPart[];chapters?:{id:string;title:string}[];coverId:string; keywords:string[]; highlights:string[]; minutes:number; relatedTopicIds:string[]};
 }
 export interface ReadingProgress {sectionId:string; offset:number; updatedAt:number}
 export interface ReadingPart {id:string;title:string;sectionId:string;description:string;keywords:string[]}
 export interface TopicArticle {
   id:string; title:string; introduction:string; updatedAt:string; parts?:ReadingPart[]; presentation?:'essay';
-  sections:{id:string; title:string; paragraphs:string[]; partId?:string; mediaIds?:string[]; visuals?:TopicVisual[]; caseIds?:string[]; mapLabels?:Record<string,string>; terms?:{term:string;definition:string}[]}[];
+  sections:{id:string; title:string; paragraphs:string[]; partId?:string; mediaIds?:string[]; mediaAfterParagraph?:Record<string,number>; mediaPlacement?:'before-text'; visuals?:TopicVisual[]; caseIds?:string[]; mapLabels?:Record<string,string>; terms?:{term:string;definition:string}[]}[];
   questions:{question:string;answer:string}[];
   sources:{title:string;url:string}[];
 }
 export interface ReadingMedia {
-  id:string; path:string; kind:'photo'|'diagram'|'map'; title:string; alt:string; caption:string;
+  id:string; path:string; kind:'photo'|'diagram'|'map'|'illustration'; title:string; alt:string; caption:string;
   author:string; license:string; sourceUrl:string; width:number; height:number;
   sourceUrls?:string[]; placeIds?:string[]; licenseUrl?:string;
 }

@@ -5,7 +5,7 @@ import topics from '../src/data/topics.json' with {type:'json'}
 import knowledge from '../src/data/knowledge.json' with {type:'json'}
 import {readFileSync} from 'node:fs'
 
-for(const id of ['china-terrain','map-climate','landform-karst','weather-systems','climate-change']){
+for(const id of ['china-terrain','map-climate','landform-landscapes','weather-systems','climate-change']){
   test(`map guide: ${id} explains the map before full reading and preserves case navigation`,async({page},info)=>{
     const topic=topics.find(t=>t.id===id)!,guide=topic.mapGuide
     const requests:string[]=[],errors:string[]=[]
@@ -37,7 +37,7 @@ for(const id of ['china-terrain','map-climate','landform-karst','weather-systems
     const article=page.locator('.topic-reading-page:not([hidden])')
     await expect(article.locator('h1')).toHaveText(topic.title)
     expect(requests).toHaveLength(1)
-    const authored=JSON.parse(readFileSync(`data/reading/edited-topics/${id}.json`,'utf8'))
+    const authored=JSON.parse(readFileSync(`public/reading/topics/${id}.json`,'utf8'))
     for(const section of guide.sections){
       const full=authored.sections.find((item:{id:string})=>item.id===section.sectionId)
       await expect(article.locator(`[data-reading-section="${section.sectionId}"]`)).toContainText(full.paragraphs[0])

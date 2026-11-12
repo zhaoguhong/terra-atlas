@@ -1,8 +1,8 @@
 {
-  "reviewedAt": "2026-11-06",
+  "reviewedAt": "2026-11-12",
   "onlineMapSourceManifest": "/data/online-map-sources.json",
   "contentCount": 216,
-  "scope": "个人自由探索：中国与世界216张精选自然及人文地理卡片、30种气候笔记、32个单选主题；按区域、地形、水系、气候、人口文化、资源交通及地球地图七类组织。",
+  "scope": "个人自由探索：中国与世界216张精选自然及人文地理卡片、30种气候笔记、30个单选主题；按区域、地形、水系、气候、人口文化、资源交通及地球地图七类组织。",
   "authoring": "根据公开一手及权威资料原创中文概括、解释与观察问题，未整篇转载文章或复制其他项目代码；每卡与笔记保留可核对来源。代表点不构成范围，量化事实标注年份、单位和统计口径。",
   "climateClassification": {
     "scheme": "Köppen–Geiger",
@@ -53,18 +53,27 @@
         "topic:china-terrain",
         "topic:world-terrain",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-tectonics",
         "topic:landform-processes",
-        "topic:landform-glaciers",
+        "topic:landform-landscapes",
         "topic:earth-hazards",
         "reading:china-terrain",
         "reading:world-terrain",
         "reading:world-continents",
+        "reading:world-regional-comparison",
         "reading:world-tectonics",
-        "reading:landform-processes",
-        "reading:landform-glaciers",
         "reading:earth-hazards",
-        "media:diagram-structures"
+        "reading:landform-processes",
+        "reading:landform-landscapes",
+        "media:diagram-rain-shadow",
+        "media:diagram-structures",
+        "media:diagram-plates",
+        "media:diagram-latitude-belts",
+        "media:diagram-processes",
+        "media:diagram-glaciers",
+        "media:diagram-rocks",
+        "media:diagram-hazards"
       ]
     },
     {
@@ -81,19 +90,30 @@
         "topic:drylands",
         "topic:china-regions",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-tectonics",
         "topic:landform-processes",
-        "topic:landform-glaciers",
+        "topic:landform-landscapes",
         "topic:earth-hazards",
         "reading:china-terrain",
         "reading:world-terrain",
         "reading:drylands",
         "reading:china-regions",
         "reading:world-continents",
+        "reading:world-regional-comparison",
         "reading:world-tectonics",
+        "reading:earth-hazards",
         "reading:landform-processes",
-        "reading:landform-glaciers",
-        "reading:earth-hazards"
+        "reading:landform-landscapes",
+        "media:diagram-rain-shadow",
+        "media:diagram-structures",
+        "media:diagram-plates",
+        "media:diagram-region-method",
+        "media:diagram-latitude-belts",
+        "media:diagram-processes",
+        "media:diagram-glaciers",
+        "media:diagram-rocks",
+        "media:diagram-hazards"
       ]
     },
     {
@@ -107,7 +127,9 @@
         "topic:china-regions",
         "reading:china-terrain",
         "reading:drylands",
-        "reading:china-regions"
+        "reading:china-regions",
+        "media:diagram-rain-shadow",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -118,7 +140,8 @@
         "topic:china-terrain",
         "topic:drylands",
         "reading:china-terrain",
-        "reading:drylands"
+        "reading:drylands",
+        "media:diagram-rain-shadow"
       ]
     },
     {
@@ -132,7 +155,9 @@
         "topic:china-regions",
         "reading:china-terrain",
         "reading:china-regions",
-        "media:diagram-climate-gradient"
+        "media:diagram-rain-shadow",
+        "media:diagram-climate-gradient",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -145,7 +170,10 @@
         "topic:china-terrain",
         "topic:china-regions",
         "reading:china-terrain",
-        "reading:china-regions"
+        "reading:china-regions",
+        "media:diagram-rain-shadow",
+        "media:diagram-climate-gradient",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -154,7 +182,8 @@
       "usedBy": [
         "greater-khingan",
         "topic:china-terrain",
-        "reading:china-terrain"
+        "reading:china-terrain",
+        "media:diagram-rain-shadow"
       ]
     },
     {
@@ -169,7 +198,10 @@
         "topic:agriculture-food",
         "reading:china-terrain",
         "reading:china-regions",
-        "reading:agriculture-food"
+        "reading:agriculture-food",
+        "media:diagram-rain-shadow",
+        "media:diagram-soil",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -190,7 +222,9 @@
         "topic:china-terrain",
         "topic:china-regions",
         "reading:china-terrain",
-        "reading:china-regions"
+        "reading:china-regions",
+        "media:diagram-rain-shadow",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -208,6 +242,7 @@
         "topic:map-climate",
         "topic:china-regions",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:climate-change",
         "reading:china-terrain",
         "reading:china-rivers",
@@ -215,7 +250,16 @@
         "reading:map-climate",
         "reading:china-regions",
         "reading:world-continents",
-        "reading:climate-change"
+        "reading:world-regional-comparison",
+        "reading:climate-change",
+        "media:diagram-plateaus",
+        "media:diagram-rain-shadow",
+        "media:diagram-height",
+        "media:diagram-steps",
+        "media:diagram-river-system",
+        "media:diagram-region-method",
+        "media:diagram-latitude-belts",
+        "media:diagram-climate-energy"
       ]
     },
     {
@@ -227,7 +271,9 @@
         "topic:china-terrain",
         "topic:china-regions",
         "reading:china-terrain",
-        "reading:china-regions"
+        "reading:china-regions",
+        "media:diagram-rain-shadow",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -237,8 +283,12 @@
         "andes",
         "topic:world-terrain",
         "topic:world-tectonics",
+        "topic:landform-landscapes",
         "reading:world-terrain",
-        "reading:world-tectonics"
+        "reading:world-tectonics",
+        "reading:landform-landscapes",
+        "media:diagram-structures",
+        "media:diagram-plates"
       ]
     },
     {
@@ -252,13 +302,21 @@
         "topic:world-terrain",
         "topic:world-rivers",
         "topic:map-climate",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-tectonics",
+        "topic:landform-landscapes",
         "reading:world-terrain",
         "reading:world-rivers",
         "reading:map-climate",
-        "reading:world-continents",
-        "reading:world-tectonics"
+        "reading:world-regional-comparison",
+        "reading:world-tectonics",
+        "reading:landform-landscapes",
+        "media:diagram-plateaus",
+        "media:diagram-height",
+        "media:diagram-structures",
+        "media:diagram-river-system",
+        "media:diagram-plates",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -270,7 +328,9 @@
         "topic:world-terrain",
         "topic:world-rivers",
         "reading:world-terrain",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-structures",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -282,7 +342,9 @@
         "topic:world-terrain",
         "topic:world-rivers",
         "reading:world-terrain",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-structures",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -291,9 +353,11 @@
       "usedBy": [
         "alps",
         "topic:world-terrain",
-        "topic:landform-glaciers",
+        "topic:landform-landscapes",
         "reading:world-terrain",
-        "reading:landform-glaciers"
+        "reading:landform-landscapes",
+        "media:diagram-structures",
+        "media:diagram-glaciers"
       ]
     },
     {
@@ -305,8 +369,12 @@
         "asia-continent",
         "topic:world-terrain",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:world-terrain",
-        "reading:world-continents"
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-structures",
+        "media:diagram-latitude-belts"
       ]
     },
     {
@@ -318,8 +386,12 @@
         "asia-continent",
         "topic:world-terrain",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:world-terrain",
-        "reading:world-continents"
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-structures",
+        "media:diagram-latitude-belts"
       ]
     },
     {
@@ -338,7 +410,9 @@
         "topic:map-climate",
         "topic:china-regions",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-tectonics",
+        "topic:landform-landscapes",
         "topic:earth-hazards",
         "topic:climate-change",
         "reading:china-terrain",
@@ -348,10 +422,24 @@
         "reading:map-climate",
         "reading:china-regions",
         "reading:world-continents",
+        "reading:world-regional-comparison",
         "reading:world-tectonics",
         "reading:earth-hazards",
         "reading:climate-change",
-        "media:diagram-plates"
+        "reading:landform-landscapes",
+        "media:diagram-plateaus",
+        "media:diagram-rain-shadow",
+        "media:diagram-height",
+        "media:diagram-structures",
+        "media:diagram-steps",
+        "media:diagram-river-system",
+        "media:diagram-lake-balance",
+        "media:diagram-plates",
+        "media:diagram-region-method",
+        "media:diagram-latitude-belts",
+        "media:diagram-volcanoes",
+        "media:diagram-hazards",
+        "media:diagram-climate-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -371,15 +459,20 @@
         "topic:china-terrain",
         "topic:world-ecosystems",
         "topic:landform-processes",
-        "topic:landform-rivers",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "topic:earth-hazards",
         "reading:china-terrain",
         "reading:world-ecosystems",
+        "reading:earth-hazards",
         "reading:landform-processes",
-        "reading:landform-rivers",
-        "reading:landform-wind",
-        "reading:earth-hazards"
+        "reading:landform-landscapes",
+        "media:diagram-plateaus",
+        "media:diagram-steps",
+        "media:diagram-soil",
+        "media:diagram-processes",
+        "media:diagram-river-erosion",
+        "media:diagram-loess",
+        "media:diagram-hazards"
       ]
     },
     {
@@ -390,15 +483,20 @@
         "topic:china-terrain",
         "topic:world-ecosystems",
         "topic:landform-processes",
-        "topic:landform-rivers",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "topic:earth-hazards",
         "reading:china-terrain",
         "reading:world-ecosystems",
+        "reading:earth-hazards",
         "reading:landform-processes",
-        "reading:landform-rivers",
-        "reading:landform-wind",
-        "reading:earth-hazards"
+        "reading:landform-landscapes",
+        "media:diagram-plateaus",
+        "media:diagram-steps",
+        "media:diagram-soil",
+        "media:diagram-processes",
+        "media:diagram-river-erosion",
+        "media:diagram-loess",
+        "media:diagram-hazards"
       ]
     },
     {
@@ -413,7 +511,10 @@
         "topic:china-provinces",
         "reading:china-terrain",
         "reading:china-regions",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-plateaus",
+        "media:diagram-steps",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -425,7 +526,10 @@
         "topic:china-terrain",
         "topic:china-regions",
         "reading:china-terrain",
-        "reading:china-regions"
+        "reading:china-regions",
+        "media:diagram-plateaus",
+        "media:diagram-steps",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -437,7 +541,10 @@
         "topic:china-terrain",
         "topic:china-regions",
         "reading:china-terrain",
-        "reading:china-regions"
+        "reading:china-regions",
+        "media:diagram-plateaus",
+        "media:diagram-steps",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -448,10 +555,14 @@
         "southern-china",
         "topic:china-terrain",
         "topic:china-regions",
-        "topic:landform-karst",
+        "topic:landform-landscapes",
         "reading:china-terrain",
         "reading:china-regions",
-        "reading:landform-karst"
+        "reading:landform-landscapes",
+        "media:diagram-plateaus",
+        "media:diagram-steps",
+        "media:diagram-region-method",
+        "media:diagram-karst"
       ]
     },
     {
@@ -462,10 +573,14 @@
         "southern-china",
         "topic:china-terrain",
         "topic:china-regions",
-        "topic:landform-karst",
+        "topic:landform-landscapes",
         "reading:china-terrain",
         "reading:china-regions",
-        "reading:landform-karst"
+        "reading:landform-landscapes",
+        "media:diagram-plateaus",
+        "media:diagram-steps",
+        "media:diagram-region-method",
+        "media:diagram-karst"
       ]
     },
     {
@@ -481,14 +596,21 @@
         "topic:china-regions",
         "topic:earth-map-reading",
         "topic:landform-processes",
-        "topic:landform-karst",
+        "topic:landform-landscapes",
         "topic:water-cycle",
         "reading:china-terrain",
         "reading:china-regions",
         "reading:earth-map-reading",
+        "reading:water-cycle",
         "reading:landform-processes",
-        "reading:landform-karst",
-        "reading:water-cycle"
+        "reading:landform-landscapes",
+        "media:diagram-plateaus",
+        "media:diagram-steps",
+        "media:diagram-region-method",
+        "media:diagram-karst",
+        "media:diagram-rocks",
+        "media:diagram-water-cycle",
+        "media:diagram-image-reading"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -509,11 +631,17 @@
         "topic:china-terrain",
         "topic:china-regions",
         "topic:agriculture-food",
-        "topic:landform-rivers",
+        "topic:landform-landscapes",
         "reading:china-terrain",
         "reading:china-regions",
         "reading:agriculture-food",
-        "reading:landform-rivers"
+        "reading:landform-landscapes",
+        "media:diagram-river-deposition",
+        "media:diagram-steps",
+        "media:diagram-climate-gradient",
+        "media:diagram-food-water",
+        "media:diagram-soil",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -527,7 +655,12 @@
         "topic:agriculture-food",
         "reading:china-terrain",
         "reading:china-regions",
-        "reading:agriculture-food"
+        "reading:agriculture-food",
+        "media:diagram-river-deposition",
+        "media:diagram-steps",
+        "media:diagram-climate-gradient",
+        "media:diagram-food-water",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -541,7 +674,11 @@
         "topic:china-regions",
         "reading:china-terrain",
         "reading:china-rivers",
-        "reading:china-regions"
+        "reading:china-regions",
+        "media:diagram-basins",
+        "media:diagram-steps",
+        "media:diagram-river-system",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -558,7 +695,10 @@
         "reading:china-terrain",
         "reading:drylands",
         "reading:china-regions",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-basins",
+        "media:diagram-rain-shadow",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -575,7 +715,10 @@
         "reading:china-terrain",
         "reading:drylands",
         "reading:china-regions",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-basins",
+        "media:diagram-rain-shadow",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -592,7 +735,10 @@
         "reading:china-terrain",
         "reading:drylands",
         "reading:china-regions",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-basins",
+        "media:diagram-rain-shadow",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -601,9 +747,12 @@
       "usedBy": [
         "taklamakan",
         "topic:drylands",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:drylands",
-        "reading:landform-wind"
+        "reading:landform-landscapes",
+        "media:diagram-rain-shadow",
+        "media:diagram-dryness",
+        "media:diagram-dunes"
       ]
     },
     {
@@ -612,9 +761,12 @@
       "usedBy": [
         "taklamakan",
         "topic:drylands",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:drylands",
-        "reading:landform-wind"
+        "reading:landform-landscapes",
+        "media:diagram-rain-shadow",
+        "media:diagram-dryness",
+        "media:diagram-dunes"
       ]
     },
     {
@@ -626,12 +778,18 @@
         "middle-east",
         "topic:map-climate",
         "topic:drylands",
-        "topic:world-continents",
-        "topic:landform-wind",
+        "topic:world-regional-comparison",
+        "topic:landform-landscapes",
         "reading:map-climate",
         "reading:drylands",
-        "reading:world-continents",
-        "reading:landform-wind"
+        "reading:world-regional-comparison",
+        "reading:landform-landscapes",
+        "media:diagram-rain-shadow",
+        "media:diagram-dryness",
+        "media:diagram-climate-reading",
+        "media:diagram-region-method",
+        "media:diagram-yardang",
+        "media:diagram-dunes"
       ]
     },
     {
@@ -640,9 +798,12 @@
       "usedBy": [
         "sahara",
         "topic:drylands",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:drylands",
-        "reading:landform-wind"
+        "reading:landform-landscapes",
+        "media:diagram-dryness",
+        "media:diagram-yardang",
+        "media:diagram-dunes"
       ]
     },
     {
@@ -654,11 +815,15 @@
         "topic:world-terrain",
         "topic:world-rivers",
         "topic:map-climate",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:world-terrain",
         "reading:world-rivers",
         "reading:map-climate",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-plateaus",
+        "media:diagram-height",
+        "media:diagram-river-system",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -669,10 +834,13 @@
         "india",
         "topic:world-terrain",
         "topic:world-rivers",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:world-terrain",
         "reading:world-rivers",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-plateaus",
+        "media:diagram-river-system",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -684,10 +852,13 @@
         "india",
         "topic:world-terrain",
         "topic:world-rivers",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:world-terrain",
         "reading:world-rivers",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-plateaus",
+        "media:diagram-river-system",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -698,10 +869,13 @@
         "india",
         "topic:world-terrain",
         "topic:world-rivers",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:world-terrain",
         "reading:world-rivers",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-plateaus",
+        "media:diagram-river-system",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -712,11 +886,17 @@
         "kenya",
         "sub-saharan-africa",
         "topic:map-climate",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-tectonics",
+        "topic:landform-landscapes",
         "reading:map-climate",
-        "reading:world-continents",
-        "reading:world-tectonics"
+        "reading:world-regional-comparison",
+        "reading:world-tectonics",
+        "reading:landform-landscapes",
+        "media:diagram-height",
+        "media:diagram-structures",
+        "media:diagram-plates",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -729,12 +909,19 @@
         "sub-saharan-africa",
         "topic:world-rivers",
         "topic:map-climate",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-tectonics",
+        "topic:landform-landscapes",
         "reading:world-rivers",
         "reading:map-climate",
-        "reading:world-continents",
-        "reading:world-tectonics"
+        "reading:world-regional-comparison",
+        "reading:world-tectonics",
+        "reading:landform-landscapes",
+        "media:diagram-height",
+        "media:diagram-structures",
+        "media:diagram-lake-balance",
+        "media:diagram-plates",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -744,13 +931,16 @@
         "yangtze",
         "topic:china-rivers",
         "topic:landform-processes",
-        "topic:landform-rivers",
+        "topic:landform-landscapes",
         "topic:water-cycle",
         "reading:china-rivers",
-        "reading:landform-processes",
-        "reading:landform-rivers",
         "reading:water-cycle",
-        "media:diagram-river-system"
+        "reading:landform-processes",
+        "reading:landform-landscapes",
+        "media:diagram-river-system",
+        "media:diagram-processes",
+        "media:diagram-river-erosion",
+        "media:diagram-water-cycle"
       ]
     },
     {
@@ -760,12 +950,16 @@
         "yangtze",
         "topic:china-rivers",
         "topic:landform-processes",
-        "topic:landform-rivers",
+        "topic:landform-landscapes",
         "topic:water-cycle",
         "reading:china-rivers",
+        "reading:water-cycle",
         "reading:landform-processes",
-        "reading:landform-rivers",
-        "reading:water-cycle"
+        "reading:landform-landscapes",
+        "media:diagram-river-system",
+        "media:diagram-processes",
+        "media:diagram-river-erosion",
+        "media:diagram-water-cycle"
       ]
     },
     {
@@ -774,11 +968,12 @@
       "usedBy": [
         "yellow-river",
         "topic:china-rivers",
-        "topic:landform-rivers",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:china-rivers",
-        "reading:landform-rivers",
-        "reading:landform-wind"
+        "reading:landform-landscapes",
+        "media:diagram-river-system",
+        "media:diagram-river-erosion",
+        "media:diagram-loess"
       ]
     },
     {
@@ -787,11 +982,12 @@
       "usedBy": [
         "yellow-river",
         "topic:china-rivers",
-        "topic:landform-rivers",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:china-rivers",
-        "reading:landform-rivers",
-        "reading:landform-wind"
+        "reading:landform-landscapes",
+        "media:diagram-river-system",
+        "media:diagram-river-erosion",
+        "media:diagram-loess"
       ]
     },
     {
@@ -806,7 +1002,10 @@
         "topic:agriculture-food",
         "reading:china-rivers",
         "reading:china-regions",
-        "reading:agriculture-food"
+        "reading:agriculture-food",
+        "media:diagram-river-system",
+        "media:diagram-food-water",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -821,7 +1020,10 @@
         "topic:agriculture-food",
         "reading:china-rivers",
         "reading:china-regions",
-        "reading:agriculture-food"
+        "reading:agriculture-food",
+        "media:diagram-river-system",
+        "media:diagram-food-water",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -831,9 +1033,11 @@
         "mekong",
         "southeast-asia",
         "topic:china-rivers",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:china-rivers",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-river-system",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -843,9 +1047,11 @@
         "mekong",
         "southeast-asia",
         "topic:china-rivers",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:china-rivers",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-river-system",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -854,7 +1060,8 @@
       "usedBy": [
         "amur",
         "topic:china-rivers",
-        "reading:china-rivers"
+        "reading:china-rivers",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -867,7 +1074,10 @@
         "topic:water-cycle",
         "reading:china-rivers",
         "reading:drylands",
-        "reading:water-cycle"
+        "reading:water-cycle",
+        "media:diagram-rain-shadow",
+        "media:diagram-river-system",
+        "media:diagram-water-cycle"
       ]
     },
     {
@@ -880,7 +1090,10 @@
         "topic:water-cycle",
         "reading:china-rivers",
         "reading:drylands",
-        "reading:water-cycle"
+        "reading:water-cycle",
+        "media:diagram-rain-shadow",
+        "media:diagram-river-system",
+        "media:diagram-water-cycle"
       ]
     },
     {
@@ -890,7 +1103,8 @@
         "nile",
         "egypt",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -900,7 +1114,8 @@
         "nile",
         "egypt",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -909,7 +1124,8 @@
       "usedBy": [
         "amazon-river",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -918,7 +1134,8 @@
       "usedBy": [
         "mississippi",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -927,7 +1144,8 @@
       "usedBy": [
         "mississippi",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -938,7 +1156,8 @@
         "germany",
         "ruhr-industry",
         "topic:energy-industry",
-        "reading:energy-industry"
+        "reading:energy-industry",
+        "media:diagram-energy"
       ]
     },
     {
@@ -961,7 +1180,8 @@
       "usedBy": [
         "ganges",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -980,7 +1200,11 @@
         "reading:drylands",
         "reading:china-regions",
         "reading:china-provinces",
-        "reading:water-cycle"
+        "reading:water-cycle",
+        "media:diagram-rain-shadow",
+        "media:diagram-lake-balance",
+        "media:diagram-region-method",
+        "media:diagram-water-cycle"
       ]
     },
     {
@@ -999,7 +1223,11 @@
         "reading:drylands",
         "reading:china-regions",
         "reading:china-provinces",
-        "reading:water-cycle"
+        "reading:water-cycle",
+        "media:diagram-rain-shadow",
+        "media:diagram-lake-balance",
+        "media:diagram-region-method",
+        "media:diagram-water-cycle"
       ]
     },
     {
@@ -1008,7 +1236,9 @@
       "usedBy": [
         "poyang-lake",
         "topic:china-rivers",
-        "reading:china-rivers"
+        "reading:china-rivers",
+        "media:diagram-river-system",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1017,7 +1247,9 @@
       "usedBy": [
         "poyang-lake",
         "topic:china-rivers",
-        "reading:china-rivers"
+        "reading:china-rivers",
+        "media:diagram-river-system",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1026,7 +1258,9 @@
       "usedBy": [
         "dongting-lake",
         "topic:china-rivers",
-        "reading:china-rivers"
+        "reading:china-rivers",
+        "media:diagram-river-system",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1035,7 +1269,9 @@
       "usedBy": [
         "dongting-lake",
         "topic:china-rivers",
-        "reading:china-rivers"
+        "reading:china-rivers",
+        "media:diagram-river-system",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1048,18 +1284,24 @@
         "topic:china-city-environment",
         "topic:agriculture-food",
         "topic:earth-map-reading",
-        "topic:landform-rivers",
-        "topic:landform-coasts",
+        "topic:landform-landscapes",
         "topic:earth-hazards",
         "topic:climate-change",
         "reading:china-rivers",
         "reading:china-city-environment",
         "reading:agriculture-food",
         "reading:earth-map-reading",
-        "reading:landform-rivers",
-        "reading:landform-coasts",
         "reading:earth-hazards",
-        "reading:climate-change"
+        "reading:climate-change",
+        "reading:landform-landscapes",
+        "media:diagram-river-deposition",
+        "media:diagram-lake-balance",
+        "media:diagram-city-water",
+        "media:diagram-food-water",
+        "media:diagram-coasts",
+        "media:diagram-hazards",
+        "media:diagram-image-reading",
+        "media:diagram-climate-energy"
       ]
     },
     {
@@ -1072,18 +1314,24 @@
         "topic:china-city-environment",
         "topic:agriculture-food",
         "topic:earth-map-reading",
-        "topic:landform-rivers",
-        "topic:landform-coasts",
+        "topic:landform-landscapes",
         "topic:earth-hazards",
         "topic:climate-change",
         "reading:china-rivers",
         "reading:china-city-environment",
         "reading:agriculture-food",
         "reading:earth-map-reading",
-        "reading:landform-rivers",
-        "reading:landform-coasts",
         "reading:earth-hazards",
-        "reading:climate-change"
+        "reading:climate-change",
+        "reading:landform-landscapes",
+        "media:diagram-river-deposition",
+        "media:diagram-lake-balance",
+        "media:diagram-city-water",
+        "media:diagram-food-water",
+        "media:diagram-coasts",
+        "media:diagram-hazards",
+        "media:diagram-image-reading",
+        "media:diagram-climate-energy"
       ]
     },
     {
@@ -1093,7 +1341,8 @@
         "baikal",
         "russia",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1103,7 +1352,8 @@
         "baikal",
         "russia",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1113,9 +1363,12 @@
         "great-lakes",
         "usa",
         "topic:world-rivers",
-        "topic:landform-glaciers",
+        "topic:landform-landscapes",
         "reading:world-rivers",
-        "reading:landform-glaciers"
+        "reading:landform-landscapes",
+        "media:diagram-river-system",
+        "media:diagram-lake-balance",
+        "media:diagram-glaciers"
       ]
     },
     {
@@ -1125,9 +1378,12 @@
         "great-lakes",
         "usa",
         "topic:world-rivers",
-        "topic:landform-glaciers",
+        "topic:landform-landscapes",
         "reading:world-rivers",
-        "reading:landform-glaciers"
+        "reading:landform-landscapes",
+        "media:diagram-river-system",
+        "media:diagram-lake-balance",
+        "media:diagram-glaciers"
       ]
     },
     {
@@ -1136,7 +1392,8 @@
       "usedBy": [
         "victoria",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1145,7 +1402,8 @@
       "usedBy": [
         "tanganyika",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1154,7 +1412,8 @@
       "usedBy": [
         "tanganyika",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1173,7 +1432,8 @@
       "usedBy": [
         "caspian",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1182,7 +1442,8 @@
       "usedBy": [
         "dead-sea",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1191,7 +1452,8 @@
       "usedBy": [
         "dead-sea",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-lake-balance"
       ]
     },
     {
@@ -1205,10 +1467,12 @@
         "climate-e",
         "middle-east",
         "topic:map-climate",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:map-climate",
-        "reading:world-continents",
-        "media:diagram-climate-reading"
+        "reading:world-regional-comparison",
+        "media:diagram-height",
+        "media:diagram-climate-reading",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1220,7 +1484,9 @@
         "climate-d",
         "climate-e",
         "topic:map-climate",
-        "reading:map-climate"
+        "reading:map-climate",
+        "media:diagram-height",
+        "media:diagram-climate-reading"
       ]
     },
     {
@@ -1263,7 +1529,9 @@
         "climate-note:Dfd",
         "climate-note:ET",
         "climate-note:EF",
-        "reading:map-climate"
+        "reading:map-climate",
+        "media:diagram-height",
+        "media:diagram-climate-reading"
       ],
       "usedByClimateCodes": [
         "Af",
@@ -1338,7 +1606,9 @@
         "climate-note:Dfd",
         "climate-note:ET",
         "climate-note:EF",
-        "reading:map-climate"
+        "reading:map-climate",
+        "media:diagram-height",
+        "media:diagram-climate-reading"
       ],
       "usedByClimateCodes": [
         "Af",
@@ -1413,7 +1683,9 @@
         "climate-note:Dfd",
         "climate-note:ET",
         "climate-note:EF",
-        "reading:map-climate"
+        "reading:map-climate",
+        "media:diagram-height",
+        "media:diagram-climate-reading"
       ],
       "usedByClimateCodes": [
         "Af",
@@ -1504,7 +1776,17 @@
         "reading:agriculture-food",
         "reading:transport-trade",
         "reading:china-provinces",
-        "reading:weather-systems"
+        "reading:weather-systems",
+        "media:diagram-rain-shadow",
+        "media:diagram-river-system",
+        "media:diagram-climate-gradient",
+        "media:diagram-population",
+        "media:diagram-city-water",
+        "media:diagram-food-water",
+        "media:diagram-transport",
+        "media:diagram-region-method",
+        "media:diagram-migration",
+        "media:diagram-weather-fronts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -1523,7 +1805,8 @@
         "china-country",
         "china-population",
         "topic:map-population",
-        "reading:map-population"
+        "reading:map-population",
+        "media:diagram-population"
       ]
     },
     {
@@ -1538,8 +1821,9 @@
       "url": "https://www.stat.go.jp/english/data/handbook/pdf/2025all.pdf",
       "usedBy": [
         "japan",
-        "topic:world-continents",
-        "reading:world-continents"
+        "topic:world-regional-comparison",
+        "reading:world-regional-comparison",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1549,11 +1833,17 @@
         "japan",
         "fujisan",
         "topic:world-terrain",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-tectonics",
+        "topic:landform-landscapes",
         "reading:world-terrain",
-        "reading:world-continents",
-        "reading:world-tectonics"
+        "reading:world-regional-comparison",
+        "reading:world-tectonics",
+        "reading:landform-landscapes",
+        "media:diagram-structures",
+        "media:diagram-plates",
+        "media:diagram-region-method",
+        "media:diagram-volcanoes"
       ]
     },
     {
@@ -1561,8 +1851,9 @@
       "url": "https://data.un.org/legacy/en/iso/jp.html",
       "usedBy": [
         "japan",
-        "topic:world-continents",
-        "reading:world-continents"
+        "topic:world-regional-comparison",
+        "reading:world-regional-comparison",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1574,12 +1865,18 @@
         "rice-farming",
         "topic:agriculture-food",
         "topic:transport-trade",
-        "topic:world-continents",
+        "topic:world-oceans",
+        "topic:world-regional-comparison",
         "topic:world-ecosystems",
         "reading:agriculture-food",
         "reading:transport-trade",
-        "reading:world-continents",
-        "reading:world-ecosystems"
+        "reading:world-oceans",
+        "reading:world-regional-comparison",
+        "reading:world-ecosystems",
+        "media:diagram-sea-passage",
+        "media:diagram-food-water",
+        "media:diagram-soil",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1587,8 +1884,9 @@
       "url": "https://data.un.org/legacy/en/iso/in.html",
       "usedBy": [
         "india",
-        "topic:world-continents",
-        "reading:world-continents"
+        "topic:world-regional-comparison",
+        "reading:world-regional-comparison",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1597,7 +1895,8 @@
       "usedBy": [
         "usa",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -1606,7 +1905,8 @@
       "usedBy": [
         "usa",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -1622,9 +1922,11 @@
       "usedBy": [
         "brazil",
         "topic:map-climate",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:map-climate",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-height",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1633,9 +1935,11 @@
       "usedBy": [
         "brazil",
         "topic:map-climate",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:map-climate",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-height",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1645,10 +1949,13 @@
         "australia",
         "topic:map-climate",
         "topic:drylands",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:map-climate",
         "reading:drylands",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-height",
+        "media:diagram-dryness",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1658,10 +1965,13 @@
         "australia",
         "topic:map-climate",
         "topic:drylands",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:map-climate",
         "reading:drylands",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-height",
+        "media:diagram-dryness",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1671,10 +1981,13 @@
         "australia",
         "topic:map-climate",
         "topic:drylands",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:map-climate",
         "reading:drylands",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-height",
+        "media:diagram-dryness",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1683,7 +1996,8 @@
       "usedBy": [
         "egypt",
         "topic:world-rivers",
-        "reading:world-rivers"
+        "reading:world-rivers",
+        "media:diagram-river-system"
       ]
     },
     {
@@ -1692,8 +2006,9 @@
       "usedBy": [
         "indonesia",
         "southeast-asia",
-        "topic:world-continents",
-        "reading:world-continents"
+        "topic:world-regional-comparison",
+        "reading:world-regional-comparison",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1710,7 +2025,8 @@
         "germany",
         "ruhr-industry",
         "topic:energy-industry",
-        "reading:energy-industry"
+        "reading:energy-industry",
+        "media:diagram-energy"
       ]
     },
     {
@@ -1727,9 +2043,11 @@
         "kenya",
         "sub-saharan-africa",
         "topic:map-climate",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:map-climate",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-height",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1738,7 +2056,8 @@
       "usedBy": [
         "kenya",
         "topic:map-climate",
-        "reading:map-climate"
+        "reading:map-climate",
+        "media:diagram-height"
       ]
     },
     {
@@ -1751,7 +2070,11 @@
         "sub-saharan-africa",
         "asia-continent",
         "topic:world-continents",
-        "reading:world-continents"
+        "topic:world-regional-comparison",
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-region-method",
+        "media:diagram-latitude-belts"
       ]
     },
     {
@@ -1761,9 +2084,11 @@
         "western-europe",
         "mediterranean",
         "topic:transport-trade",
-        "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:transport-trade",
-        "reading:world-continents"
+        "reading:world-regional-comparison",
+        "media:diagram-sea-passage",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1773,10 +2098,15 @@
         "antarctica",
         "topic:map-climate",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-polar-comparison",
         "reading:map-climate",
         "reading:world-continents",
-        "reading:world-polar-comparison"
+        "reading:world-regional-comparison",
+        "reading:world-polar-comparison",
+        "media:diagram-height",
+        "media:diagram-latitude-belts",
+        "media:diagram-polar"
       ]
     },
     {
@@ -1792,7 +2122,11 @@
         "reading:china-city-environment",
         "reading:china-provinces",
         "reading:weather-systems",
-        "media:diagram-city-water"
+        "media:diagram-population",
+        "media:diagram-city-water",
+        "media:diagram-region-method",
+        "media:diagram-migration",
+        "media:diagram-weather-fronts"
       ]
     },
     {
@@ -1807,8 +2141,7 @@
         "topic:agriculture-food",
         "topic:earth-map-reading",
         "topic:china-provinces",
-        "topic:landform-rivers",
-        "topic:landform-coasts",
+        "topic:landform-landscapes",
         "topic:earth-hazards",
         "topic:climate-change",
         "reading:china-rivers",
@@ -1817,10 +2150,20 @@
         "reading:agriculture-food",
         "reading:earth-map-reading",
         "reading:china-provinces",
-        "reading:landform-rivers",
-        "reading:landform-coasts",
         "reading:earth-hazards",
-        "reading:climate-change"
+        "reading:climate-change",
+        "reading:landform-landscapes",
+        "media:diagram-river-deposition",
+        "media:diagram-river-system",
+        "media:diagram-population",
+        "media:diagram-city-water",
+        "media:diagram-food-water",
+        "media:diagram-region-method",
+        "media:diagram-coasts",
+        "media:diagram-hazards",
+        "media:diagram-migration",
+        "media:diagram-image-reading",
+        "media:diagram-climate-energy"
       ]
     },
     {
@@ -1836,7 +2179,11 @@
         "reading:china-regions",
         "reading:china-city-environment",
         "reading:agriculture-food",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-climate-gradient",
+        "media:diagram-city-water",
+        "media:diagram-food-water",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1849,7 +2196,10 @@
         "topic:china-provinces",
         "reading:china-regions",
         "reading:china-city-environment",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-climate-gradient",
+        "media:diagram-city-water",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1860,7 +2210,9 @@
         "topic:drylands",
         "topic:china-provinces",
         "reading:drylands",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-rain-shadow",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1869,7 +2221,8 @@
       "usedBy": [
         "heilongjiang",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1878,7 +2231,8 @@
       "usedBy": [
         "hainan-province",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -1899,7 +2253,9 @@
         "topic:china-regions",
         "topic:china-provinces",
         "reading:china-regions",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-climate-gradient",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1916,8 +2272,13 @@
         "fujisan",
         "topic:world-terrain",
         "topic:world-tectonics",
+        "topic:landform-landscapes",
         "reading:world-terrain",
-        "reading:world-tectonics"
+        "reading:world-tectonics",
+        "reading:landform-landscapes",
+        "media:diagram-structures",
+        "media:diagram-plates",
+        "media:diagram-volcanoes"
       ]
     },
     {
@@ -1928,7 +2289,9 @@
         "atlantic-ocean",
         "indian-ocean",
         "topic:transport-trade",
+        "topic:world-oceans",
         "reading:transport-trade",
+        "reading:world-oceans",
         "media:diagram-sea-passage"
       ]
     },
@@ -1938,8 +2301,45 @@
       "usedBy": [
         "pacific-ocean",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "topic:world-oceans",
+        "reading:transport-trade",
+        "reading:world-oceans",
+        "media:diagram-sea-passage"
       ]
+    },
+    {
+      "title": "IHO · 决议02/2023：承认南大洋及海域界限（M-3，2024年7月版，第110—113页）",
+      "url": "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf",
+      "usedBy": [
+        "pacific-ocean",
+        "atlantic-ocean",
+        "indian-ocean",
+        "arctic-ocean",
+        "southern-ocean",
+        "topic:world-oceans",
+        "reading:world-oceans"
+      ],
+      "accessedAt": "2026-11-12",
+      "version": "IHO M-3 2nd Edition 2010, updated July 2024; Resolution 02/2023",
+      "scope": "核读PDF第110—113页（零基页码）：已承认南大洋、南纬60°北界、非政治/海洋物理边界说明、阿根廷与澳大利亚等保留意见。",
+      "license": "IHO文献版权保留；仅原创概述事实，未转载原文或PDF。"
+    },
+    {
+      "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+      "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf",
+      "usedBy": [
+        "pacific-ocean",
+        "atlantic-ocean",
+        "indian-ocean",
+        "arctic-ocean",
+        "southern-ocean",
+        "topic:world-oceans",
+        "reading:world-oceans"
+      ],
+      "accessedAt": "2026-11-12",
+      "version": "ETOPO1 World Ocean Volumes, official PDF under NCEI Older Versions",
+      "scope": "读取官方表：太平洋161760000、另列南海6963000、大西洋85133000、印度洋70560000、南大洋21960000、北冰洋15558000，单位平方千米；原表南大洋北界60°S。太平洋相加为168723000。",
+      "license": "NOAA美国政府公开数据；保留机构、模型与处理说明。"
     },
     {
       "title": "NOAA · Atlantic Meridional Overturning Circulation",
@@ -1947,7 +2347,10 @@
       "usedBy": [
         "atlantic-ocean",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "topic:world-oceans",
+        "reading:transport-trade",
+        "reading:world-oceans",
+        "media:diagram-sea-passage"
       ]
     },
     {
@@ -1957,7 +2360,11 @@
         "indian-ocean",
         "malacca-strait",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "topic:world-oceans",
+        "reading:transport-trade",
+        "reading:world-oceans",
+        "media:diagram-sea-passage",
+        "media:diagram-transport"
       ]
     },
     {
@@ -1966,9 +2373,13 @@
       "usedBy": [
         "arctic-ocean",
         "topic:transport-trade",
+        "topic:world-oceans",
         "topic:world-polar-comparison",
         "reading:transport-trade",
-        "reading:world-polar-comparison"
+        "reading:world-oceans",
+        "reading:world-polar-comparison",
+        "media:diagram-sea-passage",
+        "media:diagram-polar"
       ]
     },
     {
@@ -1978,9 +2389,13 @@
         "arctic-ocean",
         "bering-strait",
         "topic:transport-trade",
+        "topic:world-oceans",
         "topic:world-polar-comparison",
         "reading:transport-trade",
-        "reading:world-polar-comparison"
+        "reading:world-oceans",
+        "reading:world-polar-comparison",
+        "media:diagram-sea-passage",
+        "media:diagram-polar"
       ]
     },
     {
@@ -1989,7 +2404,9 @@
       "usedBy": [
         "malacca-strait",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-sea-passage",
+        "media:diagram-transport"
       ]
     },
     {
@@ -1998,7 +2415,8 @@
       "usedBy": [
         "gibraltar-strait",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-sea-passage"
       ]
     },
     {
@@ -2008,7 +2426,8 @@
         "gibraltar-strait",
         "mediterranean",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-sea-passage"
       ]
     },
     {
@@ -2017,7 +2436,9 @@
       "usedBy": [
         "suez-canal",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-sea-passage",
+        "media:diagram-transport"
       ]
     },
     {
@@ -2026,7 +2447,9 @@
       "usedBy": [
         "panama-canal",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-sea-passage",
+        "media:diagram-transport"
       ]
     },
     {
@@ -2035,7 +2458,9 @@
       "usedBy": [
         "panama-canal",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-sea-passage",
+        "media:diagram-transport"
       ]
     },
     {
@@ -2045,7 +2470,9 @@
         "world-population",
         "india-population",
         "topic:map-population",
-        "reading:map-population"
+        "reading:map-population",
+        "media:diagram-population",
+        "media:diagram-migration"
       ]
     },
     {
@@ -2058,7 +2485,8 @@
         "india-population",
         "topic:map-population",
         "reading:map-population",
-        "media:diagram-population"
+        "media:diagram-population",
+        "media:diagram-migration"
       ]
     },
     {
@@ -2068,7 +2496,9 @@
         "population-density",
         "china-urbanization",
         "topic:map-population",
-        "reading:map-population"
+        "reading:map-population",
+        "media:diagram-population",
+        "media:diagram-migration"
       ]
     },
     {
@@ -2078,7 +2508,9 @@
         "china-population",
         "china-urbanization",
         "topic:map-population",
-        "reading:map-population"
+        "reading:map-population",
+        "media:diagram-population",
+        "media:diagram-migration"
       ]
     },
     {
@@ -2087,7 +2519,9 @@
       "usedBy": [
         "india-population",
         "topic:map-population",
-        "reading:map-population"
+        "reading:map-population",
+        "media:diagram-population",
+        "media:diagram-migration"
       ]
     },
     {
@@ -2113,7 +2547,8 @@
         "buddhism",
         "unaffiliated",
         "topic:map-religion",
-        "reading:map-religion"
+        "reading:map-religion",
+        "media:diagram-culture-statistics"
       ]
     },
     {
@@ -2122,7 +2557,8 @@
       "usedBy": [
         "christianity",
         "topic:map-religion",
-        "reading:map-religion"
+        "reading:map-religion",
+        "media:diagram-culture-statistics"
       ]
     },
     {
@@ -2131,7 +2567,8 @@
       "usedBy": [
         "islam",
         "topic:map-religion",
-        "reading:map-religion"
+        "reading:map-religion",
+        "media:diagram-culture-statistics"
       ]
     },
     {
@@ -2140,7 +2577,8 @@
       "usedBy": [
         "hinduism",
         "topic:map-religion",
-        "reading:map-religion"
+        "reading:map-religion",
+        "media:diagram-culture-statistics"
       ]
     },
     {
@@ -2149,7 +2587,8 @@
       "usedBy": [
         "buddhism",
         "topic:map-religion",
-        "reading:map-religion"
+        "reading:map-religion",
+        "media:diagram-culture-statistics"
       ]
     },
     {
@@ -2158,7 +2597,8 @@
       "usedBy": [
         "unaffiliated",
         "topic:map-religion",
-        "reading:map-religion"
+        "reading:map-religion",
+        "media:diagram-culture-statistics"
       ]
     },
     {
@@ -2183,7 +2623,9 @@
         "mandarin-language",
         "arabic-language",
         "topic:map-language",
-        "reading:map-language"
+        "reading:map-language",
+        "media:diagram-language",
+        "media:language-world-areas"
       ],
       "support": "采用项目锁定的5.3分类；不以目录条目数作为实时世界语言总数。",
       "accessedAt": "2026-11-08",
@@ -2197,7 +2639,8 @@
         "english-language",
         "arabic-language",
         "topic:map-language",
-        "reading:map-language"
+        "reading:map-language",
+        "media:diagram-language"
       ]
     },
     {
@@ -2206,7 +2649,8 @@
       "usedBy": [
         "mandarin-language",
         "topic:map-language",
-        "reading:map-language"
+        "reading:map-language",
+        "media:diagram-language"
       ]
     },
     {
@@ -2215,7 +2659,8 @@
       "usedBy": [
         "english-language",
         "topic:map-language",
-        "reading:map-language"
+        "reading:map-language",
+        "media:diagram-language"
       ]
     },
     {
@@ -2224,7 +2669,8 @@
       "usedBy": [
         "arabic-language",
         "topic:map-language",
-        "reading:map-language"
+        "reading:map-language",
+        "media:diagram-language"
       ]
     },
     {
@@ -2238,7 +2684,10 @@
         "topic:world-ecosystems",
         "reading:china-terrain",
         "reading:agriculture-food",
-        "reading:world-ecosystems"
+        "reading:world-ecosystems",
+        "media:diagram-river-deposition",
+        "media:diagram-food-water",
+        "media:diagram-soil"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2259,7 +2708,9 @@
         "topic:agriculture-food",
         "topic:world-ecosystems",
         "reading:agriculture-food",
-        "reading:world-ecosystems"
+        "reading:world-ecosystems",
+        "media:diagram-food-water",
+        "media:diagram-soil"
       ]
     },
     {
@@ -2279,16 +2730,20 @@
         "yangtze-delta",
         "topic:agriculture-food",
         "topic:earth-map-reading",
-        "topic:landform-rivers",
-        "topic:landform-coasts",
+        "topic:landform-landscapes",
         "topic:earth-hazards",
         "topic:climate-change",
         "reading:agriculture-food",
         "reading:earth-map-reading",
-        "reading:landform-rivers",
-        "reading:landform-coasts",
         "reading:earth-hazards",
-        "reading:climate-change"
+        "reading:climate-change",
+        "reading:landform-landscapes",
+        "media:diagram-river-deposition",
+        "media:diagram-food-water",
+        "media:diagram-coasts",
+        "media:diagram-hazards",
+        "media:diagram-image-reading",
+        "media:diagram-climate-energy"
       ]
     },
     {
@@ -2303,7 +2758,10 @@
         "topic:weather-systems",
         "reading:agriculture-food",
         "reading:china-provinces",
-        "reading:weather-systems"
+        "reading:weather-systems",
+        "media:diagram-food-water",
+        "media:diagram-region-method",
+        "media:diagram-weather-fronts"
       ]
     },
     {
@@ -2312,7 +2770,8 @@
       "usedBy": [
         "south-north-water",
         "topic:agriculture-food",
-        "reading:agriculture-food"
+        "reading:agriculture-food",
+        "media:diagram-food-water"
       ]
     },
     {
@@ -2321,7 +2780,8 @@
       "usedBy": [
         "grand-canal",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-transport"
       ]
     },
     {
@@ -2333,7 +2793,9 @@
         "northwestern-china",
         "qinghai-tibet-region",
         "topic:china-regions",
-        "reading:china-regions"
+        "reading:china-regions",
+        "media:diagram-region-method",
+        "media:china-regions-map"
       ]
     },
     {
@@ -2346,7 +2808,11 @@
         "topic:weather-systems",
         "reading:agriculture-food",
         "reading:china-provinces",
-        "reading:weather-systems"
+        "reading:weather-systems",
+        "media:rain-shadow-landscape-illustration",
+        "media:diagram-food-water",
+        "media:diagram-region-method",
+        "media:diagram-weather-fronts"
       ]
     },
     {
@@ -2359,7 +2825,10 @@
         "topic:weather-systems",
         "reading:agriculture-food",
         "reading:china-provinces",
-        "reading:weather-systems"
+        "reading:weather-systems",
+        "media:diagram-food-water",
+        "media:diagram-region-method",
+        "media:diagram-weather-fronts"
       ]
     },
     {
@@ -2370,7 +2839,9 @@
         "topic:agriculture-food",
         "topic:china-provinces",
         "reading:agriculture-food",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-food-water",
+        "media:diagram-region-method"
       ]
     },
     {
@@ -2379,7 +2850,10 @@
       "usedBy": [
         "asia-continent",
         "topic:world-continents",
-        "reading:world-continents"
+        "topic:world-regional-comparison",
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-latitude-belts"
       ]
     },
     {
@@ -2390,7 +2864,10 @@
         "topic:china-terrain",
         "topic:agriculture-food",
         "reading:china-terrain",
-        "reading:agriculture-food"
+        "reading:agriculture-food",
+        "media:diagram-river-deposition",
+        "media:diagram-steps",
+        "media:diagram-soil"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2418,21 +2895,27 @@
         "topic:agriculture-food",
         "topic:china-provinces",
         "topic:energy-industry",
-        "topic:landform-wind",
-        "topic:landform-coasts",
+        "topic:landform-landscapes",
         "reading:china-terrain",
         "reading:china-regions",
         "reading:agriculture-food",
         "reading:china-provinces",
         "reading:energy-industry",
-        "reading:landform-wind",
-        "reading:landform-coasts",
+        "reading:landform-landscapes",
+        "media:china-plateaus-illustration",
+        "media:china-basins-illustration",
+        "media:china-plains-illustration",
+        "media:china-mountains-illustration",
         "media:diagram-plateaus",
         "media:diagram-river-deposition",
         "media:diagram-basins",
         "media:diagram-rain-shadow",
         "media:diagram-steps",
-        "media:diagram-region-method"
+        "media:diagram-soil",
+        "media:diagram-energy",
+        "media:diagram-region-method",
+        "media:diagram-yardang",
+        "media:diagram-coasts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2450,7 +2933,8 @@
       "usedBy": [
         "junggar-basin",
         "topic:china-terrain",
-        "reading:china-terrain"
+        "reading:china-terrain",
+        "media:diagram-basins"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2471,11 +2955,16 @@
         "topic:china-terrain",
         "topic:china-provinces",
         "topic:energy-industry",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:china-terrain",
         "reading:china-provinces",
         "reading:energy-industry",
-        "reading:landform-wind"
+        "reading:landform-landscapes",
+        "media:diagram-basins",
+        "media:diagram-steps",
+        "media:diagram-energy",
+        "media:diagram-region-method",
+        "media:diagram-yardang"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2495,10 +2984,14 @@
         "qarhan-resources",
         "topic:china-terrain",
         "topic:energy-industry",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:china-terrain",
         "reading:energy-industry",
-        "reading:landform-wind"
+        "reading:landform-landscapes",
+        "media:diagram-basins",
+        "media:diagram-steps",
+        "media:diagram-energy",
+        "media:diagram-yardang"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2519,11 +3012,16 @@
         "topic:china-terrain",
         "topic:china-provinces",
         "topic:energy-industry",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:china-terrain",
         "reading:china-provinces",
         "reading:energy-industry",
-        "reading:landform-wind"
+        "reading:landform-landscapes",
+        "media:diagram-basins",
+        "media:diagram-steps",
+        "media:diagram-energy",
+        "media:diagram-region-method",
+        "media:diagram-yardang"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2564,7 +3062,8 @@
       "usedBy": [
         "summit-everest",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2573,7 +3072,8 @@
       "usedBy": [
         "summit-k2",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2582,7 +3082,8 @@
       "usedBy": [
         "summit-kangchenjunga",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2591,7 +3092,8 @@
       "usedBy": [
         "summit-lhotse",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2600,7 +3102,8 @@
       "usedBy": [
         "summit-makalu",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2609,7 +3112,8 @@
       "usedBy": [
         "summit-cho-oyu",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2618,7 +3122,8 @@
       "usedBy": [
         "summit-dhaulagiri",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2627,7 +3132,8 @@
       "usedBy": [
         "summit-manaslu",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2636,7 +3142,8 @@
       "usedBy": [
         "summit-nanga-parbat",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2645,7 +3152,8 @@
       "usedBy": [
         "summit-annapurna-i",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2654,7 +3162,8 @@
       "usedBy": [
         "summit-gasherbrum-i",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2663,7 +3172,8 @@
       "usedBy": [
         "summit-broad-peak",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2672,7 +3182,8 @@
       "usedBy": [
         "summit-gasherbrum-ii",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2681,7 +3192,8 @@
       "usedBy": [
         "summit-shishapangma",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-height"
       ]
     },
     {
@@ -2711,7 +3223,8 @@
       "usedBy": [
         "earth-rotation",
         "topic:earth-seasons",
-        "reading:earth-seasons"
+        "reading:earth-seasons",
+        "media:diagram-seasons"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2729,7 +3242,8 @@
       "usedBy": [
         "earth-season-contrast",
         "topic:earth-seasons",
-        "reading:earth-seasons"
+        "reading:earth-seasons",
+        "media:diagram-seasons"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2750,7 +3264,9 @@
         "topic:earth-seasons",
         "topic:earth-map-reading",
         "reading:earth-seasons",
-        "reading:earth-map-reading"
+        "reading:earth-map-reading",
+        "media:diagram-seasons",
+        "media:diagram-contours"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2789,7 +3305,9 @@
         "earth-scale",
         "earth-contours",
         "topic:earth-map-reading",
-        "reading:earth-map-reading"
+        "reading:earth-map-reading",
+        "media:diagram-contours",
+        "media:diagram-image-reading"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2810,7 +3328,9 @@
         "topic:transport-trade",
         "topic:china-provinces",
         "reading:transport-trade",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-transport",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2828,7 +3348,8 @@
       "usedBy": [
         "hebei",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2846,7 +3367,8 @@
       "usedBy": [
         "shanxi",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2866,10 +3388,13 @@
         "liaodong-hills",
         "topic:china-terrain",
         "topic:china-provinces",
-        "topic:landform-coasts",
+        "topic:landform-landscapes",
         "reading:china-terrain",
         "reading:china-provinces",
-        "reading:landform-coasts"
+        "reading:landform-landscapes",
+        "media:diagram-steps",
+        "media:diagram-region-method",
+        "media:diagram-coasts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2887,7 +3412,8 @@
       "usedBy": [
         "jilin",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2905,7 +3431,8 @@
       "usedBy": [
         "jiangsu",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2926,7 +3453,9 @@
         "topic:china-terrain",
         "topic:china-provinces",
         "reading:china-terrain",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-steps",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2944,7 +3473,8 @@
       "usedBy": [
         "anhui",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2965,7 +3495,9 @@
         "topic:china-terrain",
         "topic:china-provinces",
         "reading:china-terrain",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-steps",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -2983,7 +3515,8 @@
       "usedBy": [
         "jiangxi",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3003,10 +3536,13 @@
         "shandong-hills",
         "topic:china-terrain",
         "topic:china-provinces",
-        "topic:landform-coasts",
+        "topic:landform-landscapes",
         "reading:china-terrain",
         "reading:china-provinces",
-        "reading:landform-coasts"
+        "reading:landform-landscapes",
+        "media:diagram-steps",
+        "media:diagram-region-method",
+        "media:diagram-coasts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3027,7 +3563,9 @@
         "topic:transport-trade",
         "topic:china-provinces",
         "reading:transport-trade",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-transport",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3045,7 +3583,8 @@
       "usedBy": [
         "hubei",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3063,7 +3602,8 @@
       "usedBy": [
         "hunan",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3081,7 +3621,8 @@
       "usedBy": [
         "guangxi",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3101,7 +3642,9 @@
         "topic:transport-trade",
         "topic:china-provinces",
         "reading:transport-trade",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-transport",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3119,7 +3662,8 @@
       "usedBy": [
         "guizhou",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3139,7 +3683,8 @@
         "topic:china-regions",
         "topic:china-provinces",
         "reading:china-regions",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3157,7 +3702,8 @@
       "usedBy": [
         "shaanxi",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3175,7 +3721,8 @@
       "usedBy": [
         "gansu",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3193,7 +3740,8 @@
       "usedBy": [
         "ningxia",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3211,7 +3759,8 @@
       "usedBy": [
         "taiwan-province",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3229,7 +3778,8 @@
       "usedBy": [
         "taiwan-province",
         "topic:china-provinces",
-        "reading:china-provinces"
+        "reading:china-provinces",
+        "media:diagram-region-method"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3268,7 +3818,8 @@
       "usedBy": [
         "hetao-irrigation",
         "topic:agriculture-food",
-        "reading:agriculture-food"
+        "reading:agriculture-food",
+        "media:diagram-soil"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3306,7 +3857,8 @@
         "qinshui-coal",
         "qarhan-resources",
         "topic:energy-industry",
-        "reading:energy-industry"
+        "reading:energy-industry",
+        "media:diagram-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3324,7 +3876,8 @@
       "usedBy": [
         "hexi-renewables",
         "topic:energy-industry",
-        "reading:energy-industry"
+        "reading:energy-industry",
+        "media:diagram-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3342,7 +3895,8 @@
       "usedBy": [
         "hexi-renewables",
         "topic:energy-industry",
-        "reading:energy-industry"
+        "reading:energy-industry",
+        "media:diagram-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3360,7 +3914,8 @@
       "usedBy": [
         "three-gorges-project",
         "topic:energy-industry",
-        "reading:energy-industry"
+        "reading:energy-industry",
+        "media:diagram-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3378,7 +3933,8 @@
       "usedBy": [
         "ningbo-zhoushan-port",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-transport"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3415,7 +3971,8 @@
       "usedBy": [
         "qinghai-tibet-railway",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-transport"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3433,7 +3990,8 @@
       "usedBy": [
         "qinghai-tibet-railway",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-transport"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3454,10 +4012,15 @@
         "serengeti-savanna",
         "topic:world-terrain",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-ecosystems",
         "reading:world-terrain",
         "reading:world-continents",
+        "reading:world-regional-comparison",
         "reading:world-ecosystems",
+        "media:diagram-plateaus",
+        "media:diagram-ecosystems",
+        "media:diagram-region-method",
         "media:diagram-latitude-belts"
       ],
       "review": {
@@ -3480,9 +4043,14 @@
         "topic:world-terrain",
         "topic:agriculture-food",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:world-terrain",
         "reading:agriculture-food",
-        "reading:world-continents"
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-plateaus",
+        "media:diagram-food-water",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3501,9 +4069,13 @@
         "africa-continent",
         "okavango-delta",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-ecosystems",
         "reading:world-continents",
-        "reading:world-ecosystems"
+        "reading:world-regional-comparison",
+        "reading:world-ecosystems",
+        "media:diagram-ecosystems",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3531,19 +4103,27 @@
         "atacama-desert",
         "gobi-desert",
         "topic:map-climate",
+        "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-tectonics",
         "topic:landform-processes",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:world-terrain",
         "reading:map-climate",
         "reading:drylands",
         "reading:agriculture-food",
         "reading:world-continents",
+        "reading:world-regional-comparison",
         "reading:world-tectonics",
         "reading:world-ecosystems",
         "reading:world-ocean-monsoon",
         "reading:landform-processes",
-        "reading:landform-wind"
+        "reading:landform-landscapes",
+        "media:diagram-rain-shadow",
+        "media:diagram-yardang",
+        "media:diagram-volcanoes",
+        "media:diagram-rocks",
+        "media:world-mountain-map"
       ]
     },
     {
@@ -3552,7 +4132,11 @@
       "usedBy": [
         "europe-continent",
         "topic:world-continents",
-        "reading:world-continents"
+        "topic:world-regional-comparison",
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-region-method",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3574,9 +4158,15 @@
         "topic:transport-trade",
         "topic:energy-industry",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:transport-trade",
         "reading:energy-industry",
-        "reading:world-continents"
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-energy",
+        "media:diagram-transport",
+        "media:diagram-region-method",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3596,8 +4186,12 @@
         "gotthard-rail",
         "topic:transport-trade",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:transport-trade",
-        "reading:world-continents"
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-transport",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3617,8 +4211,12 @@
         "great-plains",
         "topic:world-terrain",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:world-terrain",
-        "reading:world-continents"
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-plateaus",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3640,9 +4238,14 @@
         "topic:world-terrain",
         "topic:agriculture-food",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "reading:world-terrain",
         "reading:agriculture-food",
-        "reading:world-continents"
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-plateaus",
+        "media:diagram-food-water",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3667,6 +4270,7 @@
         "topic:drylands",
         "topic:agriculture-food",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-ecosystems",
         "topic:world-ocean-monsoon",
         "reading:world-terrain",
@@ -3674,8 +4278,17 @@
         "reading:drylands",
         "reading:agriculture-food",
         "reading:world-continents",
+        "reading:world-regional-comparison",
         "reading:world-ecosystems",
-        "reading:world-ocean-monsoon"
+        "reading:world-ocean-monsoon",
+        "media:diagram-plateaus",
+        "media:diagram-rain-shadow",
+        "media:diagram-dryness",
+        "media:diagram-ecosystems",
+        "media:diagram-monsoon",
+        "media:diagram-food-water",
+        "media:diagram-region-method",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3696,10 +4309,15 @@
         "amazon-rainforest",
         "topic:world-terrain",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-ecosystems",
         "reading:world-terrain",
         "reading:world-continents",
-        "reading:world-ecosystems"
+        "reading:world-regional-comparison",
+        "reading:world-ecosystems",
+        "media:diagram-plateaus",
+        "media:diagram-ecosystems",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3722,12 +4340,19 @@
         "topic:drylands",
         "topic:energy-industry",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-ocean-monsoon",
         "reading:map-climate",
         "reading:drylands",
         "reading:energy-industry",
         "reading:world-continents",
-        "reading:world-ocean-monsoon"
+        "reading:world-regional-comparison",
+        "reading:world-ocean-monsoon",
+        "media:diagram-rain-shadow",
+        "media:diagram-dryness",
+        "media:diagram-monsoon",
+        "media:diagram-energy",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3745,7 +4370,11 @@
       "usedBy": [
         "oceania-region",
         "topic:world-continents",
-        "reading:world-continents"
+        "topic:world-regional-comparison",
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-region-method",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3766,10 +4395,18 @@
         "hawaii-hotspot",
         "topic:world-terrain",
         "topic:world-continents",
+        "topic:world-regional-comparison",
         "topic:world-tectonics",
+        "topic:landform-landscapes",
         "reading:world-terrain",
         "reading:world-continents",
-        "reading:world-tectonics"
+        "reading:world-regional-comparison",
+        "reading:world-tectonics",
+        "reading:landform-landscapes",
+        "media:diagram-structures",
+        "media:diagram-plates",
+        "media:diagram-latitude-belts",
+        "media:diagram-volcanoes"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3787,7 +4424,8 @@
       "usedBy": [
         "brazilian-highlands",
         "topic:world-terrain",
-        "reading:world-terrain"
+        "reading:world-terrain",
+        "media:diagram-plateaus"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3808,10 +4446,16 @@
         "topic:world-tectonics",
         "topic:world-ocean-monsoon",
         "topic:landform-processes",
+        "topic:landform-landscapes",
         "reading:world-terrain",
         "reading:world-tectonics",
         "reading:world-ocean-monsoon",
-        "reading:landform-processes"
+        "reading:landform-processes",
+        "reading:landform-landscapes",
+        "media:diagram-plateaus",
+        "media:diagram-monsoon",
+        "media:diagram-volcanoes",
+        "media:diagram-rocks"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3831,18 +4475,29 @@
         "indian-monsoon",
         "topic:world-terrain",
         "topic:map-climate",
-        "topic:world-continents",
+        "topic:world-oceans",
+        "topic:world-regional-comparison",
         "topic:world-tectonics",
         "topic:world-ocean-monsoon",
         "topic:landform-processes",
+        "topic:landform-landscapes",
         "topic:weather-systems",
         "reading:world-terrain",
         "reading:map-climate",
-        "reading:world-continents",
+        "reading:world-oceans",
+        "reading:world-regional-comparison",
         "reading:world-tectonics",
         "reading:world-ocean-monsoon",
+        "reading:weather-systems",
         "reading:landform-processes",
-        "reading:weather-systems"
+        "reading:landform-landscapes",
+        "media:diagram-plateaus",
+        "media:diagram-rain-shadow",
+        "media:diagram-monsoon",
+        "media:diagram-region-method",
+        "media:diagram-volcanoes",
+        "media:diagram-rocks",
+        "media:diagram-weather-fronts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3863,7 +4518,9 @@
         "topic:world-terrain",
         "topic:agriculture-food",
         "reading:world-terrain",
-        "reading:agriculture-food"
+        "reading:agriculture-food",
+        "media:diagram-plateaus",
+        "media:diagram-food-water"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3884,7 +4541,10 @@
         "topic:world-terrain",
         "topic:agriculture-food",
         "reading:world-terrain",
-        "reading:agriculture-food"
+        "reading:agriculture-food",
+        "media:agriculture-landscapes-illustration",
+        "media:diagram-plateaus",
+        "media:diagram-food-water"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3906,7 +4566,10 @@
         "topic:world-ecosystems",
         "reading:world-terrain",
         "reading:agriculture-food",
-        "reading:world-ecosystems"
+        "reading:world-ecosystems",
+        "media:diagram-plateaus",
+        "media:diagram-ecosystems",
+        "media:diagram-food-water"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3929,12 +4592,17 @@
         "topic:drylands",
         "topic:world-ecosystems",
         "topic:world-ocean-monsoon",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:map-climate",
         "reading:drylands",
         "reading:world-ecosystems",
         "reading:world-ocean-monsoon",
-        "reading:landform-wind",
+        "reading:landform-landscapes",
+        "media:diagram-rain-shadow",
+        "media:diagram-dryness",
+        "media:diagram-ecosystems",
+        "media:diagram-monsoon",
+        "media:diagram-dunes",
         "media:diagram-upwelling"
       ],
       "review": {
@@ -3954,10 +4622,13 @@
         "namib-sand-sea",
         "topic:drylands",
         "topic:world-ecosystems",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:drylands",
         "reading:world-ecosystems",
-        "reading:landform-wind"
+        "reading:landform-landscapes",
+        "media:diagram-dryness",
+        "media:diagram-ecosystems",
+        "media:diagram-dunes"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3975,10 +4646,11 @@
       "usedBy": [
         "gobi-desert",
         "topic:drylands",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:drylands",
-        "reading:landform-wind",
-        "media:diagram-dryness"
+        "reading:landform-landscapes",
+        "media:diagram-dryness",
+        "media:diagram-yardang"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -3996,7 +4668,11 @@
       "usedBy": [
         "iceland-rift",
         "topic:world-tectonics",
-        "reading:world-tectonics"
+        "topic:landform-landscapes",
+        "reading:world-tectonics",
+        "reading:landform-landscapes",
+        "media:diagram-plates",
+        "media:diagram-volcanoes"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4014,9 +4690,14 @@
       "usedBy": [
         "san-andreas-fault",
         "topic:world-tectonics",
+        "topic:landform-landscapes",
         "topic:earth-hazards",
         "reading:world-tectonics",
-        "reading:earth-hazards"
+        "reading:earth-hazards",
+        "reading:landform-landscapes",
+        "media:diagram-structures",
+        "media:diagram-plates",
+        "media:diagram-hazards"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4037,11 +4718,13 @@
         "canadian-boreal-forest",
         "topic:world-ecosystems",
         "topic:world-polar-comparison",
-        "topic:landform-coasts",
+        "topic:landform-landscapes",
         "reading:world-ecosystems",
         "reading:world-polar-comparison",
-        "reading:landform-coasts",
-        "media:diagram-ecosystems"
+        "reading:landform-landscapes",
+        "media:diagram-ecosystems",
+        "media:diagram-polar",
+        "media:diagram-coasts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4059,7 +4742,8 @@
       "usedBy": [
         "serengeti-savanna",
         "topic:world-ecosystems",
-        "reading:world-ecosystems"
+        "reading:world-ecosystems",
+        "media:diagram-ecosystems"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4077,9 +4761,11 @@
       "usedBy": [
         "sundarbans-mangroves",
         "topic:world-ecosystems",
-        "topic:landform-coasts",
+        "topic:landform-landscapes",
         "reading:world-ecosystems",
-        "reading:landform-coasts"
+        "reading:landform-landscapes",
+        "media:diagram-ecosystems",
+        "media:diagram-coasts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4099,7 +4785,9 @@
         "topic:world-ecosystems",
         "topic:world-polar-comparison",
         "reading:world-ecosystems",
-        "reading:world-polar-comparison"
+        "reading:world-polar-comparison",
+        "media:diagram-ecosystems",
+        "media:diagram-polar"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4120,6 +4808,7 @@
         "topic:world-ocean-monsoon",
         "reading:map-climate",
         "reading:world-ocean-monsoon",
+        "media:diagram-rain-shadow",
         "media:diagram-monsoon"
       ],
       "review": {
@@ -4140,7 +4829,9 @@
         "topic:world-ocean-monsoon",
         "topic:climate-change",
         "reading:world-ocean-monsoon",
-        "reading:climate-change"
+        "reading:climate-change",
+        "media:diagram-monsoon",
+        "media:diagram-climate-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4166,13 +4857,18 @@
         "topic:map-climate",
         "topic:agriculture-food",
         "topic:world-ocean-monsoon",
-        "topic:landform-rivers",
+        "topic:landform-landscapes",
         "topic:weather-systems",
         "reading:map-climate",
         "reading:agriculture-food",
         "reading:world-ocean-monsoon",
-        "reading:landform-rivers",
-        "reading:weather-systems"
+        "reading:weather-systems",
+        "reading:landform-landscapes",
+        "media:diagram-river-deposition",
+        "media:diagram-rain-shadow",
+        "media:diagram-monsoon",
+        "media:diagram-food-water",
+        "media:diagram-weather-fronts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4190,7 +4886,8 @@
       "usedBy": [
         "persian-gulf-energy",
         "topic:energy-industry",
-        "reading:energy-industry"
+        "reading:energy-industry",
+        "media:diagram-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4208,7 +4905,8 @@
       "usedBy": [
         "atacama-copper",
         "topic:energy-industry",
-        "reading:energy-industry"
+        "reading:energy-industry",
+        "media:diagram-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4226,7 +4924,8 @@
       "usedBy": [
         "north-sea-energy",
         "topic:energy-industry",
-        "reading:energy-industry"
+        "reading:energy-industry",
+        "media:diagram-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4244,9 +4943,11 @@
       "usedBy": [
         "mekong-delta-farming",
         "topic:agriculture-food",
-        "topic:landform-rivers",
+        "topic:landform-landscapes",
         "reading:agriculture-food",
-        "reading:landform-rivers"
+        "reading:landform-landscapes",
+        "media:diagram-river-deposition",
+        "media:diagram-food-water"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4266,7 +4967,9 @@
         "topic:transport-trade",
         "topic:energy-industry",
         "reading:transport-trade",
-        "reading:energy-industry"
+        "reading:energy-industry",
+        "media:diagram-energy",
+        "media:diagram-transport"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4284,7 +4987,8 @@
       "usedBy": [
         "singapore-port",
         "topic:transport-trade",
-        "reading:transport-trade"
+        "reading:transport-trade",
+        "media:diagram-transport"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4302,13 +5006,18 @@
       "usedBy": [
         "arctic-region",
         "southern-ocean",
+        "topic:world-oceans",
         "topic:world-ocean-monsoon",
         "topic:world-polar-comparison",
         "topic:climate-change",
+        "reading:world-oceans",
         "reading:world-ocean-monsoon",
         "reading:world-polar-comparison",
         "reading:climate-change",
-        "media:diagram-polar"
+        "media:polar-worlds-illustration",
+        "media:diagram-monsoon",
+        "media:diagram-polar",
+        "media:diagram-climate-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4328,7 +5037,9 @@
         "topic:world-polar-comparison",
         "topic:climate-change",
         "reading:world-polar-comparison",
-        "reading:climate-change"
+        "reading:climate-change",
+        "media:diagram-polar",
+        "media:diagram-climate-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4348,7 +5059,9 @@
         "topic:world-polar-comparison",
         "topic:climate-change",
         "reading:world-polar-comparison",
-        "reading:climate-change"
+        "reading:climate-change",
+        "media:diagram-polar",
+        "media:diagram-climate-energy"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4365,10 +5078,14 @@
       "url": "https://www.aoml.noaa.gov/phod/altimetry/cvar/acc/index.php",
       "usedBy": [
         "southern-ocean",
+        "topic:world-oceans",
         "topic:world-ocean-monsoon",
         "topic:world-polar-comparison",
+        "reading:world-oceans",
         "reading:world-ocean-monsoon",
-        "reading:world-polar-comparison"
+        "reading:world-polar-comparison",
+        "media:diagram-monsoon",
+        "media:diagram-polar"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4389,12 +5106,16 @@
         "wulong-karst",
         "topic:earth-map-reading",
         "topic:landform-processes",
-        "topic:landform-karst",
+        "topic:landform-landscapes",
         "topic:water-cycle",
         "reading:earth-map-reading",
+        "reading:water-cycle",
         "reading:landform-processes",
-        "reading:landform-karst",
-        "reading:water-cycle"
+        "reading:landform-landscapes",
+        "media:diagram-karst",
+        "media:diagram-rocks",
+        "media:diagram-water-cycle",
+        "media:diagram-image-reading"
       ]
     },
     {
@@ -4404,8 +5125,11 @@
         "danxiashan",
         "langshan-danxia",
         "topic:landform-processes",
+        "topic:landform-landscapes",
         "reading:landform-processes",
-        "media:diagram-danxia"
+        "reading:landform-landscapes",
+        "media:diagram-danxia",
+        "media:diagram-rocks"
       ]
     },
     {
@@ -4415,7 +5139,11 @@
         "danxiashan",
         "langshan-danxia",
         "topic:landform-processes",
-        "reading:landform-processes"
+        "topic:landform-landscapes",
+        "reading:landform-processes",
+        "reading:landform-landscapes",
+        "media:diagram-danxia",
+        "media:diagram-rocks"
       ]
     },
     {
@@ -4423,7 +5151,8 @@
       "url": "https://www.noaa.gov/jetstream/global/global-atmospheric-circulations",
       "usedBy": [
         "topic:map-climate",
-        "reading:map-climate"
+        "reading:map-climate",
+        "media:diagram-rain-shadow"
       ]
     },
     {
@@ -4431,7 +5160,8 @@
       "url": "https://oceanservice.noaa.gov/facts/currents.html",
       "usedBy": [
         "topic:map-climate",
-        "reading:map-climate"
+        "reading:map-climate",
+        "media:diagram-rain-shadow"
       ]
     },
     {
@@ -4448,7 +5178,8 @@
       "url": "https://joint-research-centre.ec.europa.eu/jrc-news-and-updates/understanding-reasons-behind-migration-interplay-migration-drivers-2024-12-18_en",
       "usedBy": [
         "topic:map-population",
-        "reading:map-population"
+        "reading:map-population",
+        "media:diagram-migration"
       ]
     },
     {
@@ -4468,6 +5199,7 @@
       "usedBy": [
         "topic:map-language",
         "reading:map-language",
+        "media:diagram-language",
         "media:language-world-areas"
       ]
     },
@@ -4487,7 +5219,8 @@
       "title": "Scientific Data · 世界语言使用区数字化与验证",
       "usedBy": [
         "topic:map-language",
-        "reading:map-language"
+        "reading:map-language",
+        "media:diagram-language"
       ]
     },
     {
@@ -4495,7 +5228,8 @@
       "url": "https://www.unicode.org/cldr/charts/48/supplemental/territory_language_information.html",
       "usedBy": [
         "topic:map-language",
-        "reading:map-language"
+        "reading:map-language",
+        "media:diagram-language"
       ]
     },
     {
@@ -4503,7 +5237,8 @@
       "url": "https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry",
       "usedBy": [
         "topic:map-language",
-        "reading:map-language"
+        "reading:map-language",
+        "media:diagram-language"
       ]
     },
     {
@@ -4520,7 +5255,8 @@
       "url": "https://science.nasa.gov/earth/earth-observatory/how-to-interpret-a-satellite-image/",
       "usedBy": [
         "topic:earth-map-reading",
-        "reading:earth-map-reading"
+        "reading:earth-map-reading",
+        "media:diagram-image-reading"
       ]
     },
     {
@@ -4528,7 +5264,10 @@
       "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202103/t20210301_5962358.html",
       "usedBy": [
         "topic:world-continents",
-        "reading:world-continents"
+        "topic:world-regional-comparison",
+        "reading:world-continents",
+        "reading:world-regional-comparison",
+        "media:diagram-latitude-belts"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4542,11 +5281,45 @@
       }
     },
     {
+      "title": "全球变化数据学报 · 2015年全球岛礁、陆地面积与海岸线（表7）",
+      "url": "https://geodoi.ac.cn/DOIPaper/HTML/2019139402/201902139403.htm",
+      "usedBy": [
+        "topic:world-continents",
+        "reading:world-continents"
+      ],
+      "accessedAt": "2026-11-12",
+      "version": "2019研究，2015±2年遥感影像；表7",
+      "scope": "检索可核对原始研究表7各洲面积，与现有CAS来源记录一致；页面全文访问失败，未声称重新读取完整论文。",
+      "license": "事实数值引用；原研究与其数据许可保留。"
+    },
+    {
+      "title": "National Geographic Society · Asia: Physical Geography",
+      "url": "https://education.nationalgeographic.org/resource/asia/",
+      "usedBy": [
+        "topic:world-continents",
+        "reading:world-continents"
+      ],
+      "accessedAt": "2026-11-12",
+      "scope": "亚洲主要地形单元与冰雪来水；新增正文沿用原有NASA/USGS资料，并核对National Geographic官方教育页面摘录。",
+      "license": "参考网页版权保留，正文为原创概述。"
+    },
+    {
+      "title": "NOAA · What is the largest ocean basin on Earth?",
+      "url": "https://oceanservice.noaa.gov/facts/biggestocean.html",
+      "usedBy": [
+        "topic:world-oceans",
+        "reading:world-oceans"
+      ]
+    },
+    {
       "title": "USGS · 板块边界数据与原始归属",
       "url": "https://earthquake.usgs.gov/arcgis/rest/services/eq/map_plateboundaries/MapServer",
       "usedBy": [
         "topic:world-tectonics",
-        "reading:world-tectonics"
+        "topic:landform-landscapes",
+        "reading:world-tectonics",
+        "reading:landform-landscapes",
+        "media:diagram-plates"
       ],
       "review": {
         "accessedAt": "2026-10-11",
@@ -4564,13 +5337,15 @@
       "usedBy": [
         "topic:world-tectonics",
         "topic:landform-processes",
-        "topic:landform-rivers",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:world-tectonics",
         "reading:landform-processes",
-        "reading:landform-rivers",
-        "reading:landform-wind",
-        "media:diagram-processes"
+        "reading:landform-landscapes",
+        "media:diagram-structures",
+        "media:diagram-processes",
+        "media:diagram-danxia",
+        "media:diagram-river-erosion",
+        "media:diagram-yardang"
       ]
     },
     {
@@ -4578,7 +5353,9 @@
       "url": "https://www.nps.gov/subjects/volcanoes/index.htm",
       "usedBy": [
         "topic:world-tectonics",
+        "topic:landform-landscapes",
         "reading:world-tectonics",
+        "reading:landform-landscapes",
         "media:diagram-volcanoes"
       ]
     },
@@ -4587,7 +5364,8 @@
       "url": "https://www.nrcs.usda.gov/resources/education-and-teaching-materials/soil-facts",
       "usedBy": [
         "topic:world-ecosystems",
-        "reading:world-ecosystems"
+        "reading:world-ecosystems",
+        "media:diagram-soil"
       ]
     },
     {
@@ -4595,7 +5373,8 @@
       "url": "https://www.usgs.gov/publications/soil-formation-chapter-6",
       "usedBy": [
         "topic:world-ecosystems",
-        "reading:world-ecosystems"
+        "reading:world-ecosystems",
+        "media:diagram-soil"
       ]
     },
     {
@@ -4603,14 +5382,15 @@
       "url": "https://www.nps.gov/subjects/geology/fluvial-landforms.htm",
       "usedBy": [
         "topic:landform-processes",
-        "topic:landform-rivers",
-        "topic:landform-wind",
-        "topic:landform-coasts",
+        "topic:landform-landscapes",
         "reading:landform-processes",
-        "reading:landform-rivers",
-        "reading:landform-wind",
-        "reading:landform-coasts",
-        "media:diagram-river-erosion"
+        "reading:landform-landscapes",
+        "media:river-landscape-illustration",
+        "media:diagram-river-deposition",
+        "media:diagram-processes",
+        "media:diagram-river-erosion",
+        "media:diagram-loess",
+        "media:diagram-coasts"
       ]
     },
     {
@@ -4618,9 +5398,10 @@
       "url": "https://www.nps.gov/subjects/geology/aeolian-landforms.htm",
       "usedBy": [
         "topic:landform-processes",
-        "topic:landform-wind",
+        "topic:landform-landscapes",
         "reading:landform-processes",
-        "reading:landform-wind",
+        "reading:landform-landscapes",
+        "media:diagram-processes",
         "media:diagram-yardang",
         "media:diagram-dunes",
         "media:diagram-loess"
@@ -4631,7 +5412,9 @@
       "url": "https://www.nps.gov/subjects/geology/rocks.htm",
       "usedBy": [
         "topic:landform-processes",
+        "topic:landform-landscapes",
         "reading:landform-processes",
+        "reading:landform-landscapes",
         "media:diagram-rocks"
       ]
     },
@@ -4640,7 +5423,10 @@
       "url": "https://www.nps.gov/subjects/geology/igneous.htm",
       "usedBy": [
         "topic:landform-processes",
-        "reading:landform-processes"
+        "topic:landform-landscapes",
+        "reading:landform-processes",
+        "reading:landform-landscapes",
+        "media:diagram-rocks"
       ]
     },
     {
@@ -4648,7 +5434,10 @@
       "url": "https://www.nps.gov/subjects/geology/sedimentary.htm",
       "usedBy": [
         "topic:landform-processes",
-        "reading:landform-processes"
+        "topic:landform-landscapes",
+        "reading:landform-processes",
+        "reading:landform-landscapes",
+        "media:diagram-rocks"
       ]
     },
     {
@@ -4656,34 +5445,56 @@
       "url": "https://www.nps.gov/subjects/geology/metamorphic.htm",
       "usedBy": [
         "topic:landform-processes",
-        "reading:landform-processes"
+        "topic:landform-landscapes",
+        "reading:landform-processes",
+        "reading:landform-landscapes",
+        "media:diagram-rocks"
       ]
+    },
+    {
+      "title": "NPS · Karst Landscapes",
+      "url": "https://www.nps.gov/subjects/caves/karst-landscapes.htm",
+      "usedBy": [
+        "topic:landform-processes",
+        "topic:landform-landscapes",
+        "reading:landform-processes",
+        "reading:landform-landscapes",
+        "media:karst-landscape-illustration",
+        "media:diagram-karst"
+      ]
+    },
+    {
+      "title": "USGS · Geology of Joshua Tree National Park",
+      "url": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-joshua-tree-national-park",
+      "usedBy": [
+        "topic:landform-processes",
+        "topic:landform-landscapes",
+        "reading:landform-processes",
+        "reading:landform-landscapes"
+      ],
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
     },
     {
       "title": "usgs.gov · karst aquifers",
       "url": "https://www.usgs.gov/mission-areas/water-resources/science/karst-aquifers",
       "usedBy": [
-        "topic:landform-karst",
-        "reading:landform-karst",
+        "topic:landform-landscapes",
+        "reading:landform-landscapes",
         "media:diagram-karst"
-      ]
-    },
-    {
-      "title": "nps.gov · karst landscapes",
-      "url": "https://www.nps.gov/subjects/caves/karst-landscapes.htm",
-      "usedBy": [
-        "topic:landform-karst",
-        "reading:landform-karst"
       ]
     },
     {
       "title": "nps.gov · coastal landforms",
       "url": "https://www.nps.gov/subjects/geology/coastal-landforms.htm",
       "usedBy": [
-        "topic:landform-rivers",
-        "topic:landform-coasts",
-        "reading:landform-rivers",
-        "reading:landform-coasts",
+        "topic:landform-landscapes",
+        "reading:landform-landscapes",
+        "media:coast-landforms-illustration",
+        "media:diagram-river-deposition",
         "media:diagram-coasts"
       ]
     },
@@ -4691,8 +5502,9 @@
       "title": "nps.gov · glacial landforms",
       "url": "https://www.nps.gov/subjects/geology/glacial-landforms.htm",
       "usedBy": [
-        "topic:landform-glaciers",
-        "reading:landform-glaciers",
+        "topic:landform-landscapes",
+        "reading:landform-landscapes",
+        "media:glacier-valley-illustration",
         "media:diagram-glaciers"
       ]
     },
@@ -4700,9 +5512,75 @@
       "title": "nps.gov · ushapedvalleysfjordshangingvalleys",
       "url": "https://www.nps.gov/articles/ushapedvalleysfjordshangingvalleys.htm",
       "usedBy": [
-        "topic:landform-glaciers",
-        "reading:landform-glaciers"
+        "topic:landform-landscapes",
+        "reading:landform-landscapes",
+        "media:diagram-glaciers"
       ]
+    },
+    {
+      "title": "UNESCO · Wulingyuan Scenic and Historic Interest Area",
+      "url": "https://whc.unesco.org/en/list/640/",
+      "usedBy": [
+        "topic:landform-landscapes",
+        "reading:landform-landscapes"
+      ],
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
+    },
+    {
+      "title": "UNESCO · Mount Huangshan",
+      "url": "https://whc.unesco.org/en/list/547/",
+      "usedBy": [
+        "topic:landform-landscapes",
+        "reading:landform-landscapes"
+      ],
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
+    },
+    {
+      "title": "NPS · Volcanic Landforms",
+      "url": "https://www.nps.gov/subjects/geology/volcanic-landforms.htm",
+      "usedBy": [
+        "topic:landform-landscapes",
+        "reading:landform-landscapes"
+      ],
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
+    },
+    {
+      "title": "石家庄市文化广电和旅游局 · 嶂石岩与三大砂岩地貌",
+      "url": "https://wglj.sjz.gov.cn/columns/4bccb071-c987-46a8-9718-77801cb4eb16/202507/26/37b527a6-99cf-4d1d-b276-f2227f1320d5.html",
+      "usedBy": [
+        "topic:landform-landscapes",
+        "reading:landform-landscapes"
+      ],
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
+    },
+    {
+      "title": "Smithsonian Global Volcanism Program · Wudalianchi",
+      "url": "https://volcano.si.edu/volcano.cfm?vn=305030",
+      "usedBy": [
+        "topic:landform-landscapes",
+        "reading:landform-landscapes"
+      ],
+      "version": "2026-11-12 accessed web page; no live data",
+      "accessedAt": "2026-11-12",
+      "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+      "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+      "verification": "已读取官方页面或可核对的搜索摘录。"
     },
     {
       "title": "usgs.gov · water cycle",
@@ -4718,7 +5596,8 @@
       "url": "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater",
       "usedBy": [
         "topic:water-cycle",
-        "reading:water-cycle"
+        "reading:water-cycle",
+        "media:diagram-water-cycle"
       ]
     },
     {
@@ -4735,7 +5614,8 @@
       "url": "https://www.undrr.org/terminology/disaster-risk",
       "usedBy": [
         "topic:earth-hazards",
-        "reading:earth-hazards"
+        "reading:earth-hazards",
+        "media:diagram-hazards"
       ]
     },
     {
@@ -4743,7 +5623,8 @@
       "url": "https://www.usgs.gov/water-science-school/science/floods-and-recurrence-intervals",
       "usedBy": [
         "topic:earth-hazards",
-        "reading:earth-hazards"
+        "reading:earth-hazards",
+        "media:diagram-hazards"
       ]
     },
     {
@@ -4765,7 +5646,8 @@
       "url": "https://www.noaa.gov/jetstream/synoptic/air-masses",
       "usedBy": [
         "topic:weather-systems",
-        "reading:weather-systems"
+        "reading:weather-systems",
+        "media:diagram-weather-fronts"
       ],
       "accessedAt": "2026-11-06",
       "inputVersion": "Official web explainer reviewed 2026-11-06",
@@ -4778,7 +5660,8 @@
       "url": "https://www.noaa.gov/jetstream/wxmaps",
       "usedBy": [
         "topic:weather-systems",
-        "reading:weather-systems"
+        "reading:weather-systems",
+        "media:diagram-weather-fronts"
       ],
       "accessedAt": "2026-11-06",
       "inputVersion": "Official web explainer reviewed 2026-11-06",
@@ -4791,7 +5674,8 @@
       "url": "https://www.noaa.gov/jetstream/thunderstorms/ingredients-for-thunderstorm",
       "usedBy": [
         "topic:weather-systems",
-        "reading:weather-systems"
+        "reading:weather-systems",
+        "media:diagram-weather-fronts"
       ],
       "accessedAt": "2026-11-06",
       "inputVersion": "Official web explainer reviewed 2026-11-06",
@@ -4804,7 +5688,8 @@
       "url": "https://oceanservice.noaa.gov/facts/how-hurricanes-form.html",
       "usedBy": [
         "topic:weather-systems",
-        "reading:weather-systems"
+        "reading:weather-systems",
+        "media:diagram-weather-fronts"
       ],
       "accessedAt": "2026-11-06",
       "inputVersion": "Official web explainer reviewed 2026-11-06",
@@ -4817,7 +5702,8 @@
       "url": "https://oceanservice.noaa.gov/facts/cyclone.html",
       "usedBy": [
         "topic:weather-systems",
-        "reading:weather-systems"
+        "reading:weather-systems",
+        "media:diagram-weather-fronts"
       ],
       "accessedAt": "2026-11-06",
       "inputVersion": "Official web explainer reviewed 2026-11-06",
@@ -4844,7 +5730,8 @@
       "url": "https://science.nasa.gov/climate-change/evidence/",
       "usedBy": [
         "topic:climate-change",
-        "reading:climate-change"
+        "reading:climate-change",
+        "media:diagram-climate-energy"
       ],
       "accessedAt": "2026-11-06",
       "inputVersion": "Official web explainer reviewed 2026-11-06",
@@ -4857,7 +5744,8 @@
       "url": "https://science.nasa.gov/climate-change/effects/",
       "usedBy": [
         "topic:climate-change",
-        "reading:climate-change"
+        "reading:climate-change",
+        "media:diagram-climate-energy"
       ],
       "accessedAt": "2026-11-06",
       "inputVersion": "Official web explainer reviewed 2026-11-06",
@@ -4870,7 +5758,8 @@
       "url": "https://www.ipcc.ch/report/ar6/syr/summary-for-policymakers/",
       "usedBy": [
         "topic:climate-change",
-        "reading:climate-change"
+        "reading:climate-change",
+        "media:diagram-climate-energy"
       ],
       "accessedAt": "2026-11-06",
       "inputVersion": "IPCC AR6 SYR 2023",
@@ -5063,10 +5952,72 @@
       ]
     },
     {
+      "title": "水的地上与地下旅程 · 配图依据",
+      "url": "https://www.usgs.gov/water-science-school/water-cycle",
+      "usedBy": [
+        "media:watershed-landscape-illustration"
+      ]
+    },
+    {
+      "title": "森林、草原与荒漠景观 · 配图依据",
+      "url": "https://science.nasa.gov/earth/earth-observatory/global-maps/land-surface-temperature-vegetation/",
+      "usedBy": [
+        "media:ecosystem-landscapes-illustration"
+      ]
+    },
+    {
+      "title": "雨水穿过城市的不同路径 · 配图依据",
+      "url": "https://www.usgs.gov/water-science-school/science/impervious-surfaces-and-flooding",
+      "usedBy": [
+        "media:city-water-landscape-illustration"
+      ]
+    },
+    {
+      "title": "雨水穿过城市的不同路径 · 配图依据",
+      "url": "https://www.epa.gov/soakuptherain/soak-rain-rain-gardens",
+      "usedBy": [
+        "media:city-water-landscape-illustration"
+      ]
+    },
+    {
+      "title": "平原、梯田与草地的利用 · 配图依据",
+      "url": "https://www.fao.org/giahs/around-the-world/detail/china-hani-rice-terraces/en",
+      "usedBy": [
+        "media:agriculture-landscapes-illustration"
+      ]
+    },
+    {
+      "title": "几种主要语言，分布在哪里 · 配图依据",
+      "url": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "usedBy": [
+        "media:language-world-areas",
+        "media:language-austronesian-points",
+        "media:world-land-ocean-map",
+        "media:world-mountain-map",
+        "media:china-regions-map"
+      ]
+    },
+    {
       "title": "远隔重洋的南岛语系",
       "url": "https://glottolog.org/resource/languoid/id/aust1307",
       "usedBy": [
         "media:language-austronesian-points"
+      ]
+    },
+    {
+      "title": "七大洲与五大洋 · 配图依据",
+      "url": "https://www.naturalearthdata.com/downloads/50m-physical-vectors/50m-land/",
+      "usedBy": [
+        "media:world-land-ocean-map",
+        "media:world-mountain-map",
+        "media:china-regions-map"
+      ]
+    },
+    {
+      "title": "中国四大地理区 · 配图依据",
+      "url": "https://nhess.copernicus.org/articles/23/3747/2023/nhess-23-3747-2023.pdf",
+      "usedBy": [
+        "media:china-regions-map"
       ]
     }
   ],
@@ -5182,7 +6133,7 @@
     "nonClimateCards": 211
   },
   "climateNoteCount": 30,
-  "topicCount": 32,
+  "topicCount": 30,
   "curriculumCoverage": {
     "path": "data/research/curriculum-coverage.json",
     "referenceTitle": "教育部 · 义务教育地理课程标准（2022年版）",
@@ -5240,11 +6191,11 @@
     "public/data/learning-data-sources.json",
     "public/data/country-context-sources.json"
   ],
-  "sourceCount": 335,
+  "sourceCount": 354,
   "themeSourceManifest": "/data/theme-sources.json",
   "editorialRevision": {
-    "version": "science-articles-2026-11-10",
-    "reviewedAt": "2026-11-10",
+    "version": "illustrated-science-articles-2026-11-12",
+    "reviewedAt": "2026-11-12",
     "topicIds": [
       "china-terrain",
       "china-rivers",
@@ -5264,23 +6215,21 @@
       "china-provinces",
       "energy-industry",
       "world-continents",
+      "world-oceans",
+      "world-regional-comparison",
       "world-tectonics",
       "world-ecosystems",
       "world-ocean-monsoon",
       "world-polar-comparison",
-      "landform-processes",
-      "landform-karst",
-      "landform-rivers",
-      "landform-wind",
-      "landform-glaciers",
-      "landform-coasts",
       "water-cycle",
       "earth-hazards",
       "weather-systems",
-      "climate-change"
+      "climate-change",
+      "landform-processes",
+      "landform-landscapes"
     ],
-    "processing": "32篇主题按科普叙述逐篇修订，简版独立编写，案例聚焦主题；移动已有配图并增加上升流概念示意，同类对象就近比较。保留旧章节地址、地图入口及引用；重建读取全部独立校订稿。",
-    "scope": "文字、结构和配图编辑；上升流示意核对NOAA资料，不声称重新核验全部外部来源。"
+    "processing": "32篇主题与地图简版逐篇通读，重整对象介绍、机制与案例的衔接；新增10张概念插图，保留中国地形4张插图及原有照片、机制图，调整图文位置。保留旧章节地址、地图入口及引用；重建读取全部独立校订稿。 地貌六篇随后整合为两篇；世界海陆与区域比较拆为七大洲、五大洋、世界区域比较，前两篇面积图前置，逐洲逐洋介绍并注明口径与分歧。其他相关主题补充整体比较，当前目录30篇。阅读界面移除思考题，旧问题数据保留追溯。",
+    "scope": "文字、结构、配图和阅读布局编辑；新增图示按NSIDC、USGS、NPS、NASA、EPA、FAO及香港天文台资料核对，不声称重新核验全部外部来源。"
   },
   "languageAreaSourceManifest": "/data/language-area-sources.json",
   "auxiliarySourceManifest": "/data/auxiliary-sources.json",
@@ -5296,6 +6245,192 @@
   "areaPresentationReview": "data/research/area-presentation-review.json",
   "chinaReferenceRegionSourceManifest": "data/research/china-reference-region-sources.json",
   "readingSourceManifest": "/data/reading-sources.json",
-  "readingArticleCount": 32,
-  "readingMediaCount": 59
+  "readingArticleCount": 30,
+  "readingMediaCount": 76,
+  "landformRevision": {
+    "version": "landforms-two-articles-2026-11-12",
+    "reviewedAt": "2026-11-12",
+    "processing": "将六篇地貌专题重写为两篇原创科普长文；新增张家界、嶂石岩、黄山与五大连池的文字比较，沿用已核验地图案例，不新增或推测范围。复用现有照片和概念图，沿用各自许可。旧主题与章节地址生成明确转向表。",
+    "validation": "章节、案例、图片位置与引用在生成和数据检查时校验；实际测试记录保存在私有验证目录。",
+    "sources": [
+      {
+        "title": "UNESCO · Wulingyuan Scenic and Historic Interest Area",
+        "url": "https://whc.unesco.org/en/list/640/",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      },
+      {
+        "title": "UNESCO · Mount Huangshan",
+        "url": "https://whc.unesco.org/en/list/547/",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      },
+      {
+        "title": "NPS · Volcanic Landforms",
+        "url": "https://www.nps.gov/subjects/geology/volcanic-landforms.htm",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      },
+      {
+        "title": "石家庄市文化广电和旅游局 · 嶂石岩与三大砂岩地貌",
+        "url": "https://wglj.sjz.gov.cn/columns/4bccb071-c987-46a8-9718-77801cb4eb16/202507/26/37b527a6-99cf-4d1d-b276-f2227f1320d5.html",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      },
+      {
+        "title": "Smithsonian Global Volcanism Program · Wudalianchi",
+        "url": "https://volcano.si.edu/volcano.cfm?vn=305030",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      },
+      {
+        "title": "USGS · Geology of Joshua Tree National Park",
+        "url": "https://www.usgs.gov/geology-and-ecology-of-national-parks/geology-joshua-tree-national-park",
+        "version": "2026-11-12 accessed web page; no live data",
+        "accessedAt": "2026-11-12",
+        "license": "原网页保留各自权利；仅作事实参考，正文为原创概述，不复制图片或整段文字。",
+        "processing": "核对景观材料、形态或作用；不据此生成地图几何。",
+        "verification": "已读取官方页面或可核对的搜索摘录。"
+      }
+    ]
+  },
+  "worldGeographyRevision": {
+    "version": "world-geography-2026-11-12",
+    "reviewedAt": "2026-11-12",
+    "topicIds": [
+      "world-continents",
+      "world-oceans",
+      "world-regional-comparison"
+    ],
+    "processing": "将世界海陆与区域比较拆为七大洲、五大洋、世界区域比较。七洲面积图前置并逐洲介绍；新增同口径五洋面积图，逐洋解释位置及自然联系。保留区域章节、旧章节显式转向和所有原案例来源；复用真实海陆位置图，不绘制新地理范围。",
+    "licenses": "新增正文与图表编排采用CC BY 4.0；面积数字保留原始来源和统计口径。IHO文献仅作事实依据，不转载PDF或整段原文；海陆图沿用Natural Earth公共领域几何。",
+    "sources": [
+      {
+        "title": "IHO · 决议02/2023：承认南大洋及海域界限（M-3，2024年7月版，第110—113页）",
+        "url": "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf",
+        "accessedAt": "2026-11-12",
+        "version": "IHO M-3 2nd Edition 2010, updated July 2024; Resolution 02/2023",
+        "scope": "核读PDF第110—113页（零基页码）：已承认南大洋、南纬60°北界、非政治/海洋物理边界说明、阿根廷与澳大利亚等保留意见。",
+        "license": "IHO文献版权保留；仅原创概述事实，未转载原文或PDF。"
+      },
+      {
+        "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
+        "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf",
+        "accessedAt": "2026-11-12",
+        "version": "ETOPO1 World Ocean Volumes, official PDF under NCEI Older Versions",
+        "scope": "读取官方表：太平洋161760000、另列南海6963000、大西洋85133000、印度洋70560000、南大洋21960000、北冰洋15558000，单位平方千米；原表南大洋北界60°S。太平洋相加为168723000。",
+        "license": "NOAA美国政府公开数据；保留机构、模型与处理说明。"
+      },
+      {
+        "title": "National Geographic Society · Asia: Physical Geography",
+        "url": "https://education.nationalgeographic.org/resource/asia/",
+        "accessedAt": "2026-11-12",
+        "scope": "亚洲主要地形单元与冰雪来水；新增正文沿用原有NASA/USGS资料，并核对National Geographic官方教育页面摘录。",
+        "license": "参考网页版权保留，正文为原创概述。"
+      },
+      {
+        "title": "全球变化数据学报 · 2015年全球岛礁、陆地面积与海岸线（表7）",
+        "url": "https://geodoi.ac.cn/DOIPaper/HTML/2019139402/201902139403.htm",
+        "accessedAt": "2026-11-12",
+        "version": "2019研究，2015±2年遥感影像；表7",
+        "scope": "检索可核对原始研究表7各洲面积，与现有CAS来源记录一致；页面全文访问失败，未声称重新读取完整论文。",
+        "license": "事实数值引用；原研究与其数据许可保留。"
+      }
+    ],
+    "conflictingSources": [
+      {
+        "url": "https://oceanservice.noaa.gov/facts/howmanyoceans.html",
+        "accessedAt": "2026-11-12",
+        "note": "页面仍有IHO未批准旧描述，与IHO 02/2023决议冲突。新正文以IHO直接决议为现行依据；保留旧NOAA引用作原卡来源追溯，不采用其未批准判断。"
+      },
+      {
+        "url": "https://www.noaa.gov/jetstream/ocean",
+        "accessedAt": "2026-11-12",
+        "note": "其南大洋3500万平方千米表与本篇60°S分界不同，不与新图混用。五个大洋卡的面积事实统一为NCEI ETOPO1表处理结果。"
+      }
+    ],
+    "areaInputs": {
+      "continents": {
+        "sourceUrl": "https://geodoi.ac.cn/DOIPaper/HTML/2019139402/201902139403.htm",
+        "period": "2015±2年",
+        "unit": "km²",
+        "values": [
+          {
+            "id": "asia-continent",
+            "areaKm2": 44130000
+          },
+          {
+            "id": "africa-continent",
+            "areaKm2": 29830000
+          },
+          {
+            "id": "north-america-continent",
+            "areaKm2": 24240000
+          },
+          {
+            "id": "south-america-continent",
+            "areaKm2": 17740000
+          },
+          {
+            "id": "antarctica",
+            "areaKm2": 12610000
+          },
+          {
+            "id": "europe-continent",
+            "areaKm2": 10000000
+          },
+          {
+            "id": "oceania-region",
+            "areaKm2": 8940000
+          }
+        ],
+        "processing": "沿用既有表7数值换算，图表显示万平方千米取约数，原始精度不代表岸线绝对精度。"
+      },
+      "oceans": {
+        "sourceUrl": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf",
+        "model": "ETOPO1",
+        "southernBoundary": "60°S",
+        "unit": "km²",
+        "values": [
+          {
+            "id": "pacific-ocean",
+            "areaKm2": 168723000
+          },
+          {
+            "id": "atlantic-ocean",
+            "areaKm2": 85133000
+          },
+          {
+            "id": "indian-ocean",
+            "areaKm2": 70560000
+          },
+          {
+            "id": "southern-ocean",
+            "areaKm2": 21960000
+          },
+          {
+            "id": "arctic-ocean",
+            "areaKm2": 15558000
+          }
+        ],
+        "processing": "以原表洋区面积为准；太平洋并入原表另列South China Sea 6963000平方千米；不重复相加North/South子项。历史模型统计，并非现时重测。"
+      }
+    },
+    "validation": "生成时检查七洲五洋均有独立章节、图表行与已有真实卡片ID一致、区域章节和转向可达。浏览器和自动检查结果由实际执行记录另存。"
+  }
 }
