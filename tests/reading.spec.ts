@@ -45,7 +45,12 @@ test('reading: simple map, searchable catalogue, full article and attributed ima
   expect(requests).toHaveLength(0)
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill('岩溶')
   await expect(page.getByRole('button',{name:'打开专题：常见地貌与中国典型景观',exact:true})).toBeVisible()
-  await page.getByRole('button',{name:'打开专题：常见地貌与中国典型景观',exact:true}).click()
+  const [response]=await Promise.all([
+    page.waitForResponse(response=>new URL(response.url()).pathname.endsWith('/reading/topics/landform-landscapes.json')),
+    page.getByRole('button',{name:'打开专题：常见地貌与中国典型景观',exact:true}).click(),
+  ])
+  expect(response.ok()).toBe(true)
+  expect(await response.finished()).toBeNull()
   await expect(reader(page).locator('h1')).toHaveText('常见地貌与中国典型景观')
   const chapters=reader(page).getByRole('navigation',{name:'专题章节'})
   const chapterSelect=chapters.getByRole('combobox',{name:'跳转专题章节'})
