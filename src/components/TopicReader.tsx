@@ -1,11 +1,12 @@
-import {Fragment,useEffect,useLayoutEffect,useRef,useState} from 'react'
-import {ArrowLeft,ArrowRight,Bookmark,BookOpen,MapPin,Share2} from 'lucide-react'
+import {Fragment,useEffect,useLayoutEffect,useMemo,useRef,useState} from 'react'
+import {ArrowLeft,ArrowRight,Bookmark,BookOpen,Share2} from 'lucide-react'
 import type {ReadingProgress,Topic,TopicArticle} from '../types'
 import {useLocalJson} from '../lib/learning'
-import {knowledge} from '../lib/catalog'
+import {sectionMapLinks} from '../lib/reading-map-links'
 import {topics,topicGroups} from '../lib/topics'
 import ReadingFigure from './ReadingFigure'
 import TopicVisuals from './TopicVisuals'
+import ReadingMapLinks from './ReadingMapLinks'
 import './TopicReading.css'
 
 export default function TopicReader({topic,visible,progress,saved,onProgress,onBack,onLibrary,onMap,onRead,onSave,onShare}:{
@@ -56,6 +57,7 @@ export default function TopicReader({topic,visible,progress,saved,onProgress,onB
     const block=blocks().find(item=>item.dataset.readingSection===id)
     if(block&&scroll.current){scroll.current.scrollTo({top:topOf(block)-12,behavior:'auto'});setSection(id);capture();block.querySelector<HTMLElement>('h2')?.focus({preventScroll:true})}
   }
+  const mapLinks=useMemo(()=>article.data?sectionMapLinks(article.data):new Map<string,string[]>(),[article.data])
   const parts=article.data?.parts
   const essay=article.data?.presentation==='essay'
   const activePart=article.data?.sections.find(item=>item.id===section)?.partId
@@ -81,7 +83,7 @@ export default function TopicReader({topic,visible,progress,saved,onProgress,onB
             {s.mediaPlacement!=='before-text'&&s.mediaIds?.filter(id=>s.mediaAfterParagraph?.[id]===undefined&&(essay||id!==topic.reading?.coverId)).map(id=><ReadingFigure key={id} id={id} onExplore={id=>leave(()=>onMap(id))}/>)}
             {!!s.visuals?.length&&<TopicVisuals visuals={s.visuals} onPick={id=>leave(()=>onMap(id))}/>}
             {s.terms?.map(term=><details className="reading-term" key={term.term}><summary>{term.term}</summary><p>{term.definition}</p></details>)}
-            {!!s.caseIds?.length&&(essay?<div className="reading-map-links reading-cases">{s.caseIds.map(id=><button key={id} onClick={()=>leave(()=>onMap(id))}><MapPin size={15}/><span>{s.mapLabels?.[id]||'在地图上看'}{s.caseIds!.length>1&&<small> · {knowledge.find(card=>card.id===id)?.name}</small>}</span><ArrowRight size={14}/></button>)}</div>:<div className="reading-cases">{s.caseIds.map(id=>{const card=knowledge.find(k=>k.id===id);return card?<div key={id}><div><h3>{card.name}</h3><p>{card.summary}</p></div><button onClick={()=>leave(()=>onMap(id))}><MapPin size={14}/>在地图上看</button></div>:null})}</div>)}
+            <ReadingMapLinks ids={mapLinks.get(s.id)||[]} labels={s.mapLabels} onPick={id=>leave(()=>onMap(id))}/>
           </section>)}
           {!essay&&!!topic.visuals?.length&&<section className="article-section" data-reading-section="comparison"><h2 tabIndex={-1}>放在一起比较</h2><TopicVisuals visuals={topic.visuals} onPick={id=>leave(()=>onMap(id))}/></section>}
           {!!related.length&&<section className="article-section"><h2>接着读什么</h2><div className="reading-related">{related.map(t=><button key={t.id} onClick={()=>leave(()=>onRead(t))}><span>{t.title}<small>{t.description}</small></span><ArrowRight size={16}/></button>)}</div></section>}

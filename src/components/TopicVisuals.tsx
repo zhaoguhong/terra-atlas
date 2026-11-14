@@ -16,7 +16,7 @@ export default function TopicVisuals({visuals,onPick}:{visuals?:TopicVisual[];on
       <div className="topic-bars">{visual.rows.map(row=>{
         const width=100*row.value/Math.max(...visual.rows.map(item=>item.value))
         const contents=<><span className="bar-label">{row.label}</span><span className="bar-track" aria-hidden="true"><i style={{width:width+'%'}}/></span><span className="bar-value">{row.value.toLocaleString('zh-CN',{maximumFractionDigits:2})}</span></>
-        return row.place?<button type="button" className="topic-bar" key={row.label} aria-label={`${row.label}，${row.value}${visual.unit}，查看介绍`} onClick={()=>onPick(row.place!)}>{contents}</button>:<div className="topic-bar" key={row.label}>{contents}</div>
+        return row.place?<button type="button" className="topic-bar" key={row.label} data-place-id={row.place} aria-label={`${row.label}，${row.value}${visual.unit}，查看介绍`} onClick={()=>onPick(row.place!)}>{contents}</button>:<div className="topic-bar" key={row.label}>{contents}</div>
       })}</div>
       <p className="visual-note">{visual.note}</p>
       <div className="visual-sources">{visual.sources.map(source=><a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">{source.title} ↗</a>)}</div>

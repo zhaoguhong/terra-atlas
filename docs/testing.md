@@ -98,3 +98,5 @@ PLAYWRIGHT_CHANNEL=chromium SITE_URL=http://127.0.0.1:4176 npm run test:e2e
 `tests/world-oceans-reading.spec.ts` 在三个视口验证旧主题和章节分享、刷新、拆分后的收藏及进度、七洲／五洋面积图与真实地图往返；`tests/reading-inline-map.spec.ts` 验证配图地图按需创建、真实点面、主地图句柄独立、一次一个实例、收起释放、夜间模式、完整地图往返及几何请求失败重试；`reading-inline-map-loading.spec.ts` 拦住真实几何请求，检查初始化前控制不可选、加载完成后地点选择与定位一致。全部主题的图片与正文检查继续由 `editorial-reading.spec.ts` 遍历。手机与横屏仍为浏览器模拟。
 
 同时运行多个Playwright命令时，应分别设置 `EVIDENCE_DIR` 与 `RESULT_FILE`，避免一个运行清理另一个运行的trace或截图目录。
+
+`tests/reading-map-links.spec.ts` 遍历全部30篇专题，核对原有案例地点仍可通过章节、配图或图表进入地图，同节不重复展示相同地点，正文不横向溢出；另检查34个省级行政区的简短地名、至少44×44像素点击区域、键盘操作、地图往返、刷新与日夜截图。桌面、手机竖屏和横屏均运行。章节入口的展示取舍集中在 `src/lib/reading-map-links.ts`：概览中重复的地点保留在专门解释它的章节，同节已有直接入口的插图或图表不再追加相同链接；案例数据和正文保持完整。

@@ -1,8 +1,9 @@
 import {useEffect,useMemo,useRef,useState} from 'react'
-import {Expand,Map,MapPin,X,ZoomIn,ZoomOut} from 'lucide-react'
+import {Expand,Map,X,ZoomIn,ZoomOut} from 'lucide-react'
 import {mediaById} from '../lib/reading'
 import {knowledge} from '../lib/catalog'
 import ReadingInlineMap from './ReadingInlineMap'
+import ReadingMapLinks from './ReadingMapLinks'
 
 // Each expanded figure owns a WebGL context. Opening another figure releases
 // the previous one rather than accumulating live maps throughout a long essay.
@@ -34,7 +35,7 @@ export default function ReadingFigure({id,compact=false,onExplore}:{id:string;co
     <div className="reading-image-actions">{!failed&&<button aria-label={`查看大图：${item.title}`} onClick={enlarge}><Expand size={14}/>查看大图</button>}{!!places.length&&<button ref={mapButton} aria-label={'看地图：'+item.title} aria-expanded={mapOpen} aria-controls={'reading-map-'+id} onClick={toggleMap}><Map size={15}/>{mapOpen?'收起地图':'看地图'}</button>}</div></div>
     {mapOpen&&!!places.length&&<ReadingInlineMap id={id} title={item.title} places={places} onClose={closeMap} onExplore={onExplore}/>}
     <figcaption><span>{item.caption}</span><small>{item.author} · <a href={item.licenseUrl} target="_blank" rel="noopener noreferrer">{item.license}</a> · <a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">{item.kind==='photo'?'图片来源':'参考资料'}</a></small></figcaption>
-    {illustrated&&onExplore&&!!places.length&&!mapOpen&&<div className="reading-figure-explore" role="group" aria-label={item.title+'的地图入口'}><p><MapPin size={15}/>在山河图中探索</p><div>{places.map(place=><button key={place.id} aria-label={'在山河图中探索：'+place.name} onClick={()=>onExplore(place.id)}>{place.name}<span aria-hidden="true">↗</span></button>)}</div></div>}
+    {illustrated&&onExplore&&!!places.length&&!mapOpen&&<ReadingMapLinks ids={places.map(place=>place.id)} title="图中地点" prefix="在山河图中探索：" onPick={onExplore}/>}
     <dialog ref={dialog} className="reading-image-dialog" aria-label={item.title} onClose={()=>{setEnlarged(false);setZoomed(false)}} onClick={event=>{if(event.target===dialog.current)dialog.current.close()}}><button className="icon-button" aria-label="关闭大图" onClick={()=>dialog.current?.close()}><X size={20}/></button>{enlarged&&<><div className="reading-image-controls"><button aria-pressed={zoomed} onClick={()=>setZoomed(value=>!value)}>{zoomed?<ZoomOut size={16}/>:<ZoomIn size={16}/>} {zoomed?'适应窗口':'放大细节'}</button><span>{zoomed?'滑动或滚动查看图片各处':'可放大阅读图中标注'}</span></div><div className={'reading-image-canvas'+(zoomed?' is-zoomed':'')} role="region" aria-label="图片细节" tabIndex={zoomed?0:undefined}><img src={src} alt={item.alt} style={zoomed?{width:Math.max(1600,item.width)}:undefined}/></div></>}<p>{item.caption}</p><small>{item.author} · <a href={item.licenseUrl} target="_blank" rel="noopener noreferrer">{item.license}</a> · <a href={item.sourceUrl} target="_blank" rel="noopener noreferrer">来源</a></small></dialog>
   </figure>
 }
