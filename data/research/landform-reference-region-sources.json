@@ -1,0 +1,170 @@
+{
+  "id": "zhang-2025-landform-figure2",
+  "version": "2026-11-13-digitization-v1",
+  "title": "内蒙古高原 · 已发表地貌分区图数字化参考范围",
+  "source": {
+    "url": "https://mdpi-res.com/remotesensing/remotesensing-17-01615/article_deploy/html/images/remotesensing-17-01615-g002.png",
+    "articleUrl": "https://www.mdpi.com/2072-4292/17/9/1615",
+    "doi": "10.3390/rs17091615",
+    "title": "Production and Analysis of a Landslide Susceptibility Map Covering Entire China",
+    "authors": "Zhang, Guo; Liu, Yutao; Chen, Zhenwei; Xu, Zixing; Yuan, Yuan; Wang, Shunyao; Lian, Weiqi; Xu, Hang; Ding, Zan; Wang, Run",
+    "year": 2025,
+    "figure": 2,
+    "sourceUnit": "III-C: Inner Mongolian Plateau",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sha256": "cf65bc00200d202ba86677db6d69d6e1a11bb3cd662c1499fdee2761285110f3"
+  },
+  "license": "CC-BY-4.0",
+  "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+  "attribution": "Adapted from Zhang, G. et al. (2025), Production and Analysis of a Landslide Susceptibility Map Covering Entire China, Remote Sensing 17(9), 1615, Figure 2, https://doi.org/10.3390/rs17091615, CC BY 4.0. Exterior land geometry: Natural Earth, public domain.",
+  "processing": [
+    "采用论文图2及表1明确命名的III-C内蒙古高原区，论文区划依据李炳元等（2013）；未将蒙古高原、内蒙古自治区或湖区研究范围替代为本对象。",
+    "以原图8个经度刻度与4个纬度刻度拟合Albers圆锥等面积投影，逐线数字化原图内部分界；图示两个分离部分分别处理，不补画连接区域。",
+    "仅原图与国界重合的外缘沿本站既有Natural Earth中国陆地掩膜裁剪；闭合线全部在掩膜之外，不构成新增的可见地貌分界。",
+    "原图与底图国界概化不同，在分界端点产生的微小离散裁剪碎片按源图两处独立内陆区域的连通性剔除；不连接原图中分离的两部分。",
+    "图形保留全国尺度的源图线宽、概化与数字化误差；配准误差只反映刻度拟合，不代表地貌分界的实际精度，不用于测量或面积统计。"
+  ],
+  "inputs": [
+    {
+      "path": "scripts/landform-reference-digitization.json",
+      "sha256": "ce562881c7af9177ffc6f0ae0ffc22e53daecc9c90bd063668fbaed09c487fee"
+    },
+    {
+      "path": "public/data/countries.geojson",
+      "sha256": "09373a29de9cbd8fa4fabb01ac9efc73eb886bfa8abd72db5fe11b52815e9a6a",
+      "featureIds": [
+        "country-chn",
+        "country-twn",
+        "country-hkg",
+        "country-mac"
+      ],
+      "sourceManifest": "scripts/data-sources.lock.json"
+    }
+  ],
+  "output": {
+    "path": "public/data/landform-reference-regions.geojson",
+    "sha256": "de9572ccb0c33402632af4ac3b964a49b5e1ef293546d25aa5459681b78d6a20",
+    "features": 1
+  },
+  "georeferencing": {
+    "model": "spherical Albers inverse fitted to the printed graticule ticks; pixel coordinates refer to the original PNG",
+    "parameters": {
+      "n": 0.5839059232020842,
+      "A": 4747.576799829225,
+      "cx": 1304.2655587331328,
+      "cy": -2698.8793465858985,
+      "centralMeridianDegrees": 104.88487974217911,
+      "C": 1.3213308192561914
+    },
+    "topEdgeY": 158,
+    "leftEdgeX": 118,
+    "longitudeTicks": [
+      [
+        70,
+        243.5
+      ],
+      [
+        80,
+        564
+      ],
+      [
+        90,
+        867.5
+      ],
+      [
+        100,
+        1161.5
+      ],
+      [
+        110,
+        1453.5
+      ],
+      [
+        120,
+        1748
+      ],
+      [
+        130,
+        2052
+      ],
+      [
+        140,
+        2372.5
+      ]
+    ],
+    "latitudeTicks": [
+      [
+        50,
+        166.5
+      ],
+      [
+        40,
+        686
+      ],
+      [
+        30,
+        1201.5
+      ],
+      [
+        20,
+        1702.5
+      ]
+    ],
+    "pixelRmsError": 0.18662335657995732,
+    "maxPixelError": 0.4262022753207475
+  },
+  "validation": {
+    "validPolygons": 1,
+    "insideNationalLandMask": true,
+    "independentLocations": [
+      {
+        "id": "region-cn-zhang2025-inner-mongolian-plateau",
+        "inside": [
+          [
+            112,
+            44
+          ],
+          [
+            116.07,
+            43.93
+          ],
+          [
+            119.74,
+            49.21
+          ]
+        ],
+        "outside": [
+          [
+            116.4,
+            39.9
+          ],
+          [
+            109.99,
+            39.82
+          ],
+          [
+            106.9,
+            47.9
+          ],
+          [
+            122.26,
+            43.61
+          ],
+          [
+            126.6,
+            45.8
+          ],
+          [
+            104,
+            42
+          ]
+        ],
+        "publishedComponents": 2,
+        "discardedBorderSliverSquareDegrees": 0.006027878477175461,
+        "valid": true
+      }
+    ]
+  },
+  "note": "依据Zhang等（2025）图2中III-C内蒙古高原区数字化的全国尺度地貌参考范围；分界为过渡带的概化表达，不是精确地貌边界、行政界线或面积统计范围。"
+}

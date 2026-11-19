@@ -6,6 +6,7 @@ import hashlib,json,subprocess,sys,urllib.request
 from pathlib import Path
 import shapefile
 from shapely.geometry import shape,mapping
+from china_presentation import city_properties, PRESENTATION_NOTE
 RAW=Path('data/raw/auxiliary');RAW.mkdir(parents=True,exist_ok=True)
 OUT=Path('public/data')
 MANIFEST=Path('data/research/auxiliary-sources.json')
@@ -38,7 +39,7 @@ for f in json.loads(b)['features']:
  if rank>7 and not capital:continue
  name=p.get('NAME_ZH') or p.get('NAME_EN') or p['NAME']
  props={'id':'city-ne-'+str(p['NE_ID']),'name':name,'nameEn':p.get('NAME_EN') or p['NAME'],'kind':'city','capital':capital,'country':p.get('ADM0NAME',''),'rank':rank,'minZoom':1.8 if capital else 2.5 if rank<=2 else 3.5 if rank<=4 else 5,'center':rounded(f['geometry']['coordinates']),'sourceId':'natural-earth-cities'}
- cities.append({'type':'Feature','geometry':{'type':'Point','coordinates':props['center']},'properties':props})
+ cities.append({'type':'Feature','geometry':{'type':'Point','coordinates':props['center']},'properties':city_properties(props)})
 print('Cities',len(cities),flush=True)
 plate_endpoint='https://earthquake.usgs.gov/arcgis/rest/services/eq/map_plateboundaries/MapServer/1/query'
 b,ids_input=cached('usgs-plate-ids.json',plate_endpoint+'?where=1%3D1&returnIdsOnly=true&f=json')
@@ -69,7 +70,7 @@ for index,f in enumerate(plate_data['features']):
 subprocess.run([sys.executable,str(Path(__file__).with_name('build-basin-atlas.py'))],check=True)
 basin_source=next(source for source in json.loads(MANIFEST.read_text())['sources'] if source['id']=='basinatlas-l3')
 manifest={'reviewedAt':'2026-10-20','versionPolicy':'固定原始输入快照及SHA-256；复用缓存时严格核对，不把当前网页或服务数据当作持续更新。','sources':[
- {'id':'natural-earth-cities','version':'Natural Earth 5.1.2; repository '+commit,'license':'Public domain','documentationUrl':'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/','processing':'保留SCALERANK≤7的代表聚落及ADM0CAP标记；中文优先，缺失用英文；NE_ID用于稳定ID，按缩放逐步显示。无人口着色或排名。首都标记来自此固定版本，不表示2026年迁都状态。','inputs':[city_input],'outputs':[output('auxiliary-cities.geojson',cities)]},
+ {'id':'natural-earth-cities','version':'Natural Earth 5.1.2; repository '+commit,'license':'Public domain','documentationUrl':'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/','processing':'保留SCALERANK≤7的代表聚落及源ADM0CAP标记；中文优先，缺失用英文；NE_ID用于稳定ID，按缩放逐步显示。无人口着色或排名。台港澳城市归属中国，原始国家栏和首都标记另存sourceCountry/sourceCapital，台北等地区中心不显示为国家首都。'+PRESENTATION_NOTE,'inputs':[city_input],'outputs':[output('auxiliary-cities.geojson',cities)]},
  {'id':'usgs-plates','version':'USGS公开板块边界服务快照 2026-10-11；来源Bird (2003) PB2002','license':'USGS公开地理资料，保留原服务归属：Bird, P. (2003), An updated digital model of plate boundaries, DOI 10.1029/2001GC000252；USGS reuse policy https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits','documentationUrl':'https://earthquake.usgs.gov/arcgis/rest/services/eq/map_plateboundaries/MapServer','processing':'以WGS84按完整ID目录分批读取，核对全部ID，保留输入边界类别；只舍入坐标，不连接案例点或生成虚构边界。汇聚类别不进一步擅自划分俯冲/碰撞。','inputs':plate_inputs,'outputs':[output('auxiliary-plates.geojson',plates)]},
  basin_source
  ],'validation':{'method':'核对缓存SHA-256、源ID唯一、城市真实点位与筛选规则、板块源类别和完整响应、分区数量及面积属性、输出几何有效性；处理后的公开产物逐项记录SHA-256。','limitations':'全球及区域学习尺度；城市并非全部聚落；源版本首都标记非实时；流域边界与板块边界均经过概化，不用于工程、风险预测或精确测量。'}}

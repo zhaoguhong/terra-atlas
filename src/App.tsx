@@ -1,7 +1,10 @@
 import {resolveTopicReference,migrateReadingProgress} from './lib/topic-redirects'
 import {lazy,Suspense,useCallback,useEffect,useMemo,useRef,useState,type CSSProperties} from 'react'
 import {ArrowDown,ArrowLeftRight,ArrowRight,Bookmark,BookOpen,Check,ChevronLeft,Compass,Download,Globe2,Info,Layers,LocateFixed,MapPin,MoreHorizontal,Mountain,Pin,Plus,Ruler,Search,Share2,Shuffle,Trash2,Upload,Users,Languages,Church,Waves,X,ZoomIn,ZoomOut,CloudSun,Grid2X2} from 'lucide-react'
-import AtlasMap,{sourceForId,type AtlasHandle,type Measurement} from './components/AtlasMap'
+import type {AtlasHandle,Measurement} from './components/AtlasMap'
+import {sourceForId} from './lib/map-source'
+import {homePath,topicsPath,topicPath,topicRoute,followTopicLink} from './lib/topic-url'
+const AtlasMap=lazy(()=>import('./components/AtlasMap'))
 import KnowledgePanel from './components/KnowledgePanel'
 import TopicPanel from './components/TopicPanel'
 import ReadingFigure from './components/ReadingFigure'
@@ -15,7 +18,7 @@ import {defaultLayers,loadPreferences,parsePreferences,savePreferences,validCame
 import {climateReference,distanceKm,numberText,readLocalJson,useLocalJson,type HumanData} from './lib/learning'
 import {topicForSelection,topicLayers,topicMapMembers,topics} from './lib/topics'
 import {distributionIds,legacyTopic,singleOverlay,topicOverlays} from './lib/theme-state'
-import type {Camera,Category,ReadingProgress,ClimateNote,ClimateSeries,GeoProperties,Knowledge,LayerState,MapDisplay,MapProbe,OnlineMapStatus,SavedView,Selection,ThematicState,Topic,TopicGroup,TopicOverlay,TopicScope,View} from './types'
+import type {Camera,Category,ReadingProgress,ClimateNote,ClimateSeries,GeoProperties,Knowledge,LayerState,MapDisplay,MapProbe,OnlineMapStatus,SavedView,Selection,ThematicState,TopicArticle,Topic,TopicGroup,TopicOverlay,TopicScope,View} from './types'
 import climateLegend from '../public/data/climate-legend.json'
 import climateNotes from './data/climate-notes.json'
 import bindings from './data/feature-bindings.json'
@@ -28,6 +31,7 @@ import {useReadingPosition} from './lib/reading-position'
 import {loadReadingResume,saveReadingResume} from './lib/reading'
 import {useAppearance} from './lib/appearance'
 import {coordinatesInBounds} from './lib/discovery'
+import {rehydrateSelection,rehydrateSelectionTrail} from './lib/selection-restoration'
 
 const TopicReader=lazy(()=>import('./components/TopicReader'))
 
@@ -62,12 +66,16 @@ const sourceFor=(p:GeoProperties)=>sourceForId(p.id)||(p.kind==='river'?'rivers'
 const newNavigationEntryId=()=>crypto.getRandomValues(new Uint32Array(4)).join('-')
 function countryFor(selection:Selection|null){
   if(!selection)return null
+  const chinaRegionStats:Record<string,string>={'taiwan-province':'country-twn','taiwan-region':'country-twn','hong-kong':'country-hkg','macao':'country-mac'}
+  if(chinaRegionStats[selection.card.id])return chinaRegionStats[selection.card.id]
   if(selection.source==='countries')return selection.featureId||selection.card.id
   if(selection.card.id.startsWith('country-'))return selection.card.id
   return (bindings as Record<string,string[]>)[selection.card.id]?.find(id=>id.startsWith('country-'))||null
 }
 
 export default function App(){
+  const [initialArticle]=useState<TopicArticle|undefined>(()=>{try{return JSON.parse(document.getElementById('initial-article')?.textContent||'null')||undefined}catch{return undefined}})
+  const [entryRoute]=useState(()=>topicRoute(location.pathname))
   const [restoredNavigation]=useState<NavigationEntry|null>(()=>{
     const saved=history.state?.terraAtlasNavigation as NavigationEntry|undefined
     const legacyReload=history.state?.terraAtlasUrl===undefined&&(performance.getEntriesByType('navigation')[0] as PerformanceNavigationTiming|undefined)?.type==='reload'
@@ -79,6 +87,11 @@ export default function App(){
   })
   const [initial]=useState(()=>{
     const preferences=loadPreferences()
+    if(!restoredNavigation&&entryRoute?.topic){
+      preferences.topicId=entryRoute.topic.id
+      const sectionId=location.hash.slice(1)
+      preferences.readingProgress={...preferences.readingProgress,[entryRoute.topic.id]:{sectionId:/^[a-z][a-z0-9-]{0,79}$/.test(sectionId)?sectionId:"introduction",offset:0,updatedAt:Date.now()}}
+    }
     const lastCapture=restoredNavigation?loadReadingResume(history.state?.terraAtlasEntryId,restoredNavigation.readerTopicId):undefined
     const progress=lastCapture&&lastCapture.updatedAt>(restoredNavigation?.readerProgress?.updatedAt||0)?lastCapture:restoredNavigation?.readerProgress
     const saved=restoredNavigation?parsePreferences({...preferences,...restoredNavigation,readingProgress:{...preferences.readingProgress,...(restoredNavigation.readerTopicId&&progress?{[restoredNavigation.readerTopicId]:progress}:{})}}):preferences
@@ -95,9 +108,11 @@ export default function App(){
   const [favorites,setFavorites]=useState(initial.favorites)
   const [savedTopics,setSavedTopics]=useState(initial.savedTopics)
   const [readingProgress,setReadingProgress]=useState(initial.readingProgress)
-  const [studyScreen,setStudyScreen]=useState<'map'|'library'|'article'>(restoredNavigation?.studyScreen||'map')
+  const [studyScreen,setStudyScreen]=useState<'map'|'library'|'article'>(restoredNavigation?.studyScreen||entryRoute?.screen||'map')
   const [readerSession,setReaderSession]=useState(0)
-  const [readerTopicId,setReaderTopicId]=useState<string|null>(()=>{const id=restoredNavigation?.readerTopicId;if(!id)return null;const resumed=loadReadingResume(history.state?.terraAtlasEntryId,id);return resolveTopicReference(id,(resumed&&resumed.updatedAt>(restoredNavigation?.readerProgress?.updatedAt||0)?resumed:restoredNavigation?.readerProgress)?.sectionId).topicId})
+  const [mapStarted,setMapStarted]=useState(studyScreen==='map')
+  useEffect(()=>{if(studyScreen==='map')setMapStarted(true)},[studyScreen])
+  const [readerTopicId,setReaderTopicId]=useState<string|null>(()=>{const id=restoredNavigation?.readerTopicId;if(!id)return entryRoute?.topic?.id||null;const resumed=loadReadingResume(history.state?.terraAtlasEntryId,id);return resolveTopicReference(id,(resumed&&resumed.updatedAt>(restoredNavigation?.readerProgress?.updatedAt||0)?resumed:restoredNavigation?.readerProgress)?.sectionId).topicId})
   const [readerReturn,setReaderReturn]=useState(!!restoredNavigation?.readerReturn)
   const reportReading=useCallback((id:string,value:ReadingProgress,flush=false)=>{
     const next={...pendingPreferences.current.readingProgress,[id]:value}
@@ -117,15 +132,15 @@ export default function App(){
   const [thematic,setThematic]=useState<ThematicState>(initial.thematic)
   const [display,setDisplay]=useState<MapDisplay>(initial.display)
   const [onlineStatus,setOnlineStatus]=useState<OnlineMapStatus>({detail:'off',terrain:'off'})
-  const [selection,setSelection]=useState<Selection|null>(restoredNavigation?.selection||null)
-  const [memberTrail,setMemberTrail]=useState<Selection[]>(restoredNavigation?.trail||[])
+  const [selection,setSelection]=useState<Selection|null>(()=>rehydrateSelection(restoredNavigation?.selection))
+  const [memberTrail,setMemberTrail]=useState<Selection[]>(()=>rehydrateSelectionTrail(restoredNavigation?.trail))
   const [probe,setProbe]=useState<MapProbe|null>(null)
   const [query,setQuery]=useState('')
   const [searchOpen,setSearchOpen]=useState(false)
   const [moreOpen,setMoreOpen]=useState(false)
   const [searchIndex,setSearchIndex]=useState(0)
   const [catalog,setCatalog]=useState<GeoProperties[]>([])
-  const [tab,setTab]=useState<'explore'|'topics'|'saved'>(restoredNavigation?.tab||(initial.topicId?'topics':'explore'))
+  const [tab,setTab]=useState<'explore'|'topics'|'saved'>(restoredNavigation?.tab||(!entryRoute&&!location.hash?'explore':initial.topicId?'topics':'explore'))
   const [topicLibrary,setTopicLibrary]=useState(restoredNavigation?.library??!initial.topicId)
   const [topicGroup,setTopicGroup]=useState<TopicGroup|'all'>(restoredNavigation?.topicGroup||'all')
   const [topicScope,setTopicScope]=useState<TopicScope>(restoredNavigation?.topicScope||'all')
@@ -178,7 +193,7 @@ export default function App(){
   const moreTrigger=useRef<HTMLButtonElement>(null)
   const input=useRef<HTMLInputElement>(null)
   const importInput=useRef<HTMLInputElement>(null)
-  const hashApplied=useRef(restoredNavigation?location.hash:'')
+  const hashApplied=useRef(restoredNavigation||entryRoute?location.hash:'')
   const sharedPlaceRequest=useRef(0)
   const pendingPickIdRequest=useRef(0)
   const retrySharedPlace=useRef<(()=>void)|null>(null)
@@ -187,9 +202,9 @@ export default function App(){
   const restoreHash=useRef<(h:AtlasHandle)=>void>(()=>{})
   const navigation=useRef<NavigationEntry|null>(null)
   const restoredHistoryHash=useRef<string|null>(null)
-  const monthly=useLocalJson<ClimateSeries>('data/learning-climate.json')
-  const human=useLocalJson<HumanData>(layers.religion?'data/learning-human.json':null)
-  const languageMeta=useLocalJson<LanguageAreaMeta>(layers.language&&thematicModes(thematic).languageMode!=='overview'?'data/language-areas-meta.json':null)
+  const monthly=useLocalJson<ClimateSeries>(mapStarted?'data/learning-climate.json':null)
+  const human=useLocalJson<HumanData>(mapStarted&&layers.religion?'data/learning-human.json':null)
+  const languageMeta=useLocalJson<LanguageAreaMeta>(mapStarted&&layers.language&&thematicModes(thematic).languageMode!=='overview'?'data/language-areas-meta.json':null)
   const [languageQuery,setLanguageQuery]=useState('')
   const referenceIndex=useMemo(()=>createSearchIndex((monthly.data?.places||[]).map(climateReference),p=>[p.name]),[monthly.data])
   const featureIndex=useMemo(()=>createSearchIndex(catalog.filter(p=>!matchCard(p)&&(!p.id.startsWith('language-')||(thematicModes(thematic).languageMode==='points'?!p.id.startsWith('language-area-'):p.id.startsWith('language-area-')))),p=>[p.name,p.nameEn,...(p.aliases||[])]),[catalog,thematic.languageMode])
@@ -218,8 +233,24 @@ export default function App(){
   navigation.current={topicId:activeTopic,library:topicLibrary,view,topicScope,topicGroup,topicQuery,selection,trail:memberTrail,layers,camera,thematic,opacity,display,panelOpen,tab,studyScreen,readerTopicId,readerReturn,readerProgress:readerTopicId?readingProgress[readerTopicId]:undefined,mobileLayers,sheet}
 
   useEffect(()=>{
+    const path=studyScreen==='article'&&readerTopicId?topicPath(readerTopicId):studyScreen==='library'?topicsPath:homePath
+    if(location.pathname!==path){
+      history.replaceState(history.state,'',path)
+      hashApplied.current='';setUrlHash('')
+    }
+    const canonical = document.querySelector<HTMLLinkElement>('link[rel=canonical]')
+    const pageUrl = new URL(path, canonical?.href || location.href).href
+    const pageTopic=studyScreen==='article'?readerTopic:null
+    let schema=document.querySelector<HTMLScriptElement>('#topic-structured-data')
+    if(pageTopic){
+      if(!schema){schema=document.createElement('script');schema.id='topic-structured-data';schema.type='application/ld+json';document.head.append(schema)}
+      schema.textContent=JSON.stringify({'@context':'https://schema.org','@type':'Article',headline:pageTopic.title,description:pageTopic.description,inLanguage:'zh-CN',mainEntityOfPage:pageUrl,author:{'@type':'Organization',name:'山河图'}})
+    }else schema?.remove()
+    document.title=pageTopic?`${pageTopic.title} · 山河图`:studyScreen==='library'?'学主题 · 山河图':'山河图 · Terra Atlas'
+    if (canonical) canonical.href = pageUrl
+    document.querySelector('meta[name=description]')?.setAttribute('content',pageTopic?.description||'山河图 Terra Atlas：自由探索中国与世界的自然、人文地理。')
     // A fresh share link must finish applying before its initial state is saved.
-    if(location.hash&&hashApplied.current!==location.hash)return
+    if(studyScreen==='map'&&location.hash&&hashApplied.current!==location.hash)return
     history.replaceState({...history.state,terraAtlasEntryId:history.state?.terraAtlasEntryId||newNavigationEntryId(),terraAtlasUrl:location.href,terraAtlasNavigation:navigation.current},'')
   },[activeTopic,topicLibrary,view,topicScope,topicGroup,topicQuery,selection,memberTrail,layers,camera,thematic,opacity,display,panelOpen,tab,studyScreen,readerTopicId,readerReturn,mobileLayers,sheet])
   useEffect(()=>{
@@ -227,16 +258,17 @@ export default function App(){
       const saved=event.state?.terraAtlasNavigation as NavigationEntry|undefined
       if(!saved||!validCamera(saved.camera))return
       const restored=topicForSelection(saved.topicId)
+      const restoredSelection=rehydrateSelection(saved.selection)
       const readingRoute=saved.readerTopicId?resolveTopicReference(saved.readerTopicId,saved.readerProgress?.sectionId):null
       setStudyScreen(saved.studyScreen||'map');setReaderTopicId(readingRoute?.topicId||null);setReaderReturn(!!saved.readerReturn)
       if(saved.readerTopicId&&saved.readerProgress)setReadingProgress(current=>migrateReadingProgress({...current,[saved.readerTopicId!]:saved.readerProgress!}))
       restoredHistoryHash.current=location.hash;hashApplied.current=location.hash
       setThematic(saved.thematic);setOpacity(saved.opacity);setDisplay(saved.display)
-      cancelSharedPlace();setActiveTopic(restored?.id||null);setTopicLibrary(saved.library);setView(saved.view);setSelection(saved.selection);setMemberTrail(saved.trail||[])
+      cancelSharedPlace();setActiveTopic(restored?.id||null);setTopicLibrary(saved.library);setView(saved.view);setSelection(restoredSelection);setMemberTrail(rehydrateSelectionTrail(saved.trail))
       setTopicScope(saved.topicScope||'all');setTopicGroup(saved.topicGroup||'all');setTopicQuery(saved.topicQuery||'')
       setLayers(topicLayers(saved.layers,restored));setTab(saved.tab==='explore'?'explore':saved.tab==='saved'?'saved':'topics');setExplorerOpen(true);setPanelOpen(saved.panelOpen??true);setSheet(saved.sheet||'half');setProbe(null);setCompareOpen(false);setSearchOpen(false);setMobileLayers(saved.mobileLayers??(saved.tab==='explore'?!(saved.panelOpen??false):saved.tab==='saved'||saved.library&&saved.tab==='topics'))
       void atlas.current?.showRelations(restored?topicMapMembers(restored):[],{fit:false})
-      atlas.current?.reframe(saved.selection,saved.camera,saved.display)
+      atlas.current?.reframe(restoredSelection,saved.camera,saved.display)
     }
     window.addEventListener('popstate',restore);return()=>window.removeEventListener('popstate',restore)
   },[])
@@ -303,8 +335,8 @@ export default function App(){
     const trap=(e:KeyboardEvent)=>{if(e.key!=='Tab')return;const c=controls();if(e.shiftKey&&document.activeElement===c[0]){e.preventDefault();c.at(-1)?.focus()}else if(!e.shiftKey&&document.activeElement===c.at(-1)){e.preventDefault();c[0]?.focus()}}
     document.addEventListener('keydown',trap);return()=>{document.removeEventListener('keydown',trap);previous?.focus()}
   },[modal,article])
-  useEffect(()=>{const restore=()=>{if(restoredHistoryHash.current===location.hash){restoredHistoryHash.current=null;return}restoredHistoryHash.current=null;cancelSharedPlace();hashApplied.current='';setUrlHash(location.hash);if(atlas.current)restoreHash.current(atlas.current)};window.addEventListener('hashchange',restore);return()=>{sharedPlaceRequest.current++;pendingPickIdRequest.current++;window.removeEventListener('hashchange',restore)}},[])
-  useEffect(()=>{if(atlas.current&&location.hash&&hashApplied.current!==location.hash)applyHash(atlas.current)},[urlHash])
+  useEffect(()=>{const restore=()=>{if(topicRoute(location.pathname)){const chapter=location.hash.slice(1);if(chapter&&readerTopicId){reportReading(readerTopicId,{sectionId:chapter,offset:0,updatedAt:Date.now()});setReaderSession(value=>value+1)}return}if(restoredHistoryHash.current===location.hash){restoredHistoryHash.current=null;return}restoredHistoryHash.current=null;cancelSharedPlace();hashApplied.current='';setUrlHash(location.hash);if(atlas.current)restoreHash.current(atlas.current)};window.addEventListener('hashchange',restore);return()=>{sharedPlaceRequest.current++;pendingPickIdRequest.current++;window.removeEventListener('hashchange',restore)}},[readerTopicId])
+  useEffect(()=>{if(studyScreen==='map'&&atlas.current&&location.hash&&hashApplied.current!==location.hash)applyHash(atlas.current)},[urlHash])
   useEffect(()=>{if(panelOpen&&selection&&!landscapeLayout)atlas.current?.reframe(selection)},[sheet,panelOpen,desktopExplorerCollapsed,attributionHeight,landscapeLayout])
 
   function cancelSharedPlace(){setMapSettingsOpen(false);sharedPlaceRequest.current++;pendingPickIdRequest.current++;retrySharedPlace.current=null;setSharedPlaceError('')}
@@ -447,13 +479,19 @@ export default function App(){
     if(importInput.current)importInput.current.value=''
   }
   async function share(){
+    if(studyScreen==='article'&&readerTopicId){
+      const section=pendingPreferences.current.readingProgress[readerTopicId]?.sectionId
+      const url=location.origin+topicPath(readerTopicId)+(section&&section!=='introduction'?'#'+section:'')
+      try{await navigator.clipboard.writeText(url);setToast('阅读链接已复制')}catch{setToast('分享地址：'+url)}
+      return
+    }
     const center=atlas.current?.map.getCenter().toArray()||camera.center,zoom=atlas.current?.map.getZoom()??camera.zoom
     const bearing=atlas.current?.map.getBearing()??camera.bearing??0,pitch=display.terrain3d?(atlas.current?.map.getPitch()??camera.pitch??0):0
     const params=new URLSearchParams({lng:center[0].toFixed(4),lat:center[1].toFixed(4),z:zoom.toFixed(2),bearing:bearing.toFixed(2),pitch:pitch.toFixed(2),basemap:display.basemap,terrain3d:display.terrain3d?'1':'0',view,layers:Object.keys(layers).filter(k=>layers[k as LayerKey]).join(','),opacity:String(opacity),religion:thematic.religion,language:thematic.language,humanOpacity:String(thematic.opacity),climateMode:modes.climateMode,languageMode:modes.languageMode,languageId:modes.languageId})
     params.set('topic',activeTopic||'')
     if(studyScreen==='article'&&readerTopicId){params.set('read',readerTopicId);if(pendingPreferences.current.readingProgress[readerTopicId])params.set('chapter',pendingPreferences.current.readingProgress[readerTopicId].sectionId)}
     if(selection){params.set('place',selection.card.id);params.set('plng',String(selection.card.coordinates[0]));params.set('plat',String(selection.card.coordinates[1]));if(selection.featureId){params.set('feature',selection.featureId);params.set('source',selection.source||'')}if(selection.subtype)params.set('subtype',selection.subtype)}
-    const url=location.origin+location.pathname+'#'+params.toString()
+    const url=location.origin+homePath+'#'+params.toString()
     try{await navigator.clipboard.writeText(url);setToast('探索链接已复制')}catch{location.hash=params.toString();setToast('链接已写入地址栏，可直接复制网址')}
   }
   function applyHash(handle:AtlasHandle){
@@ -529,7 +567,7 @@ export default function App(){
   restoreHash.current=applyHash
   function ready(handle:AtlasHandle){
     atlas.current=handle;handle.map.on('movestart',event=>{if(event.originalEvent)pendingPickIdRequest.current++})
-    if(location.hash&&hashApplied.current!==location.hash)applyHash(handle)
+    if(studyScreen==='map'&&location.hash&&hashApplied.current!==location.hash)applyHash(handle)
     else{
       if(topic)void handle.showRelations(topicMapMembers(topic),{fit:false})
       if(selection)handle.reframe(selection,camera,display)
@@ -693,6 +731,7 @@ export default function App(){
   },[mobileLayout,mobileLayers,mapSettingsOpen,selection,compareOpen,probe,practice,mode])
   const detail=selection&&panelOpen&&!compareOpen&&!probe?<KnowledgePanel embedded={!!topic&&tab!=='explore'} selection={selection} favorite={favorites.includes(selection.card.id)} countryId={countryFor(selection)} sheet={sheet} onSheet={changeSheet} onClose={()=>topic&&tab!=='explore'?topicOverview():setPanelOpen(false)} onFavorite={favorite} onLocate={()=>{if(mobileLayout)changeSheet('peek');requestAnimationFrame(()=>atlas.current?.locate(selection))}} onShare={()=>void share()} onCompare={()=>openCompare(selection.card.id)} onPick={pickId} onRelations={relations} onClimate={setArticle} onReadTopic={id=>{const entry=topicForSelection(id);if(entry)openReading(entry)}}/>:null
 
+  const recentReading=Object.entries(readingProgress).sort((a,b)=>b[1].updatedAt-a[1].updatedAt).map(([id])=>topicForSelection(id)).find(Boolean)
   const topicControls=<div className="topic-map-controls">
     {layers.climate&&<div className="thematic-control"><label>气候展示<select aria-label="气候展示方式" value={modes.climateMode} onChange={event=>setThematic(value=>({...value,climateMode:event.target.value as 'groups'|'types'}))}><option value="groups">A–E 五大类</option><option value="types">详细气候类型</option></select></label></div>}
 {layers.climate&&<div className="opacity-control"><label htmlFor="climate-opacity">气候透明度 <span>{Math.round(opacity*100)}%</span></label><input id="climate-opacity" type="range" min=".15" max=".85" step=".05" value={opacity} onChange={e=>setOpacity(Number(e.target.value))}/><button className="text-button" onClick={()=>setModal('climate')}>查看 30 类气候图例 <ArrowRight size={13}/></button></div>}
@@ -733,7 +772,7 @@ export default function App(){
   return <div className="app" data-study-screen={studyScreen} style={{'--map-attribution-height':`${attributionHeight}px`} as CSSProperties} data-map-status={status} data-detail-status={onlineStatus.detail} data-terrain-status={onlineStatus.terrain}>
     <header className="header">
       <button className="brand" onClick={goHome} aria-label="山河图首页"><span className="brand-mark"><Mountain size={25} strokeWidth={1.4}/><span/></span><span><strong>山河图</strong><small>TERRA ATLAS</small></span></button>
-      <nav className="study-navigation" aria-label="浏览方式"><button aria-current={studyScreen==='map'?'page':undefined} onClick={showMapScreen}>看地图</button><button aria-current={studyScreen!=='map'?'page':undefined} onClick={showTopicLibrary}>学主题</button></nav>
+      <nav className="study-navigation" aria-label="浏览方式"><button aria-current={studyScreen==='map'?'page':undefined} onClick={showMapScreen}>看地图</button><a href={topicsPath} aria-current={studyScreen!=='map'?'page':undefined} onClick={event=>followTopicLink(event,showTopicLibrary)}>学主题</a></nav>
       <div className="map-view-actions" role="group" aria-label="地图定位"><button onClick={()=>focusMap('china')} title="将地图定位到中国"><MapPin size={14}/>定位中国</button><button onClick={()=>focusMap('world')} title="查看全球地图"><Globe2 size={14}/>全球视野</button></div>
       <div className={`search-box ${mobileLayout&&searchOpen?'mobile-search-open':''}`} ref={searchBox} onBlur={event=>{if(event.relatedTarget&&!event.currentTarget.contains(event.relatedTarget))setSearchOpen(false)}}><Search size={18}/><input ref={input} role="combobox" aria-autocomplete="list" aria-expanded={searchOpen&&!!query.trim()} aria-controls={searchOpen&&query.trim()?"place-search-results":undefined} aria-activedescendant={searchOpen&&query.trim()&&allResults[searchIndex]?`place-result-${searchIndex}`:undefined} aria-label="搜索地理对象" placeholder={mobileLayout&&!searchOpen?'搜索':'搜索地点、气候、人口、语言…'} value={query} onFocus={()=>{setSearchOpen(true);setMoreOpen(false)}} onChange={e=>{setQuery(e.target.value);setSearchOpen(true);setMoreOpen(false);setSearchIndex(0)}} onKeyDown={e=>{if(e.key==='ArrowDown'){e.preventDefault();setSearchIndex(i=>Math.max(0,Math.min(i+1,allResults.length-1)))}if(e.key==='ArrowUp'){e.preventDefault();setSearchIndex(i=>Math.max(0,i-1))}if(e.key==='Enter'&&allResults[searchIndex])pickResult(allResults[searchIndex])}}/>{query?<button className="icon-button search-clear" aria-label="清空搜索" onClick={()=>{setQuery('');input.current?.focus()}}><X size={16}/></button>:<kbd>⌘ K</kbd>}{mobileLayout&&searchOpen&&<button className="icon-button search-close" aria-label="关闭搜索" onClick={()=>{setSearchOpen(false);moreTrigger.current?.focus({preventScroll:true})}}><ChevronLeft size={20}/></button>}
         {searchOpen&&query.trim()&&<div className="search-results" id="place-search-results" role="listbox" aria-label="搜索结果">{allResults.length?allResults.map((r,i)=><button key={r.id} id={`place-result-${i}`} role="option" aria-selected={searchIndex===i} tabIndex={-1} onMouseDown={event=>event.preventDefault()} className={searchIndex===i?'focused':''} onClick={()=>pickResult(r)}>{mapRepresentation(r)==='area'?<Layers size={16}/>:mapRepresentation(r)==='line'?<Waves size={16}/>:<MapPin size={16}/>}<span><strong>{r.name}</strong><small>{representationLabels[mapRepresentation(r)]} · {'summary' in r?categoryInfo[(r as Knowledge).category].name:'地理数据'} · {String('englishName' in r?r.englishName:r.nameEn)}</small></span><ArrowRight size={15}/></button>):<div className="empty-result"><Search size={22}/><strong>没有找到“{query}”</strong><span>试试中文、英文名称或主题，如“昆仑山”“人口”“Alps”。</span></div>}<div className="search-foot">精选知识与本地地理索引 · ↑ ↓ 选择，Enter 定位</div></div>}
@@ -751,7 +790,7 @@ export default function App(){
       </div>
     </header>
     <main inert={studyScreen!=='map'} className="map-stage" data-reading-sheet={readingSheetOpen&&!mapSettingsOpen?sheet:undefined} data-side-panel={sidePanel} data-map-settings={mapSettingsOpen||undefined}>
-      <AtlasMap appearance={resolvedAppearance} key={retry} topic={topic} layers={layers} opacity={opacity} camera={initial.camera} selection={selection} thematic={thematic} display={display} onOnlineStatus={setOnlineStatus} mode={mode} onSelect={s=>pick(s,false)} onCamera={setCamera} onReady={ready} onStatus={setStatus} onCatalog={onCatalog} onVisible={setBounds} onProbe={p=>{cancelSharedPlace();setProbe(p);setPanelOpen(false);setCompareOpen(false);setMobileLayers(false)}} onMeasurement={setMeasurement}/>
+      <Suspense fallback={null}>{mapStarted&&<AtlasMap appearance={resolvedAppearance} key={retry} topic={topic} layers={layers} opacity={opacity} camera={initial.camera} selection={selection} thematic={thematic} display={display} onOnlineStatus={setOnlineStatus} mode={mode} onSelect={s=>pick(s,false)} onCamera={setCamera} onReady={ready} onStatus={setStatus} onCatalog={onCatalog} onVisible={setBounds} onProbe={p=>{cancelSharedPlace();setProbe(p);setPanelOpen(false);setCompareOpen(false);setMobileLayers(false)}} onMeasurement={setMeasurement}/>}</Suspense>
       <div className="map-vignette"/>
       <aside id="explorer-panel" ref={topicPanelRef} inert={mobileLayout&&mapSettingsOpen} className={['explorer','panel',mobileLayers?'mobile-open':'',topicReaderOpen?'topic-active mobile-reading-sheet sheet-'+sheet:'',desktopExplorerCollapsed?'desktop-collapsed':''].join(' ')} aria-label="探索与主题">
         {topicReaderOpen&&<MobileSheetHandle sheet={sheet} title={selection?.card.name||topic!.title} panelRef={topicPanelRef} scrollRef={topicScrollRef} onSheet={changeSheet} contentId="topic-reading-content"/>}
@@ -759,7 +798,7 @@ export default function App(){
         {mobileLayers&&mapStatus}
         <div className="explorer-scroll" ref={topicScrollRef} id="topic-reading-content" inert={mobileLayout&&topicReaderOpen&&sheet==='peek'}>
           {tab==='topics'&&studyScreen==='map'&&renderTopicPanel(topicLibrary)}
-          {tab==='explore'&&<div className="discovery-panel">
+          {tab==='explore'&&<div className="discovery-panel">{recentReading&&<a className="resume-reading" href={topicPath(recentReading.id)} onClick={event=>followTopicLink(event,()=>openReading(recentReading))}><BookOpen size={16}/><span>继续上次阅读 · {recentReading.title}</span><ArrowRight size={14}/></a>}
             <div className="explorer-intro"><p>不用选定主题，从一个感兴趣的地方出发。</p></div>
             <div className="discovery-scope" role="group" aria-label="随便看看范围">{(['china','world'] as const).map(scope=><button key={scope} aria-pressed={view===scope} onClick={()=>{setView(scope);setDiscoveryBatch(0)}}>{scope==='china'?'中国':'全球'}</button>)}</div>
             {discoveries}
@@ -787,6 +826,7 @@ export default function App(){
       {probe&&<Suspense fallback={<p className="map-status" role="status">正在加载点查…</p>}><ProbePanel probe={probe} atlas={atlas.current} onClose={()=>setProbe(null)} onClimate={probeClimate} onPlace={pickId}/></Suspense>}
       {compareOpen&&<Suspense fallback={<p className="map-status" role="status">正在加载对比…</p>}><ComparePanel ids={compareIds} additionalPlaces={compareSelections.map(place=>place.card)} onChange={setCompareIds} onClose={()=>{setCompareOpen(false);setPanelOpen(compareReturnPanel.current&&(!!selection||!!topic))}} onLocate={card=>{cancelSharedPlace();compareReturnPanel.current=true;const place=compareSelections.find(place=>place.card.id===card.id)||{card};setSelection(place);atlas.current?.locate(place)}}/></Suspense>}
       {practice&&practiceCard&&<aside className="practice-panel panel" aria-label="探索回顾"><div className="knowledge-top"><span>回顾 {practice.index+1} / {practice.ids.length}</span><button className="icon-button" aria-label="退出回顾" onClick={()=>setPractice(null)}><X size={17}/></button></div><div><h2>{practiceCard.name}</h2><p>{practiceCard.questions?.[0]||'它在哪里？它与周围地形、气候或人的生活有什么联系？'}</p>{practice.revealed&&<p className="practice-answer">{practiceCard.sections?.[0]?.body||practiceCard.formation}</p>}<button className="secondary-button" onClick={()=>{setPractice(p=>p?{...p,revealed:true}:p);atlas.current?.locate({card:practiceCard})}}>展开解释并在地图上看</button><button className="text-button" onClick={()=>practice.index+1<practice.ids.length?setPractice(p=>p?{...p,index:p.index+1,revealed:false}:p):(setPractice(null),setToast('回顾完成，可以继续探索'))}>{practice.index+1<practice.ids.length?'下一处':'完成回顾'}<ArrowRight size={14}/></button></div></aside>}
+      {mobileLayout&&studyScreen==='map'&&tab==='explore'&&!mobileLayers&&!readingSheetOpen&&!mapSettingsOpen&&recentReading&&<a className="home-reading-resume panel" href={topicPath(recentReading.id)} onClick={event=>followTopicLink(event,()=>openReading(recentReading))}><BookOpen size={16}/><span>继续上次阅读 · {recentReading.title}</span><ArrowRight size={14}/></a>}
       {mobileLayout&&!mapSettingsOpen&&!mobileLayers&&!readingSheetOpen&&!compareOpen&&!probe&&!practice&&mode==='explore'&&<button ref={topicTrigger} className="topic-launch panel" aria-label="打开主题探索" aria-controls="explorer-panel" onClick={()=>tab==='explore'?showDiscoveries():topic?resumeTopic():showTopicLibrary()}><Compass size={18}/><span>{tab==='explore'?'继续随便看看':topic?'继续探索 · '+topic.title:'探索地图'}</span><ArrowRight size={15}/></button>}
       {mapSettingsOpen&&<aside id="map-layer-panel" ref={layerPanelRef} className="layer-panel panel" aria-labelledby="map-layer-heading">
         <div className="layer-panel-heading"><div><Layers size={17}/><h2 id="map-layer-heading">图层与底图</h2></div><button className="icon-button" aria-label="关闭图层面板" onClick={closeMapSettings}><X size={18}/></button></div>
@@ -821,7 +861,7 @@ export default function App(){
     </main>
     {studyScreen==='library'&&<section className="study-library" aria-label="学习主题目录">{renderTopicPanel(true)}</section>}
     {studyScreen!=='map'&&toast&&<div className="toast panel reading-toast" role="status"><Check size={15}/>{toast}</div>}
-    {readerTopic&&<Suspense fallback={studyScreen==='article'?<section className="topic-reading-page"><p className="reading-loading" role="status">正在打开专题…</p></section>:null}><TopicReader key={readerTopic.id+readerSession} topic={readerTopic} visible={studyScreen==='article'} progress={readingProgress[readerTopic.id]} saved={savedTopics.includes(readerTopic.id)} onProgress={reportReading} onBack={()=>readingMap()} onLibrary={showTopicLibrary} onMap={readingMap} onRead={openReading} onSave={saveTopic} onShare={()=>void share()}/></Suspense>}
+    {readerTopic&&<Suspense fallback={studyScreen==='article'?<section className="topic-reading-page"><p className="reading-loading" role="status">正在打开专题…</p></section>:null}><TopicReader key={readerTopic.id+readerSession} topic={readerTopic} initialArticle={initialArticle?.id===readerTopic.id?initialArticle:undefined} visible={studyScreen==='article'} progress={readingProgress[readerTopic.id]} saved={savedTopics.includes(readerTopic.id)} onProgress={reportReading} onBack={()=>readingMap()} onLibrary={showTopicLibrary} onMap={readingMap} onRead={openReading} onSave={saveTopic} onShare={()=>void share()}/></Suspense>}
     {(modal||article)&&<div className="modal-backdrop" onClick={()=>{setModal(null);setArticle(null)}}><div className="modal panel" role="dialog" aria-modal="true" aria-labelledby="modal-title" onClick={e=>e.stopPropagation()}><button className="modal-close icon-button" aria-label="关闭对话框" onClick={()=>{setModal(null);setArticle(null)}}><X size={20}/></button>
       {note?<><span className="eyebrow">CLIMATE NOTE · {note.code}</span><h2 id="modal-title">{note.title}</h2><p>{note.description}</p><h3>季节变化</h3><p>{note.seasons}</p><h3>景观与生活</h3><p>{note.landscape}</p>{note.mediaIds?.[0]&&<ReadingFigure id={note.mediaIds[0]}/ >}{note.sections?.map(section=><section key={section.title}><h3>{section.title}</h3><p>{section.body}</p></section>)}<button className="secondary-button" onClick={()=>{setArticle(null);setModal(null);openReading(topicForSelection('map-climate')!)}}>阅读完整气候专题</button><h3>典型区域参考</h3><ul>{note.examples.map((e,i)=><li key={i}>{e}</li>)}</ul><h3>观察问题</h3><ul>{note.questions.map((q,i)=><li key={i}>{q}</li>)}</ul><div className="source-links">{note.sources.map(s=><a key={s.url} href={s.url} target="_blank" rel="noopener noreferrer">{s.title} ↗</a>)}</div><button className="secondary-button" onClick={()=>{setArticle(null);setModal('climate')}}>返回气候图例</button></>:modal==='climate'?<><span className="eyebrow">KÖPPEN–GEIGER · V3</span><h2 id="modal-title">气候，也有自己的地图</h2><p className="modal-lead">1991–2020长期气候 · 点击类型阅读详细笔记</p><p>第一字母表示A–E大组，后续字母描述降水季节性和温度特点。分类图采用0.5°格网，边界是概化表达，不能视为实地的突变界线。C/D按最冷月0°C分开，无独立H类。</p><div className="full-climate-legend">{families.map(f=><section key={f.id}><h3>{f.id.toUpperCase()} · {f.name}<small>{f.note}</small></h3>{climateLegend.filter(c=>c.family.toLowerCase()===f.id).map(c=><button key={c.code} onClick={()=>setArticle(c.code)}><i style={{background:c.color}}/><strong>{c.code}</strong><span>{c.name}</span>{!c.presentAtResolution&&<small>此尺度未出现</small>}<ArrowRight size={12}/></button>)}</section>)}</div></>:<><span className="eyebrow">ABOUT THIS ATLAS</span><h2 id="modal-title">山河图 · Terra Atlas</h2><p className="modal-lead">自由探索中国与世界的自然、人文地理。</p><p>现有{knowledge.length}张精选知识卡、30种气候详细笔记和{topics.length}个可单选的地图主题。参考义务教育地理主要主题组织，保持自由探索；知识为原创中文概述，附可核对来源。</p><h3>专题图文</h3><p>每个主题都有简要地图介绍和独立图文阅读。照片注明拍摄地点与许可，原创示意图用于讲解过程，不表示实测地形。阅读位置、专题收藏可随探索记录导出。</p><h3>自然地理与气候</h3><ul><li><a href="https://www.naturalearthdata.com/" target="_blank" rel="noopener noreferrer">Natural Earth</a>：公共领域。国家与陆地1:5000 万，自然区域、河湖和山峰1:1000 万；自然区域多为制图标注范围。省级范围采用1:1000 万参考数据。</li><li>十四座8000米主峰名录参考UIAA，定位采用有版本记录的Wikidata坐标（CC0）。山峰点不代表山体范围，地图高程采样不用于峰顶排名。</li><li>全球地形底图为土地覆盖配色与阴影，原生瓦片到4级；珠峰与富士山区域另提供Mapzen/Tilezen局部高程阴影，主要来自USGS SRTM/GMTED及NOAA ETOPO1。高程点查按真实像元读取，不代表山峰正式海拔或全球高精度地形。</li><li><a href="https://www.gloh2o.org/koppen/" target="_blank" rel="noopener noreferrer">Beck V3</a>：CC BY 4.0。分类和月资料使用1991–2020、0.5°，赤道附近约55公里；月表为长期格网估计，不是站点实测或实时天气。</li></ul><h3>辅助图层资料</h3><p>城市来自Natural Earth固定版本，首都标记按来源记录；流域采用BasinATLAS v1.0第3级汇水分区（Linke等，2019；CC BY 4.0），含沿海汇水分组，北纬60°以北资料较粗，南极未覆盖；板块边界来自USGS公开服务，归属Bird（2003）PB2002。三者均用于区域尺度定位和比较。</p><h3>在线详细地图与三维地形</h3><p>默认使用本站提供的自然底图与学习资料。在线详细地图与三维地形可按需要开启，浏览器仅请求当前视野内的地图与高程；网络不可用时，可继续使用基础地图。在线详细地图补充城镇、道路与地名，缺少中文名称时优先使用英文，再使用当地名称。</p><ul><li>详细地图由<a href="https://openfreemap.org/" target="_blank" rel="noopener noreferrer">OpenFreeMap</a>提供，使用<a href="https://openmaptiles.org/" target="_blank" rel="noopener noreferrer">OpenMapTiles</a>与<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>数据；OpenStreetMap数据采用ODbL许可。</li><li>在线三维高程来自<a href="https://mapterhorn.com/" target="_blank" rel="noopener noreferrer">Mapterhorn</a>，汇集多种来源的高程数据。不同地区的精度和更新时间可能不同，山体用于观察地形，不代表山峰正式海拔；现有高程点查仍使用本站的局部数据。</li></ul><h3>人文分布的读法</h3><ul><li>人口：JRC GHS-POP R2023A，2020居住人口估计；按真实人口格网求和聚合至0.5°，密度以完整格网面积计算，包含格网内水域。缺失保留未知，不能当作0。</li><li>宗教：公开历史国家资料，年份、分母与口径各不相同。国家着色表示已报告类别或比例，不能推断某个地方或个人的宗教。非全体人口口径不参与比例着色。</li><li>语言：默认国家概览使用Unicode CLDR 48的主要通用语言资料，国家色面不表示地方母语边界。地方视图中汉语方言按IANA宏语言归属统一着色。Glottography v2.0（CC BY 4.0）提供2007年《世界语言地图集》的语言使用参考范围，部分地区与多语言重叠欠表示；名称与语系按真实Glottocode连接Glottolog 5.3。可切换语系概览或Glottolog参考点。颜色不表示人数、使用者比例或官方地位，空白不表示没有语言。国家语言概览另使用有时期说明的历史资料。</li><li>国家人口与城镇人口占比：世界银行WDI、2024年；城镇定义因国家而异。</li></ul><h3>我的探索记录</h3><p>收藏、专题阅读进度、主题集合和保存视图只存于当前浏览器，不上传。当前主题、底图选择、三维地形与地图角度会随视图保存。导出／导入文件可迁移记录。核心地图与知识由本站提供；在线地图与高程需要外部网络。</p><div className="source-links"><a href={import.meta.env.BASE_URL+'data/sources.json'} target="_blank" rel="noopener noreferrer">自然地图来源 ↗</a><a href={import.meta.env.BASE_URL+'data/content-sources.json'} target="_blank" rel="noopener noreferrer">知识参考清单 ↗</a><a href={import.meta.env.BASE_URL+'data/auxiliary-sources.json'} target="_blank" rel="noopener noreferrer">辅助图层来源 ↗</a><a href={import.meta.env.BASE_URL+'data/reading-sources.json'} target="_blank" rel="noopener noreferrer">专题与图片来源 ↗</a><a href={import.meta.env.BASE_URL+'data/topic-intro-review.json'} target="_blank" rel="noopener noreferrer">主题介绍审查 ↗</a><a href={import.meta.env.BASE_URL+'data/theme-sources.json'} target="_blank" rel="noopener noreferrer">主题与山峰来源 ↗</a><a href={import.meta.env.BASE_URL+'data/online-map-sources.json'} target="_blank" rel="noopener noreferrer">在线地图来源 ↗</a><a href={import.meta.env.BASE_URL+'data/learning-data-sources.json'} target="_blank" rel="noopener noreferrer">新增数据与处理 ↗</a><a href={import.meta.env.BASE_URL+'data/language-overview-sources.json'} target="_blank" rel="noopener noreferrer">世界语言概览来源 ↗</a><a href={import.meta.env.BASE_URL+'data/language-area-sources.json'} target="_blank" rel="noopener noreferrer">语言区域来源 ↗</a><a href={import.meta.env.BASE_URL+'data/country-context-sources.json'} target="_blank" rel="noopener noreferrer">国家概览来源 ↗</a><a href={import.meta.env.BASE_URL+'elevation/source.json'} target="_blank" rel="noopener noreferrer">局部高程来源 ↗</a><a href={import.meta.env.BASE_URL+'third-party-notices.txt'} target="_blank" rel="noopener noreferrer">第三方声明 ↗</a><a href={import.meta.env.BASE_URL+'licenses/LICENSE-CONTENT.md'} target="_blank" rel="noopener noreferrer">项目许可 ↗</a></div><p className="modal-note">适合全球与区域尺度学习。地图经过制图概化，不用于导航、精确测量或判断边界。</p></>}
     </div></div>}

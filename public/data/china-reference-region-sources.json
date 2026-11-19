@@ -28,7 +28,7 @@
     },
     {
       "path": "public/data/countries.geojson",
-      "sha256": "2a39cd564c4b0310c4305b9c174724c91a10ce3fd4c7dea01890f1bbbad12db6",
+      "sha256": "09373a29de9cbd8fa4fabb01ac9efc73eb886bfa8abd72db5fe11b52815e9a6a",
       "featureIds": [
         "country-chn",
         "country-twn",
@@ -40,7 +40,7 @@
   ],
   "output": {
     "path": "public/data/china-reference-regions.geojson",
-    "sha256": "180383ad2612c0891fabc59fa09685601cd88f7441e2149564a2699183541bc1",
+    "sha256": "2541069bc237abe53fc394631f51194781e56b4e33b5b71ab0cbd5bebfb3a09e",
     "features": 4
   },
   "georeferencing": {

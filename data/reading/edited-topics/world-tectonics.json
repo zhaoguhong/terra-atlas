@@ -1,8 +1,8 @@
 {
   "id": "world-tectonics",
   "title": "板块、构造与火山",
-  "introduction": "地球表面的岩石圈并不是完整的一层，而是分成多个缓慢运动的板块。板块上既有大陆，也有海洋；相邻板块分离、汇聚或水平错动，使岩层弯曲、断裂，形成山地、海沟与裂谷。有些地区的岩浆还能到达地面，建起火山。喜马拉雅、安第斯、冰岛和夏威夷，分别保存了这些地下过程改变地表的不同方式。",
-  "updatedAt": "2026-11-12",
+  "introduction": "喜马拉雅的峰顶在升高与侵蚀中变化，东非裂谷有些地块相对两侧沉了下去，圣安德烈亚斯断层两边的地面则主要向侧面错开。三处都和板块运动有关。看它们为什么留下不同景观，要把地表想成许多厚薄不一、能相对移动的岩石板块，再观察相邻的两块怎样靠近、拉开或擦过。",
+  "updatedAt": "2026-11-19",
   "parts": [
     {
       "id": "world-tectonics",
@@ -79,7 +79,7 @@
       "id": "part-world-tectonics",
       "title": "板块、地震与火山",
       "paragraphs": [
-        "板块的相对运动，决定边界附近承受怎样的挤压、拉伸或错动。张裂能创造新的空间，汇聚让地壳缩短或使一块板块沉到另一块之下，水平错动则使两侧岩块彼此滑过。大范围的山地、海沟、地震和火山分布，都与这些关系密切相连。"
+        "一条板块边界可以穿过海底，也可以藏在陆地内部。它的两侧是地球外部较坚硬的岩石圈，包括地壳和上地幔最上部。一个板块能同时托着海底和大陆，因此沿海岸线走，未必就在沿板块边界走。"
       ],
       "partId": "world-tectonics"
     },
@@ -87,19 +87,22 @@
       "id": "world-tectonics-section-1",
       "title": "板块是怎样运动的",
       "paragraphs": [
-        "板块是岩石圈中的大块岩体，可以同时承载大陆和海洋，大陆边缘因而未必是板块边界。相邻板块有的彼此远离，有的相向运动，也有的沿边界水平错动。",
-        "这些运动虽然缓慢，长期累积却能重塑大陆。冰岛与东非裂谷显示张裂留下的谷地和断层，喜马拉雅与安第斯显示汇聚形成的山地，圣安德烈亚斯断层则显示水平错动对地面的改造。"
+        "给两块相邻板块各画一支箭头，先看两支箭头的相对方向。相向移动时，两侧的地壳可能挤在一起，也可能有一侧向下俯冲。相背移动会拉伸岩石圈。沿边界相互擦过，地面主要发生水平方向的错动。图中的几条线概括了这些关系，实际变形有时分散在很宽的地带。"
       ],
       "partId": "world-tectonics",
       "mediaIds": [
         "diagram-plates"
-      ]
+      ],
+      "mediaAfterParagraph": {
+        "diagram-plates": 0
+      },
+      "continuation": true
     },
     {
       "id": "world-tectonics-section-2",
       "title": "同样汇聚，为什么结果不同",
       "paragraphs": [
-        "板块汇聚时，较重的大洋岩石圈可以沉入另一板块之下，这一过程称为俯冲，常伴随海沟、地震带和一些火山带。大陆相遇时，较轻的大陆地壳不易像大洋板块那样整体下沉，挤压更多表现为缩短、增厚和抬升。",
+        "大洋一侧的岩石圈能够向相邻板块下面俯冲，板块弯下去的附近常有海沟。下沉板块带入深处的水分可以促进上方岩石部分熔融，产生的岩浆若升到地表，就可能形成火山。两块大陆相碰时，大量岩层反而被挤皱、叠厚，高山可以在这样的地区隆起。",
         "安第斯山脉与海洋板块向南美洲之下俯冲相连，许多地区有火山活动；喜马拉雅则突出印度与欧亚大陆的碰撞。两者都能形成高山，却有不同的地壳变形与岩浆活动背景。"
       ],
       "partId": "world-tectonics"
@@ -108,8 +111,7 @@
       "id": "world-tectonics-section-3",
       "title": "张裂、错动与板内火山",
       "paragraphs": [
-        "板块分离时，岩石圈受到拉伸，在大陆内部可以形成裂谷，在海洋中可以发生洋底扩张。板块水平滑过彼此时，则形成以横向位移为主的断层系统；这种边界并不必然伴随火山。",
-        "火山还可以出现在板块内部。夏威夷岛链就是热点火山的例子：持续的岩浆供应与板块运动共同留下岛链。火山分布因此与板块关系密切，却不能只用“在不在边界上”解释。"
+        "岩石圈受拉时，地壳可以沿许多条断层分开，部分地块相对沉降。如果这里还有岩浆上升，冷却的熔岩能为张开的地带添上新岩石。圣安德烈亚斯断层附近则主要是水平错动，观察它要找沿断层被错开的地物。"
       ],
       "partId": "world-tectonics",
       "visuals": [
@@ -150,11 +152,12 @@
           ],
           "note": "这是机制概括，具体地区可能叠加多期活动与多种过程。"
         }
-      ]
+      ],
+      "continuation": true
     },
     {
       "id": "world-tectonics-section-4",
-      "title": "地表形态与灾害风险",
+      "title": "从冰岛、喜马拉雅到圣安德烈亚斯",
       "paragraphs": [
         "地震和火山的分布与构造环境密切相关，灾害风险却还取决于事件强度、人口和设施的暴露程度，以及建筑和社会的脆弱性。相似的地质活动，可能造成很不一样的损失。",
         "全球构造图可以帮助解释这种分布，不能预报下一次事件。具体地点的风险判断需要当地监测、地质调查和专业评估。"
@@ -172,7 +175,8 @@
         "iceland-rift",
         "east-african-rift"
       ],
-      "partId": "world-tectonics"
+      "partId": "world-tectonics",
+      "continuation": true
     },
     {
       "id": "world-tectonics-module-convergence",
@@ -187,7 +191,8 @@
         "andes",
         "fujisan"
       ],
-      "partId": "world-tectonics"
+      "partId": "world-tectonics",
+      "continuation": true
     },
     {
       "id": "world-tectonics-module-other-motion",
@@ -200,13 +205,14 @@
         "san-andreas-fault",
         "hawaii-hotspot"
       ],
-      "partId": "world-tectonics"
+      "partId": "world-tectonics",
+      "continuation": true
     },
     {
       "id": "part-landform-structures",
       "title": "褶皱、断层与构造地貌",
       "paragraphs": [
-        "板块运动留下的痕迹，常保存在岩层之中：有的层面被弯曲，有的沿断裂错开。不过，地下的构造形态不会原样呈现在地表。被抬高的褶皱，也可能经过长期风化和侵蚀，成为今天的山谷。"
+        "假如峡谷两壁各露出一条颜色很特别的岩层，地质工作者就能把它当作记号。沿岩层追过去，一条平缓的带子可能慢慢弯成弧形，也可能到了裂面突然接不上，在对面另一个位置重新出现。褶皱与断层可以从这样的线索认出。"
       ],
       "partId": "landform-structures"
     },
@@ -214,29 +220,31 @@
       "id": "landform-structures-section-1",
       "title": "弯曲的岩层与断开的岩层",
       "paragraphs": [
-        "岩层受力弯曲，形成褶皱；岩体破裂，两侧又发生相对位移，便形成断层。同一套岩层可以先后经历多次变形，同时保留弯曲和错断的记录。",
-        "岩层的形态和地面坡度不是同一回事。弯曲的岩层可能被侵蚀削平，倾斜岩层也可能露在方向不同的山坡上；地质剖面与露头能够显示这些隐藏在地形轮廓之下的关系。"
+        "连续的岩层发生弯曲，形成褶皱。如果岩层沿破裂面被错开，形成的则是断层。仅仅见到裂缝还不够，判断断层要找两侧是否发生过相对移动的证据。图上的色带用来代表原能相接的层面。"
       ],
       "partId": "landform-structures",
       "mediaIds": [
         "diagram-structures"
-      ]
+      ],
+      "mediaAfterParagraph": {
+        "diagram-structures": 0
+      },
+      "continuation": true
     },
     {
       "id": "landform-structures-section-2",
       "title": "岩层弯曲以后，地表还会继续变化",
       "paragraphs": [
-        "背斜与向斜描述褶皱构造，今天的山峰和谷地则还受到长期侵蚀的改造。岩石软硬和裂隙条件不同，原本较高的部位可能更易侵蚀，后来成为谷地；较抗侵蚀的岩层则可能保留为山。",
-        "因此，一片山地记录着先后相接的两段变化：岩层先被弯曲，变形后的材料又被水、风化与重力选择性地移走。构造和地貌紧密相关，却不必保持相同形状。"
+        "弯曲的岩层有时拱出一座山，有时拱起的部分已被流水切开。较软的岩层先被剥去，能留下谷地，较耐侵蚀的岩层却可能凸成脊。今天山高谷低的轮廓，是岩层变形后又经历侵蚀的结果。"
       ],
-      "partId": "landform-structures"
+      "partId": "landform-structures",
+      "continuation": true
     },
     {
       "id": "landform-structures-section-3",
       "title": "断层怎样影响地形",
       "paragraphs": [
-        "断层两侧的相对运动，可以形成断层崖、错移的河道，以及相对抬升或下沉的地块。地垒与地堑对应特定的断层组合，形成后仍会受到侵蚀和沉积的改造。",
-        "东非裂谷以伸展构造为重要特征，圣安德烈亚斯以走滑错动著称。两者都涉及断层，却不能用同一种地形轮廓来识别。"
+        "断层两侧若主要上下移动，抬高的一侧和降低的一侧之间可能形成陡坎。若主要横向错动，更明显的线索可能是一条河沟被错开。即使是同一条断层，不同地段的地表痕迹也会因河流改造和沉积物覆盖而不同。"
       ],
       "partId": "landform-structures"
     },
@@ -244,14 +252,14 @@
       "id": "landform-structures-section-4",
       "title": "一次错动与一片山系的形成",
       "paragraphs": [
-        "板块运动可以在大陆尺度上形成山地带，也能在一处岩石露头中留下褶皱和错断。长期累积的变形建立山体，一次地震中的位移只是其中一种较短时间的表现。",
-        "山体抬升时，侵蚀也在进行。喜马拉雅的谷地被河流与冰川切低，岩石在坡面风化、崩落；今天的高度和起伏，是这些不同速度、不同尺度过程共同留下的结果。"
+        "断层的一次错动只改变局部地面。许多断层在很长时间里分担变形，才可能让整个地区缩短或伸展。就在这段时间里，山顶岩石又会风化，河水会把风化物运走。因此山地如今的高度无法从一次地震的位移直接推算。"
       ],
-      "partId": "landform-structures"
+      "partId": "landform-structures",
+      "continuation": true
     },
     {
       "id": "landform-structures-module-case-himalayas",
-      "title": "喜马拉雅山脉",
+      "title": "三处地形记录三种运动",
       "paragraphs": [
         "喜马拉雅山位于青藏高原南缘，是印度板块与欧亚板块碰撞形成的巨大山系。较轻的大陆地壳在挤压中缩短、增厚，成为高原和高山形成的重要基础。",
         "这里的地表始终在变化：构造运动抬升山体，河流与冰川切开谷地，风化使岩石破碎。海拔变化又带来显著的环境差异，今天看到的山地是这些过程长期共同作用的结果。"
@@ -271,7 +279,8 @@
       "caseIds": [
         "east-african-rift"
       ],
-      "partId": "landform-structures"
+      "partId": "landform-structures",
+      "continuation": true
     },
     {
       "id": "landform-structures-module-case-san-andreas-fault",
@@ -283,13 +292,14 @@
       "caseIds": [
         "san-andreas-fault"
       ],
-      "partId": "landform-structures"
+      "partId": "landform-structures",
+      "continuation": true
     },
     {
       "id": "part-landform-volcanoes",
       "title": "火山地貌",
       "paragraphs": [
-        "岩浆到达地表后，有时逐层堆起山锥，有时沿裂隙流出，铺成广阔的岩层。喷发、堆积、塌陷与后来的侵蚀，塑造了不同的火山地貌。古老的玄武岩高地，往往保存着多次喷发和漫长改造的记录。"
+        "岩浆从哪里出来，会决定它在地面上把物质放在哪里。喷出物堆在一个火山口周围，可以长成山锥。如果稀薄易流的熔岩沿长裂隙多次溢出，却能在相当宽的区域铺成层层岩石。火山活动既能造山峰，也能铺平大片地面。"
       ],
       "partId": "landform-volcanoes"
     },
@@ -297,20 +307,23 @@
       "id": "landform-volcanoes-section-1",
       "title": "为什么火山外形不同",
       "paragraphs": [
-        "岩浆的成分、温度和气体含量，影响它流动或破碎喷出的方式。流动性较强的熔岩容易铺展，长期堆积形成宽缓的盾状火山；熔岩与火山碎屑反复堆积，则可以形成较陡的复合火山。",
+        "流出的熔岩若能走得远，凝固以后覆盖的面积就大，多次喷发可以垒出坡度和缓的火山。黏稠的岩浆较难流动，其中的气体膨胀时可能使岩浆破碎，灰和岩块随后落在火山口周围。不同喷发物逐层积累，可以形成较陡的山锥。",
         "喷发结束后，风化、河流和冰川仍会侵蚀山体，原有轮廓因而继续改变。山形记录了建造与改造的历史，今天是否活动、可能怎样喷发，还需要监测和地质记录判断。"
       ],
       "partId": "landform-volcanoes",
       "mediaIds": [
         "diagram-volcanoes"
-      ]
+      ],
+      "mediaAfterParagraph": {
+        "diagram-volcanoes": 0
+      },
+      "continuation": true
     },
     {
       "id": "landform-volcanoes-section-2",
       "title": "火山口不一定等于整个山体",
       "paragraphs": [
-        "火山口是与喷发通道有关的开口，火山锥则是喷出物在周围堆起的山体。部分火山会发生更大范围的塌陷，形成破火山口；它的形成过程和尺度，都不等于山顶小口的简单放大。",
-        "这些凹地可以积水成湖，湖面下面仍保存岩体结构。圆形湖泊也可能由撞击或其他过程形成，因此，湖泊外形能提示一种可能，岩石与地质结构才能说明它的来历。"
+        "火山口是喷发通道在地表的开口，火山锥是围在周围的山体。喷发如果排出大量岩浆，让上方岩体失去部分支撑，便可能发生大范围塌陷，留下宽广的凹地，称为破火山口。积水后出现圆湖，只是这类凹地可能具有的外观之一。"
       ],
       "partId": "landform-volcanoes"
     },
@@ -321,20 +334,21 @@
         "熔岩沿裂隙多次流出，可以广泛铺展、层层叠置，形成玄武岩台地。德干地区保存了这样的大规模古老火山活动记录，并非由一座山锥或一次喷发建成。",
         "此后的地壳抬升、河流切割和风化，又不断改变地表。因此，今天高原或台地的边缘，不能直接当作当年熔岩覆盖范围的边界。"
       ],
-      "partId": "landform-volcanoes"
+      "partId": "landform-volcanoes",
+      "continuation": true
     },
     {
       "id": "landform-volcanoes-section-4",
       "title": "把火山放回不同构造环境",
       "paragraphs": [
-        "火山的地下背景各不相同。冰岛兼有中脊张裂与热点活动，富士山处于复杂的板块汇聚环境，夏威夷则位于板块内部的热点之上。",
-        "岩浆在哪里形成，影响火山的区域分布；岩浆怎样喷出和累积，进一步影响山体外形。富士山的山锥、夏威夷的宽缓火山，以及德干广布的古老熔岩层，便把构造背景与喷发方式连接起来。"
+        "把目光从喷发口拉远，富士山周围有相互汇聚的板块，冰岛横跨大西洋中脊，夏威夷却在板块内部。三地都能见到火山岩，解释岩浆为什么能抵达地表，却得从各自不同的板块环境说起。"
       ],
-      "partId": "landform-volcanoes"
+      "partId": "landform-volcanoes",
+      "continuation": true
     },
     {
       "id": "landform-volcanoes-module-case-fujisan",
-      "title": "富士山",
+      "title": "从富士山的山锥到德干的熔岩台地",
       "paragraphs": [
         "富士山是日本最高峰，也是一座由熔岩和火山碎屑多次堆积形成的复合火山。山体经历喷发与侵蚀，才逐渐成为今天的轮廓。作为文化世界遗产，它还承载着山岳信仰和艺术表达。",
         "1707年的喷发发生在山腹，产生了大范围降灰。理解富士山的危险，需要关注喷发位置和喷出物，不能只盯着山顶火山口。"
@@ -345,7 +359,10 @@
       "partId": "landform-volcanoes",
       "mediaIds": [
         "volcano-photo"
-      ]
+      ],
+      "mediaAfterParagraph": {
+        "volcano-photo": 0
+      }
     },
     {
       "id": "landform-volcanoes-module-case-hawaii-hotspot",
@@ -357,7 +374,8 @@
       "caseIds": [
         "hawaii-hotspot"
       ],
-      "partId": "landform-volcanoes"
+      "partId": "landform-volcanoes",
+      "continuation": true
     },
     {
       "id": "landform-volcanoes-module-case-deccan-plateau",
@@ -369,7 +387,8 @@
       "caseIds": [
         "deccan-plateau"
       ],
-      "partId": "landform-volcanoes"
+      "partId": "landform-volcanoes",
+      "continuation": true
     },
     {
       "id": "landform-volcanoes-module-case-iceland-rift",
@@ -381,7 +400,8 @@
       "caseIds": [
         "iceland-rift"
       ],
-      "partId": "landform-volcanoes"
+      "partId": "landform-volcanoes",
+      "continuation": true
     }
   ],
   "questions": [

@@ -3,22 +3,29 @@ import type { ClimatePlace, ClimateSeries, Knowledge } from '../types'
 
 const cache = new Map<string, Promise<unknown>>()
 export function readLocalJson<T>(path: string): Promise<T> {
-  if(!cache.has(path))cache.set(path,fetch(`${import.meta.env.BASE_URL}${path}`).then(async r=>{
-    if(!r.ok)throw new Error('这份资料暂时未能加载，请重试。')
-    return r.json()
-  }).catch(e=>{cache.delete(path);throw e}))
-  return cache.get(path) as Promise<T>
+  if(cache.has(path)){const recent=cache.get(path)!;cache.delete(path);cache.set(path,recent)}
+  if(!cache.has(path)){
+    const request:Promise<unknown>=fetch(`${import.meta.env.BASE_URL}${path}`).then(async response=>{
+      if(!response.ok)throw new Error('这份资料暂时未能加载，请重试。')
+      return response.json()
+    }).catch(error=>{if(cache.get(path)===request)cache.delete(path);throw error})
+    cache.set(path,request)
+  }
+  const result=cache.get(path) as Promise<T>
+  while(cache.size>24)cache.delete(cache.keys().next().value!)
+  return result
 }
-export function useLocalJson<T>(path: string|null){
-  const [data,setData]=useState<T|null>(null)
+export function useLocalJson<T>(path: string|null,initial?:T){
+  const [data,setData]=useState<T|null>(initial??null)
   const [error,setError]=useState('')
   const [attempt,setAttempt]=useState(0)
   useEffect(()=>{
     let active=true
+    if(initial){setData(initial);return}
     setData(null);setError('')
     if(path)readLocalJson<T>(path).then(v=>{if(active)setData(v)}).catch(e=>{if(active)setError(e.message)})
     return()=>{active=false}
-  },[path,attempt])
+  },[path,attempt,initial])
   return {data,error,retry:()=>{if(path)cache.delete(path);setAttempt(v=>v+1)}}
 }
 export interface Grid { width:number; height:number; west:number; north:number; resolutionDegrees:number; nodata?:number; data:number[] }

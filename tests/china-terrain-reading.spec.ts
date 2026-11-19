@@ -1,5 +1,5 @@
 import {expect,test} from '@playwright/test'
-import {baseReady,selectedGeometry} from './map-readiness'
+import {studyReady as baseReady,selectedGeometry} from './map-readiness'
 
 test.use({reducedMotion:'reduce'})
 
@@ -42,7 +42,7 @@ test('terrain article: opening illustrations, enlargement and real-map return',a
   expect(await page.evaluate(()=>{
     const data=window.__terraAtlas!.map.getSource('selection')!.serialize() as {data:{features:{geometry:{type:string}}[]}}
     return data.data.features.map(feature=>feature.geometry.type)
-  })).toEqual(['Point'])
+  })).toEqual(['MultiPolygon'])
   await page.locator('.reading-return-button').click()
   await expect(reader).toBeVisible()
   await expect.poll(async()=>Math.abs(await reader.locator('.reading-body').evaluate(element=>element.scrollTop)-top)).toBeLessThan(4)

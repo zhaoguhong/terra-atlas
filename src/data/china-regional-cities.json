@@ -1,0 +1,257 @@
+[
+  {
+    "id": "city-ne-1159132389",
+    "name": "中坜区",
+    "nameEn": "Zhongli",
+    "center": [
+      121.21678,
+      24.96503
+    ],
+    "rank": 7,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159132393",
+    "name": "基隆",
+    "nameEn": "Keelung",
+    "center": [
+      121.73328,
+      25.13326
+    ],
+    "rank": 7,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159146169",
+    "name": "彰化",
+    "nameEn": "Changhua",
+    "center": [
+      120.51341,
+      24.0734
+    ],
+    "rank": 7,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159146173",
+    "name": "嘉义",
+    "nameEn": "Chiayi City",
+    "center": [
+      120.43507,
+      23.47545
+    ],
+    "rank": 7,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159146175",
+    "name": "新竹",
+    "nameEn": "Hsinchu",
+    "center": [
+      120.97674,
+      24.81679
+    ],
+    "rank": 6,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159146177",
+    "name": "苗栗",
+    "nameEn": "Miaoli City",
+    "center": [
+      120.82,
+      24.57
+    ],
+    "rank": 7,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159146179",
+    "name": "屏东",
+    "nameEn": "Pingtung City",
+    "center": [
+      120.48168,
+      22.6817
+    ],
+    "rank": 7,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159149085",
+    "name": "澳门",
+    "nameEn": "Macau",
+    "center": [
+      113.54438,
+      22.18914
+    ],
+    "rank": 6,
+    "country": "中国",
+    "regionName": "澳门特别行政区",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Macau S.A.R"
+  },
+  {
+    "id": "city-ne-1159149103",
+    "name": "花莲",
+    "nameEn": "Hualien City",
+    "center": [
+      121.60001,
+      23.98374
+    ],
+    "rank": 6,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159149107",
+    "name": "新北",
+    "nameEn": "New Taipei",
+    "center": [
+      121.465,
+      25.01278
+    ],
+    "rank": 5,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159149109",
+    "name": "台南",
+    "nameEn": "Tainan",
+    "center": [
+      120.20004,
+      23.0
+    ],
+    "rank": 6,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159149111",
+    "name": "台东",
+    "nameEn": "Taitung City",
+    "center": [
+      121.14004,
+      22.75539
+    ],
+    "rank": 6,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159150459",
+    "name": "马公",
+    "nameEn": "Magong",
+    "center": [
+      119.58333,
+      23.56667
+    ],
+    "rank": 5,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159150461",
+    "name": "台中",
+    "nameEn": "Taichung",
+    "center": [
+      120.68167,
+      24.15208
+    ],
+    "rank": 4,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159151213",
+    "name": "高雄",
+    "nameEn": "Kaohsiung",
+    "center": [
+      120.2666,
+      22.63331
+    ],
+    "rank": 3,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159151567",
+    "name": "台北",
+    "nameEn": "Taipei",
+    "center": [
+      121.56833,
+      25.03583
+    ],
+    "rank": 1,
+    "country": "中国",
+    "regionName": "台湾",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Taiwan"
+  },
+  {
+    "id": "city-ne-1159151629",
+    "name": "香港",
+    "nameEn": "Hong Kong",
+    "center": [
+      114.18306,
+      22.30693
+    ],
+    "rank": 0,
+    "country": "中国",
+    "regionName": "香港特别行政区",
+    "capital": false,
+    "parentCountryId": "country-chn",
+    "sourceCountry": "Hong Kong S.A.R."
+  }
+]

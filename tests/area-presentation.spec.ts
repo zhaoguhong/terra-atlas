@@ -31,7 +31,7 @@ test('area presentation: four geographical regions have distinct rendered areas 
   await page.waitForFunction(()=>{
     const source=window.__terraAtlas?.map.getSource('relations')?.serialize() as {data?:{features?:{geometry:{type:string};properties:{id:string}}[]}}|undefined
     const regions=source?.data?.features?.filter(f=>f.properties.id.startsWith('region-cn-jiang2023-'))
-    return regions?.length===4&&regions.every(f=>/Polygon/.test(f.geometry.type))
+    return regions?.length===4&&regions.every(f=>/Polygon/.test(f.geometry.type))&&window.__terraAtlas!.map.isSourceLoaded('relations')
   })
   await mapSettled(page)
   const check=await page.evaluate(()=>{
@@ -54,11 +54,16 @@ test('area presentation: reviewed landforms and continents fit their real ranges
   }
   await page.screenshot({path:`${test.info().outputDir}/area-search-${info.project.name}.png`})
 })
-test('area presentation: exact Mongolian Plateau search stays separate from Inner Mongolian reference point',async({page})=>{
+test('area presentation: exact Mongolian Plateau search stays separate from the sourced Inner Mongolian area',async({page})=>{
   const a=await search(page,'蒙古高原','区域范围')
   expect(a.features[0].id).toBe('region-1159104229');expect(a.features[0].type).toBe('Polygon')
-  const b=await search(page,'内蒙古高原','定位点')
-  expect(b.features).toHaveLength(1);expect(b.features[0].type).toBe('Point')
+  const b=await search(page,'内蒙古高原','区域范围')
+  expect(b.features).toHaveLength(1);expect(b.features[0].type).toBe('MultiPolygon');expect(b.features[0].id).toBe('region-cn-zhang2025-inner-mongolian-plateau');expect(b.rendered).toContain(b.features[0].id)
+  const coverage=await page.evaluate(()=>{
+    const map=window.__terraAtlas!.map
+    return [[112,44],[116.07,43.93],[119.74,49.21],[116.4,39.9],[109.99,39.82],[106.9,47.9]].map(coordinates=>map.queryRenderedFeatures(map.project(coordinates as [number,number]),{layers:['selection-area']}).some(feature=>feature.properties?.id==='region-cn-zhang2025-inner-mongolian-plateau'))
+  })
+  expect(coverage).toEqual([true,true,true,false,false,false])
   const c=await search(page,'珠穆朗玛峰','定位点')
   expect(c.features.every(f=>f.type==='Point')).toBe(true)
   const d=await search(page,'长江','线状要素')

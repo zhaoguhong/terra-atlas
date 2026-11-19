@@ -12,7 +12,7 @@ npm run preview -- --port 4176 --strictPort
 
 通过浏览器访问预览地址，确认地图绘制和关键操作后，将完整 `dist/` 交给静态托管服务。不能只复制 HTML 或 JavaScript：地图数据、瓦片、字体样式和许可文件都属于发布内容。不要直接双击 HTML 打开。
 
-应用用 URL hash 保存地图状态，静态服务器不需要业务后端、数据库或应用路由重写。服务器应按扩展名返回正确的 HTML、JavaScript、JSON、GeoJSON、CSS 和图片类型。WebGL 是地图绘制的必要条件；可选详细底图和三维地形还需要浏览器能够访问对应在线服务。
+地图继续用 URL hash 保存状态；学主题使用 `/topics/` 及 `/topics/<slug>/`，构建生成对应目录的 `index.html`。静态服务器不需要业务后端、数据库或应用路由重写，未知路径应返回 404。目录地址省略末尾斜杠时，托管服务应在公开域名和 HTTPS 下补齐斜杠，避免泄漏内部端口。服务器应按扩展名返回正确的 HTML、JavaScript、JSON、CSS、WebP 和图片类型。生产几何为 `.geojson.gz`，应用可处理原始 gzip 字节或已被服务器解压的响应；打包与核验见 [加载与体积](performance.md)。WebGL 是地图绘制的必要条件；可选详细底图和三维地形还需要浏览器能够访问对应在线服务。
 
 ## 子目录与自有域名
 
@@ -25,7 +25,7 @@ npm run preview -- --port 4176 --strictPort --base=/terra-atlas/
 
 访问 `http://127.0.0.1:4176/terra-atlas/`。构建参数会传递给 Vite；数据和瓦片使用同一 base 路径。部署到域名根目录时使用默认构建。
 
-使用自有域名时修改 `index.html` 的 canonical 地址及需要展示的站点信息，保留已有作者、许可和来源署名。自己的域名不改变第三方许可条件。
+使用自有域名时，执行例如 `SITE_ORIGIN=https://atlas.example.org npm run build`，构建会为首页、专题和站点地图生成该域名下的地址。子目录仍通过 `--base` 指定。部署时保留已有作者、许可和来源署名。
 
 ## 许可与公开范围
 

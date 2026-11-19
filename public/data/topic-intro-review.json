@@ -2,7 +2,7 @@
   "reviewedAt": "2026-10-11",
   "version": "topic-intros-2026-10-11-v2",
   "inputSha256": "cf3fcfbcbf4489046a08cccbee1f8013e9ceba7d6f5bba8917cd241bfc2f1b91",
-  "outputSha256": "826f81728a54c4dedfdad2f38ed39e31418b035dfd40d9d2b4ca354e2021f4b0",
+  "outputSha256": "9c87924fd5c48362f208fe29d67c8f8dafad0345244776369badd0949eb2e040",
   "license": "说明与图表代码原创；参考文章和源数据分别保留原许可。",
   "processing": "按主题逐项审查摘要、正文、模块和图表，删除操作套话与重复地点列表；详细解释由用户展开，地图阅读保持自由顺序。",
   "topics": [
@@ -1193,6 +1193,8 @@
       "sourceUrls": [
         "https://www.usgs.gov/special-topics/water-science-school/water-cycle",
         "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater",
+        "https://www.usgs.gov/water-science-school/science/infiltration-and-water-cycle",
+        "https://www.usgs.gov/water-science-school/science/rivers-contain-groundwater",
         "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
         "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
         "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html",
@@ -1312,7 +1314,7 @@
     "scope": "先前59个原专题整合并补充为32篇；六篇地貌重写为两篇，世界海陆与区域比较再拆为七大洲、五大洋与世界区域比较，当前30篇。保留旧链接转向与地图案例，按同类对象比较补充相关主题。非外部独立审核。"
   },
   "editorialRevision": {
-    "reviewedAt": "2026-11-12",
+    "reviewedAt": "2026-11-19",
     "topicIds": [
       "china-terrain",
       "china-rivers",
@@ -1345,7 +1347,7 @@
       "landform-processes",
       "landform-landscapes"
     ],
-    "scope": "按科普文章逐篇编辑32篇主题、独立地图简版与模块解读；调整材料顺序、比较与配图，保留章节地址、案例及来源。文字编辑与一致性自查，不声称重新核验全部外部资料。"
+    "scope": "全站30篇专题按题材重组正文和独立地图简版。保留章节定位、案例和来源，续段与前节连读，主要过程图按手机阅读宽度排布。"
   },
   "landformRevision": {
     "version": "landforms-two-articles-2026-11-12",

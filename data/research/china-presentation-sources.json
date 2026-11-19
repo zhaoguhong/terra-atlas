@@ -1,0 +1,94 @@
+{
+  "reviewedAt": "2026-11-13",
+  "policy": "项目采用中国地理学习口径，台湾、香港、澳门归属中国；保留原始要素ID与分列统计口径，不将来源中的地区代码解释为独立国家。",
+  "processing": "项目采用中国地理学习口径，台湾、香港、澳门归属中国；保留原始要素ID与分列统计口径，不将来源中的地区代码解释为独立国家。中国轮廓合并现有真实几何，原始中国大陆统计几何另存；台湾省源单元排除金门并归入福建。所有原始数据许可和统计口径分别保留。",
+  "references": [
+    {
+      "title": "中国政府网 · 台湾基本情况",
+      "url": "https://www.gov.cn/guoqing/2020-07/28/content_5530577.htm",
+      "use": "台湾省及台湾地区范围区别，金门、马祖归属福建省。"
+    },
+    {
+      "title": "Natural Earth · Disputed boundaries policy",
+      "url": "https://www.naturalearthdata.com/about/disputed-boundaries-policy/",
+      "use": "原始数据的默认表达并非统一国家归属；项目明确记录所采用的展示口径。"
+    }
+  ],
+  "geometry": {
+    "china": "复用原有CHN、TWN、HKG、MAC四组几何合并中国轮廓；原始CHN几何另存statisticsGeometry，仅用于来源中中国大陆的统计着色。",
+    "taiwanProvince": "复用固定Natural Earth Admin-1台湾主岛、澎湖及已收录附属岛屿，金门源单元归入福建；不推绘缺失小岛。"
+  },
+  "statistics": "地区统计的数值、年份、原文和源ID保持分列，parentCountryId统一为country-chn；不合成未获来源支持的全国人口或宗教比例。",
+  "license": "Natural Earth: Public domain；统计与语言资料保留原来源清单中的各自许可。",
+  "inputs": [
+    {
+      "path": "scripts/china_presentation.py",
+      "sha256": "1428a22dc876af143f75c4ab086cf405b94cf7a928f4d4aaa120578d8b22efa2"
+    },
+    {
+      "path": "scripts/build-china-presentation.py",
+      "sha256": "802f2f7778e0e46a03a06994b71c6ea70589ad237e57ad1f7f1c0aa7652bccf5"
+    },
+    {
+      "path": "scripts/build-learning-data.py",
+      "sha256": "e32f9985c401451fb08fa13cd6d2474044922260f6bef83af77060dcbefc5cd1"
+    },
+    {
+      "path": "public/data/learning-provinces.geojson",
+      "sha256": "5ad64c1b66842805f34345f0d588530b5b029f57b4ef92a5f860414fdd2a8d20"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "public/data/countries.geojson",
+      "sha256": "09373a29de9cbd8fa4fabb01ac9efc73eb886bfa8abd72db5fe11b52815e9a6a"
+    },
+    {
+      "path": "public/data/regions.geojson",
+      "sha256": "a5c2d79e9761926e96a4d1955cd1e920626e157402034bcc67bc9721460fd39e"
+    },
+    {
+      "path": "public/data/gazetteer.json",
+      "sha256": "9d1fc095b07cc1e9b36b912290e48d8d5d34cd3b4928c6302599079c3ae99b73"
+    },
+    {
+      "path": "public/data/learning-human.json",
+      "sha256": "b9a326d4a2316bea91cddf925763362a7224931d66631bbe1e1075c1410743cd"
+    },
+    {
+      "path": "public/data/learning-country-languages.json",
+      "sha256": "9ab050e5d89b010e92c4482e6e0be3cc9091eb4c6ea9aad7be41b3a8d4597de3"
+    },
+    {
+      "path": "public/data/learning-country-indicators.json",
+      "sha256": "761994cda16c812ae1d8b6e8ea903d662066d601cd3527f19419e244f29106ff"
+    },
+    {
+      "path": "public/data/language-overview.json",
+      "sha256": "66abc959450272f1d589a4beb5dbc6756490e1af8b06bafa2a3baf5270a37e29"
+    },
+    {
+      "path": "public/data/auxiliary-cities.geojson",
+      "sha256": "a3a20ecf9427f379d45a17d3ba51127929d05be2c10f265bc65ee4a95fa8887a"
+    },
+    {
+      "path": "src/data/china-regional-cities.json",
+      "sha256": "1fc90efc0f13f98150b821bf581d87d91938f470267859ecd45d133ce3d50e74"
+    }
+  ],
+  "validation": {
+    "chinaSourceIds": [
+      "country-chn",
+      "country-twn",
+      "country-hkg",
+      "country-mac"
+    ],
+    "regionsBelongToChina": true,
+    "originalStatisticalFootprintsPreserved": true,
+    "taipeiIsNotNationalCapital": true
+  },
+  "storageRevision": {
+    "date": "2026-11-17",
+    "note": "仅将人口核验几何写入改为无损gzip；省区生成及中国展示逻辑未变。"
+  }
+}

@@ -1,3 +1,4 @@
+import {topicPath,followTopicLink} from '../lib/topic-url'
 import {ArrowLeft,ArrowRight,Bookmark,BookOpen,Check,ChevronDown,Globe2,Layers,LocateFixed,MapPin,Search,Share2,X} from 'lucide-react'
 import {useLayoutEffect,useRef,type ReactNode} from 'react'
 import {knowledge} from '../lib/catalog'
@@ -7,6 +8,7 @@ import type {Selection,Topic,TopicGroup,TopicScope} from '../types'
 import TopicVisuals from './TopicVisuals'
 import ReadingFigure from './ReadingFigure'
 import {mediaById} from '../lib/reading'
+import {topicLibraryLayouts,useTopicLibraryLayout} from '../lib/topic-library-layout'
 
 const cardsById=new Map(knowledge.map(card=>[card.id,card]))
 const scopeOptions=[{id:'all',name:'全部主题'},{id:'china',name:'中国地理'},{id:'world',name:'世界地理'}] as const
@@ -18,11 +20,12 @@ export default function TopicPanel({mapMode=false,scope,query,topic,library,grou
   onBack?:()=>void;canGoBack?:boolean;onShowMap?:()=>void;
 }){
   const landscape=useLandscapeLayout()
+  const [layout,chooseLayout]=useTopicLibraryLayout()
   const panelRef=useRef<HTMLDivElement>(null)
   const membersRef=useRef<HTMLElement>(null)
   const allTopics=topicsForScope(scope)
   const search=query.trim().toLocaleLowerCase()
-  const matches=(entry:Topic)=>!search||[entry.title,entry.description,entry.question,...(entry.reading?.keywords||[]),...(entry.modules||[]).flatMap(module=>[module.title,module.description]),...entry.stops.flatMap(id=>{const card=cardsById.get(id);return card?[card.name,card.englishName,...card.aliases]:[]})].join(' ').toLocaleLowerCase().includes(search)
+  const matches=(entry:Topic)=>!search||[entry.title,entry.description,entry.question,...(entry.reading?.keywords||[]),...(entry.reading?.chapters||[]).map(chapter=>chapter.title),...(entry.modules||[]).flatMap(module=>[module.title,module.description]),...entry.stops.flatMap(id=>{const card=cardsById.get(id);return card?[card.name,card.englishName,...card.aliases]:[]})].join(' ').toLocaleLowerCase().includes(search)
   const matchingTopics=allTopics.filter(matches)
   const available=matchingTopics.filter(entry=>group==='all'||entry.group===group)
   useLayoutEffect(()=>{
@@ -34,21 +37,35 @@ export default function TopicPanel({mapMode=false,scope,query,topic,library,grou
     if(matchMedia(mobileLayoutQuery).matches&&sheet!=='full')onSheet('full')
     requestAnimationFrame(()=>membersRef.current?.scrollIntoView({block:'start',behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth'}))
   }
-  if(library||!topic)return <div className={'topic-library'+(mapMode?' map-topic-library':'')} ref={panelRef}>
+  const entryCard=(entry:Topic)=>{
+    const cover=entry.reading&&mediaById.get(entry.reading.coverId)
+    return <div className={'topic-library-card'+(topic?.id===entry.id?' topic-current':'')} key={entry.id}>
+      <button className="topic-card-open" aria-label={(mapMode?'选择主题地图：':'打开专题：')+entry.title} aria-current={topic?.id===entry.id?'true':undefined} onClick={()=>mapMode?onStart(entry):onRead(entry)}>
+        <span>{entry.shared?'中国与世界':entry.region==='china'?'中国':'世界'} · {mapMode?entry.stops.length+' 个地图案例':entry.reading?.parts?entry.reading.parts.length+' 组章节 · 按需选读':entry.reading?'约 '+entry.reading.minutes+' 分钟':topicKindNames[entry.kind]}</span>
+        <strong>{entry.title}</strong>
+        {!mapMode&&layout==='cards'&&cover&&<img className="topic-cover-preview" src={import.meta.env.BASE_URL+cover.path} alt={cover.alt} width={480} height={180} loading="lazy"/>}
+        {(mapMode||layout!=='directory')&&<p>{entry.description}</p>}
+        {topic?.id===entry.id?<span className="topic-current-label"><Check size={13}/>当前主题</span>:<ArrowRight size={15}/>}
+      </button>
+      {search&&entry.reading?.parts?.filter(part=>[part.title,...part.keywords].join(' ').toLocaleLowerCase().includes(search)).map(part=><button className="topic-chapter-match" key={part.id} onClick={()=>onRead(entry,part.sectionId)}><BookOpen size={13}/><span>直达章节 · {part.title}</span><ArrowRight size={13}/></button>)}
+      {search&&entry.reading?.chapters?.filter(chapter=>chapter.title.toLocaleLowerCase().includes(search)).map(chapter=><button className="topic-chapter-match" key={chapter.id} onClick={()=>onRead(entry,chapter.id)}><BookOpen size={13}/><span>直达章节 · {chapter.title}</span><ArrowRight size={13}/></button>)}
+      <div className="topic-card-actions"><a className="read-topic" href={topicPath(entry.id)} onClick={event=>followTopicLink(event,()=>onRead(entry))} aria-label={'阅读专题：'+entry.title}><BookOpen size={13}/>{!mapMode&&layout==='directory'?'阅读':'阅读专题'}</a><button onClick={()=>onStart(entry)} aria-label={'在地图上看：'+entry.title}><MapPin size={13}/>{!mapMode&&layout==='directory'?'地图':'看地图'}</button></div>
+    </div>
+  }
+  if(library||!topic)return <div className={'topic-library'+(mapMode?' map-topic-library':'')} data-topic-layout={mapMode?'map':layout} ref={panelRef}>
     <div className="explorer-intro theme-catalogue-heading">{!mapMode&&<><span className="library-eyebrow">TERRA ATLAS · 地理读本</span><h1>学主题</h1></>}<p>{mapMode?'选一个主题，在地图上观察它的分布与联系。':'从山川的形态，到气候与生活。沿着图文认识一个主题，再到地图中寻找它的位置。'}</p></div>
-    {!mapMode&&!search&&group==='all'&&<details className="reading-starts" aria-label="从基础开始"><summary>从基础主题读起</summary><div>{['landform-processes','landform-landscapes','map-climate','earth-map-reading'].map(id=>{const item=allTopics.find(t=>t.id===id);return item?<button key={id} onClick={()=>onRead(item)}><BookOpen size={15}/>{item.title}<ArrowRight size={14}/></button>:null})}</div></details>}
     {topic&&<button className="topic-resume" onClick={onOverview}><Layers size={15}/><span>继续看 · {topic.title}</span><ArrowRight size={14}/></button>}
     <div className="topic-scope"><span className="topic-filter-label" id="topic-scope-label"><Globe2 size={13}/>主题范围</span><div className="topic-scope-options" role="group" aria-labelledby="topic-scope-label">{scopeOptions.map(item=><button key={item.id} aria-label={item.name} aria-pressed={scope===item.id} onClick={()=>onScope(item.id)}><span>{item.name}</span><small aria-hidden="true">{topicsForScope(item.id).length}</small></button>)}</div></div>
     <label className="topic-search"><Search size={15}/><input type="search" aria-label="搜索主题和主题成员" placeholder="搜索主题或地点，如高原、黄河" value={query} onChange={event=>onQuery(event.target.value)}/>{query&&<button type="button" onClick={()=>onQuery('')} aria-label="清空主题搜索"><X size={14}/></button>}</label>
-    <details className="topic-category-filters" open={group!=='all'||undefined}><summary>内容分类 · {group==='all'?'全部':topicGroups.find(item=>item.id===group)?.name}</summary>
+    <details className="topic-category-filters" open={!mapMode||group!=='all'||undefined}><summary>内容分类 · {group==='all'?'全部':topicGroups.find(item=>item.id===group)?.name}</summary>
     <div className="topic-categories" aria-label="主题分类"><button aria-label="全部分类" aria-pressed={group==='all'} onClick={()=>onGroup('all')}>全部分类 <span aria-hidden="true">{matchingTopics.length}</span></button>{topicGroups.map(item=><button key={item.id} aria-label={item.name} aria-pressed={group===item.id} onClick={()=>onGroup(item.id)}>{item.name} <span aria-hidden="true">{matchingTopics.filter(entry=>entry.group===item.id).length}</span></button>)}</div>
     </details>
     {(scope!=='all'||group!=='all'||query)&&<button className="text-button" onClick={()=>{onScope('all');onQuery('');onGroup('all')}}>重置主题筛选</button>}
-    <p className="topic-result-count" role="status">{scopeOptions.find(item=>item.id===scope)?.name}{group!=='all'&&` · ${topicGroups.find(item=>item.id===group)?.name}`} · {search?'找到 ':''}{available.length} 个主题{search&&` · “${query.trim()}”`}</p>
-    {topicGroups.filter(item=>group==='all'||group===item.id).map(item=>{
+    <div className="topic-catalogue-toolbar"><p className="topic-result-count" role="status">{scopeOptions.find(item=>item.id===scope)?.name}{group!=='all'&&` · ${topicGroups.find(item=>item.id===group)?.name}`} · {search?'找到 ':''}{available.length} 个主题{search&&` · “${query.trim()}”`}</p>{!mapMode&&<div className="topic-layout-switch" role="group" aria-label="主题展示方式">{topicLibraryLayouts.map(item=><button key={item.id} aria-pressed={layout===item.id} onClick={()=>chooseLayout(item.id)}>{item.label}</button>)}</div>}</div>
+    <div className="topic-library-groups">{topicGroups.filter(item=>group==='all'||group===item.id).map(item=>{
       const entries=available.filter(entry=>entry.group===item.id)
-      return entries.length?<section className="topic-group" key={item.id} aria-label={item.name+'主题'}><div className="section-label"><BookOpen size={14}/><span>{item.name}</span><small>{entries.length} 个主题</small></div><p className="topic-group-description">{item.description}</p><div className="topic-list">{entries.map(entry=><div className={'topic-library-card'+(topic?.id===entry.id?' topic-current':'')} key={entry.id}><button className="topic-card-open" aria-label={(mapMode?'选择主题地图：':'打开专题：')+entry.title} aria-current={topic?.id===entry.id?'true':undefined} onClick={()=>mapMode?onStart(entry):onRead(entry)}><span>{entry.shared?'中国与世界':entry.region==='china'?'中国':'世界'} · {mapMode?entry.stops.length+' 个地图案例':entry.reading?.parts?entry.reading.parts.length+' 组章节 · 按需选读':entry.reading?'约 '+entry.reading.minutes+' 分钟':topicKindNames[entry.kind]}</span><strong>{entry.title}</strong>{!mapMode&&entry.reading&&mediaById.get(entry.reading.coverId)&&<img className="topic-cover-preview" src={import.meta.env.BASE_URL+mediaById.get(entry.reading.coverId)!.path} alt={mediaById.get(entry.reading.coverId)!.alt} width={480} height={180} loading="lazy"/>}<p>{entry.description}</p>{topic?.id===entry.id?<span className="topic-current-label"><Check size={13}/>当前主题</span>:<ArrowRight size={15}/>}</button>{search&&entry.reading?.parts?.filter(part=>[part.title,...part.keywords].join(' ').toLocaleLowerCase().includes(search)).map(part=><button className="topic-chapter-match" key={part.id} onClick={()=>onRead(entry,part.sectionId)}><BookOpen size={13}/><span>直达章节 · {part.title}</span><ArrowRight size={13}/></button>)}{search&&entry.reading?.chapters?.filter(chapter=>chapter.title.toLocaleLowerCase().includes(search)).map(chapter=><button className="topic-chapter-match" key={chapter.id} onClick={()=>onRead(entry,chapter.id)}><BookOpen size={13}/><span>直达章节 · {chapter.title}</span><ArrowRight size={13}/></button>)}<div className="topic-card-actions"><button className="read-topic" onClick={()=>onRead(entry)} aria-label={'阅读专题：'+entry.title}><BookOpen size={13}/>阅读专题</button><button onClick={()=>onStart(entry)} aria-label={'在地图上看：'+entry.title}><MapPin size={13}/>看地图</button></div></div>)}</div></section>:null
-    })}
+      return entries.length?<section className="topic-group" key={item.id} aria-label={item.name+'主题'}><div className="section-label"><BookOpen size={14}/><span>{item.name}</span><small>{entries.length} 个主题</small></div><p className="topic-group-description">{item.description}</p><div className="topic-list">{entries.map(entryCard)}</div></section>:null
+    })}</div>
     {!available.length&&<div className="topic-empty"><BookOpen size={22}/><p>没有找到匹配的主题。</p><span>可以换一个地名，或调整主题范围和分类。</span><button onClick={()=>{onQuery('');onScope('all');onGroup('all')}}>查看全部主题</button></div>}
     <p className="topic-library-note"><Globe2 size={13}/>气候、人口等共用主题在中国与世界范围均可阅读。</p>
   </div>

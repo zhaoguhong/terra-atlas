@@ -1,18 +1,17 @@
 import {readFileSync} from 'node:fs'
 import {expect,test,type Page} from '@playwright/test'
 import rawTopics from '../src/data/topics.json' with {type:'json'}
-import {baseReady,selectedGeometry} from './map-readiness'
+import {studyReady as baseReady,articleReady,selectedGeometry} from './map-readiness'
 
 const articles=rawTopics.map(topic=>JSON.parse(readFileSync(new URL(`../public/reading/topics/${topic.id}.json`,import.meta.url),'utf8')))
 test.use({reducedMotion:'reduce'})
 
 async function loadArticle(page:Page,id:string,action:()=>Promise<unknown>){
-  const [response]=await Promise.all([
-    page.waitForResponse(response=>new URL(response.url()).pathname.endsWith(`/reading/topics/${id}.json`),{timeout:45000}),
-    action(),
-  ])
-  expect(response.ok()).toBe(true)
-  expect(await response.finished()).toBeNull()
+  await action()
+  await articleReady(page,id)
+  const reader=page.locator('.topic-reading-page:not([hidden])')
+  await expect(reader).toHaveAttribute('data-reading-topic',id)
+  await expect(reader.locator('h1')).toHaveText(articles.find(article=>article.id===id).title)
 }
 
 test('reading links: provinces are compact, touchable and preserve map round trips',async({page},info)=>{
@@ -51,9 +50,9 @@ test('reading links: every topic retains all destinations without overflowing or
   await page.goto('/');await baseReady(page)
   let oldTotal=0,newTotal=0
   for(const article of articles){
-    await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'学主题',exact:true}).click()
+    await page.getByRole('navigation',{name:'浏览方式'}).getByRole('link',{name:'学主题',exact:true}).click()
     await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill(article.title)
-    await loadArticle(page,article.id,()=>page.getByRole('button',{name:'阅读专题：'+article.title,exact:true}).click())
+    await loadArticle(page,article.id,()=>page.getByRole('link',{name:'阅读专题：'+article.title,exact:true}).click())
     const reader=page.locator('.topic-reading-page:not([hidden])')
     await expect(reader.locator('h1')).toHaveText(article.title)
     const cases=article.sections.flatMap((section:{caseIds?:string[]})=>section.caseIds||[]) as string[]

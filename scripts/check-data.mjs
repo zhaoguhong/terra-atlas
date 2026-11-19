@@ -1,4 +1,5 @@
 import fs from 'node:fs'
+import {gunzipSync} from 'node:zlib'
 import {createHash} from 'node:crypto'
 import assert from 'node:assert/strict'
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'))
@@ -6,7 +7,7 @@ const knowledge=read('src/data/knowledge.json')
 const bindings=read('src/data/feature-bindings.json')
 const sources=read('public/data/sources.json')
 const ids=new Set(), features=new Map()
-for(const name of ['land','countries','regions','china-reference-regions','rivers','lakes','peaks','theme-peaks','climate','learning-provinces','learning-languages','language-areas']){
+for(const name of ['land','countries','regions','china-reference-regions','marine-reference-regions','landform-reference-regions','rivers','lakes','peaks','theme-peaks','climate','learning-provinces','learning-languages','language-areas']){
   const data=read(`public/data/${name}.geojson`)
   assert.equal(data.type,'FeatureCollection')
   for(const f of data.features){
@@ -36,7 +37,7 @@ for(const k of knowledge){
 }
 for(const [id,values] of Object.entries(bindings))for(const feature of values)assert(features.has(feature),`${id}: missing geometry ${feature}`)
 const gazetteer=read('public/data/gazetteer.json')
-for(const name of ['china-reference-region-sources','area-presentation-review'])assert.equal(fs.readFileSync(`data/research/${name}.json`,'utf8'),fs.readFileSync(`public/data/${name}.json`,'utf8'),name+' provenance copies')
+for(const name of ['china-reference-region-sources','area-presentation-review','geographic-name-review'])assert.equal(fs.readFileSync(`data/research/${name}.json`,'utf8'),fs.readFileSync(`public/data/${name}.json`,'utf8'),name+' provenance copies')
 const regionSources=read('data/research/china-reference-region-sources.json')
 for(const row of [...regionSources.inputs,regionSources.output])assert.equal(createHash('sha256').update(fs.readFileSync(row.path)).digest('hex'),row.sha256,row.path+' reference region hash')
 assert.equal(regionSources.license,'CC-BY-4.0')
@@ -44,6 +45,33 @@ assert(regionSources.georeferencing.rmsPixels<1&&regionSources.georeferencing.ma
 const areaReview=read('data/research/area-presentation-review.json')
 assert.equal(areaReview.decisions.length,knowledge.length)
 for(const decision of areaReview.decisions)assert.deepEqual(decision.featureIds,bindings[decision.cardId]||[],decision.cardId+' reviewed geometry')
+for(const name of ['marine-reference-sources','china-presentation-sources','landform-reference-region-sources']){
+  assert.equal(fs.readFileSync(`data/research/${name}.json`,'utf8'),fs.readFileSync(`public/data/${name}.json`,'utf8'),name+' source copies')
+  const manifest=read(`data/research/${name}.json`)
+  assert(manifest.license&&manifest.processing,name+' provenance')
+  for(const row of [...(manifest.inputs||[]),...(manifest.outputs||[]),...(manifest.output?[manifest.output]:[])]){
+    if(row.path.startsWith('data/raw/'))continue
+    assert.equal(createHash('sha256').update(fs.readFileSync(row.path)).digest('hex'),row.sha256,name+': '+row.path)
+  }
+}
+const nameReview=read('scripts/geographic-name-corrections.json')
+for(const correction of nameReview.corrections){
+  for(const p of [features.get(correction.featureId)?.properties,gazetteer.find(p=>p.id===correction.featureId)]){
+    assert.equal(p?.name,correction.name,correction.featureId+' reviewed Chinese name')
+    assert.equal(p?.nameEn,correction.nameEn,correction.featureId+' reviewed English name')
+    assert.deepEqual(p?.aliases,correction.aliases,correction.featureId+' reviewed aliases')
+  }
+}
+const extentReview=read('data/research/map-extent-review.json')
+assert.equal(fs.readFileSync('data/research/map-extent-review.json','utf8'),fs.readFileSync('public/data/map-extent-review.json','utf8'))
+assert.equal(extentReview.decisions.length,knowledge.length)
+assert.equal(extentReview.topics.length,read('src/data/topics.json').length)
+for(const row of extentReview.inputs)assert.equal(createHash('sha256').update(fs.readFileSync(row.path)).digest('hex'),row.sha256,row.path+' scope audit')
+for(const row of extentReview.decisions){
+  assert.deepEqual(row.featureIds,bindings[row.cardId]||[],row.cardId+' audited scope')
+  if(row.representation==='area')assert(row.featureIds.some(id=>/Polygon/.test(features.get(id)?.geometry.type)),row.cardId+' actual polygon')
+  assert(row.geometryNote, row.cardId+' visible scope note')
+}
 for(const id of ['northern-china','southern-china','northwestern-china','qinghai-tibet-region']){
   assert.equal(bindings[id].length,1)
   assert(bindings[id][0].startsWith('region-cn-jiang2023-'))
@@ -102,9 +130,10 @@ assert.equal(population.resolutionDegrees,.5)
 assert.equal(population.year,2020)
 assert(densityValues.some(v=>v===null)&&densityValues.some(v=>v===0))
 assert(densityValues.every(v=>v===null||Number.isFinite(v)&&v>=0))
-const populationVectorsPath='data/research/learning-population.geojson'
+const populationVectorsPath='data/research/learning-population.geojson.gz'
 assert(!fs.existsSync('public/data/learning-population.geojson'),'Validation-only population vectors must not be published')
-const populationVectors=read(populationVectorsPath)
+const populationDecoded=gunzipSync(fs.readFileSync(populationVectorsPath))
+const populationVectors=JSON.parse(populationDecoded)
 const populationOutput=learningSources.sources.find(s=>s.id==='ghs-pop-2020').outputs.find(o=>o.path===populationVectorsPath)
 assert(populationOutput?.published===false,'Population vectors must be marked as unpublished in both manifests')
 const populationIds=new Set()
@@ -122,6 +151,7 @@ const populationValidation=read('data/research/learning-independent-validation.j
 assert.equal(populationValidation.path,populationVectorsPath)
 assert.equal(populationValidation.sha256,populationOutput.sha256)
 assert.equal(populationValidation.features,populationVectors.features.length)
+assert.equal(createHash('sha256').update(populationDecoded).digest('hex'),populationValidation.decodedSha256)
 const monthly=read('public/data/learning-climate.json')
 assert.equal(monthly.places.length,60)
 assert.equal(monthly.resolutionDegrees,.5)
@@ -384,7 +414,8 @@ for(const item of media){
     }
     assert(!/<script|<foreignObject|href="https?:/i.test(svg),item.id+' static, self-contained SVG')
   }else {
-    assert.equal(buffer.subarray(0,2).toString('hex'),'ffd8',item.id+' valid JPEG signature')
+    if(item.path.endsWith('.webp')){assert.equal(buffer.subarray(0,4).toString(),'RIFF',item.id+' WebP RIFF header');assert.equal(buffer.subarray(8,12).toString(),'WEBP',item.id+' WebP format')}
+    else assert.equal(buffer.subarray(0,2).toString('hex'),'ffd8',item.id+' valid JPEG signature')
     if(item.kind==='illustration'){
       const authored=illustrations.figures.find(figure=>figure.id===item.id)
       assert(authored?.generation.prompt&&authored.generation.generatedAt&&authored.generation.tool,item.id+' generation provenance')
@@ -452,6 +483,7 @@ for(const topic of readingTopics){
     for(const section of article.sections)assert(article.parts.some(part=>part.id===section.partId),topic.id+' valid chapter group')
   }
   assert.equal(new Set(article.sections.flatMap(s=>s.mediaIds||[])).size,article.sections.flatMap(s=>s.mediaIds||[]).length,topic.id+' no duplicate figures')
+  assert(!article.sections[0].continuation && !article.parts?.some(part=>article.sections.find(s=>s.id===part.sectionId)?.continuation),topic.id+' chapter groups start at visible headings')
   const cases=new Set()
   for(const section of article.sections){
     if(section.mediaPlacement!==undefined)assert(section.mediaPlacement==='before-text'&&section.mediaIds?.length,topic.id+' valid opening figure placement')

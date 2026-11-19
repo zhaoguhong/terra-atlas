@@ -1,0 +1,57 @@
+{
+  "reviewedAt": "2026-11-13",
+  "policy": "按明确Natural Earth要素ID与原始NAME逐项校订名称；保留真实几何，不根据译名合并不同对象。错误的上位区域名不作为搜索别名。",
+  "corrections": [
+    {
+      "featureId": "region-1159104049",
+      "originalName": "PLANALTO CENTRAL",
+      "name": "巴西中央高原",
+      "nameEn": "Planalto Central",
+      "aliases": [
+        "巴西中央高原",
+        "Planalto Central",
+        "PLANALTO CENTRAL",
+        "Brazilian Central Plateau"
+      ],
+      "dropWikidataId": true,
+      "reason": "原始NAME为PLANALTO CENTRAL，不能与NE_ID=1159104225的BRAZILIAN HIGHLANDS同名绑定；移除源资料误用的巴西高原英文译名与实体关联。",
+      "sources": [
+        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/",
+        "https://www.enat.receita.economia.gov.br/pt-br/area_nacional/eventos/xii-enat/sobre-brasilia/sobre-brasilia/"
+      ]
+    },
+    {
+      "featureId": "region-1730071403",
+      "originalName": "Bear Is.",
+      "name": "熊岛（东西伯利亚海）",
+      "nameEn": "Bear Islands",
+      "aliases": [
+        "熊岛（东西伯利亚海）",
+        "熊岛",
+        "Bear Islands",
+        "Bear Is.",
+        "Medvezhyi Islands",
+        "Медвежьи острова"
+      ],
+      "reason": "原始NAME为Bear Is.，几何位于东经160—163度、北纬70—71度；源NAME_EN误写为位于印度尼西亚的Batu Islands。保留源中文名并添加海域限定，删除错误英文别名。",
+      "sources": [
+        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/",
+        "https://lena-pillars.ru/about/gpz-medvezhi-ostrova-pos-chepskiy-nizhnekolymskiy-rayon/"
+      ]
+    },
+    {
+      "featureId": "region-1730072703",
+      "originalName": "Southern Ghats",
+      "name": "南高止山脉",
+      "nameEn": "Southern Ghats",
+      "aliases": [
+        "南高止山脉",
+        "Southern Ghats"
+      ],
+      "reason": "保留原始NAME对应的南部山地对象，移除源NAME_EN中更宽泛的Western Ghats译名；不将局部参考面当作整个西高止山脉。",
+      "sources": [
+        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+      ]
+    }
+  ]
+}

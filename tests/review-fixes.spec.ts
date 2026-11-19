@@ -98,7 +98,7 @@ test('review fixes: late saved-view data cannot replace a newer selection',async
   await seed(page,{layers:defaultLayers,topicId:null,savedViews:[{id:'review-view',name:'延迟城市视图',camera:savedCamera,layers:defaultLayers,view:'world',place:id,featureId:id}]})
   let release!:()=>void,requested!:()=>void
   const gate=new Promise<void>(resolve=>{release=resolve}),request=new Promise<void>(resolve=>{requested=resolve})
-  await page.route('**/data/auxiliary-cities.geojson',async route=>{requested();await gate;await route.continue()})
+  await page.route('**/data/auxiliary-cities.geojson{,.gz}',async route=>{requested();await gate;await route.continue()})
   try{
     await page.goto('/');await baseReady(page);await clickHeaderAction(page,'打开收藏')
     await page.getByRole('button',{name:'延迟城市视图',exact:true}).click();await request

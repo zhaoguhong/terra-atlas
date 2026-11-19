@@ -1,12 +1,12 @@
 import {expect,test,type Page} from '@playwright/test'
-import {baseReady,mapSettled,selectedGeometry} from './map-readiness'
+import {studyReady as baseReady,mapSettled,selectedGeometry} from './map-readiness'
 import {openThemeLibrary} from './theme-controls'
 
 const reader=(page:Page)=>page.locator('.topic-reading-page:not([hidden])')
 async function openTopic(page:Page,title:string,articleId?:string){
   await openThemeLibrary(page)
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill(title)
-  const button=page.getByRole('button',{name:'阅读专题：'+title,exact:true})
+  const button=page.getByRole('link',{name:'阅读专题：'+title,exact:true})
   if(articleId){
     const [response]=await Promise.all([
       page.waitForResponse(response=>new URL(response.url()).pathname===`/reading/topics/${articleId}.json`,{timeout:45000}),
@@ -31,11 +31,11 @@ test('consolidation: 30 main subjects and direct access to retired titles inside
   }
   await expect(reader(page).locator('.reading-part-index button')).toHaveCount(5)
   const select=reader(page).getByRole('combobox',{name:'跳转专题章节'})
-  if(await select.isVisible())await select.selectOption('china-plains-module-yangtze')
+  if(await select.isVisible())await select.selectOption('china-plains-module-northeast')
   else{
     const group=reader(page).locator('.reading-toc-groups details').filter({hasText:'中国主要平原'})
     await group.locator('summary').click()
-    await group.getByRole('button',{name:'长江中下游平原',exact:true}).click()
+    await group.getByRole('button',{name:'从东北粮田到长江水网',exact:true}).click()
   }
   const chapter=reader(page).locator('[data-reading-section="china-plains-module-yangtze"]')
   await chapter.getByRole('button',{name:'在地图上看 · 长江中下游平原',exact:true}).click()
@@ -68,14 +68,14 @@ test('consolidation: Danxia and all fourteen summits retain their own reading an
 })
 
 for(const [id,title,sectionId,claim,diagramId] of [
-  ['weather-systems','天气为什么变化','section-4','较冷空气向暖空气一侧推进时形成冷锋','diagram-weather-fronts'],
-  ['climate-change','气候变化与地球环境','section-2','温室气体能够吸收和发射一部分红外辐射','diagram-climate-energy'],
+  ['weather-systems','天气为什么变化','section-4','冷锋由冷空气主动推进','diagram-weather-fronts'],
+  ['climate-change','气候变化与地球环境','section-2','温室气体会吸收部分红外辐射，又向各个方向发射','diagram-climate-energy'],
 ] as const){
   test(`atmosphere: ${id} has sourced explanations, a real diagram and working map cases`,async({page},info)=>{
     const errors:string[]=[];page.on('pageerror',error=>errors.push(error.message))
     await page.goto('/');await baseReady(page);await openTopic(page,title,id)
     await expect(reader(page).locator(`[data-reading-section="${sectionId}"]`)).toContainText(claim)
-    if(id==='climate-change')await expect(reader(page).locator('[data-reading-section="section-1"]')).toContainText('把不同年份的资料放到相同的比较基准下')
+    if(id==='climate-change')await expect(reader(page).locator('[data-reading-section="section-1"]')).toContainText('每个站比它自己在同一基准期的平均值冷暖多少')
     const diagram=reader(page).locator(`[data-media-id="${diagramId}"] .reading-image-button img`)
     await diagram.scrollIntoViewIfNeeded()
     await expect.poll(()=>diagram.evaluate((image:HTMLImageElement)=>image.naturalWidth)).toBeGreaterThan(0)
@@ -101,7 +101,7 @@ test('consolidation: new bookmarks and shared group chapters work in a fresh bro
   await reader(page).getByRole('button',{name:'分享专题阅读',exact:true}).click()
   await expect(page.locator('.reading-toast')).toContainText('已复制')
   const url=await page.evaluate(()=>navigator.clipboard.readText())
-  expect(url).toContain('read=agriculture-food');expect(url).toContain('chapter=part-world-agriculture-food')
+  expect(new URL(url).pathname).toBe('/topics/agriculture-food/');expect(new URL(url).hash).toBe('#part-world-agriculture-food')
   const fresh=await browser.newContext({viewport:page.viewportSize()!}),other=await fresh.newPage()
   await other.goto(url);await baseReady(other)
   await expect(reader(other).locator('h1')).toHaveText('农业与粮食系统')

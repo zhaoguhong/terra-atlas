@@ -7,7 +7,7 @@
       "version": "Natural Earth 5.1.2; repository ca96624a56bd078437bca8184e78163e5039ad19",
       "license": "Public domain",
       "documentationUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/",
-      "processing": "保留SCALERANK≤7的代表聚落及ADM0CAP标记；中文优先，缺失用英文；NE_ID用于稳定ID，按缩放逐步显示。无人口着色或排名。首都标记来自此固定版本，不表示2026年迁都状态。",
+      "processing": "保留SCALERANK≤7的代表聚落及ADM0CAP标记；中文优先，缺失用英文；NE_ID用于稳定ID，按缩放逐步显示。无人口着色或排名。首都标记来自此固定版本，不表示2026年迁都状态。项目采用中国地理学习口径，台湾、香港、澳门归属中国；保留原始要素ID与分列统计口径，不将来源中的地区代码解释为独立国家。",
       "inputs": [
         {
           "path": "data/raw/auxiliary/ne_10m_populated_places.geojson",
@@ -19,8 +19,8 @@
       "outputs": [
         {
           "path": "/data/auxiliary-cities.geojson",
-          "sha256": "951f0480aad5ea4470e5eb981b53be7085aef5f3a42695036d48e2256680171e",
-          "bytes": 1657015,
+          "sha256": "a3a20ecf9427f379d45a17d3ba51127929d05be2c10f265bc65ee4a95fa8887a",
+          "bytes": 1658762,
           "features": 5528
         }
       ]

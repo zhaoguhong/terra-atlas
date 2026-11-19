@@ -35,7 +35,9 @@
   "loess-plateau": [
     "region-1159103717"
   ],
-  "inner-mongolian-plateau": [],
+  "inner-mongolian-plateau": [
+    "region-cn-zhang2025-inner-mongolian-plateau"
+  ],
   "yunnan-guizhou-plateau": [
     "region-1159104027"
   ],
@@ -214,16 +216,32 @@
   "fujisan": [
     "peak-1159105623"
   ],
-  "pacific-ocean": [],
-  "atlantic-ocean": [],
-  "indian-ocean": [],
-  "arctic-ocean": [],
-  "malacca-strait": [],
-  "gibraltar-strait": [],
+  "pacific-ocean": [
+    "region-marine-ne-1159115079",
+    "region-marine-ne-1159115099"
+  ],
+  "atlantic-ocean": [
+    "region-marine-ne-1159115057",
+    "region-marine-ne-1159115149"
+  ],
+  "indian-ocean": [
+    "region-marine-ne-1159115123"
+  ],
+  "arctic-ocean": [
+    "region-marine-ne-1159115017"
+  ],
+  "malacca-strait": [
+    "region-marine-ne-1159116835"
+  ],
+  "gibraltar-strait": [
+    "region-marine-ne-1159117067"
+  ],
   "bering-strait": [],
   "suez-canal": [],
   "panama-canal": [],
-  "mediterranean": [],
+  "mediterranean": [
+    "region-marine-ne-1159115321"
+  ],
   "world-population": [],
   "population-density": [],
   "china-population": [],
@@ -389,7 +407,9 @@
   "ningxia": [
     "province-cn-64"
   ],
-  "taiwan-province": [],
+  "taiwan-province": [
+    "province-cn-71"
+  ],
   "northeast-blacksoil": [],
   "hetao-irrigation": [],
   "xilingol-pasture": [],
@@ -459,7 +479,9 @@
   "singapore-port": [],
   "gotthard-rail": [],
   "arctic-region": [],
-  "southern-ocean": [],
+  "southern-ocean": [
+    "region-marine-ne-1159115037"
+  ],
   "guilin-karst": [],
   "shilin-karst": [],
   "wulong-karst": [],

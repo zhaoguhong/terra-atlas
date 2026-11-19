@@ -1,3 +1,5 @@
+import {waterCycleReview} from './water-cycle-figures.mjs'
+
 export default [
 {id:'earth-rocks',title:'岩石与岩石循环',group:'earth',diagram:'rocks',stops:['deccan-plateau','danxiashan','guilin-karst','himalayas'],keywords:['岩石','岩浆岩','沉积岩','变质岩','石灰岩','砂岩'],lead:'同样是山，岩石的材料和结构可能完全不同。认识岩石从哪里来，是理解地貌差异的一步。',sources:['https://www.nps.gov/subjects/geology/rocks.htm','https://www.nps.gov/subjects/geology/igneous.htm','https://www.nps.gov/subjects/geology/sedimentary.htm','https://www.nps.gov/subjects/geology/metamorphic.htm'],sections:[
 ['按形成过程认识三大类岩石','岩浆岩由岩浆或熔岩冷却形成，沉积岩由碎屑、化学沉淀或生物相关物质等形成，变质岩则是原有岩石在温度、压力和流体等作用下发生改变的结果。分类依据是过程，颜色只是观察线索。\n\n矿物、颗粒大小、层理和构造都能帮助判断。现场识别往往需要多个特征，不能看到红色就叫砂岩，看到白色就叫石灰岩。'],
@@ -5,7 +7,7 @@ export default [
 ['岩石循环没有固定单行道','任何出露地表的岩石都可能风化、被搬运并成为新沉积物。岩石埋入地下后可能发生变质，在足够条件下也可能熔融。各条路径所需时间和环境不同。\n\n并不是每块岩石都必须按岩浆岩、沉积岩、变质岩依次经历一圈。循环图表达可能的联系，不能当作每块石头的完整履历。'],
 ['岩性怎样影响地貌','岩石的可溶性、抗侵蚀能力和裂隙影响水的作用方式。喀斯特需要可溶性岩石，丹霞突出红色碎屑沉积岩的形态，熔岩铺展又能形成台地。\n\n岩性不是唯一条件。相同岩石在不同构造、气候和时间背景下，可以形成不同地貌；比较时要把材料与作用过程放在一起。']
 ],question:['岩石循环是不是每块岩石都必须走完的固定顺序？','不是。它表示多条可能的转化路径，实际经历取决于岩石所处环境和后续地质过程。']},
-{id:'water-cycle',title:'水循环与地下水',group:'water',diagram:'water-cycle',stops:['yangtze','qinghai-lake','tarim-river','guilin-karst'],keywords:['水循环','蒸发','蒸腾','下渗','地下水','含水层'],lead:'雨落下来以后，水可能流过地表、进入土壤，也可能在地下停留很久。追踪这些路径，才能理解河流与用水。',sources:['https://www.usgs.gov/special-topics/water-science-school/water-cycle','https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater'],sections:[
+{id:'water-cycle',title:'水循环与地下水',group:'water',diagram:'water-cycle',stops:['yangtze','qinghai-lake','tarim-river','guilin-karst'],keywords:['水循环','蒸发','蒸腾','下渗','地下水','含水层'],lead:'雨落下来以后，水可能流过地表、进入土壤，也可能在地下停留很久。追踪这些路径，才能理解河流与用水。',sources:waterCycleReview.sources.map(source=>source.url),sections:[
 ['水在储存与流动之间转换','海洋、大气、冰雪、河湖、土壤和地下都是水的储存位置。蒸发、蒸腾、降水、径流和下渗让水在这些位置之间移动，太阳能与重力参与驱动。\n\n循环不表示每滴水都沿同一条路线走。一次降雨中，部分水很快进入河道，另一部分可能先被土壤、植物或地下空间储存。'],
 ['下雨以后，地表发生什么','降雨强度、土壤性质、已有湿度、坡度和地表覆盖影响下渗与径流。降雨超过下渗等条件允许的范围时，更多水可能沿地表汇集。\n\n硬化地表改变原有路径，植被和土壤结构也会改变储水与流速。因此，同样一场雨在山坡、农田和城区可能产生不同水文响应。'],
 ['地下水大多存在于孔隙与裂隙','地下水可以储存在砂砾孔隙和岩石裂隙中，并沿压力条件缓慢流动。具有储水和输水能力的地层可构成含水层，岩溶地区还可能发育较大的地下通道。\n\n把所有地下水想成一条看得见的地下河，会漏掉最普遍的孔隙和裂隙储水。泉是地下水出露地表的一种形式，河流也可能与地下水互相交换。'],

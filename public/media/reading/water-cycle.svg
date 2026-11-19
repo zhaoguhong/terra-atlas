@@ -1,1 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" role="img" aria-labelledby="title desc"><title id="title">水循环：不同储存位置之间的移动</title><desc id="desc">箭头表示部分主要路径，不代表固定流量。地表水、土壤水与地下水彼此联系，停留时间各不相同。</desc><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#5c9fb1" stroke-width="1.3"/></marker><marker id="warm" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0 0 L6 3 L0 6" fill="none" stroke="#b7735c" stroke-width="1.3"/></marker></defs><rect width="1000" height="560" rx="18" fill="#f6f3e9"/><g font-family="system-ui, -apple-system, 'PingFang SC', 'Noto Sans CJK SC', sans-serif"><text x="45" y="60" font-size="30" text-anchor="start" fill="#233c36">水循环：不同储存位置之间的移动</text><text x="955" y="92" font-size="16" text-anchor="end" fill="#68766c">概念示意 · 非实测</text><rect x="55" y="385" width="280" height="80" rx="0" fill="#b9dce4"/><path d="M335 385 L520 225 L740 370 L945 390 L945 465 L335 465 Z" fill="#c5a471" stroke="#233c36" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><g fill="#dce9e9"><circle cx="470" cy="130" r="20" fill="#dce9e9"/><circle cx="497" cy="122" r="29" fill="#dce9e9"/><circle cx="524" cy="130" r="22" fill="#dce9e9"/><rect x="454" y="130" width="87" height="21" rx="8" fill="#dce9e9"/></g><path d="M480 170 l-9 28" fill="none" stroke="#5c9fb1" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M505 170 l-9 28" fill="none" stroke="#5c9fb1" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M530 170 l-9 28" fill="none" stroke="#5c9fb1" stroke-width="3" stroke-linejoin="round" stroke-linecap="round"/><path d="M180 355 L180 175" fill="none" stroke="#5c9fb1" stroke-width="4" marker-end="url(#arrow)"/><path d="M210 160 Q340 100 455 145" fill="none" stroke="#5c9fb1" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/><path d="M555 285 Q650 365 850 395" fill="none" stroke="#5c9fb1" stroke-width="7" stroke-linejoin="round" stroke-linecap="round"/><path d="M760 330 L760 435" fill="none" stroke="#5c9fb1" stroke-width="4" marker-end="url(#arrow)"/><path d="M740 445 Q480 475 345 445" fill="none" stroke="#5c9fb1" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/><text x="80" y="140" font-size="22" text-anchor="start" fill="#233c36">蒸发</text><text x="590" y="170" font-size="22" text-anchor="start" fill="#233c36">降水</text><text x="810" y="345" font-size="21" text-anchor="start" fill="#233c36">下渗</text><text x="440" y="515" font-size="23" text-anchor="start" fill="#233c36">地下水与河流交换</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 335" width="540" height="335" role="img" aria-labelledby="title desc">
+  <title id="title">从海面到陆地</title>
+  <desc id="desc">海面上方的箭头向上，再随风指向山地上空的云。雨从云中落下，山坡上的两支箭头分别顺坡流向海面和向下进入土层。</desc>
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="3" markerHeight="3" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#196581"/></marker>
+    <pattern id="grains" patternUnits="userSpaceOnUse" width="22" height="16"><ellipse cx="5" cy="5" rx="2.5" ry="1.6" fill="#8e7958" opacity=".38"/><circle cx="16" cy="12" r="1.5" fill="#8e7958" opacity=".38"/></pattern>
+  </defs>
+  <rect width="100%" height="100%" rx="10" fill="#f7f5ec"/>
+  <g font-family="system-ui, -apple-system, 'PingFang SC', 'Noto Sans CJK SC', sans-serif">
+    <text x="22" y="42" text-anchor="start" font-size="28" fill="#233e39">从海面到陆地</text>
+    <rect x="16" y="60" width="508" height="232" rx="7" fill="#f0f5ef"/>
+<path d="M16 231H180L202 292H16Z" fill="#afd5da" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M157 292Q183 238 226 223Q277 208 310 178Q349 143 380 152Q431 165 465 139L524 115V292Z" fill="#e7d1a6" stroke="#84744f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M256 211Q294 194 311 178Q349 143 380 152" fill="none" stroke="#869269" stroke-width="4"/>
+<path d="M339 102Q330 92 342 85Q345 70 360 74Q373 59 386 74Q404 71 407 86Q424 93 412 102Z" fill="#c8dce0" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<g transform="translate(357 110)" fill="none" stroke="#5892a4" stroke-width="3" stroke-linecap="round">
+    <path d="M0 0l-4 9m24-9l-4 9m24-9l-4 9"/>
+  </g>
+<path d="M75 222V126" fill="none" stroke="#196581" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="25" y="178" text-anchor="start" font-size="24" fill="#233e39">蒸发</text>
+<path d="M120 100Q206 69 312 91" fill="none" stroke="#196581" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="183" y="130" text-anchor="start" font-size="22" fill="#233e39">水汽随风移动</text>
+<text x="419" y="124" text-anchor="start" font-size="24" fill="#233e39">降雨</text>
+<path d="M320 177Q269 213 222 227T146 250" fill="none" stroke="#196581" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="193" y="280" text-anchor="start" font-size="24" fill="#233e39">地表径流</text>
+<path d="M368 158Q371 203 380 232" fill="none" stroke="#196581" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="398" y="211" text-anchor="start" font-size="24" fill="#233e39">下渗</text>
+<text x="26" y="274" text-anchor="start" font-size="24" fill="#233e39">海洋</text>
+    <text x="518" y="320" text-anchor="end" font-size="17" fill="#233e39">概念示意 · 非实测</text>
+  </g>
+</svg>

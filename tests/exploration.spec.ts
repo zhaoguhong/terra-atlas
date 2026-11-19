@@ -73,7 +73,7 @@ test('country searches keep country labels and geometry separate from same-name 
 test('search updates an existing query when delayed language data arrives and preserves keyboard selection',async({page})=>{
   let release!:()=>void
   const gate=new Promise<void>(resolve=>{release=resolve})
-  await page.route('**/data/learning-languages.geojson',async route=>{await gate;await route.continue()})
+  await page.route('**/data/learning-languages.geojson{,.gz}',async route=>{await gate;await route.continue()})
   try{
     await chooseTheme(page,'语言分布');await page.getByRole('combobox',{name:'语言展示方式'}).selectOption('points');await closeLayers(page)
     const input=page.getByRole('combobox',{name:'搜索地理对象'})
@@ -187,10 +187,10 @@ test('responsive layouts have no overflow',async({page},info)=>{
 })
 
 test('failed core data shows an actionable retry and recovers',async({page})=>{
-  await page.route('**/data/lakes.geojson',r=>r.fulfill({status:503,contentType:'application/json',body:'{}'}))
+  await page.route('**/data/lakes.geojson{,.gz}',r=>r.fulfill({status:503,contentType:'application/json',body:'{}'}))
   await page.reload()
   await expect(page.locator('.map-status.error')).toContainText('加载失败')
-  await page.unroute('**/data/lakes.geojson')
+  await page.unroute('**/data/lakes.geojson{,.gz}')
   errors=errors.filter(e=>!e.includes('503'))
   await page.getByRole('button',{name:'重试',exact:true}).click()
   await expect(page.locator('.app')).toHaveAttribute('data-map-status','ready',{timeout:35000})

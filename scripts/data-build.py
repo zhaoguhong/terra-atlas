@@ -22,6 +22,8 @@ from shapely.geometry import Polygon, mapping, shape
 from shapely.ops import unary_union
 from shapely import set_precision
 from opencc import OpenCC
+from china_presentation import country_features, PRESENTATION_NOTE
+from geographic_names import correct_region_name
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "data/raw"
@@ -169,7 +171,7 @@ for f in read("ne_50m_admin_0_countries"):
         out["center"] = [p["label_x"], p["label_y"]]
     out["continent"] = p.get("continent")
     countries.append(feature(geom, out))
-layers.append(write_layer("countries", countries))
+layers.append(write_layer("countries", country_features(countries)))
 
 regions = []
 groups = defaultdict(list)
@@ -182,6 +184,7 @@ for key, fs in groups.items():
     p = props(fs[0])
     geom = unary_union([shape(f["geometry"]) for f in fs]).simplify(0.018, preserve_topology=True)
     out = normalized_props(p, KINDS.get(p["featurecla"], "region"), f"region-{key}", geom, "natural-earth-10m-regions")
+    out = correct_region_name(out, p.get("name"))
     out["geometryNote"] = "Natural Earth自然地理标注范围（1:1000万概化），不是精确地貌边界。"
     regions.append(feature(geom, out))
 layers.append(write_layer("regions", regions))
@@ -359,6 +362,8 @@ for row in manifest:
                         "processing": "WGS84；去除无关属性；保拓扑简化并用GEOS安全量化至0.0001°，移除退化的极短线与极小面。中文名基于原数据Wikidata译名转简体；国家沿用原始中文名，自然要素另校正主要通用译名，避免同名国家被替换为河流名称。自然区域为标注范围与概化表达，非精确地貌边界。国家/陆地1:5000万，其他1:1000万；河流按rivernum合并同一流域河段及湖泊中心线，已核实的大河合并不同名称河段；同名跨流域河流保留独立ID。峰点仅保留原始mountain类型。"})
         if row["id"] == "ne_50m_land":
             sources[-1]["processing"] += "另从原始陆地要素1380的第一个内环提取里海湖面（lake-caspian-sea）；采用同一0.025°保拓扑简化与0.0001°量化，岸线来自原数据。"
+        if row["id"] == "ne_50m_admin_0_countries":
+            sources[-1]["processing"] += PRESENTATION_NOTE + "中国国家轮廓合并原始CHN/TWN/HKG/MAC几何，分列统计仍使用各来源范围。"
 
 artifact_records = []
 for path in sorted(layers) + [OUT / "climate-grid.json", OUT / "climate-legend.json", OUT / "gazetteer.json"]:

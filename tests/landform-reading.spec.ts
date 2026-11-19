@@ -1,5 +1,5 @@
 import {expect,test} from '@playwright/test'
-import {baseReady,selectedGeometry} from './map-readiness'
+import {studyReady as baseReady,selectedGeometry} from './map-readiness'
 const reader='.topic-reading-page:not([hidden])'
 
 for(const [old,chapter,next,section] of [
@@ -20,8 +20,8 @@ test('landforms: old bookmarks merge and the most recent old chapter remains rea
   await page.addInitScript(()=>{if(!localStorage.getItem('terra-atlas-v1'))localStorage.setItem('terra-atlas-v1',JSON.stringify({savedTopics:['landform-karst','landform-wind'],readingProgress:{'landform-karst':{sectionId:'section-3',offset:.4,updatedAt:1},'landform-wind':{sectionId:'landform-loess-section-2',offset:.6,updatedAt:2}}}))})
   await page.goto('/');await baseReady(page)
   await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).savedTopics)).toEqual(['landform-landscapes'])
-  await page.getByRole('button',{name:'学主题',exact:true}).click()
-  await page.getByRole('button',{name:'阅读专题：常见地貌与中国典型景观',exact:true}).click()
+  await page.getByRole('link',{name:'学主题',exact:true}).click()
+  await page.getByRole('link',{name:'阅读专题：常见地貌与中国典型景观',exact:true}).click()
   await expect(page.locator(reader).getByRole('button',{name:'取消收藏专题',exact:true})).toBeVisible()
   await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).readingProgress['landform-landscapes'].sectionId)).toBe('loess')
 })

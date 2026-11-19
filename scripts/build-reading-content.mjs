@@ -6,11 +6,13 @@ import peopleResources from '../data/reading/people-resources.mjs'
 import earthRegions from '../data/reading/earth-regions.mjs'
 import newLandforms from '../data/reading/landform-lessons.mjs'
 import foundations from '../data/reading/foundations.mjs'
+import {waterCycleFigures,waterCycleReview} from '../data/reading/water-cycle-figures.mjs'
 import newPlaces from '../data/reading/new-places.mjs'
 import climateLessons from '../data/reading/climate-lessons.mjs'
 import atmosphere from '../data/reading/atmosphere-lessons.mjs'
 import mapGuides from '../data/reading/map-guides.mjs'
 import {consolidateTopics} from './consolidate-topics.mjs'
+import {processFigures} from './reading-process-figures.mjs'
 import {readingDiagram} from './reading-diagrams.mjs'
 import {languageReadingFigures} from './language-reading-figures.mjs'
 import {editorialReadingMaps} from './editorial-reading-maps.mjs'
@@ -49,7 +51,7 @@ const byId=new Map(knowledge.map(k=>[k.id,k]))
 let topics=read('data/reading/topic-inputs.json')
 const sourceIndex=new Map([...knowledge.flatMap(worldGeographyBaselineSources),...topics.flatMap(topic=>topic.sources)].map(s=>[s.url,s]))
 const atmosphereSourceReview=read('data/reading/atmosphere-sources.json')
-for(const {title,url} of atmosphereSourceReview.sources)sourceIndex.set(url,{title,url})
+for(const {title,url} of [...atmosphereSourceReview.sources,...waterCycleReview.sources])sourceIndex.set(url,{title,url})
 for(const {title,url} of languageSources)sourceIndex.set(url,{title,url})
 function source(url){
   if(sourceIndex.has(url))return sourceIndex.get(url)
@@ -85,12 +87,13 @@ const media=photos.map(photo=>{const [title,caption,placeIds]=captions[photo.id]
 // Ordinary reading builds reuse them without calling a generation service.
 const illustrations=read('data/reading/ai-illustrations.json')
 media.push(...illustrations.figures.map(({generation,...figure})=>figure))
-const diagramIds=[...new Set([...Object.values(lessons).map(l=>l.diagram),'upwelling'])]
+const diagramIds=[...new Set([...Object.values(lessons).map(l=>l.diagram),'upwelling','canal-lock',...Object.keys(waterCycleFigures)])]
 for(const id of diagramIds){
-  const {svg,...info}=readingDiagram(id),path=`media/reading/${id}.svg`
+  const {svg,...info}=waterCycleFigures[id]||readingDiagram(id),path=`media/reading/${id}.svg`
   fs.writeFileSync('public/'+path,svg)
-  const refs=id==='upwelling'?[{title:'NOAA · What is upwelling?',url:'https://oceanservice.noaa.gov/facts/upwelling.html'}]:uniqueSources(topics.filter(t=>lessons[t.id].diagram===id).flatMap(t=>t.sources))
-  media.push({id:'diagram-'+id,path,kind:'diagram',...info,author:'山河图',license:'CC BY 4.0',licenseUrl:'https://creativecommons.org/licenses/by/4.0/',sourceUrl:refs[0].url,sourceUrls:refs.map(s=>s.url)})
+  const figureSources=({upwelling:['https://oceanservice.noaa.gov/facts/upwelling.html'],'canal-lock':['https://pancanal.com/en/history-of-the-panama-canal/']})[id]??info.sourceUrls
+  const sourceUrls=figureSources??uniqueSources(topics.filter(t=>lessons[t.id].diagram===id).flatMap(t=>t.sources)).map(source=>source.url)
+  media.push({id:'diagram-'+id,path,kind:'diagram',...info,author:'山河图',license:'CC BY 4.0',licenseUrl:'https://creativecommons.org/licenses/by/4.0/',sourceUrl:sourceUrls[0],sourceUrls})
 }
 for(const {svg,...info} of languageReadingFigures()){
   fs.writeFileSync('public/'+info.path,svg)
@@ -203,22 +206,21 @@ for(const path of ['data/research/area-presentation-review.json','public/data/ar
 const intro=read('data/research/topic-intro-review.json')
 intro.readingRevision={reviewedAt:date,version,scope:`先前59个原专题整合并补充为32篇；六篇地貌重写为两篇，世界海陆与区域比较再拆为七大洲、五大洋与世界区域比较，当前${topics.length}篇。保留旧链接转向与地图案例，按同类对象比较补充相关主题。非外部独立审核。`}
 intro.outputSha256=sha('src/data/topics.json')
-intro.editorialRevision={reviewedAt:'2026-11-12',topicIds:articles.map(a=>a.id),scope:'按科普文章逐篇编辑32篇主题、独立地图简版与模块解读；调整材料顺序、比较与配图，保留章节地址、案例及来源。文字编辑与一致性自查，不声称重新核验全部外部资料。'}
+intro.editorialRevision={reviewedAt:'2026-11-19',topicIds:articles.map(a=>a.id),scope:'全站30篇专题按题材重组正文和独立地图简版。保留章节定位、案例和来源，续段与前节连读，主要过程图按手机阅读宽度排布。'}
 intro.landformRevision=read('data/reading/landform-sources.json')
 intro.worldGeographyRevision=worldGeographyRevision.review
 intro.topics=topics.map(t=>({id:t.id,title:t.title,summaryReviewed:true,sectionsReviewed:t.sections.length,modulesReviewed:t.modules.map(m=>m.id),visuals:(t.visuals||[]).map(v=>v.kind),decision:'地图保留独立简版；完整文章含整体介绍、机制解释、图文比较和具体案例，配图可联动真实地图。',sourceUrls:t.sources.map(s=>s.url)}))
 for(const path of ['data/research/topic-intro-review.json','public/data/topic-intro-review.json'])write(path,intro)
 const inputs=['data/reading/topic-inputs.json','data/reading/topic-plan.mjs','data/reading/atmosphere-lessons.mjs','data/reading/atmosphere-sources.json','data/reading/map-guides.mjs']
-inputs.push('data/reading/ai-illustrations.json',...illustrations.figures.map(figure=>'public/'+figure.path))
+inputs.push('data/reading/foundations.mjs','data/reading/water-cycle-figures.mjs','data/reading/ai-illustrations.json',...illustrations.figures.map(figure=>'public/'+figure.path))
 inputs.push('data/reading/language-lesson.mjs','scripts/language-reading-figures.mjs','public/data/land.geojson','public/data/language-areas.geojson','public/data/learning-languages.geojson','public/data/language-overview.json')
-inputs.push('scripts/apply-reading-edits.mjs','scripts/reading-diagrams.mjs','data/reading/map-essays.json','docs/writing.md',...editorialInputs)
+inputs.push('scripts/apply-reading-edits.mjs','scripts/reading-diagrams.mjs','scripts/reading-process-figures.mjs','data/reading/map-essays.json','docs/writing.md',...editorialInputs)
 inputs.push('scripts/editorial-reading-maps.mjs',...new Set(editorialMaps.flatMap(item=>item.inputs.map(input=>input.path)).filter(path=>!inputs.includes(path))))
 const outputs=[...articles.map(a=>`public/reading/topics/${a.id}.json`),...media.map(m=>'public/'+m.path),'src/data/reading-media.json']
 inputs.push(landformInput,landformGuideInput,'data/reading/landform-sources.json','scripts/revise-landform-topics.mjs')
 inputs.push(worldGeographyInput,worldGeographyGuideInput,worldGeographySourceInput,'scripts/revise-world-geography.mjs')
 outputs.push('src/data/topic-redirects.json')
-const manifest={version:'illustrated-science-articles-2026-11-12',reviewedAt:'2026-11-12',atmosphereSourceReview,inputs:inputs.map(path=>({path,sha256:sha(path)})),license:'原创正文与 SVG 为 CC BY 4.0；第三方照片按各自许可，见 media。',processing:'正文按专题编写，案例引用已有精选卡片的原创解读；图片下载到本地，保留原图来源和署名。概念 SVG 标注非实测；语言地图另由既有真实使用区及语言参考点直接投影，各自记录版本和处理；不生成或推测地理边界。',
-  editorialRevision:{version:'illustrated-science-articles-2026-11-12',reviewedAt:'2026-11-12',topicIds:articles.map(a=>a.id),processing:'32篇主题与地图简版逐篇通读，重整对象介绍、机制与案例的衔接；新增10张概念插图，保留中国地形4张插图及原有照片、机制图，调整图文位置。保留旧章节地址、地图入口及引用；重建读取全部独立校订稿。',scope:'文字、结构、配图和阅读布局编辑；新增图示按NSIDC、USGS、NPS、NASA、EPA、FAO及香港天文台资料核对，不声称重新核验全部外部来源。'},
+const manifest={version:'illustrated-science-articles-2026-11-19',reviewedAt:'2026-11-19',atmosphereSourceReview,inputs:inputs.map(path=>({path,sha256:sha(path)})),license:'原创正文与 SVG 为 CC BY 4.0；第三方照片按各自许可，见 media。',processing:'正文按专题编写，案例引用已有精选卡片的原创解读；图片下载到本地，保留原图来源和署名。概念 SVG 标注非实测；语言地图另由既有真实使用区及语言参考点直接投影，各自记录版本和处理；不生成或推测地理边界。',
   mapGuides:{method:'逐主题独立编写简版科普短文，每段链接支持该解释的完整章节；地图案例观察入口沿用真实对象。不新增地理范围或实测数据。',topics:topics.map(t=>({id:t.id,sectionIds:t.mapGuide.sections.map(s=>s.sectionId),characters:t.mapGuide.sections.reduce((n,s)=>n+s.body.length,0),caseIds:t.mapGuide.cases.map(c=>c.id)}))},
   topicCount:topics.length,cardCount:knowledge.length,moduleCount:topics.reduce((n,t)=>n+t.modules.length,0),climateNoteCount:notes.length,
   reviewLimits:['本次为编写过程中的来源与一致性自查，不声称外部专家审定。','原有来源保留其原始时期；没有把旧统计更新为实时数据。','照片是特定地点与拍摄时刻的景观记录，不能代替地貌完整范围。'],
@@ -227,22 +229,28 @@ const manifest={version:'illustrated-science-articles-2026-11-12',reviewedAt:'20
   languageRevision:{version:'language-essay-2026-11-08',reviewedAt:'2026-11-08',topicId:'map-language',sources:languageSources,dataInputs:[{id:'glottography-asher2007-v2',version:'2.0',period:'2007年图集contemporary使用区',license:'CC BY 4.0'},{id:'glottolog-5.3',version:'5.3',license:'CC BY 4.0'},{id:'natural-earth-50m-land',version:'ca96624a56bd078437bca8184e78163e5039ad19',license:'Public domain'}],sourceAccessNote:'UNESCO口头传统页与联合国语言教学页全文访问受限，采用搜索服务可核对的页面摘录；其余新增来源已读取页面或公开摘要。',processing:'仅重写语言分布一篇；原创正文配一幅亲缘示意及两幅真实数据地图。沿用原有语言ID、使用区和参考点，不新增或推测语言范围。',validation:'生成时逐项选择既有Glottocode；输入、输出和媒体文件保留SHA-256。浏览器与自动检查结果另存本地验证目录。'},
   outputs:outputs.map(path=>({path,sha256:sha(path)}))}
 manifest.processing+=' 中国地形格局沿用4张位置插图，另增10张跨主题概念插图，类型为 illustration；图像不是实测地图，不进入交互地图几何。生成说明与本次核对范围见 illustrationRevision。'
+manifest.waterCycleRevision=waterCycleReview
 manifest.landformRevision=read('data/reading/landform-sources.json')
 manifest.worldGeographyRevision=worldGeographyRevision.review
-manifest.editorialRevision.processing+=` 地貌六篇随后整合为两篇；世界海陆与区域比较拆为七大洲、五大洋、世界区域比较，前两篇面积图前置，逐洲逐洋介绍并注明口径与分歧。其他相关主题补充整体比较，当前目录${topics.length}篇。阅读界面移除思考题，旧问题数据保留追溯。`
 manifest.license='原创正文、SVG 与项目 AI 辅助插图按 CC BY 4.0 提供；第三方照片与地图输入保留各自许可，见 media。'
 manifest.illustrationRevision={version:illustrations.version,reviewedAt:illustrations.reviewedAt,topicIds:articles.filter(article=>article.sections.some(section=>section.mediaIds?.some(id=>mediaById.get(id)?.kind==='illustration'))).map(article=>article.id),sourceReview:illustrations.sourceReview,additionalSourceReviews:illustrations.additionalSourceReviews,mediaIds:illustrations.figures.map(figure=>figure.id)}
-manifest.mapRevision={reviewedAt:'2026-11-12',mediaIds:editorialMaps.map(item=>item.id),processing:'复用本站真实陆地、明确绑定的山系标注参考范围和经核验的四区分区；直接投影，保留输入版本、许可、要素ID和SHA-256，不推测新边界。'}
+manifest.editorialRevision={version:manifest.version,reviewedAt:manifest.reviewedAt,topicIds:articles.map(a=>a.id),processing:intro.editorialRevision.scope,scope:'专题组织、图文编辑及界面一致性检查。各图的数据版本、地理范围和制作方式见媒体记录。'}
+manifest.mapRevision={reviewedAt:'2026-11-19',mediaIds:editorialMaps.map(item=>item.id),processing:'复用本站真实陆地、山系标注参考范围、四区分区及长江中游省界与河湖几何；直接投影，保留输入版本、许可、要素ID和SHA-256，不推测新边界。'}
 for(const item of manifest.media)if(item.kind==='illustration'){
   item.accessedAt=illustrations.sourceReview.accessedAt
   item.processing=mediaById.get(item.id).processing
   item.generation=illustrations.figures.find(figure=>figure.id===item.id).generation
 }else if(editorialMaps.some(map=>map.id===item.id)){
-  item.accessedAt='2026-11-12'
+  item.accessedAt=item.id==='china-middle-yangtze-map'?manifest.reviewedAt:'2026-11-12'
   item.processing=mediaById.get(item.id).processing
-}else if(item.id==='diagram-upwelling'){
-  item.accessedAt='2026-11-10'
-  item.processing='原创SVG海岸横剖面，依据NOAA上升流说明绘制；标注概念示意、非实测，不表示风速、流速或真实地理范围。'
+}else if(Object.hasOwn(waterCycleFigures,item.id.replace(/^diagram-/,''))){
+  item.accessedAt=waterCycleReview.reviewedAt
+  item.processing=waterCycleReview.processing
+}else if(Object.hasOwn(processFigures,item.id.slice('diagram-'.length))){
+  item.revisedAt='2026-11-19'
+  if(item.id==='diagram-canal-lock')item.accessedAt='2026-11-19'
+  if(item.id==='diagram-upwelling')item.accessedAt='2026-11-10'
+  item.processing='依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。'
 }else if(item.kind==='map'||item.id==='language-family-tree'){
   item.accessedAt='2026-11-08'
   item.processing=mediaById.get(item.id).processing||'原创亲缘概念示意；依据Glottolog 5.3选择分支与语言，不显示年代，省略中间层级。'

@@ -47,6 +47,44 @@ const wrap=(id,title,caption,height,body)=>`<svg xmlns="http://www.w3.org/2000/s
 const heading=(title,subtitle)=>text(42,54,title,32,ink,'start','font-weight="650"')+text(42,88,subtitle,19,muted)
 const figure=(id,title,caption,height,body,extra)=>({id,kind:'map',title,caption,alt:caption,path:`media/reading/${id}.svg`,author:'山河图制图；Natural Earth',license:'CC BY 4.0',licenseUrl:'https://creativecommons.org/licenses/by/4.0/',width:1200,height,...extra,svg:wrap(id,title,caption,height,body)})
 
+function middleYangtzeMap(bindings){
+  const provincesPath='public/data/learning-provinces.geojson', lakesPath='public/data/lakes.geojson', riverPath='public/data/rivers.geojson'
+  const provinceIds=['province-cn-42','province-cn-43','province-cn-36']
+  const lakes=read(lakesPath).features.filter(f=>[...bindings['dongting-lake'],...bindings['poyang-lake']].includes(f.properties.id))
+  const river=read(riverPath).features.find(f=>f.properties.id===bindings.yangtze[0])
+  const provinces=read(provincesPath).features.filter(f=>provinceIds.includes(f.properties.id))
+  assert(provinces.length===3&&lakes.length===2&&river.geometry.type==='MultiLineString','Known middle Yangtze features')
+  const map=projection([108,24.3,119.3,33.45],45,102,1110)
+  const colors=['#d9dfc1','#e9d6ae','#dbccc4']
+  const areas=provinces.map(f=>`<path d="${geometryPath(f.geometry,map)}" fill="${colors[provinceIds.indexOf(f.properties.id)]}" stroke="#857c6d" stroke-width="2" fill-rule="evenodd"/>`).join('')
+  const lakeShapes=lakes.map(f=>`<path d="${geometryPath(f.geometry,map)}" fill="#80b7c9" stroke="#317a8e" stroke-width="2"/>`).join('')
+  const riverLine=river.geometry.coordinates.map(segment=>segment.map((coord,i)=>(i?'L':'M')+map.xy(coord).join(',')).join('')).join('')
+  const labels=[[111.7,31.65,'湖北'],[111.3,27.25,'湖南'],[115.65,26.4,'江西']].map(([lon,lat,name])=>text(...map.xy([lon,lat]),name,54,ink,'middle',halo)).join('')
+  // Attach each leader to the published river or shoreline itself. The
+  // approximate label position only selects the nearby part of that geometry.
+  const anchors=[['yangtze',114.1,30.45,114.8,31.45,'长江'],['dongting-lake',112.83,29.25,111.4,29.5,'洞庭湖'],['poyang-lake',116.27,29.14,117.93,29.55,'鄱阳湖']]
+  const namedWater=anchors.map(([id,lon,lat,tx,ty,name])=>{
+    const lines=id==='yangtze'?river.geometry.coordinates:polygonList(lakes.find(f=>bindings[id].includes(f.properties.id)).geometry).flat()
+    const distance=([x,y])=>(x-lon)**2+(y-lat)**2
+    const nearest=lines.flat().reduce((best,point)=>distance(point)<distance(best)?point:best)
+    const [ax,ay]=map.xy(nearest),[x,y]=map.xy([tx,ty])
+    return line(ax,ay,x,y+7,'#297388',3)+`<circle cx="${ax}" cy="${ay}" r="5" fill="#1e596d"/>`+text(x,y,name,44,'#1e596d','middle',halo)
+  }).join('')
+  const admin=read('public/data/learning-data-sources.json').sources.find(s=>s.id==='natural-earth-10m-admin1-learning')
+  const water=read('public/data/sources.json').sources.filter(s=>['natural-earth-10m-rivers','natural-earth-10m-lakes'].includes(s.id))
+  const height=Math.ceil(map.y+map.height+24)
+  const caption='湖南的洞庭湖和江西的鄱阳湖分别与长江相通。沿蓝线从西向东，可以看到长江怎样穿过湖北，又经过几个省相邻的地带。图中只着色这三个省，省界和水体均为概化范围。'
+  return figure('china-middle-yangtze-map','长江中游的三省与两湖',caption,height,
+    text(45,65,'长江中游的三省与两湖',52)+`<defs><clipPath id="region"><rect x="${map.x}" y="${map.y}" width="${map.width}" height="${map.height}"/></clipPath></defs><g clip-path="url(#region)">${areas}${lakeShapes}<path d="${riverLine}" fill="none" stroke="#317a8e" stroke-width="5"/>${labels}${namedWater}</g>`,{
+      sourceUrl:admin.url,sourceUrls:[admin.url,...water.map(s=>s.url),neTerms],
+      placeIds:['hubei','hunan','jiangxi','yangtze','dongting-lake','poyang-lake'],
+      featureIds:[...provinceIds,river.properties.id,...lakes.map(f=>f.properties.id)],
+      inputs:[input(provincesPath,provinceIds),input(lakesPath,lakes.map(f=>f.properties.id)),input(riverPath,[river.properties.id]),input('src/data/feature-bindings.json'),input('public/data/learning-data-sources.json'),input('public/data/sources.json')],
+      inputVersions:[admin,...water].map(s=>({id:s.id,version:admin.version,license:'Public domain'})),
+      processing:'复用站内 Natural Earth 1:1000万省级、长江与湖泊几何，以相同等距圆柱投影裁切长江中游。省界使用现有省级学习层，未新增水系或推定流域范围。',
+    })
+}
+
 export function editorialReadingMaps(){
   const land=read('public/data/land.geojson'),regions=read('public/data/regions.geojson'),china=read('public/data/china-reference-regions.geojson'),knowledge=read('src/data/knowledge.json'),bindings=read('src/data/feature-bindings.json'),chinaSource=read('public/data/china-reference-region-sources.json')
   validateDateLine(land.features)
@@ -106,7 +144,7 @@ export function editorialReadingMaps(){
       inputVersions:[{id:chinaSource.id,version:chinaSource.version,license:'CC BY 4.0'},{id:'natural-earth-50m-land',version:'ca96624a56bd078437bca8184e78163e5039ad19',license:'Public domain'}],
       processing:'直接投影public/data/china-reference-regions.geojson的四个已验证多边形，不新增分界、不按行政省界补面。沿用Jiang等（2023）图2数字化分区的CC BY 4.0署名、配准与局限说明；背景Natural Earth 50m陆地为公有领域。等距圆柱投影（中央经线0°、标准纬线0°）裁剪为70–136°E、17–55°N，坐标四舍五入到0.1像素；分区名称位于该层已记录的参考中心。',
     })
-  return [continents,mountains,chinaRegions]
+  return [continents,mountains,chinaRegions,middleYangtzeMap(bindings)]
 }
 
 // Optional standalone regeneration; the main reading build imports the function.

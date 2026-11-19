@@ -1,6 +1,6 @@
 import {readFileSync} from 'node:fs'
 import {expect,test,type Locator,type Page} from '@playwright/test'
-import {baseReady} from './map-readiness'
+import {studyReady as baseReady} from './map-readiness'
 import rawTopics from '../src/data/topics.json' with {type:'json'}
 import rawMedia from '../src/data/reading-media.json' with {type:'json'}
 
@@ -20,7 +20,7 @@ async function catalogue(page:Page){
   if(await reader(page).isVisible()){
     await reader(page).getByRole('button',{name:'主题目录',exact:true}).click()
   }else{
-    await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'学主题',exact:true}).click()
+    await page.getByRole('navigation',{name:'浏览方式'}).getByRole('link',{name:'学主题',exact:true}).click()
   }
   await expect(page.locator('.study-library')).toBeVisible()
 }
@@ -29,7 +29,7 @@ async function openTopic(page:Page,id:string){
   const topic=rawTopics.find(item=>item.id===id)!
   await catalogue(page)
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill(topic.title)
-  await page.getByRole('button',{name:'阅读专题：'+topic.title,exact:true}).click()
+  await page.getByRole('link',{name:'阅读专题：'+topic.title,exact:true}).click()
   await expect(reader(page)).toHaveAttribute('data-reading-topic',id)
   await expect(reader(page).locator('h1')).toHaveText(topic.title)
 }

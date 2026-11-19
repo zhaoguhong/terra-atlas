@@ -26,6 +26,7 @@
 .reading-inline-map-place{display:flex;align-items:center;justify-content:space-between;gap:15px;margin:0 13px 13px;padding:13px;border:1px solid var(--line,var(--border,#dfdfd1));border-radius:7px;background:var(--surface-alt,var(--surface-raised,#edf0e5))}
 .reading-inline-map-place strong{font-size:14px;color:var(--ink,#355b40)}
 .reading-inline-map-place p{margin:6px 0 0;font-size:12px;line-height:1.85}
+.reading-inline-map-place p.reading-inline-map-extent{font-size:11px;color:var(--ink-muted,#6d7e69)}
 .reading-inline-map-place>button,.reading-inline-map-open{display:flex;align-items:center;gap:5px;min-height:40px;flex-shrink:0;padding:7px 0;font-size:12px;color:var(--ink,#355b40)}
 .reading-inline-map-open{margin:0 13px 12px}
 .reading-inline-map-error{padding:10px 13px;background:var(--surface-alt,var(--surface-raised,#edf0e5));border-top:1px solid var(--line,var(--border,#dfdfd1));font-size:12px;line-height:1.8}

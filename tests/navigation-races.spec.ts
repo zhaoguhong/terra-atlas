@@ -29,14 +29,15 @@ async function delayedFavorite(page:Page){
     localStorage.setItem('terra-atlas-v1',JSON.stringify({favorites:['language-aari1239'],view:'china',topicId:null}))
     // Observe completion of the real JSON parse, so a negative stale-update
     // assertion cannot pass before the delayed callback has had a chance to run.
-    const original=Response.prototype.json
-    Response.prototype.json=async function(){
-      const value=await original.call(this)
-      if(this.url.includes('/data/learning-languages.geojson'))(window as Window&{__raceJsonReady?:boolean}).__raceJsonReady=true
+    const mark=(value:any)=>{
+      if(value?.type==='FeatureCollection'&&value.features?.some((f:{properties?:{id?:string}})=>f.properties?.id==='language-aari1239'))(window as Window&{__raceJsonReady?:boolean}).__raceJsonReady=true
       return value
     }
+    const original=Response.prototype.json,parse=JSON.parse
+    Response.prototype.json=async function(){return mark(await original.call(this))}
+    JSON.parse=(text,reviver)=>mark(parse(text,reviver))
   })
-  await page.route('**/data/learning-languages.geojson',async route=>{
+  await page.route('**/data/learning-languages.geojson{,.gz}',async route=>{
     requested();await gate;await route.continue()
   })
   await page.goto('/');await baseReady(page);await mapSettled(page)

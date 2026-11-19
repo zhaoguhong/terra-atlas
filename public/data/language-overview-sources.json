@@ -57,7 +57,7 @@
   "localInputs": [
     {
       "path": "public/data/countries.geojson",
-      "sha256": "2a39cd564c4b0310c4305b9c174724c91a10ce3fd4c7dea01890f1bbbad12db6"
+      "sha256": "09373a29de9cbd8fa4fabb01ac9efc73eb886bfa8abd72db5fe11b52815e9a6a"
     },
     {
       "path": "public/data/learning-languages.geojson",
@@ -71,7 +71,7 @@
   "artifacts": [
     {
       "path": "/data/language-overview.json",
-      "sha256": "dea9d50fc9afd9cc8aff6eb21f1bab13ecceec3fa8723cede27005320cb0a9a0"
+      "sha256": "66abc959450272f1d589a4beb5dbc6756490e1af8b06bafa2a3baf5270a37e29"
     }
   ],
   "validation": {

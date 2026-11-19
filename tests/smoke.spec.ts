@@ -3,19 +3,25 @@ import { baseReady, mapSettled, selectedGeometry, sourceLoaded } from './map-rea
 import { chooseTheme } from './theme-controls'
 import { clickHeaderAction } from './header-actions'
 
-test('bundled full articles, local images and case navigation work below the configured base path',async({page})=>{
+test('bundled full articles, local images and case navigation work below the configured base path',async({page,baseURL})=>{
   const errors:string[]=[]
   page.on('pageerror',error=>errors.push(error.message))
   page.on('response',response=>{if(response.status()>=400)errors.push(`HTTP ${response.status()}: ${response.url()}`)})
-  await page.goto('./');await baseReady(page)
-  await page.getByRole('button',{name:'学主题',exact:true}).click()
+  const expectedHome = new URL(new URL(baseURL!).pathname, process.env.SITE_ORIGIN || 'https://terraatlas.zhaoguhong.com')
+  const response = await page.goto('./')
+  expect(await response!.text()).toContain(`rel="canonical" href="${expectedHome.href}"`)
+  await baseReady(page)
+  await page.getByRole('link',{name:'学主题',exact:true}).click()
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill('喀斯特')
-  await page.getByRole('button',{name:'阅读专题：常见地貌与中国典型景观',exact:true}).click()
+  await page.getByRole('link',{name:'阅读专题：常见地貌与中国典型景观',exact:true}).click()
   const article=page.locator('.topic-reading-page:not([hidden])')
   await expect(article.locator('h1')).toHaveText('常见地貌与中国典型景观')
+  const articleUrl = new URL('topics/landform-landscapes/', expectedHome).href
+  await expect(page.locator('link[rel=canonical]')).toHaveAttribute('href', articleUrl)
+  expect(JSON.parse(await page.locator('#topic-structured-data').innerText()).mainEntityOfPage).toBe(articleUrl)
   const cover=article.locator('img').first()
   await expect.poll(()=>cover.evaluate((image:HTMLImageElement)=>image.naturalWidth)).toBeGreaterThan(0)
-  expect(await cover.getAttribute('src')).toContain(new URL(page.url()).pathname+'media/reading/')
+  expect(await cover.getAttribute('src')).toContain(new URL('media/reading/',baseURL).pathname)
   const chapterSelect=article.getByRole('combobox',{name:'跳转专题章节',exact:true})
   if(await chapterSelect.isVisible())await chapterSelect.selectOption('karst')
   else await article.getByRole('navigation',{name:'专题章节'}).getByRole('button',{name:'喀斯特：从地表峰林到地下水路',exact:true}).click()

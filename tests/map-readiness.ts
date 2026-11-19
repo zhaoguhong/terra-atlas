@@ -11,6 +11,20 @@ export async function baseReady(page:Page){
   await expect(page.locator('.app')).toHaveAttribute('data-map-status','ready',{timeout})
   await renderFrames(page)
 }
+// Treat downloading the lazy article as a load prerequisite, like map data.
+export async function articleReady(page:Page,topicId?:string){
+  const selector='.topic-reading-page'+(topicId?'[data-reading-topic="'+topicId+'"]':'[data-reading-topic]')+':visible h1'
+  await page.locator(selector).waitFor({state:'visible',timeout})
+  await renderFrames(page)
+}
+// Reading routes intentionally do not create a map on cold load.
+export async function studyReady(page:Page){
+  await page.locator('.app').waitFor({state:'visible',timeout})
+  const url=new URL(page.url()),screen=await page.locator('.app').getAttribute('data-study-screen')
+  if(screen==='article'||/\/topics\/[^/]+\/?$/.test(url.pathname)||new URLSearchParams(url.hash.slice(1)).has('read')){await articleReady(page);return}
+  if(screen==='library'){await expect(page.locator('.study-library .topic-library')).toBeVisible();return}
+  await baseReady(page)
+}
 export async function sourceLoaded(page:Page,name:string){
   // An initialized, empty GeoJSON source can already report loaded. The real
   // collection must arrive before MapLibre's worker and rendered frame settle.

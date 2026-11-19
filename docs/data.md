@@ -64,7 +64,7 @@ npm run data:check
 - `src/data/feature-bindings.json`：知识卡片到真实地图要素 ID 的明确对应。缺少范围一致的图形时使用定位点，不将更宽区域当作该对象。
 - `public/data/`：可点击、可搜索的地图要素和来源清单。未精选编写的对象展示**数据概览**，不自动补写未经核验的成因。
 - `public/population/`：85张本地0–3级人口密度PNG瓦片；首次开启不下载近十万个网格面。网格点查保留二维格网的零值与缺失值。
-- `data/research/learning-population.geojson`：保留用于独立核验的人口格网面，SHA-256与来源清单同步；不进入`public/`或`dist/`。地图使用人口瓦片，点查使用`public/data/learning-population.json`。研究目录仍计入源码包体积预算。
+- `data/research/learning-population.geojson.gz`：无损 gzip 保存用于独立核验的人口格网面；解压后的几何与数值不变，压缩文件与解压内容的 SHA-256 均记录在校验清单；不进入`public/`或`dist/`。地图使用人口瓦片，点查使用`public/data/learning-population.json`。研究目录仍计入源码包体积预算。
 - `public/elevation/`：珠峰与富士山局部真实数字高程瓦片与采样格网；来源Mapzen/Tilezen，主要使用USGS SRTM/GMTED与NOAA ETOPO1，不是全球高精度数据。
 - `public/terrain/`：341 张本地 JPG 地形瓦片，原生缩放级别 0–4、每张 512 像素；更高缩放为放大显示。
 
@@ -185,7 +185,18 @@ node scripts/sync-content-manifests.mjs
 npm run data:check
 ```
 
-巴西高原采用原始 `NAME=BRAZILIAN HIGHLANDS`、`NE_ID=1159104225` 的参考面，不采用同译名但原始为 `PLANALTO CENTRAL` 的范围。内蒙古高原仍保留点：现有蒙古高原标注范围、自治区范围和湖区研究范围均不等同其地貌范围；未用这些候选或手绘外接框代替。其他缺少可靠区域的生态、海流与人文案例也保留说明和参考点。
+巴西高原采用原始 `NAME=BRAZILIAN HIGHLANDS`、`NE_ID=1159104225` 的参考面，不采用同译名但原始为 `PLANALTO CENTRAL` 的范围。
+
+内蒙古高原现采用Zhang等（2025，CC BY 4.0）图2及表1明确命名的III-C内蒙古高原区。该图沿用Li等（2013）的全国地貌区划，与同图的鄂尔多斯高原—河套平原区、西部丘陵平原区分别表达；未把更大的蒙古高原、自治区范围或湖区研究范围作为内蒙古高原。数字化保留图中两处分离的区域，原图内部分界逐线追踪，国界外缘裁剪到既有中国陆地掩膜，不补画连接区域。图形是全国尺度的概化地貌参考范围，不能视为精确边界或用于面积统计。
+
+可复现输入为 `scripts/landform-reference-digitization.json`，输出为 `public/data/landform-reference-regions.geojson`，来源、许可、处理说明和输入输出哈希见研究／公开 `landform-reference-region-sources.json`。原始PNG缓存在忽略的 `data/raw/area-review/`。配准依据原图8个经度刻度和4个纬度刻度，均方根误差约0.187像素；这个值只检查配准，不表示地貌边界具有相应实地精度。独立位置检查覆盖锡林浩特、海拉尔等高原地点，并排除北京、鄂尔多斯、乌兰巴托、通辽等不属该图单元的地点。
+
+```sh
+python scripts/build-landform-reference-regions.py
+node scripts/sync-content-manifests.mjs
+```
+
+长江中下游平原、恒河平原与部分丘陵、生态和人文案例仍缺少口径一致、可公开复用且已核验的完整区域数据，继续标明参考点及具体范围限制。上述地貌区划图中的“长江中游低山平原区”同时包括低山，并不等于长江中下游平原；也没有用沿江省区、流域或单个三角洲代替整片平原。后续补面须逐项核对对象与来源范围，不能只因名称近似就绑定。
 
 ## 图文专题与地貌案例
 
@@ -201,7 +212,9 @@ npm run data:check
 
 2026-11-12 的全主题修订逐篇通读32篇正文及地图简版，补足对象介绍与概念前提，调整案例顺序和图文关系。新增10张两极、水循环、河流、岩溶、冰川、海岸、植被、农业、城市雨水与地形降水概念插图，生成提示及逐图参考资料同样保存在 `ai-illustrations.json`；概念画面不对应真实地点，`placeIds` 明确保留空数组。压缩为1536×1024 JPEG，普通构建不请求图片生成服务。
 
-`scripts/editorial-reading-maps.mjs` 另生成七大洲与五大洋、五组主要山系、中国四大地理区三张真实数据地图，直接复用本站已核验几何，逐图记录输入哈希、版本、许可和要素ID。山系色面仍是 Natural Earth 概化标注参考范围，四区保留原数字化分区的过渡带说明。全站阅读媒体共76张（9张照片、48张机制图、5张数据地图、14张AI辅助插图）；图片随正文按需加载。
+`scripts/editorial-reading-maps.mjs` 另生成七大洲与五大洋、五组主要山系、中国四大地理区、长江中游三省与两湖四张真实数据地图，直接复用本站已核验几何，逐图记录输入哈希、版本、许可和要素ID。山系色面仍是 Natural Earth 概化标注参考范围，四区保留原数字化分区的过渡带说明。全站阅读媒体共80张（9张照片、51张机制图、6张数据地图、14张AI辅助插图），随正文按需加载。
+
+《水循环与地下水》的海陆水循环、雨水下渗、地下水补给河流三幅原创示意图及 USGS 参考资料见 `data/reading/water-cycle-figures.mjs`。重建后可在 `reading-sources.json` 的 `waterCycleRevision` 和媒体记录中核对来源、修订日期与图像哈希。
 
 原专题的目录、模块及地图案例保存于 `data/reading/topic-inputs.json`，`topic-plan.mjs` 定义18组合并。初始32篇校订正文保存在 `data/reading/edited-topics/`，作为后续修订的基线输入；语言原稿的结构与来源仍在 `data/reading/language-lesson.mjs`。生成器先建立章节与案例结构，再应用校订稿，最后应用下述地貌与世界地理新稿；最终正文分别在对应输入中维护。初始校订稿保留全部章节ID、分组身份、案例和来源，允许重排章节与图片，同一幅图片在篇内只出现一次。阅读页保留分组目录和搜索直达，同一地点可在不同章节中承担不同的比较任务。
 
@@ -224,3 +237,15 @@ npm run data:check
 拥有显式 `placeIds` 的配图可原位展开交互地图，复用主地图渲染器与真实要素绑定；无范围的对象仍为参考点。展开前不创建配图地图实例，同时只保留一张展开地图，支持收起、夜间外观、请求失败重试及进入完整地图。配图地图不覆盖主地图相机、选择和调试句柄，也不由AI插图推导地理范围。
 
 `src/data/topic-redirects.json` 为生成的明确旧地址映射，覆盖旧主主题、原分组及章节，支持分享、收藏、导入和阅读进度迁移。被重写章节的段内进度回到对应大节开头，同一新篇多个旧进度保留时间较新的记录。图片使用 `mediaAfterParagraph` 绑定到段落后的具体位置；没有新建或推测地理几何。
+
+### 全站范围说明与海域参考
+
+`data/research/map-extent-review.json` 与公开副本逐项记录216张卡片、30个主题的实际几何、范围口径和仍缺少范围一致资料的区域。点位不一律视为缺陷：山峰、港口、工程和观察案例使用点；宽泛区域、生态或农业案例的定位点不冒充完整分布。地点介绍在折叠正文之前显示范围说明，展开主题图例可以查看仅定位对象。已有色面的山系、高原与平原说明同步改为相应参考范围。
+
+五大洋、地中海、马六甲与直布罗陀海峡采用Natural Earth v5.1.2、1:1000万海洋地理标注参考面，固定原始NE_ID与名称双重核对，保留南北分片。输入锁为`scripts/marine-reference-inputs.lock.json`，重建入口为`python scripts/build-marine-references.py`，来源与输出哈希见研究／公开`marine-reference-sources.json`。这些图形用于学习位置与展布，不是完整海洋水面、法定海界、领海或航线；南大洋正文的南纬60°约定与Natural Earth标注范围分别说明。
+
+明确ID的地名校订保存在`scripts/geographic-name-corrections.json`，通过`geographic_names.py`接入原始数据生成。巴西中央高原与巴西高原分别对应原始PLANALTO CENTRAL和BRAZILIAN HIGHLANDS；熊岛补充东西伯利亚海限定，删除误指印度尼西亚岛群的英文别名；南高止山脉不再使用整个西高止山脉的英文别名。几何未因译名而改变。
+
+中国轮廓由原有中国大陆、台湾、香港、澳门四组真实几何合并，地区记录保留中国归属及原始统计范围。台湾省复用原始省级岛群，金门源单元归入福建；未推绘缺失小岛。`python scripts/build-china-presentation.py`可在底层资料重建后重做归属和名称整理，来源、处理及哈希见`china-presentation-sources.json`。原始统计数值不被合成为未经来源支持的全国合计，专题统计着色也不把大陆数据延伸到其他地区。
+
+涉及这些资料的完整同步顺序：先重建原始图层，再运行地名校订与中国展示整理，重建四大地理区、地貌与海域参考，执行`node scripts/review-map-extents.mjs`、`npm run reading:build`，最后再次运行范围审核和`node scripts/sync-content-manifests.mjs`。新增卡片来源须同步对应`data/reading/edited-topics/`输入中的来源清单，保留正文、章节和案例校验。完成后运行数据、构建及相应浏览器检查。

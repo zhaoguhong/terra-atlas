@@ -16,4 +16,6 @@ run('scripts/check-size.mjs')
 run('node_modules/typescript/bin/tsc', ['-b'])
 // Forward npm build flags to Vite, rather than the trailing size check.
 run('node_modules/vite/bin/vite.js', ['build', ...process.argv.slice(2)])
+run('scripts/build-topic-pages.mjs')
+run('scripts/pack-geography.mjs')
 run('scripts/check-size.mjs', ['--dist'])

@@ -77,17 +77,18 @@ async function openExplorer(page:Page){
 test('theme legends: natural areas and missing geometry have matching colours and explanations',async({page})=>{
   await theme(page,'中国地形格局')
   await sourceLoaded(page,'regions')
+  await sourceLoaded(page,'landform-regions')
   await membersReady(page,['tibetan-plateau','loess-plateau','inner-mongolian-plateau','yunnan-guizhou-plateau'])
   let legend=await expand(page)
-  await expect(legend).toContainText('内蒙古高原目前以参考点定位')
+  await expect(legend).toContainText('内蒙古高原按已发表地貌分区图数字化')
   const features=await sourceFeatures(page,'relations')
   const plateauIds=['tibetan-plateau','loess-plateau','inner-mongolian-plateau','yunnan-guizhou-plateau']
   expect(new Set(features.filter(feature=>plateauIds.includes(String(feature.properties.topicMemberId))).map(feature=>feature.properties.topicColor)).size).toBe(1)
-  for(const [id,name,type] of [['tibetan-plateau','青藏高原','area'],['loess-plateau','黄土高原','area'],['inner-mongolian-plateau','内蒙古高原','point'],['yunnan-guizhou-plateau','云贵高原','area']] as const){
+  for(const [id,name,type] of [['tibetan-plateau','青藏高原','area'],['loess-plateau','黄土高原','area'],['inner-mongolian-plateau','内蒙古高原','area'],['yunnan-guizhou-plateau','云贵高原','area']] as const){
     const feature=features.find(feature=>feature.properties.topicMemberId===id)!
     expect(feature).toBeTruthy()
-    expect(type==='point'?feature.geometry.type==='Point':['Polygon','MultiPolygon'].includes(feature.geometry.type)).toBe(true)
-    const entry=legend.locator('.map-legend-entry').filter({hasText:type==='point'?'高原案例（参考点）':'高原案例（范围）'}).first()
+    expect(['Polygon','MultiPolygon'].includes(feature.geometry.type)).toBe(true)
+    const entry=legend.locator('.map-legend-entry').filter({hasText:'高原案例'}).first()
     await expect(entry.locator('.map-legend-symbol')).toHaveClass(new RegExp(`symbol-${type}`))
     expect(await swatchColor(entry)).toBe(rgb(String(feature.properties.topicColor)))
   }
@@ -113,9 +114,9 @@ test('theme legends: natural areas and missing geometry have matching colours an
   await membersReady(page,['beijing','taiwan-province','macao'])
   const provinces=await sourceFeatures(page,'relations')
   expect(new Set(provinces.map(feature=>feature.properties.topicColor)).size).toBe(1)
-  expect(provinces.find(feature=>feature.properties.topicMemberId==='taiwan-province')?.geometry.type).toBe('Point')
+  expect(provinces.find(feature=>feature.properties.topicMemberId==='taiwan-province')?.geometry.type).toMatch(/Polygon/)
   legend=await expand(page)
-  await expect(legend).toContainText('台湾省当前以参考点定位')
+  await expect(legend).toContainText('台湾省、香港和澳门均在中国省级范围内')
 })
 
 test('theme legends: energy diamonds and peak triangles agree with the actual map symbols',async({page})=>{
@@ -325,7 +326,7 @@ test('theme legends: world overview colours Guangdong and Hainan as Chinese and 
     expect(rendered).toContain('country-chn')
   }
   let legend=await expand(page)
-  await expect(legend).toContainText('国家主要通用语言')
+  await expect(legend).toContainText('国家与地区主要通用语言')
   await expect(legend.locator('.map-legend-entry').filter({hasText:'其他语言'})).toHaveCount(0)
   const paint=await page.evaluate(()=>window.__terraAtlas!.map.getPaintProperty('language-overview-fill','fill-color')) as unknown[]
   expect(await swatchColor(legend.getByRole('button',{name:'汉语',exact:true}))).toBe(rgb(String(paint[paint.indexOf('country-chn')+1])))

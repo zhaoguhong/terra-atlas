@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="370" viewBox="0 0 540 370" role="img" aria-labelledby="title desc">
+<title id="title">船怎样通过一级船闸</title><desc id="desc">上行时，船先从低水位一侧进入。关闸后，水经输水通道进入闸室，船随水面浮高。待闸内水面与上游齐平，才打开上游闸门。图中深色竖线表示关闭的闸门。</desc>
+<defs><marker id="warm" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="3.5" markerHeight="3.5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#aa583b"/></marker><marker id="cool" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="3.5" markerHeight="3.5" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#236b81"/></marker></defs>
+<rect x="0" y="0" width="540" height="370" rx="10" fill="#f7f5ec"/><g font-family="system-ui,-apple-system,'PingFang SC',sans-serif"><text x="20" y="39" font-size="29" fill="#233e39" text-anchor="start">船怎样通过一级船闸</text><text x="199" y="77" font-size="20" fill="#233e39" text-anchor="start">低水位</text>
+<text x="422" y="77" font-size="20" fill="#233e39" text-anchor="start">高水位</text>
+<text x="20" y="124" font-size="24" fill="#233e39" text-anchor="start">开下游闸</text>
+<text x="20" y="150" font-size="20" fill="#233e39" text-anchor="start">船驶进闸室</text>
+<g transform="translate(198 78)">
+    <rect x="0" y="53" width="65" height="24" rx="0" fill="#b9dbe2"/><rect x="65" y="53" width="142" height="24" rx="0" fill="#b9dbe2"/><rect x="207" y="22" width="115" height="55" rx="0" fill="#b9dbe2"/>
+    <path d="M0 77H322" fill="none" stroke="#a29b81" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><rect x="204" y="12" width="6" height="65" rx="0" fill="#586762"/>
+    <path d="M88 48h39l-8 9h-25z" fill="#aa583b" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="96" y="40" width="13" height="8" rx="0" fill="#70564b"/>
+  </g>
+<text x="20" y="214" font-size="24" fill="#233e39" text-anchor="start">关闸充水</text>
+<text x="20" y="240" font-size="20" fill="#233e39" text-anchor="start">船随水升高</text>
+<g transform="translate(198 168)">
+    <rect x="0" y="53" width="65" height="24" rx="0" fill="#b9dbe2"/><rect x="65" y="38" width="142" height="39" rx="0" fill="#b9dbe2"/><rect x="207" y="22" width="115" height="55" rx="0" fill="#b9dbe2"/>
+    <path d="M0 77H322" fill="none" stroke="#a29b81" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><rect x="62" y="12" width="6" height="65" rx="0" fill="#586762"/><rect x="204" y="12" width="6" height="65" rx="0" fill="#586762"/>
+    <path d="M112 33h39l-8 9h-25z" fill="#aa583b" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="120" y="25" width="13" height="8" rx="0" fill="#70564b"/>
+  </g>
+<text x="20" y="304" font-size="24" fill="#233e39" text-anchor="start">开上游闸</text>
+<text x="20" y="330" font-size="20" fill="#233e39" text-anchor="start">船驶出闸室</text>
+<g transform="translate(198 258)">
+    <rect x="0" y="53" width="65" height="24" rx="0" fill="#b9dbe2"/><rect x="65" y="22" width="142" height="55" rx="0" fill="#b9dbe2"/><rect x="207" y="22" width="115" height="55" rx="0" fill="#b9dbe2"/>
+    <path d="M0 77H322" fill="none" stroke="#a29b81" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/><rect x="62" y="12" width="6" height="65" rx="0" fill="#586762"/>
+    <path d="M231 17h39l-8 9h-25z" fill="#aa583b" stroke="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="239" y="9" width="13" height="8" rx="0" fill="#70564b"/>
+  </g><text x="520" y="358" font-size="16" fill="#53675f" text-anchor="end">概念示意 · 非实测</text></g></svg>

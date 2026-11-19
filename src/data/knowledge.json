@@ -46,7 +46,7 @@
         "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
       }
     ],
-    "geometryNote": "定位点用于快速找到山系，山系范围与名称边界因资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的喜马拉雅山脉概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "为什么高而陡",
@@ -127,7 +127,7 @@
         "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
       }
     ],
-    "geometryNote": "定位点代表新疆天山的一段，不是整个山系的中心或边界。",
+    "geometryNote": "地图色面采用Natural Earth的天山概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "同一座山的不同海拔",
@@ -202,7 +202,7 @@
         "url": "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的昆仑山脉概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "高原边缘也有多条山链",
@@ -277,7 +277,7 @@
         "url": "https://igsnrr.cas.cn/sourcedb/zw/lw/202504/t20250409_7591749.html"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的秦岭概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "分界是一条过渡带",
@@ -352,7 +352,7 @@
         "url": "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的大兴安岭概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "森林、草原与平原相邻",
@@ -430,7 +430,7 @@
         "url": "https://nieer.cas.cn/xwdt/kydt/202609/t20260922_8286022.html"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的祁连山概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "干旱地区的水塔",
@@ -503,7 +503,7 @@
         "url": "https://science.nasa.gov/earth/earth-observatory/mud-from-the-andes-carried-by-the-amazon-147327/"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的安第斯山脉概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "俯冲与火山地震",
@@ -577,7 +577,7 @@
         "url": "https://home.nps.gov/grca/learn/nature/grca-geology.htm"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的落基山脉概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "分水岭如何辨认",
@@ -646,7 +646,7 @@
         "url": "https://www.seismo.ethz.ch/en/knowledge/causes-of-earthquakes/Switzerland/"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的阿尔卑斯山脉概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "汇聚后又被冰川雕刻",
@@ -719,7 +719,7 @@
         "url": "https://whc.unesco.org/document/167636"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的乌拉尔山脉概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "古老山脉也可辨认",
@@ -798,7 +798,7 @@
         "url": "https://pubs.usgs.gov/gip/dynamic/understanding.html"
       }
     ],
-    "geometryNote": "定位点仅用于导航；不同科学研究采用的高原边界可能不同。",
+    "geometryNote": "地图色面采用Natural Earth的青藏高原概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "高原不是一个平面",
@@ -878,7 +878,7 @@
         "url": "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的黄土高原概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "风把物质带来，水塑造沟壑",
@@ -960,9 +960,13 @@
       {
         "title": "中国科学院地理资源所 · 内蒙古高原",
         "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692371.html"
+      },
+      {
+        "title": "Zhang等（2025）· 中国地貌分区图2及表1（内蒙古高原区）",
+        "url": "https://www.mdpi.com/2072-4292/17/9/1615"
       }
     ],
-    "geometryNote": "内蒙古高原是蒙古高原的一部分，两者范围不同。本卡使用中国境内代表点定位，不将整个蒙古高原的标注范围当作内蒙古高原边界。",
+    "geometryNote": "地图色面依据Zhang等（2025）图2中明确标注的内蒙古高原区数字化，保留原图两个分离部分，用于全国尺度地形学习。分界是过渡带的概化参考，不是精确地貌界线或内蒙古自治区界线，不用于面积测量。",
     "sections": [
       {
         "title": "从东向西观察水分梯度",
@@ -1044,7 +1048,7 @@
         "url": "https://whc.unesco.org/en/list/1248/"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的云贵高原概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "岩溶改变地表与地下水",
@@ -1121,7 +1125,7 @@
         "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692360.html"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的华北平原概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "平原也藏着高低变化",
@@ -1191,7 +1195,7 @@
         "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692361.html"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的东北平原概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "三个平原、多个水系",
@@ -1259,7 +1263,7 @@
         "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692363.html"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的四川盆地概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "盆地与成都平原不能等同",
@@ -1340,7 +1344,7 @@
         "url": "https://ieexa.cas.cn/kp/kpwz/202203/t20220311_6388467.html"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的塔里木盆地概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "环状景观有水量逻辑",
@@ -1414,7 +1418,7 @@
         "url": "https://science.nasa.gov/earth/earth-observatory/the-taklimakan-desert-a-factory-for-dust-storms-87969/"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的塔克拉玛干沙漠概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "沙丘为何移动",
@@ -1484,7 +1488,7 @@
         "url": "https://www.aoml.noaa.gov/saharan-air-layer/"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的撒哈拉沙漠概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "下沉气流与多样地貌",
@@ -1704,7 +1708,7 @@
         "url": "https://www.nature.com/articles/s41597-022-01742-3"
       }
     ],
-    "geometryNote": "定位点为导航代表点；自然地理单元的边缘通常是过渡带，名称与范围随资料而异。",
+    "geometryNote": "地图色面采用Natural Earth的东非裂谷概化标注参考范围，便于观察位置与展布；自然地理边缘常有过渡，不代表精确地貌界线。",
     "sections": [
       {
         "title": "大陆正在伸展",
@@ -3855,7 +3859,10 @@
     "englishName": "China",
     "aliases": [
       "中国",
-      "China"
+      "China",
+      "中华人民共和国",
+      "People's Republic of China",
+      "PRC"
     ],
     "category": "regions",
     "region": "china",
@@ -3902,7 +3909,7 @@
         "url": "https://data.un.org/legacy/en/iso/cn.html"
       }
     ],
-    "geometryNote": "高亮为Natural Earth概化国家要素；内部气候、人口与文化存在差异，边界仅用于地理学习参考。",
+    "geometryNote": "中国参考轮廓包含台湾、香港、澳门，复用Natural Earth原有真实几何合并；概化海岸与小岛覆盖用于地理学习，不作为法定边界。统计资料按原来源分别说明范围。",
     "sections": [
       {
         "title": "三个尺度一起看",
@@ -5834,7 +5841,7 @@
   {
     "id": "taiwan-region",
     "name": "台湾岛：山地与西部平原",
-    "englishName": "Taiwan Island",
+    "englishName": "Taiwan Island, China",
     "aliases": [
       "台湾岛"
     ],
@@ -5844,8 +5851,8 @@
       121,
       23.7
     ],
-    "summary": "山地占重要部分，西部平原、盆地和沿海聚落适合比较岛内地形差异。",
-    "location": "中国东南沿海之外的岛屿，西隔台湾海峡与福建相望；本卡对象明确为台湾主岛。",
+    "summary": "台湾岛是中国第一大岛，山地占重要部分。西部平原、盆地和沿海聚落，提供了比较岛内地形差异的线索。",
+    "location": "中国东南沿海的台湾岛，西隔台湾海峡与福建相望；本卡对象为台湾主岛的自然地理范围。",
     "formation": "板块汇聚使山地抬升，河流侵蚀与沉积形成谷地、平原；季风、海洋与地形影响水热。",
     "connections": [
       "北回归线经过岛内，低纬度与高山热量条件不同。",
@@ -5858,6 +5865,10 @@
       "pacific-ocean"
     ],
     "facts": [
+      {
+        "label": "所属国家",
+        "value": "中国"
+      },
       {
         "label": "山地概述",
         "value": "观光署概况以约三分之二描述山地；概略地形口径"
@@ -6027,9 +6038,13 @@
       {
         "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
         "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
+      },
+      {
+        "title": "Natural Earth · 海洋与海峡标注参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
       }
     ],
-    "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
+    "geometryNote": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认太平洋的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。",
     "sections": [
       {
         "title": "面积先核对分界",
@@ -6104,9 +6119,13 @@
       {
         "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
         "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
+      },
+      {
+        "title": "Natural Earth · 海洋与海峡标注参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
       }
     ],
-    "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
+    "geometryNote": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认大西洋的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。",
     "sections": [
       {
         "title": "大洋中仍有空间结构",
@@ -6185,9 +6204,13 @@
       {
         "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
         "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
+      },
+      {
+        "title": "Natural Earth · 海洋与海峡标注参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
       }
     ],
-    "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
+    "geometryNote": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认印度洋的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。",
     "sections": [
       {
         "title": "雨季不能只看海温",
@@ -6269,9 +6292,13 @@
       {
         "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
         "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
+      },
+      {
+        "title": "Natural Earth · 海洋与海峡标注参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
       }
     ],
-    "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
+    "geometryNote": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认北冰洋的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。",
     "sections": [
       {
         "title": "海冰不是陆地",
@@ -6338,9 +6365,13 @@
       {
         "title": "NASA · 航线与多年平均资料尺度",
         "url": "https://science.nasa.gov/blogs/earth-matters/2013/03/25/matters-of-scale-and-why-they-matter/"
+      },
+      {
+        "title": "Natural Earth · 海洋与海峡标注参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
       }
     ],
-    "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
+    "geometryNote": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认马六甲海峡的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。",
     "sections": [
       {
         "title": "通道的价值与限制",
@@ -6403,9 +6434,13 @@
       {
         "title": "NASA · The Strait of Gibraltar in 3D",
         "url": "https://science.nasa.gov/earth/earth-observatory/the-strait-of-gibraltar-in-3d-3926/"
+      },
+      {
+        "title": "Natural Earth · 海洋与海峡标注参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
       }
     ],
-    "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
+    "geometryNote": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认直布罗陀海峡的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。",
     "sections": [
       {
         "title": "表面连通之外还有交换",
@@ -6670,9 +6705,13 @@
       {
         "title": "Met Office · 欧洲区域气候与海洋影响",
         "url": "https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/applied-science/precis/dissy1808.pdf"
+      },
+      {
+        "title": "Natural Earth · 海洋与海峡标注参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
       }
     ],
-    "geometryNote": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。",
+    "geometryNote": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认地中海的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。",
     "sections": [
       {
         "title": "干夏气候不只在此地",
@@ -8767,6 +8806,10 @@
     ],
     "facts": [
       {
+        "label": "所属国家",
+        "value": "中国"
+      },
+      {
         "label": "省级行政区",
         "value": "香港特别行政区"
       },
@@ -8862,6 +8905,10 @@
       "population-density"
     ],
     "facts": [
+      {
+        "label": "所属国家",
+        "value": "中国"
+      },
       {
         "label": "省级行政区",
         "value": "澳门特别行政区"
@@ -12305,9 +12352,10 @@
   {
     "id": "taiwan-province",
     "name": "台湾省：岛群与行政区划口径",
-    "englishName": "Taiwan province reference",
+    "englishName": "Taiwan Province, China",
     "aliases": [
-      "台湾省"
+      "台湾省",
+      "中国台湾省"
     ],
     "category": "regions",
     "region": "china",
@@ -12315,7 +12363,7 @@
       120.95,
       23.7
     ],
-    "summary": "省级行政区学习入口，按中国政府网的省级名录认识台湾主岛、附属岛屿与澎湖；与单独的台湾岛自然地理卡分开。",
+    "summary": "台湾省是中国的省级行政区，包含台湾主岛、附属岛屿与澎湖。主岛的山地、西部平原和海峡岛群，呈现出不同的自然环境。",
     "location": "中国东南沿海，台湾岛西隔台湾海峡与福建相望，东临太平洋；澎湖位于海峡中。",
     "formation": "主岛的山地与板块碰撞、断层及侵蚀相联系；澎湖的玄武岩地貌来自古火山活动，各岛并非同一形成过程。",
     "connections": [
@@ -12323,6 +12371,10 @@
       "主岛山地与西部平原、海峡岛群在地形、交通和土地利用上有不同条件。"
     ],
     "facts": [
+      {
+        "label": "所属国家",
+        "value": "中国"
+      },
       {
         "label": "省级学习名录",
         "value": "台湾省"
@@ -12342,8 +12394,8 @@
         "body": "台湾岛卡描述主岛的自然环境，本卡用于省级行政区学习名录。中国政府网对台湾省和台湾地区分别说明，后者还涉及福建省的金门、马祖等岛屿，因此不能把二者的数据范围直接互换。"
       },
       {
-        "title": "地图为何使用参考点",
-        "body": "本地省级图层的台湾参考集合还含金门面，范围与本卡的省级口径并不完全一致，因此这里保留导航点，不对整组图形作精确省界高亮。具体自然地理可继续进入台湾岛卡观察。"
+        "title": "怎样理解地图上的省级范围",
+        "body": "地图将源数据中的台湾主岛、澎湖及已收录附属岛屿合并为台湾省参考范围，并把金门源单元归入福建省。小岛在全国尺度数据中可能未收录，图形用于认识区域位置和组成，不作为完整法定省界或测绘依据。"
       }
     ],
     "questions": [
@@ -12372,7 +12424,7 @@
       "岛群",
       "区划口径"
     ],
-    "geometryNote": "仅用台湾主岛中部参考点导航；未绑定province-cn-71，因为其概化集合包含金门，不能冒充本卡台湾省口径的完整范围。",
+    "geometryNote": "中国台湾省概化参考范围：合并Natural Earth中的台湾主岛、澎湖与已收录附属岛屿，金门源单元归入福建省；未收录小岛不推绘。",
     "mapRole": "place",
     "mapZoom": 5,
     "readingTopicIds": [
@@ -15802,6 +15854,10 @@
       {
         "title": "NOAA NCEI · World Ocean Volumes（ETOPO1面积与体积表）",
         "url": "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf"
+      },
+      {
+        "title": "Natural Earth · 海洋与海峡标注参考范围",
+        "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
       }
     ],
     "relatedIds": [
@@ -15812,7 +15868,7 @@
     ],
     "mapRole": "place",
     "mapZoom": 2,
-    "geometryNote": "德雷克海峡附近海区参考点；不绘制南大洋法定界线、海流路径或当前海冰范围。",
+    "geometryNote": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认南大洋的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。南大洋正文使用南纬60°北界约定，色面沿用独立注明的Natural Earth标注口径。",
     "readingTopicIds": [
       "world-oceans",
       "world-ocean-monsoon",

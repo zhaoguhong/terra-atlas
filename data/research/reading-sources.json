@@ -1,6 +1,6 @@
 {
-  "version": "illustrated-science-articles-2026-11-12",
-  "reviewedAt": "2026-11-12",
+  "version": "illustrated-science-articles-2026-11-19",
+  "reviewedAt": "2026-11-19",
   "atmosphereSourceReview": {
     "version": "atmosphere-source-review-2026-11-06-v1",
     "reviewedAt": "2026-11-06",
@@ -135,64 +135,72 @@
       "sha256": "98be38a94c89da3664aec612b4a871bb02d2d618a1a566f79d0658981a122928"
     },
     {
+      "path": "data/reading/foundations.mjs",
+      "sha256": "d6b2109a90062d4546e42984b9df71025610d69595e49fe5616d002bc43ff7a4"
+    },
+    {
+      "path": "data/reading/water-cycle-figures.mjs",
+      "sha256": "72a23724ad453035e4b54d50950889907ed79ad1e643e7eed4fdca9110d2d637"
+    },
+    {
       "path": "data/reading/ai-illustrations.json",
-      "sha256": "2f03af2294a7c5aebede13c9b563f7f6c7e5df7a937efe73908387d2ff029dc6"
+      "sha256": "fcf43fdf03600f3f23e353a787c6ac36ce1487f102924d6c6cd9e9d7ddf8d291"
     },
     {
-      "path": "public/media/reading/china-plateaus-illustration.jpg",
-      "sha256": "7a44416f8fbbafe4dd9fd944e1aedd1b605ab8e0aa8b4d006549bc5076623e9a"
+      "path": "public/media/reading/china-plateaus-illustration.webp",
+      "sha256": "0cce01305c1ce6a5c96e6896f08be0b0fe7d66f9c9b16a7b48bb8510d4c013c5"
     },
     {
-      "path": "public/media/reading/china-basins-illustration.jpg",
-      "sha256": "7f82aabea335e125127b8c007c84abde5bea16bfdfa4fc7ea7e1fed130b26113"
+      "path": "public/media/reading/china-basins-illustration.webp",
+      "sha256": "7578750ea83ab13d5a225a0ddbe3c615115934bbfbd84406c14772368995ecb8"
     },
     {
-      "path": "public/media/reading/china-plains-illustration.jpg",
-      "sha256": "a75c5da73e5db3e20c5ae3ef215cd929d1bb344a22dff5b0569e64e7c04f28ac"
+      "path": "public/media/reading/china-plains-illustration.webp",
+      "sha256": "0eedd1dba459453ab5a88212f012b8984dd03182ad3cad13d9876ab29f4a449f"
     },
     {
-      "path": "public/media/reading/china-mountains-illustration.jpg",
-      "sha256": "f5fdcefa3bdb1ff5cb1520e681d1273b36ce49ce3173415fd56a3119838c0ea7"
+      "path": "public/media/reading/china-mountains-illustration.webp",
+      "sha256": "936115650e5e006526d165cebb17b1e36c2856d48b9658fdd99413336c3b5245"
     },
     {
-      "path": "public/media/reading/polar-worlds-illustration.jpg",
-      "sha256": "e2253de17f58084bab633f63b3d84ee54821e814452e0988bbf72128bf8a4755"
+      "path": "public/media/reading/polar-worlds-illustration.webp",
+      "sha256": "a2008a98c5757b3aab9ef37b8eef039eb8f3fcf8bf571c262eed6ba81372c267"
     },
     {
-      "path": "public/media/reading/watershed-landscape-illustration.jpg",
-      "sha256": "ada1608fffd99e9591ae68d02b989d45ae40366abbec1f324b510c0933aae876"
+      "path": "public/media/reading/watershed-landscape-illustration.webp",
+      "sha256": "9931f80de2b08d3d2f19355c3b6ea52c03141ca7adb975f7a179853c44d264e5"
     },
     {
-      "path": "public/media/reading/karst-landscape-illustration.jpg",
-      "sha256": "b2dee8675baa22a1e5eb7489639f93a756ac520558fb2a731d88a1370c4a0154"
+      "path": "public/media/reading/karst-landscape-illustration.webp",
+      "sha256": "2f9a03e2cde304567616ac4e1c07d45efa1f07bbc9f8bce34c9450c4894d7298"
     },
     {
-      "path": "public/media/reading/river-landscape-illustration.jpg",
-      "sha256": "bc8d9ef593a7f1ac9f95e0a09b1c0699e6e76b47f5f390b0282ce55852a1ab0c"
+      "path": "public/media/reading/river-landscape-illustration.webp",
+      "sha256": "1b71bb7ade653b3a832a65420c67e803ac98c5d1dba08543a554881541397b94"
     },
     {
-      "path": "public/media/reading/ecosystem-landscapes-illustration.jpg",
-      "sha256": "cd220541f7760a6c2911c6446a7859948b8bb0d703f5e909fa04bfd42bbbd1b3"
+      "path": "public/media/reading/ecosystem-landscapes-illustration.webp",
+      "sha256": "f54df7b6fe03c6ce915aee716eafeaa399f30b00df182f668edcd8d0582eebb1"
     },
     {
-      "path": "public/media/reading/city-water-landscape-illustration.jpg",
-      "sha256": "6ed819b51ff1bb373b3b9745ef5feea21d108c116ccbab8d21cc5dfdebd8d723"
+      "path": "public/media/reading/city-water-landscape-illustration.webp",
+      "sha256": "bf361be97a3cd3c59e101e819cf6a94f193bd336bfe5cc21b697f44c38c50412"
     },
     {
-      "path": "public/media/reading/glacier-valley-illustration.jpg",
-      "sha256": "7a5a7e78403dd8d1ea109f54759a64173a212affd85ecb138f68f286ad1cda6e"
+      "path": "public/media/reading/glacier-valley-illustration.webp",
+      "sha256": "501b7b1b85750035b2f98469a5045dbb16cbc8b98e48a4d448616d5ae6fb630a"
     },
     {
-      "path": "public/media/reading/coast-landforms-illustration.jpg",
-      "sha256": "1a7cb9f714d723fe2f6604a9228e55dfa7cfb8a6b7bbe7d0049df606f63b5ea1"
+      "path": "public/media/reading/coast-landforms-illustration.webp",
+      "sha256": "3b3489634ea74d1157f0b4e6b99e2543b550ce021f94e65dda1f918fdc470449"
     },
     {
-      "path": "public/media/reading/agriculture-landscapes-illustration.jpg",
-      "sha256": "d5530d36e2fb9c1fffacf5d76fb859bd26502a92a3fdf7f6959c94671be4306a"
+      "path": "public/media/reading/agriculture-landscapes-illustration.webp",
+      "sha256": "02b7974abafbc82f04ecc4205c79e44e57ead952740dbc76570e482443fb78ae"
     },
     {
-      "path": "public/media/reading/rain-shadow-landscape-illustration.jpg",
-      "sha256": "9924c2d17204dbf3ae1617d5150639664c30d9872ca9f243725d1d1dabd36033"
+      "path": "public/media/reading/rain-shadow-landscape-illustration.webp",
+      "sha256": "aa63c74afac9fb045c824b53c1aebe22ef9a9de43bd3c4c9ef0f2379a1930904"
     },
     {
       "path": "data/reading/language-lesson.mjs",
@@ -216,71 +224,75 @@
     },
     {
       "path": "public/data/language-overview.json",
-      "sha256": "dea9d50fc9afd9cc8aff6eb21f1bab13ecceec3fa8723cede27005320cb0a9a0"
+      "sha256": "66abc959450272f1d589a4beb5dbc6756490e1af8b06bafa2a3baf5270a37e29"
     },
     {
       "path": "scripts/apply-reading-edits.mjs",
-      "sha256": "c677f8cc9216a5052e4d7a619fd8cbc169602a46880a79f951dc81dad0d65609"
+      "sha256": "f647d59e0949810536dcb25df52feef0acee6fd6a0999fe44c7ab7d4d455503a"
     },
     {
       "path": "scripts/reading-diagrams.mjs",
-      "sha256": "15ea5876ffb34c0eaf67449ec83af3649b9ff6b40203b533373dcea4bcbe146d"
+      "sha256": "02088a5025465b02035278c80c31d92c7dc64d3c40a232fa93ee80d28d286668"
+    },
+    {
+      "path": "scripts/reading-process-figures.mjs",
+      "sha256": "3e4800cac88700591136337f058fdc914440743e15f811a4c7b335390c5dad64"
     },
     {
       "path": "data/reading/map-essays.json",
-      "sha256": "a5187a3c632002fca6102c8f50e0fb4db63887ae2f6a111b5460842010aab397"
+      "sha256": "e34c250c52fa27fea6d111350b1db6559e24b503937dcf1989eb2c7f25a7cf83"
     },
     {
       "path": "docs/writing.md",
-      "sha256": "b225a591970699c04391e38ca748972ad941b52331a97ae4fedb3840589cc5c2"
+      "sha256": "762f841e5a0e63ef589a4e4a6c9ebdf5f4dcb411ce22c8fa0677b0547d97b31d"
     },
     {
       "path": "data/reading/edited-topics/agriculture-food.json",
-      "sha256": "a2a5647f44bf1a2b2e3164f499f3ac26894df5769a0714ebec740e489c7c5e98"
+      "sha256": "96067e805a6a5b5d9e6fdda503e9d1356a5827f95cc7ec9aa59dfe4ec3cadfdd"
     },
     {
       "path": "data/reading/edited-topics/china-city-environment.json",
-      "sha256": "eaa2bc321530e6b93c3ef15411b02a46e0fa4b1406e9eeb060ab0d604671f443"
+      "sha256": "34100228ec235845fa985ff58adcfaf3c1abf570085b3f74043bae4501b9997e"
     },
     {
       "path": "data/reading/edited-topics/china-provinces.json",
-      "sha256": "e694f61392a15b133bcb37e984ff8ee8972ba876565b2875586d2e9496630e55"
+      "sha256": "f8f6f121fd8799b4911dd545c467ba30890e4d8ca9b4398058509467f891f2e0"
     },
     {
       "path": "data/reading/edited-topics/china-regions.json",
-      "sha256": "d983e4ee9ec4c2299b9a110955b15a6c0cd8a18eb24665c3bc372e79a818c032"
+      "sha256": "2036bc4071a9ce34dd9f7764de5b30d152587423b2c7fa65b7f7e6e45b2328d2"
     },
     {
       "path": "data/reading/edited-topics/china-rivers.json",
-      "sha256": "b7d2c591fd2ad40375d77c2cfb9d4e62f9d0e563933e418094ebc1b99ff6c849"
+      "sha256": "5923c9433cf85b96b654d234c6121d046e38a09738bd690198a5eec97d159d79"
     },
     {
       "path": "data/reading/edited-topics/china-terrain.json",
-      "sha256": "6b72eee831f55cf7c96130b2987efa6fe7c8716fe783cd8d4443c278939b63c5"
+      "sha256": "f65fa3f6c807ccc8b4c07018c7c18349b7bb128e760ef4ea85ef02cf80d75ac6"
     },
     {
       "path": "data/reading/edited-topics/climate-change.json",
-      "sha256": "8e32bd9f8f4af577a512fe422e731d603158a48718a943375dc0076462c22bb2"
+      "sha256": "ff10671a1af6542a7f22092c945ae8c50a124bb824e554b11b483721c1d8e532"
     },
     {
       "path": "data/reading/edited-topics/drylands.json",
-      "sha256": "c5a7c3c8e061f6331304fa8c16a31ba4aace04a5617cb65076343f85158b3bc5"
+      "sha256": "2ae1c2b13227201fc575c6d8f515ab61c7b0f22d4b9a9c40796e7b3fb266252e"
     },
     {
       "path": "data/reading/edited-topics/earth-hazards.json",
-      "sha256": "c1cd6503db16b9ba92e819063233134b07f833752d9e23d16a8e7cbd3b0a8965"
+      "sha256": "08242f509972893421d2ec4c8c2ca9af31001f1cf5424a4e9a83c137a7da3e59"
     },
     {
       "path": "data/reading/edited-topics/earth-map-reading.json",
-      "sha256": "a4233a7fc909b7a41b3e180570d5368a830e6bcb97ca7ce0c44a86cbdac27ca6"
+      "sha256": "2fecf21511536b03de05bca2a11f491e0716d396f03dcebf33f472ae4358dd55"
     },
     {
       "path": "data/reading/edited-topics/earth-seasons.json",
-      "sha256": "d6caca4c044d26e0d4a8f5980ebd06ba69d72606a02f3dceabac506cedda6771"
+      "sha256": "6a6436a2132f7711357ba4eba1297a848fd2e7e407f3f3fb58f0c7ab9fdd6692"
     },
     {
       "path": "data/reading/edited-topics/energy-industry.json",
-      "sha256": "47caa059e4c75ca0ea7556f83c343eae52709e3193f4399a6fce7295ca0985f3"
+      "sha256": "c2c256a0f3ad7582af8ca40b8d1b26a9904a4381988bcb8133b7f1c2d7446f1b"
     },
     {
       "path": "data/reading/edited-topics/landform-coasts.json",
@@ -308,31 +320,31 @@
     },
     {
       "path": "data/reading/edited-topics/map-climate.json",
-      "sha256": "c59407dbdc7d6e2f63831e78f9afc20868b75d44d8e6efa4d7c920fe01058b63"
+      "sha256": "ce089dbe072455f77416175da30f057e02222f327c0eef7cea58b7e64299317f"
     },
     {
       "path": "data/reading/edited-topics/map-language.json",
-      "sha256": "1af8421e9990765b9c6117d7c9130a2d1bed31a91c2425d97b2812712251038f"
+      "sha256": "b28b01cffc9bd5a683246d00b57923aa1484228edef3e299bffa1452ce219650"
     },
     {
       "path": "data/reading/edited-topics/map-population.json",
-      "sha256": "26ad4f67ba70832277bf849e11b2ee859a1226d833394c1fcac6f1128ecf99e4"
+      "sha256": "6c0acb20026bb97f1953591ecbc74f8d94b84af5845c8ed323ee3b471355718a"
     },
     {
       "path": "data/reading/edited-topics/map-religion.json",
-      "sha256": "afab46e4f8e523d024cf95ce7c6736b50ea96f7a43834366e309c20fc41e7d5c"
+      "sha256": "2335e673493b92c4e57ccc27fd8c6dd02195f2acb07b8621c06e01dc743abddc"
     },
     {
       "path": "data/reading/edited-topics/transport-trade.json",
-      "sha256": "b964339a1f1005bb1338e9ae910e37072326458e90136821ad335a532f29c134"
+      "sha256": "39b98f09b3172abb10e758c44a3d2d233e944fb4dc326110506d1176ced4a4c1"
     },
     {
       "path": "data/reading/edited-topics/water-cycle.json",
-      "sha256": "f0719a4f935a9bd03ca0ed5a07d8c02d1defc8c8f239dab57f0a0fe67bd23d17"
+      "sha256": "74834c12c90b3f6234f3e9969643c1c9c72383666c678dab039c4cbe29b27e1e"
     },
     {
       "path": "data/reading/edited-topics/weather-systems.json",
-      "sha256": "9303c73dd95a69b3c8ff7a66c4c347e1b6b9de715e24bcd17218c60576e6458c"
+      "sha256": "48df4479e6cb5f7e74724e292382f5d1764cba66d4174c53b4233d09c2d3bb5d"
     },
     {
       "path": "data/reading/edited-topics/world-continents.json",
@@ -340,59 +352,79 @@
     },
     {
       "path": "data/reading/edited-topics/world-ecosystems.json",
-      "sha256": "6f68e70934a003304ea4287e8b65c9010a6b5e043ab1c5e178c04dd779981953"
+      "sha256": "8ebd7e49021eeab9a396ad183d72c0bef1fe5e70f07f0ede1cc2ae39d37c1d6e"
     },
     {
       "path": "data/reading/edited-topics/world-ocean-monsoon.json",
-      "sha256": "508c1bd691b9ebfc566ff87477b65ca27a20022ab8c7e94bc4b7c644b53a49e7"
+      "sha256": "c196859f19517079d505a58eb734ff46a36b6b3208bff335da5b0295a32529d2"
     },
     {
       "path": "data/reading/edited-topics/world-polar-comparison.json",
-      "sha256": "65c25126a854a9895dbb7cd2be1e88fc91943a92a31e03c8a31b7a58dbd69213"
+      "sha256": "293f7b1f04bce72d7a2f25e3abadf0023b3aca2c2e378f1eb5f77d017a2bab5e"
     },
     {
       "path": "data/reading/edited-topics/world-rivers.json",
-      "sha256": "c64f0788a63c7f8b1d95f350c324b271541d4b83e0cc276948736e086dc59b74"
+      "sha256": "148b0eeffa8be03e6e7fdd9e977004deb2bcd9f83ec15111eb6e5da509e4b1b0"
     },
     {
       "path": "data/reading/edited-topics/world-tectonics.json",
-      "sha256": "8dedf1b368f3265faf1ee0e31df51ee85179dd50e2c936f9e4a17533574cb744"
+      "sha256": "fd78aa39fa2659e12268d2c1d49fa31a8620ebed69a26262e58afacbc17f00d7"
     },
     {
       "path": "data/reading/edited-topics/world-terrain.json",
-      "sha256": "342e2a4b22c0e7dd7547aacc5672d60f07942df4d7483f2c2f52d5ee991aeaa3"
+      "sha256": "d23b5e0901247297c570eee3a1ea285370ee538949d90959b4ce1306d5278944"
     },
     {
       "path": "scripts/editorial-reading-maps.mjs",
-      "sha256": "0330ea1991914dec588413e8f9abe2406bd160a86eb62a79bfb12ea1ba5ea8b8"
+      "sha256": "9ad2173c8692c59237531508522021495781abf81f20254f068066a404cc6ae5"
     },
     {
       "path": "src/data/knowledge.json",
-      "sha256": "55fa0a29646417acd0b762e8885fa6b211bcf3ce0900e9c9f46d0e7c6812e6bd"
+      "sha256": "75ac121698c429d36db6c2b18da5ce81c70597008c4d8581baa18bb71ff69049"
     },
     {
       "path": "public/data/regions.geojson",
-      "sha256": "13aafdba4e03aa2b27b2c185fc9ebfdd464e78df0e76933978e892aac60d1418"
+      "sha256": "a5c2d79e9761926e96a4d1955cd1e920626e157402034bcc67bc9721460fd39e"
     },
     {
       "path": "src/data/feature-bindings.json",
-      "sha256": "2ecebcadbfb84b4cc6b23afb2ed314198dbf32045d8b13e92e0ea6bf91e80ce7"
+      "sha256": "79a2a54e164b223c74c67fa73b79aced057df2b03a158962cd0208670f591c5f"
     },
     {
       "path": "public/data/china-reference-regions.geojson",
-      "sha256": "180383ad2612c0891fabc59fa09685601cd88f7441e2149564a2699183541bc1"
+      "sha256": "2541069bc237abe53fc394631f51194781e56b4e33b5b71ab0cbd5bebfb3a09e"
     },
     {
       "path": "public/data/china-reference-region-sources.json",
-      "sha256": "83537766d7ba3930e231a266a2af5876f0c939899ed9ead99bdc60f27be5a6b1"
+      "sha256": "487fd48b2218f6648c6d8185dce45bba8b494793a0daad3ac3ae15e88f4d31db"
+    },
+    {
+      "path": "public/data/learning-provinces.geojson",
+      "sha256": "5ad64c1b66842805f34345f0d588530b5b029f57b4ef92a5f860414fdd2a8d20"
+    },
+    {
+      "path": "public/data/lakes.geojson",
+      "sha256": "5dbfe4e4990cc0399292e56fcde661d32109bdec0fe4038e7547c488315a1009"
+    },
+    {
+      "path": "public/data/rivers.geojson",
+      "sha256": "04d97063110482f0f9f8023509be1e7c8854c90ff841e2e71f6c6031b6018324"
+    },
+    {
+      "path": "public/data/learning-data-sources.json",
+      "sha256": "7787ab8140b1e5debaf480fadf604bbc49e0a9b7e0abb333e2dae2042f1ec31c"
+    },
+    {
+      "path": "public/data/sources.json",
+      "sha256": "bf523e398c9b1224e520769de3943610dc670d532fb22f131ec882f73864d893"
     },
     {
       "path": "data/reading/landform-articles.json",
-      "sha256": "17277f0085c1177bbc933e07992e2f9143244f9a589272cacfc5d24859b6cd71"
+      "sha256": "8ea3a9d194eaf80f3b20f67b5a4c1696b83174798c1c591c43741bf44aa0f550"
     },
     {
       "path": "data/reading/landform-map-guides.json",
-      "sha256": "13ae98c138d577805c585dc9fa3683e5d5942570ea884d9c5afb492ede8ad70d"
+      "sha256": "4fd11bbc5a0d631fc3fee9e8fdcb7beaa2a885e63b8f105422e29f52806cddda"
     },
     {
       "path": "data/reading/landform-sources.json",
@@ -404,11 +436,11 @@
     },
     {
       "path": "data/reading/world-geography-articles.json",
-      "sha256": "dc935782a29b51c6f882597d6e99fec145a0f73df25f2338c5c5c1713b9888ef"
+      "sha256": "8cf6f93dee7ddf0d65c37f068d04fe8995e071e90eb12442036148c466ddc82a"
     },
     {
       "path": "data/reading/world-geography-map-guides.json",
-      "sha256": "c09ec16dfad77bf5950060a9f435b89a6b45beaf9ccc878c22632e87e15521ef"
+      "sha256": "f4277e8d543e4d8ebb4de7c963a1663d08bfbd6f1d26319165640320f2017c33"
     },
     {
       "path": "data/reading/world-geography-sources.json",
@@ -416,60 +448,22 @@
     },
     {
       "path": "scripts/revise-world-geography.mjs",
-      "sha256": "4de75e4ad487f4ae894faf2bd80d2f0c3cb2523b36c0d6aeaf79c702363f7261"
+      "sha256": "a2b574c6b9235a0e767f1cfe291cc3916533c1370cc80fb5ee6745a7a96baeb6"
     }
   ],
   "license": "原创正文、SVG 与项目 AI 辅助插图按 CC BY 4.0 提供；第三方照片与地图输入保留各自许可，见 media。",
   "processing": "正文按专题编写，案例引用已有精选卡片的原创解读；图片下载到本地，保留原图来源和署名。概念 SVG 标注非实测；语言地图另由既有真实使用区及语言参考点直接投影，各自记录版本和处理；不生成或推测地理边界。 中国地形格局沿用4张位置插图，另增10张跨主题概念插图，类型为 illustration；图像不是实测地图，不进入交互地图几何。生成说明与本次核对范围见 illustrationRevision。",
-  "editorialRevision": {
-    "version": "illustrated-science-articles-2026-11-12",
-    "reviewedAt": "2026-11-12",
-    "topicIds": [
-      "china-terrain",
-      "china-rivers",
-      "world-terrain",
-      "world-rivers",
-      "map-climate",
-      "map-population",
-      "map-religion",
-      "map-language",
-      "drylands",
-      "china-regions",
-      "china-city-environment",
-      "agriculture-food",
-      "transport-trade",
-      "earth-seasons",
-      "earth-map-reading",
-      "china-provinces",
-      "energy-industry",
-      "world-continents",
-      "world-oceans",
-      "world-regional-comparison",
-      "world-tectonics",
-      "world-ecosystems",
-      "world-ocean-monsoon",
-      "world-polar-comparison",
-      "water-cycle",
-      "earth-hazards",
-      "weather-systems",
-      "climate-change",
-      "landform-processes",
-      "landform-landscapes"
-    ],
-    "processing": "32篇主题与地图简版逐篇通读，重整对象介绍、机制与案例的衔接；新增10张概念插图，保留中国地形4张插图及原有照片、机制图，调整图文位置。保留旧章节地址、地图入口及引用；重建读取全部独立校订稿。 地貌六篇随后整合为两篇；世界海陆与区域比较拆为七大洲、五大洋、世界区域比较，前两篇面积图前置，逐洲逐洋介绍并注明口径与分歧。其他相关主题补充整体比较，当前目录30篇。阅读界面移除思考题，旧问题数据保留追溯。",
-    "scope": "文字、结构、配图和阅读布局编辑；新增图示按NSIDC、USGS、NPS、NASA、EPA、FAO及香港天文台资料核对，不声称重新核验全部外部来源。"
-  },
   "mapGuides": {
     "method": "逐主题独立编写简版科普短文，每段链接支持该解释的完整章节；地图案例观察入口沿用真实对象。不新增地理范围或实测数据。",
     "topics": [
       {
         "id": "china-terrain",
         "sectionIds": [
-          "china-relief-steps-section-1",
-          "china-relief-steps-section-3",
-          "china-basins-section-1"
+          "china-relief-steps-section-2",
+          "part-china-plateaus",
+          "part-china-basins"
         ],
-        "characters": 213,
+        "characters": 205,
         "caseIds": [
           "tibetan-plateau",
           "qaidam-basin",
@@ -480,10 +474,10 @@
         "id": "china-rivers",
         "sectionIds": [
           "china-rivers-section-1",
-          "china-lakes-section-1",
-          "china-rivers-section-4"
+          "china-lakes-section-2",
+          "china-water-journey-section-3"
         ],
-        "characters": 198,
+        "characters": 190,
         "caseIds": [
           "yangtze",
           "tarim-river",
@@ -493,11 +487,11 @@
       {
         "id": "world-terrain",
         "sectionIds": [
-          "world-mountain-ranges-section-1",
           "world-mountain-ranges-section-2",
-          "world-high-peaks-section-1"
+          "world-plateaus-plains-module-basin",
+          "world-high-peaks-section-2"
         ],
-        "characters": 212,
+        "characters": 206,
         "caseIds": [
           "andes",
           "amazon-basin",
@@ -511,7 +505,7 @@
           "world-river-contrast-section-3",
           "world-lakes-section-2"
         ],
-        "characters": 199,
+        "characters": 196,
         "caseIds": [
           "nile",
           "amazon-river",
@@ -525,7 +519,7 @@
           "map-climate-section-3",
           "climate-causes-section-3"
         ],
-        "characters": 213,
+        "characters": 218,
         "caseIds": [
           "tibetan-plateau",
           "atacama-desert",
@@ -536,10 +530,10 @@
         "id": "map-population",
         "sectionIds": [
           "map-population-section-1",
-          "map-population-section-2",
-          "people-migration-section-3"
+          "map-population-section-3",
+          "people-migration-section-1"
         ],
-        "characters": 231,
+        "characters": 207,
         "caseIds": [
           "population-density",
           "china-population",
@@ -549,11 +543,11 @@
       {
         "id": "map-religion",
         "sectionIds": [
-          "section-2",
-          "section-3",
-          "section-4"
+          "section-1",
+          "section-4",
+          "module-module-1"
         ],
-        "characters": 225,
+        "characters": 203,
         "caseIds": [
           "religious-diversity",
           "christianity",
@@ -564,10 +558,10 @@
         "id": "map-language",
         "sectionIds": [
           "section-1",
-          "section-3",
+          "section-2",
           "section-7"
         ],
-        "characters": 214,
+        "characters": 207,
         "caseIds": [
           "language-diversity",
           "official-vs-mother-tongue",
@@ -581,7 +575,7 @@
           "world-deserts-section-3",
           "china-dry-water-section-3"
         ],
-        "characters": 192,
+        "characters": 186,
         "caseIds": [
           "tian-shan",
           "tarim-river",
@@ -595,7 +589,7 @@
           "china-regions-section-3",
           "china-north-south-section-1"
         ],
-        "characters": 220,
+        "characters": 201,
         "caseIds": [
           "northern-china",
           "southern-china",
@@ -605,11 +599,11 @@
       {
         "id": "china-city-environment",
         "sectionIds": [
-          "section-1",
-          "section-2",
-          "module-municipalities"
+          "module-municipalities",
+          "section-3",
+          "module-lake-region"
         ],
-        "characters": 230,
+        "characters": 192,
         "caseIds": [
           "beijing",
           "shanghai",
@@ -619,11 +613,11 @@
       {
         "id": "agriculture-food",
         "sectionIds": [
-          "china-agriculture-section-1",
-          "china-agriculture-section-3",
-          "china-food-water-cities-section-1"
+          "china-agriculture-module-northern-fields",
+          "china-agriculture-module-rice-water",
+          "china-food-water-cities-module-food"
         ],
-        "characters": 219,
+        "characters": 190,
         "caseIds": [
           "northeast-blacksoil",
           "hetao-irrigation",
@@ -633,11 +627,11 @@
       {
         "id": "transport-trade",
         "sectionIds": [
-          "china-transport-section-1",
-          "world-sea-connections-section-2",
-          "world-transport-trade-section-3"
+          "china-transport-section-4",
+          "world-sea-connections-module-module-3",
+          "world-transport-trade-module-ports"
         ],
-        "characters": 218,
+        "characters": 194,
         "caseIds": [
           "qinghai-tibet-railway",
           "malacca-strait",
@@ -647,11 +641,11 @@
       {
         "id": "earth-seasons",
         "sectionIds": [
-          "section-1",
           "section-2",
+          "section-3",
           "section-4"
         ],
-        "characters": 188,
+        "characters": 194,
         "caseIds": [
           "earth-rotation",
           "earth-season-contrast",
@@ -661,9 +655,9 @@
       {
         "id": "earth-map-reading",
         "sectionIds": [
-          "earth-map-reading-section-1",
+          "earth-map-reading-section-2",
           "earth-map-reading-section-3",
-          "earth-image-reading-section-4"
+          "earth-image-reading-module-case-guilin-karst"
         ],
         "characters": 216,
         "caseIds": [
@@ -676,10 +670,10 @@
         "id": "china-provinces",
         "sectionIds": [
           "section-1",
-          "section-2",
-          "section-3"
+          "section-3",
+          "module-northwest"
         ],
-        "characters": 220,
+        "characters": 199,
         "caseIds": [
           "hebei",
           "sichuan",
@@ -689,11 +683,11 @@
       {
         "id": "energy-industry",
         "sectionIds": [
-          "china-energy-resources-section-1",
-          "china-energy-resources-section-2",
-          "world-energy-industry-section-1"
+          "china-energy-resources-module-minerals",
+          "china-energy-resources-module-renewables",
+          "world-energy-industry-module-networks"
         ],
-        "characters": 224,
+        "characters": 200,
         "caseIds": [
           "qinshui-coal",
           "hexi-renewables",
@@ -704,10 +698,10 @@
         "id": "world-continents",
         "sectionIds": [
           "continents-overview",
-          "continents-boundaries",
-          "asia"
+          "asia",
+          "oceania"
         ],
-        "characters": 231,
+        "characters": 197,
         "caseIds": [
           "asia-continent",
           "africa-continent",
@@ -719,9 +713,9 @@
         "sectionIds": [
           "oceans-overview",
           "four-or-five-oceans",
-          "southern"
+          "arctic"
         ],
-        "characters": 245,
+        "characters": 204,
         "caseIds": [
           "pacific-ocean",
           "southern-ocean",
@@ -735,7 +729,7 @@
           "world-regional-comparison-module-broad-regions",
           "world-regional-comparison-module-countries"
         ],
-        "characters": 244,
+        "characters": 206,
         "caseIds": [
           "southeast-asia",
           "middle-east",
@@ -745,11 +739,11 @@
       {
         "id": "world-tectonics",
         "sectionIds": [
-          "world-tectonics-section-1",
           "world-tectonics-section-2",
-          "landform-volcanoes-section-4"
+          "landform-structures-section-1",
+          "landform-volcanoes-module-case-hawaii-hotspot"
         ],
-        "characters": 204,
+        "characters": 205,
         "caseIds": [
           "himalayas",
           "east-african-rift",
@@ -761,9 +755,9 @@
         "sectionIds": [
           "soil-land-section-1",
           "world-ecosystems-section-2",
-          "world-ecosystems-section-3"
+          "world-ecosystems-section-1"
         ],
-        "characters": 201,
+        "characters": 204,
         "caseIds": [
           "northeast-blacksoil",
           "amazon-rainforest",
@@ -773,11 +767,11 @@
       {
         "id": "world-ocean-monsoon",
         "sectionIds": [
-          "section-1",
           "section-2",
-          "module-coast-land"
+          "section-3",
+          "section-4"
         ],
-        "characters": 206,
+        "characters": 192,
         "caseIds": [
           "gulf-stream",
           "peru-upwelling",
@@ -789,10 +783,9 @@
         "sectionIds": [
           "module-north",
           "module-south",
-          "section-1",
           "section-2"
         ],
-        "characters": 269,
+        "characters": 200,
         "caseIds": [
           "arctic-region",
           "antarctica",
@@ -803,10 +796,10 @@
         "id": "landform-processes",
         "sectionIds": [
           "rocks",
-          "uplift",
+          "weathering",
           "transport"
         ],
-        "characters": 219,
+        "characters": 203,
         "caseIds": [
           "deccan-plateau",
           "himalayas",
@@ -817,10 +810,10 @@
         "id": "landform-landscapes",
         "sectionIds": [
           "karst",
-          "redbeds-sandstone",
-          "wind"
+          "wind",
+          "glaciers"
         ],
-        "characters": 220,
+        "characters": 206,
         "caseIds": [
           "guilin-karst",
           "danxiashan",
@@ -830,11 +823,11 @@
       {
         "id": "water-cycle",
         "sectionIds": [
-          "section-1",
+          "section-2",
           "section-3",
-          "section-4"
+          "module-case-qinghai-lake"
         ],
-        "characters": 200,
+        "characters": 219,
         "caseIds": [
           "yangtze",
           "qinghai-lake",
@@ -844,11 +837,11 @@
       {
         "id": "earth-hazards",
         "sectionIds": [
-          "section-1",
           "section-2",
-          "section-3"
+          "section-3",
+          "section-1"
         ],
-        "characters": 203,
+        "characters": 201,
         "caseIds": [
           "himalayas",
           "yangtze-delta",
@@ -862,7 +855,7 @@
           "section-3",
           "section-4"
         ],
-        "characters": 197,
+        "characters": 189,
         "caseIds": [
           "beijing",
           "hong-kong",
@@ -874,9 +867,9 @@
         "sectionIds": [
           "section-1",
           "section-2",
-          "section-5"
+          "module-case-tibetan-plateau"
         ],
-        "characters": 203,
+        "characters": 197,
         "caseIds": [
           "arctic-region",
           "tibetan-plateau",
@@ -899,7 +892,7 @@
       "id": "china-terrain",
       "path": "public/reading/topics/china-terrain.json",
       "sections": 42,
-      "characters": 7225,
+      "characters": 5165,
       "sourceUrls": [
         "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
         "https://www.itpcas.cas.cn/kxcb/kpwz/201712/t20171206_4907477.html",
@@ -923,6 +916,7 @@
         "https://www.ezhejiang.gov.cn/2019-08/02/c_420288.htm",
         "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html",
         "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228",
+        "https://www.mdpi.com/2072-4292/17/9/1615",
         "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
         "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
         "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692380.html",
@@ -944,7 +938,7 @@
       "id": "china-rivers",
       "path": "public/reading/topics/china-rivers.json",
       "sections": 24,
-      "characters": 3663,
+      "characters": 2178,
       "sourceUrls": [
         "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
         "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
@@ -976,7 +970,7 @@
       "id": "world-terrain",
       "path": "public/reading/topics/world-terrain.json",
       "sections": 23,
-      "characters": 3819,
+      "characters": 3427,
       "sourceUrls": [
         "https://pubs.usgs.gov/gip/dynamic/himalaya.html",
         "https://www.usgs.gov/publications/seismicity-earth-1900-2010-himalaya-and-vicinity",
@@ -1030,7 +1024,7 @@
       "id": "world-rivers",
       "path": "public/reading/topics/world-rivers.json",
       "sections": 17,
-      "characters": 2591,
+      "characters": 1565,
       "sourceUrls": [
         "https://science.nasa.gov/photojournal/nile-river-fluctuations-near-khartoum-sudan/",
         "https://science.nasa.gov/earth/earth-observatory/khartoum-sudan-5514/",
@@ -1067,7 +1061,7 @@
       "id": "map-climate",
       "path": "public/reading/topics/map-climate.json",
       "sections": 23,
-      "characters": 4356,
+      "characters": 2551,
       "sourceUrls": [
         "https://www.nature.com/articles/s41597-023-02549-6",
         "https://www.noaa.gov/jetstream/global/climate-zones/jetstream-max-addition-k-ppen-geiger-climate-subdivisions",
@@ -1104,7 +1098,7 @@
       "id": "map-population",
       "path": "public/reading/topics/map-population.json",
       "sections": 18,
-      "characters": 2785,
+      "characters": 2173,
       "sourceUrls": [
         "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php",
         "https://blogs.worldbank.org/en/sustainablecities/what-does-urban-mean",
@@ -1123,7 +1117,7 @@
       "id": "map-religion",
       "path": "public/reading/topics/map-religion.json",
       "sections": 7,
-      "characters": 1994,
+      "characters": 1544,
       "sourceUrls": [
         "https://www.pewresearch.org/religion/2025/06/09/how-the-global-religious-landscape-changed-from-2010-to-2020/",
         "https://www.pewresearch.org/religion/2025/06/09/global-religious-change-methodology/",
@@ -1138,7 +1132,7 @@
       "id": "map-language",
       "path": "public/reading/topics/map-language.json",
       "sections": 10,
-      "characters": 3094,
+      "characters": 2798,
       "sourceUrls": [
         "https://www.unesco.org/en/languages-education/need-know?hub=66703",
         "https://glottolog.org/glottolog/glottologinformation",
@@ -1168,7 +1162,7 @@
       "id": "drylands",
       "path": "public/reading/topics/drylands.json",
       "sections": 16,
-      "characters": 2532,
+      "characters": 1436,
       "sourceUrls": [
         "https://science.nasa.gov/earth/earth-observatory/dust-storm-over-the-gobi-desert-79746/",
         "https://whc.unesco.org/en/list/1430/",
@@ -1201,7 +1195,7 @@
       "id": "china-regions",
       "path": "public/reading/topics/china-regions.json",
       "sections": 17,
-      "characters": 3015,
+      "characters": 1643,
       "sourceUrls": [
         "https://www.locpg.gov.cn/zggq/2014-01/04/c_125956312_2.htm",
         "https://www.nmg.gov.cn/zwgk/zfxxgk/zfxxgkml/202407/t20240719_2544586.html",
@@ -1241,7 +1235,7 @@
       "id": "china-city-environment",
       "path": "public/reading/topics/china-city-environment.json",
       "sections": 7,
-      "characters": 1364,
+      "characters": 1136,
       "sourceUrls": [
         "https://www.beijing.gov.cn/renwen/bjgk/",
         "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
@@ -1256,7 +1250,7 @@
       "id": "agriculture-food",
       "path": "public/reading/topics/agriculture-food.json",
       "sections": 23,
-      "characters": 3637,
+      "characters": 2399,
       "sourceUrls": [
         "https://qys.moa.gov.cn/gdxw/202604/t20260427_6483675.htm",
         "https://zzys.moa.gov.cn/tzgg/201307/t20130729_6310551.htm",
@@ -1297,7 +1291,7 @@
       "id": "transport-trade",
       "path": "public/reading/topics/transport-trade.json",
       "sections": 24,
-      "characters": 3715,
+      "characters": 2374,
       "sourceUrls": [
         "https://www.zhengzhou.gov.cn/2026lh01/9888984.jhtml",
         "https://www.cas.cn/spx/202210/t20221008_4849995.shtml",
@@ -1322,6 +1316,7 @@
         "https://pancanal.com/en/history-of-the-panama-canal/",
         "https://pancanal.com/en/panama-canal-prepares-for-the-impact-of-climate-events/",
         "https://www.metoffice.gov.uk/binaries/content/assets/metofficegovuk/pdf/research/applied-science/precis/dissy1808.pdf",
+        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/",
         "https://www.portofrotterdam.com/en/logistics/connections",
         "https://www.portofrotterdam.com/en/logistics/connections/intermodal-transportation/inland-shipping",
         "https://www.mpa.gov.sg/media-centre/details/strong-growth-momentum-for-maritime-singapore",
@@ -1332,7 +1327,7 @@
       "id": "earth-seasons",
       "path": "public/reading/topics/earth-seasons.json",
       "sections": 7,
-      "characters": 1145,
+      "characters": 1213,
       "sourceUrls": [
         "https://science.nasa.gov/earth/facts/",
         "https://spaceplace.nasa.gov/seasons/en/",
@@ -1344,7 +1339,7 @@
       "id": "earth-map-reading",
       "path": "public/reading/topics/earth-map-reading.json",
       "sections": 17,
-      "characters": 2645,
+      "characters": 2506,
       "sourceUrls": [
         "https://oceanservice.noaa.gov/facts/latitude.html",
         "https://oceanservice.noaa.gov/facts/longitude.html",
@@ -1363,7 +1358,7 @@
       "id": "china-provinces",
       "path": "public/reading/topics/china-provinces.json",
       "sections": 10,
-      "characters": 2889,
+      "characters": 2519,
       "sourceUrls": [
         "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm",
         "https://www.gov.cn/guoqing/2020-07/28/content_5530577.htm",
@@ -1416,7 +1411,7 @@
       "id": "energy-industry",
       "path": "public/reading/topics/energy-industry.json",
       "sections": 16,
-      "characters": 2580,
+      "characters": 1651,
       "sourceUrls": [
         "https://www.nea.gov.cn/2006-06/28/c_131215308.htm",
         "https://www.ndrc.gov.cn/fggz/fzzlgh/gjjzxgh/201705/t20170511_1196755.html",
@@ -1441,7 +1436,7 @@
       "id": "world-continents",
       "path": "public/reading/topics/world-continents.json",
       "sections": 10,
-      "characters": 2996,
+      "characters": 2887,
       "sourceUrls": [
         "https://science.nasa.gov/earth/water-on-earth/the-water-future-of-earths-third-pole/",
         "https://unstats.un.org/unsd/methodology/M49",
@@ -1475,7 +1470,7 @@
       "id": "world-oceans",
       "path": "public/reading/topics/world-oceans.json",
       "sections": 7,
-      "characters": 2255,
+      "characters": 2175,
       "sourceUrls": [
         "https://iho.int/uploads/user/pubs/misc/M3-E-2024_July.pdf",
         "https://www.ncei.noaa.gov/sites/default/files/2023-01/World%20Ocean%20Volumes.pdf",
@@ -1496,7 +1491,7 @@
       "id": "world-regional-comparison",
       "path": "public/reading/topics/world-regional-comparison.json",
       "sections": 7,
-      "characters": 1629,
+      "characters": 1154,
       "sourceUrls": [
         "https://education.nationalgeographic.org/resource/africa-physical-geography/",
         "https://education.nationalgeographic.org/resource/europe-physical-geography/",
@@ -1553,7 +1548,7 @@
       "id": "world-tectonics",
       "path": "public/reading/topics/world-tectonics.json",
       "sections": 25,
-      "characters": 3485,
+      "characters": 3135,
       "sourceUrls": [
         "https://pubs.usgs.gov/gip/dynamic/understanding.html",
         "https://whc.unesco.org/en/list/1152/",
@@ -1579,7 +1574,7 @@
       "id": "world-ecosystems",
       "path": "public/reading/topics/world-ecosystems.json",
       "sections": 17,
-      "characters": 2672,
+      "characters": 1666,
       "sourceUrls": [
         "https://www.nrcs.usda.gov/resources/education-and-teaching-materials/soil-facts",
         "https://www.usgs.gov/publications/soil-formation-chapter-6",
@@ -1607,7 +1602,7 @@
       "id": "world-ocean-monsoon",
       "path": "public/reading/topics/world-ocean-monsoon.json",
       "sections": 7,
-      "characters": 1264,
+      "characters": 1541,
       "sourceUrls": [
         "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents",
         "https://oceanservice.noaa.gov/facts/upwelling.html",
@@ -1619,14 +1614,15 @@
         "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience",
         "https://science.nasa.gov/earth/earth-observatory/lonar-crater-india-8654/",
         "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice",
-        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/"
+        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/10m-geography-regions/",
+        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
       ]
     },
     {
       "id": "world-polar-comparison",
       "path": "public/reading/topics/world-polar-comparison.json",
       "sections": 6,
-      "characters": 1210,
+      "characters": 1545,
       "sourceUrls": [
         "https://nsidc.org/learn/ask-scientist/how-does-antarctic-sea-ice-differ-arctic-sea-ice",
         "https://nsidc.org/learn/cryosphere-glossary/arctic",
@@ -1636,17 +1632,20 @@
         "https://oceanservice.noaa.gov/facts/smallestocean.html",
         "https://science.nasa.gov/earth/earth-observatory/ice-and-clouds-in-the-bering-strait-42464/",
         "https://www.bas.ac.uk/about/where-we-work/antarctica/",
-        "https://esa-worldcover.org/en/data-access"
+        "https://esa-worldcover.org/en/data-access",
+        "https://www.naturalearthdata.com/downloads/10m-physical-vectors/"
       ]
     },
     {
       "id": "water-cycle",
       "path": "public/reading/topics/water-cycle.json",
       "sections": 8,
-      "characters": 1433,
+      "characters": 2281,
       "sourceUrls": [
         "https://www.usgs.gov/special-topics/water-science-school/water-cycle",
         "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater",
+        "https://www.usgs.gov/water-science-school/science/infiltration-and-water-cycle",
+        "https://www.usgs.gov/water-science-school/science/rivers-contain-groundwater",
         "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
         "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
         "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html",
@@ -1661,7 +1660,7 @@
       "id": "earth-hazards",
       "path": "public/reading/topics/earth-hazards.json",
       "sections": 8,
-      "characters": 1335,
+      "characters": 1456,
       "sourceUrls": [
         "https://pubs.usgs.gov/fs/2004/3072/fs-2004-3072.html",
         "https://www.undrr.org/terminology/disaster-risk",
@@ -1682,7 +1681,7 @@
       "id": "weather-systems",
       "path": "public/reading/topics/weather-systems.json",
       "sections": 9,
-      "characters": 1516,
+      "characters": 1165,
       "sourceUrls": [
         "https://www.noaa.gov/jetstream/synoptic/origin-of-wind",
         "https://www.noaa.gov/jetstream/synoptic/air-masses",
@@ -1703,7 +1702,7 @@
       "id": "climate-change",
       "path": "public/reading/topics/climate-change.json",
       "sections": 10,
-      "characters": 1859,
+      "characters": 1858,
       "sourceUrls": [
         "https://science.nasa.gov/climate-change/causes/",
         "https://science.nasa.gov/climate-change/evidence/",
@@ -1725,7 +1724,7 @@
       "id": "landform-processes",
       "path": "public/reading/topics/landform-processes.json",
       "sections": 5,
-      "characters": 3868,
+      "characters": 3084,
       "sourceUrls": [
         "https://www.nps.gov/subjects/geology/landforms.htm",
         "https://www.nps.gov/subjects/geology/fluvial-landforms.htm",
@@ -1755,7 +1754,7 @@
       "id": "landform-landscapes",
       "path": "public/reading/topics/landform-landscapes.json",
       "sections": 9,
-      "characters": 8102,
+      "characters": 6666,
       "sourceUrls": [
         "https://www.nps.gov/subjects/geology/landforms.htm",
         "https://www.nps.gov/subjects/geology/fluvial-landforms.htm",
@@ -2009,7 +2008,7 @@
     },
     {
       "id": "china-plateaus-illustration",
-      "path": "media/reading/china-plateaus-illustration.jpg",
+      "path": "media/reading/china-plateaus-illustration.webp",
       "kind": "illustration",
       "title": "中国四大高原位置示意",
       "alt": "中国四大高原位置示意。青藏高原在西南部，内蒙古高原在北部，黄土高原在其南侧，云贵高原在西南地区东部。四色用于辨认相对位置；色块和地形纹理均为示意，不代表精确边界或实测高程。",
@@ -2029,8 +2028,8 @@
         "loess-plateau",
         "yunnan-guizhou-plateau"
       ],
-      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
-      "sha256": "7a44416f8fbbafe4dd9fd944e1aedd1b605ab8e0aa8b4d006549bc5076623e9a",
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "0cce01305c1ce6a5c96e6896f08be0b0fe7d66f9c9b16a7b48bb8510d4c013c5",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2040,7 +2039,7 @@
     },
     {
       "id": "china-basins-illustration",
-      "path": "media/reading/china-basins-illustration.jpg",
+      "path": "media/reading/china-basins-illustration.webp",
       "kind": "illustration",
       "title": "中国四大盆地位置示意",
       "alt": "中国四大盆地位置示意。位置示意：天山南北分别是塔里木、准噶尔盆地；柴达木盆地位于青藏高原东北部，四川盆地位于高原东侧。色块用于辨认相对位置，不代表精确边界。",
@@ -2060,8 +2059,8 @@
         "qaidam-basin",
         "sichuan-basin"
       ],
-      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
-      "sha256": "7f82aabea335e125127b8c007c84abde5bea16bfdfa4fc7ea7e1fed130b26113",
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "7578750ea83ab13d5a225a0ddbe3c615115934bbfbd84406c14772368995ecb8",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2071,7 +2070,7 @@
     },
     {
       "id": "china-plains-illustration",
-      "path": "media/reading/china-plains-illustration.jpg",
+      "path": "media/reading/china-plains-illustration.webp",
       "kind": "illustration",
       "title": "中国三大平原位置示意",
       "alt": "中国三大平原位置示意。位置示意：沿东部由北向南辨认东北、华北和长江中下游平原。色块概括位置关系，长江中下游的低地由多片沿江、沿湖平原组成，并非一整块连续平地。",
@@ -2090,8 +2089,8 @@
         "north-china-plain",
         "yangtze-middle-lower-plain"
       ],
-      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
-      "sha256": "a75c5da73e5db3e20c5ae3ef215cd929d1bb344a22dff5b0569e64e7c04f28ac",
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "0eedd1dba459453ab5a88212f012b8984dd03182ad3cad13d9876ab29f4a449f",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2101,7 +2100,7 @@
     },
     {
       "id": "china-mountains-illustration",
-      "path": "media/reading/china-mountains-illustration.jpg",
+      "path": "media/reading/china-mountains-illustration.webp",
       "kind": "illustration",
       "title": "中国主要山脉走向示意",
       "alt": "中国主要山脉走向示意。本图选择文中讨论的六条山脉，突出它们与相邻高原、盆地和平原的位置关系。虚线仅示主要走向，不代表实测山脊线或山脉完整范围。",
@@ -2123,8 +2122,8 @@
         "qinling",
         "greater-khingan"
       ],
-      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
-      "sha256": "f5fdcefa3bdb1ff5cb1520e681d1273b36ce49ce3173415fd56a3119838c0ea7",
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "936115650e5e006526d165cebb17b1e36c2856d48b9658fdd99413336c3b5245",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2134,7 +2133,7 @@
     },
     {
       "id": "polar-worlds-illustration",
-      "path": "media/reading/polar-worlds-illustration.jpg",
+      "path": "media/reading/polar-worlds-illustration.webp",
       "kind": "illustration",
       "title": "北极与南极的海陆、冰体对照",
       "alt": "北极与南极的海陆、冰体对照。北极以海洋为中心，南极以大陆为主体。海冰漂浮在海水上，冰盖覆盖陆地，冰架是陆地冰向海伸出的漂浮部分。本图为关系示意，地形与冰厚均非等比例。",
@@ -2149,8 +2148,8 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
-      "sha256": "e2253de17f58084bab633f63b3d84ee54821e814452e0988bbf72128bf8a4755",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "a2008a98c5757b3aab9ef37b8eef039eb8f3fcf8bf571c262eed6ba81372c267",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2160,7 +2159,7 @@
     },
     {
       "id": "watershed-landscape-illustration",
-      "path": "media/reading/watershed-landscape-illustration.jpg",
+      "path": "media/reading/watershed-landscape-illustration.webp",
       "kind": "illustration",
       "title": "水的地上与地下旅程",
       "alt": "水的地上与地下旅程。降水进入河流，也能下渗到土壤和岩层。地下水主要储存在孔隙与裂隙中，与地表水相互联系。图为水循环情景示意，不对应真实流域；蒸腾等过程在此省略。",
@@ -2175,8 +2174,8 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
-      "sha256": "ada1608fffd99e9591ae68d02b989d45ae40366abbec1f324b510c0933aae876",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "9931f80de2b08d3d2f19355c3b6ea52c03141ca7adb975f7a179853c44d264e5",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2186,7 +2185,7 @@
     },
     {
       "id": "karst-landscape-illustration",
-      "path": "media/reading/karst-landscape-illustration.jpg",
+      "path": "media/reading/karst-landscape-illustration.webp",
       "kind": "illustration",
       "title": "喀斯特的地表与地下",
       "alt": "喀斯特的地表与地下。水沿裂隙进入可溶岩层，溶蚀扩大通道，形成落水洞、溶洞和泉等相连的地貌。图为多种形态的组合示意，不能用于推断具体洞穴的大小与水路。",
@@ -2201,8 +2200,8 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
-      "sha256": "b2dee8675baa22a1e5eb7489639f93a756ac520558fb2a731d88a1370c4a0154",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "2f9a03e2cde304567616ac4e1c07d45efa1f07bbc9f8bce34c9450c4894d7298",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2212,7 +2211,7 @@
     },
     {
       "id": "river-landscape-illustration",
-      "path": "media/reading/river-landscape-illustration.jpg",
+      "path": "media/reading/river-landscape-illustration.webp",
       "kind": "illustration",
       "title": "从峡谷到平原与三角洲",
       "alt": "从峡谷到平原与三角洲。河流连接山地、平原和海洋，侵蚀、搬运与堆积共同塑造河谷、曲流和三角洲。本图是地貌组合示意，不对应一条真实河道，也不意味着所有河流都具备这些形态。",
@@ -2227,8 +2226,8 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
-      "sha256": "bc8d9ef593a7f1ac9f95e0a09b1c0699e6e76b47f5f390b0282ce55852a1ab0c",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "1b71bb7ade653b3a832a65420c67e803ac98c5d1dba08543a554881541397b94",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2238,7 +2237,7 @@
     },
     {
       "id": "ecosystem-landscapes-illustration",
-      "path": "media/reading/ecosystem-landscapes-illustration.jpg",
+      "path": "media/reading/ecosystem-landscapes-illustration.webp",
       "kind": "illustration",
       "title": "森林、草原与荒漠景观",
       "alt": "森林、草原与荒漠景观。森林、草原和荒漠的植被覆盖、根系与地表形态不同。这是三种景观的独立示意，并非真实地理剖面或固定的演替顺序；图中不表示气候分类阈值。",
@@ -2253,8 +2252,8 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
-      "sha256": "cd220541f7760a6c2911c6446a7859948b8bb0d703f5e909fa04bfd42bbbd1b3",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "f54df7b6fe03c6ce915aee716eafeaa399f30b00df182f668edcd8d0582eebb1",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2264,7 +2263,7 @@
     },
     {
       "id": "city-water-landscape-illustration",
-      "path": "media/reading/city-water-landscape-illustration.jpg",
+      "path": "media/reading/city-water-landscape-illustration.webp",
       "kind": "illustration",
       "title": "雨水穿过城市的不同路径",
       "alt": "雨水穿过城市的不同路径。硬化地面使更多雨水形成径流，绿地和雨水花园则可暂存雨水并促进下渗。排水管网与河道共同影响雨水去向。概念示意不对应具体城市，也不是工程设计图。",
@@ -2280,8 +2279,8 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
-      "sha256": "6ed819b51ff1bb373b3b9745ef5feea21d108c116ccbab8d21cc5dfdebd8d723",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "bf361be97a3cd3c59e101e819cf6a94f193bd336bfe5cc21b697f44c38c50412",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2291,7 +2290,7 @@
     },
     {
       "id": "glacier-valley-illustration",
-      "path": "media/reading/glacier-valley-illustration.jpg",
+      "path": "media/reading/glacier-valley-illustration.webp",
       "kind": "illustration",
       "title": "冰川与它留下的谷地",
       "alt": "冰川与它留下的谷地。左图表现冰川占据谷地，右图表现退缩后暴露的U形谷和冰碛。两幅是同一谷地的两种概念状态，不是特定冰川的历史复原，也不表示变化所需时间。",
@@ -2306,8 +2305,8 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
-      "sha256": "7a5a7e78403dd8d1ea109f54759a64173a212affd85ecb138f68f286ad1cda6e",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "501b7b1b85750035b2f98469a5045dbb16cbc8b98e48a4d448616d5ae6fb630a",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2317,7 +2316,7 @@
     },
     {
       "id": "coast-landforms-illustration",
-      "path": "media/reading/coast-landforms-illustration.jpg",
+      "path": "media/reading/coast-landforms-illustration.webp",
       "kind": "illustration",
       "title": "岩岸侵蚀与沙岸堆积",
       "alt": "岩岸侵蚀与沙岸堆积。岩岸上可见海蚀崖、海蚀拱与海蚀柱；沙质岸段可形成沙嘴及受其遮蔽的潟湖。两幅为独立的地貌情景示意，并非同一岸线先后变化的两个阶段。",
@@ -2332,8 +2331,8 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
-      "sha256": "1a7cb9f714d723fe2f6604a9228e55dfa7cfb8a6b7bbe7d0049df606f63b5ea1",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "3b3489634ea74d1157f0b4e6b99e2543b550ce021f94e65dda1f918fdc470449",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2343,7 +2342,7 @@
     },
     {
       "id": "agriculture-landscapes-illustration",
-      "path": "media/reading/agriculture-landscapes-illustration.jpg",
+      "path": "media/reading/agriculture-landscapes-illustration.webp",
       "kind": "illustration",
       "title": "平原、梯田与草地的利用",
       "alt": "平原、梯田与草地的利用。平原耕作、坡地梯田和草地放牧利用了不同的土地条件。三幅为生产景观示意，不对应指定产区；作物和经营方式仍受水热、土壤、水源与管理影响。",
@@ -2359,8 +2358,8 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
-      "sha256": "d5530d36e2fb9c1fffacf5d76fb859bd26502a92a3fdf7f6959c94671be4306a",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "02b7974abafbc82f04ecc4205c79e44e57ead952740dbc76570e482443fb78ae",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2370,7 +2369,7 @@
     },
     {
       "id": "rain-shadow-landscape-illustration",
-      "path": "media/reading/rain-shadow-landscape-illustration.jpg",
+      "path": "media/reading/rain-shadow-landscape-illustration.webp",
       "kind": "illustration",
       "title": "迎风坡与背风坡",
       "alt": "迎风坡与背风坡。湿润空气沿迎风坡抬升、冷却，可能形成降水；越过山地后下沉，空气可变得较暖较干。图为地形降水概念示意，是否出现明显雨影取决于风向、水汽和山体条件。",
@@ -2385,8 +2384,8 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
-      "sha256": "9924c2d17204dbf3ae1617d5150639664c30d9872ca9f243725d1d1dabd36033",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
+      "sha256": "aa63c74afac9fb045c824b53c1aebe22ef9a9de43bd3c4c9ef0f2379a1930904",
       "accessedAt": "2026-11-12",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
@@ -2505,11 +2504,11 @@
       "id": "diagram-rain-shadow",
       "path": "media/reading/rain-shadow.svg",
       "kind": "diagram",
-      "title": "气流越过山地时会发生什么",
-      "caption": "湿空气抬升冷却，有利于迎风侧降水；另一侧可能较干。实际差异还取决于气流方向、季节和区域环流。",
-      "alt": "气流越过山地时会发生什么。湿空气抬升冷却，有利于迎风侧降水；另一侧可能较干。实际差异还取决于气流方向、季节和区域环流。",
-      "width": 1000,
-      "height": 560,
+      "title": "湿空气越过一座山",
+      "caption": "空气沿迎风坡上升，膨胀、冷却。水汽充足时会成云降雨。越过山脊后，空气沿背风坡下沉并变暖，相对湿度可能下降。",
+      "alt": "湿空气越过一座山。空气沿迎风坡上升，膨胀、冷却。水汽充足时会成云降雨。越过山脊后，空气沿背风坡下沉并变暖，相对湿度可能下降。",
+      "width": 540,
+      "height": 300,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -2550,9 +2549,10 @@
         "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience",
         "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-currents"
       ],
-      "sha256": "1cfe4f0b47293bb173745728c42584b73ccb82c5dc54f794b78cd376f54b1f9b",
+      "sha256": "4d1aca9857b26e905acab2b9b7a53a9dd39229fe943c3e75778c6ed4ecf45988",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-height",
@@ -2647,11 +2647,11 @@
       "id": "diagram-steps",
       "path": "media/reading/steps.svg",
       "kind": "diagram",
-      "title": "地势阶梯：区域概括与局部起伏",
-      "caption": "三级阶梯概括中国西高东低的大势。此图没有指定剖面路线，也不代表每处地面的真实形状。",
-      "alt": "地势阶梯：区域概括与局部起伏。三级阶梯概括中国西高东低的大势。此图没有指定剖面路线，也不代表每处地面的真实形状。",
-      "width": 1000,
-      "height": 560,
+      "title": "从西部高地到东部低地",
+      "caption": "从西向东看，我国地势大体降低。每一级内部仍有山地和谷地。示意线概括区域高低，没有指定实测剖面路线。",
+      "alt": "从西部高地到东部低地。从西向东看，我国地势大体降低。每一级内部仍有山地和谷地。示意线概括区域高低，没有指定实测剖面路线。",
+      "width": 540,
+      "height": 288,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -2680,9 +2680,10 @@
         "https://isl.cas.cn/xwdt/tpxw/201308/t20130819_6793537.html",
         "https://hdgyy.qinghai.gov.cn/cms/zfxxgk/show.html?id=228"
       ],
-      "sha256": "5fed4842db25232d895bc5a43213388f5b1c20caa4aac4b31f1f4148e00b9b52",
+      "sha256": "92957217a5657c2887714db9447e29c08585d5808a6d64ed19737de4649df82a",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-dryness",
@@ -2719,11 +2720,11 @@
       "id": "diagram-river-system",
       "path": "media/reading/river-system.svg",
       "kind": "diagram",
-      "title": "从支流到干流，再到出口",
-      "caption": "河网连接集水区。蓝线表示示意河道，虚线表示示意流域范围，不对应任何真实河流的边界。",
-      "alt": "从支流到干流，再到出口。河网连接集水区。蓝线表示示意河道，虚线表示示意流域范围，不对应任何真实河流的边界。",
-      "width": 1000,
-      "height": 560,
+      "title": "河网怎样汇向同一个出口",
+      "caption": "细线表示支流，较粗的线表示干流。分水岭分隔相邻流域，流域内地表径流汇向共同的出口。虚线为概念范围。",
+      "alt": "河网怎样汇向同一个出口。细线表示支流，较粗的线表示干流。分水岭分隔相邻流域，流域内地表径流汇向共同的出口。虚线为概念范围。",
+      "width": 540,
+      "height": 319,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -2768,19 +2769,20 @@
         "https://nepis.epa.gov/Exe/ZyPURL.cgi?Dockey=P1004ICU.TXT",
         "https://data.un.org/legacy/en/iso/us.html"
       ],
-      "sha256": "52ec1e0277aca09f5be8628ef1459d37ba688883cb02687f6b8e8f83dd1d316f",
+      "sha256": "9f55f944c3689f963e0d241399e63d109b580fd2e1bf9c1ce6259e24ee01bd8d",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-lake-balance",
       "path": "media/reading/lake-balance.svg",
       "kind": "diagram",
-      "title": "湖泊的来水、耗水与储量",
-      "caption": "湖面降水、河流和地下水可带来水；蒸发、出流等过程可带走水。各项收支决定储水变化。",
-      "alt": "湖泊的来水、耗水与储量。湖面降水、河流和地下水可带来水；蒸发、出流等过程可带走水。各项收支决定储水变化。",
-      "width": 1000,
-      "height": 560,
+      "title": "湖水从哪里来，又怎样离开",
+      "caption": "两类湖泊都能接收河水和降水，也会蒸发。外流湖还可经出湖河排水，封闭湖盆缺少这一河流出口。地下水也可能与湖泊交换。",
+      "alt": "湖水从哪里来，又怎样离开。两类湖泊都能接收河水和降水，也会蒸发。外流湖还可经出湖河排水，封闭湖盆缺少这一河流出口。地下水也可能与湖泊交换。",
+      "width": 540,
+      "height": 308,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -2808,9 +2810,10 @@
         "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html",
         "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
       ],
-      "sha256": "31d12e4b288ed16ee437008cb3c87acb6e676b43c31aa6256f7138d8cc26968b",
+      "sha256": "e96868ce782c068ba131dbc19a2b982bee583a2d5e3a3402aad6198835d63d9a",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-sea-passage",
@@ -2849,11 +2852,11 @@
       "id": "diagram-climate-reading",
       "path": "media/reading/climate-reading.svg",
       "kind": "diagram",
-      "title": "一年的温度与降水，要一起读",
-      "caption": "曲线与柱形仅示意阅读方法，不代表任何地点的气候数据。实际月序列见地图中的有来源数据图。",
-      "alt": "一年的温度与降水，要一起读。曲线与柱形仅示意阅读方法，不代表任何地点的气候数据。实际月序列见地图中的有来源数据图。",
-      "width": 1000,
-      "height": 560,
+      "title": "把雨季和热季放在一起看",
+      "caption": "逐月比较。这个示例里，年中几个月的降水柱更高，气温曲线也在这段时间达到高位。两种符号分别表示降水和温度，图中没有实测数值。",
+      "alt": "把雨季和热季放在一起看。逐月比较。这个示例里，年中几个月的降水柱更高，气温曲线也在这段时间达到高位。两种符号分别表示降水和温度，图中没有实测数值。",
+      "width": 540,
+      "height": 304,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -2866,9 +2869,10 @@
         "https://www.gloh2o.org/koppen/",
         "https://www.noaa.gov/jetstream/global/climate-zones"
       ],
-      "sha256": "3b3e6ee2d1fe57bd2138ca3b3e4c716c22b9ff64785c3563219e7f052ceec83c",
+      "sha256": "8c5cc017eb2162db5a24ad1ad82c4b376f9984e1c604b5ac634086d609a1d6eb",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-climate-gradient",
@@ -2960,11 +2964,11 @@
       "id": "diagram-population",
       "path": "media/reading/population.svg",
       "kind": "diagram",
-      "title": "总量、密度与空间分布",
-      "caption": "左侧与右侧各放置十二个示意人口点，面积不同，密度便不同。示例不对应任何真实地区。",
-      "alt": "总量、密度与空间分布。左侧与右侧各放置十二个示意人口点，面积不同，密度便不同。示例不对应任何真实地区。",
-      "width": 1000,
-      "height": 560,
+      "title": "同样的人数，不同的密度",
+      "caption": "两个区域各有十二个点。右边覆盖的面积较大，平均每单位面积的人数就较少。点数是示例，不对应实际地区。",
+      "alt": "同样的人数，不同的密度。两个区域各有十二个点。右边覆盖的面积较大，平均每单位面积的人数就较少。点数是示例，不对应实际地区。",
+      "width": 540,
+      "height": 296,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -2980,19 +2984,20 @@
         "https://english.shanghai.gov.cn/en-Overview/20231209/705180b43f794c1ca43f4d1ddaa049a2.html",
         "https://www.locpg.gov.cn/2022-06/07/c_1211652713.htm"
       ],
-      "sha256": "7ee54132693ecdfbca529c5dd07716f71b2b45b21cc4147726d5b680c01fbb11",
+      "sha256": "0dc136043fdbac30068ff790da976f54cc35acaec8eac34e9b9d91c3fd75d3ed",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-culture-statistics",
       "path": "media/reading/culture-statistics.svg",
       "kind": "diagram",
-      "title": "总体比例不能代替个人信息",
-      "caption": "示意条带包含多个群体。用一种主色概括地区，会隐藏内部构成；本图没有使用实际宗教比例。",
-      "alt": "总体比例不能代替个人信息。示意条带包含多个群体。用一种主色概括地区，会隐藏内部构成；本图没有使用实际宗教比例。",
-      "width": 1000,
-      "height": 560,
+      "title": "同一地区可以包含多种归属",
+      "caption": "每个方块代表同样的人数，三个颜色表示三组示例。若只按人数最多的一组给整个地区着色，其余两组仍生活在这里。图中没有采用真实地区的宗教统计。",
+      "alt": "同一地区可以包含多种归属。每个方块代表同样的人数，三个颜色表示三组示例。若只按人数最多的一组给整个地区着色，其余两组仍生活在这里。图中没有采用真实地区的宗教统计。",
+      "width": 540,
+      "height": 273,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3006,9 +3011,10 @@
         "https://www.pewresearch.org/religion/2025/06/09/buddhist-population-change/",
         "https://www.pewresearch.org/religion/2025/06/09/religiously-unaffiliated-population-change/"
       ],
-      "sha256": "921580d297c6d39bf08690b2ae8ad50d691c82a4d74ba58a5e182a546afda947",
+      "sha256": "949ac82c34a35b2887fb77c682edca630cc06225714bd4563eb46de3b0ef81d3",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-language",
@@ -3069,11 +3075,11 @@
       "id": "diagram-food-water",
       "path": "media/reading/food-water.svg",
       "kind": "diagram",
-      "title": "从水土条件到粮食与城市",
-      "caption": "农业生产、运输储存和城市消费相互连接。粮食产地与人口集中地并不一定重合。",
-      "alt": "从水土条件到粮食与城市。农业生产、运输储存和城市消费相互连接。粮食产地与人口集中地并不一定重合。",
-      "width": 1000,
-      "height": 560,
+      "title": "粮食离开农田以后",
+      "caption": "作物长成后，收获、储存、加工和运输仍会影响城市能够得到的粮食。沿着来路看，城里吃的粮食也联系着产地的土地和水源。",
+      "alt": "粮食离开农田以后。作物长成后，收获、储存、加工和运输仍会影响城市能够得到的粮食。沿着来路看，城里吃的粮食也联系着产地的土地和水源。",
+      "width": 540,
+      "height": 314,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3107,19 +3113,20 @@
         "https://science.nasa.gov/photojournal/where-on-earth-misr-mystery-image-quiz-17the-pampas-of-argentina/",
         "https://science.nasa.gov/earth/earth-observatory/east-africa-1120/"
       ],
-      "sha256": "b99f542a642b7d333d5691d3c71e20d9c6f1978f73f4c873250220f2114858cd",
+      "sha256": "db5256d8b9e40f0b3eebc2212ea88d597b265da579b1c17c57ac0b0e01575054",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-soil",
       "path": "media/reading/soil.svg",
       "kind": "diagram",
-      "title": "土壤剖面：材料、生物与水共同作用",
-      "caption": "从表层向下观察颜色、根系与结构。并非每处土壤都具有图中的完整层次，深度也不按比例。",
-      "alt": "土壤剖面：材料、生物与水共同作用。从表层向下观察颜色、根系与结构。并非每处土壤都具有图中的完整层次，深度也不按比例。",
-      "width": 1000,
-      "height": 560,
+      "title": "地面以下的土层",
+      "caption": "表层可见根系与有机物。水向下渗时，也能把一些溶解物和细颗粒带入下层。更深处的母质为土壤发育提供矿物材料。不同地点土层的厚度、颜色和分层会变化。",
+      "alt": "地面以下的土层。表层可见根系与有机物。水向下渗时，也能把一些溶解物和细颗粒带入下层。更深处的母质为土壤发育提供矿物材料。不同地点土层的厚度、颜色和分层会变化。",
+      "width": 540,
+      "height": 314,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3139,19 +3146,20 @@
         "https://www.igg.cas.cn/xwzx/cutting_edge/202005/t20200508_5576578.html",
         "https://ieexa.cas.cn/news/kydt/202410/t20241016_7400821.html"
       ],
-      "sha256": "6e00907ef5fe06e5b932655a7a32df46bb86810f8a95b0d71996b899ea4c2018",
+      "sha256": "53926cfe8355abfb2aa50184a12b9664d7ceab0a6fd7d0757a22b7280125e8e7",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-energy",
       "path": "media/reading/energy.svg",
       "kind": "diagram",
-      "title": "资源、生产与用能之间的联系",
-      "caption": "资源分布不等于消费分布。输送与调节把不同时间、不同地点的供给和需求接起来。",
-      "alt": "资源、生产与用能之间的联系。资源分布不等于消费分布。输送与调节把不同时间、不同地点的供给和需求接起来。",
-      "width": 1000,
-      "height": 560,
+      "title": "装机容量与实际发电量",
+      "caption": "装机容量给出额定功率，发电量还取决于实际运行功率和持续时间。图中使用相同设备的两个假设时段，便于比较。",
+      "alt": "装机容量与实际发电量。装机容量给出额定功率，发电量还取决于实际运行功率和持续时间。图中使用相同设备的两个假设时段，便于比较。",
+      "width": 540,
+      "height": 304,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3175,9 +3183,10 @@
         "https://www.iksr.org/fileadmin/user_upload/DKDM/Dokumente/BWP-HWRMP/EN/bwp_En_RMBP_2021_01.pdf",
         "https://www.portofrotterdam.com/en/logistics/connections/intermodal-transportation/inland-shipping"
       ],
-      "sha256": "b615037fb12180a73216fcf9fafa0d9d5cb53f5e30417c0fa5626effd88cc8e5",
+      "sha256": "ef12219166549f2316ff6def7e18ca33285fc18470d01114bb2e56dc5d7f715f",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-transport",
@@ -3220,11 +3229,11 @@
       "id": "diagram-seasons",
       "path": "media/reading/seasons.svg",
       "kind": "diagram",
-      "title": "地轴倾斜使两半球季节相反",
-      "caption": "两幅地球示意保持地轴方向一致。左侧北半球朝向太阳，右侧北半球背离太阳；距离与尺寸不按比例。",
-      "alt": "地轴倾斜使两半球季节相反。两幅地球示意保持地轴方向一致。左侧北半球朝向太阳，右侧北半球背离太阳；距离与尺寸不按比例。",
-      "width": 1000,
-      "height": 560,
+      "title": "同一根倾斜的地轴",
+      "caption": "两幅地球的北极都指向右上方。左边北半球朝向太阳，北半球白昼长。半年后地球绕到右边，北半球背向太阳，白昼变短。地球、太阳的大小和距离均为示意。",
+      "alt": "同一根倾斜的地轴。两幅地球的北极都指向右上方。左边北半球朝向太阳，北半球白昼长。半年后地球绕到右边，北半球背向太阳，白昼变短。地球、太阳的大小和距离均为示意。",
+      "width": 540,
+      "height": 300,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3235,9 +3244,10 @@
         "https://oceanservice.noaa.gov/facts/longitude.html",
         "https://gml.noaa.gov/grad/solcalc/calcdetails.html"
       ],
-      "sha256": "c540ec72a790f4ae172e0781f45c7cb14ee64a3d3a5eb6a99208203d3f62fb03",
+      "sha256": "038d5f9670300bf0addd68f687d6db4fa811f3a5931f25da0885fe952c5a6db3",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-contours",
@@ -3265,11 +3275,11 @@
       "id": "diagram-plates",
       "path": "media/reading/plates.svg",
       "kind": "diagram",
-      "title": "板块边界的三种基本相对运动",
-      "caption": "汇聚、张裂和转换概括相对运动方向。真实边界结构更复杂，图中不表示具体板块的位置。",
-      "alt": "板块边界的三种基本相对运动。汇聚、张裂和转换概括相对运动方向。真实边界结构更复杂，图中不表示具体板块的位置。",
-      "width": 1000,
-      "height": 560,
+      "title": "板块边界的三种运动",
+      "caption": "俯视同一条边界两侧的地块。汇聚时，两侧相互靠近。张裂时，两侧相互远离。沿转换边界，两侧平行于边界反向滑动。",
+      "alt": "板块边界的三种运动。俯视同一条边界两侧的地块。汇聚时，两侧相互靠近。张裂时，两侧相互远离。沿转换边界，两侧平行于边界反向滑动。",
+      "width": 540,
+      "height": 340,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3289,19 +3299,20 @@
         "https://www.data.jma.go.jp/vois/data/tokyo/314_Fujisan/314_index.html",
         "https://earthquake.usgs.gov/arcgis/rest/services/eq/map_plateboundaries/MapServer"
       ],
-      "sha256": "8bf80792fe0f732bb96e879465be2fd9bcf300896cc2549d25ffd10595cf18c3",
+      "sha256": "71d40702c2746df37e3546c1851241b18b7bcaf158620d10fdce93495ca02ef0",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-region-method",
       "path": "media/reading/region-method.svg",
       "kind": "diagram",
-      "title": "认识一个地区，可以顺着这条线",
-      "caption": "位置、自然条件与人类活动相互联系。区域比较使用相同问题，再回到具体地点检查内部差异。",
-      "alt": "认识一个地区，可以顺着这条线。位置、自然条件与人类活动相互联系。区域比较使用相同问题，再回到具体地点检查内部差异。",
-      "width": 1000,
-      "height": 560,
+      "title": "怎样把两个地区放在一起比较",
+      "caption": "先明确所比较的地区范围，再看水、地形等条件怎样影响土地使用，沿河流或交通线追踪两个地区如何联系。两地都用同一组问题，差异才有明确含义。",
+      "alt": "怎样把两个地区放在一起比较。先明确所比较的地区范围，再看水、地形等条件怎样影响土地使用，沿河流或交通线追踪两个地区如何联系。两地都用同一组问题，差异才有明确含义。",
+      "width": 540,
+      "height": 314,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3404,9 +3415,10 @@
         "https://www.ga.gov.au/scientific-topics/national-location-information/landforms/deserts",
         "https://data.un.org/legacy/en/iso/au.html"
       ],
-      "sha256": "eb0106b89537e22376bd9b71b34058a758e3d1aeb644abdfa6fe4e6171e0c06d",
+      "sha256": "f91d93c3e5aa593dee027f691d79513dfda1f741292d27756fd91ecb187b8349",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-latitude-belts",
@@ -3454,11 +3466,11 @@
       "id": "diagram-polar",
       "path": "media/reading/polar.svg",
       "kind": "diagram",
-      "title": "北极与南极：先分清海冰与陆地冰",
-      "caption": "北极以海洋为中心，南极以大陆为主体。图为剖面概括，冰体厚度与地形不按比例。",
-      "alt": "北极与南极：先分清海冰与陆地冰。北极以海洋为中心，南极以大陆为主体。图为剖面概括，冰体厚度与地形不按比例。",
-      "width": 1000,
-      "height": 560,
+      "title": "海冰浮在水上，冰盖覆在陆上",
+      "caption": "左侧的海冰由海水冻结形成，漂在北冰洋上。右侧的南极冰盖来自陆上多年积雪，压实成冰后缓慢向海岸流动。两极都有海冰。",
+      "alt": "海冰浮在水上，冰盖覆在陆上。左侧的海冰由海水冻结形成，漂在北冰洋上。右侧的南极冰盖来自陆上多年积雪，压实成冰后缓慢向海岸流动。两极都有海冰。",
+      "width": 540,
+      "height": 305,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3474,9 +3486,10 @@
         "https://www.bas.ac.uk/about/where-we-work/antarctica/",
         "https://esa-worldcover.org/en/data-access"
       ],
-      "sha256": "841680b41dec38ceb78b99ecfa507307e9faf83372acb6a15251e8a1374df3c7",
+      "sha256": "25c263c58836890763d2c689fb0c773d1203ac5067647fa1ac0b4d78a5e6deec",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-processes",
@@ -3780,30 +3793,21 @@
       "id": "diagram-water-cycle",
       "path": "media/reading/water-cycle.svg",
       "kind": "diagram",
-      "title": "水循环：不同储存位置之间的移动",
-      "caption": "箭头表示部分主要路径，不代表固定流量。地表水、土壤水与地下水彼此联系，停留时间各不相同。",
-      "alt": "水循环：不同储存位置之间的移动。箭头表示部分主要路径，不代表固定流量。地表水、土壤水与地下水彼此联系，停留时间各不相同。",
-      "width": 1000,
-      "height": 560,
+      "title": "从海面到陆地",
+      "caption": "海面蒸发的水汽可随风到达陆地。落到山坡上的雨，一部分沿地表流入河海，另一部分渗进土里。陆地上的水也会经蒸发和植物蒸腾回到空气中。",
+      "alt": "海面上方的箭头向上，再随风指向山地上空的云。雨从云中落下，山坡上的两支箭头分别顺坡流向海面和向下进入土层。",
+      "width": 540,
+      "height": 335,
+      "sourceUrls": [
+        "https://www.usgs.gov/special-topics/water-science-school/water-cycle"
+      ],
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
       "sourceUrl": "https://www.usgs.gov/special-topics/water-science-school/water-cycle",
-      "sourceUrls": [
-        "https://www.usgs.gov/special-topics/water-science-school/water-cycle",
-        "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater",
-        "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
-        "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
-        "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html",
-        "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html",
-        "https://www.cas.cn/cm/202308/t20230817_4964150.shtml",
-        "https://igg.cas.cn/hejl/jldt/201510/t20151029_4450452.html",
-        "https://whc.unesco.org/en/list/1248/",
-        "https://whc.unesco.org/en/list/1248/maps/"
-      ],
-      "sha256": "e2993454e700d5a4e946edc1f7cd65df7c9c4f622852dc88d973abc79e78e418",
-      "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "sha256": "5b8a58001647d7720a192171a20ff31c325b80afd93950495dbe0715064fc031",
+      "accessedAt": "2026-11-18",
+      "processing": "依据 USGS 水科学学校的说明改写正文并原创绘制三幅 SVG。箭头表示水的去向，剖面用于解释理想条件下的过程。原创文字与图示按 CC BY 4.0 提供。"
     },
     {
       "id": "diagram-hazards",
@@ -3841,11 +3845,11 @@
       "id": "diagram-migration",
       "path": "media/reading/migration.svg",
       "kind": "diagram",
-      "title": "迁入、迁出与净迁移",
-      "caption": "双向人口流动可以同时发生。净迁移是迁入减迁出，净值小不代表总流动小；本图没有实际流量。",
-      "alt": "迁入、迁出与净迁移。双向人口流动可以同时发生。净迁移是迁入减迁出，净值小不代表总流动小；本图没有实际流量。",
-      "width": 1000,
-      "height": 560,
+      "title": "迁入与迁出要分开数",
+      "caption": "从乙地看，甲到乙是迁入，乙到甲是迁出。同期迁入人数减去迁出人数，得到乙地的净迁移人数。两个方向都很活跃时，净值仍可能接近零。",
+      "alt": "迁入与迁出要分开数。从乙地看，甲到乙是迁入，乙到甲是迁出。同期迁入人数减去迁出人数，得到乙地的净迁移人数。两个方向都很活跃时，净值仍可能接近零。",
+      "width": 540,
+      "height": 281,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3862,9 +3866,10 @@
         "https://www.un.org/development/desa/pd/sites/www.un.org.development.desa.pd/files/undesa_pd_2024_wpp_2024_advance_unedited_0.pdf",
         "https://human-settlement.emergency.copernicus.eu/ghs_pop2023.php"
       ],
-      "sha256": "92174d72fc5d1a3ae0633711bff3c34d8d72adc95a86f255e5bf6446e264f0f4",
+      "sha256": "6e89ad32fcadbfca3715728f4846f4620994742867013669892e2ce12d32e65a",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-image-reading",
@@ -3898,11 +3903,11 @@
       "id": "diagram-weather-fronts",
       "path": "media/reading/weather-fronts.svg",
       "kind": "diagram",
-      "title": "冷锋：冷空气推进，暖空气被抬升",
-      "caption": "理想横剖面，展示相对冷暖与抬升。降雨还需要水汽等条件；不是某次天气系统的实测图。",
-      "alt": "冷锋：冷空气推进，暖空气被抬升。理想横剖面，展示相对冷暖与抬升。降雨还需要水汽等条件；不是某次天气系统的实测图。",
-      "width": 1000,
-      "height": 560,
+      "title": "冷空气怎样抬起暖空气",
+      "caption": "冷锋推进时，较密的冷空气贴近地面向前伸展，暖空气沿着倾斜的交界面上升。上升有利于冷却成云，能否降雨还取决于水汽等条件。",
+      "alt": "冷空气怎样抬起暖空气。冷锋推进时，较密的冷空气贴近地面向前伸展，暖空气沿着倾斜的交界面上升。上升有利于冷却成云，能否降雨还取决于水汽等条件。",
+      "width": 540,
+      "height": 295,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3922,19 +3927,20 @@
         "https://www.nesdis.noaa.gov/about/k-12-education/severe-weather/what-monsoon",
         "https://www.worldbank.org/en/news/feature/2021/10/21/for-mekong-delta-farmers-diversification-is-the-key-to-climate-resilience"
       ],
-      "sha256": "b3549d475c633f8389d63f1349216dac370f4a3a37e5eeadbf7d53c30c78a2cf",
+      "sha256": "da0859c25d52315443d97f982b7825350e2b9e9b668603b44c444055060fc12b",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-climate-energy",
       "path": "media/reading/climate-energy.svg",
       "kind": "diagram",
-      "title": "温室效应：地球与大气交换能量",
-      "caption": "箭头仅表示部分能量传递方向，长度和粗细不代表测量值。温室气体吸收并向各方向发射红外辐射。",
-      "alt": "温室效应：地球与大气交换能量。箭头仅表示部分能量传递方向，长度和粗细不代表测量值。温室气体吸收并向各方向发射红外辐射。",
-      "width": 1000,
-      "height": 560,
+      "title": "地面放出的热量去了哪里",
+      "caption": "太阳辐射使地面增温。地面向上发出红外辐射，一部分穿过大气到达太空，另一部分被温室气体吸收。大气也向各方向发出红外辐射，包括向下回到地面。",
+      "alt": "地面放出的热量去了哪里。太阳辐射使地面增温。地面向上发出红外辐射，一部分穿过大气到达太空，另一部分被温室气体吸收。大气也向各方向发出红外辐射，包括向下回到地面。",
+      "width": 540,
+      "height": 324,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3955,19 +3961,20 @@
         "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692412.html",
         "https://www.niglas.cas.cn/xwdt_1_1/yjjz/202005/t20200507_5575499.html"
       ],
-      "sha256": "4cdde58118cc9b54609b021e8178070f6ad2194add98e88ec0054c985d9b8818",
+      "sha256": "f7a45b12cb1718b378daa33503455bb500cf9c7ff2ad32c45f21cc7e0b3945cc",
       "accessedAt": "2026-11-06",
-      "processing": "项目内 SVG 代码绘制的概念示意；没有地理坐标或实测数值。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
     },
     {
       "id": "diagram-upwelling",
       "path": "media/reading/upwelling.svg",
       "kind": "diagram",
-      "title": "沿岸上升流：表层离岸，深水补充",
-      "caption": "理想海岸横剖面。沿岸风与地球自转共同作用，可使表层海水离岸，较深的冷水上升补充并带来营养物质。箭头不表示实际速度或地理范围。",
-      "alt": "沿岸上升流：表层离岸，深水补充。理想海岸横剖面。沿岸风与地球自转共同作用，可使表层海水离岸，较深的冷水上升补充并带来营养物质。箭头不表示实际速度或地理范围。",
-      "width": 1000,
-      "height": 560,
+      "title": "海岸边的冷水从哪里来",
+      "caption": "在合适的沿岸风和地球自转条件下，表层海水可向离岸方向移动。较深处的水随之上升，常把低温、富含营养物质的海水带到近海面。",
+      "alt": "海岸边的冷水从哪里来。在合适的沿岸风和地球自转条件下，表层海水可向离岸方向移动。较深处的水随之上升，常把低温、富含营养物质的海水带到近海面。",
+      "width": 540,
+      "height": 302,
       "author": "山河图",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -3975,9 +3982,72 @@
       "sourceUrls": [
         "https://oceanservice.noaa.gov/facts/upwelling.html"
       ],
-      "sha256": "1e21f143ed0fe54cd8eb75438cb1bf0e35695219c89598c2b6c37f287d8cecd1",
+      "sha256": "f94c9ef1ec690902e2960daa4c2601b06328a8a94861b2337d2bae5b13f93c33",
       "accessedAt": "2026-11-10",
-      "processing": "原创SVG海岸横剖面，依据NOAA上升流说明绘制；标注概念示意、非实测，不表示风速、流速或真实地理范围。"
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
+    },
+    {
+      "id": "diagram-canal-lock",
+      "path": "media/reading/canal-lock.svg",
+      "kind": "diagram",
+      "title": "船怎样通过一级船闸",
+      "caption": "上行时，船先从低水位一侧进入。关闸后，水经输水通道进入闸室，船随水面浮高。待闸内水面与上游齐平，才打开上游闸门。图中深色竖线表示关闭的闸门。",
+      "alt": "船怎样通过一级船闸。上行时，船先从低水位一侧进入。关闸后，水经输水通道进入闸室，船随水面浮高。待闸内水面与上游齐平，才打开上游闸门。图中深色竖线表示关闭的闸门。",
+      "width": 540,
+      "height": 370,
+      "author": "山河图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
+      "sourceUrls": [
+        "https://pancanal.com/en/history-of-the-panama-canal/"
+      ],
+      "sha256": "466f4e4c806bea242ce49ab6b793819a4ce8285f322001dd89b4e96879aefc0a",
+      "accessedAt": "2026-11-19",
+      "processing": "依图列出的资料绘制原创 SVG，以方向、剖面或对比示例解释过程。概念示意，不对应实测范围或流量。",
+      "revisedAt": "2026-11-19"
+    },
+    {
+      "id": "diagram-rain-infiltration",
+      "path": "media/reading/rain-infiltration.svg",
+      "kind": "diagram",
+      "title": "同一场雨，两种地面",
+      "caption": "左侧的柏油路很难透水，水顺路面流走。右侧的雨水能渗进疏松的土里。大雨时，草地上也会有水沿地面流走。",
+      "alt": "相同的雨落在左右两块缓坡上。左边的地面有连续的柏油层，箭头沿路面向低处走。右边长着草，箭头穿过地表，进入有孔隙的土层。",
+      "width": 540,
+      "height": 325,
+      "sourceUrls": [
+        "https://www.usgs.gov/water-science-school/science/infiltration-and-water-cycle"
+      ],
+      "author": "山河图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.usgs.gov/water-science-school/science/infiltration-and-water-cycle",
+      "sha256": "23a5a961c52c70593f910d551d34ec27d553cdacb6f8cb422568cfb147cf9f58",
+      "accessedAt": "2026-11-18",
+      "processing": "依据 USGS 水科学学校的说明改写正文并原创绘制三幅 SVG。箭头表示水的去向，剖面用于解释理想条件下的过程。原创文字与图示按 CC BY 4.0 提供。"
+    },
+    {
+      "id": "diagram-groundwater-river",
+      "path": "media/reading/groundwater-river.svg",
+      "kind": "diagram",
+      "title": "地下水怎样补给河流",
+      "caption": "河岸的砂砾层与河床相通，地下水面向河边倾斜，水便可从饱水层渗入河道。蓝色区域表示孔隙中充满水的地层。",
+      "alt": "河谷横剖面中，两岸的地下水面向中间降低，与河面相接。地下水面下方仍有砂砾，两支箭头从这些饱水砂砾指向较低的河床。",
+      "width": 540,
+      "height": 335,
+      "sourceUrls": [
+        "https://www.usgs.gov/water-science-school/science/rivers-contain-groundwater",
+        "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater"
+      ],
+      "author": "山河图",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "sourceUrl": "https://www.usgs.gov/water-science-school/science/rivers-contain-groundwater",
+      "sha256": "a68b5ba44799f934d099d9b5cf372bf3efb8d4a52b5340283def0be634c28f0a",
+      "accessedAt": "2026-11-18",
+      "processing": "依据 USGS 水科学学校的说明改写正文并原创绘制三幅 SVG。箭头表示水的去向，剖面用于解释理想条件下的过程。原创文字与图示按 CC BY 4.0 提供。"
     },
     {
       "author": "山河图",
@@ -8237,7 +8307,7 @@
         },
         {
           "path": "src/data/knowledge.json",
-          "sha256": "55fa0a29646417acd0b762e8885fa6b211bcf3ce0900e9c9f46d0e7c6812e6bd",
+          "sha256": "75ac121698c429d36db6c2b18da5ce81c70597008c4d8581baa18bb71ff69049",
           "featureIds": [
             "asia-continent",
             "africa-continent",
@@ -9726,7 +9796,7 @@
         },
         {
           "path": "public/data/regions.geojson",
-          "sha256": "13aafdba4e03aa2b27b2c185fc9ebfdd464e78df0e76933978e892aac60d1418",
+          "sha256": "a5c2d79e9761926e96a4d1955cd1e920626e157402034bcc67bc9721460fd39e",
           "featureIds": [
             "region-1159104311",
             "region-1159104309",
@@ -9737,7 +9807,7 @@
         },
         {
           "path": "src/data/feature-bindings.json",
-          "sha256": "2ecebcadbfb84b4cc6b23afb2ed314198dbf32045d8b13e92e0ea6bf91e80ce7",
+          "sha256": "79a2a54e164b223c74c67fa73b79aced057df2b03a158962cd0208670f591c5f",
           "featureIds": [
             "rockies",
             "andes",
@@ -9748,7 +9818,7 @@
         },
         {
           "path": "src/data/knowledge.json",
-          "sha256": "55fa0a29646417acd0b762e8885fa6b211bcf3ce0900e9c9f46d0e7c6812e6bd",
+          "sha256": "75ac121698c429d36db6c2b18da5ce81c70597008c4d8581baa18bb71ff69049",
           "featureIds": [
             "rockies",
             "andes",
@@ -11234,7 +11304,7 @@
         },
         {
           "path": "public/data/china-reference-regions.geojson",
-          "sha256": "180383ad2612c0891fabc59fa09685601cd88f7441e2149564a2699183541bc1",
+          "sha256": "2541069bc237abe53fc394631f51194781e56b4e33b5b71ab0cbd5bebfb3a09e",
           "featureIds": [
             "region-cn-jiang2023-ii",
             "region-cn-jiang2023-i",
@@ -11244,7 +11314,7 @@
         },
         {
           "path": "public/data/china-reference-region-sources.json",
-          "sha256": "83537766d7ba3930e231a266a2af5876f0c939899ed9ead99bdc60f27be5a6b1"
+          "sha256": "487fd48b2218f6648c6d8185dce45bba8b494793a0daad3ac3ae15e88f4d31db"
         }
       ],
       "inputVersions": [
@@ -11260,8 +11330,102 @@
         }
       ],
       "processing": "直接投影public/data/china-reference-regions.geojson的四个已验证多边形，不新增分界、不按行政省界补面。沿用Jiang等（2023）图2数字化分区的CC BY 4.0署名、配准与局限说明；背景Natural Earth 50m陆地为公有领域。等距圆柱投影（中央经线0°、标准纬线0°）裁剪为70–136°E、17–55°N，坐标四舍五入到0.1像素；分区名称位于该层已记录的参考中心。",
-      "sha256": "d774e0ae949eea627877279acf28dabefe83c4269537fe9ef296055f3741e206",
+      "sha256": "7dc95dcc53bc1d94048049ed1a1b7cde9b7b893650112cca0df1479296ef2776",
       "accessedAt": "2026-11-12"
+    },
+    {
+      "id": "china-middle-yangtze-map",
+      "kind": "map",
+      "title": "长江中游的三省与两湖",
+      "caption": "湖南的洞庭湖和江西的鄱阳湖分别与长江相通。沿蓝线从西向东，可以看到长江怎样穿过湖北，又经过几个省相邻的地带。图中只着色这三个省，省界和水体均为概化范围。",
+      "alt": "湖南的洞庭湖和江西的鄱阳湖分别与长江相通。沿蓝线从西向东，可以看到长江怎样穿过湖北，又经过几个省相邻的地带。图中只着色这三个省，省界和水体均为概化范围。",
+      "path": "media/reading/china-middle-yangtze-map.svg",
+      "author": "山河图制图；Natural Earth",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "width": 1200,
+      "height": 1025,
+      "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "sourceUrls": [
+        "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+        "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_rivers_lake_centerlines.geojson",
+        "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_lakes.geojson",
+        "https://www.naturalearthdata.com/about/terms-of-use/"
+      ],
+      "placeIds": [
+        "hubei",
+        "hunan",
+        "jiangxi",
+        "yangtze",
+        "dongting-lake",
+        "poyang-lake"
+      ],
+      "featureIds": [
+        "province-cn-42",
+        "province-cn-43",
+        "province-cn-36",
+        "river-yangtze",
+        "lake-1159114015",
+        "lake-1159116351"
+      ],
+      "inputs": [
+        {
+          "path": "public/data/learning-provinces.geojson",
+          "sha256": "5ad64c1b66842805f34345f0d588530b5b029f57b4ef92a5f860414fdd2a8d20",
+          "featureIds": [
+            "province-cn-42",
+            "province-cn-43",
+            "province-cn-36"
+          ]
+        },
+        {
+          "path": "public/data/lakes.geojson",
+          "sha256": "5dbfe4e4990cc0399292e56fcde661d32109bdec0fe4038e7547c488315a1009",
+          "featureIds": [
+            "lake-1159114015",
+            "lake-1159116351"
+          ]
+        },
+        {
+          "path": "public/data/rivers.geojson",
+          "sha256": "04d97063110482f0f9f8023509be1e7c8854c90ff841e2e71f6c6031b6018324",
+          "featureIds": [
+            "river-yangtze"
+          ]
+        },
+        {
+          "path": "src/data/feature-bindings.json",
+          "sha256": "79a2a54e164b223c74c67fa73b79aced057df2b03a158962cd0208670f591c5f"
+        },
+        {
+          "path": "public/data/learning-data-sources.json",
+          "sha256": "7787ab8140b1e5debaf480fadf604bbc49e0a9b7e0abb333e2dae2042f1ec31c"
+        },
+        {
+          "path": "public/data/sources.json",
+          "sha256": "bf523e398c9b1224e520769de3943610dc670d532fb22f131ec882f73864d893"
+        }
+      ],
+      "inputVersions": [
+        {
+          "id": "natural-earth-10m-admin1-learning",
+          "version": "ca96624a56bd078437bca8184e78163e5039ad19",
+          "license": "Public domain"
+        },
+        {
+          "id": "natural-earth-10m-rivers",
+          "version": "ca96624a56bd078437bca8184e78163e5039ad19",
+          "license": "Public domain"
+        },
+        {
+          "id": "natural-earth-10m-lakes",
+          "version": "ca96624a56bd078437bca8184e78163e5039ad19",
+          "license": "Public domain"
+        }
+      ],
+      "processing": "复用站内 Natural Earth 1:1000万省级、长江与湖泊几何，以相同等距圆柱投影裁切长江中游。省界使用现有省级学习层，未新增水系或推定流域范围。",
+      "sha256": "d4d9bf83759f09d99ea7302772dbd9fe444fd7c7a0ad9a2d42bbb598fc296af5",
+      "accessedAt": "2026-11-19"
     }
   ],
   "languageRevision": {
@@ -11393,123 +11557,123 @@
   "outputs": [
     {
       "path": "public/reading/topics/china-terrain.json",
-      "sha256": "6b72eee831f55cf7c96130b2987efa6fe7c8716fe783cd8d4443c278939b63c5"
+      "sha256": "f65fa3f6c807ccc8b4c07018c7c18349b7bb128e760ef4ea85ef02cf80d75ac6"
     },
     {
       "path": "public/reading/topics/china-rivers.json",
-      "sha256": "b7d2c591fd2ad40375d77c2cfb9d4e62f9d0e563933e418094ebc1b99ff6c849"
+      "sha256": "5923c9433cf85b96b654d234c6121d046e38a09738bd690198a5eec97d159d79"
     },
     {
       "path": "public/reading/topics/world-terrain.json",
-      "sha256": "342e2a4b22c0e7dd7547aacc5672d60f07942df4d7483f2c2f52d5ee991aeaa3"
+      "sha256": "d23b5e0901247297c570eee3a1ea285370ee538949d90959b4ce1306d5278944"
     },
     {
       "path": "public/reading/topics/world-rivers.json",
-      "sha256": "c64f0788a63c7f8b1d95f350c324b271541d4b83e0cc276948736e086dc59b74"
+      "sha256": "148b0eeffa8be03e6e7fdd9e977004deb2bcd9f83ec15111eb6e5da509e4b1b0"
     },
     {
       "path": "public/reading/topics/map-climate.json",
-      "sha256": "c59407dbdc7d6e2f63831e78f9afc20868b75d44d8e6efa4d7c920fe01058b63"
+      "sha256": "ce089dbe072455f77416175da30f057e02222f327c0eef7cea58b7e64299317f"
     },
     {
       "path": "public/reading/topics/map-population.json",
-      "sha256": "26ad4f67ba70832277bf849e11b2ee859a1226d833394c1fcac6f1128ecf99e4"
+      "sha256": "6c0acb20026bb97f1953591ecbc74f8d94b84af5845c8ed323ee3b471355718a"
     },
     {
       "path": "public/reading/topics/map-religion.json",
-      "sha256": "afab46e4f8e523d024cf95ce7c6736b50ea96f7a43834366e309c20fc41e7d5c"
+      "sha256": "2335e673493b92c4e57ccc27fd8c6dd02195f2acb07b8621c06e01dc743abddc"
     },
     {
       "path": "public/reading/topics/map-language.json",
-      "sha256": "1af8421e9990765b9c6117d7c9130a2d1bed31a91c2425d97b2812712251038f"
+      "sha256": "b28b01cffc9bd5a683246d00b57923aa1484228edef3e299bffa1452ce219650"
     },
     {
       "path": "public/reading/topics/drylands.json",
-      "sha256": "c5a7c3c8e061f6331304fa8c16a31ba4aace04a5617cb65076343f85158b3bc5"
+      "sha256": "2ae1c2b13227201fc575c6d8f515ab61c7b0f22d4b9a9c40796e7b3fb266252e"
     },
     {
       "path": "public/reading/topics/china-regions.json",
-      "sha256": "d983e4ee9ec4c2299b9a110955b15a6c0cd8a18eb24665c3bc372e79a818c032"
+      "sha256": "2036bc4071a9ce34dd9f7764de5b30d152587423b2c7fa65b7f7e6e45b2328d2"
     },
     {
       "path": "public/reading/topics/china-city-environment.json",
-      "sha256": "eaa2bc321530e6b93c3ef15411b02a46e0fa4b1406e9eeb060ab0d604671f443"
+      "sha256": "34100228ec235845fa985ff58adcfaf3c1abf570085b3f74043bae4501b9997e"
     },
     {
       "path": "public/reading/topics/agriculture-food.json",
-      "sha256": "a2a5647f44bf1a2b2e3164f499f3ac26894df5769a0714ebec740e489c7c5e98"
+      "sha256": "96067e805a6a5b5d9e6fdda503e9d1356a5827f95cc7ec9aa59dfe4ec3cadfdd"
     },
     {
       "path": "public/reading/topics/transport-trade.json",
-      "sha256": "b964339a1f1005bb1338e9ae910e37072326458e90136821ad335a532f29c134"
+      "sha256": "39b98f09b3172abb10e758c44a3d2d233e944fb4dc326110506d1176ced4a4c1"
     },
     {
       "path": "public/reading/topics/earth-seasons.json",
-      "sha256": "d6caca4c044d26e0d4a8f5980ebd06ba69d72606a02f3dceabac506cedda6771"
+      "sha256": "6a6436a2132f7711357ba4eba1297a848fd2e7e407f3f3fb58f0c7ab9fdd6692"
     },
     {
       "path": "public/reading/topics/earth-map-reading.json",
-      "sha256": "a4233a7fc909b7a41b3e180570d5368a830e6bcb97ca7ce0c44a86cbdac27ca6"
+      "sha256": "2fecf21511536b03de05bca2a11f491e0716d396f03dcebf33f472ae4358dd55"
     },
     {
       "path": "public/reading/topics/china-provinces.json",
-      "sha256": "e694f61392a15b133bcb37e984ff8ee8972ba876565b2875586d2e9496630e55"
+      "sha256": "f8f6f121fd8799b4911dd545c467ba30890e4d8ca9b4398058509467f891f2e0"
     },
     {
       "path": "public/reading/topics/energy-industry.json",
-      "sha256": "47caa059e4c75ca0ea7556f83c343eae52709e3193f4399a6fce7295ca0985f3"
+      "sha256": "c2c256a0f3ad7582af8ca40b8d1b26a9904a4381988bcb8133b7f1c2d7446f1b"
     },
     {
       "path": "public/reading/topics/world-continents.json",
-      "sha256": "4e82589a39986866956b22760be3b2b53732a905b63e2b5c5ae116bf4b0e028a"
+      "sha256": "74b69e7506ec87196f0a8e1536cbc33f2f7274e04712b45d83861f668a886f98"
     },
     {
       "path": "public/reading/topics/world-oceans.json",
-      "sha256": "8eed4ce423b8f039cc1097713ea7c92c4c90b826b4c165ebcc958d43b9cba40a"
+      "sha256": "92d420694984a0f9be5d23659e224c76632caefe21dbe03aa9f3d5f1bc0229cc"
     },
     {
       "path": "public/reading/topics/world-regional-comparison.json",
-      "sha256": "c08e5be7330fb83c01a80607771b38cb9e72497d4b1c4e4bfaf97122fd136679"
+      "sha256": "7c3b55ed9e3bd5e9578e33e31111d362b82691ffecb8f1d219d2101e0375a4c5"
     },
     {
       "path": "public/reading/topics/world-tectonics.json",
-      "sha256": "8dedf1b368f3265faf1ee0e31df51ee85179dd50e2c936f9e4a17533574cb744"
+      "sha256": "fd78aa39fa2659e12268d2c1d49fa31a8620ebed69a26262e58afacbc17f00d7"
     },
     {
       "path": "public/reading/topics/world-ecosystems.json",
-      "sha256": "6f68e70934a003304ea4287e8b65c9010a6b5e043ab1c5e178c04dd779981953"
+      "sha256": "8ebd7e49021eeab9a396ad183d72c0bef1fe5e70f07f0ede1cc2ae39d37c1d6e"
     },
     {
       "path": "public/reading/topics/world-ocean-monsoon.json",
-      "sha256": "508c1bd691b9ebfc566ff87477b65ca27a20022ab8c7e94bc4b7c644b53a49e7"
+      "sha256": "c196859f19517079d505a58eb734ff46a36b6b3208bff335da5b0295a32529d2"
     },
     {
       "path": "public/reading/topics/world-polar-comparison.json",
-      "sha256": "65c25126a854a9895dbb7cd2be1e88fc91943a92a31e03c8a31b7a58dbd69213"
+      "sha256": "293f7b1f04bce72d7a2f25e3abadf0023b3aca2c2e378f1eb5f77d017a2bab5e"
     },
     {
       "path": "public/reading/topics/water-cycle.json",
-      "sha256": "f0719a4f935a9bd03ca0ed5a07d8c02d1defc8c8f239dab57f0a0fe67bd23d17"
+      "sha256": "74834c12c90b3f6234f3e9969643c1c9c72383666c678dab039c4cbe29b27e1e"
     },
     {
       "path": "public/reading/topics/earth-hazards.json",
-      "sha256": "c1cd6503db16b9ba92e819063233134b07f833752d9e23d16a8e7cbd3b0a8965"
+      "sha256": "08242f509972893421d2ec4c8c2ca9af31001f1cf5424a4e9a83c137a7da3e59"
     },
     {
       "path": "public/reading/topics/weather-systems.json",
-      "sha256": "9303c73dd95a69b3c8ff7a66c4c347e1b6b9de715e24bcd17218c60576e6458c"
+      "sha256": "48df4479e6cb5f7e74724e292382f5d1764cba66d4174c53b4233d09c2d3bb5d"
     },
     {
       "path": "public/reading/topics/climate-change.json",
-      "sha256": "8e32bd9f8f4af577a512fe422e731d603158a48718a943375dc0076462c22bb2"
+      "sha256": "ff10671a1af6542a7f22092c945ae8c50a124bb824e554b11b483721c1d8e532"
     },
     {
       "path": "public/reading/topics/landform-processes.json",
-      "sha256": "729df154c8dab95a2ffa78fc74439cb0f247771076f0d30199c20a48dfcb75d6"
+      "sha256": "1d6c6b1c10b3c62261d6e4a7599bba26c678293fee8d260af8fc8ced110309ee"
     },
     {
       "path": "public/reading/topics/landform-landscapes.json",
-      "sha256": "98ef64f29191facaa01457bd42d630b1c0bc6c8d027caf3a4fc64e24fb798aae"
+      "sha256": "8e34f2fa6d3ed23073970a02e2ac33484cb1afde70bdf2740f80663831bef390"
     },
     {
       "path": "public/media/reading/danxia-photo.jpg",
@@ -11548,60 +11712,60 @@
       "sha256": "2d048be4681271525b5d304d7b2e748d4fb64221da0fc3245d740714acabe2ce"
     },
     {
-      "path": "public/media/reading/china-plateaus-illustration.jpg",
-      "sha256": "7a44416f8fbbafe4dd9fd944e1aedd1b605ab8e0aa8b4d006549bc5076623e9a"
+      "path": "public/media/reading/china-plateaus-illustration.webp",
+      "sha256": "0cce01305c1ce6a5c96e6896f08be0b0fe7d66f9c9b16a7b48bb8510d4c013c5"
     },
     {
-      "path": "public/media/reading/china-basins-illustration.jpg",
-      "sha256": "7f82aabea335e125127b8c007c84abde5bea16bfdfa4fc7ea7e1fed130b26113"
+      "path": "public/media/reading/china-basins-illustration.webp",
+      "sha256": "7578750ea83ab13d5a225a0ddbe3c615115934bbfbd84406c14772368995ecb8"
     },
     {
-      "path": "public/media/reading/china-plains-illustration.jpg",
-      "sha256": "a75c5da73e5db3e20c5ae3ef215cd929d1bb344a22dff5b0569e64e7c04f28ac"
+      "path": "public/media/reading/china-plains-illustration.webp",
+      "sha256": "0eedd1dba459453ab5a88212f012b8984dd03182ad3cad13d9876ab29f4a449f"
     },
     {
-      "path": "public/media/reading/china-mountains-illustration.jpg",
-      "sha256": "f5fdcefa3bdb1ff5cb1520e681d1273b36ce49ce3173415fd56a3119838c0ea7"
+      "path": "public/media/reading/china-mountains-illustration.webp",
+      "sha256": "936115650e5e006526d165cebb17b1e36c2856d48b9658fdd99413336c3b5245"
     },
     {
-      "path": "public/media/reading/polar-worlds-illustration.jpg",
-      "sha256": "e2253de17f58084bab633f63b3d84ee54821e814452e0988bbf72128bf8a4755"
+      "path": "public/media/reading/polar-worlds-illustration.webp",
+      "sha256": "a2008a98c5757b3aab9ef37b8eef039eb8f3fcf8bf571c262eed6ba81372c267"
     },
     {
-      "path": "public/media/reading/watershed-landscape-illustration.jpg",
-      "sha256": "ada1608fffd99e9591ae68d02b989d45ae40366abbec1f324b510c0933aae876"
+      "path": "public/media/reading/watershed-landscape-illustration.webp",
+      "sha256": "9931f80de2b08d3d2f19355c3b6ea52c03141ca7adb975f7a179853c44d264e5"
     },
     {
-      "path": "public/media/reading/karst-landscape-illustration.jpg",
-      "sha256": "b2dee8675baa22a1e5eb7489639f93a756ac520558fb2a731d88a1370c4a0154"
+      "path": "public/media/reading/karst-landscape-illustration.webp",
+      "sha256": "2f9a03e2cde304567616ac4e1c07d45efa1f07bbc9f8bce34c9450c4894d7298"
     },
     {
-      "path": "public/media/reading/river-landscape-illustration.jpg",
-      "sha256": "bc8d9ef593a7f1ac9f95e0a09b1c0699e6e76b47f5f390b0282ce55852a1ab0c"
+      "path": "public/media/reading/river-landscape-illustration.webp",
+      "sha256": "1b71bb7ade653b3a832a65420c67e803ac98c5d1dba08543a554881541397b94"
     },
     {
-      "path": "public/media/reading/ecosystem-landscapes-illustration.jpg",
-      "sha256": "cd220541f7760a6c2911c6446a7859948b8bb0d703f5e909fa04bfd42bbbd1b3"
+      "path": "public/media/reading/ecosystem-landscapes-illustration.webp",
+      "sha256": "f54df7b6fe03c6ce915aee716eafeaa399f30b00df182f668edcd8d0582eebb1"
     },
     {
-      "path": "public/media/reading/city-water-landscape-illustration.jpg",
-      "sha256": "6ed819b51ff1bb373b3b9745ef5feea21d108c116ccbab8d21cc5dfdebd8d723"
+      "path": "public/media/reading/city-water-landscape-illustration.webp",
+      "sha256": "bf361be97a3cd3c59e101e819cf6a94f193bd336bfe5cc21b697f44c38c50412"
     },
     {
-      "path": "public/media/reading/glacier-valley-illustration.jpg",
-      "sha256": "7a5a7e78403dd8d1ea109f54759a64173a212affd85ecb138f68f286ad1cda6e"
+      "path": "public/media/reading/glacier-valley-illustration.webp",
+      "sha256": "501b7b1b85750035b2f98469a5045dbb16cbc8b98e48a4d448616d5ae6fb630a"
     },
     {
-      "path": "public/media/reading/coast-landforms-illustration.jpg",
-      "sha256": "1a7cb9f714d723fe2f6604a9228e55dfa7cfb8a6b7bbe7d0049df606f63b5ea1"
+      "path": "public/media/reading/coast-landforms-illustration.webp",
+      "sha256": "3b3489634ea74d1157f0b4e6b99e2543b550ce021f94e65dda1f918fdc470449"
     },
     {
-      "path": "public/media/reading/agriculture-landscapes-illustration.jpg",
-      "sha256": "d5530d36e2fb9c1fffacf5d76fb859bd26502a92a3fdf7f6959c94671be4306a"
+      "path": "public/media/reading/agriculture-landscapes-illustration.webp",
+      "sha256": "02b7974abafbc82f04ecc4205c79e44e57ead952740dbc76570e482443fb78ae"
     },
     {
-      "path": "public/media/reading/rain-shadow-landscape-illustration.jpg",
-      "sha256": "9924c2d17204dbf3ae1617d5150639664c30d9872ca9f243725d1d1dabd36033"
+      "path": "public/media/reading/rain-shadow-landscape-illustration.webp",
+      "sha256": "aa63c74afac9fb045c824b53c1aebe22ef9a9de43bd3c4c9ef0f2379a1930904"
     },
     {
       "path": "public/media/reading/plateaus.svg",
@@ -11617,7 +11781,7 @@
     },
     {
       "path": "public/media/reading/rain-shadow.svg",
-      "sha256": "1cfe4f0b47293bb173745728c42584b73ccb82c5dc54f794b78cd376f54b1f9b"
+      "sha256": "4d1aca9857b26e905acab2b9b7a53a9dd39229fe943c3e75778c6ed4ecf45988"
     },
     {
       "path": "public/media/reading/height.svg",
@@ -11629,7 +11793,7 @@
     },
     {
       "path": "public/media/reading/steps.svg",
-      "sha256": "5fed4842db25232d895bc5a43213388f5b1c20caa4aac4b31f1f4148e00b9b52"
+      "sha256": "92957217a5657c2887714db9447e29c08585d5808a6d64ed19737de4649df82a"
     },
     {
       "path": "public/media/reading/dryness.svg",
@@ -11637,11 +11801,11 @@
     },
     {
       "path": "public/media/reading/river-system.svg",
-      "sha256": "52ec1e0277aca09f5be8628ef1459d37ba688883cb02687f6b8e8f83dd1d316f"
+      "sha256": "9f55f944c3689f963e0d241399e63d109b580fd2e1bf9c1ce6259e24ee01bd8d"
     },
     {
       "path": "public/media/reading/lake-balance.svg",
-      "sha256": "31d12e4b288ed16ee437008cb3c87acb6e676b43c31aa6256f7138d8cc26968b"
+      "sha256": "e96868ce782c068ba131dbc19a2b982bee583a2d5e3a3402aad6198835d63d9a"
     },
     {
       "path": "public/media/reading/sea-passage.svg",
@@ -11649,7 +11813,7 @@
     },
     {
       "path": "public/media/reading/climate-reading.svg",
-      "sha256": "3b3e6ee2d1fe57bd2138ca3b3e4c716c22b9ff64785c3563219e7f052ceec83c"
+      "sha256": "8c5cc017eb2162db5a24ad1ad82c4b376f9984e1c604b5ac634086d609a1d6eb"
     },
     {
       "path": "public/media/reading/climate-gradient.svg",
@@ -11665,11 +11829,11 @@
     },
     {
       "path": "public/media/reading/population.svg",
-      "sha256": "7ee54132693ecdfbca529c5dd07716f71b2b45b21cc4147726d5b680c01fbb11"
+      "sha256": "0dc136043fdbac30068ff790da976f54cc35acaec8eac34e9b9d91c3fd75d3ed"
     },
     {
       "path": "public/media/reading/culture-statistics.svg",
-      "sha256": "921580d297c6d39bf08690b2ae8ad50d691c82a4d74ba58a5e182a546afda947"
+      "sha256": "949ac82c34a35b2887fb77c682edca630cc06225714bd4563eb46de3b0ef81d3"
     },
     {
       "path": "public/media/reading/language.svg",
@@ -11681,15 +11845,15 @@
     },
     {
       "path": "public/media/reading/food-water.svg",
-      "sha256": "b99f542a642b7d333d5691d3c71e20d9c6f1978f73f4c873250220f2114858cd"
+      "sha256": "db5256d8b9e40f0b3eebc2212ea88d597b265da579b1c17c57ac0b0e01575054"
     },
     {
       "path": "public/media/reading/soil.svg",
-      "sha256": "6e00907ef5fe06e5b932655a7a32df46bb86810f8a95b0d71996b899ea4c2018"
+      "sha256": "53926cfe8355abfb2aa50184a12b9664d7ceab0a6fd7d0757a22b7280125e8e7"
     },
     {
       "path": "public/media/reading/energy.svg",
-      "sha256": "b615037fb12180a73216fcf9fafa0d9d5cb53f5e30417c0fa5626effd88cc8e5"
+      "sha256": "ef12219166549f2316ff6def7e18ca33285fc18470d01114bb2e56dc5d7f715f"
     },
     {
       "path": "public/media/reading/transport.svg",
@@ -11697,7 +11861,7 @@
     },
     {
       "path": "public/media/reading/seasons.svg",
-      "sha256": "c540ec72a790f4ae172e0781f45c7cb14ee64a3d3a5eb6a99208203d3f62fb03"
+      "sha256": "038d5f9670300bf0addd68f687d6db4fa811f3a5931f25da0885fe952c5a6db3"
     },
     {
       "path": "public/media/reading/contours.svg",
@@ -11705,11 +11869,11 @@
     },
     {
       "path": "public/media/reading/plates.svg",
-      "sha256": "8bf80792fe0f732bb96e879465be2fd9bcf300896cc2549d25ffd10595cf18c3"
+      "sha256": "71d40702c2746df37e3546c1851241b18b7bcaf158620d10fdce93495ca02ef0"
     },
     {
       "path": "public/media/reading/region-method.svg",
-      "sha256": "eb0106b89537e22376bd9b71b34058a758e3d1aeb644abdfa6fe4e6171e0c06d"
+      "sha256": "f91d93c3e5aa593dee027f691d79513dfda1f741292d27756fd91ecb187b8349"
     },
     {
       "path": "public/media/reading/latitude-belts.svg",
@@ -11717,7 +11881,7 @@
     },
     {
       "path": "public/media/reading/polar.svg",
-      "sha256": "841680b41dec38ceb78b99ecfa507307e9faf83372acb6a15251e8a1374df3c7"
+      "sha256": "25c263c58836890763d2c689fb0c773d1203ac5067647fa1ac0b4d78a5e6deec"
     },
     {
       "path": "public/media/reading/processes.svg",
@@ -11765,7 +11929,7 @@
     },
     {
       "path": "public/media/reading/water-cycle.svg",
-      "sha256": "e2993454e700d5a4e946edc1f7cd65df7c9c4f622852dc88d973abc79e78e418"
+      "sha256": "5b8a58001647d7720a192171a20ff31c325b80afd93950495dbe0715064fc031"
     },
     {
       "path": "public/media/reading/hazards.svg",
@@ -11773,7 +11937,7 @@
     },
     {
       "path": "public/media/reading/migration.svg",
-      "sha256": "92174d72fc5d1a3ae0633711bff3c34d8d72adc95a86f255e5bf6446e264f0f4"
+      "sha256": "6e89ad32fcadbfca3715728f4846f4620994742867013669892e2ce12d32e65a"
     },
     {
       "path": "public/media/reading/image-reading.svg",
@@ -11781,15 +11945,27 @@
     },
     {
       "path": "public/media/reading/weather-fronts.svg",
-      "sha256": "b3549d475c633f8389d63f1349216dac370f4a3a37e5eeadbf7d53c30c78a2cf"
+      "sha256": "da0859c25d52315443d97f982b7825350e2b9e9b668603b44c444055060fc12b"
     },
     {
       "path": "public/media/reading/climate-energy.svg",
-      "sha256": "4cdde58118cc9b54609b021e8178070f6ad2194add98e88ec0054c985d9b8818"
+      "sha256": "f7a45b12cb1718b378daa33503455bb500cf9c7ff2ad32c45f21cc7e0b3945cc"
     },
     {
       "path": "public/media/reading/upwelling.svg",
-      "sha256": "1e21f143ed0fe54cd8eb75438cb1bf0e35695219c89598c2b6c37f287d8cecd1"
+      "sha256": "f94c9ef1ec690902e2960daa4c2601b06328a8a94861b2337d2bae5b13f93c33"
+    },
+    {
+      "path": "public/media/reading/canal-lock.svg",
+      "sha256": "466f4e4c806bea242ce49ab6b793819a4ce8285f322001dd89b4e96879aefc0a"
+    },
+    {
+      "path": "public/media/reading/rain-infiltration.svg",
+      "sha256": "23a5a961c52c70593f910d551d34ec27d553cdacb6f8cb422568cfb147cf9f58"
+    },
+    {
+      "path": "public/media/reading/groundwater-river.svg",
+      "sha256": "a68b5ba44799f934d099d9b5cf372bf3efb8d4a52b5340283def0be634c28f0a"
     },
     {
       "path": "public/media/reading/language-family-tree.svg",
@@ -11813,17 +11989,45 @@
     },
     {
       "path": "public/media/reading/china-regions-map.svg",
-      "sha256": "d774e0ae949eea627877279acf28dabefe83c4269537fe9ef296055f3741e206"
+      "sha256": "7dc95dcc53bc1d94048049ed1a1b7cde9b7b893650112cca0df1479296ef2776"
+    },
+    {
+      "path": "public/media/reading/china-middle-yangtze-map.svg",
+      "sha256": "d4d9bf83759f09d99ea7302772dbd9fe444fd7c7a0ad9a2d42bbb598fc296af5"
     },
     {
       "path": "src/data/reading-media.json",
-      "sha256": "76f156e4b558cca1cc625586a0db8d00199ac8d9dc491e2dff924ba9f122d7df"
+      "sha256": "075e408fca3f794515b32c5e6c7a10543b5bc7502633ab55d2f325c431a3222a"
     },
     {
       "path": "src/data/topic-redirects.json",
       "sha256": "8e5518b51e39c720f055985d9e9896e697b7601486ad221a97fbc067a8127871"
     }
   ],
+  "waterCycleRevision": {
+    "version": "water-cycle-2026-11-18",
+    "reviewedAt": "2026-11-18",
+    "topicId": "water-cycle",
+    "sources": [
+      {
+        "title": "美国地质调查局 · 水循环",
+        "url": "https://www.usgs.gov/special-topics/water-science-school/water-cycle"
+      },
+      {
+        "title": "美国地质调查局 · 地下水是什么",
+        "url": "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater"
+      },
+      {
+        "title": "美国地质调查局 · 下渗与水循环",
+        "url": "https://www.usgs.gov/water-science-school/science/infiltration-and-water-cycle"
+      },
+      {
+        "title": "美国地质调查局 · 河流与地下水的交换",
+        "url": "https://www.usgs.gov/water-science-school/science/rivers-contain-groundwater"
+      }
+    ],
+    "processing": "依据 USGS 水科学学校的说明改写正文并原创绘制三幅 SVG。箭头表示水的去向，剖面用于解释理想条件下的过程。原创文字与图示按 CC BY 4.0 提供。"
+  },
   "landformRevision": {
     "version": "landforms-two-articles-2026-11-12",
     "reviewedAt": "2026-11-12",
@@ -12137,13 +12341,52 @@
       "rain-shadow-landscape-illustration"
     ]
   },
+  "editorialRevision": {
+    "version": "illustrated-science-articles-2026-11-19",
+    "reviewedAt": "2026-11-19",
+    "topicIds": [
+      "china-terrain",
+      "china-rivers",
+      "world-terrain",
+      "world-rivers",
+      "map-climate",
+      "map-population",
+      "map-religion",
+      "map-language",
+      "drylands",
+      "china-regions",
+      "china-city-environment",
+      "agriculture-food",
+      "transport-trade",
+      "earth-seasons",
+      "earth-map-reading",
+      "china-provinces",
+      "energy-industry",
+      "world-continents",
+      "world-oceans",
+      "world-regional-comparison",
+      "world-tectonics",
+      "world-ecosystems",
+      "world-ocean-monsoon",
+      "world-polar-comparison",
+      "water-cycle",
+      "earth-hazards",
+      "weather-systems",
+      "climate-change",
+      "landform-processes",
+      "landform-landscapes"
+    ],
+    "processing": "全站30篇专题按题材重组正文和独立地图简版。保留章节定位、案例和来源，续段与前节连读，主要过程图按手机阅读宽度排布。",
+    "scope": "专题组织、图文编辑及界面一致性检查。各图的数据版本、地理范围和制作方式见媒体记录。"
+  },
   "mapRevision": {
-    "reviewedAt": "2026-11-12",
+    "reviewedAt": "2026-11-19",
     "mediaIds": [
       "world-land-ocean-map",
       "world-mountain-map",
-      "china-regions-map"
+      "china-regions-map",
+      "china-middle-yangtze-map"
     ],
-    "processing": "复用本站真实陆地、明确绑定的山系标注参考范围和经核验的四区分区；直接投影，保留输入版本、许可、要素ID和SHA-256，不推测新边界。"
+    "processing": "复用本站真实陆地、山系标注参考范围、四区分区及长江中游省界与河湖几何；直接投影，保留输入版本、许可、要素ID和SHA-256，不推测新边界。"
   }
 }

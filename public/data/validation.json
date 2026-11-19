@@ -1,9 +1,9 @@
 {
-  "verifiedAt": "2026-10-10T16:43:10.564012+00:00",
+  "verifiedAt": "2026-11-12T17:31:47.664142+00:00",
   "checks": [
     "All deployed GeoJSON geometries are valid, non-empty WGS84 features with globally unique IDs.",
     "Every gazetteer entry resolves to a real deployed feature; no duplicate search IDs.",
-    "Country labels retain the original simplified Chinese names; the gazetteer and derived country learning tables use the same names.",
+    "Country and region labels use the project's Chinese geography convention; Taiwan, Hong Kong and Macao explicitly belong to China, with original IDs and separate source statistical scopes preserved.",
     "The deployed climate lookup grid is byte-for-byte equal to the official 1991–2020 0.5° GeoTIFF values.",
     "Rasterizing every deployed climate polygon reconstructs every original climate grid cell exactly.",
     "Pearl in the USA, Xi/Pearl River in China, Han rivers in China/Korea, and Min rivers in Sichuan/Fujian remain separate objects.",
@@ -11,6 +11,26 @@
     "Every listed deployed artifact matches its recorded SHA-256; every input has URL, retrieval time, SHA-256, and a license."
   ],
   "layers": {
+    "auxiliary-basins": {
+      "features": 292,
+      "bytes": 7139704,
+      "sha256": "64d47ace211851ff095cbcabd8698c2e81d10c01ab9166cc6569640938b15e80"
+    },
+    "auxiliary-cities": {
+      "features": 5528,
+      "bytes": 1658762,
+      "sha256": "a3a20ecf9427f379d45a17d3ba51127929d05be2c10f265bc65ee4a95fa8887a"
+    },
+    "auxiliary-plates": {
+      "features": 1175,
+      "bytes": 364194,
+      "sha256": "8b48c9c7ccd60cd26468c9cf5d94267e9f5066ddd87acf85f055b98389d2e3bf"
+    },
+    "china-reference-regions": {
+      "features": 4,
+      "bytes": 47403,
+      "sha256": "2541069bc237abe53fc394631f51194781e56b4e33b5b71ab0cbd5bebfb3a09e"
+    },
     "climate": {
       "features": 28,
       "bytes": 466052,
@@ -18,8 +38,8 @@
     },
     "countries": {
       "features": 242,
-      "bytes": 967335,
-      "sha256": "2a39cd564c4b0310c4305b9c174724c91a10ce3fd4c7dea01890f1bbbad12db6"
+      "bytes": 991993,
+      "sha256": "09373a29de9cbd8fa4fabb01ac9efc73eb886bfa8abd72db5fe11b52815e9a6a"
     },
     "lakes": {
       "features": 1354,
@@ -31,20 +51,30 @@
       "bytes": 821642,
       "sha256": "578d334808a642121e3bbf4f4373d00acc266a02a16dd34b2aa853e54f8dd524"
     },
+    "landform-reference-regions": {
+      "features": 1,
+      "bytes": 4033,
+      "sha256": "de9572ccb0c33402632af4ac3b964a49b5e1ef293546d25aa5459681b78d6a20"
+    },
+    "language-areas": {
+      "features": 4033,
+      "bytes": 5028594,
+      "sha256": "45a17e32b60a7d30504e040d4591f27b975e87e10b7cba68d02b384d57a6ef61"
+    },
     "learning-languages": {
       "features": 8070,
       "bytes": 3467420,
       "sha256": "f6aa41589aeb30660dd19cd630a503cd73278ed6d68f14b675f1cfe928744083"
     },
-    "learning-population": {
-      "features": 93940,
-      "bytes": 28073917,
-      "sha256": "d56b40fde2e510bf964d71905f9d75b0d52b50d43c6deebc55bdcaaf401b7a1d"
-    },
     "learning-provinces": {
       "features": 34,
-      "bytes": 363188,
-      "sha256": "923e61d294a774bdb7ded8c431e57f9797ed3dac03b9b15a89ecfd26891bd6d9"
+      "bytes": 365594,
+      "sha256": "5ad64c1b66842805f34345f0d588530b5b029f57b4ef92a5f860414fdd2a8d20"
+    },
+    "marine-reference-regions": {
+      "features": 10,
+      "bytes": 216629,
+      "sha256": "7f21924fac1b4be92e1faeda37f12eb80c91173176653907a0a5040d5245a5da"
     },
     "peaks": {
       "features": 633,
@@ -53,8 +83,8 @@
     },
     "regions": {
       "features": 1040,
-      "bytes": 2244950,
-      "sha256": "13aafdba4e03aa2b27b2c185fc9ebfdd464e78df0e76933978e892aac60d1418"
+      "bytes": 2245869,
+      "sha256": "a5c2d79e9761926e96a4d1955cd1e920626e157402034bcc67bc9721460fd39e"
     },
     "rivers": {
       "features": 1209,

@@ -11,7 +11,7 @@ export function readerExpandKey(page:Page){const viewport=page.viewportSize()!;r
 export function readerCollapseKey(page:Page){const viewport=page.viewportSize()!;return viewport.width>viewport.height?'ArrowRight':'ArrowDown'}
 
 export async function openThemeLibrary(page:Page,expandFilters=false){
-  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'学主题',exact:true}).click()
+  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('link',{name:'学主题',exact:true}).click()
   await expect(page.locator('.study-library .topic-library')).toBeVisible()
   const filters=page.locator('.study-library .topic-category-filters')
   if(expandFilters&&!await filters.evaluate(element=>(element as HTMLDetailsElement).open))await filters.locator('summary').click()

@@ -1,0 +1,18 @@
+{
+  "version": "Natural Earth v5.1.2 / 1:10m marine geography label polygons",
+  "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_geography_marine_polys.geojson",
+  "path": "data/raw/ne_10m_geography_marine_polys.geojson",
+  "sha256": "53f865e8ffa966cdd402145c82c5cd14ee7ce974cd0eb9a3f59f03a4cfd2d66c",
+  "license": "Public domain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "members": [
+    {"cardId":"pacific-ocean","name":"太平洋","features":[[1159115079,"North Pacific Ocean"],[1159115099,"South Pacific Ocean"]]},
+    {"cardId":"atlantic-ocean","name":"大西洋","features":[[1159115057,"North Atlantic Ocean"],[1159115149,"South Atlantic Ocean"]]},
+    {"cardId":"indian-ocean","name":"印度洋","features":[[1159115123,"INDIAN OCEAN"]]},
+    {"cardId":"arctic-ocean","name":"北冰洋","features":[[1159115017,"Arctic Ocean"]]},
+    {"cardId":"southern-ocean","name":"南大洋","features":[[1159115037,"SOUTHERN OCEAN"]]},
+    {"cardId":"mediterranean","name":"地中海","features":[[1159115321,"Mediterranean Sea"]]},
+    {"cardId":"malacca-strait","name":"马六甲海峡","features":[[1159116835,"Strait of Malacca"]]},
+    {"cardId":"gibraltar-strait","name":"直布罗陀海峡","features":[[1159117067,"Strait of Gibraltar"]]}
+  ]
+}

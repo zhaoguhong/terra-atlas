@@ -13,6 +13,8 @@ import CountryContext from './CountryContext'
 import MobileSheetHandle from './MobileSheetHandle'
 import {useLandscapeLayout,useMobileLayout} from '../lib/mobile-layout'
 import {useReadingPosition} from '../lib/reading-position'
+import {selectionRepresentation,representationLabels} from '../lib/geometry-presentation'
+import './MapExtent.css'
 
 export default function KnowledgePanel({selection,favorite,countryId,sheet,onSheet,onClose,onFavorite,onLocate,onShare,onCompare,onPick,onRelations,onClimate,onReadTopic,embedded=false}:{
   selection:Selection;favorite:boolean;countryId:string|null;sheet:'peek'|'half'|'full';onSheet:(s:'peek'|'half'|'full')=>void;
@@ -37,7 +39,9 @@ export default function KnowledgePanel({selection,favorite,countryId,sheet,onShe
   const collapsed=mobileLayout&&!embedded&&sheet==='peek'
   const curated=knowledge.some(item=>item.id===card.id)
   const bindings=(featureBindings as Record<string,string[]>)[card.id]
-  const referenceOnly=!!bindings&&!bindings.length
+  const representation=selectionRepresentation(selection)
+  const referenceOnly=representation==='point'&&!!bindings&&!bindings.length
+  const scopeNote=selection.source==='climate'?'当前色面为1991—2020、0.5°长期气候类型的概化分布；点击位置用于查阅当地类别，不表示行政区或地貌边界。':card.geometryNote
   const sources=[...card.sources,...(detail?.sources||[]),...(coordinateDetail?.sources||[])].filter((source,index,all)=>all.findIndex(item=>item.url===source.url)===index)
   useLayoutEffect(()=>{
     if(scrollRef.current)scrollRef.current.scrollTop=0
@@ -51,6 +55,7 @@ export default function KnowledgePanel({selection,favorite,countryId,sheet,onShe
       {selection.subtype&&<div className="climate-subtype"><CloudSun size={13}/>{selection.subtype}</div>}
       <div className="knowledge-content-label"><BookOpen size={12}/>{curated?'地点介绍':'数据概览 · 尚无精选解读'}{referenceOnly&&<span><MapPin size={11}/>地图使用定位参考点</span>}</div>
       <p className="summary">{card.summary}</p>
+      <div className="map-extent-description" data-representation={representation}><strong><MapPin size={12}/>{representationLabels[representation]}</strong><p>{scopeNote||'地图用于地理定位；具体范围与来源口径见资料说明。'}</p></div>
       <div className="card-actions"><button className="favorite-button" aria-pressed={favorite} onClick={onFavorite}><Bookmark size={14} fill={favorite?'currentColor':'none'}/>{favorite?'已收藏':'收藏地点'}</button><button onClick={onLocate}><LocateFixed size={14}/>定位</button><button aria-label="加入两地对比" onClick={onCompare}><ArrowLeftRight size={14}/>对比</button><button aria-label="分享这个地点" onClick={onShare}><Share2 size={15}/></button></div>
       {card.mediaIds?.[0]&&<ReadingFigure id={card.mediaIds[0]} compact/>}
       {onReadTopic&&<section className="card-topic-reading" aria-label="相关图文专题">{topics.filter(topic=>card.readingTopicIds?.includes(topic.id)||topic.stops.includes(card.id)).slice(0,3).map(topic=><button key={topic.id} onClick={()=>onReadTopic(topic.id)}><BookOpen size={14}/>{topic.title}<ArrowRight size={13}/></button>)}</section>}
@@ -66,7 +71,6 @@ export default function KnowledgePanel({selection,favorite,countryId,sheet,onShe
       <section className="reading-section connections"><h3><Layers size={15}/>看看它们的联系</h3>{card.connections.map((c,i)=><p key={i}><span>{String(i+1).padStart(2,'0')}</span>{c}</p>)}{!!related.length&&<button className="secondary-button" onClick={()=>onRelations([card.id,...related])}>在地图上看这些联系 <Layers size={14}/></button>}</section>
       {!!(card.questions?.length||detail?.questions.length)&&<section className="reading-section observation-questions"><h3>带着问题观察</h3>{[...(detail?.questions||[]),...(card.questions||[])].map((q,i)=><p key={i}><span>{i+1}</span>{q}</p>)}</section>}
       {!!related.length&&<section className="reading-section"><h3>相关地点 · 继续探索</h3><div className="related">{related.map(id=><button key={id} onClick={()=>onPick(id)}>{knowledge.find(k=>k.id===id)!.name}<ArrowRight size={12}/></button>)}</div></section>}
-      {card.geometryNote&&<p className="geometry-note">{card.geometryNote}</p>}
       <details className="sources" key={card.id+':'+(selection.subtype||'')}><summary>核对资料 <span>{sources.length} 项来源</span><ChevronDown size={13}/></summary>{sources.map(source=><a key={source.url} href={source.url} target="_blank" rel="noopener noreferrer">{source.title}<ArrowRight size={12}/></a>)}</details>
       </details>
       {monthly.error&&<p className="resource-error">{monthly.error}<button onClick={monthly.retry}>重试月气候资料</button></p>}

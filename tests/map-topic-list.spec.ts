@@ -40,11 +40,11 @@ test('map topic list: switching themes stays on map and full reading remains sep
   await page.getByRole('button',{name:'选择主题地图：气候变化与地球环境',exact:true}).click()
   await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','climate-change')
   await expect(page.locator('.app')).toHaveAttribute('data-study-screen','map')
-  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'学主题',exact:true}).click()
+  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('link',{name:'学主题',exact:true}).click()
   await expect(page.locator('.study-library')).toBeVisible()
   const [articleResponse]=await Promise.all([
     page.waitForResponse(response=>new URL(response.url()).pathname==='/reading/topics/climate-change.json',{timeout:45000}),
-    page.getByRole('button',{name:'阅读专题：气候变化与地球环境',exact:true}).click(),
+    page.getByRole('link',{name:'阅读专题：气候变化与地球环境',exact:true}).click(),
   ])
   expect(articleResponse.ok()).toBe(true)
   expect(await articleResponse.finished()).toBeNull()

@@ -1,5 +1,5 @@
 {
-  "reviewedAt": "2026-11-12",
+  "reviewedAt": "2026-11-19",
   "onlineMapSourceManifest": "/data/online-map-sources.json",
   "contentCount": 216,
   "scope": "个人自由探索：中国与世界216张精选自然及人文地理卡片、30种气候笔记、30个单选主题；按区域、地形、水系、气候、人口文化、资源交通及地球地图七类组织。",
@@ -548,6 +548,20 @@
       ]
     },
     {
+      "title": "Zhang等（2025）· 中国地貌分区图2及表1（内蒙古高原区）",
+      "url": "https://www.mdpi.com/2072-4292/17/9/1615",
+      "usedBy": [
+        "inner-mongolian-plateau",
+        "reading:china-terrain"
+      ],
+      "inputVersion": "2026-11-13-digitization-v1",
+      "license": "CC-BY-4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "processing": "采用论文图2及表1明确命名的III-C内蒙古高原区，论文区划依据李炳元等（2013）；未将蒙古高原、内蒙古自治区或湖区研究范围替代为本对象。 以原图8个经度刻度与4个纬度刻度拟合Albers圆锥等面积投影，逐线数字化原图内部分界；图示两个分离部分分别处理，不补画连接区域。 仅原图与国界重合的外缘沿本站既有Natural Earth中国陆地掩膜裁剪；闭合线全部在掩膜之外，不构成新增的可见地貌分界。 原图与底图国界概化不同，在分界端点产生的微小离散裁剪碎片按源图两处独立内陆区域的连通性剔除；不连接原图中分离的两部分。 图形保留全国尺度的源图线宽、概化与数字化误差；配准误差只反映刻度拟合，不代表地貌分界的实际精度，不用于测量或面积统计。",
+      "geometrySourceManifest": "/data/landform-reference-region-sources.json",
+      "accessedAt": "2026-11-13"
+    },
+    {
       "title": "中国科学院地理资源所 · 云南高原",
       "url": "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cndm/202009/t20200910_5692374.html",
       "usedBy": [
@@ -609,7 +623,6 @@
         "media:diagram-region-method",
         "media:diagram-karst",
         "media:diagram-rocks",
-        "media:diagram-water-cycle",
         "media:diagram-image-reading"
       ],
       "review": {
@@ -939,8 +952,7 @@
         "reading:landform-landscapes",
         "media:diagram-river-system",
         "media:diagram-processes",
-        "media:diagram-river-erosion",
-        "media:diagram-water-cycle"
+        "media:diagram-river-erosion"
       ]
     },
     {
@@ -958,8 +970,7 @@
         "reading:landform-landscapes",
         "media:diagram-river-system",
         "media:diagram-processes",
-        "media:diagram-river-erosion",
-        "media:diagram-water-cycle"
+        "media:diagram-river-erosion"
       ]
     },
     {
@@ -1076,8 +1087,7 @@
         "reading:drylands",
         "reading:water-cycle",
         "media:diagram-rain-shadow",
-        "media:diagram-river-system",
-        "media:diagram-water-cycle"
+        "media:diagram-river-system"
       ]
     },
     {
@@ -1092,8 +1102,7 @@
         "reading:drylands",
         "reading:water-cycle",
         "media:diagram-rain-shadow",
-        "media:diagram-river-system",
-        "media:diagram-water-cycle"
+        "media:diagram-river-system"
       ]
     },
     {
@@ -1203,8 +1212,7 @@
         "reading:water-cycle",
         "media:diagram-rain-shadow",
         "media:diagram-lake-balance",
-        "media:diagram-region-method",
-        "media:diagram-water-cycle"
+        "media:diagram-region-method"
       ]
     },
     {
@@ -1226,8 +1234,7 @@
         "reading:water-cycle",
         "media:diagram-rain-shadow",
         "media:diagram-lake-balance",
-        "media:diagram-region-method",
-        "media:diagram-water-cycle"
+        "media:diagram-region-method"
       ]
     },
     {
@@ -2342,6 +2349,29 @@
       "license": "NOAA美国政府公开数据；保留机构、模型与处理说明。"
     },
     {
+      "title": "Natural Earth · 海洋与海峡标注参考范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/",
+      "usedBy": [
+        "pacific-ocean",
+        "atlantic-ocean",
+        "indian-ocean",
+        "arctic-ocean",
+        "malacca-strait",
+        "gibraltar-strait",
+        "mediterranean",
+        "southern-ocean",
+        "reading:transport-trade",
+        "reading:world-ocean-monsoon",
+        "reading:world-polar-comparison"
+      ],
+      "inputVersion": "Natural Earth v5.1.2 / 1:10m marine geography label polygons",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "processing": "按锁定的NE_ID和原始英文名称双重核对，选取五大洋、地中海、马六甲与直布罗陀海峡的原始参考面；保留南北分片，不从定位点、海岸外接框或行政范围推测海域；GEOS安全量化至0.0001°。中文统一采用本站规范名称。",
+      "geometrySourceManifest": "/data/marine-reference-sources.json",
+      "accessedAt": "2026-11-13"
+    },
+    {
       "title": "NOAA · Atlantic Meridional Overturning Circulation",
       "url": "https://oceanservice.noaa.gov/facts/amoc.html",
       "usedBy": [
@@ -2449,7 +2479,8 @@
         "topic:transport-trade",
         "reading:transport-trade",
         "media:diagram-sea-passage",
-        "media:diagram-transport"
+        "media:diagram-transport",
+        "media:diagram-canal-lock"
       ]
     },
     {
@@ -5114,7 +5145,6 @@
         "reading:landform-landscapes",
         "media:diagram-karst",
         "media:diagram-rocks",
-        "media:diagram-water-cycle",
         "media:diagram-image-reading"
       ]
     },
@@ -5583,7 +5613,7 @@
       "verification": "已读取官方页面或可核对的搜索摘录。"
     },
     {
-      "title": "usgs.gov · water cycle",
+      "title": "美国地质调查局 · 水循环",
       "url": "https://www.usgs.gov/special-topics/water-science-school/water-cycle",
       "usedBy": [
         "topic:water-cycle",
@@ -5592,12 +5622,30 @@
       ]
     },
     {
-      "title": "usgs.gov · groundwater what groundwater",
+      "title": "美国地质调查局 · 地下水是什么",
       "url": "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater",
       "usedBy": [
         "topic:water-cycle",
         "reading:water-cycle",
-        "media:diagram-water-cycle"
+        "media:diagram-groundwater-river"
+      ]
+    },
+    {
+      "title": "美国地质调查局 · 下渗与水循环",
+      "url": "https://www.usgs.gov/water-science-school/science/infiltration-and-water-cycle",
+      "usedBy": [
+        "topic:water-cycle",
+        "reading:water-cycle",
+        "media:diagram-rain-infiltration"
+      ]
+    },
+    {
+      "title": "美国地质调查局 · 河流与地下水的交换",
+      "url": "https://www.usgs.gov/water-science-school/science/rivers-contain-groundwater",
+      "usedBy": [
+        "topic:water-cycle",
+        "reading:water-cycle",
+        "media:diagram-groundwater-river"
       ]
     },
     {
@@ -5994,7 +6042,8 @@
         "media:language-austronesian-points",
         "media:world-land-ocean-map",
         "media:world-mountain-map",
-        "media:china-regions-map"
+        "media:china-regions-map",
+        "media:china-middle-yangtze-map"
       ]
     },
     {
@@ -6019,31 +6068,44 @@
       "usedBy": [
         "media:china-regions-map"
       ]
+    },
+    {
+      "title": "长江中游的三省与两湖 · 配图依据",
+      "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "usedBy": [
+        "media:china-middle-yangtze-map"
+      ]
+    },
+    {
+      "title": "长江中游的三省与两湖 · 配图依据",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_rivers_lake_centerlines.geojson",
+      "usedBy": [
+        "media:china-middle-yangtze-map"
+      ]
+    },
+    {
+      "title": "长江中游的三省与两湖 · 配图依据",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_lakes.geojson",
+      "usedBy": [
+        "media:china-middle-yangtze-map"
+      ]
     }
   ],
   "featureBindingReview": {
     "reviewedAt": "2026-10-11",
     "method": "每个非气候卡采用明确真实要素ID或空数组；逐卡比对名称、尺度、坐标与对象归属，独立审查全部绑定和人文量化来源，不采用模糊别名或邻近点替代身份。",
     "naturalCards": 82,
-    "boundCards": 122,
+    "boundCards": 132,
     "bindingsFile": "src/data/feature-bindings.json",
     "pointOnlyCards": [
-      "inner-mongolian-plateau",
       "ganges-plain",
       "southeast-asia",
       "western-europe",
       "middle-east",
       "sub-saharan-africa",
-      "pacific-ocean",
-      "atlantic-ocean",
-      "indian-ocean",
-      "arctic-ocean",
-      "malacca-strait",
-      "gibraltar-strait",
       "bering-strait",
       "suez-canal",
       "panama-canal",
-      "mediterranean",
       "world-population",
       "population-density",
       "china-population",
@@ -6074,7 +6136,6 @@
       "earth-coordinates",
       "earth-scale",
       "earth-contours",
-      "taiwan-province",
       "northeast-blacksoil",
       "hetao-irrigation",
       "xilingol-pasture",
@@ -6111,7 +6172,6 @@
       "singapore-port",
       "gotthard-rail",
       "arctic-region",
-      "southern-ocean",
       "guilin-karst",
       "shilin-karst",
       "wulong-karst",
@@ -6191,11 +6251,11 @@
     "public/data/learning-data-sources.json",
     "public/data/country-context-sources.json"
   ],
-  "sourceCount": 354,
+  "sourceCount": 361,
   "themeSourceManifest": "/data/theme-sources.json",
   "editorialRevision": {
-    "version": "illustrated-science-articles-2026-11-12",
-    "reviewedAt": "2026-11-12",
+    "version": "illustrated-science-articles-2026-11-19",
+    "reviewedAt": "2026-11-19",
     "topicIds": [
       "china-terrain",
       "china-rivers",
@@ -6228,8 +6288,8 @@
       "landform-processes",
       "landform-landscapes"
     ],
-    "processing": "32篇主题与地图简版逐篇通读，重整对象介绍、机制与案例的衔接；新增10张概念插图，保留中国地形4张插图及原有照片、机制图，调整图文位置。保留旧章节地址、地图入口及引用；重建读取全部独立校订稿。 地貌六篇随后整合为两篇；世界海陆与区域比较拆为七大洲、五大洋、世界区域比较，前两篇面积图前置，逐洲逐洋介绍并注明口径与分歧。其他相关主题补充整体比较，当前目录30篇。阅读界面移除思考题，旧问题数据保留追溯。",
-    "scope": "文字、结构、配图和阅读布局编辑；新增图示按NSIDC、USGS、NPS、NASA、EPA、FAO及香港天文台资料核对，不声称重新核验全部外部来源。"
+    "processing": "全站30篇专题按题材重组正文和独立地图简版。保留章节定位、案例和来源，续段与前节连读，主要过程图按手机阅读宽度排布。",
+    "scope": "专题组织、图文编辑及界面一致性检查。各图的数据版本、地理范围和制作方式见媒体记录。"
   },
   "languageAreaSourceManifest": "/data/language-area-sources.json",
   "auxiliarySourceManifest": "/data/auxiliary-sources.json",
@@ -6246,7 +6306,7 @@
   "chinaReferenceRegionSourceManifest": "data/research/china-reference-region-sources.json",
   "readingSourceManifest": "/data/reading-sources.json",
   "readingArticleCount": 30,
-  "readingMediaCount": 76,
+  "readingMediaCount": 80,
   "landformRevision": {
     "version": "landforms-two-articles-2026-11-12",
     "reviewedAt": "2026-11-12",
@@ -6432,5 +6492,35 @@
       }
     },
     "validation": "生成时检查七洲五洋均有独立章节、图表行与已有真实卡片ID一致、区域章节和转向可达。浏览器和自动检查结果由实际执行记录另存。"
+  },
+  "mapExtentReview": "/data/map-extent-review.json",
+  "mapExtentSourceManifests": [
+    "/data/marine-reference-sources.json",
+    "/data/china-presentation-sources.json",
+    "/data/landform-reference-region-sources.json"
+  ],
+  "waterCycleRevision": {
+    "version": "water-cycle-2026-11-18",
+    "reviewedAt": "2026-11-18",
+    "topicId": "water-cycle",
+    "sources": [
+      {
+        "title": "美国地质调查局 · 水循环",
+        "url": "https://www.usgs.gov/special-topics/water-science-school/water-cycle"
+      },
+      {
+        "title": "美国地质调查局 · 地下水是什么",
+        "url": "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater"
+      },
+      {
+        "title": "美国地质调查局 · 下渗与水循环",
+        "url": "https://www.usgs.gov/water-science-school/science/infiltration-and-water-cycle"
+      },
+      {
+        "title": "美国地质调查局 · 河流与地下水的交换",
+        "url": "https://www.usgs.gov/water-science-school/science/rivers-contain-groundwater"
+      }
+    ],
+    "processing": "依据 USGS 水科学学校的说明改写正文并原创绘制三幅 SVG。箭头表示水的去向，剖面用于解释理想条件下的过程。原创文字与图示按 CC BY 4.0 提供。"
   }
 }

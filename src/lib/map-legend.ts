@@ -5,6 +5,9 @@ import {getTopicPresentation,TOPIC_SELECTED_COLOR,type TopicMemberPresentation} 
 import type {LegendEntry,LegendSection,LegendSymbol} from '../components/MapLegend'
 import type {HumanData} from './learning'
 import type {LayerState,Selection,ThematicState,Topic} from '../types'
+import knowledge from '../data/knowledge.json' with {type:'json'}
+import {mapRepresentation} from './geometry-presentation.ts'
+import type {Knowledge} from '../types'
 
 export function memberLegendSymbol(member:Pick<TopicMemberPresentation,'kind'|'symbol'>):LegendSymbol {
   if(member.kind==='reference'||member.kind==='point')return member.symbol==='◆'?'port':member.symbol==='■'?'city':member.symbol==='▲'?'peak':'point'
@@ -20,17 +23,17 @@ export function buildMapLegend({layers,thematic,topic,selection,human,languageMe
     sections.push({id:'population',title:'人口密度 · 2020 · 人/km²',entries:[['0–10','#f7eee1'],['10–50','#f5d4aa'],['50–200','#e9aa70'],['200–500','#d57745'],['500–1,000','#af452d'],['1,000–5,000','#79271f'],['5,000+','#4f1b21']].map(([label,color],index)=>({id:'density-'+index,label,color})),note:'各区间含下限、不含上限，第一档仅显示正值；零值与无资料都透明，点查可区分。密度按完整格网面积计算，包含格网内水域。'})
   }else if(layers.religion){
     const category=human?.religion.categories.find(category=>category.id===thematic.religion)
-    const religionTitle=thematic.religion==='largest'?'国家宗教构成 · 已报告比例最高的类别':`国家宗教构成 · ${category?.name||'正在读取类别'}占比`
-    title=topic?.kind==='distribution'?religionTitle:title;subtitle='国家资料 · 各条目年份与口径'
-    sections.push({id:'religion',title:religionTitle,...(thematic.religion==='largest'?{entries:human?.religion.categories.map(category=>({id:category.id,label:category.name,color:category.color}))||[]}:{scale:{color:`linear-gradient(to right,#f4f1e8,${category?.color||'#786590'})`,stops:[0,.25,.5,.75,1].map(position=>({label:position*100+'%',position}))}}),note:'国家着色概括来源报告；条目时期不同，不能代表其内部每个地区或居民。未报告、无法确定最高类别或口径不可比处不着色。'})
+    const religionTitle=thematic.religion==='largest'?'国家与地区宗教构成 · 已报告比例最高的类别':`国家与地区宗教构成 · ${category?.name||'正在读取类别'}占比`
+    title=topic?.kind==='distribution'?religionTitle:title;subtitle='国家与地区资料 · 各条目年份与口径'
+    sections.push({id:'religion',title:religionTitle,...(thematic.religion==='largest'?{entries:human?.religion.categories.map(category=>({id:category.id,label:category.name,color:category.color}))||[]}:{scale:{color:`linear-gradient(to right,#f4f1e8,${category?.color||'#786590'})`,stops:[0,.25,.5,.75,1].map(position=>({label:position*100+'%',position}))}}),note:'国家与地区着色概括来源报告；中国台湾、香港、澳门归属中国，统计按原来源分列。条目时期不同，不能代表其内部每个地区或居民。未报告、无法确定最高类别或口径不可比处不着色。'})
   }else if(layers.climate){
     subtitle=`1991–2020 · 0.5° · ${modes.climateMode==='types'?'详细类型':'A–E五大类'}`
     sections.push({id:'climate',title:'长期气候分布',entries:modes.climateMode==='types'?detailedClimate.filter(category=>category.presentAtResolution).map(category=>({id:'action:climate:'+category.code,label:`${category.code} ${category.name}`,color:category.color})):climateGroups.map(group=>({id:'action:climate:'+group.id,label:group.id+' '+group.name,color:group.color})),note:'长期气候分类；色面与图例同步。C／D以最冷月0°C区分，无单列H类。详细分类共30类，其中Csc、Cwc在此尺度未出现。'})
   }else if(layers.language&&modes.languageMode==='overview'){
-    title='世界语言概览';subtitle='国家主要通用语言 · CLDR 48'
+    title='世界语言概览';subtitle='国家与地区主要通用语言 · CLDR 48'
     const categories=majorLanguages.filter(category=>languageOverview.countries.some(country=>country.displayId===category.id)&&(modes.languageId==='all'||modes.languageId===category.id))
-    sections.push({id:'languages',title:'国家主要通用语言',entries:categories.map(category=>({id:'action:language:'+category.id,label:category.name,color:category.color,active:modes.languageId===category.id})),note:languageOverview.note})
-    sections.push({id:'language-missing',entries:[{id:'language-unmapped',label:'未着色：无可匹配国家语言资料或筛选未匹配',symbol:'empty'}]})
+    sections.push({id:'languages',title:'国家与地区主要通用语言',entries:categories.map(category=>({id:'action:language:'+category.id,label:category.name,color:category.color,active:modes.languageId===category.id})),note:languageOverview.note})
+    sections.push({id:'language-missing',entries:[{id:'language-unmapped',label:'未着色：无可匹配国家或地区语言资料或筛选未匹配',symbol:'empty'}]})
   }else if(layers.language){
     const points=modes.languageMode==='points',families=modes.languageMode==='families'||points
     title='语言分布';subtitle=points?'Glottolog 5.3 · 语系着色参考点':`2007图集参考范围 · ${families?'语系概览':'语言区域'}`
@@ -46,6 +49,8 @@ export function buildMapLegend({layers,thematic,topic,selection,human,languageMe
   }
   const presentation=getTopicPresentation(topic)
   if(presentation.memberEntries.length)sections.push({id:'members',title:'主题中的地点与范围',entries:presentation.memberEntries.map(member=>({id:member.legendId,label:member.label,color:member.color,symbol:memberLegendSymbol(member)})),note:[presentation.note,presentation.caseNote].filter(Boolean).join(' ')})
+  const pointMembers=topic?.stops.map(id=>(knowledge as Knowledge[]).find(card=>card.id===id)).filter((card):card is Knowledge=>!!card&&mapRepresentation(card)==='point')||[]
+  if(pointMembers.length&&topic?.kind!=='distribution')sections.push({id:'location-only',title:'仅定位的地点与区域',entries:pointMembers.map(card=>({id:'location-only:'+card.id,label:card.name.split('：')[0],symbol:'point',description:card.geometryNote})),note:'这些圆点表示参考位置，未表示区域大小或现象的完整分布。各地点的范围口径可在地点介绍中直接查看。'})
   const symbols:LegendEntry[]=[]
   if(topic&&topic.kind!=='distribution'){
     symbols.push({id:'reference',label:'参考点：用于定位',color:'#7b8970',symbol:'point'},{id:'reference-range',label:'虚线：概化标注参考范围',color:'#7b8970',symbol:'dashed'})

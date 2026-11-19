@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 325" width="540" height="325" role="img" aria-labelledby="title desc">
+  <title id="title">同一场雨，两种地面</title>
+  <desc id="desc">相同的雨落在左右两块缓坡上。左边的地面有连续的柏油层，箭头沿路面向低处走。右边长着草，箭头穿过地表，进入有孔隙的土层。</desc>
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="3" markerHeight="3" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#196581"/></marker>
+    <pattern id="grains" patternUnits="userSpaceOnUse" width="22" height="16"><ellipse cx="5" cy="5" rx="2.5" ry="1.6" fill="#8e7958" opacity=".38"/><circle cx="16" cy="12" r="1.5" fill="#8e7958" opacity=".38"/></pattern>
+  </defs>
+  <rect width="100%" height="100%" rx="10" fill="#f7f5ec"/>
+  <g font-family="system-ui, -apple-system, 'PingFang SC', 'Noto Sans CJK SC', sans-serif">
+    <text x="22" y="42" text-anchor="start" font-size="28" fill="#233e39">同一场雨，两种地面</text>
+    <rect x="14" y="61" width="246" height="222" rx="8" fill="#f0f5ef"/><rect x="280" y="61" width="246" height="222" rx="8" fill="#f0f5ef"/>
+<text x="137" y="96" text-anchor="middle" font-size="26" fill="#233e39">柏油路</text>
+<text x="403" y="96" text-anchor="middle" font-size="26" fill="#233e39">草地</text>
+<g transform="translate(66 115)" fill="none" stroke="#5892a4" stroke-width="3" stroke-linecap="round">
+    <path d="M0 0l-4 9m24-9l-4 9m24-9l-4 9"/>
+  </g>
+<g transform="translate(158 115)" fill="none" stroke="#5892a4" stroke-width="3" stroke-linecap="round">
+    <path d="M0 0l-4 9m24-9l-4 9m24-9l-4 9"/>
+  </g>
+<g transform="translate(332 115)" fill="none" stroke="#5892a4" stroke-width="3" stroke-linecap="round">
+    <path d="M0 0l-4 9m24-9l-4 9m24-9l-4 9"/>
+  </g>
+<g transform="translate(424 115)" fill="none" stroke="#5892a4" stroke-width="3" stroke-linecap="round">
+    <path d="M0 0l-4 9m24-9l-4 9m24-9l-4 9"/>
+  </g>
+<path d="M14 164L260 192V283H14Z" fill="#e7d1a6" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M14 164L260 192V283H14Z" fill="url(#grains)" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M14 151L260 179V193L14 165Z" fill="#738184" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M280 152L526 180V283H280Z" fill="#e7d1a6" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M280 152L526 180V283H280Z" fill="url(#grains)" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M280 152L526 180" fill="none" stroke="#637c50" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M294 154l-4-10m4 10 5-14m25 17-2-13m2 13 6-8m123 20-4-12m4 12 5-11m34 15-2-10m2 10 6-7" fill="none" stroke="#637c50" stroke-width="2.4" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M57 150L224 169" fill="none" stroke="#196581" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="136" y="235" text-anchor="middle" font-size="24" fill="#233e39">沿路面流走</text>
+<path d="M356 151Q356 181 344 205" fill="none" stroke="#196581" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tip)"/>
+<path d="M421 158Q421 186 414 213" fill="none" stroke="#196581" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="403" y="258" text-anchor="middle" font-size="24" fill="#233e39">渗进土里</text>
+    <text x="518" y="310" text-anchor="end" font-size="17" fill="#233e39">概念示意 · 非实测</text>
+  </g>
+</svg>

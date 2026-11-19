@@ -67,7 +67,7 @@ async function probe(page:Page,coordinates:Coordinate){
 // Exercise the displayed product and real local source data, not a mocked map.
 test('learning: local human layers render, filter real language points, and preserve unknown religion',async({page},info)=>{
   expect(requested).not.toContain('/data/learning-population.geojson')
-  expect(requested).not.toContain('/data/learning-languages.geojson')
+  expect(requested).not.toContain('/data/learning-languages.geojson.gz')
   expect(requested).not.toContain('/elevation/source.json')
   await openLayers(page)
   await chooseTheme(page,'人口分布、变化与迁移')
@@ -112,7 +112,7 @@ test('learning: country profile separates periods, population, religion denomina
   await expect(profile).toContainText('宗教构成 · 2021')
   await expect(profile).toContainText('有宗教关联者')
   await expect(profile).toContainText('未列出的类别为缺失，不能视为0%')
-  await expect(profile).toContainText('国家语言概览')
+  await expect(profile).toContainText('国家与地区语言概览')
   const religion=profile.locator('.religion-profile')
   await expect(religion.locator('.share-bars>div')).toHaveCount(4)
   await religion.getByText('原资料与口径说明',{exact:true}).click()
@@ -122,7 +122,7 @@ test('learning: country profile separates periods, population, religion denomina
 test('learning: a delayed previous location cannot move the camera away from the current UI selection',async({page})=>{
   let releaseRivers!:()=>void,requestedRivers!:()=>void
   const gate=new Promise<void>(resolve=>{releaseRivers=resolve}),request=new Promise<void>(resolve=>{requestedRivers=resolve})
-  await page.route('**/data/rivers.geojson',async route=>{requestedRivers();await gate;await route.continue()})
+  await page.route('**/data/rivers.geojson{,.gz}',async route=>{requestedRivers();await gate;await route.continue()})
   try{
     await page.reload();await baseReady(page);await sourceLoaded(page,'regions')
     await request
@@ -148,7 +148,7 @@ test('learning: a delayed previous location cannot move the camera away from the
 test('learning: a shared camera survives a same-document hash while the previous region locate is delayed',async({page})=>{
   let releaseRegions!:()=>void,requestedRegions!:()=>void
   const gate=new Promise<void>(resolve=>{releaseRegions=resolve}),request=new Promise<void>(resolve=>{requestedRegions=resolve})
-  await page.route('**/data/regions.geojson',async route=>{requestedRegions();await gate;await route.continue()})
+  await page.route('**/data/regions.geojson{,.gz}',async route=>{requestedRegions();await gate;await route.continue()})
   try{
     await page.reload();await baseReady(page);await request
     await page.evaluate(()=>{const atlas=window.__terraAtlas!,locate=atlas.locate;atlas.locate=selection=>{atlas.map.getContainer().dataset.lastLocateId=selection.card.id;locate(selection)}})
@@ -239,7 +239,7 @@ test('learning: actual map clicks create and clear a great-circle measurement',a
 
 test('learning: a topic highlights multiple real locations and allows free jumping and exit',async({page},info)=>{
   await chooseTheme(page,'中国河流与湖泊')
-  await expect(page.locator('.topic-summary')).toContainText('来水、河道、湖盆和出口')
+  await expect(page.locator('.topic-summary')).toContainText('中国的河流从高原和山地汇水')
   await page.waitForFunction(()=>{const atlas=window.__terraAtlas!,data=atlas.map.getSource('relations')!.serialize() as {data?:{features?:unknown[]}};return (data.data?.features?.length||0)>2&&atlas.map.isSourceLoaded('relations')},undefined,{timeout:45000})
   await mapSettled(page)
   await page.getByRole('button',{name:/选择模块/}).click()

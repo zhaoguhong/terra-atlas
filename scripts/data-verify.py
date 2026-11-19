@@ -11,6 +11,7 @@ from rasterio.features import rasterize
 from shapely.geometry import Polygon, shape
 from shapely import set_precision
 from opencc import OpenCC
+from china_presentation import country_properties
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "public/data"
@@ -22,7 +23,9 @@ for path in sorted(OUT.glob("*.geojson")):
     assert layer["type"] == "FeatureCollection", path
     for f in layer["features"]:
         p = f["properties"]
-        assert f["id"] == p["id"] and p["id"] not in ids, (path, p["id"])
+        # GeoJSON's top-level id is optional (auxiliary layers use properties.id).
+        # When present it must agree with the globally unique application ID.
+        assert f.get("id", p["id"]) == p["id"] and p["id"] not in ids, (path, p["id"])
         ids.add(p["id"])
         feature_by_id[p["id"]] = f
         g = shape(f["geometry"])
@@ -44,7 +47,7 @@ cc = OpenCC("t2s")
 for f in json.loads((ROOT / "data/raw/ne_50m_admin_0_countries.geojson").read_text())["features"]:
     p = {key.lower(): value for key, value in f["properties"].items()}
     key = f"country-{p['adm0_a3'].lower()}"
-    country_names[key] = cc.convert(p.get("name_zh") or p.get("name") or p.get("name_en") or "")
+    country_names[key] = country_properties({'id':key,'name':cc.convert(p.get("name_zh") or p.get("name") or p.get("name_en") or "")})['name']
     assert feature_by_id[key]["properties"]["name"] == country_names[key], key
 for p in gazetteer:
     if p["id"] in country_names:
@@ -53,7 +56,7 @@ for filename, field in [("learning-human.json", "religion"), ("learning-country-
     table = json.loads((OUT / filename).read_text())
     for row in (table[field] if field else table)["countries"]:
         assert row["name"] == country_names[row["countryId"]], (filename, row["countryId"])
-report["checks"].append("Country labels retain the original simplified Chinese names; the gazetteer and derived country learning tables use the same names.")
+report["checks"].append("Country and region labels use the project's Chinese geography convention; Taiwan, Hong Kong and Macao explicitly belong to China, with original IDs and separate source statistical scopes preserved.")
 
 grid = json.loads((OUT / "climate-grid.json").read_text())
 legend = json.loads((OUT / "climate-legend.json").read_text())

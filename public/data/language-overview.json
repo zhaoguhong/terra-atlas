@@ -3178,7 +3178,10 @@
           "populationPercent": 0.0,
           "status": "reported"
         }
-      ]
+      ],
+      "parentCountryId": "country-chn",
+      "parentCountryName": "中国",
+      "statisticsScopeNote": "本条沿用来源的中国大陆统计口径；台湾、香港、澳门资料按原来源分列，不将局部统计冒充全国合计。"
     },
     {
       "countryId": "country-civ",
@@ -5811,7 +5814,7 @@
     },
     {
       "countryId": "country-hkg",
-      "name": "香港",
+      "name": "中国香港",
       "territory": "HK",
       "displayId": "group:zh",
       "selectionBasis": "national-official",
@@ -5844,7 +5847,11 @@
           "populationPercent": 5.0,
           "status": "reported"
         }
-      ]
+      ],
+      "parentCountryId": "country-chn",
+      "parentCountryName": "中国",
+      "statisticsScopeNote": "中国香港特别行政区资料，沿用来源的统计范围与年份。",
+      "sourceName": "香港"
     },
     {
       "countryId": "country-hmd",
@@ -8364,7 +8371,7 @@
     },
     {
       "countryId": "country-mac",
-      "name": "澳门",
+      "name": "中国澳门",
       "territory": "MO",
       "displayId": "group:zh",
       "selectionBasis": "national-official",
@@ -8418,7 +8425,11 @@
           "populationPercent": 2.3,
           "status": "official"
         }
-      ]
+      ],
+      "parentCountryId": "country-chn",
+      "parentCountryName": "中国",
+      "statisticsScopeNote": "中国澳门特别行政区资料，沿用来源的统计范围与年份。",
+      "sourceName": "澳门"
     },
     {
       "countryId": "country-maf",
@@ -12946,7 +12957,7 @@
     },
     {
       "countryId": "country-twn",
-      "name": "中华民国",
+      "name": "中国台湾",
       "territory": "TW",
       "displayId": "group:zh",
       "selectionBasis": "national-official",
@@ -12979,7 +12990,11 @@
           "populationPercent": 0.02,
           "status": "reported"
         }
-      ]
+      ],
+      "parentCountryId": "country-chn",
+      "parentCountryName": "中国",
+      "statisticsScopeNote": "中国台湾地区资料，沿用来源的统计范围与年份；地区分列不表示国家归属。",
+      "sourceName": "中华民国"
     },
     {
       "countryId": "country-tza",
@@ -14083,5 +14098,6 @@
         }
       ]
     }
-  ]
+  ],
+  "presentationNote": "项目采用中国地理学习口径，台湾、香港、澳门归属中国；保留原始要素ID与分列统计口径，不将来源中的地区代码解释为独立国家。"
 }

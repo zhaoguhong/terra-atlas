@@ -1,5 +1,5 @@
 import {expect,test} from '@playwright/test'
-import {baseReady,selectedGeometry,sourceLoaded} from './map-readiness'
+import {studyReady as baseReady,selectedGeometry,sourceLoaded} from './map-readiness'
 
 test.use({reducedMotion:'reduce'})
 
@@ -20,11 +20,11 @@ test('figure map: lazy real geometry, local selection, one inset and full-map re
   await expect(inset.locator('canvas.maplibregl-canvas')).toBeVisible()
   await expect(inset.locator('.maplibregl-map')).not.toHaveAttribute('inert')
   expect(await page.evaluate(()=>window.__terraAtlas===(window as unknown as {mainMapForTest:unknown}).mainMapForTest)).toBe(true)
-  await expect.poll(async()=>JSON.parse(await inset.getAttribute('data-relations-geometry')||'[]').map((feature:{type:string})=>feature.type).sort()).toEqual(['Polygon','Polygon','Polygon','Point'].sort())
-  await inset.getByRole('button',{name:'内蒙古高原 定位点',exact:true}).click()
+  await expect.poll(async()=>JSON.parse(await inset.getAttribute('data-relations-geometry')||'[]').map((feature:{type:string})=>feature.type).sort()).toEqual(['Polygon','Polygon','Polygon','MultiPolygon'].sort())
+  await inset.getByRole('button',{name:'内蒙古高原 区域范围',exact:true}).click()
   await expect(inset).toHaveAttribute('data-selected-place','inner-mongolian-plateau')
   await expect(inset.locator('.maplibregl-map')).not.toHaveAttribute('inert')
-  await expect.poll(async()=>JSON.parse(await inset.getAttribute('data-selection-geometry')||'[]')).toEqual([{id:'inner-mongolian-plateau',type:'Point'}])
+  await expect.poll(async()=>JSON.parse(await inset.getAttribute('data-selection-geometry')||'[]')).toEqual([{id:'region-cn-zhang2025-inner-mongolian-plateau',type:'MultiPolygon'}])
   await inset.getByRole('button',{name:'青藏高原 区域范围',exact:true}).click()
   await expect.poll(async()=>JSON.parse(await inset.getAttribute('data-selection-geometry')||'[]').map((feature:{type:string})=>feature.type)).toEqual(['Polygon'])
   await page.evaluate(()=>new Promise<void>(resolve=>requestAnimationFrame(()=>requestAnimationFrame(()=>resolve()))))
@@ -35,7 +35,7 @@ test('figure map: lazy real geometry, local selection, one inset and full-map re
   await expect(page.locator('html')).toHaveAttribute('data-theme','dark')
   await inset.getByRole('button',{name:'查看配图全部地点',exact:true}).click()
   await expect(inset).toHaveAttribute('data-selected-place','')
-  await inset.getByRole('button',{name:'内蒙古高原 定位点',exact:true}).click()
+  await inset.getByRole('button',{name:'内蒙古高原 区域范围',exact:true}).click()
   await inset.getByRole('button',{name:'在完整地图中查看',exact:true}).click()
   await expect(page.locator('.knowledge-panel h2')).toHaveText('内蒙古高原')
   await selectedGeometry(page)
@@ -72,16 +72,16 @@ test('retired review chapter opens the readable overview',async({page})=>{
 test('figure map: a failed geometry request can recover without leaving the article',async({page})=>{
   await page.goto('/#read=china-terrain&chapter=part-china-plateaus&topic=china-terrain')
   await baseReady(page);await sourceLoaded(page,'regions')
-  await page.route('**/data/regions.geojson',route=>route.fulfill({status:503,body:'unavailable'}))
+  await page.route('**/data/regions.geojson{,.gz}',route=>route.fulfill({status:503,body:'unavailable'}))
   const article=page.locator('.topic-reading-page:not([hidden])')
   const figure=article.locator('[data-media-id="china-plateaus-illustration"]')
   await figure.getByRole('button',{name:'看地图：中国四大高原位置示意',exact:true}).click()
   const inset=figure.locator('.reading-inline-map')
   await expect(inset.getByRole('alert')).toContainText('部分图层加载失败')
-  await page.unroute('**/data/regions.geojson')
+  await page.unroute('**/data/regions.geojson{,.gz}')
   await inset.getByRole('button',{name:'重试配图地图',exact:true}).click()
   await expect(inset).toHaveAttribute('data-map-ready','true',{timeout:30000})
   await expect(inset.getByRole('alert')).toHaveCount(0)
-  await expect.poll(async()=>JSON.parse(await inset.getAttribute('data-relations-geometry')||'[]').filter((feature:{type:string})=>feature.type==='Polygon').length).toBe(3)
+  await expect.poll(async()=>JSON.parse(await inset.getAttribute('data-relations-geometry')||'[]').filter((feature:{type:string})=>/Polygon/.test(feature.type)).length).toBe(4)
   await expect(article.locator('h1')).toHaveText('中国地形格局')
 })

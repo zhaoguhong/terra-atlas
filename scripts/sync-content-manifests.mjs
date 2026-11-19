@@ -18,6 +18,15 @@ for(const ref of reading.atmosphereSourceReview.sources){const record=sources.ge
 for(const ref of reading.languageRevision?.sources||[]){const record=sources.get(ref.url);if(record)Object.assign(record,ref)}
 for(const ref of reading.landformRevision?.sources||[]){const record=sources.get(ref.url);if(record)Object.assign(record,ref)}
 for(const ref of reading.worldGeographyRevision?.sources||[]){const record=sources.get(ref.url);if(record)Object.assign(record,ref)}
+for(const name of ['marine-reference-sources','landform-reference-region-sources']){
+  const path='data/research/'+name+'.json'
+  if(!fs.existsSync(path))continue
+  const geometrySource=read(path),url=geometrySource.source?.articleUrl||geometrySource.homepage,record=sources.get(url)
+  if(record)Object.assign(record,{inputVersion:geometrySource.version,license:geometrySource.license,licenseUrl:geometrySource.licenseUrl,
+    processing:Array.isArray(geometrySource.processing)?geometrySource.processing.join(' '):geometrySource.processing,
+    geometrySourceManifest:'/data/'+name+'.json',accessedAt:'2026-11-13'})
+}
+manifest.waterCycleRevision=reading.waterCycleRevision
 manifest.landformRevision=reading.landformRevision
 manifest.worldGeographyRevision=reading.worldGeographyRevision
 manifest.reviewedAt=reading.reviewedAt
@@ -25,6 +34,8 @@ manifest.editorialRevision=reading.editorialRevision
 manifest.sources=[...sources.values()];manifest.sourceCount=sources.size
 manifest.contentCount=knowledge.length;manifest.topicCount=topics.length;manifest.climateNoteCount=notes.length
 manifest.readingSourceManifest='/data/reading-sources.json';manifest.readingArticleCount=reading.topicCount;manifest.readingMediaCount=reading.media.length
+manifest.mapExtentReview='/data/map-extent-review.json'
+manifest.mapExtentSourceManifests=['marine-reference-sources','china-presentation-sources','landform-reference-region-sources'].filter(name=>fs.existsSync('public/data/'+name+'.json')).map(name=>'/data/'+name+'.json')
 manifest.scope=`个人自由探索：中国与世界${knowledge.length}张精选自然及人文地理卡片、${notes.length}种气候笔记、${topics.length}个单选主题；按区域、地形、水系、气候、人口文化、资源交通及地球地图七类组织。`
 Object.assign(manifest.featureBindingReview,{nonClimateCards:knowledge.filter(k=>k.category!=='climate').length,naturalCards:knowledge.filter(k=>['mountains','terrain','rivers','lakes'].includes(k.category)).length,boundCards:knowledge.filter(k=>bindings[k.id]?.length).length,pointOnlyCards:knowledge.filter(k=>k.category!=='climate'&&!bindings[k.id]?.length).map(k=>k.id)})
 const theme=read('data/research/theme-sources.json')

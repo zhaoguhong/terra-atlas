@@ -1,3 +1,6 @@
+import {packedPath,unpackJson} from '../lib/packed-json'
+import {sourceForId} from '../lib/map-source'
+import 'maplibre-gl/dist/maplibre-gl.css'
 import { useEffect, useRef } from 'react'
 import * as maplibre from 'maplibre-gl'
 import { type Map as GLMap, type GeoJSONSource, type ExpressionSpecification } from 'maplibre-gl'
@@ -62,29 +65,14 @@ const files: Record<string, string> = {
   human: 'learning-human.json', gazetteer: 'gazetteer.json',
   cities:'auxiliary-cities.geojson',basins:'auxiliary-basins.geojson',plates:'auxiliary-plates.geojson',
   'study-regions':'china-reference-regions.geojson',
+  'marine-regions':'marine-reference-regions.geojson',
+  'landform-regions':'landform-reference-regions.geojson',
 }
 const point = (coordinates: Coordinate, properties: GeoProperties): Feature<Geometry, GeoProperties> => ({type: 'Feature', geometry: {type: 'Point', coordinates}, properties})
 const featureBindings = bindings as Record<string, string[]>
 const elevationCoverage: Bounds[] = [[86.65, 27.75, 87.2, 28.35], [138.45, 35.1, 139.05, 35.65]]
 const inside = (coordinates: Coordinate, bounds: Bounds) => coordinates[0] >= bounds[0] && coordinates[0] <= bounds[2] && coordinates[1] >= bounds[1] && coordinates[1] <= bounds[3]
 const categoryColor=(property:string,categories:readonly {id:string;color:string}[],fallback:string):ExpressionSpecification=>categories.length?['match',['get',property],categories[0].id,categories[0].color,...categories.slice(1).flatMap(category=>[category.id,category.color]),fallback]:['literal',fallback]
-export function sourceForId(id: string): string | undefined {
-  if(id.startsWith('region-cn-jiang2023-'))return 'study-regions'
-  if(id.startsWith('city-ne-'))return 'cities'
-  if(id.startsWith('basin-hybas-'))return 'basins'
-  if(id.startsWith('plate-usgs-'))return 'plates'
-  if (id.startsWith('country-')) return 'countries'
-  if (id.startsWith('province-')) return 'provinces'
-  if (id.startsWith('language-area-')) return 'language-areas'
-  if (id.startsWith('language-')) return 'languages'
-  if (id.startsWith('river-')) return 'rivers'
-  if (id.startsWith('lake-')) return 'lakes'
-  if (id.startsWith('peak-wikidata-')) return 'summits'
-  if (id.startsWith('peak-')) return 'peaks'
-  if (id.startsWith('region-')) return 'regions'
-  if (id.startsWith('climate-')) return 'climate'
-  return undefined
-}
 function sourcesForSelection(selection: Selection) {
   if (selection.source && files[selection.source]) return [selection.source]
   return [...new Set((featureBindings[selection.card.id] || []).map(sourceForId).filter((v): v is string => !!v))]
@@ -93,7 +81,7 @@ function featuresForSelection(data: Data, selection: Selection): Feature<Geometr
   const ids = selection.featureId ? [selection.featureId] : featureBindings[selection.card.id] || []
   return Object.entries(data).filter(([name]) => name !== 'religion').flatMap(([name, collection]) => collection.features
     .filter(feature => ids.includes(feature.properties.id) && (!selection.source || selection.source === name))
-    .map(feature => ({...feature, properties: {...feature.properties, referenceExtent: name === 'regions' || name === 'study-regions'}})))
+    .map(feature => ({...feature, properties: {...feature.properties, referenceExtent: name === 'regions' || name === 'study-regions' || name === 'marine-regions' || name === 'landform-regions'}})))
 }
 function labels(data: Data, members: string[] = []): Collection {
   const curated = knowledge.filter(k => !members.includes(k.id) && !['climate', 'religion', 'population', 'language', 'human'].includes(k.category)).map(k => point(k.coordinates, {
@@ -223,7 +211,7 @@ export default function AtlasMap(props: Props) {
     map.addControl(new maplibre.ScaleControl({maxWidth: 100, unit: 'metric'}), 'bottom-right')
     const status = () => {
       if (disposed || !readyReported) return
-      const names: Record<string, string> = {'study-regions':'四大地理区参考范围',cities:'城市与首都',basins:'流域分区',plates:'板块边界',land: '陆地', countries: '国家轮廓', regions: '自然区域', rivers: '河流', lakes: '湖泊', peaks: '山峰', summits: '主题山峰', climate: '气候', provinces: '中国省区', languages: '语言参考点', 'language-areas':'语言区域', human: '宗教', gazetteer: '地名搜索', elevation: '局部高程', 'elevation-everest-samples': '珠峰高程', 'elevation-fuji-samples': '富士山高程'}
+      const names: Record<string, string> = {'landform-regions':'中国地貌参考范围','marine-regions':'海域概化参考范围','study-regions':'四大地理区参考范围',cities:'城市与首都',basins:'流域分区',plates:'板块边界',land: '陆地', countries: '国家轮廓', regions: '自然区域', rivers: '河流', lakes: '湖泊', peaks: '山峰', summits: '主题山峰', climate: '气候', provinces: '中国省区', languages: '语言参考点', 'language-areas':'语言区域', human: '宗教', gazetteer: '地名搜索', elevation: '局部高程', 'elevation-everest-samples': '珠峰高程', 'elevation-fuji-samples': '富士山高程'}
       current.current.onStatus(failed.size ? `部分图层加载失败（${[...failed].map(name => names[name] || name).join('、')}）。其他图层仍可探索，可点击重试。` : 'ready')
     }
     map.on('error', event => {
@@ -259,7 +247,7 @@ export default function AtlasMap(props: Props) {
         const category = choice === 'largest' ? country?.largestReportedCategory : choice
         const share = category ? country?.shares[category] : null
         const eligible = country?.scope === 'population' && typeof share === 'number' && Number.isFinite(share) && share >= 0 && share <= 100 && !!category && colors.has(category)
-        return {...feature, properties: {...feature.properties, eligible, share: eligible ? share : 0, religionColor: eligible ? colors.get(category!)! : '#dce3dc'}}
+        return {...feature, geometry: (feature.properties.statisticsGeometry as Geometry | undefined) || feature.geometry, properties: {...feature.properties, eligible, share: eligible ? share : 0, religionColor: eligible ? colors.get(category!)! : '#dce3dc'}}
       })
       data.religion = {type: 'FeatureCollection', features}
       ;(map.getSource('religion') as GeoJSONSource).setData(data.religion)
@@ -287,7 +275,7 @@ export default function AtlasMap(props: Props) {
           const found = featuresForSelection(data, {card})
           features.push(...(found.length ? found : [point(card.coordinates, {id: card.id, name: card.name, nameEn: card.englishName})]).map(feature => ({...feature, properties: {...feature.properties, ...appearance}})))
           memberLabels.push(point(card.coordinates, {id: card.id, name: card.name, nameEn: card.englishName, ...appearance}))
-        } else Object.entries(data).filter(([name]) => name !== 'religion').forEach(([name, collection]) => features.push(...collection.features.filter(feature => feature.properties.id === id).map(feature => ({...feature, properties: {...feature.properties, referenceExtent: name === 'regions' || name === 'study-regions'}}))))
+        } else Object.entries(data).filter(([name]) => name !== 'religion').forEach(([name, collection]) => features.push(...collection.features.filter(feature => feature.properties.id === id).map(feature => ({...feature, properties: {...feature.properties, referenceExtent: name === 'regions' || name === 'study-regions' || name === 'marine-regions' || name === 'landform-regions'}}))))
       }
       const unique = [...new Map(features.map(feature => [feature.properties.id, feature])).values()]
       ;(map.getSource('relations') as GeoJSONSource | undefined)?.setData({type: 'FeatureCollection', features: unique})
@@ -312,9 +300,9 @@ export default function AtlasMap(props: Props) {
       if (!files[name]) return Promise.resolve()
       const request = (async () => {
         try {
-          const response = await fetch(`${import.meta.env.BASE_URL}data/${files[name]}`, {signal: abort.signal})
+          const response = await fetch(`${import.meta.env.BASE_URL}data/${packedPath(files[name])}`, {signal: abort.signal})
           if (!response.ok) throw new Error(`${name}: ${response.status}`)
-          const value = await response.json()
+          const value = await unpackJson(response)
           if (disposed) return
           if (name === 'human') {
             if (!value.religion || !Array.isArray(value.religion.countries) || !Array.isArray(value.religion.categories)) throw new Error('Invalid human data')
@@ -333,6 +321,7 @@ export default function AtlasMap(props: Props) {
               : feature) }
             if (!['land', 'climate', 'religion', 'population'].includes(name)) catalogDirty = true
             ;(map.getSource(name) as GeoJSONSource | undefined)?.setData(data[name])
+            if(name === 'countries') (map.getSource('country-statistics') as GeoJSONSource | undefined)?.setData({type:'FeatureCollection',features:data[name].features.map(feature=>({...feature,geometry:(feature.properties.statisticsGeometry as Geometry | undefined)||feature.geometry}))})
           }
           loaded.add(name); failed.delete(name); scheduleRefresh(); status()
         } catch (error) {
@@ -439,7 +428,7 @@ export default function AtlasMap(props: Props) {
         if (disposed) return null
         if (failed.has(source)) throw new Error('地点资料暂未能加载')
         const feature = data[source]?.features.find(feature => feature.properties.id === id)
-        return feature ? {properties: feature.properties, source} : null
+        return feature ? {properties: {...feature.properties,geometryType:feature.geometry.type}, source} : null
       },
       locate: selection => {
         preserveCameraOnResize=false
@@ -461,7 +450,9 @@ export default function AtlasMap(props: Props) {
             if (pendingLocateEpoch === epoch) pendingLocateEpoch = undefined
             if (!isCurrent()) return
             const features = featuresForSelection(data, selection), hasArea = features.some(feature => feature.geometry.type !== 'Point' && feature.geometry.type !== 'MultiPoint')
-            if (hasArea) fit(features)
+            // A generalized reference area can stop short of its real label point
+            // (e.g. the Arctic). Fit both, without altering the displayed geometry.
+            if (hasArea) fit([...features,point(selection.card.coordinates,{id:selection.card.id,name:selection.card.name,nameEn:selection.card.englishName})])
             else {
               const peak = selection.card.category === 'mountains' && (selection.source === 'peaks' || sourcesForSelection(selection).some(source => ['peaks', 'summits'].includes(source)))
               const covered = elevationCoverage.some(bounds => inside(selection.card.coordinates, bounds))
@@ -548,7 +539,7 @@ export default function AtlasMap(props: Props) {
       if (!map.isStyleLoaded()) await new Promise<void>(resolve => map.once('load', () => resolve()))
       if (disposed) return
       for (const name of Object.keys(files).filter(name => !['human', 'gazetteer'].includes(name))) map.addSource(name, {type: 'geojson', data: empty})
-      for (const name of ['places', 'selection', 'relations', 'relation-labels', 'religion', 'measurement']) map.addSource(name, {type: 'geojson', data: empty})
+      for (const name of ['places', 'selection', 'relations', 'relation-labels', 'religion', 'measurement', 'country-statistics']) map.addSource(name, {type: 'geojson', data: empty})
       map.addSource('grid', {type: 'geojson', data: grid()})
       map.addSource('relief', {type: 'raster', tiles: [`${location.origin}${import.meta.env.BASE_URL}terrain/{z}/{x}/{y}.jpg`], tileSize: 512, minzoom: 0, maxzoom: 4})
       map.addSource('population-raster', {type: 'raster', tiles: [`${location.origin}${import.meta.env.BASE_URL}population/{z}/{x}/{y}.png`], tileSize: 256, minzoom: 0, maxzoom: 3})
@@ -558,7 +549,7 @@ export default function AtlasMap(props: Props) {
       map.addLayer({id: 'religion-fill', type: 'fill', source: 'religion', paint: {'fill-color': ['get', 'religionColor'], 'fill-opacity': .65}})
       map.addLayer({id: 'climate-fill', type: 'fill', source: 'climate', paint: {'fill-color': ['get', 'color'], 'fill-opacity': current.current.opacity}})
       map.addLayer({id: 'country-hit', type: 'fill', source: 'countries', paint: {'fill-color': '#000000', 'fill-opacity': 0}})
-      map.addLayer({id: 'country-borders', type: 'line', source: 'countries', paint: {'line-color': '#617664', 'line-width': .7, 'line-opacity': .55}})
+      map.addLayer({id: 'country-borders', type: 'line', source: 'countries', filter: ['!=', ['get', 'kind'], 'region'], paint: {'line-color': '#617664', 'line-width': .7, 'line-opacity': .55}})
       map.addLayer({id: 'province-fill', type: 'fill', source: 'provinces', paint: {'fill-color': '#79a687', 'fill-opacity': .12}})
       map.addLayer({id: 'province-lines', type: 'line', source: 'provinces', paint: {'line-color': '#4f7864', 'line-width': ['interpolate', ['linear'], ['zoom'], 2, .6, 5, 1.3], 'line-opacity': .75}})
       map.addLayer({id: 'lake-fill', type: 'fill', source: 'lakes', paint: {'fill-color': '#669daa', 'fill-opacity': .8}})
@@ -578,7 +569,7 @@ export default function AtlasMap(props: Props) {
       map.addLayer({id: 'province-labels', type: 'symbol', source: 'provinces', minzoom: 3, layout: {'text-field': ['get', 'name'], 'text-font': ['sans-serif'], 'text-size': 11, 'text-padding': 8}, paint: {'text-color': '#526d5a', 'text-halo-color': '#faf8ed', 'text-halo-width': 1.5}})
       map.addLayer({id: 'language-dots', type: 'circle', source: 'languages', minzoom: 2, paint: {'circle-radius': ['interpolate', ['linear'], ['zoom'], 2, 2.5, 5, 4, 7, 6], 'circle-color': ['coalesce', ['get', 'color'], '#688ca7'], 'circle-stroke-color': '#fcfaf2', 'circle-stroke-width': .8, 'circle-opacity': .85}})
       map.addLayer({id: 'language-labels', type: 'symbol', source: 'languages', minzoom: 5.5, layout: {'text-field': ['get', 'name'], 'text-font': ['sans-serif'], 'text-size': 11, 'text-anchor': 'top', 'text-offset': [0, .6], 'text-padding': 8}, paint: {'text-color': '#435f73', 'text-halo-color': '#faf8ed', 'text-halo-width': 1.5}})
-      map.addLayer({id:'language-overview-fill',type:'fill',source:'countries',paint:{'fill-color':otherLanguageColor,'fill-opacity':.72}},'country-borders')
+      map.addLayer({id:'language-overview-fill',type:'fill',source:'country-statistics',paint:{'fill-color':otherLanguageColor,'fill-opacity':.72}},'country-borders')
       map.addLayer({id:'language-area-fill',type:'fill',source:'language-areas',paint:{'fill-color':otherLanguageColor,'fill-opacity':.72}},'country-borders')
       map.addLayer({id:'language-area-lines',type:'line',source:'language-areas',paint:{'line-color':'#f8f7f0','line-width':['interpolate',['linear'],['zoom'],1,.15,5,.65],'line-opacity':.55}},'country-borders')
       map.addLayer({id: 'place-dots', type: 'circle', source: 'places', paint: {'circle-radius': ['case', ['==', ['get', 'curated'], true], ['interpolate', ['linear'], ['zoom'], 1, 2.6, 4, 3.8, 7, 5], 2.4], 'circle-color': ['get', 'color'], 'circle-stroke-color': '#fcfaf2', 'circle-stroke-width': 1.3}})
@@ -627,7 +618,8 @@ export default function AtlasMap(props: Props) {
           if (card) { current.current.onSelect({card}); return }
         }
         const source = feature.source === 'places' ? typeof raw.geoSource === 'string' ? raw.geoSource : sourceForId(raw.id) || 'regions' : feature.source
-        const properties = data[source]?.features.find(value => value.properties.id === raw.id)?.properties || raw
+        const sourceFeature = data[source]?.features.find(value => value.properties.id === raw.id)
+        const properties = {...(sourceFeature?.properties || raw),geometryType:sourceFeature?.geometry.type || feature.geometry.type}
         if (feature.source === 'climate') {
           const card = knowledge.find(card => card.id === `climate-${String(properties.family).toLowerCase()}`)
           if (card) current.current.onSelect({card: {...card, coordinates}, source: 'climate', featureId: properties.id, subtype: `${properties.code} · ${properties.name}`})

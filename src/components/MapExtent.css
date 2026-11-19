@@ -1,0 +1,3 @@
+.map-extent-description{margin:12px 0;padding:10px 12px;border-left:2px solid var(--line,#c7d3bd);background:var(--surface-raised,#edf0e5);border-radius:0 6px 6px 0;color:var(--ink-muted,#6d7e69)}
+.map-extent-description>strong{display:flex;align-items:center;gap:5px;font-size:11px;font-weight:500}
+.map-extent-description>p{margin:5px 0 0;font-size:11px;line-height:1.8;overflow-wrap:anywhere}

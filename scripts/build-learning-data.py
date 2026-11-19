@@ -8,6 +8,7 @@ python scripts/build-learning-data.py
 """
 from __future__ import annotations
 
+import gzip
 import argparse
 import collections
 import csv
@@ -31,6 +32,7 @@ from rasterio.transform import from_origin
 from pyproj import Geod
 from shapely.geometry import shape, mapping
 from shapely.ops import unary_union
+from china_presentation import country_properties, PRESENTATION_NOTE
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / 'data/raw/learning'
@@ -82,7 +84,7 @@ def record(source, inputs, outputs, validation):
     source['inputs'] = [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size, 'sha256': sha(p)} for p in inputs]
     previous = next((s for s in manifest['sources'] if s['id'] == source['id']), None)
     source['retrievedAt'] = previous['retrievedAt'] if previous and previous.get('inputs') == source['inputs'] and previous.get('version') == source.get('version') else NOW()
-    source['outputs'] = [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size, 'sha256': sha(p), **({'published': False} if p == RESEARCH / 'learning-population.geojson' else {})} for p in outputs]
+    source['outputs'] = [{'path': str(p.relative_to(ROOT)), 'bytes': p.stat().st_size, 'sha256': sha(p), **({'published': False, 'encoding': 'gzip', 'decodedSha256': hashlib.sha256(gzip.decompress(p.read_bytes())).hexdigest(), 'decodedBytes': len(gzip.decompress(p.read_bytes()))} if p == RESEARCH / 'learning-population.geojson.gz' else {})} for p in outputs]
     manifest['sources'] = [s for s in manifest['sources'] if s['id'] != source['id']] + [source]
     manifest['generatedAt'] = NOW()
     write(manifest_path, manifest)
@@ -179,8 +181,13 @@ def build_provinces():
             assert code, name
             if name != 'Paracel Islands': props[code] = (p.get('name_zh') or name, name, p.get('iso_3166_2'))
         elif adm in ('TWN','HKG','MAC'):
-            code = {'TWN':'71','HKG':'81','MAC':'82'}[adm]
-            props[code] = {'TWN':('台湾','Taiwan','CN-71'), 'HKG':('香港特别行政区','Hong Kong','CN-81'), 'MAC':('澳门特别行政区','Macau','CN-82')}[adm]
+            # Kinmen belongs to Fujian in this project's province convention.
+            # No geometry is inferred for small islands absent from the source.
+            if adm == 'TWN' and name == 'Kinmen':
+                code = '35'
+            else:
+                code = {'TWN':'71','HKG':'81','MAC':'82'}[adm]
+                props[code] = {'TWN':('台湾省','Taiwan Province, China','CN-71'), 'HKG':('香港特别行政区','Hong Kong','CN-81'), 'MAC':('澳门特别行政区','Macau','CN-82')}[adm]
         else: continue
         groups[code].append(shape(f['geometry']))
     features = []
@@ -189,12 +196,15 @@ def build_provinces():
         assert geom.is_valid
         zh, en, source_iso = props[code]
         center = geom.representative_point()
-        p = {'id': 'province-cn-' + code, 'name': zh, 'nameEn': en, 'code': code, 'isoCode': 'CN-' + code, 'sourceISO': source_iso, 'aliases': [zh, en], 'kind': 'province', 'sourceId': 'natural-earth-10m-admin1-learning', 'center': [round(center.x, 4), round(center.y, 4)], 'bbox': [round(v, 4) for v in geom.bounds]}
+        p = {'id': 'province-cn-' + code, 'name': zh, 'nameEn': en, 'code': code, 'isoCode': 'CN-' + code, 'sourceISO': source_iso, 'aliases': [zh, en], 'kind': 'province', 'parentCountryId':'country-chn', 'parentCountryName':'中国', 'sourceId': 'natural-earth-10m-admin1-learning', 'center': [round(center.x, 4), round(center.y, 4)], 'bbox': [round(v, 4) for v in geom.bounds]}
+        if code == '71':
+            p['aliases'] += ['台湾', '中国台湾']
+            p['geometryNote'] = '中国台湾省概化参考范围：合并源数据中的台湾主岛、澎湖及已收录附属岛屿；金门单元归入福建省。未收录的小岛不另行推绘，不作为完整法定省界。'
         g = rounded_geometry(mapping(geom))
         assert shape(g).is_valid
         features.append({'type': 'Feature', 'id': p['id'], 'properties': p, 'geometry': g})
     out = PUBLIC / 'learning-provinces.geojson'
-    note = 'Natural Earth 1:1000万概化行政范围；香港、澳门、台湾由原始真实Admin-1单元合并，西沙标签单元并入海南。中文省级名称及GB/T省级代码用于学习导航；沿用Natural Earth原始地理表达，不能作为法定边界或测绘依据。'
+    note = 'Natural Earth 1:1000万中国省级概化参考范围；台湾主岛、澎湖和源数据已收录附属岛屿合并为台湾省，金门源单元归入福建省，香港、澳门分别合并为特别行政区，西沙标签单元并入海南。未收录小岛不推绘；中文名称和GB/T代码用于学习导航，不作为完整法定边界或测绘依据。'
     write(out, {'type':'FeatureCollection', 'sourceId': 'natural-earth-10m-admin1-learning', 'note': note, 'features': features})
     record({'id': 'natural-earth-10m-admin1-learning', 'title': 'Natural Earth中国省级学习范围', 'url': 'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/', 'downloadUrls':[url], 'version': NE_COMMIT, 'period':'Natural Earth数据版本快照', 'license':'Public domain', 'licenseUrl':'https://www.naturalearthdata.com/about/terms-of-use/', 'processing':note + ' 简化0.006度，保拓扑，坐标保留4位小数。', 'coverage': {'features':len(features)}}, [raw], [out], {'valid': True, 'features':len(features), 'ids':[f['id'] for f in features]})
 
@@ -391,7 +401,7 @@ def build_religion():
             results[cid]=r
     out=PUBLIC/'learning-human.json'
     note='CIA World Factbook历史国家资料，快照固定2026年前，资料年份及统计口径逐国不同；不是统一2020宗教调查。八类是学习展示归并，不改变来源估计。国家着色不能代表内部每位居民或局地分布；未报告类别为null，阈值与范围不取中点，不归一化到100%。民间/传统宗教含源列的神道、道教等；其他宗教含锡克教等；混合或未明确类别保留原项、不强行分配。'
-    write(out,{'religion':{'year':None,'period':'各国条目资料年份不同','sourceId':'cia-factbook-religion-snapshot','snapshotCommit':COMMIT,'categories':[{'id':k,'name':n,'color':c} for k,n,c in RELIGIONS],'note':note,'countries':sorted(results.values(),key=lambda r:r['iso3'])}})
+    write(out,{'religion':{'year':None,'period':'国家与地区条目资料年份不同','sourceId':'cia-factbook-religion-snapshot','snapshotCommit':COMMIT,'categories':[{'id':k,'name':n,'color':c} for k,n,c in RELIGIONS],'note':note + PRESENTATION_NOTE,'countries':sorted((country_properties(row) for row in results.values()),key=lambda r:r['iso3'])}})
     record({'id':'cia-factbook-religion-snapshot','title':'CIA World Factbook国家宗教构成历史资料','url':'https://github.com/factbook/factbook.json','downloadUrls':[url],'version':COMMIT,'period':'逐国保留原始条目资料年份','license':'US government public domain; mirror CC0-1.0','licenseUrl':f'https://github.com/factbook/factbook.json/blob/{COMMIT}/LICENSE.md','processing':note,'coverage':{'countries':len(results),'countriesWithPercentages':sum(bool(r['reportedGroups']) for r in results.values())},'alternativeToPew':'Pew 2020全表需账户且条款限制full/substantially full再发布，故未复制该全表。','alternativeSourceUrl':'https://www.pewresearch.org/about/terms-and-conditions/'},[archive],[out],{'valid':True,'countries':len(results),'missingOrExcluded':missing,'unmappedReportedGroups':unmapped_groups,'nonPopulationScopes':[r['countryId'] for r in results.values() if r['scope']!='population'],'noImplicitZeros':True,'noMidpoints':True})
 
 
@@ -447,8 +457,9 @@ def build_population():
         features.append({'type':'Feature','id':pid,'properties':p,'geometry':{'type':'Polygon','coordinates':[[[west,north],[west+.5,north],[west+.5,north-.5],[west,north-.5],[west,north]]]}})
     note='JRC GHS-POP R2023A 2020居住人口估计，原始30角秒格网人口数按像元中心归入0.5°并逐格求和；源边缘像元经度按日期变更线回绕。密度=格网总人口/WGS84椭球完整0.5°格网面积（包含格网内水域），单位人/km²。原始人口分配模型不是逐户实测，海岸及城市有概化。无有效源数据及纯海洋格网为null；Natural Earth50m陆地掩膜内有效格网0人口保留为0，真实正人口格网无论掩膜均保留。不是国家平均密度。'
     # Keep the vector grid for independent validation; the site uses raster tiles.
-    out=RESEARCH/'learning-population.geojson';grid=PUBLIC/'learning-population.json'
-    write(out,{'type':'FeatureCollection','sourceId':'ghs-pop-2020','year':2020,'resolutionDegrees':.5,'note':note,'features':features})
+    out=RESEARCH/'learning-population.geojson.gz';grid=PUBLIC/'learning-population.json'
+    vector={'type':'FeatureCollection','sourceId':'ghs-pop-2020','year':2020,'resolutionDegrees':.5,'note':note,'features':features}
+    out.write_bytes(gzip.compress((json.dumps(vector,ensure_ascii=False,separators=(',',':'),allow_nan=False)+'\n').encode(),compresslevel=9,mtime=0))
     data=[]
     for r in range(360):data.append([round(float(v),3) if valid[r,c] else None for c,v in enumerate(density[r])])
     write(grid,{'year':2020,'sourceId':'ghs-pop-2020','width':720,'height':360,'west':-180,'north':90,'resolutionDegrees':.5,'units':'people/km²','noData':None,'note':note,'values':data})
@@ -494,7 +505,7 @@ def build_population_tiles():
     source['processing'] += ' '+note if note not in source['processing'] else ''
     existing=json.loads((RESEARCH/'learning-validation.json').read_text())['checks']['ghs-pop-2020']
     existing['tiles']={'count':len(outputs)-1,'bytes':sum(p.stat().st_size for p in outputs if p.suffix=='.png'),'nativeDataResolutionDegrees':.5,'nearest':True,'visiblePixelsByZoom':visible_pixel_counts}
-    record(source,[RAW/'GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif',PUBLIC/'land.geojson'],[RESEARCH/'learning-population.geojson',grid_path,*outputs],existing)
+    record(source,[RAW/'GHS_POP_E2020_GLOBE_R2023A_4326_30ss_V1_0.tif',PUBLIC/'land.geojson'],[RESEARCH/'learning-population.geojson.gz',grid_path,*outputs],existing)
 
 
 if __name__=='__main__':

@@ -118,8 +118,8 @@ test('themes: collection members remain visible when a member is read and clicke
   await selectedGeometry(page)
   await expect(page.locator('.knowledge-panel')).toHaveClass(/embedded/)
   const point=await page.evaluate(()=>window.__terraAtlas!.map.getSource('selection')!.serialize() as {data:{features:{geometry:{type:string}}[]}})
-  expect(point.data.features).toHaveLength(1);expect(point.data.features[0].geometry.type).toBe('Point')
-  await expect(page.locator('.knowledge-panel')).toContainText('不将整个蒙古高原')
+  expect(point.data.features).toHaveLength(1);expect(point.data.features[0].geometry.type).toBe('MultiPolygon')
+  await expect(page.locator('.knowledge-panel')).toContainText('不是精确地貌界线或内蒙古自治区界线')
   await relations(page,chinaTerrainCount)
   await page.getByRole('combobox',{name:'切换主题成员'}).selectOption('loess-plateau');await selectedGeometry(page)
   await page.getByRole('button',{name:'主题全览',exact:true}).click();await relations(page,chinaTerrainCount)
@@ -182,10 +182,12 @@ test('themes: saved views, reload and share restore the theme, member and camera
   expect(actual.zoom).toBeCloseTo(expected.zoom,2);actual.center.forEach((coordinate,index)=>expect(coordinate).toBeCloseTo(expected.center[index],3))
 })
 
-test('themes: an old language and religion view restores one theme and an exact camera',async({page})=>{
+test('themes: legacy preferences preserve one overlay and an exact camera on the map homepage',async({page})=>{
   await page.addInitScript(()=>localStorage.setItem('terra-atlas-v1',JSON.stringify({favorites:['yangtze'],layers:{terrain:true,borders:true,religion:true,language:true},camera:{center:[105,33],zoom:4.25},view:'china'})))
   await page.goto('/?legacy-preferences=1');await baseReady(page);await sourceLoaded(page,'religion');await relations(page,0)
-  await expect(page.locator('.topic-reader')).toHaveAttribute('data-topic-id','map-religion')
+  await expect(page.locator('.app')).toHaveAttribute('data-study-screen','map')
+  await expect(page.locator('.topic-reader')).toHaveCount(0)
+  expect(await page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).topicId)).toBe('map-religion')
   expect(await page.evaluate(()=>window.__terraAtlas!.map.getZoom())).toBe(4.25)
   const state=await page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!))
   expect(state.favorites).toEqual(['yangtze']);expect(state.layers.language).toBe(false)
@@ -194,7 +196,7 @@ test('themes: an old language and religion view restores one theme and an exact 
 test('themes: a delayed collection load cannot restore the previous theme or move the new distribution view',async({page})=>{
   let release!:()=>void,requested!:()=>void
   const gate=new Promise<void>(resolve=>{release=resolve}),request=new Promise<void>(resolve=>{requested=resolve})
-  await page.route('**/data/regions.geojson',async route=>{requested();await gate;await route.continue()})
+  await page.route('**/data/regions.geojson{,.gz}',async route=>{requested();await gate;await route.continue()})
   try{
     await page.reload();await baseReady(page);await request
     await chooseTheme(page,'中国地形格局')
@@ -210,7 +212,7 @@ test('themes: a delayed collection load cannot restore the previous theme or mov
 test('themes: map positioning wins over a delayed theme fit while preserving its members',async({page})=>{
   let release!:()=>void,requested!:()=>void
   const gate=new Promise<void>(resolve=>{release=resolve}),request=new Promise<void>(resolve=>{requested=resolve})
-  await page.route('**/data/regions.geojson',async route=>{requested();await gate;await route.continue()})
+  await page.route('**/data/regions.geojson{,.gz}',async route=>{requested();await gate;await route.continue()})
   try{
     await page.reload();await baseReady(page);await request
     await chooseTheme(page,'中国地形格局')

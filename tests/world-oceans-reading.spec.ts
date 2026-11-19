@@ -1,5 +1,5 @@
 import {expect,test} from '@playwright/test'
-import {baseReady,selectedGeometry} from './map-readiness'
+import {studyReady as baseReady,selectedGeometry} from './map-readiness'
 
 const visibleReader='.topic-reading-page:not([hidden])'
 test.use({reducedMotion:'reduce'})
@@ -51,6 +51,15 @@ test('world geography: five oceans explain the current agreement and retain area
   await page.screenshot({path:info.outputPath('five-oceans-area-comparison.png')})
   await chart.getByRole('button',{name:/^南大洋，/}).click()
   await expect(page.locator('.knowledge-panel h2')).toContainText('南大洋')
+  await selectedGeometry(page)
+  await expect.poll(()=>page.evaluate(()=>{
+    const map=window.__terraAtlas!.map
+    return map.queryRenderedFeatures({layers:['selection-area']}).map(feature=>feature.properties?.id)
+  })).toContain('region-marine-ne-1159115037')
+  const extent=page.locator('.knowledge-panel .map-extent-description')
+  await extent.scrollIntoViewIfNeeded()
+  await expect(extent).toHaveAttribute('data-representation','area')
+  await expect(extent).toContainText('参考范围')
   await page.locator('.reading-return-button').click()
   await expect(reader.locator('h1')).toHaveText('五大洋')
 })
@@ -60,12 +69,12 @@ test('world geography: existing continent and region bookmarks remain separate a
   await page.goto('/');await baseReady(page)
   await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).savedTopics)).toEqual(['world-continents','world-regional-comparison'])
   await expect.poll(()=>page.evaluate(()=>JSON.parse(localStorage.getItem('terra-atlas-v1')!).readingProgress['world-regional-comparison']?.sectionId)).toBe('world-regional-comparison-section-1')
-  await page.getByRole('button',{name:'学主题',exact:true}).click()
+  await page.getByRole('link',{name:'学主题',exact:true}).click()
   // This first article opening downloads both the lazy reader and its JSON;
   // finish the real content request before checking the saved-state control.
   const [response]=await Promise.all([
     page.waitForResponse(response=>new URL(response.url()).pathname.endsWith('/reading/topics/world-regional-comparison.json')),
-    page.getByRole('button',{name:'阅读专题：世界区域比较',exact:true}).click(),
+    page.getByRole('link',{name:'阅读专题：世界区域比较',exact:true}).click(),
   ])
   expect(response.ok()).toBe(true)
   expect(await response.finished()).toBeNull()

@@ -16,11 +16,11 @@ export function applyReadingEdits(topics,articles){
     assert(index>=0,'Unknown editorial topic '+edited.id)
     const original=articles[index]
     const articleIdentity=({introduction,sections,parts,questions,presentation,updatedAt,...identity})=>identity
-    const sectionIdentity=({title,paragraphs,mediaIds,mediaPlacement,visuals,...identity})=>identity
+    const sectionIdentity=({title,paragraphs,mediaIds,mediaPlacement,mediaAfterParagraph,visuals,partId,continuation,...identity})=>original.parts?{...identity,partId}:identity
     const partIdentity=({description,...identity})=>identity
     assert.deepEqual(articleIdentity(edited),articleIdentity(original),edited.id+' metadata and sources preserved')
     assert.deepEqual(edited.sections.map(sectionIdentity).sort((a,b)=>a.id.localeCompare(b.id)),original.sections.map(sectionIdentity).sort((a,b)=>a.id.localeCompare(b.id)),edited.id+' chapter addresses and map cases preserved')
-    assert.deepEqual(edited.parts?.map(partIdentity).sort((a,b)=>a.id.localeCompare(b.id)),original.parts?.map(partIdentity).sort((a,b)=>a.id.localeCompare(b.id)),edited.id+' reading groups preserved')
+    if(original.parts)assert.deepEqual(edited.parts?.map(partIdentity).sort((a,b)=>a.id.localeCompare(b.id)),original.parts?.map(partIdentity).sort((a,b)=>a.id.localeCompare(b.id)),edited.id+' reading groups preserved')
     assert.equal(edited.questions.length,original.questions.length,edited.id+' review questions preserved')
     assert(edited.introduction.trim()&&edited.sections.every(section=>section.title.trim()&&section.paragraphs.length&&section.paragraphs.every(p=>typeof p==='string'&&p.trim().length>=20)),edited.id+' complete authored prose')
     const placedMedia=edited.sections.flatMap(section=>section.mediaIds||[])
@@ -41,6 +41,7 @@ export function applyReadingEdits(topics,articles){
     }
     articles[index]=edited
     topic.description=edited.introduction
+    topic.reading.chapters=edited.sections.filter(s=>!edited.parts?.some(part=>part.sectionId===s.id&&part.title===s.title)).map(({id,title})=>({id,title}))
     if(edited.parts)topic.reading.parts=structuredClone(edited.parts)
     topic.reading.minutes=Math.max(4,Math.round(edited.sections.reduce((n,s)=>n+s.paragraphs.join('').length,0)/320))
     topic.reading.highlights=[...edited.sections.slice(0,2).map(s=>s.paragraphs[0].split('。')[0]+'。'),edited.questions[0].answer]

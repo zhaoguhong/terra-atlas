@@ -83,7 +83,7 @@ const authoredRules: Record<string, PresentationRule> = {
   'earth-image-reading': {note:'地图阅读观察点与实际景观案例用于比较尺度、形态和影像证据。',caseNote:'专题示意图不伪装成遥感影像，地图点位也不代表拍摄覆盖范围。'},
   'china-plateaus': {
     note: '颜色区分四个高原；已核对的概化范围与同色定位点对应。',
-    caseNote: '内蒙古高原目前以参考点定位；自然区色面为概化标注参考范围。',
+    caseNote: '内蒙古高原依据已发表地貌分区图数字化；四处色面均为有来源的概化参考范围。',
     named: ['tibetan-plateau', 'loess-plateau', 'inner-mongolian-plateau', 'yunnan-guizhou-plateau'],
   },
   'china-plains': {
@@ -148,7 +148,7 @@ const authoredRules: Record<string, PresentationRule> = {
   },
   'world-sea-connections': {
     note: '不同符号与颜色区分海域、海峡和人工运河参考点。',
-    caseNote: '当前显示海域和通道参考点；点位不表示海域范围或真实航线。',
+    caseNote: '海洋、地中海与部分海峡显示概化标注参考面，其余通道保留参考点；色面不表示法定海界或真实航线。',
     classes: [
       { semantic: ocean, members: ['pacific-ocean', 'atlantic-ocean', 'indian-ocean', 'arctic-ocean', 'mediterranean'] },
       { semantic: strait, members: ['malacca-strait', 'gibraltar-strait', 'bering-strait'] },
@@ -172,7 +172,7 @@ const authoredRules: Record<string, PresentationRule> = {
   },
   'china-provinces': {
     note: '省区使用统一色面和边界，名称区分34个行政区；选中省区统一突出。',
-    caseNote: '台湾省当前以参考点定位；其他色面使用现有省级行政数据。',
+    caseNote: '台湾省、香港和澳门均在中国省级范围内；色面采用概化参考数据，源数据未收录的小岛不另行推绘。',
     fallback: { id: 'province', label: '省级行政区', color: TOPIC_MEMBER_COLOR },
   },
   'china-relief-steps': {
@@ -298,7 +298,7 @@ const authoredRules: Record<string, PresentationRule> = {
   },
   'world-polar-comparison': {
     note: '颜色区分北极、南极与北方森林对照案例；范围与参考点对应同色。',
-    caseNote: '南极洲有概化范围，其余使用参考点；海域点位不表示完整海域边界。',
+    caseNote: '南极洲与北冰洋、南大洋显示概化参考范围；北极地区和森林案例保留定位点，色面不表示当前海冰覆盖。',
     classes: [
       { semantic: { id: 'arctic', label: '北极地区与北冰洋', color: '#5794ad' }, members: ['arctic-region', 'arctic-ocean'] },
       { semantic: { id: 'antarctic', label: '南极洲与南大洋', color: '#8b82b4' }, members: ['antarctica', 'southern-ocean'] },
@@ -317,7 +317,7 @@ const authoredRules: Record<string, PresentationRule> = {
 
 // The published catalogue is authoritative: retired subjects have no runtime aliases.
 const mergedRules:Record<string,PresentationRule>={
-  'china-terrain':{note:'结合山系、地形参考范围与地点，观察中国整体地势；同类对象采用同色。',caseNote:'自然区域为概化标注参考范围；内蒙古高原目前以参考点定位，未核对独立范围的地点保留参考点。',classes:authoredRules['china-relief-steps'].classes!.map(group=>group.semantic.id==='basin'?{...group,members:[...group.members,'tarim-basin','junggar-basin']}:group)},
+  'china-terrain':{note:'结合山系、地形参考范围与地点，观察中国整体地势；同类对象采用同色。',caseNote:'自然区域采用有来源的概化参考范围；内蒙古高原按已发表地貌分区图数字化，尚无范围一致数据的平原与丘陵保留定位点。',classes:authoredRules['china-relief-steps'].classes!.map(group=>group.semantic.id==='basin'?{...group,members:[...group.members,'tarim-basin','junggar-basin']}:group)},
   'world-terrain':{note:'山系和地形用已有概化范围，山峰用三角形定位；先比较大陆骨架，再看具体地点。',caseNote:'峰顶点不表示山体范围，地形色面也不是精确地质边界。'},
   'landform-landscapes':{classes:[{semantic:landform,members:['hawaii-hotspot','mekong-delta-farming','sundarbans-mangroves']}],note:'河流、自然区与景观参考点帮助比较不同地貌的材料和形成过程。',caseNote:'自然区色面不等于岩性或地貌分布范围；新加入的文字案例不推测范围。'},
   'landform-processes':{note:'山地、河流与岩石景观点连接地表过程、岩石循环和丹霞案例。',caseNote:'地形范围不表示完整岩性或丹霞分布；具体景观保留参考点。'},
@@ -330,9 +330,9 @@ const mergedRules:Record<string,PresentationRule>={
   'world-ecosystems':{note:'土壤、森林、草原与湿地通过地点案例联系；同类参考使用同色。',caseNote:'案例点和地形范围不表示完整土壤、植被或生态系统分布。'},
   'agriculture-food':{note:'中国与世界的农田、灌区、牧区和供水城市提供生产与消费联系的案例。',caseNote:'参考点不是作物种植边界、产量图或调水线路。',classes:[{semantic:crop,members:['northeast-blacksoil','rice-farming','great-plains-wheat','mekong-delta-farming','kafa-coffee']},{semantic:irrigation,members:['hetao-irrigation']},{semantic:pasture,members:['xilingol-pasture','pampas']}]},
   'energy-industry':{note:'能源、矿产、产业与港口案例连接资源地、加工地和消费地。',caseNote:'地点不表示资源储量或完整产业范围；地形参照不表示矿区范围，当前未绘制输送网络。',classes:[...authoredRules['china-energy-resources'].classes!,...authoredRules['world-energy-industry'].classes!]},
-  'transport-trade':{note:'港口、枢纽、海峡和运河显示定位点，河道与已有区域提供自然背景。',caseNote:'参考点不代表真实航线、铁路线路或贸易流量。',classes:[{semantic:port,members:['rotterdam-port','singapore-port','ningbo-zhoushan-port']},{semantic:transport,members:['gotthard-rail','qinghai-tibet-railway','zhengzhou-transport']},{semantic:canal,members:['suez-canal','panama-canal']}]},
+  'transport-trade':{note:'港口、枢纽和运河使用定位点；已有海峡参考面、河道与区域提供自然背景。',caseNote:'参考点不代表真实航线、铁路线路或贸易流量。',classes:[{semantic:port,members:['rotterdam-port','singapore-port','ningbo-zhoushan-port']},{semantic:transport,members:['gotthard-rail','qinghai-tibet-railway','zhengzhou-transport']},{semantic:canal,members:['suez-canal','panama-canal']}]},
   'world-continents':{...authoredRules['world-continents']},
-  'world-oceans':{note:'不同颜色的参考点帮助辨认五大洋的位置；海洋相互连通。',caseNote:'参考点不表示大洋范围。南大洋采用IHO 2023年决议的南纬60°北界约定，地图不推测海洋分界。',named:['pacific-ocean','atlantic-ocean','indian-ocean','southern-ocean','arctic-ocean']},
+  'world-oceans':{note:'不同颜色的概化参考面帮助辨认五大洋的位置和展布；海洋相互连通。',caseNote:'色面采用Natural Earth海洋标注参考范围，不是完整水面或法定海界。南大洋正文采用IHO 2023年决议的南纬60°北界约定，图面保留各自注明的资料口径。',named:['pacific-ocean','atlantic-ocean','indian-ocean','southern-ocean','arctic-ocean']},
   'world-regional-comparison':{note:'区域参考点与已绑定的国家范围用于比较位置、自然环境和生产联系。',caseNote:'宽泛区域使用参考点，不以国家范围代替区域边界。'},
   'weather-systems':{note:'北京、香港与印度季风区提供海陆、地形和季节背景。',caseNote:'地图不显示当前天气、锋面、台风路径或预警，天气过程见专题示意。'},
   'climate-change':{note:'北极、高原与三角洲案例用于定位不同环境和人类活动。',caseNote:'地图不是变化趋势或淹没预测；1991—2020气候分类仅为长期背景。'},

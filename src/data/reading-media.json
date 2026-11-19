@@ -148,7 +148,7 @@
   },
   {
     "id": "china-plateaus-illustration",
-    "path": "media/reading/china-plateaus-illustration.jpg",
+    "path": "media/reading/china-plateaus-illustration.webp",
     "kind": "illustration",
     "title": "中国四大高原位置示意",
     "alt": "中国四大高原位置示意。青藏高原在西南部，内蒙古高原在北部，黄土高原在其南侧，云贵高原在西南地区东部。四色用于辨认相对位置；色块和地形纹理均为示意，不代表精确边界或实测高程。",
@@ -168,11 +168,11 @@
       "loess-plateau",
       "yunnan-guizhou-plateau"
     ],
-    "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。"
+    "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "china-basins-illustration",
-    "path": "media/reading/china-basins-illustration.jpg",
+    "path": "media/reading/china-basins-illustration.webp",
     "kind": "illustration",
     "title": "中国四大盆地位置示意",
     "alt": "中国四大盆地位置示意。位置示意：天山南北分别是塔里木、准噶尔盆地；柴达木盆地位于青藏高原东北部，四川盆地位于高原东侧。色块用于辨认相对位置，不代表精确边界。",
@@ -192,11 +192,11 @@
       "qaidam-basin",
       "sichuan-basin"
     ],
-    "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。"
+    "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "china-plains-illustration",
-    "path": "media/reading/china-plains-illustration.jpg",
+    "path": "media/reading/china-plains-illustration.webp",
     "kind": "illustration",
     "title": "中国三大平原位置示意",
     "alt": "中国三大平原位置示意。位置示意：沿东部由北向南辨认东北、华北和长江中下游平原。色块概括位置关系，长江中下游的低地由多片沿江、沿湖平原组成，并非一整块连续平地。",
@@ -215,11 +215,11 @@
       "north-china-plain",
       "yangtze-middle-lower-plain"
     ],
-    "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。"
+    "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "china-mountains-illustration",
-    "path": "media/reading/china-mountains-illustration.jpg",
+    "path": "media/reading/china-mountains-illustration.webp",
     "kind": "illustration",
     "title": "中国主要山脉走向示意",
     "alt": "中国主要山脉走向示意。本图选择文中讨论的六条山脉，突出它们与相邻高原、盆地和平原的位置关系。虚线仅示主要走向，不代表实测山脊线或山脉完整范围。",
@@ -241,11 +241,11 @@
       "qinling",
       "greater-khingan"
     ],
-    "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。"
+    "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "polar-worlds-illustration",
-    "path": "media/reading/polar-worlds-illustration.jpg",
+    "path": "media/reading/polar-worlds-illustration.webp",
     "kind": "illustration",
     "title": "北极与南极的海陆、冰体对照",
     "alt": "北极与南极的海陆、冰体对照。北极以海洋为中心，南极以大陆为主体。海冰漂浮在海水上，冰盖覆盖陆地，冰架是陆地冰向海伸出的漂浮部分。本图为关系示意，地形与冰厚均非等比例。",
@@ -260,11 +260,11 @@
     "width": 1536,
     "height": 1024,
     "placeIds": [],
-    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。"
+    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "watershed-landscape-illustration",
-    "path": "media/reading/watershed-landscape-illustration.jpg",
+    "path": "media/reading/watershed-landscape-illustration.webp",
     "kind": "illustration",
     "title": "水的地上与地下旅程",
     "alt": "水的地上与地下旅程。降水进入河流，也能下渗到土壤和岩层。地下水主要储存在孔隙与裂隙中，与地表水相互联系。图为水循环情景示意，不对应真实流域；蒸腾等过程在此省略。",
@@ -279,11 +279,11 @@
     "width": 1536,
     "height": 1024,
     "placeIds": [],
-    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。"
+    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "karst-landscape-illustration",
-    "path": "media/reading/karst-landscape-illustration.jpg",
+    "path": "media/reading/karst-landscape-illustration.webp",
     "kind": "illustration",
     "title": "喀斯特的地表与地下",
     "alt": "喀斯特的地表与地下。水沿裂隙进入可溶岩层，溶蚀扩大通道，形成落水洞、溶洞和泉等相连的地貌。图为多种形态的组合示意，不能用于推断具体洞穴的大小与水路。",
@@ -298,11 +298,11 @@
     "width": 1536,
     "height": 1024,
     "placeIds": [],
-    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。"
+    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "river-landscape-illustration",
-    "path": "media/reading/river-landscape-illustration.jpg",
+    "path": "media/reading/river-landscape-illustration.webp",
     "kind": "illustration",
     "title": "从峡谷到平原与三角洲",
     "alt": "从峡谷到平原与三角洲。河流连接山地、平原和海洋，侵蚀、搬运与堆积共同塑造河谷、曲流和三角洲。本图是地貌组合示意，不对应一条真实河道，也不意味着所有河流都具备这些形态。",
@@ -317,11 +317,11 @@
     "width": 1536,
     "height": 1024,
     "placeIds": [],
-    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。"
+    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "ecosystem-landscapes-illustration",
-    "path": "media/reading/ecosystem-landscapes-illustration.jpg",
+    "path": "media/reading/ecosystem-landscapes-illustration.webp",
     "kind": "illustration",
     "title": "森林、草原与荒漠景观",
     "alt": "森林、草原与荒漠景观。森林、草原和荒漠的植被覆盖、根系与地表形态不同。这是三种景观的独立示意，并非真实地理剖面或固定的演替顺序；图中不表示气候分类阈值。",
@@ -336,11 +336,11 @@
     "width": 1536,
     "height": 1024,
     "placeIds": [],
-    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。"
+    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "city-water-landscape-illustration",
-    "path": "media/reading/city-water-landscape-illustration.jpg",
+    "path": "media/reading/city-water-landscape-illustration.webp",
     "kind": "illustration",
     "title": "雨水穿过城市的不同路径",
     "alt": "雨水穿过城市的不同路径。硬化地面使更多雨水形成径流，绿地和雨水花园则可暂存雨水并促进下渗。排水管网与河道共同影响雨水去向。概念示意不对应具体城市，也不是工程设计图。",
@@ -356,11 +356,11 @@
     "width": 1536,
     "height": 1024,
     "placeIds": [],
-    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。"
+    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "glacier-valley-illustration",
-    "path": "media/reading/glacier-valley-illustration.jpg",
+    "path": "media/reading/glacier-valley-illustration.webp",
     "kind": "illustration",
     "title": "冰川与它留下的谷地",
     "alt": "冰川与它留下的谷地。左图表现冰川占据谷地，右图表现退缩后暴露的U形谷和冰碛。两幅是同一谷地的两种概念状态，不是特定冰川的历史复原，也不表示变化所需时间。",
@@ -375,11 +375,11 @@
     "width": 1536,
     "height": 1024,
     "placeIds": [],
-    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。"
+    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "coast-landforms-illustration",
-    "path": "media/reading/coast-landforms-illustration.jpg",
+    "path": "media/reading/coast-landforms-illustration.webp",
     "kind": "illustration",
     "title": "岩岸侵蚀与沙岸堆积",
     "alt": "岩岸侵蚀与沙岸堆积。岩岸上可见海蚀崖、海蚀拱与海蚀柱；沙质岸段可形成沙嘴及受其遮蔽的潟湖。两幅为独立的地貌情景示意，并非同一岸线先后变化的两个阶段。",
@@ -394,11 +394,11 @@
     "width": 1536,
     "height": 1024,
     "placeIds": [],
-    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。"
+    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "agriculture-landscapes-illustration",
-    "path": "media/reading/agriculture-landscapes-illustration.jpg",
+    "path": "media/reading/agriculture-landscapes-illustration.webp",
     "kind": "illustration",
     "title": "平原、梯田与草地的利用",
     "alt": "平原、梯田与草地的利用。平原耕作、坡地梯田和草地放牧利用了不同的土地条件。三幅为生产景观示意，不对应指定产区；作物和经营方式仍受水热、土壤、水源与管理影响。",
@@ -414,11 +414,11 @@
     "width": 1536,
     "height": 1024,
     "placeIds": [],
-    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。"
+    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "rain-shadow-landscape-illustration",
-    "path": "media/reading/rain-shadow-landscape-illustration.jpg",
+    "path": "media/reading/rain-shadow-landscape-illustration.webp",
     "kind": "illustration",
     "title": "迎风坡与背风坡",
     "alt": "迎风坡与背风坡。湿润空气沿迎风坡抬升、冷却，可能形成降水；越过山地后下沉，空气可变得较暖较干。图为地形降水概念示意，是否出现明显雨影取决于风向、水汽和山体条件。",
@@ -433,7 +433,7 @@
     "width": 1536,
     "height": 1024,
     "placeIds": [],
-    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。"
+    "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。"
   },
   {
     "id": "diagram-plateaus",
@@ -537,11 +537,11 @@
     "id": "diagram-rain-shadow",
     "path": "media/reading/rain-shadow.svg",
     "kind": "diagram",
-    "title": "气流越过山地时会发生什么",
-    "caption": "湿空气抬升冷却，有利于迎风侧降水；另一侧可能较干。实际差异还取决于气流方向、季节和区域环流。",
-    "alt": "气流越过山地时会发生什么。湿空气抬升冷却，有利于迎风侧降水；另一侧可能较干。实际差异还取决于气流方向、季节和区域环流。",
-    "width": 1000,
-    "height": 560,
+    "title": "湿空气越过一座山",
+    "caption": "空气沿迎风坡上升，膨胀、冷却。水汽充足时会成云降雨。越过山脊后，空气沿背风坡下沉并变暖，相对湿度可能下降。",
+    "alt": "湿空气越过一座山。空气沿迎风坡上升，膨胀、冷却。水汽充足时会成云降雨。越过山脊后，空气沿背风坡下沉并变暖，相对湿度可能下降。",
+    "width": 540,
+    "height": 300,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -670,11 +670,11 @@
     "id": "diagram-steps",
     "path": "media/reading/steps.svg",
     "kind": "diagram",
-    "title": "地势阶梯：区域概括与局部起伏",
-    "caption": "三级阶梯概括中国西高东低的大势。此图没有指定剖面路线，也不代表每处地面的真实形状。",
-    "alt": "地势阶梯：区域概括与局部起伏。三级阶梯概括中国西高东低的大势。此图没有指定剖面路线，也不代表每处地面的真实形状。",
-    "width": 1000,
-    "height": 560,
+    "title": "从西部高地到东部低地",
+    "caption": "从西向东看，我国地势大体降低。每一级内部仍有山地和谷地。示意线概括区域高低，没有指定实测剖面路线。",
+    "alt": "从西部高地到东部低地。从西向东看，我国地势大体降低。每一级内部仍有山地和谷地。示意线概括区域高低，没有指定实测剖面路线。",
+    "width": 540,
+    "height": 288,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -736,11 +736,11 @@
     "id": "diagram-river-system",
     "path": "media/reading/river-system.svg",
     "kind": "diagram",
-    "title": "从支流到干流，再到出口",
-    "caption": "河网连接集水区。蓝线表示示意河道，虚线表示示意流域范围，不对应任何真实河流的边界。",
-    "alt": "从支流到干流，再到出口。河网连接集水区。蓝线表示示意河道，虚线表示示意流域范围，不对应任何真实河流的边界。",
-    "width": 1000,
-    "height": 560,
+    "title": "河网怎样汇向同一个出口",
+    "caption": "细线表示支流，较粗的线表示干流。分水岭分隔相邻流域，流域内地表径流汇向共同的出口。虚线为概念范围。",
+    "alt": "河网怎样汇向同一个出口。细线表示支流，较粗的线表示干流。分水岭分隔相邻流域，流域内地表径流汇向共同的出口。虚线为概念范围。",
+    "width": 540,
+    "height": 319,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -790,11 +790,11 @@
     "id": "diagram-lake-balance",
     "path": "media/reading/lake-balance.svg",
     "kind": "diagram",
-    "title": "湖泊的来水、耗水与储量",
-    "caption": "湖面降水、河流和地下水可带来水；蒸发、出流等过程可带走水。各项收支决定储水变化。",
-    "alt": "湖泊的来水、耗水与储量。湖面降水、河流和地下水可带来水；蒸发、出流等过程可带走水。各项收支决定储水变化。",
-    "width": 1000,
-    "height": 560,
+    "title": "湖水从哪里来，又怎样离开",
+    "caption": "两类湖泊都能接收河水和降水，也会蒸发。外流湖还可经出湖河排水，封闭湖盆缺少这一河流出口。地下水也可能与湖泊交换。",
+    "alt": "湖水从哪里来，又怎样离开。两类湖泊都能接收河水和降水，也会蒸发。外流湖还可经出湖河排水，封闭湖盆缺少这一河流出口。地下水也可能与湖泊交换。",
+    "width": 540,
+    "height": 308,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -857,11 +857,11 @@
     "id": "diagram-climate-reading",
     "path": "media/reading/climate-reading.svg",
     "kind": "diagram",
-    "title": "一年的温度与降水，要一起读",
-    "caption": "曲线与柱形仅示意阅读方法，不代表任何地点的气候数据。实际月序列见地图中的有来源数据图。",
-    "alt": "一年的温度与降水，要一起读。曲线与柱形仅示意阅读方法，不代表任何地点的气候数据。实际月序列见地图中的有来源数据图。",
-    "width": 1000,
-    "height": 560,
+    "title": "把雨季和热季放在一起看",
+    "caption": "逐月比较。这个示例里，年中几个月的降水柱更高，气温曲线也在这段时间达到高位。两种符号分别表示降水和温度，图中没有实测数值。",
+    "alt": "把雨季和热季放在一起看。逐月比较。这个示例里，年中几个月的降水柱更高，气温曲线也在这段时间达到高位。两种符号分别表示降水和温度，图中没有实测数值。",
+    "width": 540,
+    "height": 304,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -956,11 +956,11 @@
     "id": "diagram-population",
     "path": "media/reading/population.svg",
     "kind": "diagram",
-    "title": "总量、密度与空间分布",
-    "caption": "左侧与右侧各放置十二个示意人口点，面积不同，密度便不同。示例不对应任何真实地区。",
-    "alt": "总量、密度与空间分布。左侧与右侧各放置十二个示意人口点，面积不同，密度便不同。示例不对应任何真实地区。",
-    "width": 1000,
-    "height": 560,
+    "title": "同样的人数，不同的密度",
+    "caption": "两个区域各有十二个点。右边覆盖的面积较大，平均每单位面积的人数就较少。点数是示例，不对应实际地区。",
+    "alt": "同样的人数，不同的密度。两个区域各有十二个点。右边覆盖的面积较大，平均每单位面积的人数就较少。点数是示例，不对应实际地区。",
+    "width": 540,
+    "height": 296,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -981,11 +981,11 @@
     "id": "diagram-culture-statistics",
     "path": "media/reading/culture-statistics.svg",
     "kind": "diagram",
-    "title": "总体比例不能代替个人信息",
-    "caption": "示意条带包含多个群体。用一种主色概括地区，会隐藏内部构成；本图没有使用实际宗教比例。",
-    "alt": "总体比例不能代替个人信息。示意条带包含多个群体。用一种主色概括地区，会隐藏内部构成；本图没有使用实际宗教比例。",
-    "width": 1000,
-    "height": 560,
+    "title": "同一地区可以包含多种归属",
+    "caption": "每个方块代表同样的人数，三个颜色表示三组示例。若只按人数最多的一组给整个地区着色，其余两组仍生活在这里。图中没有采用真实地区的宗教统计。",
+    "alt": "同一地区可以包含多种归属。每个方块代表同样的人数，三个颜色表示三组示例。若只按人数最多的一组给整个地区着色，其余两组仍生活在这里。图中没有采用真实地区的宗教统计。",
+    "width": 540,
+    "height": 273,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1053,11 +1053,11 @@
     "id": "diagram-food-water",
     "path": "media/reading/food-water.svg",
     "kind": "diagram",
-    "title": "从水土条件到粮食与城市",
-    "caption": "农业生产、运输储存和城市消费相互连接。粮食产地与人口集中地并不一定重合。",
-    "alt": "从水土条件到粮食与城市。农业生产、运输储存和城市消费相互连接。粮食产地与人口集中地并不一定重合。",
-    "width": 1000,
-    "height": 560,
+    "title": "粮食离开农田以后",
+    "caption": "作物长成后，收获、储存、加工和运输仍会影响城市能够得到的粮食。沿着来路看，城里吃的粮食也联系着产地的土地和水源。",
+    "alt": "粮食离开农田以后。作物长成后，收获、储存、加工和运输仍会影响城市能够得到的粮食。沿着来路看，城里吃的粮食也联系着产地的土地和水源。",
+    "width": 540,
+    "height": 314,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1096,11 +1096,11 @@
     "id": "diagram-soil",
     "path": "media/reading/soil.svg",
     "kind": "diagram",
-    "title": "土壤剖面：材料、生物与水共同作用",
-    "caption": "从表层向下观察颜色、根系与结构。并非每处土壤都具有图中的完整层次，深度也不按比例。",
-    "alt": "土壤剖面：材料、生物与水共同作用。从表层向下观察颜色、根系与结构。并非每处土壤都具有图中的完整层次，深度也不按比例。",
-    "width": 1000,
-    "height": 560,
+    "title": "地面以下的土层",
+    "caption": "表层可见根系与有机物。水向下渗时，也能把一些溶解物和细颗粒带入下层。更深处的母质为土壤发育提供矿物材料。不同地点土层的厚度、颜色和分层会变化。",
+    "alt": "地面以下的土层。表层可见根系与有机物。水向下渗时，也能把一些溶解物和细颗粒带入下层。更深处的母质为土壤发育提供矿物材料。不同地点土层的厚度、颜色和分层会变化。",
+    "width": 540,
+    "height": 314,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1125,11 +1125,11 @@
     "id": "diagram-energy",
     "path": "media/reading/energy.svg",
     "kind": "diagram",
-    "title": "资源、生产与用能之间的联系",
-    "caption": "资源分布不等于消费分布。输送与调节把不同时间、不同地点的供给和需求接起来。",
-    "alt": "资源、生产与用能之间的联系。资源分布不等于消费分布。输送与调节把不同时间、不同地点的供给和需求接起来。",
-    "width": 1000,
-    "height": 560,
+    "title": "装机容量与实际发电量",
+    "caption": "装机容量给出额定功率，发电量还取决于实际运行功率和持续时间。图中使用相同设备的两个假设时段，便于比较。",
+    "alt": "装机容量与实际发电量。装机容量给出额定功率，发电量还取决于实际运行功率和持续时间。图中使用相同设备的两个假设时段，便于比较。",
+    "width": 540,
+    "height": 304,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1192,11 +1192,11 @@
     "id": "diagram-seasons",
     "path": "media/reading/seasons.svg",
     "kind": "diagram",
-    "title": "地轴倾斜使两半球季节相反",
-    "caption": "两幅地球示意保持地轴方向一致。左侧北半球朝向太阳，右侧北半球背离太阳；距离与尺寸不按比例。",
-    "alt": "地轴倾斜使两半球季节相反。两幅地球示意保持地轴方向一致。左侧北半球朝向太阳，右侧北半球背离太阳；距离与尺寸不按比例。",
-    "width": 1000,
-    "height": 560,
+    "title": "同一根倾斜的地轴",
+    "caption": "两幅地球的北极都指向右上方。左边北半球朝向太阳，北半球白昼长。半年后地球绕到右边，北半球背向太阳，白昼变短。地球、太阳的大小和距离均为示意。",
+    "alt": "同一根倾斜的地轴。两幅地球的北极都指向右上方。左边北半球朝向太阳，北半球白昼长。半年后地球绕到右边，北半球背向太阳，白昼变短。地球、太阳的大小和距离均为示意。",
+    "width": 540,
+    "height": 300,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1231,11 +1231,11 @@
     "id": "diagram-plates",
     "path": "media/reading/plates.svg",
     "kind": "diagram",
-    "title": "板块边界的三种基本相对运动",
-    "caption": "汇聚、张裂和转换概括相对运动方向。真实边界结构更复杂，图中不表示具体板块的位置。",
-    "alt": "板块边界的三种基本相对运动。汇聚、张裂和转换概括相对运动方向。真实边界结构更复杂，图中不表示具体板块的位置。",
-    "width": 1000,
-    "height": 560,
+    "title": "板块边界的三种运动",
+    "caption": "俯视同一条边界两侧的地块。汇聚时，两侧相互靠近。张裂时，两侧相互远离。沿转换边界，两侧平行于边界反向滑动。",
+    "alt": "板块边界的三种运动。俯视同一条边界两侧的地块。汇聚时，两侧相互靠近。张裂时，两侧相互远离。沿转换边界，两侧平行于边界反向滑动。",
+    "width": 540,
+    "height": 340,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1260,11 +1260,11 @@
     "id": "diagram-region-method",
     "path": "media/reading/region-method.svg",
     "kind": "diagram",
-    "title": "认识一个地区，可以顺着这条线",
-    "caption": "位置、自然条件与人类活动相互联系。区域比较使用相同问题，再回到具体地点检查内部差异。",
-    "alt": "认识一个地区，可以顺着这条线。位置、自然条件与人类活动相互联系。区域比较使用相同问题，再回到具体地点检查内部差异。",
-    "width": 1000,
-    "height": 560,
+    "title": "怎样把两个地区放在一起比较",
+    "caption": "先明确所比较的地区范围，再看水、地形等条件怎样影响土地使用，沿河流或交通线追踪两个地区如何联系。两地都用同一组问题，差异才有明确含义。",
+    "alt": "怎样把两个地区放在一起比较。先明确所比较的地区范围，再看水、地形等条件怎样影响土地使用，沿河流或交通线追踪两个地区如何联系。两地都用同一组问题，差异才有明确含义。",
+    "width": 540,
+    "height": 314,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1411,11 +1411,11 @@
     "id": "diagram-polar",
     "path": "media/reading/polar.svg",
     "kind": "diagram",
-    "title": "北极与南极：先分清海冰与陆地冰",
-    "caption": "北极以海洋为中心，南极以大陆为主体。图为剖面概括，冰体厚度与地形不按比例。",
-    "alt": "北极与南极：先分清海冰与陆地冰。北极以海洋为中心，南极以大陆为主体。图为剖面概括，冰体厚度与地形不按比例。",
-    "width": 1000,
-    "height": 560,
+    "title": "海冰浮在水上，冰盖覆在陆上",
+    "caption": "左侧的海冰由海水冻结形成，漂在北冰洋上。右侧的南极冰盖来自陆上多年积雪，压实成冰后缓慢向海岸流动。两极都有海冰。",
+    "alt": "海冰浮在水上，冰盖覆在陆上。左侧的海冰由海水冻结形成，漂在北冰洋上。右侧的南极冰盖来自陆上多年积雪，压实成冰后缓慢向海岸流动。两极都有海冰。",
+    "width": 540,
+    "height": 305,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1701,27 +1701,18 @@
     "id": "diagram-water-cycle",
     "path": "media/reading/water-cycle.svg",
     "kind": "diagram",
-    "title": "水循环：不同储存位置之间的移动",
-    "caption": "箭头表示部分主要路径，不代表固定流量。地表水、土壤水与地下水彼此联系，停留时间各不相同。",
-    "alt": "水循环：不同储存位置之间的移动。箭头表示部分主要路径，不代表固定流量。地表水、土壤水与地下水彼此联系，停留时间各不相同。",
-    "width": 1000,
-    "height": 560,
+    "title": "从海面到陆地",
+    "caption": "海面蒸发的水汽可随风到达陆地。落到山坡上的雨，一部分沿地表流入河海，另一部分渗进土里。陆地上的水也会经蒸发和植物蒸腾回到空气中。",
+    "alt": "海面上方的箭头向上，再随风指向山地上空的云。雨从云中落下，山坡上的两支箭头分别顺坡流向海面和向下进入土层。",
+    "width": 540,
+    "height": 335,
+    "sourceUrls": [
+      "https://www.usgs.gov/special-topics/water-science-school/water-cycle"
+    ],
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
-    "sourceUrl": "https://www.usgs.gov/special-topics/water-science-school/water-cycle",
-    "sourceUrls": [
-      "https://www.usgs.gov/special-topics/water-science-school/water-cycle",
-      "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater",
-      "https://slt.nx.gov.cn/xxgk_281/fdzdgknr/slkp/jhzl/202104/t20210409_2719797.html",
-      "https://slj.cq.gov.cn/ztzl_250/hzzjsst/tzgg_24017/201707/t20170705_6080714.html",
-      "https://www.igsnrr.cas.cn/cbkx/kpyd/zgdl/cnszy/202009/t20200910_5692408.html",
-      "https://www.igsnrr.cas.cn/cbkx/kpyd/dlzs/land/202009/t20200910_5692510.html",
-      "https://www.cas.cn/cm/202308/t20230817_4964150.shtml",
-      "https://igg.cas.cn/hejl/jldt/201510/t20151029_4450452.html",
-      "https://whc.unesco.org/en/list/1248/",
-      "https://whc.unesco.org/en/list/1248/maps/"
-    ]
+    "sourceUrl": "https://www.usgs.gov/special-topics/water-science-school/water-cycle"
   },
   {
     "id": "diagram-hazards",
@@ -1756,11 +1747,11 @@
     "id": "diagram-migration",
     "path": "media/reading/migration.svg",
     "kind": "diagram",
-    "title": "迁入、迁出与净迁移",
-    "caption": "双向人口流动可以同时发生。净迁移是迁入减迁出，净值小不代表总流动小；本图没有实际流量。",
-    "alt": "迁入、迁出与净迁移。双向人口流动可以同时发生。净迁移是迁入减迁出，净值小不代表总流动小；本图没有实际流量。",
-    "width": 1000,
-    "height": 560,
+    "title": "迁入与迁出要分开数",
+    "caption": "从乙地看，甲到乙是迁入，乙到甲是迁出。同期迁入人数减去迁出人数，得到乙地的净迁移人数。两个方向都很活跃时，净值仍可能接近零。",
+    "alt": "迁入与迁出要分开数。从乙地看，甲到乙是迁入，乙到甲是迁出。同期迁入人数减去迁出人数，得到乙地的净迁移人数。两个方向都很活跃时，净值仍可能接近零。",
+    "width": 540,
+    "height": 281,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1807,11 +1798,11 @@
     "id": "diagram-weather-fronts",
     "path": "media/reading/weather-fronts.svg",
     "kind": "diagram",
-    "title": "冷锋：冷空气推进，暖空气被抬升",
-    "caption": "理想横剖面，展示相对冷暖与抬升。降雨还需要水汽等条件；不是某次天气系统的实测图。",
-    "alt": "冷锋：冷空气推进，暖空气被抬升。理想横剖面，展示相对冷暖与抬升。降雨还需要水汽等条件；不是某次天气系统的实测图。",
-    "width": 1000,
-    "height": 560,
+    "title": "冷空气怎样抬起暖空气",
+    "caption": "冷锋推进时，较密的冷空气贴近地面向前伸展，暖空气沿着倾斜的交界面上升。上升有利于冷却成云，能否降雨还取决于水汽等条件。",
+    "alt": "冷空气怎样抬起暖空气。冷锋推进时，较密的冷空气贴近地面向前伸展，暖空气沿着倾斜的交界面上升。上升有利于冷却成云，能否降雨还取决于水汽等条件。",
+    "width": 540,
+    "height": 295,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1836,11 +1827,11 @@
     "id": "diagram-climate-energy",
     "path": "media/reading/climate-energy.svg",
     "kind": "diagram",
-    "title": "温室效应：地球与大气交换能量",
-    "caption": "箭头仅表示部分能量传递方向，长度和粗细不代表测量值。温室气体吸收并向各方向发射红外辐射。",
-    "alt": "温室效应：地球与大气交换能量。箭头仅表示部分能量传递方向，长度和粗细不代表测量值。温室气体吸收并向各方向发射红外辐射。",
-    "width": 1000,
-    "height": 560,
+    "title": "地面放出的热量去了哪里",
+    "caption": "太阳辐射使地面增温。地面向上发出红外辐射，一部分穿过大气到达太空，另一部分被温室气体吸收。大气也向各方向发出红外辐射，包括向下回到地面。",
+    "alt": "地面放出的热量去了哪里。太阳辐射使地面增温。地面向上发出红外辐射，一部分穿过大气到达太空，另一部分被温室气体吸收。大气也向各方向发出红外辐射，包括向下回到地面。",
+    "width": 540,
+    "height": 324,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1866,11 +1857,11 @@
     "id": "diagram-upwelling",
     "path": "media/reading/upwelling.svg",
     "kind": "diagram",
-    "title": "沿岸上升流：表层离岸，深水补充",
-    "caption": "理想海岸横剖面。沿岸风与地球自转共同作用，可使表层海水离岸，较深的冷水上升补充并带来营养物质。箭头不表示实际速度或地理范围。",
-    "alt": "沿岸上升流：表层离岸，深水补充。理想海岸横剖面。沿岸风与地球自转共同作用，可使表层海水离岸，较深的冷水上升补充并带来营养物质。箭头不表示实际速度或地理范围。",
-    "width": 1000,
-    "height": 560,
+    "title": "海岸边的冷水从哪里来",
+    "caption": "在合适的沿岸风和地球自转条件下，表层海水可向离岸方向移动。较深处的水随之上升，常把低温、富含营养物质的海水带到近海面。",
+    "alt": "海岸边的冷水从哪里来。在合适的沿岸风和地球自转条件下，表层海水可向离岸方向移动。较深处的水随之上升，常把低温、富含营养物质的海水带到近海面。",
+    "width": 540,
+    "height": 302,
     "author": "山河图",
     "license": "CC BY 4.0",
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
@@ -1878,6 +1869,58 @@
     "sourceUrls": [
       "https://oceanservice.noaa.gov/facts/upwelling.html"
     ]
+  },
+  {
+    "id": "diagram-canal-lock",
+    "path": "media/reading/canal-lock.svg",
+    "kind": "diagram",
+    "title": "船怎样通过一级船闸",
+    "caption": "上行时，船先从低水位一侧进入。关闸后，水经输水通道进入闸室，船随水面浮高。待闸内水面与上游齐平，才打开上游闸门。图中深色竖线表示关闭的闸门。",
+    "alt": "船怎样通过一级船闸。上行时，船先从低水位一侧进入。关闸后，水经输水通道进入闸室，船随水面浮高。待闸内水面与上游齐平，才打开上游闸门。图中深色竖线表示关闭的闸门。",
+    "width": 540,
+    "height": 370,
+    "author": "山河图",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceUrl": "https://pancanal.com/en/history-of-the-panama-canal/",
+    "sourceUrls": [
+      "https://pancanal.com/en/history-of-the-panama-canal/"
+    ]
+  },
+  {
+    "id": "diagram-rain-infiltration",
+    "path": "media/reading/rain-infiltration.svg",
+    "kind": "diagram",
+    "title": "同一场雨，两种地面",
+    "caption": "左侧的柏油路很难透水，水顺路面流走。右侧的雨水能渗进疏松的土里。大雨时，草地上也会有水沿地面流走。",
+    "alt": "相同的雨落在左右两块缓坡上。左边的地面有连续的柏油层，箭头沿路面向低处走。右边长着草，箭头穿过地表，进入有孔隙的土层。",
+    "width": 540,
+    "height": 325,
+    "sourceUrls": [
+      "https://www.usgs.gov/water-science-school/science/infiltration-and-water-cycle"
+    ],
+    "author": "山河图",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceUrl": "https://www.usgs.gov/water-science-school/science/infiltration-and-water-cycle"
+  },
+  {
+    "id": "diagram-groundwater-river",
+    "path": "media/reading/groundwater-river.svg",
+    "kind": "diagram",
+    "title": "地下水怎样补给河流",
+    "caption": "河岸的砂砾层与河床相通，地下水面向河边倾斜，水便可从饱水层渗入河道。蓝色区域表示孔隙中充满水的地层。",
+    "alt": "河谷横剖面中，两岸的地下水面向中间降低，与河面相接。地下水面下方仍有砂砾，两支箭头从这些饱水砂砾指向较低的河床。",
+    "width": 540,
+    "height": 335,
+    "sourceUrls": [
+      "https://www.usgs.gov/water-science-school/science/rivers-contain-groundwater",
+      "https://www.usgs.gov/water-science-school/science/groundwater-what-groundwater"
+    ],
+    "author": "山河图",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceUrl": "https://www.usgs.gov/water-science-school/science/rivers-contain-groundwater"
   },
   {
     "author": "山河图",
@@ -6130,7 +6173,7 @@
       },
       {
         "path": "src/data/knowledge.json",
-        "sha256": "55fa0a29646417acd0b762e8885fa6b211bcf3ce0900e9c9f46d0e7c6812e6bd",
+        "sha256": "75ac121698c429d36db6c2b18da5ce81c70597008c4d8581baa18bb71ff69049",
         "featureIds": [
           "asia-continent",
           "africa-continent",
@@ -7617,7 +7660,7 @@
       },
       {
         "path": "public/data/regions.geojson",
-        "sha256": "13aafdba4e03aa2b27b2c185fc9ebfdd464e78df0e76933978e892aac60d1418",
+        "sha256": "a5c2d79e9761926e96a4d1955cd1e920626e157402034bcc67bc9721460fd39e",
         "featureIds": [
           "region-1159104311",
           "region-1159104309",
@@ -7628,7 +7671,7 @@
       },
       {
         "path": "src/data/feature-bindings.json",
-        "sha256": "2ecebcadbfb84b4cc6b23afb2ed314198dbf32045d8b13e92e0ea6bf91e80ce7",
+        "sha256": "79a2a54e164b223c74c67fa73b79aced057df2b03a158962cd0208670f591c5f",
         "featureIds": [
           "rockies",
           "andes",
@@ -7639,7 +7682,7 @@
       },
       {
         "path": "src/data/knowledge.json",
-        "sha256": "55fa0a29646417acd0b762e8885fa6b211bcf3ce0900e9c9f46d0e7c6812e6bd",
+        "sha256": "75ac121698c429d36db6c2b18da5ce81c70597008c4d8581baa18bb71ff69049",
         "featureIds": [
           "rockies",
           "andes",
@@ -9123,7 +9166,7 @@
       },
       {
         "path": "public/data/china-reference-regions.geojson",
-        "sha256": "180383ad2612c0891fabc59fa09685601cd88f7441e2149564a2699183541bc1",
+        "sha256": "2541069bc237abe53fc394631f51194781e56b4e33b5b71ab0cbd5bebfb3a09e",
         "featureIds": [
           "region-cn-jiang2023-ii",
           "region-cn-jiang2023-i",
@@ -9133,7 +9176,7 @@
       },
       {
         "path": "public/data/china-reference-region-sources.json",
-        "sha256": "83537766d7ba3930e231a266a2af5876f0c939899ed9ead99bdc60f27be5a6b1"
+        "sha256": "487fd48b2218f6648c6d8185dce45bba8b494793a0daad3ac3ae15e88f4d31db"
       }
     ],
     "inputVersions": [
@@ -9149,5 +9192,97 @@
       }
     ],
     "processing": "直接投影public/data/china-reference-regions.geojson的四个已验证多边形，不新增分界、不按行政省界补面。沿用Jiang等（2023）图2数字化分区的CC BY 4.0署名、配准与局限说明；背景Natural Earth 50m陆地为公有领域。等距圆柱投影（中央经线0°、标准纬线0°）裁剪为70–136°E、17–55°N，坐标四舍五入到0.1像素；分区名称位于该层已记录的参考中心。"
+  },
+  {
+    "id": "china-middle-yangtze-map",
+    "kind": "map",
+    "title": "长江中游的三省与两湖",
+    "caption": "湖南的洞庭湖和江西的鄱阳湖分别与长江相通。沿蓝线从西向东，可以看到长江怎样穿过湖北，又经过几个省相邻的地带。图中只着色这三个省，省界和水体均为概化范围。",
+    "alt": "湖南的洞庭湖和江西的鄱阳湖分别与长江相通。沿蓝线从西向东，可以看到长江怎样穿过湖北，又经过几个省相邻的地带。图中只着色这三个省，省界和水体均为概化范围。",
+    "path": "media/reading/china-middle-yangtze-map.svg",
+    "author": "山河图制图；Natural Earth",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "width": 1200,
+    "height": 1025,
+    "sourceUrl": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+    "sourceUrls": [
+      "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_rivers_lake_centerlines.geojson",
+      "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_lakes.geojson",
+      "https://www.naturalearthdata.com/about/terms-of-use/"
+    ],
+    "placeIds": [
+      "hubei",
+      "hunan",
+      "jiangxi",
+      "yangtze",
+      "dongting-lake",
+      "poyang-lake"
+    ],
+    "featureIds": [
+      "province-cn-42",
+      "province-cn-43",
+      "province-cn-36",
+      "river-yangtze",
+      "lake-1159114015",
+      "lake-1159116351"
+    ],
+    "inputs": [
+      {
+        "path": "public/data/learning-provinces.geojson",
+        "sha256": "5ad64c1b66842805f34345f0d588530b5b029f57b4ef92a5f860414fdd2a8d20",
+        "featureIds": [
+          "province-cn-42",
+          "province-cn-43",
+          "province-cn-36"
+        ]
+      },
+      {
+        "path": "public/data/lakes.geojson",
+        "sha256": "5dbfe4e4990cc0399292e56fcde661d32109bdec0fe4038e7547c488315a1009",
+        "featureIds": [
+          "lake-1159114015",
+          "lake-1159116351"
+        ]
+      },
+      {
+        "path": "public/data/rivers.geojson",
+        "sha256": "04d97063110482f0f9f8023509be1e7c8854c90ff841e2e71f6c6031b6018324",
+        "featureIds": [
+          "river-yangtze"
+        ]
+      },
+      {
+        "path": "src/data/feature-bindings.json",
+        "sha256": "79a2a54e164b223c74c67fa73b79aced057df2b03a158962cd0208670f591c5f"
+      },
+      {
+        "path": "public/data/learning-data-sources.json",
+        "sha256": "7787ab8140b1e5debaf480fadf604bbc49e0a9b7e0abb333e2dae2042f1ec31c"
+      },
+      {
+        "path": "public/data/sources.json",
+        "sha256": "bf523e398c9b1224e520769de3943610dc670d532fb22f131ec882f73864d893"
+      }
+    ],
+    "inputVersions": [
+      {
+        "id": "natural-earth-10m-admin1-learning",
+        "version": "ca96624a56bd078437bca8184e78163e5039ad19",
+        "license": "Public domain"
+      },
+      {
+        "id": "natural-earth-10m-rivers",
+        "version": "ca96624a56bd078437bca8184e78163e5039ad19",
+        "license": "Public domain"
+      },
+      {
+        "id": "natural-earth-10m-lakes",
+        "version": "ca96624a56bd078437bca8184e78163e5039ad19",
+        "license": "Public domain"
+      }
+    ],
+    "processing": "复用站内 Natural Earth 1:1000万省级、长江与湖泊几何，以相同等距圆柱投影裁切长江中游。省界使用现有省级学习层，未新增水系或推定流域范围。"
   }
 ]

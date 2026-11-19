@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 335" width="540" height="335" role="img" aria-labelledby="title desc">
+  <title id="title">地下水怎样补给河流</title>
+  <desc id="desc">河谷横剖面中，两岸的地下水面向中间降低，与河面相接。地下水面下方仍有砂砾，两支箭头从这些饱水砂砾指向较低的河床。</desc>
+  <defs>
+    <marker id="tip" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="3" markerHeight="3" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#196581"/></marker>
+    <pattern id="grains" patternUnits="userSpaceOnUse" width="22" height="16"><ellipse cx="5" cy="5" rx="2.5" ry="1.6" fill="#8e7958" opacity=".38"/><circle cx="16" cy="12" r="1.5" fill="#8e7958" opacity=".38"/></pattern>
+  </defs>
+  <rect width="100%" height="100%" rx="10" fill="#f7f5ec"/>
+  <g font-family="system-ui, -apple-system, 'PingFang SC', 'Noto Sans CJK SC', sans-serif">
+    <text x="22" y="42" text-anchor="start" font-size="28" fill="#233e39">地下水怎样补给河流</text>
+    <rect x="16" y="62" width="508" height="233" rx="7" fill="#f0f5ef"/>
+<path d="M16 103Q129 119 201 169Q229 195 251 204Q271 217 292 200Q314 175 343 157Q430 105 524 96V295H16Z" fill="#e7d1a6" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M16 146Q131 153 210 180L330 180Q411 150 524 142V295H16Z" fill="#bededc" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M16 103Q129 119 201 169Q229 195 251 204Q271 217 292 200Q314 175 343 157Q430 105 524 96V295H16Z" fill="url(#grains)" stroke="none" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M16 146Q135 153 213 180M321 180Q415 150 524 142" fill="none" stroke="#196581" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M213 180H321Q303 189 292 200Q271 217 251 204Q228 194 213 180Z" fill="#70b5c8" stroke="#196581" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M16 103Q129 119 201 169L213 180M321 180Q391 117 524 96" fill="none" stroke="#84744f" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="268" y="158" text-anchor="middle" font-size="25" fill="#233e39">河流</text>
+<text x="35" y="96" text-anchor="start" font-size="22" fill="#233e39">地下水面</text>
+<path d="M85 103L85 150" fill="none" stroke="#53696a" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M93 196Q178 226 243 199" fill="none" stroke="#196581" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tip)"/>
+<path d="M457 192Q390 221 301 199" fill="none" stroke="#196581" stroke-width="3.8" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#tip)"/>
+<text x="270" y="273" text-anchor="middle" font-size="24" fill="#233e39">孔隙里充满水的砂砾层</text>
+    <text x="518" y="320" text-anchor="end" font-size="17" fill="#233e39">概念示意 · 非实测</text>
+  </g>
+</svg>

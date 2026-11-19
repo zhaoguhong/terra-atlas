@@ -7,6 +7,7 @@ import tarfile
 from datetime import datetime, timezone
 from pathlib import Path
 from country_languages import LABELS, parse_languages
+from china_presentation import country_properties, PRESENTATION_NOTE
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / 'data/raw'
@@ -70,7 +71,7 @@ duplicates={r['countryId'] for r in records if sum(x['countryId']==r['countryId'
 assert not duplicates, [(r['countryId'],r['sourceUrl']) for r in records if r['countryId'] in duplicates]
 language_output={'title':'国家语言概览','snapshot':COMMIT,'categories':[{'id':id,'name':name} for id,name,_ in LABELS],
     'note':'资料列举的语言并不代表所有居民使用，也不是官方语言法律清单。地图上的语言参考点另来自Glottolog，不能据点位推算使用人口或精确边界。',
-    'countries':sorted(records,key=lambda r:r['countryId'])}
+    'countries':sorted((country_properties(row) for row in records),key=lambda r:r['countryId'])}
 write(PUBLIC/'learning-country-languages.json',language_output)
 
 stats={p['id']:{'countryId':p['id'],'iso3':p['id'].removeprefix('country-').upper(),'name':p['name'],'population':None,'urbanPercent':None,'year':2024} for p in by_id.values()}
@@ -88,7 +89,7 @@ for indicator,key in [('SP.POP.TOTL','population'),('SP.URB.TOTL.IN.ZS','urbanPe
         'license':'CC BY 4.0','licenseUrl':'https://datacatalog.worldbank.org/public-licenses',
         'inputPath':str(path.relative_to(ROOT)),'inputSha256':digest(path),
         'processing':'仅提取2024年人口及城镇人口占比；按ISO3明确连接Natural Earth国家/地区；剔除地区汇总。缺失保留null；城镇定义因国家而异。'})
-write(PUBLIC/'learning-country-indicators.json',{'year':2024,'note':'人口为年度估计。城镇人口占比按各国城镇定义统计，跨国比较须留意口径差异。与GHS-POP2020空间格网时期不同。','countries':[r for r in stats.values() if r['population'] is not None or r['urbanPercent'] is not None]})
+write(PUBLIC/'learning-country-indicators.json',{'year':2024,'note':'人口为年度估计。城镇人口占比按各国家与地区的城镇定义统计，跨地区比较须留意口径差异。与GHS-POP2020空间格网时期不同。'+PRESENTATION_NOTE,'countries':[country_properties(r) for r in stats.values() if r['population'] is not None or r['urbanPercent'] is not None]})
 sources=[{'id':'factbook-language-snapshot','title':'CIA World Factbook · 历史国家语言资料（固定镜像快照）',
     'url':f'https://github.com/factbook/factbook.json/tree/{COMMIT}',
     'originalProvider':'CIA World Factbook','originalHomepage':'https://www.cia.gov/the-world-factbook/',

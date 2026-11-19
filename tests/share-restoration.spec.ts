@@ -60,7 +60,7 @@ for(const [id,name,source,layer] of [
 test('shared: delayed place resolution keeps newer layer settings and the shared camera',async({page})=>{
   let release!:()=>void,requested!:()=>void
   const gate=new Promise<void>(resolve=>{release=resolve}),request=new Promise<void>(resolve=>{requested=resolve})
-  await page.route('**/data/learning-provinces.geojson',async route=>{requested();await gate;await route.continue()})
+  await page.route('**/data/learning-provinces.geojson{,.gz}',async route=>{requested();await gate;await route.continue()})
   try{
     await page.goto(shared('province-cn-12'));await baseSources(page);await request
     await expect(page.locator('.knowledge-panel h2')).toHaveCount(0)
@@ -79,7 +79,7 @@ test('shared: delayed place resolution keeps newer layer settings and the shared
 test('shared: a late place response cannot replace a newer search selection',async({page})=>{
   let release!:()=>void,requested!:()=>void
   const gate=new Promise<void>(resolve=>{release=resolve}),request=new Promise<void>(resolve=>{requested=resolve})
-  await page.route('**/data/learning-provinces.geojson',async route=>{requested();await gate;await route.continue()})
+  await page.route('**/data/learning-provinces.geojson{,.gz}',async route=>{requested();await gate;await route.continue()})
   try{
     await page.goto(shared('province-cn-12'));await baseSources(page);await request
     await page.getByRole('combobox',{name:'搜索地理对象'}).fill('Alps')
@@ -96,7 +96,7 @@ test('shared: a late place response cannot replace a newer search selection',asy
 test('shared: a late response cannot replace a newer same-document link',async({page})=>{
   let release!:()=>void,requested!:()=>void
   const gate=new Promise<void>(resolve=>{release=resolve}),request=new Promise<void>(resolve=>{requested=resolve})
-  await page.route('**/data/learning-provinces.geojson',async route=>{requested();await gate;await route.continue()})
+  await page.route('**/data/learning-provinces.geojson{,.gz}',async route=>{requested();await gate;await route.continue()})
   try{
     await page.goto(shared('province-cn-12'));await baseSources(page);await request
     const response=await page.goto(shared('alps',{lng:'9.3',lat:'46.5',z:'4.5',view:'world'}))
@@ -123,7 +123,7 @@ test('shared: a monthly reference waits for its real data without replaying sett
 
 test('shared: retrying failed place data restores the card without resetting controls',async({page})=>{
   let attempts=0
-  await page.route('**/data/learning-provinces.geojson',route=>++attempts===1
+  await page.route('**/data/learning-provinces.geojson{,.gz}',route=>++attempts===1
     ?route.fulfill({status:200,contentType:'application/json',body:JSON.stringify({type:'FeatureCollection',features:null})})
     :route.continue())
   await page.goto(shared('province-cn-12'))

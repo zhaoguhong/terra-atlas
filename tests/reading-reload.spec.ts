@@ -1,11 +1,11 @@
 import {expect,test,type Page} from '@playwright/test'
-import {baseReady,selectedGeometry} from './map-readiness'
+import {studyReady as baseReady,articleReady,selectedGeometry} from './map-readiness'
 
 const reader=(page:Page)=>page.locator('.topic-reading-page:not([hidden])')
 async function chapterNavigation(page:Page){
   // The main map may be ready while the lazy reader is still loading. Wait
   // for its article before deciding which responsive chapter control to use.
-  await expect(reader(page).locator('h1')).toBeVisible()
+  await articleReady(page)
   const nav=reader(page).getByRole('navigation',{name:'专题章节'})
   await expect(nav).toBeVisible()
   return nav
@@ -29,17 +29,13 @@ async function expectChapter(page:Page,id:string){
   }
 }
 async function catalogue(page:Page){
-  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'学主题',exact:true}).click()
+  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('link',{name:'学主题',exact:true}).click()
   await expect(page.locator('.study-library')).toBeVisible()
 }
 async function openArticle(page:Page){
   await catalogue(page)
-  const [response]=await Promise.all([
-    page.waitForResponse(response=>new URL(response.url()).pathname.endsWith('/reading/topics/landform-landscapes.json')),
-    page.getByRole('button',{name:'阅读专题：常见地貌与中国典型景观',exact:true}).click(),
-  ])
-  expect(response.ok()).toBe(true)
-  expect(await response.finished()).toBeNull()
+  await page.getByRole('link',{name:'阅读专题：常见地貌与中国典型景观',exact:true}).click()
+  await articleReady(page,'landform-landscapes')
   await expect(reader(page).locator('h1')).toHaveText('常见地貌与中国典型景观')
 }
 async function scrollWithinChapter(page:Page){
@@ -51,6 +47,7 @@ async function scrollWithinChapter(page:Page){
   })
 }
 async function expectPosition(page:Page,top:number){
+  await articleReady(page,'landform-landscapes')
   await expect(reader(page).locator('h1')).toHaveText('常见地貌与中国典型景观')
   await expectChapter(page,'granite')
   await expect.poll(async()=>Math.abs(await reader(page).locator('.reading-body').evaluate(panel=>panel.scrollTop)-top)).toBeLessThan(4)
@@ -65,6 +62,7 @@ test('navigation works when randomUUID is unavailable on an HTTP origin',async({
   expect(articleEntryId).toBeTruthy()
   expect(articleEntryId).not.toBe(mapEntryId)
   await page.reload();await baseReady(page)
+  await articleReady(page,'landform-landscapes')
   await expect(reader(page).locator('h1')).toHaveText('常见地貌与中国典型景观')
   expect(await page.evaluate(()=>history.state.terraAtlasEntryId)).toBe(articleEntryId)
 })
@@ -74,7 +72,7 @@ test('reload: catalogue keeps search, scope and category, with browser back and 
   await expect(page.locator('.app')).toHaveAttribute('data-study-screen','map')
   await catalogue(page)
   await page.getByRole('group',{name:'主题范围'}).getByRole('button',{name:'中国地理',exact:true}).click()
-  await page.locator('.topic-category-filters summary').click()
+  await expect(page.locator('.topic-category-filters')).toHaveAttribute('open','')
   await page.getByRole('button',{name:'地形地貌',exact:true}).click()
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill('喀斯特')
   await page.reload();await baseReady(page)

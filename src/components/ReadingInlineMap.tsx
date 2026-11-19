@@ -71,7 +71,7 @@ export default function ReadingInlineMap({id,title,places,onClose,onExplore}:{
     {failed&&<div className="reading-inline-map-error" role="alert"><p>{status}</p><button onClick={retry}>重试配图地图</button></div>}
     <div className="reading-inline-map-places" role="group" aria-label="选择配图中的地点"><button aria-pressed={!selected} disabled={!interactive} onClick={overview}>全部地点</button>{places.map(place=><button key={place.id} aria-pressed={selected?.id===place.id} disabled={!interactive} onClick={()=>choose({card:place})}><span>{place.name}</span><small>{representationLabels[mapRepresentation(place)]}</small></button>)}</div>
     <p className="reading-inline-map-note">虚线范围沿用已核对的概化参考数据，圆点仅表示位置。可用＋－缩放；触屏双指操作，滚轮缩放需按住 Ctrl 或 ⌘。</p>
-    {selected&&<div className="reading-inline-map-place"><div><strong>{selected.name}</strong><p>{selected.summary}</p></div>{onExplore&&<button onClick={()=>onExplore(selected.id)}>在完整地图中查看<ArrowUpRight size={16}/></button>}</div>}
+    {selected&&<div className="reading-inline-map-place"><div><strong>{selected.name}</strong><p>{selected.summary}</p><p className="reading-inline-map-extent">{selected.geometryNote}</p></div>{onExplore&&<button onClick={()=>onExplore(selected.id)}>在完整地图中查看<ArrowUpRight size={16}/></button>}</div>}
     {!selected&&onExplore&&<button className="reading-inline-map-open" onClick={()=>onExplore(places[0].id)}>在完整地图中继续探索<ArrowUpRight size={16}/></button>}
   </div>
 }

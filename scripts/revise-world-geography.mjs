@@ -79,7 +79,7 @@ export function reviseWorldGeography(topics,articles,knowledge){
       modules:article.sections.filter(section=>section.caseIds?.length).map(section=>({id:section.id,title:section.title,description:section.paragraphs[0],detail:section.paragraphs.slice(1).join(''),stops:section.caseIds})),
       sources:article.sources,visuals:article.sections.flatMap(section=>section.visuals||[]),
       question:article.questions[0].question,takeaway:article.questions[0].answer,
-      geometryNote:article.id==='world-oceans'?'五大洋使用有出处的参考点帮助定位，不绘制未经核对的海洋边界。正文解释IHO的60°S约定、国家保留意见与自然边界的区别。':article.id==='world-continents'?'六洲沿用Natural Earth概化标注参考范围，大洋洲保留参考点；这些表示帮助定位，不是精确洲界。大洋洲不等同于澳大利亚国家，洲界也不等同于板块边界。':'宽泛区域使用明确卡片参考点，不以国家边界或父区域代替不一致的自然、历史与文化范围。',
+      geometryNote:article.id==='world-oceans'?'五大洋在交互地图中使用 Natural Earth 概化标注参考范围。面积比较采用正文列明的统计分区，南大洋命名约定与海水性质的自然分界另有依据。':article.id==='world-continents'?'六洲沿用Natural Earth概化标注参考范围，大洋洲保留参考点；这些表示帮助定位，不是精确洲界。大洋洲不等同于澳大利亚国家，洲界也不等同于板块边界。':'宽泛区域使用明确卡片参考点，不以国家边界或父区域代替不一致的自然、历史与文化范围。',
       reading:{coverId:article.id==='world-regional-comparison'?'diagram-region-method':'world-land-ocean-map',keywords,
         chapters:article.sections.map(section=>({id:section.id,title:section.title})),highlights:guide.sections.map(section=>section.body),
         minutes:Math.max(4,Math.ceil(article.sections.reduce((n,s)=>n+s.paragraphs.join('').length,0)/320)),

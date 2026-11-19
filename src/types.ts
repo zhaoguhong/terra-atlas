@@ -10,6 +10,7 @@ export interface Knowledge {
   sources: { title: string; url: string }[]; region?: View; relatedIds?: string[]; geometryNote?: string;
   sections?: { title: string; body: string }[]; questions?: string[]; tags?: string[];
   mapZoom?: number; mapRole?: 'place' | 'concept'; mediaIds?: string[]; readingTopicIds?:string[];
+  geometryType?: string;
 }
 export interface LayerState { terrain: boolean; mountains: boolean; rivers: boolean; lakes: boolean; climate: boolean; borders: boolean; population: boolean; religion: boolean; language: boolean; provinces: boolean; grid: boolean; cities: boolean; basins: boolean; plates: boolean }
 export interface MapDisplay { basemap: 'natural' | 'detail'; terrain3d: boolean }
@@ -35,7 +36,7 @@ export interface ReadingProgress {sectionId:string; offset:number; updatedAt:num
 export interface ReadingPart {id:string;title:string;sectionId:string;description:string;keywords:string[]}
 export interface TopicArticle {
   id:string; title:string; introduction:string; updatedAt:string; parts?:ReadingPart[]; presentation?:'essay';
-  sections:{id:string; title:string; paragraphs:string[]; partId?:string; mediaIds?:string[]; mediaAfterParagraph?:Record<string,number>; mediaPlacement?:'before-text'; visuals?:TopicVisual[]; caseIds?:string[]; mapLabels?:Record<string,string>; terms?:{term:string;definition:string}[]}[];
+  sections:{id:string; title:string; paragraphs:string[]; continuation?:boolean; partId?:string; mediaIds?:string[]; mediaAfterParagraph?:Record<string,number>; mediaPlacement?:'before-text'; visuals?:TopicVisual[]; caseIds?:string[]; mapLabels?:Record<string,string>; terms?:{term:string;definition:string}[]}[];
   questions:{question:string;answer:string}[];
   sources:{title:string;url:string}[];
 }

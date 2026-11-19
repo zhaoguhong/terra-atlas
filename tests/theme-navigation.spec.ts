@@ -319,7 +319,7 @@ test('theme navigation: opening an already open library does not add duplicate b
   await openLibrary(page)
   await renderFrames(page)
   const length=await page.evaluate(()=>history.length)
-  for(let index=0;index<3;index++)await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'学主题',exact:true}).click()
+  for(let index=0;index<3;index++)await page.getByRole('navigation',{name:'浏览方式'}).getByRole('link',{name:'学主题',exact:true}).click()
   expect(await page.evaluate(()=>history.length)).toBe(length)
 })
 

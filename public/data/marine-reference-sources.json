@@ -1,0 +1,32 @@
+{
+  "id": "natural-earth-10m-marine-v5.1.2",
+  "reviewedAt": "2026-11-13",
+  "title": "Natural Earth · 海洋与海峡概化标注参考范围",
+  "homepage": "https://www.naturalearthdata.com/downloads/10m-physical-vectors/",
+  "version": "Natural Earth v5.1.2 / 1:10m marine geography label polygons",
+  "license": "Public domain",
+  "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+  "inputs": [
+    {
+      "path": "scripts/marine-reference-inputs.lock.json",
+      "sha256": "68e90f16199421584993b8a47a474e7f90b87d60a5f701dd9619291f9db365a4"
+    },
+    {
+      "path": "data/raw/ne_10m_geography_marine_polys.geojson",
+      "url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/v5.1.2/geojson/ne_10m_geography_marine_polys.geojson",
+      "sha256": "53f865e8ffa966cdd402145c82c5cd14ee7ce974cd0eb9a3f59f03a4cfd2d66c"
+    }
+  ],
+  "processing": "按锁定的NE_ID和原始英文名称双重核对，选取五大洋、地中海、马六甲与直布罗陀海峡的原始参考面；保留南北分片，不从定位点、海岸外接框或行政范围推测海域；GEOS安全量化至0.0001°。中文统一采用本站规范名称。",
+  "limitations": "Natural Earth 1:1000万海洋地理标注参考范围，用于辨认海域位置和展布；不是海域完整水面、法定界线、领海界线或航线。各海域相互连通，参考面之间的空隙不表示海洋中断。",
+  "validation": {
+    "features": 10,
+    "cards": 8,
+    "allGeometriesValid": true,
+    "namesAndIdsMatch": true
+  },
+  "output": {
+    "path": "public/data/marine-reference-regions.geojson",
+    "sha256": "7f21924fac1b4be92e1faeda37f12eb80c91173176653907a0a5040d5245a5da"
+  }
+}

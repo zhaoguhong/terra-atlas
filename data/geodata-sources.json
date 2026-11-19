@@ -29,7 +29,7 @@
       "homepage": "https://www.naturalearthdata.com/",
       "license": "Public domain",
       "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
-      "processing": "WGS84；去除无关属性；保拓扑简化并用GEOS安全量化至0.0001°，移除退化的极短线与极小面。中文名基于原数据Wikidata译名转简体；国家沿用原始中文名，自然要素另校正主要通用译名，避免同名国家被替换为河流名称。自然区域为标注范围与概化表达，非精确地貌边界。国家/陆地1:5000万，其他1:1000万；河流按rivernum合并同一流域河段及湖泊中心线，已核实的大河合并不同名称河段；同名跨流域河流保留独立ID。峰点仅保留原始mountain类型。"
+      "processing": "WGS84；去除无关属性；保拓扑简化并用GEOS安全量化至0.0001°，移除退化的极短线与极小面。中文名基于原数据Wikidata译名转简体；国家沿用原始中文名，自然要素另校正主要通用译名，避免同名国家被替换为河流名称。自然区域为标注范围与概化表达，非精确地貌边界。国家/陆地1:5000万，其他1:1000万；河流按rivernum合并同一流域河段及湖泊中心线，已核实的大河合并不同名称河段；同名跨流域河流保留独立ID。峰点仅保留原始mountain类型。项目采用中国地理学习口径，台湾、香港、澳门归属中国；保留原始要素ID与分列统计口径，不将来源中的地区代码解释为独立国家。"
     },
     {
       "id": "natural-earth-10m-rivers",
@@ -118,8 +118,8 @@
     },
     {
       "path": "/data/countries.geojson",
-      "size": 967335,
-      "sha256": "2a39cd564c4b0310c4305b9c174724c91a10ce3fd4c7dea01890f1bbbad12db6"
+      "size": 991993,
+      "sha256": "09373a29de9cbd8fa4fabb01ac9efc73eb886bfa8abd72db5fe11b52815e9a6a"
     },
     {
       "path": "/data/lakes.geojson",
@@ -138,8 +138,8 @@
     },
     {
       "path": "/data/regions.geojson",
-      "size": 2244950,
-      "sha256": "13aafdba4e03aa2b27b2c185fc9ebfdd464e78df0e76933978e892aac60d1418"
+      "size": 2245869,
+      "sha256": "a5c2d79e9761926e96a4d1955cd1e920626e157402034bcc67bc9721460fd39e"
     },
     {
       "path": "/data/rivers.geojson",
@@ -158,8 +158,8 @@
     },
     {
       "path": "/data/gazetteer.json",
-      "size": 928976,
-      "sha256": "b804a0d41b9d78e4752cd117c7da9979002d3e04982f6cb131ca043bbdfa85ce"
+      "size": 929594,
+      "sha256": "9d1fc095b07cc1e9b36b912290e48d8d5d34cd3b4928c6302599079c3ae99b73"
     }
   ],
   "downloadAttempts": [

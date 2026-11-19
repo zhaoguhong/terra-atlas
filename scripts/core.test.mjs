@@ -30,7 +30,7 @@ test('search uses real feature bindings, preserving shared IDs and empty decisio
 })
 test('indexed search keeps exact Chinese names first and supports English aliases and tags',()=>{
   const curated=createSearchIndex(knowledge,k=>[k.name,k.englishName,...k.aliases,...(k.tags||[])])
-  for(const [query,id] of [['青海湖','qinghai-lake'],['  aLpS  ','alps'],['Himalayas','himalayas'],['长江','yangtze']])assert.equal(searchCatalog(query,curated,[],[])[0]?.id,id)
+  for(const [query,id] of [['青海湖','qinghai-lake'],['  aLpS  ','alps'],['Himalayas','himalayas'],['长江','yangtze'],['中华人民共和国','china-country'],["People's Republic of China",'china-country']])assert.equal(searchCatalog(query,curated,[],[])[0]?.id,id)
   const values=[{name:'长江流域',aliases:[]},{name:'长江',aliases:['Yangtze (River)']},{name:'其他地点',aliases:['长江观察']}]
   const index=createSearchIndex(values,p=>[p.name,...p.aliases])
   assert.deepEqual(searchCatalog('长江',index,[],[]).map(p=>p.name),['长江','长江流域','其他地点'])
@@ -54,7 +54,7 @@ test('ambiguous names never bind to the wrong geography',()=>{
   assert.deepEqual(bindings['poyang-lake'],['lake-1159114015'])
   assert(!bindings['pearl-river'].some(id=>id.includes('pearl')))
   assert(bindings['pearl-river'].includes('river-xi'))
-  assert.deepEqual(bindings['inner-mongolian-plateau'],[])
+  assert.deepEqual(bindings['inner-mongolian-plateau'],['region-cn-zhang2025-inner-mongolian-plateau'])
   assert.deepEqual(bindings['ganges-plain'],[])
 })
 test('Yangtze trunk retains real upstream source segments',()=>{
@@ -300,11 +300,17 @@ test('world language overview joins Chinese varieties without absorbing other la
   assert.equal(validThematic(input.thematic).languageMode,'overview')
 })
 
-import {mapRepresentation} from '../src/lib/geometry-presentation.ts'
+import {mapRepresentation,selectionRepresentation} from '../src/lib/geometry-presentation.ts'
+test('clicked source geometry takes precedence over a broad lesson or uncurated card',()=>{
+  assert.equal(selectionRepresentation({card:knowledge.find(k=>k.id==='climate-a'),source:'climate',featureId:'climate-1'}),'area')
+  assert.equal(mapRepresentation({id:'region-unreviewed',name:'Region',summary:'Data',geometryType:'MultiPolygon'}),'area')
+  assert.equal(mapRepresentation({id:'river-unreviewed',name:'River',summary:'Data'}),'line')
+  assert.equal(mapRepresentation(knowledge.find(k=>k.id==='ganges-plain')),'point')
+})
 test('area presentation follows reviewed feature identity rather than similar place names',()=>{
   for(const id of ['northern-china','southern-china','northwestern-china','qinghai-tibet-region','brazilian-highlands','deccan-plateau','ethiopian-highlands','great-plains','pampas','gobi-desert','atacama-desert','africa-continent','europe-continent','north-america-continent','south-america-continent'])assert.equal(mapRepresentation(knowledge.find(k=>k.id===id)),'area',id)
   assert.deepEqual(bindings['brazilian-highlands'],['region-1159104225'])
-  assert.equal(mapRepresentation(knowledge.find(k=>k.id==='inner-mongolian-plateau')),'point')
+  assert.equal(mapRepresentation(knowledge.find(k=>k.id==='inner-mongolian-plateau')),'area')
   assert.equal(mapRepresentation(knowledge.find(k=>k.id==='yangtze')),'line')
   assert.equal(mapRepresentation({id:'peak-sample',name:'Peak',nameEn:'Peak',geometryType:'Point'}),'point')
   assert.equal(mapRepresentation(knowledge.find(k=>k.id==='sundarbans-mangroves')),'point')
@@ -454,4 +460,14 @@ test('world geography introduces every continent and ocean after comparable over
   for(const marker of ['四大洋','五大洋','2023','60','阿根廷'])assert(oceanText.includes(marker),'explains ocean conventions: '+marker)
   assert(oceans.sources.some(source=>source.url.includes('iho.int')),'current IHO primary source')
   for(const id of ['southeast-asia','middle-east','western-europe','sub-saharan-africa','japan','india','brazil','australia'])assert(regional.sections.some(section=>section.caseIds?.includes(id)),id+' stays in regional comparison')
+})
+
+test('packed geography decodes gzip and transparently decoded hosting responses without changing coordinates',async()=>{
+  const {unpackJson}=await import('../src/lib/packed-json.ts')
+  const {gzipSync}=await import('node:zlib')
+  const source=fs.readFileSync('public/data/marine-reference-regions.geojson')
+  const expected=JSON.parse(source)
+  assert.deepEqual(await unpackJson(new Response(gzipSync(source))),expected)
+  assert.deepEqual(await unpackJson(new Response(source)),expected)
+  await assert.rejects(unpackJson(new Response(gzipSync(source).subarray(0,16))))
 })

@@ -6,6 +6,7 @@ from shapely.geometry import shape,Point
 from shapely import make_valid
 from shapely.ops import unary_union
 from shapely.affinity import translate
+from china_presentation import city_properties
 manifest=json.loads(Path('public/data/auxiliary-sources.json').read_text())
 assert Path('public/data/auxiliary-sources.json').read_bytes()==Path('data/research/auxiliary-sources.json').read_bytes()
 report={'status':'passed','method':'独立读取公开GeoJSON及原始输入；逐要素检查真实ID、类别、坐标、属性与几何有效性，并量化概化误差。','sources':{}}
@@ -25,7 +26,10 @@ expected={str(f['properties']['NE_ID']):f for f in original if f['properties']['
 assert len(cities)==len(expected)
 for f in cities:
  raw=expected[f['properties']['id'].removeprefix('city-ne-')]
- assert bool(raw['properties']['ADM0CAP'])==f['properties']['capital']
+ expected_city=city_properties({'country':raw['properties'].get('ADM0NAME',''),'capital':bool(raw['properties']['ADM0CAP'])})
+ assert expected_city['capital']==f['properties']['capital']
+ if expected_city.get('parentCountryId'):
+  assert f['properties']['parentCountryId']=='country-chn' and f['properties']['country']=='中国'
  assert shape(raw['geometry']).distance(shape(f['geometry']))<.00001
 plates=json.loads(Path('public/data/auxiliary-plates.geojson').read_text())['features']
 ids=json.loads(Path('data/raw/auxiliary/usgs-plate-ids.json').read_text())['objectIds']

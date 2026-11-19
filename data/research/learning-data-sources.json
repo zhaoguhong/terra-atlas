@@ -45,37 +45,6 @@
       ]
     },
     {
-      "id": "natural-earth-10m-admin1-learning",
-      "title": "Natural Earth中国省级学习范围",
-      "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
-      "downloadUrls": [
-        "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson"
-      ],
-      "version": "ca96624a56bd078437bca8184e78163e5039ad19",
-      "period": "Natural Earth数据版本快照",
-      "license": "Public domain",
-      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
-      "processing": "Natural Earth 1:1000万概化行政范围；香港、澳门、台湾由原始真实Admin-1单元合并，西沙标签单元并入海南。中文省级名称及GB/T省级代码用于学习导航；沿用Natural Earth原始地理表达，不能作为法定边界或测绘依据。 简化0.006度，保拓扑，坐标保留4位小数。",
-      "coverage": {
-        "features": 34
-      },
-      "retrievedAt": "2026-10-09T02:54:17.031385+00:00",
-      "inputs": [
-        {
-          "path": "data/raw/learning/ne_10m_admin_1_states_provinces.geojson",
-          "bytes": 40726851,
-          "sha256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5"
-        }
-      ],
-      "outputs": [
-        {
-          "path": "public/data/learning-provinces.geojson",
-          "bytes": 363188,
-          "sha256": "923e61d294a774bdb7ded8c431e57f9797ed3dac03b9b15a89ecfd26891bd6d9"
-        }
-      ]
-    },
-    {
       "id": "beck-v3-monthly-1991-2020",
       "title": "Beck V3 1991–2020月气温与降水气候平均",
       "url": "https://figshare.com/articles/dataset/High-resolution_1_km_K_ppen-Geiger_maps_for_1901_2099_based_on_constrained_CMIP6_projections/21789074",
@@ -152,10 +121,13 @@
       ],
       "outputs": [
         {
-          "path": "data/research/learning-population.geojson",
-          "bytes": 28073917,
-          "sha256": "d56b40fde2e510bf964d71905f9d75b0d52b50d43c6deebc55bdcaaf401b7a1d",
-          "published": false
+          "path": "data/research/learning-population.geojson.gz",
+          "bytes": 2320968,
+          "sha256": "9633e4ec0b530556a1413226b9111da4e38ef11ef967b4e06a32710b18460e0a",
+          "published": false,
+          "decodedSha256": "d56b40fde2e510bf964d71905f9d75b0d52b50d43c6deebc55bdcaaf401b7a1d",
+          "decodedBytes": 28073917,
+          "encoding": "gzip"
         },
         {
           "path": "public/data/learning-population.json",
@@ -629,8 +601,8 @@
       "outputs": [
         {
           "path": "public/data/learning-human.json",
-          "bytes": 249405,
-          "sha256": "20d2364b15bfa5f317db0cd8370533eee4666227f8b75121e33d593d8c60aa6f"
+          "bytes": 250516,
+          "sha256": "b9a326d4a2316bea91cddf925763362a7224931d66631bbe1e1075c1410743cd"
         }
       ]
     },
@@ -711,7 +683,38 @@
         "data/research/language-area-validation.json",
         "data/research/language-area-independent-validation.json"
       ]
+    },
+    {
+      "id": "natural-earth-10m-admin1-learning",
+      "title": "Natural Earth中国省级学习范围",
+      "url": "https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-admin-1-states-provinces/",
+      "downloadUrls": [
+        "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson"
+      ],
+      "version": "ca96624a56bd078437bca8184e78163e5039ad19",
+      "period": "Natural Earth数据版本快照",
+      "license": "Public domain",
+      "licenseUrl": "https://www.naturalearthdata.com/about/terms-of-use/",
+      "processing": "Natural Earth 1:1000万中国省级概化参考范围；台湾主岛、澎湖和源数据已收录附属岛屿合并为台湾省，金门源单元归入福建省，香港、澳门分别合并为特别行政区，西沙标签单元并入海南。未收录小岛不推绘；中文名称和GB/T代码用于学习导航，不作为完整法定边界或测绘依据。 简化0.006度，保拓扑，坐标保留4位小数。",
+      "coverage": {
+        "features": 34
+      },
+      "inputs": [
+        {
+          "path": "data/raw/learning/ne_10m_admin_1_states_provinces.geojson",
+          "bytes": 40726851,
+          "sha256": "22d0e3ad85eb3e27f17cabf8ba2d50e554fbc27a87796ff891d958185da62fb5"
+        }
+      ],
+      "retrievedAt": "2026-10-09T02:54:17.031385+00:00",
+      "outputs": [
+        {
+          "path": "public/data/learning-provinces.geojson",
+          "bytes": 365594,
+          "sha256": "5ad64c1b66842805f34345f0d588530b5b029f57b4ef92a5f860414fdd2a8d20"
+        }
+      ]
     }
   ],
-  "generatedAt": "2026-10-10T17:17:08.581600+00:00"
+  "generatedAt": "2026-11-12T17:04:38.850795+00:00"
 }

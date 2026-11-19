@@ -10,7 +10,7 @@
   "figures": [
     {
       "id": "china-plateaus-illustration",
-      "path": "media/reading/china-plateaus-illustration.jpg",
+      "path": "media/reading/china-plateaus-illustration.webp",
       "kind": "illustration",
       "title": "中国四大高原位置示意",
       "alt": "中国四大高原位置示意。青藏高原在西南部，内蒙古高原在北部，黄土高原在其南侧，云贵高原在西南地区东部。四色用于辨认相对位置；色块和地形纹理均为示意，不代表精确边界或实测高程。",
@@ -30,7 +30,7 @@
         "loess-plateau",
         "yunnan-guizhou-plateau"
       ],
-      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -39,7 +39,7 @@
     },
     {
       "id": "china-basins-illustration",
-      "path": "media/reading/china-basins-illustration.jpg",
+      "path": "media/reading/china-basins-illustration.webp",
       "kind": "illustration",
       "title": "中国四大盆地位置示意",
       "alt": "中国四大盆地位置示意。位置示意：天山南北分别是塔里木、准噶尔盆地；柴达木盆地位于青藏高原东北部，四川盆地位于高原东侧。色块用于辨认相对位置，不代表精确边界。",
@@ -59,7 +59,7 @@
         "qaidam-basin",
         "sichuan-basin"
       ],
-      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -68,7 +68,7 @@
     },
     {
       "id": "china-plains-illustration",
-      "path": "media/reading/china-plains-illustration.jpg",
+      "path": "media/reading/china-plains-illustration.webp",
       "kind": "illustration",
       "title": "中国三大平原位置示意",
       "alt": "中国三大平原位置示意。位置示意：沿东部由北向南辨认东北、华北和长江中下游平原。色块概括位置关系，长江中下游的低地由多片沿江、沿湖平原组成，并非一整块连续平地。",
@@ -87,7 +87,7 @@
         "north-china-plain",
         "yangtze-middle-lower-plain"
       ],
-      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -96,7 +96,7 @@
     },
     {
       "id": "china-mountains-illustration",
-      "path": "media/reading/china-mountains-illustration.jpg",
+      "path": "media/reading/china-mountains-illustration.webp",
       "kind": "illustration",
       "title": "中国主要山脉走向示意",
       "alt": "中国主要山脉走向示意。本图选择文中讨论的六条山脉，突出它们与相邻高原、盆地和平原的位置关系。虚线仅示主要走向，不代表实测山脊线或山脉完整范围。",
@@ -118,7 +118,7 @@
         "qinling",
         "greater-khingan"
       ],
-      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。",
+      "processing": "使用 OpenAI 内置 imagegen 生成示意插图；保留原始构图，转为 JPEG 供网页按需加载。依据所列参考资料核对名称、总体方向与相邻关系；未作坐标配准、逐点边界或高程核验，不作为交互地图几何输入。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -127,7 +127,7 @@
     },
     {
       "id": "polar-worlds-illustration",
-      "path": "media/reading/polar-worlds-illustration.jpg",
+      "path": "media/reading/polar-worlds-illustration.webp",
       "kind": "illustration",
       "title": "北极与南极的海陆、冰体对照",
       "alt": "北极与南极的海陆、冰体对照。北极以海洋为中心，南极以大陆为主体。海冰漂浮在海水上，冰盖覆盖陆地，冰架是陆地冰向海伸出的漂浮部分。本图为关系示意，地形与冰厚均非等比例。",
@@ -142,7 +142,7 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -151,7 +151,7 @@
     },
     {
       "id": "watershed-landscape-illustration",
-      "path": "media/reading/watershed-landscape-illustration.jpg",
+      "path": "media/reading/watershed-landscape-illustration.webp",
       "kind": "illustration",
       "title": "水的地上与地下旅程",
       "alt": "水的地上与地下旅程。降水进入河流，也能下渗到土壤和岩层。地下水主要储存在孔隙与裂隙中，与地表水相互联系。图为水循环情景示意，不对应真实流域；蒸腾等过程在此省略。",
@@ -166,7 +166,7 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -175,7 +175,7 @@
     },
     {
       "id": "karst-landscape-illustration",
-      "path": "media/reading/karst-landscape-illustration.jpg",
+      "path": "media/reading/karst-landscape-illustration.webp",
       "kind": "illustration",
       "title": "喀斯特的地表与地下",
       "alt": "喀斯特的地表与地下。水沿裂隙进入可溶岩层，溶蚀扩大通道，形成落水洞、溶洞和泉等相连的地貌。图为多种形态的组合示意，不能用于推断具体洞穴的大小与水路。",
@@ -190,7 +190,7 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -199,7 +199,7 @@
     },
     {
       "id": "river-landscape-illustration",
-      "path": "media/reading/river-landscape-illustration.jpg",
+      "path": "media/reading/river-landscape-illustration.webp",
       "kind": "illustration",
       "title": "从峡谷到平原与三角洲",
       "alt": "从峡谷到平原与三角洲。河流连接山地、平原和海洋，侵蚀、搬运与堆积共同塑造河谷、曲流和三角洲。本图是地貌组合示意，不对应一条真实河道，也不意味着所有河流都具备这些形态。",
@@ -214,7 +214,7 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -223,7 +223,7 @@
     },
     {
       "id": "ecosystem-landscapes-illustration",
-      "path": "media/reading/ecosystem-landscapes-illustration.jpg",
+      "path": "media/reading/ecosystem-landscapes-illustration.webp",
       "kind": "illustration",
       "title": "森林、草原与荒漠景观",
       "alt": "森林、草原与荒漠景观。森林、草原和荒漠的植被覆盖、根系与地表形态不同。这是三种景观的独立示意，并非真实地理剖面或固定的演替顺序；图中不表示气候分类阈值。",
@@ -238,7 +238,7 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -247,7 +247,7 @@
     },
     {
       "id": "city-water-landscape-illustration",
-      "path": "media/reading/city-water-landscape-illustration.jpg",
+      "path": "media/reading/city-water-landscape-illustration.webp",
       "kind": "illustration",
       "title": "雨水穿过城市的不同路径",
       "alt": "雨水穿过城市的不同路径。硬化地面使更多雨水形成径流，绿地和雨水花园则可暂存雨水并促进下渗。排水管网与河道共同影响雨水去向。概念示意不对应具体城市，也不是工程设计图。",
@@ -263,7 +263,7 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -272,7 +272,7 @@
     },
     {
       "id": "glacier-valley-illustration",
-      "path": "media/reading/glacier-valley-illustration.jpg",
+      "path": "media/reading/glacier-valley-illustration.webp",
       "kind": "illustration",
       "title": "冰川与它留下的谷地",
       "alt": "冰川与它留下的谷地。左图表现冰川占据谷地，右图表现退缩后暴露的U形谷和冰碛。两幅是同一谷地的两种概念状态，不是特定冰川的历史复原，也不表示变化所需时间。",
@@ -287,7 +287,7 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -296,7 +296,7 @@
     },
     {
       "id": "coast-landforms-illustration",
-      "path": "media/reading/coast-landforms-illustration.jpg",
+      "path": "media/reading/coast-landforms-illustration.webp",
       "kind": "illustration",
       "title": "岩岸侵蚀与沙岸堆积",
       "alt": "岩岸侵蚀与沙岸堆积。岩岸上可见海蚀崖、海蚀拱与海蚀柱；沙质岸段可形成沙嘴及受其遮蔽的潟湖。两幅为独立的地貌情景示意，并非同一岸线先后变化的两个阶段。",
@@ -311,7 +311,7 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -320,7 +320,7 @@
     },
     {
       "id": "agriculture-landscapes-illustration",
-      "path": "media/reading/agriculture-landscapes-illustration.jpg",
+      "path": "media/reading/agriculture-landscapes-illustration.webp",
       "kind": "illustration",
       "title": "平原、梯田与草地的利用",
       "alt": "平原、梯田与草地的利用。平原耕作、坡地梯田和草地放牧利用了不同的土地条件。三幅为生产景观示意，不对应指定产区；作物和经营方式仍受水热、土壤、水源与管理影响。",
@@ -336,7 +336,7 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",
@@ -345,7 +345,7 @@
     },
     {
       "id": "rain-shadow-landscape-illustration",
-      "path": "media/reading/rain-shadow-landscape-illustration.jpg",
+      "path": "media/reading/rain-shadow-landscape-illustration.webp",
       "kind": "illustration",
       "title": "迎风坡与背风坡",
       "alt": "迎风坡与背风坡。湿润空气沿迎风坡抬升、冷却，可能形成降水；越过山地后下沉，空气可变得较暖较干。图为地形降水概念示意，是否出现明显雨影取决于风向、水汽和山体条件。",
@@ -360,7 +360,7 @@
       "width": 1536,
       "height": 1024,
       "placeIds": [],
-      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。",
+      "processing": "使用 OpenAI 内置 imagegen 生成概念插图，保留画面并转为 JPEG 供本地按需加载。逐图检查中文标注、关系与流向，结合所列科普资料核对；画中地貌为解释性组合，不对应实测范围、剖面或历史影像。未作外部专家审定。；发布图以 WebP quality 90 编码，保留原像素尺寸，未裁切或修改文字。",
       "generation": {
         "tool": "OpenAI imagegen (built-in)",
         "generatedAt": "2026-11-12",

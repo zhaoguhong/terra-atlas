@@ -6,6 +6,7 @@ import json
 from pathlib import Path
 import urllib.request
 import xml.etree.ElementTree as ET
+from china_presentation import country_properties
 
 ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / 'data/raw/language-areas'
@@ -64,7 +65,7 @@ def main():
   candidates=national or known
   ranked=sorted(candidates,key=lambda l:(-l['populationPercent'],l['code']))
   chosen=ranked[0] if ranked else None
-  countries.append({'countryId':p['id'],'name':p['name'],'territory':territory,'displayId':chosen['displayId'] if chosen else None,'selectionBasis':'national-official' if national else 'largest-reported' if chosen else 'missing','languages':languages})
+  countries.append(country_properties({'countryId':p['id'],'name':p['name'],'territory':territory,'displayId':chosen['displayId'] if chosen else None,'selectionBasis':'national-official' if national else 'largest-reported' if chosen else 'missing','languages':languages}))
  codes={c['displayId'][6:] for c in countries if c['displayId']}
  codes.update(['zh','en','es','fr','pt','ru','de','hi','bn','ja','ar','ko','vi','th','tr','fa','id','ms','ta','te','ur','mr','kk','mn','bo','ug'])
  preferred=['zh','en','es','ar','fr','pt','ru','de','hi','bn','ja','ko','vi','th','tr','fa','id','ms']

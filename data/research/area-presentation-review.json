@@ -1,7 +1,7 @@
 {
-  "reviewedAt": "2026-10-24",
+  "reviewedAt": "2026-11-13",
   "policy": "按对象的地理含义优先显示已核验区域，河流显示河道线，山峰和地点案例显示点；缺少范围一致的数据时保留点，不使用父区域或行政区替代。",
-  "changedCards": 15,
+  "changedCards": 30,
   "decisions": [
     {
       "cardId": "himalayas",
@@ -126,10 +126,12 @@
     {
       "cardId": "inner-mongolian-plateau",
       "name": "内蒙古高原",
-      "decision": "point",
-      "featureIds": [],
-      "changed": false,
-      "reason": "内蒙古高原是蒙古高原的一部分，两者范围不同。本卡使用中国境内代表点定位，不将整个蒙古高原的标注范围当作内蒙古高原边界。"
+      "decision": "area",
+      "featureIds": [
+        "region-cn-zhang2025-inner-mongolian-plateau"
+      ],
+      "changed": true,
+      "reason": "地图色面依据Zhang等（2025）图2中明确标注的内蒙古高原区数字化，保留原图两个分离部分，用于全国尺度地形学习。分界是过渡带的概化参考，不是精确地貌界线或内蒙古自治区界线，不用于面积测量。"
     },
     {
       "cardId": "yunnan-guizhou-plateau",
@@ -765,50 +767,64 @@
     {
       "cardId": "pacific-ocean",
       "name": "太平洋：最大洋盆与海陆联系",
-      "decision": "point",
-      "featureIds": [],
-      "changed": false,
-      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+      "decision": "area",
+      "featureIds": [
+        "region-marine-ne-1159115079",
+        "region-marine-ne-1159115099"
+      ],
+      "changed": true,
+      "reason": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认太平洋的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。"
     },
     {
       "cardId": "atlantic-ocean",
       "name": "大西洋：河口与热量输送",
-      "decision": "point",
-      "featureIds": [],
-      "changed": false,
-      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+      "decision": "area",
+      "featureIds": [
+        "region-marine-ne-1159115057",
+        "region-marine-ne-1159115149"
+      ],
+      "changed": true,
+      "reason": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认大西洋的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。"
     },
     {
       "cardId": "indian-ocean",
       "name": "印度洋：季风与海上通道",
-      "decision": "point",
-      "featureIds": [],
-      "changed": false,
-      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+      "decision": "area",
+      "featureIds": [
+        "region-marine-ne-1159115123"
+      ],
+      "changed": true,
+      "reason": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认印度洋的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。"
     },
     {
       "cardId": "arctic-ocean",
       "name": "北冰洋：海冰与大陆环绕",
-      "decision": "point",
-      "featureIds": [],
-      "changed": false,
-      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+      "decision": "area",
+      "featureIds": [
+        "region-marine-ne-1159115017"
+      ],
+      "changed": true,
+      "reason": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认北冰洋的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。"
     },
     {
       "cardId": "malacca-strait",
       "name": "马六甲海峡：狭窄水道与国际航运",
-      "decision": "point",
-      "featureIds": [],
-      "changed": false,
-      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+      "decision": "area",
+      "featureIds": [
+        "region-marine-ne-1159116835"
+      ],
+      "changed": true,
+      "reason": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认马六甲海峡的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。"
     },
     {
       "cardId": "gibraltar-strait",
       "name": "直布罗陀海峡：地中海的自然入口",
-      "decision": "point",
-      "featureIds": [],
-      "changed": false,
-      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+      "decision": "area",
+      "featureIds": [
+        "region-marine-ne-1159117067"
+      ],
+      "changed": true,
+      "reason": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认直布罗陀海峡的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。"
     },
     {
       "cardId": "bering-strait",
@@ -837,15 +853,17 @@
     {
       "cardId": "mediterranean",
       "name": "地中海：半封闭海域与干夏气候",
-      "decision": "point",
-      "featureIds": [],
-      "changed": false,
-      "reason": "本卡使用海域或通道内的定位点；没有绘制未经核对的海洋分界、海峡范围或运河线，点位也不代表完整航线。"
+      "decision": "area",
+      "featureIds": [
+        "region-marine-ne-1159115321"
+      ],
+      "changed": true,
+      "reason": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认地中海的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。"
     },
     {
       "cardId": "world-population",
       "name": "世界人口：数量、变化与分布",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
@@ -853,7 +871,7 @@
     {
       "cardId": "population-density",
       "name": "人口密度：把人数放回面积",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
@@ -861,7 +879,7 @@
     {
       "cardId": "china-population",
       "name": "中国人口分布：东西差异与局地集聚",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
@@ -869,7 +887,7 @@
     {
       "cardId": "china-urbanization",
       "name": "中国城镇化：居住地、户籍与城市范围",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
@@ -877,7 +895,7 @@
     {
       "cardId": "india-population",
       "name": "印度人口：大总量与地区差异",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "这是全球或区域学习概念，定位点仅是探索起点，不表示概念中心、统计范围或人群实际边界。"
@@ -885,7 +903,7 @@
     {
       "cardId": "religious-diversity",
       "name": "宗教地理：多元性与统计口径",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
@@ -893,7 +911,7 @@
     {
       "cardId": "christianity",
       "name": "基督宗教：全球分布与内部多样",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
@@ -901,7 +919,7 @@
     {
       "cardId": "islam",
       "name": "伊斯兰教：亚洲与世界多地分布",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
@@ -909,7 +927,7 @@
     {
       "cardId": "hinduism",
       "name": "印度教：集中分布与文化差异",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
@@ -917,7 +935,7 @@
     {
       "cardId": "buddhism",
       "name": "佛教：亚洲传统与归属测量",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
@@ -925,7 +943,7 @@
     {
       "cardId": "unaffiliated",
       "name": "无宗教归属：不是一种统一信仰",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍文化与统计概念，不绘制人群边界。地图宗教层使用CIA历史国别资料，各国时期与分母不同；本卡Pew2020全球估计是另一个来源，不能直接对应地图每个国家或个人。"
@@ -933,7 +951,7 @@
     {
       "cardId": "language-diversity",
       "name": "语言多样性：点、语系与人群",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍语言概念，定位点仅为探索起点。Glottolog语言点为参考位置，含濒危或已消亡语言，不代表使用人口、连续分布区、法定地位或个人母语；CIA国别列举也不是局地边界。"
@@ -941,7 +959,7 @@
     {
       "cardId": "official-vs-mother-tongue",
       "name": "官方语言、母语与交流语言",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍语言概念，定位点仅为探索起点。Glottolog语言点为参考位置，含濒危或已消亡语言，不代表使用人口、连续分布区、法定地位或个人母语；CIA国别列举也不是局地边界。"
@@ -949,7 +967,7 @@
     {
       "cardId": "mandarin-language",
       "name": "普通话与汉语内部多样性",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍语言概念，定位点仅为探索起点。Glottolog语言点为参考位置，含濒危或已消亡语言，不代表使用人口、连续分布区、法定地位或个人母语；CIA国别列举也不是局地边界。"
@@ -957,7 +975,7 @@
     {
       "cardId": "english-language",
       "name": "英语：母语与跨地区交流",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍语言概念，定位点仅为探索起点。Glottolog语言点为参考位置，含濒危或已消亡语言，不代表使用人口、连续分布区、法定地位或个人母语；CIA国别列举也不是局地边界。"
@@ -965,7 +983,7 @@
     {
       "cardId": "arabic-language",
       "name": "阿拉伯语：多种变体与跨区交流",
-      "decision": "point",
+      "decision": "distribution",
       "featureIds": [],
       "changed": false,
       "reason": "此卡介绍语言概念，定位点仅为探索起点。Glottolog语言点为参考位置，含濒危或已消亡语言，不代表使用人口、连续分布区、法定地位或个人母语；CIA国别列举也不是局地边界。"
@@ -1535,10 +1553,12 @@
     {
       "cardId": "taiwan-province",
       "name": "台湾省：岛群与行政区划口径",
-      "decision": "point",
-      "featureIds": [],
-      "changed": false,
-      "reason": "仅用台湾主岛中部参考点导航；未绑定province-cn-71，因为其概化集合包含金门，不能冒充本卡台湾省口径的完整范围。"
+      "decision": "area",
+      "featureIds": [
+        "province-cn-71"
+      ],
+      "changed": true,
+      "reason": "中国台湾省概化参考范围：合并Natural Earth中的台湾主岛、澎湖与已收录附属岛屿，金门源单元归入福建省；未收录小岛不推绘。"
     },
     {
       "cardId": "northeast-blacksoil",
@@ -1941,10 +1961,12 @@
     {
       "cardId": "southern-ocean",
       "name": "南大洋：环绕南极的海洋联系",
-      "decision": "point",
-      "featureIds": [],
-      "changed": false,
-      "reason": "德雷克海峡附近海区参考点；不绘制南大洋法定界线、海流路径或当前海冰范围。"
+      "decision": "area",
+      "featureIds": [
+        "region-marine-ne-1159115037"
+      ],
+      "changed": true,
+      "reason": "色面采用Natural Earth海洋地理标注参考范围，帮助辨认南大洋的位置和展布；不是完整水面、法定海界、领海或航线。参考面之间的空隙不表示海洋中断。南大洋正文使用南纬60°北界约定，色面沿用独立注明的Natural Earth标注口径。"
     },
     {
       "cardId": "guilin-karst",

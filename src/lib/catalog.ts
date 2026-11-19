@@ -12,7 +12,7 @@ export const categoryInfo: Record<Category, { name: string; color: string; descr
   lakes: { name: '湖泊', color: '#508b9b', description: '探索水域及其不同的形成过程' },
   climate: { name: '气候', color: '#b28a48', description: 'Köppen–Geiger · 1991–2020' },
   population: { name: '人口', color: '#aa6643', description: '人口分布、迁移与聚落' },
-  religion: { name: '宗教', color: '#9070a3', description: '宗教文化与国家统计概览' },
+  religion: { name: '宗教', color: '#9070a3', description: '宗教文化与国家、地区统计概览' },
   language: { name: '语言', color: '#597ba5', description: '语种、语系与语言多样性' },
   regions: { name: '区域', color: '#688768', description: '中国省区与世界国家、区域' },
   human: { name: '人文', color: '#a08057', description: '聚落、农业、工业与交通' },
@@ -25,9 +25,9 @@ export function dataCard(p: GeoProperties, coordinates: [number, number], source
     const descriptions={cities:'代表城市定位点；较大深色点表示源版本记录的首都。',basins:'BasinATLAS第3级汇水分区数据概览，含沿海汇水分组；未逐一编写命名河流解读。',plates:'USGS公开资料中的概化板块边界数据概览。'}
     const geometryNotes={cities:'来自Natural Earth固定版本，首都标记并非实时迁都状态；点位不表示城区或行政辖区范围。',basins:'概化的汇水分区边界，不能视为精确山脊。部分单元为沿海分组，未必等于一条命名河流的完整流域；北纬60°以北资料较粗，南极未覆盖。',plates:'全球尺度边界，不表示局地精确断层、实时地震活动或风险。汇聚类别没有进一步划分碰撞与俯冲。'}
     const key=source as keyof typeof descriptions
-    const facts=source==='cities'?[{label:'所在国家／地区（源记录）',value:String(p.country)},{label:'首都标记（源版本）',value:p.capital?'是':'否'}]:source==='basins'?[{label:'HYBAS_ID',value:String(p.hybasId)},{label:'分级',value:'第3级'},{label:'源分区面积',value:Number(p.areaKm2).toLocaleString('zh-CN')+' km²'},{label:'Pfafstetter编码',value:String(p.pfafId)}]:[{label:'边界类型',value:p.name},{label:'资料模型',value:'USGS · Bird (2003) PB2002'}]
+    const facts=source==='cities'?[{label:'所在国家／地区',value:p.regionName?`${String(p.country)} · ${String(p.regionName)}`:String(p.country)},{label:'国家首都标记',value:p.capital?'是':'否'}]:source==='basins'?[{label:'HYBAS_ID',value:String(p.hybasId)},{label:'分级',value:'第3级'},{label:'源分区面积',value:Number(p.areaKm2).toLocaleString('zh-CN')+' km²'},{label:'Pfafstetter编码',value:String(p.pfafId)}]:[{label:'边界类型',value:p.name},{label:'资料模型',value:'USGS · Bird (2003) PB2002'}]
     const sources=source==='cities'?[{title:'Natural Earth · 代表聚落',url:'https://www.naturalearthdata.com/downloads/10m-cultural-vectors/10m-populated-places/'}]:source==='basins'?[{title:'HydroATLAS · BasinATLAS v1.0',url:'https://www.hydrosheds.org/hydroatlas'}]:[{title:'USGS · 板块边界数据与归属',url:'https://earthquake.usgs.gov/arcgis/rest/services/eq/map_plateboundaries/MapServer'}]
-    return {id:p.id,name:p.name,englishName:p.nameEn,aliases:[],category:source==='cities'?'human':'terrain',coordinates,summary:descriptions[key],location:'定位参考：'+coordinates[1].toFixed(2)+'°，'+coordinates[0].toFixed(2)+'°。',formation:geometryNotes[key],connections:source==='cities'?['结合河流与地形，观察聚落的位置。']:source==='basins'?['叠加河流，看分区中的干支流连接。']:['结合山脉和火山案例，比较不同边界类型。'],facts,geometryNote:geometryNotes[key],sources}
+    return {id:p.id,name:p.name,englishName:p.nameEn,aliases:[],category:source==='cities'?'human':'terrain',coordinates,geometryType:typeof p.geometryType==='string'?p.geometryType:undefined,summary:descriptions[key],location:'定位参考：'+coordinates[1].toFixed(2)+'°，'+coordinates[0].toFixed(2)+'°。',formation:geometryNotes[key],connections:source==='cities'?['结合河流与地形，观察聚落的位置。']:source==='basins'?['叠加河流，看分区中的干支流连接。']:['结合山脉和火山案例，比较不同边界类型。'],facts,geometryNote:geometryNotes[key],sources}
   }
   const languageArea=source==='language-areas'
   const category: Category = languageArea || source === 'languages' || source === 'learning-languages' ? 'language' : source === 'countries' || source === 'provinces' ? 'regions' : source === 'rivers' ? 'rivers' : source === 'lakes' ? 'lakes' : source === 'peaks' || p.kind === 'peak' || p.kind === 'mountain' || p.subkind?.toLowerCase().includes('mountain') ? 'mountains' : 'terrain'
@@ -41,7 +41,7 @@ export function dataCard(p: GeoProperties, coordinates: [number, number], source
     languages: '这是 Glottolog 记录的一种语言的地理参考点。语言会随迁移、交流与社会变化传播；一个点不能表示它的精确使用范围、使用人数或所有使用者的位置。',
   }
   const card:Knowledge={
-    id: String(p.id), name: p.name || p.nameEn || (source === 'lakes' ? '未命名湖泊' : '未命名地理对象'), englishName: p.nameEn || 'Natural Earth geographic feature', aliases: [], category, coordinates,
+    id: String(p.id), name: p.name || p.nameEn || (source === 'lakes' ? '未命名湖泊' : '未命名地理对象'), englishName: p.nameEn || 'Natural Earth geographic feature', aliases: [], category, coordinates, geometryType:typeof p.geometryType==='string'?p.geometryType:undefined,
     summary: category==='language' ? `${String(p.family||p.familyEn||'未分类')}语系的语言参考点。探索附近语言，观察语言多样性与国家范围的区别。` : category==='regions' ? '区域数据概览。可以结合人口密度、宗教构成与语言参考点，认识自然环境和人文地理的联系。' : source === 'peaks' ? '山峰定位点概览。你可以观察它所在的山地，以及周围水系和气候的空间关系。' : '自然地理数据概览。你可以观察它与周围地形、水系及气候的空间关系。',
     location: `${source === 'peaks' ? '山峰' : ''}定位参考点：${coordinates[1].toFixed(2)}°，${coordinates[0].toFixed(2)}°。${category==='language'?'名称与位置来自 Glottolog 5.3。':'名称与几何来自 Natural Earth。'}`,
     formation: explanations[source] || (category==='language'?explanations.languages:explanations.terrain),
@@ -57,6 +57,16 @@ export function dataCard(p: GeoProperties, coordinates: [number, number], source
     facts:[{label:'语系',value:String(p.family||p.familyEn||'未分类')},{label:'Glottocode',value:String(p.glottocode)},{label:'资料时期',value:'2007图集参考范围'}],
     geometryNote:'概化的语言使用参考范围，不是最新人口调查或精确边界。未着色不代表没有语言，单色不代表当地只使用一种语言。',
     sources:[{title:'Glottography · 2007图集语言使用范围',url:'https://doi.org/10.5281/zenodo.18613195'},{title:'语言区域数字化与验证方法',url:'https://www.nature.com/articles/s41597-025-05828-6'},{title:'Glottolog · 语言名称与语系',url:'https://glottolog.org/meta/downloads'}],
+  }
+  if(p.parentCountryId==='country-chn'){
+    card.region='china'
+    card.facts.unshift({label:'所属国家',value:'中国'})
+    if(typeof p.statisticsScopeNote==='string')card.connections.unshift(p.statisticsScopeNote)
+    if(source==='countries'&&p.kind==='region'){
+      card.summary=`${p.name}的区域资料概览，所属国家为中国。可结合地形、水系和气候观察自然环境；统计资料保留原来源范围。`
+      card.formation='这里是中国的省级地区或特别行政区。地图保留来源中的地区记录以连接分列资料，地区代码和独立色块不表示国家归属。'
+    }
+    if(typeof p.geometryNote==='string')card.geometryNote=p.geometryNote
   }
   return card
 }

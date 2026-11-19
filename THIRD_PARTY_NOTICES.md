@@ -1364,6 +1364,12 @@ IANA Language Subtag Registry (File-Date: 2026-09-17) supplies factual language 
 
 本项目仅数字化图示中的北方、南方、西北和青藏四区分界，经图中经纬网配准，再裁剪到本站既有Natural Earth国家轮廓（公共领域），未导入闪电观测或其栅格值。共同分界共用一条线，保留原图概化口径；这不是作者提供的GIS边界文件，也不是官方划界或实测边界。作者与其机构未对本改编进行认可。原始PDF哈希、数字化输入、投影配准参数、输出哈希与验证见 `data/china-reference-region-sources.json`；全国尺度学习适用，不用于地方归属判定或面积统计。
 
+## 内蒙古高原地貌参考面
+
+`public/data/landform-reference-regions.geojson` 与 `scripts/landform-reference-digitization.json` 改编自 **Zhang, G., Liu, Y., Chen, Z., Xu, Z., Yuan, Y., Wang, S., Lian, W., Xu, H., Ding, Z., and Wang, R. (2025)**, *Production and Analysis of a Landslide Susceptibility Map Covering Entire China*, Remote Sensing 17(9), 1615，**图2的III-C内蒙古高原区**，名称对应原文表1，[DOI:10.3390/rs17091615](https://doi.org/10.3390/rs17091615)。原作与本项改编采用 [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)。论文沿用Li等（2013）的地貌分区方案；本项目未复制滑坡样本或易发性栅格，也未用蒙古高原、内蒙古自治区或湖区研究范围替代该地貌单元。
+
+本项目按原图8个经度刻度和4个纬度刻度配准，数字化已发表的内部分界；图中两处分离的III-C区域分别处理，国界外缘裁剪到本站既有Natural Earth中国陆地轮廓（公共领域），剔除不同概化国界造成的微小离散裁剪碎片。它是全国尺度的图示参考范围，不是作者发布的GIS边界、官方地貌划界或精确面积统计范围。原作者及机构未认可本改编。原图哈希、数字化线迹、配准参数、输出哈希和验证见 `public/data/landform-reference-region-sources.json`；原图缓存不随站点公开，生成脚本代码本身采用MIT。
+
 ## Topic reading photographs and original diagrams
 
 The nine JPEG photographs in `public/media/reading/` are attributed individually in `src/data/reading-media.json`, `public/data/reading-sources.json`, and the bundled `licenses/reading-images.txt`. They retain their respective CC0, CC BY, CC BY-SA, or Free Art License terms. Their source authors and licence links appear beside the reading figures. Wikimedia Commons thumbnails or original files are bundled without alteration of the pictured scene. These photographs are not relicensed under the project’s original-content licence.

@@ -1,16 +1,16 @@
 import {expect,test,type Page} from '@playwright/test'
-import {baseReady,selectedGeometry,mapSettled} from './map-readiness'
+import {studyReady as baseReady,selectedGeometry,mapSettled} from './map-readiness'
 import {clickHeaderAction} from './header-actions'
 import rawTopics from '../src/data/topics.json' with {type:'json'}
 
 async function catalogue(page:Page){
-  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('button',{name:'学主题',exact:true}).click()
+  await page.getByRole('navigation',{name:'浏览方式'}).getByRole('link',{name:'学主题',exact:true}).click()
   await expect(page.locator('.study-library')).toBeVisible()
 }
 async function readTopic(page:Page,title='常见地貌与中国典型景观'){
   await catalogue(page)
   await page.getByRole('searchbox',{name:'搜索主题和主题成员'}).fill(title)
-  await page.getByRole('button',{name:'阅读专题：'+title,exact:true}).click()
+  await page.getByRole('link',{name:'阅读专题：'+title,exact:true}).click()
   await expect(page.locator('.topic-reading-page:not([hidden]) h1')).toHaveText(title)
 }
 const reader=(page:Page)=>page.locator('.topic-reading-page:not([hidden])')
@@ -63,7 +63,7 @@ test('reading: simple map, searchable catalogue, full article and attributed ima
     await expect(chapters.getByRole('button',{name:'主题概览',exact:true})).toBeVisible()
   }
   await expect(reader(page).getByRole('heading',{name:'看图与思考',exact:true})).toHaveCount(0)
-  await expect(reader(page)).toContainText('洞顶滴水处逐渐形成钟乳石')
+  await expect(reader(page)).toContainText('洞顶向下垂的是钟乳石，洞底向上长的是石笋')
   const photo=reader(page).locator('img[src$="guilin-photo.jpg"]')
   await photo.scrollIntoViewIfNeeded()
   await expect.poll(()=>photo.evaluate((image:HTMLImageElement)=>image.naturalWidth)).toBeGreaterThan(0)
@@ -117,7 +117,7 @@ test('reading: bookmarks, export/import and a cold shared chapter',async({page,c
   await reader(page).getByRole('button',{name:'分享专题阅读',exact:true}).click()
   await expect(page.locator('.reading-toast')).toContainText('已复制')
   const url=await page.evaluate(()=>navigator.clipboard.readText())
-  expect(url).toContain('read=landform-landscapes');expect(url).toContain('chapter=granite')
+  expect(new URL(url).pathname).toBe('/topics/landform-landscapes/');expect(new URL(url).hash).toBe('#granite')
   const cold=await browser.newContext({viewport:page.viewportSize()!}),other=await cold.newPage()
   await other.goto(url);await baseReady(other)
   await expect(reader(other).locator('h1')).toHaveText('常见地貌与中国典型景观')
@@ -140,7 +140,7 @@ test('reading: article and image failures have a working retry',async({page})=>{
   const article='**/reading/topics/landform-landscapes.json'
   await page.route(article,route=>route.fulfill({status:503,body:'unavailable'}))
   await page.goto('/');await baseReady(page);await catalogue(page)
-  await page.getByRole('button',{name:'阅读专题：常见地貌与中国典型景观',exact:true}).click()
+  await page.getByRole('link',{name:'阅读专题：常见地貌与中国典型景观',exact:true}).click()
   await expect(reader(page).getByRole('alert')).toContainText('暂未加载成功')
   await page.unroute(article)
   await page.route('**/media/reading/guilin-photo.jpg',route=>route.abort())
